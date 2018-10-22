@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="vsrx" audience="network" href="/docs/infrastructure/vsrx/about.html"}
-IBM Cloud Juniper vSRX Standard
+IBM Cloud Juniper vSRX Standard 
 
     {: .navgroup id="learn"}
     getting-started.md
