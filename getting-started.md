@@ -66,14 +66,14 @@ If your account is unlinked, follow this procedure:
         * check all boxes for the IBM Cloud service terms and Third-party Software Terms. 
 8.     Click **Submit Order**.
 
-## After ordering
+## What's next?
 After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway will appear in the **Gateway Appliances** list.
 
 Click the gateway name to open the **Gateway Details** page. You'll find the IP addresses, login username, and passwords for the device.
 
 <img src="images/after_order.png" alt="drawing" style="width: 700px;"/>
 
-## VLANs and the gateway appliance's role
+## Concepts about VLANs and the gateway appliance's role
 A VLAN (virtual LAN) is a mechanism that segregates a physical network into many virtual segments. For convenience, traffic from multiple selected VLANs can be delivered through a single network cable, a process commonly called "trunking."
 
 vSRX is managed in two different interfaces: The vSRX server(s) and the Gateway Appliance fixture. The Gateway Appliance provides an interface (GUI and API) for selecting the VLANs you want to associate with your vSRX. Associating a VLAN with a Gateway Appliance reroutes (or "trunks") that VLAN and all of its subnets to your vSRX, giving you control over filtering, forwarding, and protection. Servers in an associated VLAN can only be reached from other VLANs by going through your vSRX; it is not possible to circumvent the vSRX unless you bypass or disassociate the VLAN.
