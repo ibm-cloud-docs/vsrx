@@ -34,3 +34,14 @@ With the vSRX gateway appliance, you can provision application and database serv
 
 ## Enterprise-grade Routing
 For multi-tiered applications on different isolated networks, the vSRX enables you to build connectivity between these networks with greater flexibility. You can set up dynamic routing using BGP, which allows you to announce your own public IP space to the IBM Cloud routers. BGP will also offer more flexibility for custom private network configurations when using a mix of tunnels and direct link solutions.
+
+## Concepts about VLANs and the gateway appliance's role
+A VLAN (virtual LAN) is a mechanism that segregates a physical network into many virtual segments. For convenience, traffic from multiple selected VLANs can be delivered through a single network cable, a process commonly called "trunking."
+
+vSRX is managed in two different interfaces: The vSRX server(s) and the Gateway Appliance fixture. The Gateway Appliance provides an interface (GUI and API) for selecting the VLANs you want to associate with your vSRX. Associating a VLAN with a Gateway Appliance reroutes (or "trunks") that VLAN and all of its subnets to your vSRX, giving you control over filtering, forwarding, and protection. Servers in an associated VLAN can only be reached from other VLANs by going through your vSRX; it is not possible to circumvent the vSRX unless you bypass or disassociate the VLAN.
+
+By default, a new Gateway Appliance is associated with two non-removable "transit" VLANs, one each for your _public_ and _private_ networks. These networks typically are used for administration, and they can be secured by vSRX commands separately.
+
+The vSRX can only manage VLANs that are associated with it through the Gateway Appliance.
+
+For information on how to manage VLANs from the **Gateway Appliances Details** screen, refer to the [Manage VLANs](manage-vlans.html) topic.
