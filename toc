@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="vsrx" audience="network" href="/docs/infrastructure/vsrx/about.html"}
-IBM Cloud Juniper vSRX Standard 
+IBM Cloud Juniper vSRX Standard
 
     {: .navgroup id="learn"}
     getting-started.md
@@ -24,21 +24,21 @@ IBM Cloud Juniper vSRX Standard
     os-reload.md
 
     {: .topicgroup}
-    Step-by-step: How to Allow SSH and Pinging to a Public Subnet
+    Step-by-step
         ssh-guide.md
         ssh-create-interface.md
         ssh-create-flows.md
         ssh-check-output.md
-
+    
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    known-limitations.md
     vsrx-release-notes.md
     [IBM Cloud IP Ranges](../../infrastructure/hardware-firewall-dedicated/ips.html)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
+    known-limitations.md
     vsrx-docs.md
     getting-help.md
     {: .navgroup-end}

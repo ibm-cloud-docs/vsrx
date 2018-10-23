@@ -15,7 +15,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Performing vSRX Basics
-The IBM Cloud Juniper vSRX gateway can be configured using a remote console session through SSH or by logging into the Juniper web management GUI.
+The IBM® Cloud Juniper vSRX gateway can be configured using a remote console session through SSH or by logging into the Juniper web management GUI.
 
 **NOTE:** Configuring the vSRX outside of its shell and interface may produce unexpected results and is not recommended.
 

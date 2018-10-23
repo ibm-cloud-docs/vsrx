@@ -20,7 +20,7 @@ The OS Reload process is used to rebuild a gateway server. The process performs 
 * Reload the server host's operating system
 * Install KVM in the operating system
 * Create a vSRX VM in the KVM
-* Reconfigure the vSRX with the default configuration for IBM Cloud
+* Reconfigure the vSRX with the default configuration for IBM® Cloud
 
 The process usually requires 1 hour 40 minutes to complete. Standalone Gateways will be out of service during this period. For Juniper High Availability (HA) Gateways, when you reload the OS on one of your servers, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the reload is complete, the server will rejoin the cluster.
 

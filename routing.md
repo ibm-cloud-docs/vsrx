@@ -15,7 +15,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Working with Routing
-The IBM Cloud Juniper vSRX is based on `JunOS`, giving you access to the full Juniper routing stack.
+The IBM® Cloud Juniper vSRX is based on `JunOS`, giving you access to the full Juniper routing stack.
 
 ##Static Routing
 To configure static routes, run the following commands:

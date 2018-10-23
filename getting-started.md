@@ -16,7 +16,7 @@ lastupdated: "2018-10-22"
 
 # Getting Started
 
-To get started with IBM Cloud Juniper vSRX Gateway, you should first determine if your account is linked to IBM Cloud. If so, this will slightly alter the ordering process.
+To get started with IBM® Cloud Juniper vSRX Gateway, you should first determine if your account is linked to IBM Cloud. If so, this will slightly alter the ordering process.
 
 To find out if you have a linked account, navigate to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} in your browser and log in. If your account is unlinked, you will see a **Learn more about Bluemix!** button at the top right.
 
