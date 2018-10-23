@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2018-10-23"
 
 ---
 
@@ -24,9 +24,9 @@ To find out whether you have a linked account, navigate to the [Customer Portal 
 
 ## Steps for ordering
 
-You can order your Gateway Appliance, using one these methods:
+You can order your Gateway Appliance, using one of these methods:
 
-**NOTE:** For a list of Known Limitations with IBM Cloud Juniper vSRX Gateway, refer to [the Known Limiations topic](known-limitations.html).
+**NOTE:** For a list of Known Limitations with IBM Cloud Juniper vSRX Gateway, refer to [the Known Limitations topic](known-limitations.html).
 
 ### Ordering with a linked account
 If your account is linked, follow this procedure:
