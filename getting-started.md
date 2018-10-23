@@ -27,7 +27,7 @@ You can now order your Gateway Appliance, using the appropriate method that foll
 ## Ordering with a linked account
 If your account is linked, perform the following procedure:
 
-1.	Open [IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/){: new_window} and log into your account.
+1.	Open [IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.bluemix.net/){: new_window} and log into your account.
 2.	In the left side navigation, select **Infrastructure > Network > Gateway Appliances**.
 3.	From the Gateway Appliances list page, click **Create a Gateway**.
 4.	From the Order page, choose a **Hostname** and **Domain** and then select the **High Availability Pair** option if desired.
