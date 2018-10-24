@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="vsrx" audience="network" href="/docs/infrastructure/vsrx/about.html" path="infrastructure/vsrx"}
+{: .toc subcollection="vsrx" audience="network" arm="4133342" href="/docs/infrastructure/vsrx/about.html" path="infrastructure/vsrx"}
 IBM Cloud Juniper vSRX Standard
 
     {: .navgroup id="learn"}
