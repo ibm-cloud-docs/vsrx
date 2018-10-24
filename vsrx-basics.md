@@ -27,8 +27,11 @@ You can access the vSRX using SSH through a public IP address, or through a priv
 
 <img src="images/basics.png" alt="drawing" style="width: 700px;"/>
 
-2. Run the command `ssh admin@<gateway-ip>`. Enter password of `admin` when it's prompted.
+2. Click the "eye" icon to reveal the admin user's password. 
 
+3. Run the command `ssh admin@<gateway-ip>`, then enter the admin user's password.
+
+**NOTE:** If you do not see the "eye" icon, you may not have permission to view the password. Please check your access permissions with the account owner.
 
 ## Accessing the Configuration Mode
 
@@ -49,13 +52,13 @@ The Juniper web management GUI has been configured by default, with vSRX generat
 
 ![Gateway Appliance HA Details](images/vSRX-webui.png)
 
+## Accessing the Device using the VIRSH Console
 
-## Accessing the Device using the virsh console
+You can also access the vSRX from the gateway server Operating System:
 
-You can also access the vSRX from the gateway server Operating System (OS):
-1. Log on your gateway server by running the command `ssh root@<server-ip>`.
-2. Run thre command `virsh list` to find your vSRX VM name.
-3. Run the command `virsh console <your vSRXvM name>`.
+1. Log onto your gateway server by running the command `ssh root@<server-ip>`.
+2. Run the command `virsh list` to find your vSRX VM name.
+3. Run the command `virsh console <your vSRX VM name>`.
 
 ## Creating system users
 

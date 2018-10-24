@@ -680,7 +680,6 @@ The following table illustrates the network interface definitions for the previo
 | fxp0          |   Management interface        |
 | lo0           |   loopback interface          |
 
-
 In addition, two redundancy groups are configured. The following table illustrates these redundancy groups:
 
 | Redundancy Group   |  Redundancy Group  Function      |
