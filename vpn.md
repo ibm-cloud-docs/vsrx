@@ -234,6 +234,17 @@ policy VPN-to-Custprivate {
     }
 }
 ```
+## Performance Consideration
+In order to achieve the best IPSEC VPN performance, use AES-GCM as the encryption algorithm for both IKE and IPSEC proposals. 
+
+For example:
+
+```
+set security ike proposal IKE-PROP encryption-algorithm aes-128-gcm
+set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
+```
+
+With AES-GCM as the encryption algorithm, you don't need to specify the authentication algorithm in the same proposal. AES-GCM provides both encryption and authentication.
 
 ## Additional VPN configurations
 To configure IPSEC VPN, site to site, remote access VPN, and other features, refer to this [configuration guide](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf) from Juniper.

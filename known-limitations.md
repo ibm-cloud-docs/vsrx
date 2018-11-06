@@ -20,8 +20,6 @@ Current limitations for {{site.data.keyword.cloud}} IBM® Cloud Juniper vSRX:
 
 * Juniper vSRX Gateway is deployed with networking virtualization using Linux Bridge. Linux Bridge based networking virtualization can only achieve limited throughput and never line-rate throughput.
 
-* Only 1Gbps license and interfaces are supported on Juniper vSRX. 10Gbps support is coming soon.
-
 * There is no support to upgrade from Standalone to High-availability mode.
 
 * IBM Cloud Juniper vSRX Gateway is deployed with Junos OS version `15.1X49-D123`. Currently, there is no support for upgrading to a different version.
