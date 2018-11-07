@@ -57,8 +57,8 @@ If your account is unlinked, follow this procedure:
 3.	From the **Gateway Appliances** list, click **Order Gateway**.
 4.	From the **Order** page, select your desired data center from the dropdown menu, then choose the desired type of server hardware on which the Juniper vSRX will be provisioned.
 5.	On the **Order** page, select the **High Availability Pair** option if desired, then select the **Memory** size.
-6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server. 
-7. 	Finally, select the desired network uplink speed.
+6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server. Select **Juniper vSRX 15.x (up to 10 Gbps) Standard** for dual processor server.
+7. 	Finally, select the desired network uplink speed. Be sure to select 10 Gbps for dual processor server selection.
 8.	Review your selections, then click **Add to Order**. Your order will be verified automatically.
 9.	On the **Checkout** page, if you already own VLANs in the selected data center, select the back-end VLANs that you want to protect. Be sure to:
 	* Give a hostname and domain name for your server 
