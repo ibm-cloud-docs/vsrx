@@ -13,7 +13,7 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Confirm the Output and Commit the Changes
+# Confirming the Output and Commiting the Changes
 After the changes and additions you've made have been staged, run the following command to confirm what will be committed to the active configuration:
 
 ```
@@ -93,4 +93,4 @@ After you check that the configuration is correct, run the `commit` command to p
 
 Your IBM Cloud Juniper vSRX Standard is now configured to route and filter traffic to the new VLAN and subnet, allowing only inbound pings and SSH connections. 
 
-You should now route the vlan as shown in [Manage VLANs](manage-vlans.html) to begin using the new functionality.
+You should now route the VLAN as shown in [Manage VLANs](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) to begin using the new functionality.

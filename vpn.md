@@ -247,6 +247,6 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 With AES-GCM as the encryption algorithm, you don't need to specify the authentication algorithm in the same proposal. AES-GCM provides both encryption and authentication.
 
 ## Additional VPN configurations
-To configure IPSEC VPN, site to site, remote access VPN, and other features, refer to this [configuration guide](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf) from Juniper.
+To configure IPSEC VPN, site to site, remote access VPN, and other features, refer to this [configuration guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} from Juniper.
 
-For an example of how to configure a route-based site to site IPSEC VPN, refer to this [configuration guide](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html) from Juniper.
+For an example of how to configure a route-based site to site IPSEC VPN, refer to this [configuration guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} from Juniper.
