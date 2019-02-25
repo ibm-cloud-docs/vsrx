@@ -23,7 +23,7 @@ This topic describes how to initiate failover from your primary gateway device t
 
 To do so, perform the following procedure:
 
-1. Login to your primary vSRX gateway device. 
+1. Login to your primary vSRX gateway device.
 
 2. Enter CLI mode by running the command `cli` at the console prompt. When you enter CLI mode, the console displays the node role, either `primary` or `secondary`.
 
@@ -32,7 +32,7 @@ To do so, perform the following procedure:
 2. On the primary vSRX gateway device, run the command:
 
 	```
-	show chassis cluster status 
+	show chassis cluster status
 	```
 	The output should be similar to the following:
 
@@ -45,20 +45,20 @@ To do so, perform the following procedure:
 		NH  Nexthop monitoring          NP  NPC monitoring
 		SP  SPU monitoring              SM  Schedule monitoring
 		CF  Config Sync monitoring
-	
+
 	Cluster ID: 2
 	Node   Priority Status         Preempt Manual   	Monitor-failures
-	
+
 	Redundancy group: 0 , Failover count: 1
 	node0  100      primary        no      no       None
-	node1  1        secondary      no      no       None	
+	node1  1        secondary      no      no       None
 	Redundancy group: 1 , Failover count: 1
 	node0  100      primary        yes     no       None
 	node1  1        secondary      yes     no       None
-	
+
 	{primary:node0}
 	```
-	
+
 	Ensure that for both redundancy groups, the same node is set as `primary`. It is possible for different nodes to be set as the `primary` role in different redundancy groups.
 
 3. Initiate failover by running the following command in the console prompt:

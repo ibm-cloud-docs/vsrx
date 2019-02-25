@@ -27,7 +27,7 @@ Perform the following procedure to reclaim your gateway:
 
 	![Hardware Server](images/os_hardware.png)
 
-	Before reclaiming a gateway, make sure all protected VLANs have been [disassociated](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) from it. 
+	Before reclaiming a gateway, make sure all protected VLANs have been [disassociated](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) from it.
 
 3. On the device's page, click **Cancel Device** in the Action drop down menu to access the Server Configuration page.  
 

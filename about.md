@@ -24,12 +24,12 @@ The IBM Cloud vSRX is offered in two different modes: standalone or High Availab
 **NOTE:** Additional documentation for IBM Cloud Juniper vSRX can be found in the [Supplemental Documentation](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation) topic.
 
 ## Firewall
-The vSRX deploys to protect your environment from external and internal threats by filtering both private and public facing traffic. Customers can manage the vSRX themselves by defining policies and rules to allow or deny (among other actions) inbound or outbound network traffic, protecting their applications from internal and external users. Both IPv4 and IPv6 stacks are supported in a stateful manner. 
+The vSRX deploys to protect your environment from external and internal threats by filtering both private and public facing traffic. Customers can manage the vSRX themselves by defining policies and rules to allow or deny (among other actions) inbound or outbound network traffic, protecting their applications from internal and external users. Both IPv4 and IPv6 stacks are supported in a stateful manner.
 
 ## Virtual Private Network (VPN) Gateway
 Connect your on-site data center or office to the IBM Cloud using VPN tunneling by provisioning your vSRX as a network gateway device. You can use an IPsec site-to-site VPN tunnel for secure communication from your enterprise data center or office to your IBM Cloud network. Remote access IPSEC VPN is also supported.
 
-For a detailed configuration guide on VPN, please refer to the links provided in the topic [VPN](/docs/infrastructure/vsrx?topic=vsrx-working-with-vpn#working-with-vpn).
+For a detailed configuration guide on VPN, please refer to the links provided in the topic [VPN](/docs/infrastructure/vsrx?topic=vsrx-working-with-vpn#working-with-vpn).
 
 ## Network Address Translation (NAT)
 With the vSRX gateway appliance, you can provision application and database servers without public network interfaces while still allowing your servers to access the Internet using Source NAT. You can also hide your servers behind the gateway device with Destination NAT for enhanced security.

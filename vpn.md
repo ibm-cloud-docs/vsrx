@@ -237,7 +237,7 @@ policy VPN-to-Custprivate {
 }
 ```
 ## Performance Consideration
-In order to achieve the best IPSEC VPN performance, use AES-GCM as the encryption algorithm for both IKE and IPSEC proposals. 
+In order to achieve the best IPSEC VPN performance, use AES-GCM as the encryption algorithm for both IKE and IPSEC proposals.
 
 For example:
 

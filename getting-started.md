@@ -61,10 +61,10 @@ If your account is unlinked, follow this procedure:
 1.	Open the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
 2.	In the Customer Portal navigation, select **Network > Gateway Appliances**.
 3.	From the **Gateway Appliances** list, click **Order Gateway**.
-4.	From the **Order** page, select your desired data center from the dropdown menu, then choose the desired type of server hardware on which the Juniper vSRX will be provisioned. 
+4.	From the **Order** page, select your desired data center from the dropdown menu, then choose the desired type of server hardware on which the Juniper vSRX will be provisioned.
 
 	If you plan to use a Dual Processor Multi-Core Server, you must select **Intel Xeon 5120** as the server type. {:note}
-	
+
 5.	On the **Order** page, select the **High Availability Pair** option if desired, then select the **Memory** size.
 6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server, or **Juniper vSRX 15.x (up to 10 Gbps) Standard** for a dual processor server.
 7. 	Finally, select the desired network uplink speed.
