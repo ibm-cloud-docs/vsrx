@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # About IBM Cloud Juniper vSRX
+{: #about-ibm-cloud-juniper-vsrx}
+
 IBM® Cloud Juniper vSRX allows you to selectively route private and public network traffic through a full-featured enterprise level firewall that is powered by JunOS software features, such as full routing stacks, QoS and traffic sharing, policy-based routing, and VPN. The vSRX provides performance, ease of configuration and maintenance advantages with the simplicity of running on a bare metal server. The hardware is sized to handle the routing/security load for multiple VLANs and can be ordered with redundant network links and redundant RAID arrays. All vSRX features are customer-managed.
 
 The IBM Cloud vSRX is offered in two different modes: standalone or High Availability (HA) cluster.

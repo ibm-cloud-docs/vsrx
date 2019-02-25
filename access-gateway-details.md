@@ -15,6 +15,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Viewing Your Gateway Appliance Details
+{: #viewing-your-gateway-appliance-details}
 
 Network Gateway is used to control network traffic on a VLAN that is regularly controlled by a router. Within the Gateway Appliance Details screen on the Customer Portal, you can associate, disassociate, route and bypass VLANs with a Network Gateway.
 

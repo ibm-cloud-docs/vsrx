@@ -15,6 +15,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Getting Help and Support for IBM Cloud Juniper vSRX
+{: #getting-help-and-support-for-ibm-cloud-juniper-vsrx}
 
 If you have problems or questions when using IBM® Cloud Juniper vSRX Standard, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
 

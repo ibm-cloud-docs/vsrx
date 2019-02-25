@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Reloading an Migrating the OS
+# Reloading and Migrating the OS
+{: #reloading-an-migrating-the-os}
+
 The OS Reload process is used to rebuild a gateway server. The process performs the following actions:
 
 * Reload the server host's operating system

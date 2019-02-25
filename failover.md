@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Working with Failover
+{: #working-with-failover}
+
 **NOTE:** This section is only applicable if your Juniper vSRX gateway devices are provisioned in High-Availability mode.
 
 This topic describes how to initiate failover from your primary gateway device to a backup device, so that all control and data plane traffic is routed through the secondary gateway device after failover.

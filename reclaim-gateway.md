@@ -17,6 +17,7 @@ lastupdated: "2018-11-06"
 {:note: .note}
 
 # Reclaiming a Gateway
+{: #reclaiming-a-gateway}
 
 Perform the following procedure to reclaim your gateway:
 

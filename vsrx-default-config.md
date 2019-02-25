@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Understanding the vSRX Default Configuration
+{: #understanding-the-vsrx-default-configuration}
+
 Juniper vSRX gateway devices in IBM Cloud come with following default configuration:
 
 * SSH and Ping are permitted on both vSRX public and private gateway IP addresses
