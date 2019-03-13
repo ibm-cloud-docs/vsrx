@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Working with Routing
+{: #working-with-routing}
+
 The IBM® Cloud Juniper vSRX is based on `JunOS`, giving you access to the full Juniper routing stack.
 
 ##Static Routing
@@ -61,4 +63,4 @@ In this example, BGP is configured for the following:
 * To peer with a neighbor that belongs to `AS 65002`
 * Peer neighbor IP `2.2.2.2`
 
-Additional configurations can be found [here](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf).
+Additional configurations can be found on the [Juniper website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf){: new_window}.

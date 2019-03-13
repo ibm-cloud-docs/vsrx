@@ -1,0 +1,45 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="vsrx" audience="network" arm="4133342" href="/docs/infrastructure/vsrx/about.html" path="infrastructure/vsrx"}
+IBM Cloud Juniper vSRX Standard
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    about.md
+    [Explore Firewalls](../../infrastructure/fortigate-10g/explore-firewalls.html)
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    access-gateway-appliances.md
+    access-gateway-details.md
+    vsrx-basics.md
+    vsrx-default-config.md
+
+    {: .topicgroup}
+    Step-by-step: How to Allow SSH and Pinging to a Public Subnet
+        ssh-guide.md
+        ssh-create-interface.md
+        ssh-create-flows.md
+        ssh-check-output.md
+
+    manage-vlans.md
+    firewalls.md
+    nat.md
+    failover.md
+    routing.md
+    vpn.md
+    os-reload.md
+    reclaim-gateway.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    vsrx-release-notes.md
+    [IBM Cloud IP Ranges](../../infrastructure/hardware-firewall-dedicated/ips.html)
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    known-limitations.md
+    vsrx-docs.md
+    getting-help.md
+    {: .navgroup-end}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-23"
+lastupdated: "2018-11-07"
 
 ---
 
@@ -13,10 +13,13 @@ lastupdated: "2018-10-23"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
-# Getting Started
+# Getting Started With IBM Cloud Juniper vSRX Gateway
+{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
 
-To get started with the IBM® Cloud Juniper vSRX Gateway, first determine whether your account is linked to IBM Cloud. 
+To get started with the IBM® Cloud Juniper vSRX Gateway, first determine whether your account is linked to IBM Cloud.
 
 ## Before you begin
 
@@ -26,28 +29,31 @@ To find out whether you have a linked account, navigate to the [Customer Portal 
 
 You can order your Gateway Appliance, using one of these methods:
 
-**NOTE:** For a list of Known Limitations with IBM Cloud Juniper vSRX Gateway, refer to [the Known Limitations topic](known-limitations.html).
+For a list of Known Limitations with IBM Cloud Juniper vSRX Gateway, refer to the [Known Limitations topic](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
+{:note}
 
 ### Ordering with a linked account
 If your account is linked, follow this procedure:
 
-1.	Open the [IBM Cloud Console![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.bluemix.net/){: new_window} and log into your account.
-2.	In the left-side navigation, select **Infrastructure > Network > Gateway Appliances**.
+1.	Open the [IBM Cloud Console![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} and log into your account.
+2.	In the left navigation, select **Infrastructure > Network > Gateway Appliances**.
 3.	From the **Gateway Appliances** list, click **Create a Gateway**.
-4.	From the **Order** page, choose a **Hostname** and **Domain**.
-5.      Select the **High Availability Pair** option, if desired.
+4. To get started, first choose **Juniper vSRX 15.x (up to 1 Gbps)** or **Juniper vSRX 15.x (up to 10 Gbps)** under **Gateway Vendor**.
+5. Choose a **Hostname** and **Domain**.
+6. Select the **High Availability Pair** option, if desired.
 
 	<img src="images/linked_order.png" alt="drawing" style="width: 700px;"/>
 
-5. Next, select your **Location** and the associated **Pod**, then choose your **Server** and the desired amount of **RAM**.
+7. Next, select your **Location** and the associated **Pod**, then choose your **Server** and the desired amount of **RAM**. 
+
+Only pods that already have a VLAN set up in them will be shown here. If you wish to provision your Gateway Appliance in a pod you don't see listed, first create a VLAN there.{:note}
 
 	<img src="images/linked_server.png" alt="drawing" style="width: 600px;"/>
 
-6. Select a SSH Key if you want to use it to authenticate the access to your new Gateway.
-7. Under **Image**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server.
-8. Finish choosing any of the optional add-ons, add additional **Storage Disks**, and choose your **Uplink Port Speed**.
-8. Review your selections in the **Order Summary**, then read and agree to the Third-party Software Terms.
-9. Finally, click **Provision**.
+8. Select a **SSH Key** if you want to use it to authenticate the access to your new Gateway.
+9. Select any optional add-ons, add any additional **Storage Disks**, and choose your desired **Uplink Port Speed**.
+10. Review your selections in the **Order Summary**, then read and agree to the Third-party Software Terms.
+11. Finally, click **Provision**.
 
 ### Ordering with an unlinked account
 If your account is unlinked, follow this procedure:
@@ -56,14 +62,17 @@ If your account is unlinked, follow this procedure:
 2.	In the Customer Portal navigation, select **Network > Gateway Appliances**.
 3.	From the **Gateway Appliances** list, click **Order Gateway**.
 4.	From the **Order** page, select your desired data center from the dropdown menu, then choose the desired type of server hardware on which the Juniper vSRX will be provisioned.
+
+	If you plan to use a Dual Processor Multi-Core Server, you must select **Intel Xeon 5120** as the server type. {:note}
+
 5.	On the **Order** page, select the **High Availability Pair** option if desired, then select the **Memory** size.
-6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server. Select **Juniper vSRX 15.x (up to 10 Gbps) Standard** for dual processor server.
-7. 	Finally, select the desired network uplink speed. Be sure to select 10 Gbps for dual processor server selection.
+6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server, or **Juniper vSRX 15.x (up to 10 Gbps) Standard** for a dual processor server.
+7. 	Finally, select the desired network uplink speed.
 8.	Review your selections, then click **Add to Order**. Your order will be verified automatically.
 9.	On the **Checkout** page, if you already own VLANs in the selected data center, select the back-end VLANs that you want to protect. Be sure to:
-	* Give a hostname and domain name for your server 
-	* Select an SSH key for access authentication, if desired 
-	* Check all boxes for the IBM Cloud service terms and Third-party Software Terms 
+	* Give a hostname and domain name for your server
+	* Select a SSH key for access authentication, if desired
+	* Check all boxes for the IBM Cloud service terms and Third-party Software Terms
 10. Click **Submit Order**.
 
 ## What's next?

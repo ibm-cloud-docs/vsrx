@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Performing vSRX Basics
+# Performing IBM Cloud Juniper vSRX Basics
+{: #performing-ibm-cloud-juniper-vsrx-basics}
+
 The IBM® Cloud Juniper vSRX gateway can be configured using a remote console session through SSH or by logging into the Juniper web management GUI.
 
 **NOTE:** Configuring the vSRX outside of its shell and interface may produce unexpected results and is not recommended.
@@ -27,7 +29,7 @@ You can access the vSRX using SSH through a public IP address, or through a priv
 
   <img src="images/basics.png" alt="drawing" style="width: 700px;"/>
 
-2. Click the "eye" icon to reveal the admin user's password. 
+2. Click the "eye" icon to reveal the admin user's password.
 
 3. Run the command `ssh admin@<gateway-ip>`, then enter the admin user's password.
 
