@@ -35,25 +35,25 @@ For a list of Known Limitations with IBM Cloud Juniper vSRX Gateway, refer to th
 ### Ordering with a linked account
 If your account is linked, follow this procedure:
 
-1.	Open the [IBM Cloud Console![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.bluemix.net/){: new_window} and log into your account.
+1.	Open the [IBM Cloud Console![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} and log into your account.
 2.	In the left navigation, select **Infrastructure > Network > Gateway Appliances**.
 3.	From the **Gateway Appliances** list, click **Create a Gateway**.
-4. From the **Order** page, choose a **Hostname** and **Domain**.
-5. Select the **High Availability Pair** option, if desired.
+4. To get started, first choose **Juniper vSRX 15.x (up to 1 Gbps)** or **Juniper vSRX 15.x (up to 10 Gbps)** under **Gateway Vendor**.
+5. Choose a **Hostname** and **Domain**.
+6. Select the **High Availability Pair** option, if desired.
 
 	<img src="images/linked_order.png" alt="drawing" style="width: 700px;"/>
 
-5. Next, select your **Location** and the associated **Pod**, then choose your **Server** and the desired amount of **RAM**.
+7. Next, select your **Location** and the associated **Pod**, then choose your **Server** and the desired amount of **RAM**. 
 
-	If you plan to use a Dual Processor Multi-Core Server, you must select **Intel Xeon 5120** as the server type. {:note:}
+Only pods that already have a VLAN set up in them will be shown here. If you wish to provision your Gateway Appliance in a pod you don't see listed, first create a VLAN there.{:note}
 
 	<img src="images/linked_server.png" alt="drawing" style="width: 600px;"/>
 
-6. Select a SSH Key if you want to use it to authenticate the access to your new Gateway.
-7. Under **Image**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server, or **Juniper vSRX 15.x (up to 10 Gbps) Standard** for a dual processor server.
-8. Select any optional add-ons, add any additional **Storage Disks**, and choose your desired **Uplink Port Speed**.
-8. Review your selections in the **Order Summary**, then read and agree to the Third-party Software Terms.
-9. Finally, click **Provision**.
+8. Select a **SSH Key** if you want to use it to authenticate the access to your new Gateway.
+9. Select any optional add-ons, add any additional **Storage Disks**, and choose your desired **Uplink Port Speed**.
+10. Review your selections in the **Order Summary**, then read and agree to the Third-party Software Terms.
+11. Finally, click **Provision**.
 
 ### Ordering with an unlinked account
 If your account is unlinked, follow this procedure:
