@@ -33,11 +33,15 @@ To reload the OS for a gateway server, perform the following procedure:
 
 1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the Customer Portal, and navigate to the Gateway details page by selecting desired Gateway name.
 
+  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
+
 2. Click the server name in the Hardware Panel.
-![Hardware Server](images/os_hardware.png)
+
+  ![Hardware Server](images/os_hardware.png)
 
 3. On the device's page, click **OS Reload** in the Action drop down menu to access the Server Configuration page.
-![Device Details](images/os_device_page.png)
+
+  ![Device Details](images/os_device_page.png)
 
 4. On the Server Configuration page, you can configure and start the reload. If you're reloading from a different OS, click the **Edit** next to **Operating System**, select **Juniper**, then pick one of the Juniper vSRX 15.x Standard options. When you are done modifying your settings, select **Reload Above Configuration** to continue.
 

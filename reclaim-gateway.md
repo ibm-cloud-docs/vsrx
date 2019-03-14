@@ -23,6 +23,8 @@ Perform the following procedure to reclaim your gateway:
 
 1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the Customer Portal, and navigate to the Gateway Details page by selecting the desired gateway name.
 
+  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
+
 2. Click the server name in the Hardware Panel.
 
 	![Hardware Server](images/os_hardware.png)
