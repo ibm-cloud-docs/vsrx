@@ -61,8 +61,10 @@ To rebuild one of your HA vSRX clusters, perform the following procedure:
 
 1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the Customer Portal, and navigate to the Gateway details page by selecting the desired HA Gateway name.
 
-2. Click **Rebuild Cluster** in the vSRX Panel.
-![Rebuild Cluster](images/rebuild_cluster.png)
+2. Click the **Actions** dropdown and select **Rebuild Cluster**.
+
+  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
 
 3. Carefully read the warning message. The operation to rebuild a cluster is destructive. If you wish to proceed, save your vSRX configuration before clicking **Rebuild** to start the process.
-![Confirm Rebuild Cluster](images/rebuild_cluster_confirm.png)
+
+  ![Confirm Rebuild Cluster](images/rebuild_cluster_confirm.png)
