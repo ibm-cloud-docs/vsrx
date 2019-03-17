@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: manage, managing, vlan, gateway, route, bypass, disassociate, associate, configuration, disassociating, associating, standalone, ha
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

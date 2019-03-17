@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: basics, performing, accessing, ssh, device, gateway, configuration, mode, juniper, ui, dns, htp, password
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

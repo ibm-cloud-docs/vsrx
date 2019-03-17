@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: create, creating, interface, zone, address, subnets, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

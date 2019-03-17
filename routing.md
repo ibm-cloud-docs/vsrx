@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, routing, static, default, creating, ospf, bgp
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

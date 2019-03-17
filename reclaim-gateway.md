@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: reclaiming, gateway, appliances
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

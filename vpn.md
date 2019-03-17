@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: working, vpn, sample, configuration
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

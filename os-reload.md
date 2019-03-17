@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: reloading, migrating, os, upgrading, kvm, ha, standalone
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

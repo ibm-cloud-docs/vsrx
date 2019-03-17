@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-07"
 
+keywords: vsrx, ordering, gateway, appliance
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}

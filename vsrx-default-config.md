@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: understanding, default, configuration, standalone, ha
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
