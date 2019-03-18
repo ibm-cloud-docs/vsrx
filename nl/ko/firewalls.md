@@ -15,17 +15,19 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # 방화벽 관련 작업
-IBM® Cloud Juniper vSRX는 보안 구역의 개념을 사용합니다. 여기서, 각 vSRX 인터페이스는 Stateful 펌웨어를 처리하기 위해 "구역"으로 맵핑됩니다. Stateless 방화벽은 방화벽 필터로 제어됩니다. 
+{: #working-with-firewalls}
 
-정책은 이 정의된 구역 간의 트래픽을 허용하고 차단하는 데 사용되며, 여기에 정의된 규칙은 Stateful입니다. 
+IBM® Cloud Juniper vSRX는 보안 구역의 개념을 사용합니다. 여기서, 각 vSRX 인터페이스는 Stateful 펌웨어를 처리하기 위해 "구역"으로 맵핑됩니다. Stateless 방화벽은 방화벽 필터로 제어됩니다.
 
-IBM Cloud에서 vSRX는 다음 네 가지 보안 구역을 갖추도록 설계되었습니다. 
+정책은 이 정의된 구역 간의 트래픽을 허용하고 차단하는 데 사용되며, 여기에 정의된 규칙은 Stateful입니다.
 
-| 구역                     | 독립형 인터페이스    | HA 인터페이스|
+IBM Cloud에서 vSRX는 다음 네 가지 보안 구역을 갖추도록 설계되었습니다.
+
+| 구역                     | 독립형 인터페이스 | HA 인터페이스 |
 | :---                     |        :----:        |         ---: |
-| SL-Private(태그로 지정됨 )  | ge-0/0/0.0           | reth0.0      |
-| SL-Public(태그로 지정되지 않음) | ge-0/0/1.0           | reth1.0      |
-| Customer-Private(태그로 지정됨) | ge-0/0/0.1           | reth2.1      |
+| SL-Private(태그로 지정됨 )    | ge-0/0/0.0           | reth0.0      |
+| SL-Public(태그로 지정되지 않음)     | ge-0/0/1.0           | reth1.0      |
+| Customer-Private(태그로 지정됨)| ge-0/0/0.1           | reth2.1      |
 | Customer-Public(태그로 지정되지 않음) | ge-0/0/1.1           | reth3.1      |
 
 ## 구역 정책
@@ -60,7 +62,7 @@ Stateful 방화벽을 구성하려면 다음 프로시저를 수행하십시오.
 * 애플리케이션
 * 조치(허용/거부/거절/계수/로그)
 
-이는 Stateful 오퍼레이션이므로 리턴 패킷을 허용할 필요가 없습니다(해당 경우, 에코에서 응답됨). 
+이는 Stateful 오퍼레이션이므로 리턴 패킷을 허용할 필요가 없습니다(해당 경우, 에코에서 응답됨).
 
 vSRX로 이동되는 트래픽을 허용하려면 다음 명령을 사용하십시오.
 

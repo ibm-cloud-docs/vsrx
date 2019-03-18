@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # Ausgabe bestätigen und Änderungen festschreiben
+{: #confirming-the-output-and-commiting-the-changes}
+
 Wenn die von Ihnen vorgenommenen Änderungen und Zusätze zwischengespeichert wurden, führen Sie den folgenden Befehl aus, um zu bestätigen, was für die aktive Konfiguration festgeschrieben werden soll:
 
 ```
@@ -93,4 +95,4 @@ Führen Sie nach der Überprüfung der Richtigkeit der Konfiguration den Befehl 
 
 Ihre Komponente Juniper vSRX Standard für IBM Cloud ist nun so konfiguriert, dass Datenverkehr an das neue VLAN und das neue Teilnetz weitergeleitet und gefiltert wird; dabei werden nur eingehende Pingbefehle und SSH-Verbindungen zugelassen. 
 
-Sie sollten das VLAN nun wie in [VLANs verwalten](manage-vlans.html) gezeigt weiterleiten, um die neue Funktionalität in Betrieb zu nehmen.
+Sie sollten das VLAN nun wie in [VLANs verwalten](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) gezeigt weiterleiten, um die neue Funktionalität in Betrieb zu nehmen.

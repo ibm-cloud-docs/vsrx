@@ -15,6 +15,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Visualización de todos los dispositivos de pasarela
+{: #viewing-all-your-gateway-appliances}
 
 En la pantalla de dispositivos de pasarela del Portal de clientes puede visualizar y acceder a todos los dispositivos de pasarela de red, incluido IBM® Cloud Juniper vSRX.  
 

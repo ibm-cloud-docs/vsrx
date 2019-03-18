@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Cómo trabajar con la migración tras error
+{: #working-with-failover}
+
 **NOTA:** esta sección solo se aplica si los dispositivos de pasarela Juniper vSRX se suministran en modalidad de alta disponibilidad.
 
 En este tema se describe cómo iniciar una migración tras error desde el dispositivo de pasarela primario a un dispositivo de copia de seguridad, de modo que todo el tráfico de control y del plano de datos se direccione mediante el dispositivo de pasarela secundario después de la migración tras error.
@@ -74,4 +76,4 @@ a la siguiente:
 
 **NOTA:** cuando entra en la modalidad de CLI en el dispositivo de pasarela Juniper vSRX, la salida se mostrará como `primary` desde la perspectiva del plano de control. Compruebe siempre la salida de `show chassis cluster status` para
 determinar qué dispositivo de pasarela es el primario desde la perspectiva del plano de datos. Consulte el apartado sobre [Configuración
-predeterminada de vSRX](vsrx-default-config.html) para obtener más información sobre los grupos de redundancia, así como los planos de control y de datos.
+predeterminada de vSRX](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) para obtener más información sobre los grupos de redundancia, así como los planos de control y de datos.

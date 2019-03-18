@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Erneutes Laden/Migration des Betriebssystems
+# Betriebssystem erneut laden und migrieren
+{: #reloading-an-migrating-the-os}
+
 Der Prozess zum erneuten Laden des Betriebssystems wird verwendet, um einen Gateway-Server erneut zu erstellen. Bei dem Prozess werden folgende Aktionen ausgeführt:
 
 * Betriebssystem des Server-Hosts erneut laden
@@ -29,7 +31,7 @@ Das Ausführen des Prozesses dauert in der Regel 1 Stunde und 40 Minuten. Eigens
 ## Erneutes Laden des Betriebssystems ausführen
 Führen Sie das folgende Verfahren aus, um das Betriebssystem für einen Gateway-Server erneut zu laden:
 
-1. [Rufen Sie die Anzeige für die Gateway-Appliances auf](access-gateway-appliances.html), die sich im Kundenportal befindet, und navigieren Sie zur Seite mit den Gateway-Details, indem Sie den Namen des gewünschten Gateways auswählen.
+1. [Rufen Sie die Anzeige für die Gateway-Appliances auf](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances), die sich im Kundenportal befindet, und navigieren Sie zur Seite mit den Gateway-Details, indem Sie den Namen des gewünschten Gateways auswählen.
 
 2. Klicken Sie in der Hardwareanzeige auf den Servernamen.
 ![Hardware-Server](images/os_hardware.png)
@@ -46,14 +48,14 @@ Führen Sie das folgende Verfahren aus, um das Betriebssystem für einen Gateway
 ## Migration von einem Vyatta/VRA-Server (VRA – Virtual Router Appliance) auf eine Juniper vSRX-Komponente mithilfe des erneuten Ladens des Betriebssystems ausführen
 Wenn Sie ein erneutes Laden für einen eigenständigen Vyatta-Server ausführen, wird eine eigenständige Juniper vSRX-Komponente bereitgestellt, wenn das erneute Laden des Betriebssystems abgeschlossen ist. Es werden dieselben IP-Adressen des Gateways verwendet und das Kennwort für den Rootbenutzer auf dem Host-Server (sowie das Kennwort für den Benutzer mit Verwaltungsaufgaben und den Rootbenutzer in der vSRX-Komponente) wird zurückgesetzt.
 
-Wenn Sie Vyatta-Server mit Hochverfügbarkeit erneut laden, müssen Sie den Befehl `Betriebssystem erneut laden` auf beiden Servern ausführen. Dadurch wird Ubuntu 16.04 installiert. Verwenden Sie als Nächstes die Option zum erneuten Erstellen eines Clusters (Details finden Sie im folgenden Abschnitt), um die vSRX-Komponente bereitzustellen und den Hochverfügbarkeitscluster zu erstellen. Es werden dieselben IP-Adressen des Gateways verwendet wie bei einer eigenständigen vSRX-Komponente und das zum Rootbenutzer gehörige Kennwort auf dem Host-Server (genauso wie das Kennwort für den Benutzer mit Verwaltungsaufgaben und den Rootbenutzer in der vSRX-Komponente) wird zurückgesetzt.
+Wenn Sie Vyatta-Server mit Hochverfügbarkeit erneut laden, müssen Sie auf beiden Servern ein erneutes Laden des Betriebssystems durchführen. Dadurch wird Ubuntu 16.04 installiert. Verwenden Sie als Nächstes die Option zum erneuten Erstellen eines Clusters (Details finden Sie im folgenden Abschnitt), um die vSRX-Komponente bereitzustellen und den Hochverfügbarkeitscluster zu erstellen. Es werden dieselben IP-Adressen des Gateways verwendet wie bei einer eigenständigen vSRX-Komponente und das zum Rootbenutzer gehörige Kennwort auf dem Host-Server (genauso wie das Kennwort für den Benutzer mit Verwaltungsaufgaben und den Rootbenutzer in der vSRX-Komponente) wird zurückgesetzt.
 
 **Achtung:** Führen Sie ein erneutes Laden des Betriebssystems nicht auf nur einem einzigen Server des Vyatta-Hochverfügbarkeitsclusters aus. Das Vorhandensein zweier unterschiedlicher Betriebssysteme in einem einzigen Gateway-Hochverfügbarkeitscluster ist nicht unterstützt.
 
 ## vSRX-Hochverfügbarkeitscluster erneut erstellen
 Führen Sie das folgende Verfahren aus, um einen Ihrer vSRX-Hochverfügbarkeitscluster erneut zu erstellen:
 
-1. [Rufen Sie die Anzeige für die Gateway-Appliances auf](access-gateway-appliances.html), die sich im Kundenportal befindet, und navigieren Sie zur Seite mit den Gateway-Details, indem Sie den gewünschten Namen eines Gateways mit Hochverfügbarkeit auswählen.
+1. [Rufen Sie die Anzeige für die Gateway-Appliances auf](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances), die sich im Kundenportal befindet, und navigieren Sie zur Seite mit den Gateway-Details, indem Sie den gewünschten Namen eines Gateways mit Hochverfügbarkeit auswählen.
 
 2. Klicken Sie in der vSRX-Anzeige auf **Cluster erneut erstellen**.
 ![Cluster erneut erstellen](images/rebuild_cluster.png)

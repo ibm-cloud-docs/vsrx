@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Fonctionnement du routage
+{: #working-with-routing}
+
 IBM® Cloud Juniper vSRX s'appuie sur `JunOS` pour vous permettre d'accéder à l'ensemble de la pile de routage Juniper.
 
 ##Routage statique
@@ -61,4 +63,4 @@ Dans cet exemple, BGP est configuré pour :
 * Echanger avec un voisin qui appartient à `AS 65002`
 * Echanger avec l'IP voisin `2.2.2.2`
 
-D'autres configurations sont disponibles [ici](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf).
+Des configurations supplémentaires sont proposées sur le [site Web Juniper ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf){: new_window}.

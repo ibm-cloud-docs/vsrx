@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Trabalhando com firewalls
+{: #working-with-firewalls}
+
 O IBM® Cloud Juniper vSRX usa o conceito de zonas de segurança, em que cada interface do vSRX é mapeada para uma "zona" para manipulação de firewalls stateful. Os firewalls stateless são controlados por filtros de firewall.
 
 As políticas são usadas para permitir e bloquear o tráfego entre essas zonas definidas e as regras definidas aqui são stateful.

@@ -15,4 +15,6 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Notes sur l'édition d'IBM Cloud Juniper vSRX 
-Pour obtenir la liste des notes sur l'édition les plus récentes, visitez le [site Web de Juniper](https://www.juniper.net/support/downloads/?p=vsrx#docs).
+{: #ibm-cloud-juniper-vsrx-release-notes}
+
+Pour la liste des notes sur l'édition les plus récentes, voir le [site Web Juniper ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/product/en_US/vsrx){:new_window}.

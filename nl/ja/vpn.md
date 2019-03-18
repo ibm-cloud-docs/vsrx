@@ -15,7 +15,9 @@ lastupdated: "2018-11-06"
 {:download: .download}
 
 # VPN の操作
-このトピックでは、2 つのサイト間の経路ベース VPN のサンプル構成について詳しく説明します。このサンプルでは、構成サーバー 1 (サイト A) はサーバー 2 (サイト B) と通信でき、各サイトは 2 フェーズの IPSEC 認証を使用します。
+{: #working-with-vpn}
+
+このトピックでは、2 つのサイト間の経路ベース VPN のサンプル構成について詳しく説明します。 このサンプルでは、構成サーバー 1 (サイト A) はサーバー 2 (サイト B) と通信でき、各サイトは 2 フェーズの IPSEC 認証を使用します。
 
 <img src="images/site-to-site-vpn.png" alt="図面" style="width: 600px;"/>
 
@@ -235,7 +237,7 @@ policy VPN-to-Custprivate {
 }
 ```
 ## パフォーマンスの考慮
-IPSEC VPN のパフォーマンスを最大限に生かすには、IKE および IPSEC プロポーザルの両方の暗号化アルゴリズムとして AES-GCM を使用します。 
+IPSEC VPN のパフォーマンスを最大限に生かすには、IKE および IPSEC プロポーザルの両方の暗号化アルゴリズムとして AES-GCM を使用します。
 
 以下に例を示します。
 
@@ -244,9 +246,9 @@ set security ike proposal IKE-PROP encryption-algorithm aes-128-gcm
 set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 ```
 
-暗号化アルゴリズムとして AES-GCM を使用する場合、同じプロポーザルで認証アルゴリズムを指定する必要はありません。AES-GCM は、暗号化と認証の両方を提供します。
+暗号化アルゴリズムとして AES-GCM を使用する場合、同じプロポーザルで認証アルゴリズムを指定する必要はありません。 AES-GCM は、暗号化と認証の両方を提供します。
 
 ## 追加の VPN 構成
-IPSEC VPN、サイト間 VPN、リモート・アクセス VPN、およびその他の機能を構成するには、Juniper のこちらの[構成ガイド](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf)を参照してください。
+IPSEC VPN、サイト間 VPN、リモート・アクセス VPN、およびその他の機能を構成するには、Juniper のこちらの[構成ガイド![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window}を参照してください。
 
-経路ベースのサイト間 IPSEC VPN を構成する方法の例については、Juniper のこちらの[構成ガイド](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html)を参照してください。
+経路ベースのサイト間 IPSEC VPN を構成する方法の例については、Juniper のこちらの[構成ガイド![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window}を参照してください。

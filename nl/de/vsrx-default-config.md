@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Standardkonfiguration für vSRX verstehen
+{: #understanding-the-vsrx-default-configuration}
+
 Die Juniper vSRX-Gateway-Einheiten in IBM Cloud werden mit der folgenden Standardkonfiguration geliefert:
 
 * SSH und Ping sind sowohl für IP-Adressen des öffentlichen als auch des privaten vSRX-Gateways zulässig.
@@ -299,8 +301,8 @@ In der folgenden Tabelle sind die Netzschnittstellendefinitionen für die oben g
 | :---          |   :---         |
 | ge-0/0/0      |   Gigabit Ethernet-Schnittstelle für Transit-VLAN SL-PRIVATE |
 | ge-0/0/1      |   Gigabit Ethernet-Schnittstelle für Transit-VLAN SL-PUBLIC  |
-| fxp0          |   Managementschnittstelle     |
-| lo0           |   Loopback-Schnittstelle      |
+| fxp0          |   Managementschnittstelle        |
+| lo0           |   Loopback-Schnittstelle          |
 
 
 ## Standardkonfiguration für ein hoch verfügbares vSRX-Gateway (Beispiel)
@@ -666,7 +668,7 @@ firewall {
 
 In der folgenden Tabelle sind die Netzschnittstellendefinitionen für die oben gezeigte Konfiguration dargestellt:
 
-| Schnittstellenname    |  Schnittstellenfunktion      |
+| Schnittstellenname   |  Schnittstellenfunktion      |
 | :---          |    :---         |
 | ge-0/0/1 / ge-0/0/2   |  Gigabit Ethernet-Schnittstelle für privates VLAN auf dem primären Knoten |
 | ge-0/0/3 / ge-0/0/4   |  Gigabit Ethernet-Schnittstelle für öffentliches VLAN auf dem primären Knoten |
@@ -678,7 +680,7 @@ In der folgenden Tabelle sind die Netzschnittstellendefinitionen für die oben g
 | reth3         |   Redundante Ethernet-Schnittstelle für öffentliche VLANs von CUSTOMER   |
 | fab0 / fab1   |   Fabric-Link zum Gehäusecluster |
 | fxp0          |   Managementschnittstelle        |
-| lo0           |   Loopback-Schnittstelle         |
+| lo0           |   Loopback-Schnittstelle          |
 
 Darüber hinaus sind zwei Redundanzgruppen konfiguriert. In der folgenden Tabelle sind diese Redundanzgruppen dargestellt:
 

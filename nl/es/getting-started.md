@@ -16,19 +16,21 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Guía de inicio
+# Iniciación a IBM Cloud Juniper vSRX Gateway
+{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
 
 Para empezar a trabajar con IBM® Cloud Juniper vSRX Gateway, determine en primer lugar si su cuenta está enlazada a IBM Cloud.
 
 ## Antes de empezar
 
-Para averiguar si tiene una cuenta enlazada, vaya al [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo") ](https://control.softlayer.com/){: new_window} en el navegador e inicie una sesión. Si su cuenta no está enlazada, verá un botón **Más información sobre Bluemix** en la parte superior derecha.
+Para averiguar si tiene una cuenta enlazada, vaya al [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} en el navegador e inicie una sesión. Si su cuenta no está enlazada, verá un botón **Más información sobre Bluemix** en la parte superior derecha.
 
 ## Pasos para realizar la solicitud
 
 Puede solicitar su dispositivo de pasarela siguiendo uno de estos métodos:
 
-**NOTA:** para ver una lista de limitaciones conocidas de IBM Cloud Juniper vSRX Gateway, consulte el [tema sobre limitaciones conocidas](known-limitations.html).
+Para ver una lista de limitaciones conocidas de IBM Cloud Juniper vSRX Gateway, consulte el [tema sobre limitaciones conocidas](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
+{:note}
 
 ### Cómo realizar la solicitud con una cuenta enlazada
 Si la cuenta está enlazada, siga este procedimiento:
@@ -43,14 +45,14 @@ Si la cuenta está enlazada, siga este procedimiento:
 
 5. A continuación, seleccione su **Ubicación** y el **Pod** asociado y luego elija su **Servidor** y la cantidad de **RAM** que desee.
 
-	**NOTA:** si tiene intención de utilizar un servidor de varios núcleos y dos procesadores, debe seleccionar **Intel Xeon 5120** como tipo de servidor.
+	Si tiene intención de utilizar un servidor de varios núcleos y dos procesadores, debe seleccionar **Intel Xeon 5120** como tipo de servidor. {:note:}
 
 	<img src="images/linked_server.png" alt="dibujo" style="width: 600px;"/>
 
 6. Seleccione una clave SSH si desea utilizarla para autenticar el acceso a la nueva pasarela.
 7. En **Imagen**, seleccione **Juniper vSRX 15.x (hasta 1 Gbps) Estándar** para un servidor de un solo procesador o **Juniper vSRX 15.x (hasta 10 Gbps) Estándar** para un servidor de dos procesadores.
 8. Seleccione los complementos opcionales, añada los **Discos de almacenamiento** adicionales y elija la **Velocidad de puerto de enlace ascendente** que desee.
-8. Revise las selecciones en el ** Resumen del pedido** y lea y acepte las condiciones de software de terceros.
+8. Revise las selecciones en el **Resumen del pedido** y lea y acepte las condiciones de software de terceros.
 9. Finalmente, pulse **Suministrar**.
 
 ### Cómo realizar la solicitud con una cuenta no enlazada
@@ -59,10 +61,10 @@ Si la cuenta no está enlazada, siga este procedimiento:
 1.	Abra el [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta.
 2.	En la navegación del Portal de clientes, seleccione **Red > Dispositivos de pasarela**.
 3.	En la lista **Dispositivos de pasarela**, pulse **Solicitar pasarela**.
-4.	En la página **Pedido**, seleccione el centro de datos que desee en el menú desplegable y elija el tipo de hardware de servidor deseado en el que se suministrará Juniper vSRX. 
+4.	En la página **Pedido**, seleccione el centro de datos que desee en el menú desplegable y elija el tipo de hardware de servidor deseado en el que se suministrará Juniper vSRX.
 
-	**NOTA:** si tiene intención de utilizar un servidor de varios núcleos y dos procesadores, debe seleccionar **Intel Xeon 5120** como tipo de servidor.
-	
+	Si tiene intención de utilizar un servidor de varios núcleos y dos procesadores, debe seleccionar **Intel Xeon 5120** como tipo de servidor. {:note}
+
 5.	En la página **Pedido**, seleccione la opción **Par de alta disponibilidad** si lo desea y luego seleccione el tamaño de **Memoria**.
 6. 	Luego pulse el separador **Juniper** bajo **Sistema operativo**, seleccione **Juniper vSRX 15.x (hasta 1 Gbps) Estándar** para un servidor de un solo procesador o **Juniper vSRX 15.x (hasta 10 Gbps) Estándar** para un servidor de dos procesadores.
 7. 	Por último, seleccione la velocidad de enlace ascendente de red que desee.

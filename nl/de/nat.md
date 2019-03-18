@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Mit Network Address Translation (NAT, Netzadressumsetzung) arbeiten
+# Mit sNAT arbeiten
+{: #working-with-snat}
+
 In diesem Abschnitt wird eine Beispielkonfiguration für sNAT auf einer vSRX-Appliance bereitgestellt. Mit dieser Konfiguration kann ein privater Knoten, dessen Weiterleitung hinter dem Gateway erfolgt, mit der Außenwelt kommunizieren.
 
 <img src="images/Sample-Topology-SNAT.png" alt="Zeichnung" style="width: 500px;"/>
@@ -54,4 +56,4 @@ nat {
 }
 ```
 
-Ziehen Sie bei der Konfiguration von NAT für die Komponente Juniper vSRX für IBM® Cloud dieses [Konfigurationshandbuch](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf) zu Rate, das Sie auf der Juniper-Website finden.
+Ziehen Sie bei der Konfiguration von NAT für die Komponente Juniper vSRX für IBM® Cloud dieses [Konfigurationshandbuch ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} zurate, das Sie auf der Juniper-Website finden.

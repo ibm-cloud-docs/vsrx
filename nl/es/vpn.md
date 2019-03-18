@@ -15,6 +15,8 @@ lastupdated: "2018-11-06"
 {:download: .download}
 
 # Cómo trabajar con VPN
+{: #working-with-vpn}
+
 En este tema se muestra una configuración de ejemplo para una VPN basada en ruta entre dos sitios. En esta configuración de ejemplo, el Servidor 1 (Sitio A) se puede comunicar con el Servidor 2 (Sitio B), y cada sitio utiliza la autenticación IPSEC de dos fases.
 
 <img src="images/site-to-site-vpn.png" alt="dibujo" style="width: 600px;"/>
@@ -235,7 +237,7 @@ policy VPN-to-Custprivate {
 }
 ```
 ## Consideraciones sobre el rendimiento
-Para poder obtener el mayor rendimiento de IPSEC VPN, utilice AES-GCM como algoritmo de cifrado para propuestas IKE e IPSEC. 
+Para poder obtener el mayor rendimiento de IPSEC VPN, utilice AES-GCM como algoritmo de cifrado para propuestas IKE e IPSEC.
 
 Por ejemplo:
 
@@ -247,6 +249,6 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 Con AES-GCM como algoritmo de cifrado, no es necesario especificar el algoritmo de autenticación en la misma propuesta. AES-GCM proporciona tanto el cifrado como la autenticación.
 
 ## Configuraciones de VPN adicionales
-Para configurar la VPN IPSEC, sitio a sitio, la VPN de acceso remoto y otras características, consulte esta [guía de configuración](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf) de Juniper.
+Para configurar la VPN IPSEC, sitio a sitio, la VPN de acceso remoto y otras características, consulte esta [guía de configuración ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} de Juniper.
 
-Para ver un ejemplo de cómo configurar una VPN IPSEC de sitio a sitio basada en ruta, consulte esta [guía de configuración](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html) de Juniper.
+Para ver un ejemplo de cómo configurar una VPN IPSEC de sitio a sitio basada en ruta, consulte esta [guía de configuración ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} de Juniper.

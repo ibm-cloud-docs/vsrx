@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Cómo trabajar con cortafuegos
+{: #working-with-firewalls}
+
 IBM® Cloud Juniper vSRX utiliza el concepto de zonas de seguridad, donde cada interfaz vSRX está correlacionada con una "zona" para gestionar los cortafuegos con estado. Los cortafuegos sin estado se controlan mediante filtros de cortafuegos.
 
 Se utilizan políticas para permitir y bloquear el tráfico entre estas zonas definidas, y las reglas definidas aquí son con estado.

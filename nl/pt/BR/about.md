@@ -14,20 +14,22 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Sobre
+# Sobre o IBM Cloud Juniper vSRX
+{: #about-ibm-cloud-juniper-vsrx}
+
 O IBM® Cloud Juniper vSRX permite rotear seletivamente o tráfego de rede privada e pública por meio de um firewall de nível corporativo completo que é desenvolvido com recursos do software JunOS, como pilhas de roteamento integral, compartilhamento de tráfego e QoS, roteamento baseado em política e VPN. O vSRX fornece desempenho, facilidade de configuração e vantagens de manutenção com a simplicidade de execução em um servidor bare metal. O hardware é dimensionado para manipular o carregamento de roteamento/segurança para múltiplas VLANs e pode ser solicitado com links de rede redundantes e matrizes RAID redundantes. Todos os recursos do vSRX são gerenciados pelo cliente.
 
 O IBM Cloud vSRX é oferecido em dois modos diferentes: cluster independente ou de alta disponibilidade (HA).
 
-**NOTA:** a documentação adicional para o IBM Cloud Juniper vSRX pode ser localizada no tópico [Documentação suplementar](vsrx-docs.html).
+**NOTA:** a documentação adicional para o IBM Cloud Juniper vSRX pode ser localizada no tópico [Documentação suplementar](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation).
 
-##Firewall
+## Firewall
 O vSRX é implementado para proteger o ambiente de ameaças externas e internas, filtrando o tráfego privado e o público. Os próprios clientes podem gerenciar o vSRX definindo políticas e regras para permitir ou negar (entre outras ações) o tráfego de rede de entrada ou saída, protegendo seus aplicativos de usuários internos e externos. As pilhas IPv4 e IPv6 são suportadas de maneira stateful.
 
 ## Gateway de Rede Privada Virtual (VPN)
 Conecte o data center ou o escritório no site ao IBM Cloud usando o tunelamento de VPN, provisionando o vSRX como um dispositivo de gateway de rede. É possível usar um túnel VPN IPsec de site para site para comunicação segura do data center ou do escritório de sua empresa com a rede do IBM Cloud. A VPN IPSEC de acesso remoto também é suportada.
 
-Para obter um guia de configuração detalhado sobre a VPN, consulte os links fornecidos no tópico [VPN](vpn.html).
+Para obter um guia de configuração detalhado sobre a VPN, consulte os links fornecidos no tópico [VPN](/docs/infrastructure/vsrx?topic=vsrx-working-with-vpn#working-with-vpn).
 
 ## Conversão de Endereço de Rede (NAT)
 Com o dispositivo de gateway vSRX, é possível provisionar servidores de aplicativo e de banco de dados sem interfaces de rede pública e ainda permitir que os servidores acessem a Internet usando a NAT de origem. Também é possível ocultar seus servidores por trás do dispositivo de gateway com NAT de Destino para segurança aprimorada.
@@ -44,4 +46,4 @@ Por padrão, um novo dispositivo de gateway é associado a duas VLANs de "trâns
 
 O vSRX pode gerenciar somente as VLANs que estão associadas a ele por meio do dispositivo de gateway.
 
-Para obter informações sobre como gerenciar as VLANs por meio da tela **Detalhes dos dispositivos de gateway**, consulte o tópico [Gerenciar VLANs](manage-vlans.html).
+Para obter informações sobre como gerenciar as VLANs por meio da tela **Detalhes dos dispositivos de gateway**, consulte o tópico [Gerenciar VLANs](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans).

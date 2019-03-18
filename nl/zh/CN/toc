@@ -1,0 +1,45 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="vsrx" audience="network" arm="4133342" href="/docs/infrastructure/vsrx?topic=infrastructure/vsrx-getting-started-with-ibm-cloud-juniper-vsrx-gateway" path="infrastructure/vsrx"}
+IBM Cloud Juniper vSRX Standard
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    about.md
+    /fortigate-10g/fortigate-10g-exploring-firewalls
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    access-gateway-appliances.md
+    access-gateway-details.md
+    vsrx-basics.md
+    vsrx-default-config.md
+
+    {: .topicgroup}
+    逐步指南：如何允许流至公用子网的 SSH 和 ping 流量
+        ssh-guide.md
+        ssh-create-interface.md
+        ssh-create-flows.md
+        ssh-check-output.md
+
+    manage-vlans.md
+    firewalls.md
+    nat.md
+    failover.md
+    routing.md
+    vpn.md
+    os-reload.md
+    reclaim-gateway.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    vsrx-release-notes.md
+    /hardware-firewall-dedicated/hardware-firewall-dedicated-ibm-cloud-ip-ranges
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    known-limitations.md
+    vsrx-docs.md
+    getting-help.md
+    {: .navgroup-end}

@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Visión general de la configuración predeterminada de vSRX
+{: #understanding-the-vsrx-default-configuration}
+
 Los dispositivos de pasarela Juniper vSRX en IBM Cloud vienen con la siguiente configuración predeterminada:
 
 * SSH y Ping están permitidos en las direcciones IP de pasarela pública y privada de vSRX

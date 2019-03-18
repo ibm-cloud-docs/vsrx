@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # Confirmation de sortie et validation des modifications
+{: #confirming-the-output-and-commiting-the-changes}
+
 Une fois les modifications et les ajouts mis en préproduction, exécutez la commande suivante pour confirmer les éléments à valider dans la configuration active :
 
 ```
@@ -93,4 +95,4 @@ Après avoir vérifié que la configuration est correcte, exécutez la commande 
 
 Votre IBM Cloud Juniper vSRX Standard est maintenant configuré pour acheminer et filtrer le trafic vers le nouveau réseau local virtuel et le nouveau sous-réseau, autorisant uniquement les commandes ping entrantes et les connexions SSH. 
 
-Effectuez maintenant le routage du réseau local virtuel comme indiqué dans la rubrique [Gestion de réseaux locaux virtuels](manage-vlans.html) pour commencer à utiliser la nouvelle fonctionnalité.
+Vous devez maintenant procéder au routage du VLAN comme indiqué dans [Gestion des réseaux locaux virtuels (VLAN)](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) pour commencer à utiliser la nouvelle fonctionnalité.

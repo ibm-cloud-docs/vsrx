@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Utilizzo dei firewall
+{: #working-with-firewalls}
+
 IBM® Cloud Juniper vSRX utilizza il concetto di zone di sicurezza, in cui ogni interfaccia vSRX è associata a una "zona" per la gestione dei firewall con stato. I firewall senza stato sono controllati dai filtri del firewall.
 
 Vengono utilizzate le politiche per consentire o bloccare il traffico tra queste zone definite e le regole qui definite sono con stato.
@@ -24,9 +26,9 @@ In IBM Cloud, un vSRX è progettato per avere quattro zone di sicurezza differen
 | Zona                     | Interfaccia autonoma | Interfaccia HA |
 | :---                     |        :----:        |         ---: |
 | SL-Private (non contrassegnato)    | ge-0/0/0.0           | reth0.0      |
-| SL-Public (non contrassegnato)    | ge-0/0/1.0           | reth1.0      |
+| SL-Public (non contrassegnato)     | ge-0/0/1.0           | reth1.0      |
 | Customer-Private (contrassegnato)| ge-0/0/0.1           | reth2.1      |
-| Customer-Public (contrassegnato)| ge-0/0/1.1           | reth3.1      |
+| Customer-Public (contrassegnato) | ge-0/0/1.1           | reth3.1      |
 
 ## Politiche della zona
 Per configurare un firewall con stato, attieniti alla seguente procedura:

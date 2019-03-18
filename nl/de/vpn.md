@@ -15,6 +15,8 @@ lastupdated: "2018-11-06"
 {:download: .download}
 
 # Mit VPN arbeiten
+{: #working-with-vpn}
+
 In diesem Abschnitt wird eine Beispielkonfiguration für ein routenbasiertes VPN (Virtual Private Network) zwischen zwei Standorten im Detail beschrieben. In dieser Beispielkonfiguration kann Server 1 (Standort A) mit Server 2 (Standort B) kommunizieren und beide Standorte nutzen die IPsec-Authentifizierung mit zwei Phasen.
 
 <img src="images/site-to-site-vpn.png" alt="Zeichnung" style="width: 600px;"/>
@@ -235,7 +237,7 @@ policy VPN-to-Custprivate {
 }
 ```
 ## Leistungsaspekte
-Verwenden Sie zum Erreichen höchster IPsec-VPN-Leistung AES-GCM (Advanced Encryption Standard, Galois/Counter Mode) als Verschlüsselungsalgorithmus für IKE- und IPsec-Vorschläge (IKE – Internet Key Exchange). 
+Verwenden Sie zum Erreichen höchster IPsec-VPN-Leistung AES-GCM (Advanced Encryption Standard, Galois/Counter Mode) als Verschlüsselungsalgorithmus für IKE- und IPsec-Vorschläge (IKE – Internet Key Exchange).
 
 Beispiel:
 
@@ -247,6 +249,6 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 Wenn Sie AES-GCM als Verschlüsselungsalgorithmus verwenden, müssen Sie den Authentifizierungsalgorithmus nicht im selben Vorschlag angeben. AES-GCM bietet sowohl Verschlüsselung als auch Authentifizierung.
 
 ## Zusätzliche VPN-Konfigurationen
-Informationen zum Konfigurieren von IPsec-VPN, VPN zwischen Standorten, Fernzugriff über VPN sowie zu weiteren Funktionen finden Sie im [Konfigurationshandbuch](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf) von Juniper.
+Informationen zum Konfigurieren von IPsec-VPN, VPN zwischen Standorten, Fernzugriff über VPN sowie zu weiteren Funktionen finden Sie im [Konfigurationshandbuch ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} von Juniper.
 
-In diesem [Konfigurationshandbuch](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html) von Juniper finden Sie ein Beispiel dafür, wie ein routenbasiertes IPsec-VPN zwischen Standorten konfiguriert wird.
+In diesem [Konfigurationshandbuch ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} von Juniper finden Sie ein Beispiel dafür, wie ein routenbasiertes IPsec-VPN zwischen Standorten konfiguriert wird.

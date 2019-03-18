@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # Crear la nueva interfaz, zona y subred de libreta de direcciones
+{: #creating-the-new-interface-zone-and-address-book-subnet}
+
 En primer lugar, tendrá que crear una unidad de interfaz para la VLAN y añadir la dirección de la pasarela de la subred. Luego podrá crear una zona de seguridad asociada a la nueva unidad y una entrada `address-book` para la subred.  
 
 **NOTA:** desplácese hacia la derecha para ver el mandato completo.

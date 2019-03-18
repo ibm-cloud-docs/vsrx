@@ -14,14 +14,15 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Visualizzazione di tutte le applicazioni gateway 
+# Visualizzazione di tutte le tue applicazioni gateway
+{: #viewing-all-your-gateway-appliances}
 
 La schermata Gateway Appliances nel portale del cliente è dove puoi visualizzare ed accedere a tutte le applicazioni gateway di rete, incluso IBM® Cloud Juniper vSRX.  
 
-Esegui la seguente procedura per accedere alla schermata Gateway Appliances nel portale del cliente. 
+Esegui la seguente procedura per accedere alla schermata Gateway Appliances nel portale del cliente.
 
 1. Accedi al [Portale del cliente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://control.softlayer.com/){: new_window} utilizzando le tue credenziali univoche.
-2. Seleziona **Gateway Appliances** dal menu delle opzioni di rete. 
+2. Seleziona **Gateway Appliances** dal menu delle opzioni di rete.
 
 <img src="images/gateway-apps.png" alt="disegno" style="width: 700px;"/>
   

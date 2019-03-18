@@ -13,7 +13,9 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Como permitir SSH e ping para uma sub-rede pública
+# Permitindo o SSH e o ping para uma sub-rede pública
+{: #allowing-ssh-and-pinging-to-a-public-subnet}
+
 Neste guia, você aprenderá a configurar o IBM® Cloud Juniper vSRX Standard com uma nova interface, zona e catálogo de endereços. Como a ação padrão para todo o tráfego é descartar, este guia mostrará como configurar os fluxos de tráfego que permitem todo o tráfego dentro da nova zona, todo o tráfego da nova zona para a Internet e como permitir apenas SSH e ping da Internet para uma sub-rede na nova VLAN.
 
 Neste exemplo, os seguintes valores são usados.
@@ -30,6 +32,6 @@ Neste guia passo a passo, você aprenderá a configurar o serviço:
 
 Atividade  | Descrição
 ------------- | -------------
-[Crie uma nova sub-rede de interface, zona e catálogo de endereços](ssh-create-interface.html) | Crie a unidade de interface identificada e a zona de segurança para a nova VLAN.
-[Criando os novos fluxos de tráfego](ssh-create-flows.html) | Crie os novos fluxos de tráfego para permitir ping e SSH de entrada.
-[Certifique a saída e confirme as mudanças](ssh-check-output.html) | Verifique a saída para certificar o que será confirmado para a configuração ativa.
+[Crie uma nova sub-rede de interface, zona e catálogo de endereços](/docs/infrastructure/vsrx?topic=vsrx-creating-the-new-interface-zone-and-address-book-subnet) | Crie a unidade de interface identificada e a zona de segurança para a nova VLAN.
+[Criando seus novos fluxos de tráfego](/docs/infrastructure/vsrx?topic=vsrx-creating-your-new-traffic-flows) | Crie os novos fluxos de tráfego para permitir ping e SSH de entrada.
+[Certifique a saída e confirme as mudanças](/docs/infrastructure/vsrx?topic=vsrx-confirming-the-output-and-commiting-the-changes) | Verifique a saída para certificar o que será confirmado para a configuração ativa.

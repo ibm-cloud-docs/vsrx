@@ -15,13 +15,15 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Descrizione della configurazione predefinita vSRX
+{: #understanding-the-vsrx-default-configuration}
+
 I dispositivi gateway Juniper vSRX in IBM Cloud vengono forniti con la seguente configurazione predefinita:
 
 * SSH e Ping sono consentiti su entrambi gli indirizzi IP gateway privato e pubblico vSRX
 * L'accesso all'IU di gestione web Juniper (J-Web) è consentito sulla porta HTTPS 8443 per entrambi gli indirizzi IP gateway privato e pubblico
 * Viene predefinito un set di indirizzi `SERVICE` per le reti del servizio SoftLayer
 * Vengono predefinite due zone di sicurezza: `SL-PRIVATE` e `SL-PUBLIC`.
-* L'accesso dalla zona `SL-PRIVATE` a tutti i servizi viene fornito da SoftLayer ed è consentito il set di indirizzi `SERVICE` 
+* L'accesso dalla zona `SL-PRIVATE` a tutti i servizi viene fornito da SoftLayer ed è consentito il set di indirizzi `SERVICE`
 * Tutti gli altri accessi alla rete vengono negati
 
 ## Configurazione predefinita di un gateway vSRX autonomo di esempio
@@ -298,7 +300,7 @@ La seguente tabella illustra le definizioni dell'interfaccia di rete per la conf
 | Nome interfaccia    |  Funzione interfaccia      |
 | :---          |   :---         |
 | ge-0/0/0      |   Interfaccia Gbe (GigaBit ethernet) per la VLAN di transito SL-PRIVATE |
-| ge-0/0/1      |   Interfaccia Gbe (GigaBit ethernet) per la VLAN di transito SL-PUBLIC |
+| ge-0/0/1      |   Interfaccia Gbe (GigaBit ethernet) per la VLAN di transito SL-PUBLIC  |
 | fxp0          |   Interfaccia di gestione        |
 | lo0           |   interfaccia loopback          |
 
@@ -666,16 +668,16 @@ firewall {
 
 La seguente tabella illustra le definizioni dell'interfaccia di rete per la configurazione precedente:
 
-| Nome interfaccia    |  Funzione interfaccia      |
+| Nome interfaccia   |  Funzione interfaccia      |
 | :---          |    :---         |
 | ge-0/0/1 / ge-0/0/2   |  Interfaccia Gbe (GigaBit ethernet) per la VLAN privata sul nodo primario |
 | ge-0/0/3 / ge-0/0/4   |  Interfaccia Gbe (GigaBit ethernet) per la VLAN pubblica sul nodo primario |
 | ge-7/0/1 / ge-7/0/2  |  Interfaccia Gbe (GigaBit ethernet) per la VLAN privata sul nodo secondario |
 | ge-7/0/3 / ge-7/0/4  |  Interfaccia Gbe (GigaBit ethernet) per la VLAN pubblica sul nodo secondario |
 | reth0         |   Interfaccia ethernet ridondante per la VLAN di transito SL-PRIVATE |
-| reth1         |   Interfaccia ethernet ridondante per la VLAN di transito SL-PUBLIC |
+| reth1         |   Interfaccia ethernet ridondante per la VLAN di transito SL-PUBLIC  |
 | reth2         |   Interfaccia ethernet ridondante per le VLAN private CUSTOMER  |
-| reth3         |   Interfaccia ethernet ridondante per le VLAN pubbliche CUSTOMER  |
+| reth3         |   Interfaccia ethernet ridondante per le VLAN pubbliche CUSTOMER   |
 | fab0 / fab1   |   Link fabric cluster chassis |
 | fxp0          |   Interfaccia di gestione        |
 | lo0           |   interfaccia loopback          |

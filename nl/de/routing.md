@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Mit Routing arbeiten
+{: #working-with-routing}
+
 Die Komponente Juniper vSRX für IBM® Cloud basiert auf `JunOS`, wodurch Sie Zugriff auf den vollständigen Routing-Stack von Juniper haben.
 
 ##Statisches Routing
@@ -61,4 +63,4 @@ In diesem Beispiel wurde BGP für Folgendes konfiguriert:
 * Damit mit einem Nachbarn gleichgeordnet wird, der zu `AS 65002` gehört
 * Peer-Nachbar-IP `2.2.2.2`
 
-Zusätzliche Konfigurationen finden Sie [hier](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf).
+Zusätzliche Konfigurationen finden Sie auf der [Juniper-Website ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf){: new_window}.

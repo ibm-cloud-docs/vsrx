@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Cómo trabajar con el direccionamiento
+{: #working-with-routing}
+
 IBM® Cloud Juniper vSRX se basa en `JunOS`, que le ofrece acceso a la pila completa de direccionamiento de Juniper.
 
 ##Direccionamiento estático
@@ -61,4 +63,4 @@ En este ejemplo, se configura BGP para lo siguiente:
 * Establecer una relación de igual a igual con un vecino perteneciente a `AS 65002`
 * Establecer una relación de igual a igual con el IP vecino `2.2.2.2`
 
-Encontrará más configuraciones [aquí](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf).
+Puede encontrar configuraciones adicionales en el [sitio web de Juniper ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf){: new_window}.

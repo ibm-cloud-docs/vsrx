@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Recarga y migración del sistema operativo
+# Recarga y migración del SO
+{: #reloading-an-migrating-the-os}
+
 El proceso de recarga del SO se utiliza para reconstruir un servidor de pasarela. El proceso realiza las acciones siguientes:
 
 * Volver a cargar el sistema operativo del host del servidor
@@ -29,7 +31,7 @@ El proceso suele tardar 1 hora 40 minutos en completarse. Las pasarelas autónom
 ## Realización de una recarga de SO
 Para volver a cargar el SO para un servidor de pasarela, siga el procedimiento siguiente:
 
-1. [Acceda a la pantalla de Dispositivos de pasarela](access-gateway-appliances.html) en el portal de clientes y vaya a la página de detalles de la pasarela seleccionando el nombre de pasarela que desee.
+1. [Acceda a la pantalla de Dispositivos de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) en el portal de clientes y vaya a la página de detalles de la pasarela seleccionando el nombre de pasarela que desee.
 
 2. Pulse el nombre del servidor en el panel de hardware. ![Servidor de hardware](images/os_hardware.png)
 
@@ -44,16 +46,17 @@ Para volver a cargar el SO para un servidor de pasarela, siga el procedimiento s
 ## Migración desde un servidor Vyatta/VRA a un Juniper vSRX mediante recarga de SO
 Si va a volver a cargar un servidor Vyatta autónomo, se suministrará un Juniper vSRX autónomo una vez que se complete la recarga de SO. Se utilizarán las mismas direcciones IP de pasarela y se restablecerá la contraseña del usuario root en el servidor host (así como la contraseña de los usuarios admin y root en vSRX).
 
-Si va a realizar la recarga de servidores Vyatta de alta disponibilidad, debe ejecutar el mandato de `Recarga de OS` en ambos servidores de hardware. Esto instala Ubuntu 16.04. A continuación, utilice la opción Volver a crear clúster (que se detalla en la sección siguiente) para suministrar el vSRX y crear el clúster HA. Al igual que sucede con vSRX autónomo, se utilizarán las mismas direcciones IP de pasarela y se restablecerá la contraseña del usuario root en el servidor host (así como la contraseña de los usuarios admin y root en vSRX).
+Si va a realizar la recarga de servidores Vyatta de alta disponibilidad, debe realizar una recarga del sistema operativo en ambos servidores de hardware. Esto instala Ubuntu 16.04. A continuación, utilice la opción Volver a crear clúster (que se detalla en la sección siguiente) para suministrar el vSRX y crear el clúster HA. Al igual que sucede con vSRX autónomo, se utilizarán las mismas direcciones IP de pasarela y se restablecerá la contraseña del usuario root en el servidor host (así como la contraseña de los usuarios admin y root en vSRX).
 
 **ATENCIÓN:** no realice una recarga de SO en un solo servidor del clúster de alta disponibilidad Vyatta. No se da soporte a dos sistemas operativos distintos en un solo clúster HA de pasarela.
 
 ## Cómo volver a crear un clúster HA vSRX
 Para volver a crear uno de los clústeres HA vSRX, siga el procedimiento siguiente:
 
-1. [Acceda a la pantalla de Dispositivos de pasarela](access-gateway-appliances.html) en el portal de clientes y vaya a la página de detalles de la pasarela seleccionando el nombre de la pasarela HA que desee.
+1. [Acceda a la pantalla de Dispositivos de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) en el portal de clientes y vaya a la página de detalles de la pasarela seleccionando el nombre de la pasarela HA que desee.
 
 2. Pulse **Volver a crear clúster** en el panel de vSRX.
 ![Volver a crear clúster](images/rebuild_cluster.png)
 
-3. Lea detenidamente el mensaje de aviso. La operación para volver a crear un clúster es destructiva. Si desea continuar, guarde la configuración de vSRX antes de pulsar **Volver a crear** para iniciar el proceso. ![Confirmar recreación de clúster](images/rebuild_cluster_confirm.png)
+3. Lea detenidamente el mensaje de aviso. La operación para volver a crear un clúster es destructiva. Si desea continuar, guarde la configuración de vSRX antes de pulsar **Volver a crear** para iniciar el proceso.
+![Confirmar recreación de clúster](images/rebuild_cluster_confirm.png)

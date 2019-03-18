@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Fonctionnement de NAT
+# Utilisation de sNAT
+{: #working-with-snat}
+
 Cette rubrique offre un exemple de configuration pour sNAT sur un dispositif vSRX. Dans cette configuration, un noeud privé acheminé derrière la passerelle peut communiquer avec le monde extérieur.
 
 <img src="images/Sample-Topology-SNAT.png" alt="drawing" style="width: 500px;"/>
@@ -54,4 +56,4 @@ nat {
 }
 ```
 
-Pour configurer la conversion d'adresses réseau (NAT) sous IBM® Cloud Juniper vSRX, reportez-vous au [guide de configuration](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf) (en anglais) sur le site Web de Juniper.
+Pour configurer la conversion d'adresses réseau (NAT) pour IBM® Cloud Juniper vSRX, voir ce [guide de configuration ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} sur le site Web Juniper.

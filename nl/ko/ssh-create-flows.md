@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # 새 트래픽 플로우 작성
+{: #creating-your-new-traffic-flows}
+
 이제 새 구역(`CUSTOMER-PUBLIC`)을 작성함에 따라 네트워크 트래픽 플로우를 제어하도록 정책을 구성해야 합니다. 아래 구성된 첫 번째 플로우는 `CUSTOMER-PUBLIC` 구역 내의 모든 트래픽을 허용합니다. 두 번째 플로우는 `CUSTOMER-PUBLIC`과 공용 인터넷 간의 모든 트래픽을 허용하고, 세 번째 플로우는 공용 인터넷과 `CUSTOMER-PUBLIC` 간의 SSH 및 PING 트래픽을 허용하고 나머지는 삭제합니다(기본 조치는 `drop`임).
 
 **참고:** 전체 명령을 보려면 오른쪽으로 스크롤하십시오!  

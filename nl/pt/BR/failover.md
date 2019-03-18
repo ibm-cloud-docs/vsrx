@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Trabalhando com failover
+{: #working-with-failover}
+
 **NOTA:** esta seção é aplicável apenas se os dispositivos de gateway Juniper vSRX são provisionados no modo de alta disponibilidade.
 
 Este tópico descreve como iniciar o failover do dispositivo de gateway primário para um dispositivo de backup, de modo que todo o tráfego do plano de controle e de dados seja roteado por meio do dispositivo de gateway secundário após o failover.
@@ -71,4 +73,4 @@ Para fazer isso, execute o procedimento a seguir:
 
 5. Efetue login no outro gateway vSRX do par. Entre no modo de CLI, executando novamente o comando `cli` e, em seguida, verifique se a saída do console é mostrada como `primary`.
 
-**NOTA:** ao entrar no modo de CLI no dispositivo de gateway Juniper vSRX, a saída será mostrada como `primary` da perspectiva do plano de controle. Sempre marque a saída `show chassis cluster status` para determinar qual dispositivo de gateway é primário da perspectiva do plano de dados. Consulte [Configuração padrão do vSRX](vsrx-default-config.html) para saber mais sobre os grupos de redundância, bem como sobre os planos de controle e de dados.
+**NOTA:** ao entrar no modo de CLI no dispositivo de gateway Juniper vSRX, a saída será mostrada como `primary` da perspectiva do plano de controle. Sempre marque a saída `show chassis cluster status` para determinar qual dispositivo de gateway é primário da perspectiva do plano de dados. Consulte [Configuração padrão do vSRX](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) para saber mais sobre os grupos de redundância, bem como sobre os planos de controle e de dados.

@@ -15,10 +15,12 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Comprendre la configuration par défaut de vSRX
+{: #understanding-the-vsrx-default-configuration}
+
 Dans IBM Cloud, les périphériques de passerelle Juniper vSRX sont livrés avec la configuration par défaut ci-dessous :
 
 * SSH et Ping sont autorisés sur les adresses IP de passerelle publique et privée vSRX
-* L'accès à l'interface utilisateur de gestion Web de Juniper (J-Web) est autorisé sur le port HTTPS 8443 pour les adresses IP de passerelle publique et privée 
+* L'accès à l'interface utilisateur de gestion Web de Juniper (J-Web) est autorisé sur le port HTTPS 8443 pour les adresses IP de passerelle publique et privée
 * Un ensemble d'adresses `SERVICE` est prédéfini pour les réseaux de service SoftLayer
 * Deux zones de sécurité, `SL-PRIVATE` et `SL-PUBLIC`, sont prédéfinies
 * L'accès depuis la zone `SL-PRIVATE` à tous les services est fourni par SoftLayer et l'ensemble d'adresses `SERVICE` est autorisé
@@ -666,7 +668,7 @@ firewall {
 
 Le tableau ci-dessous illustre les définitions d'interface réseau pour la configuration précédente :
 
-| Nom de l'interface    |  Fonction de l'interface      |
+| Nom de l'interface   |  Fonction de l'interface      |
 | :---          |    :---         |
 | ge-0/0/1 / ge-0/0/2   |  Interface Gigabit Ethernet pour VLAN privé sur le noeud principal |
 | ge-0/0/3 / ge-0/0/4   |  Interface Gigabit Ethernet pour VLAN public sur le noeud principal |

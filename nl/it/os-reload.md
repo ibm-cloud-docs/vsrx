@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Ricaricamento SO/Migrazione
+# Ricaricamento e migrazione del sistema operativo (SO)
+{: #reloading-an-migrating-the-os}
+
 Il processo di ricaricamento del sistema operativo (SO) viene utilizzato per ricreare un server gateway. Il processo esegue le seguenti azioni:
 
 * Ricarica il sistema operativo dell'host del server
@@ -29,7 +31,7 @@ Il completamento del processo normalmente richiede 1 ora e 40 minuti. I gateway 
 ## Esecuzione di un ricaricamento SO
 Per ricaricare il SO per un server gateway, esegui la seguente procedura:
 
-1. [Accedi alla schermata Gateway Appliances](access-gateway-appliances.html) nel portale del cliente e passa alla pagina dei dettagli del gateway selezionando il nome del gateway desiderato.
+1. [Accedi alla schermata Gateway Appliances](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) nel portale del cliente e passa alla pagina dei dettagli del gateway selezionando il nome del gateway desiderato.
 
 2. Fai clic sul nome del server nel pannello Hardware.
 ![Server Hardware](images/os_hardware.png)
@@ -46,14 +48,14 @@ Per ricaricare il SO per un server gateway, esegui la seguente procedura:
 ## Migrazione da un server Vyatta/VRA a un Juniper vSRX utilizzando il ricaricamento SO
 Se stai ricaricando un server Vyatta autonomo, allora sarà eseguito il provisioning di un Juniper vSRX autonomo una volta completato il ricaricamento SO. Saranno utilizzati gli stessi indirizzi IP del gateway e sarà reimpostata la password dell'utente root sul server host (nonché la password degli utenti root e amministratore nel vSRX).
 
-Se stai ricaricando dei server Vyatta ad elevata disponibilità, devi eseguire il comando `OS Reload` su entrambi i server hardware. Questo comando installa Ubuntu 16.04. Successivamente, utilizza l'opzione Rebuild Cluster (dettagliata nella seguente sezione) per eseguire il provisioning del vSRX e creare il cluster HA. Come con un vSRX autonomo, saranno utilizzati gli stessi indirizzi IP del gateway e sarà reimpostata la password dell'utente root sul server host (nonché la password degli utenti root e amministratore nel vSRX).
+Se stai ricaricando dei server Vyatta ad elevata disponibilità, devi eseguire un ricarimento del sistema operativo su entrambi i server hardware. Questo comando installa Ubuntu 16.04. Successivamente, utilizza l'opzione Rebuild Cluster (dettagliata nella seguente sezione) per eseguire il provisioning del vSRX e creare il cluster HA. Come con un vSRX autonomo, saranno utilizzati gli stessi indirizzi IP del gateway e sarà reimpostata la password dell'utente root sul server host (nonché la password degli utenti root e amministratore nel vSRX).
 
 **ATTENZIONE:** non eseguire un ricaricamento SO su solo uno dei server del cluster HA Vyatta. L'utilizzo di due sistemi operativi diversi su un solo cluster HA gateway non è supportato.
 
 ## Ricreazione di un cluster vSRX HA
 Per ricreare uno dei tuoi cluster vSRX HA, esegui la seguente procedura:
 
-1. [Accedi alla schermata Gateway Appliances](access-gateway-appliances.html) nel portale del cliente e passa alla pagina dei dettagli del gateway selezionando il nome del gateway HA desiderato.
+1. [Accedi alla schermata Gateway Appliances](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) nel portale del cliente e passa alla pagina dei dettagli del gateway selezionando il nome del gateway HA desiderato.
 
 2. Fai clic su **Rebuild Cluster** nel pannello vSRX.
 ![Ricrea cluster](images/rebuild_cluster.png)

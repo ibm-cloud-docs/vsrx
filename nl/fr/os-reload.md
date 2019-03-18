@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Rechargement/Migration du système d'exploitation
+# Rechargement et migration du système d'exploitation
+{: #reloading-an-migrating-the-os}
+
 Le processus de rechargement du système d'exploitation sert à régénérer un serveur de passerelle. Il s'articule autour des actions suivantes :
 
 * Rechargement du système d'exploitation de l'hôte de serveur
@@ -29,7 +31,7 @@ Le processus nécessite généralement 1 heure 40 minutes. Les passerelles auton
 ## Rechargement du système d'exploitation
 Pour recharger le système d'exploitation d'un serveur de passerelle, procédez comme suit :
 
-1. [Accédez à l'écran Dispositifs de passerelle](access-gateway-appliances.html) dans le portail client et naviguez jusqu'à la page des détails en sélectionnant le nom de la passerelle désirée.
+1. [Accédez à l'écran Dispositifs de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) dans le portail client et naviguez jusqu'à la page des détails en sélectionnant le nom de la passerelle désirée.
 
 2. Cliquez sur le nom de serveur dans le panneau relatif au matériel.
 ![Serveur matériel](images/os_hardware.png)
@@ -46,14 +48,14 @@ Pour recharger le système d'exploitation d'un serveur de passerelle, procédez 
 ## Migration à partir d'un serveur Vyatta/VRA vers un vSRX Juniper à l'aide de l'option de rechargement du système d'exploitation
 Si vous rechargez un serveur Vyatta autonome, un vSRX Juniper sera mis à disposition une fois le rechargement du système d'exploitation terminé. Les mêmes adresses IP de passerelle seront utilisées et le mot de passe de l'utilisateur root sur le serveur hôte (ainsi que le mot de passe de l'utilisateur administrateur et de l'utilisateur root dans vSRX) seront réinitialisés.
 
-Si vous rechargez des serveurs Vyatta haute disponibilité, vous devez exécuter la commande `Rechargement du système d'exploitation` sur les deux serveurs matériel. Ceci installe Ubuntu version 16.04. Ensuite, utilisez l'option de régénération du cluster (détaillée dans la section suivante) pour mettre à disposition le vSRX et créer le cluster haute disponibilité. A l'instar d'un vSRX autonome, les mêmes adresses IP de passerelle seront utilisées, et le mot de passe de l'utilisateur root sur le serveur hôte (ainsi que le mot de passe pour l'utilisateur administrateur et de l'utilisateur root) seront réinitialisés.
+Si vous rechargez des serveurs Vyatta haute disponibilité, vous devez effectuer un rechargement du système d'exploitation sur les deux serveurs matériels. Ceci installe Ubuntu version 16.04. Ensuite, utilisez l'option de régénération du cluster (détaillée dans la section suivante) pour mettre à disposition le vSRX et créer le cluster haute disponibilité. A l'instar d'un vSRX autonome, les mêmes adresses IP de passerelle seront utilisées, et le mot de passe de l'utilisateur root sur le serveur hôte (ainsi que le mot de passe pour l'utilisateur administrateur et de l'utilisateur root) seront réinitialisés.
 
 **Avertissement :** Ne procédez pas au rechargement du système d'exploitation sur un seul serveur du cluster Vyatta haute disponibilité. L'utilisation de deux systèmes d'exploitation différents sur un même cluster de passerelle haute disponibilité n'est pas prise en charge.
 
 ## Régénération d'un cluster vSRX haute disponibilité
 Pour régénérer l'un de vos clusters vSRX haute disponibilité, procédez comme suit :
 
-1. [Accédez à l'écran Dispositifs de passerelle](access-gateway-appliances.html) dans le portail client et naviguez jusqu'à la page des détails en sélectionnant le nom de la passerelle HA désirée.
+1. [Accédez à l'écran Dispositifs de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) dans le portail client et naviguez jusqu'à la page des détails en sélectionnant le nom de la passerelle HA désirée.
 
 2. Cliquez sur l'option permettant de **régénérer le cluster** dans le panneau vSRX.
 ![Régénération du cluster](images/rebuild_cluster.png)

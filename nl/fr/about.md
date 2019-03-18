@@ -14,20 +14,22 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# A propos de
+# A propos d'IBM Cloud Juniper vSRX
+{: #about-ibm-cloud-juniper-vsrx}
+
 IBM® Cloud Juniper vSRX vous permet d'acheminer de façon ciblée le trafic réseau privé et public via un pare-feu complet de niveau entreprise doté de fonctionnalités logicielles JunOS, telles que des piles de routage, une qualité de service et un partage du réseau, un routage basé sur des règles et un réseau privé virtuel. vSRX associe les performances et la facilité de configuration et de maintenance à la simplicité d'exécution sur un serveur bare metal. Le matériel est dimensionné pour gérer la charge de routage/sécurité pour plusieurs réseaux locaux virtuels et peut être organisé avec des liens vers des réseaux redondants et des grappes RAID redondantes. Toutes les fonctionnalités de vSRX sont gérées par le client.
 
 IBM Cloud vSRX est proposé dans deux modes différents : cluster autonome ou haute disponibilité.
 
-**Remarque :** Vous trouverez des informations complémentaires sur IBM Cloud Juniper vSRX dans la rubrique [Documentation supplémentaire](vsrx-docs.html).
+**Remarque :** Vous trouverez des informations complémentaires sur IBM Cloud Juniper vSRX dans la rubrique [Documentation supplémentaire](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation).
 
-##Pare-feu
+## Pare-feu
 Déployez vSRX pour protéger votre environnement contre les menaces externes et internes en filtrant à la fois le trafic privé et le trafic public. Les clients peuvent gérer eux-mêmes vSRX en définissant des politiques et des règles autorisant ou interdisant (entre autres actions) le trafic réseau entrant ou sortant, protégeant ainsi leurs applications des utilisateurs internes et externes. Les piles IPv4 et IPv6 sont toutes deux prises en charge de manière dynamique.
 
 ## Passerelle de réseau privé virtuel (VPN)
 Connectez votre centre de données local ou votre bureau IBM Cloud à l'aide d'un tunnel VPN en mettant à disposition votre vSRX en tant que périphérique de passerelle réseau. Vous pouvez utiliser un tunnel VPN IPsec de site à site pour sécuriser la communication de votre centre de données d'entreprise ou de votre bureau vers votre réseau IBM Cloud. L'accès à distance IPSEC VPN est également pris en charge.
 
-Pour obtenir des informations détaillées sur la configuration d'un VPN, veuillez vous reporter aux liens fournis dans la rubrique [VPN](vpn.html).
+Pour obtenir des informations détaillées sur la configuration d'un VPN, veuillez vous reporter aux liens fournis dans la rubrique [VPN](/docs/infrastructure/vsrx?topic=vsrx-working-with-vpn#working-with-vpn).
 
 ## Conversion d'adresses réseau NAT
 Grâce au dispositif de passerelle vSRX, vous pouvez installer des serveurs d'applications et de bases de données sans interface de réseau public, tout en permettant à vos serveurs d'accéder à Internet via la conversion NAT source. Vous pouvez également masquer vos serveurs derrière le dispositif de passerelle avec la conversion d'adresses réseau (NAT) de destination pour une sécurité renforcée.
@@ -44,4 +46,4 @@ Par défaut, un nouveau dispositif de passerelle est associé à deux VLAN de "t
 
 vSRX ne peut gérer que les VLAN qui lui sont associés via le dispositif de passerelle.
 
-Pour plus d'informations sur la gestion des VLAN à partir de l'écran des **détails du dispositif de passerelle**, voir la rubrique [Gestion de réseaux locaux virtuels](manage-vlans.html).
+Pour plus d'informations sur la gestion des VLAN à partir de l'écran des **détails du dispositif de passerelle**, voir la rubrique [Gestion de réseaux locaux virtuels](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans).

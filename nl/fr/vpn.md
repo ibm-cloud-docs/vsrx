@@ -15,6 +15,8 @@ lastupdated: "2018-11-06"
 {:download: .download}
 
 # Fonctionnement des VPN
+{: #working-with-vpn}
+
 La présente rubrique illustre un exemple de configuration pour VPN basé sur une route entre deux sites. Dans cet exemple, le serveur 1 (Site A) peut communiquer avec le serveur 2 (Site B), et chaque site utilise une authentification IPSEC en deux phases.
 
 <img src="images/site-to-site-vpn.png" alt="dessin" style="width: 600px;"/>
@@ -235,7 +237,7 @@ policy VPN-to-Custprivate {
 }
 ```
 ## Remarque sur les performances
-Pour obtenir les meilleures performances de VPN IPSEC, utilisez AES-GCM comme algorithme de chiffrement pour les propositions IKE et IPSEC. 
+Pour obtenir les meilleures performances de VPN IPSEC, utilisez AES-GCM comme algorithme de chiffrement pour les propositions IKE et IPSEC.
 
 Par exemple :
 
@@ -247,6 +249,6 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 Avec AES-GCM comme algorithme de chiffrement, il n'est pas nécessaire de spécifier l'algorithme d'authentification dans la même proposition. AES-GCM fournit le chiffrement et l'authentification.
 
 ## Autres configurations de VPN
-Pour configurer un VPN IPSEC, site à site, à accès distant ou autre, reportez-vous à ce [guide de configuration](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf) (en anglais) de Juniper.
+Pour configurer un réseau privé virtuel (VPN) IPSEC, de site à autre, un VPN à accès distant, et d'autres fonctions, voir le [guide de configuration ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} depuis Juniper.
 
-Pour savoir comment configurer un VPN IPSEC site à site basé sur une route, reportez-vous à ce [guide de configuration](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html) (en anglais) de Juniper.
+Pour un exemple de configuration d'un réseau privé virtuel (VPN) IPSEC basé sur une route, voir le [guide de configuration ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} depuis Juniper.

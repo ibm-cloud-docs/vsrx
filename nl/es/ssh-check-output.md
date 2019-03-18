@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # Confirmar la salida y confirmar los cambios
+{: #confirming-the-output-and-commiting-the-changes}
+
 Después de que se transfieran los cambios y las adiciones que ha realizado, ejecute el siguiente mandato para confirmar lo que se confirmará en la configuración activa:
 
 ```
@@ -93,4 +95,4 @@ Después de comprobar que la configuración es correcta, ejecute el mandato `com
 
 Su IBM Cloud Juniper vSRX Estándar está ahora configurado para direccionar y filtrar el tráfico a la nueva VLAN y subred, permitiendo sólo los pings y las conexiones SSH de entrada. 
 
-Ahora debe direccionar la vlan tal como se muestra en [Gestionar VLAN](manage-vlans.html) para empezar a utilizar la nueva funcionalidad.
+Ahora debe direccionar la VLAN tal como se muestra en [Gestionar VLAN](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) para empezar a utilizar la nueva funcionalidad.

@@ -14,12 +14,13 @@ lastupdated: "2018-11-06"
 {:tip: .tip}
 {:download: .download}
 
-# 既知の制限事項
+# IBM Cloud Juniper vSRX の既知の制限事項
+{: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
 {{site.data.keyword.cloud}} Juniper vSRX の現在の制限事項は以下のとおりです。
 
-* Juniper vSRX ゲートウェイは、Linux ブリッジを使用するネットワーキング仮想化と共にデプロイされます。Linux ブリッジ・ベースのネットワーキング仮想化で実現できるスループットは限られており、回線速度のスループットは全く実現できません。
+* Juniper vSRX ゲートウェイは、Linux ブリッジを使用するネットワーキング仮想化と共にデプロイされます。 Linux ブリッジ・ベースのネットワーキング仮想化で実現できるスループットは限られており、回線速度のスループットは全く実現できません。
 
 * スタンドアロン・モードから高可用性モードへのアップグレードはサポートされていません。
 
-* IBM Cloud Juniper vSRX ゲートウェイは、Junos OS バージョン `15.1X49-D123` と共にデプロイされます。現在、別のバージョンへのアップグレードはサポートされていません。
+* IBM Cloud Juniper vSRX ゲートウェイは、Junos OS バージョン `15.1X49-D123` と共にデプロイされます。 現在、別のバージョンへのアップグレードはサポートされていません。

@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # Crear sus nuevos flujos de tráfico
+{: #creating-your-new-traffic-flows}
+
 Ahora que ha creado la nueva zona (`CUSTOMER-PUBLIC`), tendrá que configurar políticas para controlar el flujo de tráfico de red. El primero que se configura a continuación permite todo el tráfico dentro de la zona `CUSTOMER-PUBLIC`. El segundo permite todo el tráfico desde `CUSTOMER-PUBLIC` a internet público, mientras que el tercer flujo solo permite el tráfico SSH y PING desde internet público a `CUSTOMER-PUBLIC` y descarta el resto (ya que la acción predeterminada es `drop`).
 
 **NOTA:** desplácese hacia la derecha para ver el mandato completo.  

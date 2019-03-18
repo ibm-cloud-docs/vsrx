@@ -14,8 +14,10 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Gestión de VLAN
-Puede realizar una serie de acciones de la [pantalla Detalles de dispositivo de pasarela](access-gateway-details.html).
+# Gestionar VLAN de IBM
+{: #managing-ibm-vlans}
+
+Puede realizar una serie de acciones de la [pantalla Detalles de dispositivo de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details).
 
 ## Asociar una VLAN a un dispositivo de pasarela
 
@@ -23,9 +25,7 @@ Una VLAN necesita asociarse a un dispositivo de pasarela antes de poder ser dire
 
 Pueden asociarse las VLAN a una sola pasarela a la vez y no deben tener un cortafuegos. Realice el procedimiento siguiente para asociar una VLAN a una pasarela de red.
 
-**NOTA:** si no hay ninguna VLAN disponible que asociar, tendrá que [solicitarla](../vlans/order-vlan.html).
-
-1. [Acceda a la pantalla Detalles de dispositivo de pasarela](access-gateway-details.html) en el Portal de clientes.
+1. [Acceda a la pantalla Detalles de dispositivo de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) en el Portal de clientes.
 2. Seleccione el separador VLAN.
 3. Pulse **Asociar VLAN** y seleccione una VLAN del menú desplegable.
 4. Pulse **Guardar** y confirme su selección. La acción de asociar VLAN no direcciona la VLAN a través del cortafuegos.
@@ -38,7 +38,7 @@ Las VLAN asociadas están vinculadas al dispositivo de pasarela, pero el tráfic
 
 Realice el procedimiento siguiente para direccionar una VLAN asociada:
 
-1. [Acceda a la pantalla Detalles de dispositivo de pasarela](access-gateway-details.html) en el Portal de clientes.
+1. [Acceda a la pantalla Detalles de dispositivo de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) en el Portal de clientes.
 2. Seleccione el separador VLAN.
 3. Seleccione las VLAN que desee marcando el recuadro de selección.
 4. Pulse **Direccionar a través** y confirme su selección.
@@ -53,7 +53,7 @@ Ignorar una VLAN permite que esta permanezca asociada a la pasarela de red. Si l
 
 Realice el procedimiento siguiente para ignorar el direccionamiento de pasarela para una VLAN:
 
-1. [Acceda a la pantalla Detalles de dispositivo de pasarela](access-gateway-details.html) en el Portal de clientes.
+1. [Acceda a la pantalla Detalles de dispositivo de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) en el Portal de clientes.
 2. Seleccione el separador VLAN.
 3. Seleccione las VLAN que desee marcando el recuadro de selección.
 4. Pulse **Direccionar alrededor** y confirme su selección.
@@ -66,7 +66,7 @@ Las VLAN pueden vincularse a un dispositivo de pasarela a la vez mediante [asoci
 
 Realice el procedimiento siguiente para desasociar una VLAN del dispositivo de pasarela:
 
-1. [Acceda a la pantalla Detalles de dispositivo de pasarela](access-gateway-details.html) en el Portal de clientes.
+1. [Acceda a la pantalla Detalles de dispositivo de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) en el Portal de clientes.
 2. Seleccione el separador VLAN.
 3. Seleccione las VLAN que desee marcando el recuadro de selección.
 4. Pulse **Desasociar** y confirme su selección.

@@ -15,6 +15,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Visualizando todos os dispositivos de gateway
+{: #viewing-all-your-gateway-appliances}
 
 A tela Dispositivos de gateway no Portal do cliente é o local no qual é possível exibir e acessar todos os dispositivos de gateway de rede, incluindo o IBM® Cloud Juniper vSRX.  
 

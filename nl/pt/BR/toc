@@ -1,13 +1,13 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="vsrx" audience="network" arm="4133342" href="/docs/infrastructure/vsrx/about.html" path="infrastructure/vsrx"}
+{: .toc subcollection="vsrx" audience="network" arm="4133342" href="/docs/infrastructure/vsrx?topic=infrastructure/vsrx-getting-started-with-ibm-cloud-juniper-vsrx-gateway" path="infrastructure/vsrx"}
 IBM Cloud Juniper vSRX Standard
 
     {: .navgroup id="learn"}
     getting-started.md
     about.md
-    [Explorar Firewalls](../../infrastructure/fortigate-10g/explore-firewalls.html)
+    /fortigate-10g/fortigate-10g-exploring-firewalls
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -35,7 +35,7 @@ IBM Cloud Juniper vSRX Standard
 
     {: .navgroup id="reference"}
     vsrx-release-notes.md
-    [Intervalos de IP do IBM Cloud](../../infrastructure/hardware-firewall-dedicated/ips.html)
+    /hardware-firewall-dedicated/hardware-firewall-dedicated-ibm-cloud-ip-ranges
     {: .navgroup-end}
 
     {: .navgroup id="help"}

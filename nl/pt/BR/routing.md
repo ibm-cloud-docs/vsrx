@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Trabalhando com roteamento
+{: #working-with-routing}
+
 O IBM® Cloud Juniper vSRX é baseado no `JunOS`, fornecendo acesso à pilha de roteamento Juniper completa.
 
 ##Roteamento estático
@@ -61,4 +63,6 @@ Nesse exemplo, o BGP é configurado para o seguinte:
 * Colocar no mesmo nível de um vizinho que pertence a `AS 65002`
 * Colocar no mesmo nível do IP do vizinho `2.2.2.2`
 
-Configurações adicionais podem ser localizadas [aqui](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf).
+Configurações adicionais podem ser localizadas no
+[website
+do Juniper ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf){: new_window}.

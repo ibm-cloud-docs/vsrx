@@ -14,8 +14,10 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# VLANs verwalten
-Über die [Anzeige 'Details zu Gateway-Appliances'](access-gateway-details.html) können Sie eine Vielzahl von Aktionen ausführen.
+# IBM VLANs verwalten
+{: #managing-ibm-vlans}
+
+Über die [Anzeige 'Details zu Gateway-Appliances'](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) können Sie eine Vielzahl von Aktionen ausführen.
 
 ## VLAN einer Gateway-Appliance zuordnen
 
@@ -23,9 +25,7 @@ VLANs müssen einer Gateway-Appliance zugeordnet werden, bevor für sie ein Rout
 
 VLANs können nur jeweils einem Gateway zugeordnet werden und dürfen keine Firewall aufweisen. Führen Sie das folgende Verfahren aus, um einem Netzgateway ein VLAN zuzuordnen.
 
-**Anmerkung:** Wenn keine VLANs für eine Zuordnung zur Verfügung stehen, müssen Sie [sie bestellen](../vlans/order-vlan.html).
-
-1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](access-gateway-details.html), die sich im Kundenportal befindet.
+1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details), die sich im Kundenportal befindet.
 2. Wählen Sie die Registerkarte 'VLAN' aus.
 3. Klicken Sie auf **VLAN zuordnen** und wählen Sie ein VLAN in der Dropdown-Liste aus.
 4. Klicken Sie auf **Speichern** und bestätigen Sie Ihre Auswahl. Durch die Zuordnungsaktion für das VLAN wird das VLAN nicht durch die Firewall weitergeleitet.
@@ -38,7 +38,7 @@ Zugeordnete VLANs sind mit einer Gateway-Appliance verknüpft, jedoch trifft ein
 
 Führen Sie das folgende Verfahren aus, um ein zugeordnetes VLAN weiterzuleiten:
 
-1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](access-gateway-details.html), die sich im Kundenportal befindet.
+1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details), die sich im Kundenportal befindet.
 2. Wählen Sie die Registerkarte 'VLAN' aus.
 3. Wählen Sie mindestens ein gewünschtes VLAN aus, indem Sie das Kontrollkästchen auswählen.
 4. Klicken Sie auf **Weiterleiten über** und bestätigen Sie Ihre Auswahl.
@@ -53,7 +53,7 @@ Bei Umgehen eines VLANs bleibt das VLAN weiterhin dem Netzgateway zugeordnet. So
 
 Führen Sie das folgende Verfahren aus, um das Gateway-Routing für ein VLAN zu umgehen:
 
-1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](access-gateway-details.html), die sich im Kundenportal befindet.
+1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details), die sich im Kundenportal befindet.
 2. Wählen Sie die Registerkarte 'VLAN' aus.
 3. Wählen Sie mindestens ein gewünschtes VLAN aus, indem Sie das Kontrollkästchen auswählen.
 4. Klicken Sie auf **Umgehen** und bestätigen Sie Ihre Auswahl.
@@ -66,7 +66,7 @@ VLANs können über eine [Zuordnung](#associate-a-vlan-to-a-gateway-appliance) m
 
 Führen Sie das folgende Verfahren aus, um die Zuordnung eines VLANs zu einer Gateway-Appliance aufzuheben:
 
-1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](access-gateway-details.html), die sich im Kundenportal befindet.
+1. [Rufen Sie die Anzeige 'Details zu Gateway-Appliances' auf](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details), die sich im Kundenportal befindet.
 2. Wählen Sie die Registerkarte 'VLAN' aus.
 3. Wählen Sie mindestens ein gewünschtes VLAN aus, indem Sie das Kontrollkästchen auswählen.
 4. Klicken Sie auf **Zuordnung aufheben** und bestätigen Sie Ihre Auswahl.
@@ -74,7 +74,7 @@ Führen Sie das folgende Verfahren aus, um die Zuordnung eines VLANs zu einer Ga
 Nach der Aufhebung der Zuordnung zwischen VLAN und Gateway-Appliance kann das VLAN einem anderen Gateway zugeordnet werden. Das VLAN kann jederzeit auch wieder derselben Gateway-Appliance zugeordnet werden. Nach der Aufhebung der Zuordnung zwischen VLAN und Gateway-Appliance kann der Datenverkehr des VLANs nicht mehr über das Gateway weitergeleitet werden. VLANs müssen einer Gateway-Appliance zugeordnet sein, bevor sie an diese weitergeleitet werden können.
 
 ## Mehrere VLANs über dieselbe Netzschnittstelle weiterleiten
-Der Betrieb der Komponente Juniper vSRX kann mit mehreren VLANs über dieselbe Netzschnittstelle erfolgen. Sie kann auch gleichzeitig Datenverkehr handhaben, der mit Tags versehen ist bzw. keine Tags aufweist. Dies wird auf der eigenständigen Einheit erreicht, indem als Schnittstellenkapselung `flexible-vlan-tagging` eingestellt wird; auf Einheiten mit Hochverfügbarkeit werden 'reth2' und 'reth3' als mit Tags versehene Schnittstellen verwendet. Dies wird im Rahmen der Standardkonfiguration ausgeführt und muss nicht geändert werden. In den eigenständigen Einheiten ist Einheit 0 die nicht mit Tags versehene Unterschnittstelle; andere Einheiten, die ungleich null sind, sind mit Tags versehen.
+Der Betrieb der Komponente Juniper vSRX kann mit mehreren VLANs über dieselbe Netzschnittstelle erfolgen. Sie kann auch gleichzeitig Datenverkehr handhaben, der mit Tags versehen ist bzw. keine Tags aufweist. Dies wird auf der eigenständigen Einheit erreicht, indem als Schnittstellenkapselung `flexible-vlan-tagging` eingestellt wird; auf Einheiten mit Hochverfügbarkeit werden 'reth2' und 'reth3' als mit Tags versehene Schnittstellen verwendet. Dies wird im Rahmen der Standardkonfiguration ausgeführt und muss nicht geändert werden.  In den eigenständigen Einheiten ist Einheit 0 die nicht mit Tags versehene Unterschnittstelle; andere Einheiten, die ungleich null sind, sind mit Tags versehen.
 
 Konfigurieren Sie mithilfe der folgenden Befehlsgruppe weitere mit Tags versehene Schnittstellen:
 
@@ -85,7 +85,6 @@ set interfaces ge-0/0/0 unit 50 family inet address <IP/MASKE>
 ```
 
 Bei Hochverfügbarkeitslösung:
-
 ```
 set interfaces reth2 unit 50 vlan-id 50
 set interfaces reth2 unit 50 family inet address <IP/MASKE>

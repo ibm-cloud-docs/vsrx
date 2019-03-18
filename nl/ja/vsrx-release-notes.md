@@ -15,4 +15,6 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # IBM Cloud Juniper vSRX リリース・ノート 
-最新のリリース・ノートのリストについては、[Juniper の Web サイト](https://www.juniper.net/support/downloads/?p=vsrx#docs)を参照してください。
+{: #ibm-cloud-juniper-vsrx-release-notes}
+
+最新のリリース・ノートのリストについては、[Juniper の Web サイト![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/product/en_US/vsrx){:new_window}を参照してください。

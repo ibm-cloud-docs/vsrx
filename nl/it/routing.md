@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Utilizzo dell'instradamento
+{: #working-with-routing}
+
 IBM® Cloud Juniper vSRX si basa su `JunOS`, fornendoti l'accesso allo stack di instradamento Juniper completo.
 
 ##Instradamento statico
@@ -61,4 +63,4 @@ In questo esempio, BGP è configurato per:
 * Eseguire il peer con un router adiacente che appartiene a `AS 65002`
 * Eseguire il peer dell'IP del router adiacente `2.2.2.2`
 
-È possibile trovare ulteriori configurazioni [qui](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf).
+Si possono trovare altre configurazioni sul [sito web Juniper ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf){: new_window}.

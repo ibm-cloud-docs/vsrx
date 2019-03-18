@@ -15,13 +15,15 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Mit Firewalls arbeiten
+{: #working-with-firewalls}
+
 Die Komponente Juniper vSRX-Gateway für IBM® Cloud verwendet das Konzept der Sicherheitszonen, bei dem jede vSRX-Schnittstelle zum Handhaben von statusabhängigen Firewalls einer 'Zone' zugeordnet ist. Statusunabhängige Firewalls werden von Firewallfiltern gesteuert.
 
 Zum Zulassen und Blockieren von Datenverkehr zwischen diesen definierten Zonen werden Richtlinien verwendet und die hier definierten Regeln sind statusabhängig.
 
 In IBM Cloud sind vSRX-Komponenten so konzipiert, dass sie vier unterschiedliche Sicherheitszonen aufweisen:
 
-| Zone                     | Eigenständige Schnittstelle |Hochverfügbarkeitsschnittstelle|
+| Zone                     | Eigenständige Schnittstelle | Hochverfügbarkeitsschnittstelle |
 | :---                     |        :----:        |         ---: |
 | SL-Private (ohne Tag)    | ge-0/0/0.0           | reth0.0      |
 | SL-Public (ohne Tag)     | ge-0/0/1.0           | reth1.0      |

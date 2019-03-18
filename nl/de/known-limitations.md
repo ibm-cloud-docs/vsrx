@@ -14,7 +14,8 @@ lastupdated: "2018-11-06"
 {:tip: .tip}
 {:download: .download}
 
-# Bekannte Einschränkungen
+# Bekannte Einschränkung bei Juniper vSRX für IBM Cloud
+{: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
 Aktuelle Einschränkungen für Juniper vSRX für {{site.data.keyword.cloud}} IBM® Cloud:
 

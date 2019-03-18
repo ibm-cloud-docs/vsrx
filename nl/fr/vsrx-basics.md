@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Principes de base de vSRX
+# Exécution des opérations IBM Cloud Juniper vSRX élémentaires
+{: #performing-ibm-cloud-juniper-vsrx-basics}
+
 La passerelle IBM® Cloud Juniper vSRX peut être configurée à l'aide d'une session de console distante via SSH ou en se connectant à l'interface graphique de gestion Web de Juniper.
 
 **Remarque :** La configuration de vSRX en dehors de son shell et de son interface peut produire des résultats inattendus, et n'est donc pas recommandée.
@@ -27,7 +29,7 @@ Vous pouvez accéder au vSRX à l'aide de SSH via une adresse IP publique ou via
 
   <img src="images/basics.png" alt="dessin" style="width: 700px;"/>
 
-2. Cliquez sur l'icône représentant un oeil pour révéler le mot de passe de l'utilisateur admin. 
+2. Cliquez sur l'icône représentant un oeil pour révéler le mot de passe de l'utilisateur admin.
 
 3. Exécutez la commande `ssh admin@<gateway-ip>` et entrez le mot de passe de l'utilisateur admin.
 

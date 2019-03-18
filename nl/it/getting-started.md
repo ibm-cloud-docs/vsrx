@@ -16,7 +16,8 @@ lastupdated: "2018-11-07"
 {:important: .important}
 {:note: .note}
 
-# Introduzione 
+# Introduzione a IBM Cloud Juniper vSRX Gateway
+{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
 
 Per iniziare ad utilizzare IBM® Cloud Juniper vSRX Gateway, determina prima se il tuo account è collegato a IBM Cloud.
 
@@ -28,7 +29,8 @@ Per scoprire se hai un account collegato, passa al [Portale del cliente ![Icona 
 
 Puoi ordinare la tua applicazione gateway, utilizzando uno di questi metodi:
 
-**NOTA:** per un elenco di limitazioni note con IBM Cloud Juniper vSRX Gateway, fai riferimento [all'argomento Limitazioni note](known-limitations.html).
+Per un elenco delle limitazioni note con IBM Cloud Juniper vSRX Gateway, fai riferimento all'[argomento Limitazioni note](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
+{:note}
 
 ### Fare un ordine con un account collegato
 Se il tuo account è collegato, segui questa procedura:
@@ -43,7 +45,7 @@ Se il tuo account è collegato, segui questa procedura:
 
 5. Successivamente, seleziona la tua **Location** e il **Pod** associato e quindi scegli il tuo **Server** e la quantità desiderata di **RAM**.
 
-	**NOTA:** se pensi di utilizzare un Dual Processor Multi-Core Server, devi selezionare **Intel Xeon 5120** come tipo di server.
+	Se pensi di utilizzare un Dual Processor Multi-Core Server, devi selezionare **Intel Xeon 5120** come tipo di server. {:note:}
 
 	<img src="images/linked_server.png" alt="disegno" style="width: 600px;"/>
 
@@ -59,10 +61,10 @@ Se il tuo account non è collegato, segui questa procedura:
 1.	Apri il [Portale del cliente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://control.softlayer.com/){: new_window} e accedi al tuo account.
 2.	Nella navigazione del portale del cliente, seleziona **Network > Gateway Appliances**.
 3.	Dall'elenco **Gateway Appliances**, fai clic su **Order Gateway**.
-4.	Dalla pagina **Order**, seleziona il tuo data center desiderato dal menu a discesa, quindi scegli il tipo desiderato di hardware server su cui sarà eseguito il provisioning di Juniper vSRX. 
+4.	Dalla pagina **Order**, seleziona il tuo data center desiderato dal menu a discesa, quindi scegli il tipo desiderato di hardware server su cui sarà eseguito il provisioning di Juniper vSRX.
 
-	**NOTA:** se pensi di utilizzare un Dual Processor Multi-Core Server, devi selezionare **Intel Xeon 5120** come tipo di server.
-	
+	Se pensi di utilizzare un Dual Processor Multi-Core Server, devi selezionare **Intel Xeon 5120** come tipo di server. {:note}
+
 5.	Nella pagina **Order**, seleziona l'opzione **High Availability Pair** se desiderato, quindi seleziona la dimensione di **Memory**.
 6. 	Successivamente, fai clic sulla scheda **Juniper** in **Operating System**, seleziona **Juniper vSRX 15.x (up to 1 Gbps) Standard** per un server con un solo processore o **Juniper vSRX 15.x (up to 10 Gbps) Standard** per un server con due processori.
 7. 	Infine, seleziona la velocità di uplink di rete desiderata.

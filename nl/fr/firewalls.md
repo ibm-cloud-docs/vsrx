@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Fonctionnement des pare-feux
+{: #working-with-firewalls}
+
 IBM® Cloud Juniper vSRX s'appuie sur le concept de zones de sécurité, où chaque interface vSRX est mappée à une "zone" pour le traitement des pare-feux avec état. Les pare-feux sans état sont contrôlés par des filtres de pare-feu.
 
 Les politiques sont utilisées pour autoriser et bloquer le trafic entre ces zones définies, et les règles définies ici sont avec état.

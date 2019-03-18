@@ -14,21 +14,21 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# VLAN の管理
-[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面 ](access-gateway-details.html)からさまざまなアクションを実行できます。
+# IBM VLAN の管理
+{: #managing-ibm-vlans}
+
+[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面 ](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details)からさまざまなアクションを実行できます。
 
 ## ゲートウェイ・アプライアンスへの VLAN の関連付け
 
-VLAN を経路指定するには、その前にゲートウェイ・アプライアンスに VLAN を関連付ける必要があります。 VLAN の関連付けとは、VLAN をゲートウェイ・アプライアンスに経路指定できるように、適格な VLAN をネットワーク・ゲートウェイにリンクすることです。この関連付けにより、VLAN がゲートウェイ・アプライアンスに自動的に経路指定されるわけではありません。経路指定されるまで、VLAN はフロントエンドとバックエンドのお客様のルーターを使用し続けます。
+VLAN を経路指定するには、その前にゲートウェイ・アプライアンスに VLAN を関連付ける必要があります。 VLAN の関連付けとは、VLAN をゲートウェイ・アプライアンスに経路指定できるように、適格な VLAN をネットワーク・ゲートウェイにリンクすることです。 この関連付けにより、VLAN がゲートウェイ・アプライアンスに自動的に経路指定されるわけではありません。経路指定されるまで、VLAN はフロントエンドとバックエンドのお客様のルーターを使用し続けます。
 
 VLAN は、一度に 1 つのゲートウェイにのみ関連付けられ、ファイアウォールを持つことはできません。 以下の手順に従って VLAN をネットワーク・ゲートウェイに関連付けます。
 
-**注:** 関連付けに使用可能な VLAN がない場合は、[注文する](../vlans/order-vlan.html)必要があります。
-
-1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](access-gateway-details.html)します。
+1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details)します。
 2. 「VLAN」タブを選択します。
 3. **「VLAN の関連付け (Associate VLAN)」**をクリックし、ドロップダウンから VLAN を選択します。
-4. **「保存」**をクリックし、選択内容を確認します。VLAN 関連付けアクションでは、ファイアウォールを経由するようには VLAN は経路指定されません。
+4. **「保存」**をクリックし、選択内容を確認します。 VLAN 関連付けアクションでは、ファイアウォールを経由するようには VLAN は経路指定されません。
 
 VLAN をゲートウェイ・アプライアンスに関連付けた後、その VLAN は「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面の「関連付けられた VLAN」セクションに表示されます。 このセクションで、VLAN をゲートウェイに経路指定したり、ゲートウェイから関連付けを解除したりすることができます。 上記のステップを繰り返すことで、適格な VLAN をいつでもゲートウェイ・アプライアンスにさらに関連付けることができます。
 
@@ -38,7 +38,7 @@ VLAN をゲートウェイ・アプライアンスに関連付けた後、その
 
 関連付けられた VLAN を経路指定するには、次の手順を実行します。
 
-1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](access-gateway-details.html)します。
+1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details)します。
 2. 「VLAN」タブを選択します。
 3. チェック・ボックスを切り替えることでご希望の VLAN を選択します。
 4. **「通る経路」**をクリックし、選択内容を確認します。
@@ -53,7 +53,7 @@ VLAN をバイパスすると、VLAN をネットワーク・ゲートウェイ�
 
 以下の手順を実行して、VLAN のゲートウェイ経路指定をバイパスします。
 
-1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](access-gateway-details.html)します。
+1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details)します。
 2. 「VLAN」タブを選択します。
 3. チェック・ボックスを切り替えることでご希望の VLAN を選択します。
 4. **「回る経路」**をクリックし、選択内容を確認します。
@@ -66,7 +66,7 @@ VLAN は、[関連付け](#associate-a-vlan-to-a-gateway-appliance)を介して�
 
 以下の手順に従って VLAN からゲートウェイ・アプライアンスへの関連付けを解除します。
 
-1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](access-gateway-details.html)します。
+1. カスタマー・ポータルの[「ゲートウェイ・アプライアンスの詳細 (Gateway Appliance Details)」画面にアクセス](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details)します。
 2. 「VLAN」タブを選択します。
 3. チェック・ボックスを切り替えることでご希望の VLAN を選択します。
 4. **「関連付け解除」**をクリックし、選択内容を確認します。
@@ -74,7 +74,7 @@ VLAN は、[関連付け](#associate-a-vlan-to-a-gateway-appliance)を介して�
 ゲートウェイ・アプライアンスから VLAN を関連付け解除した後、VLAN を別のゲートウェイに関連付けることができます。 また、いつでも、VLAN を元のゲートウェイ・アプライアンスに再び関連付けることができます。 ゲートウェイ・アプライアンスから VLAN の関連付けを解除した後、VLAN のトラフィックをゲートウェイ経由で経路指定することはできません。 VLAN を経路指定するには、その前にゲートウェイ・アプライアンスに関連付ける必要があります。
 
 ## 同じネットワーク・インターフェース上で複数の VLAN を経路指定する
-IBM® Cloud Juniper vSRX は、同じネットワーク・インターフェース上で複数の VLAN と運用できます。タグなしのトラフィックとタグ付きのトラフィックの両方を同時に処理することもできます。この処理は、スタンドアロン・デバイス上でインターフェースのカプセル化を `flexible-vlan-tagging` に設定して行うか、高可用性デバイス上でタグ付けされたインターフェースとして reth2 と reth3 を使用して行います。これはデフォルト構成の一部として行われ、変更する必要はありません。スタンドアロン・デバイスでは、Unit 0 はタグなしのサブインターフェースで、その他のゼロでないユニットはタグ付けされます。
+IBM® Cloud Juniper vSRX は、同じネットワーク・インターフェース上で複数の VLAN と運用できます。 タグなしのトラフィックとタグ付きのトラフィックの両方を同時に処理することもできます。 この処理は、スタンドアロン・デバイス上でインターフェースのカプセル化を `flexible-vlan-tagging` に設定して行うか、高可用性デバイス上でタグ付けされたインターフェースとして reth2 と reth3 を使用して行います。 これはデフォルト構成の一部として行われ、変更する必要はありません。  スタンドアロン・デバイスでは、Unit 0 はタグなしのサブインターフェースで、その他のゼロでないユニットはタグ付けされます。
 
 追加のタグ付きインターフェースを構成するには、以下のコマンド・セットを使用します。
 
@@ -85,18 +85,17 @@ set interfaces ge-0/0/0 unit 50 family inet address <IP/MASK>
 ```
 
 HA の場合:
-
 ```
 set interfaces reth2 unit 50 vlan-id 50
 set interfaces reth2 unit 50 family inet address <IP/MASK>
 ```
 
-**注:** Unit 0 は、タグなしであっても、`native-vlan` として構成されている VLAN ID を `JunOS` が参照するのに必要です。この例では、`native-vlan-id` が `10` なので、Unit 0 の `vlan-id` も `10` にする必要があります。このようにして、Unit 0 にタグを付けないことが `JunOS` に通知されます。
+**注:** Unit 0 は、タグなしであっても、`native-vlan` として構成されている VLAN ID を `JunOS` が参照するのに必要です。 この例では、`native-vlan-id` が `10` なので、Unit 0 の `vlan-id` も `10` にする必要があります。 このようにして、Unit 0 にタグを付けないことが `JunOS` に通知されます。
 
 ## vSRX 用の VLAN 構成の例
 
 以下に、vSRX 用の構成の例を示します。2 つのプライベート・インターフェースと 1 つのカスタマー・ゾーンが定義されています。
-このサンプル構成では、プライベート VLAN1 とプライベート VLAN2 が相互に通信できます。スタンドアロン vSRX インターフェースは ge-0/0/0 (プライベート) および ge-0/0/1 (パブリック) として定義され、高可用性インスタンスの場合は reth2 (HA プライベート) および reth3 (HA パブリック) として定義されます。
+このサンプル構成では、プライベート VLAN1 とプライベート VLAN2 が相互に通信できます。 スタンドアロン vSRX インターフェースは ge-0/0/0 (プライベート) および ge-0/0/1 (パブリック) として定義され、高可用性インスタンスの場合は reth2 (HA プライベート) および reth3 (HA パブリック) として定義されます。
 
 <img src="images/Sample-Topology-VLAN-to-VLAN.png" alt="図面" style="width: 500px;"/>
 

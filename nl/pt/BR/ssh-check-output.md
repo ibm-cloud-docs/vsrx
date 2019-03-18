@@ -13,7 +13,9 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Certifique a saída e confirme as mudanças
+# Confirmando a saída e as mudanças
+{: #confirming-the-output-and-commiting-the-changes}
+
 Após estagiar as mudanças e inclusões feitas, execute o comando a seguir para certificar o que será confirmado na configuração ativa:
 
 ```
@@ -84,4 +86,6 @@ Depois de verificar que a configuração está correta, execute o comando `commi
 
 Agora, o seu IBM Cloud Juniper vSRX Standard está configurado para rotear e filtrar o tráfego para as novas VLAN e sub-rede, permitindo apenas pings de entrada e conexões SSH. 
 
-Agora, é necessário rotear a VLAN conforme mostrado em [Gerenciar VLANs](manage-vlans.html) para começar a usar a nova funcionalidade.
+Agora, é necessário rotear a VLAN conforme mostrado em
+[Gerenciar VLANs](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) para começar a usar a
+nova funcionalidade.

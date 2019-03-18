@@ -15,6 +15,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Alle Gateway-Appliances anzeigen
+{: #viewing-all-your-gateway-appliances}
 
 In der Anzeige 'Gateway-Appliances' im Kundenportal können Sie alle Netz-Gateway-Appliances einschließlich der Komponente Juniper vSRX für IBM® Cloud anzeigen und auf sie zugreifen.  
 
@@ -27,4 +28,4 @@ Führen Sie das folgende Verfahren aus, um auf die Anzeige 'Gateway-Appliances' 
   
 Die Seite mit der Liste der Netz-Gateway-Appliances weist zusätzliche Funktionen auf, einschließlich der Möglichkeit zur Sortierung nach Name, Anbieter oder Standort. Durch Klicken auf die Kopfzeilen dieser Spalten werden Ihre Gateways alphabetisch sortiert und Sie erhalten eine bequemere Ansicht. Wenn Sie die Anzahl der auf der Seite angezeigten Gateways erhöhen möchten, klicken Sie auf die Dropdown-Liste in der linken unteren Ecke und erweitern Sie wie gewünscht das Raster. Darüber hinaus können Sie die Seiten in der rechten unteren Ecke wechseln, um die übrigen Gateways anzuzeigen.  
 
-Sie haben auch die Möglichkeit, Ihr Gateway umzubenennen. Klicken Sie dazu ganz rechts im Raster auf das Überlaufmenü. 
+Sie haben auch die Möglichkeit, Ihr Gateway umzubenennen. Klicken Sie dazu ganz rechts im Raster auf das Überlaufmenü.

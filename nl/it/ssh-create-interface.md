@@ -13,7 +13,9 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Crea la nuova interfaccia, la zona e la sottorete della rubrica
+# Creazione della nuova interfaccia, della zona e della sottorete della rubrica
+{: #creating-the-new-interface-zone-and-address-book-subnet}
+
 Per prima cosa, dovrai creare un'unità di interfaccia per la VLAN e aggiungere l'indirizzo gateway della sottorete. Sarai quindi in grado di creare una zona di sicurezza associata alla nuova unità e una voce `address-book` per la sottorete.  
 
 **NOTA:** scorri a destra per visualizzare il comando completo!

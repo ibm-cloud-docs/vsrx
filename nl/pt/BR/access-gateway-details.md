@@ -15,12 +15,13 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Visualizando os detalhes do dispositivo de gateway
+{: #viewing-your-gateway-appliance-details}
 
 O gateway de rede é usado para controlar o tráfego de rede em uma VLAN controlada regularmente por um roteador. Na tela Detalhes do dispositivo de gateway no Portal do cliente, é possível associar, desassociar, rotear e efetuar bypass de VLANs com um gateway de rede.
 
 Execute o procedimento a seguir para acessar a tela Detalhes do Gateway.
 
-1. [Acesse a tela Dispositivos de Gateway](access-gateway-appliances.html) no Portal do Cliente.
+1. [Acesse a tela Dispositivos de Gateway](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) no Portal do Cliente.
 2. Clique no Nome do Dispositivo de Gateway para o Gateway de Rede desejado para acessar a tela Detalhes do Dispositivo de Gateway.
 
 <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>

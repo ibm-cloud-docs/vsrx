@@ -14,8 +14,10 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Gestion de réseaux locaux virtuels
-Vous pouvez effectuer toute une série d'actions à partir de l'[écran des détails du dispositif de passerelle](access-gateway-details.html).
+# Gestion des réseaux locaux virtuels (VLAN) IBM
+{: #managing-ibm-vlans}
+
+Vous pouvez effectuer toute une série d'actions à partir de l'[écran des détails du dispositif de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details).
 
 ## Associer un VLAN à un dispositif de passerelle
 
@@ -23,9 +25,7 @@ Un VLAN doit être associé à un dispositif de passerelle pour permettre son ro
 
 Les VLAN peuvent être associés à une seule passerelle à la fois et ne doivent pas avoir de pare-feu. Pour associer un VLAN à une passerelle réseau, procédez comme suit :
 
-**Remarque :** Si aucun VLAN n'est disponible pour une telle association, vous devrez alors en [commander](../vlans/order-vlan.html) un.
-
-1. [Accédez à l'écran des détails du dispositif de passerelle](access-gateway-details.html) dans le portail client.
+1. [Accédez à l'écran des détails du dispositif de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) dans le portail client.
 2. Sélectionnez l'onglet des VLAN.
 3. Cliquez sur **Associer le VLAN** et choisissez un réseau local virtuel dans la liste déroulante.
 4. Cliquez sur **Enregistrer** et validez votre sélection. Cette association ne fait pas passer le réseau local virtuel par le pare-feu.
@@ -38,7 +38,7 @@ Les VLAN associés sont liés à un dispositif de passerelle, mais le trafic ent
 
 Pour router un VLAN associé, procédez comme suit :
 
-1. [Accédez à l'écran des détails du dispositif de passerelle](access-gateway-details.html) dans le portail client.
+1. [Accédez à l'écran des détails du dispositif de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) dans le portail client.
 2. Sélectionnez l'onglet des VLAN.
 3. Cochez le ou les VLAN de votre choix.
 4. Cliquez sur **Route à Travers** et confirmez votre sélection.
@@ -53,7 +53,7 @@ Le contournement du VLAN permet au VLAN de rester associé à la passerelle rés
 
 Pour ignorer le routage de la passerelle d'un VLAN, procédez comme suit :
 
-1. [Accédez à l'écran des détails du dispositif de passerelle](access-gateway-details.html) dans le portail client.
+1. [Accédez à l'écran des détails du dispositif de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) dans le portail client.
 2. Sélectionnez l'onglet des VLAN.
 3. Cochez le ou les VLAN de votre choix.
 4. Cliquez sur **Route Autour** et confirmez votre sélection.
@@ -66,7 +66,7 @@ Les VLAN peuvent être liés à un dispositif de passerelle à la fois par [asso
 
 Pour dissocier un VLAN d'un dispositif de passerelle, procédez comme suit :
 
-1. [Accédez à l'écran des détails du dispositif de passerelle](access-gateway-details.html) dans le portail client.
+1. [Accédez à l'écran des détails du dispositif de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) dans le portail client.
 2. Sélectionnez l'onglet des VLAN.
 3. Cochez le ou les VLAN de votre choix.
 4. Cliquez sur **Dissocier** et confirmez votre sélection.
@@ -74,7 +74,7 @@ Pour dissocier un VLAN d'un dispositif de passerelle, procédez comme suit :
 Après avoir dissocié un VLAN d'un dispositif de passerelle, le VLAN peut être associé à une autre passerelle. Le VLAN peut également être réassocié au dispositif de passerelle à tout moment. Après avoir dissocié un VLAN d'un dispositif de passerelle, le trafic du VLAN ne peut pas être routé via la passerelle. Les VLAN doivent être associés à un dispositif de passerelle pour pouvoir être routés.
 
 ## Router plusieurs VLAN sur la même interface réseau
-IBM® Cloud Juniper vSRX peut fonctionner avec plusieurs VLAN sur la même interface réseau. Il permet également de traiter le trafic balisé et non balisé en même temps. Pour cela, il utilise le périphérique autonome en définissant l'encapsulation d'interface sur `flexible-vlan-tagging`, ou sur les périphériques haute disponibilité en utilisant reth2 et reth3 comme interfaces balisées. Ceci est fait dans le cadre de la configuration par défaut et n'a pas besoin d'être modifié. Sur les périphériques autonomes, l'unité 0 correspond à la sous-interface non balisée, et les autres unités sont balisées.
+IBM® Cloud Juniper vSRX peut fonctionner avec plusieurs VLAN sur la même interface réseau. Il permet également de traiter le trafic balisé et non balisé en même temps. Pour cela, il utilise le périphérique autonome en définissant l'encapsulation d'interface sur `flexible-vlan-tagging`, ou sur les périphériques haute disponibilité en utilisant reth2 et reth3 comme interfaces balisées. Ceci est fait dans le cadre de la configuration par défaut et n'a pas besoin d'être modifié.  Sur les périphériques autonomes, l'unité 0 correspond à la sous-interface non balisée, et les autres unités sont balisées.
 
 Exécutez les commandes suivantes pour configurer des interfaces balisées supplémentaires :
 
@@ -85,7 +85,6 @@ set interfaces ge-0/0/0 unit 50 family inet address <IP/MASK>
 ```
 
 Cas haute disponibilité :
-
 ```
 set interfaces reth2 unit 50 vlan-id 50
 set interfaces reth2 unit 50 family inet address <IP/MASK>

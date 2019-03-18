@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Entendendo a configuração padrão do vSRX
+{: #understanding-the-vsrx-default-configuration}
+
 Os dispositivos de gateway Juniper vSRX no IBM Cloud vêm com a configuração padrão a seguir:
 
 * SSH e ping são permitidos em ambos os endereços IP de gateway público e privado do vSRX
@@ -506,10 +508,10 @@ A tabela a seguir ilustra as definições de interface de rede para a configura�
 | ge-0/0/3 / ge-0/0/4   |  Interface Ethernet Gigabit para a VLAN pública no nó primário |
 | ge-7/0/1 / ge-7/0/2  |  Interface Ethernet Gigabit para a VLAN privada no nó secundário |
 | ge-7/0/3 / ge-7/0/4  |  Interface Ethernet Gigabit para a VLAN pública no nó secundário |
-| reth0         |   Interface Ethernet redundante para a VLAN de trânsito SL-PRIVATE|
+| reth0         |   Interface Ethernet redundante para a VLAN de trânsito SL-PRIVATE |
 | reth1         |   Interface Ethernet redundante para a VLAN de trânsito SL-PUBLIC  |
 | reth2         |   Interface Ethernet redundante para as VLANs privadas do CLIENTE  |
-| reth3         |   Interface Ethernet redundante para as VLANs públicas do CLIENTE  |
+| reth3         |   Interface Ethernet redundante para as VLANs públicas do CLIENTE   |
 | fab0 / fab1   |   Link de malha do cluster do chassi |
 | fxp0          |   Interface de gerenciamento        |
 | lo0           |   Interface de loopback          |

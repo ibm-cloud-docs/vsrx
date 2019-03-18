@@ -14,8 +14,10 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Gerenciando as VLANs
-É possível executar uma variedade de ações da [tela Detalhes do Dispositivo de Gateway](access-gateway-details.html).
+# Gerenciando as VLANs da IBM
+{: #managing-ibm-vlans}
+
+É possível executar uma variedade de ações da [tela Detalhes do Dispositivo de Gateway](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details).
 
 ## Associar uma VLAN a um Dispositivo de Gateway
 
@@ -23,9 +25,7 @@ Uma VLAN precisa ser associada a um Dispositivo de Gateway antes de poder ser ro
 
 VLANs podem ser associadas a apenas um Gateway por vez e não devem ter um firewall. Execute o procedimento a seguir para associar uma VLAN a um Gateway de Rede.
 
-**NOTA:** se não houver VLANs disponíveis para associar, será necessário [solicitá-las](../vlans/order-vlan.html).
-
-1. [Acesse a tela Detalhes do Dispositivo de Gateway](access-gateway-details.html) no Portal do Cliente.
+1. [Acesse a tela Detalhes do Dispositivo de Gateway](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) no Portal do Cliente.
 2. Selecione a guia VLANs.
 3. Clique em **Associar VLAN** e selecione uma VLAN na lista suspensa.
 4. Clique em **Salvar** e confirme a seleção. A ação de associação de VLAN não roteia a VLAN por meio do firewall.
@@ -38,7 +38,7 @@ VLANs associadas são vinculadas a um Dispositivo de Gateway, mas o tráfego den
 
 Execute o procedimento a seguir para rotear uma VLAN associada:
 
-1. [Acesse a tela Detalhes do Dispositivo de Gateway](access-gateway-details.html) no Portal do Cliente.
+1. [Acesse a tela Detalhes do Dispositivo de Gateway](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) no Portal do Cliente.
 2. Selecione a guia VLANs.
 3. Selecione a(s) VLAN(s) desejada(s) alternando a caixa de seleção.
 4. Clique em **Rotear por meio de** e confirme a seleção.
@@ -53,7 +53,7 @@ O bypass de uma VLAN permite que a VLAN permaneça associada ao Gateway de Rede.
 
 Execute o procedimento a seguir para efetuar bypass do roteamento de Gateway para uma VLAN:
 
-1. [Acesse a tela Detalhes do Dispositivo de Gateway](access-gateway-details.html) no Portal do Cliente.
+1. [Acesse a tela Detalhes do Dispositivo de Gateway](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) no Portal do Cliente.
 2. Selecione a guia VLANs.
 3. Selecione a(s) VLAN(s) desejada(s) alternando a caixa de seleção.
 4. Clique em **Rotear ao redor** e confirme a seleção.
@@ -66,7 +66,7 @@ VLANs podem ser vinculadas a um Dispositivo de Gateway em um momento por meio de
 
 Execute o procedimento a seguir para desassociar uma VLAN de um Dispositivo de Gateway:
 
-1. [Acesse a tela Detalhes do Dispositivo de Gateway](access-gateway-details.html) no Portal do Cliente.
+1. [Acesse a tela Detalhes do Dispositivo de Gateway](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) no Portal do Cliente.
 2. Selecione a guia VLANs.
 3. Selecione a(s) VLAN(s) desejada(s) alternando a caixa de seleção.
 4. Clique em **Desassociar** e confirme a seleção.
@@ -74,7 +74,7 @@ Execute o procedimento a seguir para desassociar uma VLAN de um Dispositivo de G
 Depois de desassociar uma VLAN de um Dispositivo de Gateway, a VLAN pode ser associada a outro Gateway. A VLAN também pode ser associada de volta ao Dispositivo de Gateway a qualquer momento. Após desassociar uma VLAN de um Dispositivo de Gateway, o tráfego da VLAN não pode ser roteado por meio do Gateway. As VLANs devem estar associadas a um Dispositivo de Gateway antes de poderem ser roteadas.
 
 ## Roteie múltiplas VLANs por meio da mesma interface de rede
-O IBM® Cloud Juniper vSRX pode operar com múltiplas VLANs por meio da mesma interface de rede. Ele também pode manipular o tráfego identificado e o não identificado ao mesmo tempo. Isso é realizado no dispositivo independente configurando a encapsulação da interface como `flexible-vlan-tagging` ou nos dispositivos de alta disponibilidade usando reth2 e reth3 como interfaces identificadas. Isso é feito como parte da configuração padrão e não precisa ser modificado. Nos dispositivos independentes, a unidade 0 é a subinterface não identificada. As outras unidades diferentes de zero são identificadas.
+O IBM® Cloud Juniper vSRX pode operar com múltiplas VLANs por meio da mesma interface de rede. Ele também pode manipular o tráfego identificado e o não identificado ao mesmo tempo. Isso é realizado no dispositivo independente configurando a encapsulação da interface como `flexible-vlan-tagging` ou nos dispositivos de alta disponibilidade usando reth2 e reth3 como interfaces identificadas. Isso é feito como parte da configuração padrão e não precisa ser modificado.  Nos dispositivos independentes, a unidade 0 é a subinterface não identificada. As outras unidades diferentes de zero são identificadas.
 
 Use o seguinte conjunto de comandos para configurar as interfaces identificadas adicionais:
 

@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # Mit Failover arbeiten
+{: #working-with-failover}
+
 **Anmerkung:** Dieser Abschnitt ist nur zutreffend, wenn Ihre Juniper vSRX-Gateway-Einheiten im Hochverfügbarkeitsmodus bereitgestellt wurden.
 
 In diesem Abschnitt wird beschrieben, wie ein Failover von Ihrer Gateway-Einheit auf eine Backup-Einheit eingeleitet wird, sodass nach dem Failover der gesamte Datenverkehr auf Steuer- und Datenebene über die sekundäre Gateway-Einheit geleitet wird.
@@ -71,4 +73,4 @@ Führen Sie dazu das folgende Verfahren aus:
 
 5. Melden Sie sich an dem anderen vSRX-Gateway Ihres Paars an. Rufen Sie erneut den CLI-Modus auf, indem Sie den Befehl `cli` ausführen; überprüfen Sie anschließend, dass in der Konsolenausgabe 'primär' (`primary`) angezeigt wird.
 
-**Anmerkung:** Wenn Sie den CLI-Modus in Ihrer Juniper vSRX-Gateway-Einheit aufrufen, wird die Ausgabe in der Steuerebenenperspektive als 'primär' (`primary`) angezeigt. Überprüfen Sie stets die Ausgabe für `show chassis cluster status`, um zu ermitteln, welche Gateway-Einheit in der Datenebenenperspektive primär ist. Lesen Sie den Abschnitt zur [vSRX-Standardkonfiguration](vsrx-default-config.html), um mehr über Redundanzgruppen sowie über Steuer- und Datenebenen zu erfahren.
+**Anmerkung:** Wenn Sie den CLI-Modus in Ihrer Juniper vSRX-Gateway-Einheit aufrufen, wird die Ausgabe in der Steuerebenenperspektive als 'primär' (`primary`) angezeigt. Überprüfen Sie stets die Ausgabe für `show chassis cluster status`, um zu ermitteln, welche Gateway-Einheit in der Datenebenenperspektive primär ist. Lesen Sie den Abschnitt zur [vSRX-Standardkonfiguration](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration), um mehr über Redundanzgruppen sowie über Steuer- und Datenebenen zu erfahren.

@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # Neue Datenflüsse erstellen
+{: #creating-your-new-traffic-flows}
+
 Nachdem Sie nun die neue Zone (`CUSTOMER-PUBLIC`) erstellt haben, müssen Sie Richtlinien konfigurieren, um den Netzdatenfluss zu steuern. Die erste unten konfigurierte Richtlinie lässt innerhalb der Zone `CUSTOMER-PUBLIC` jeglichen Datenverkehr zu. Die zweite Richtlinie lässt jeglichen Datenverkehr von `CUSTOMER-PUBLIC` an das öffentliche Internet zu, während die dritte Richtlinie nur SSH- und PING-Datenverkehr aus dem öffentlichen Internet an `CUSTOMER-PUBLIC` zulässt und den Rest löscht (da die Standardaktion 'Löschen' (`drop`) lautet).
 
 **Anmerkung:** Blättern Sie nach rechts, um den gesamten Befehl anzuzeigen.  

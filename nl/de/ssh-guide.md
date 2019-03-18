@@ -13,7 +13,9 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# SSH und Pingbefehl an öffentliches Teilnetz zulassen – Vorgehensweise
+# SSH und Pingbefehl an öffentliches Teilnetz zulassen
+{: #allowing-ssh-and-pinging-to-a-public-subnet}
+
 In diesem Leitfaden erfahren Sie, wie die Komponente Juniper vSRX Standard für IBM® Cloud mit einer neuen Schnittstelle, neuen Zone und einem Adressbuch konfiguriert wird. Da die Standardaktion für jeglichen Datenverkehr 'drop' ist (löschen), wird in diesem Leitfaden gezeigt, wie Datenflüsse eingerichtet werden, die a) innerhalb der neuen Zone jeglichen Datenverkehr zulassen, b) die jeglichen Datenverkehr aus der neuen Zone an das Internet zulassen und c) die nur SSH und Ping vom Internet an ein Teilnetz im neuen VLAN zulassen.
 
 In diesem Beispiel werden folgende Werte verwendet.
@@ -30,6 +32,6 @@ In dieser Schritt-für-Schritt-Anleitung erlernen Sie, wie der Service konfiguri
 
 Task  | Beschreibung
 ------------- | -------------
-[Neue Schnittstelle, neue Zone und Adressbuch für Teilnetz erstellen](ssh-create-interface.html) | Mit Tags versehene Schnittstelleneinheit und Sicherheitszone für das neue VLAN erstellen.
-[Neue Datenflüsse erstellen](ssh-create-flows.html) | Neue Datenflüsse erstellen, um eingehende Pingbefehle und SSH zuzulassen.
-[Ausgabe bestätigen und Änderungen festschreiben](ssh-check-output.html) | Ausgabe überprüfen, um zu bestätigen, was für die aktive Konfiguration festgeschrieben wird.
+[Neue Schnittstelle, neue Zone und Adressbuch für Teilnetz erstellen](/docs/infrastructure/vsrx?topic=vsrx-creating-the-new-interface-zone-and-address-book-subnet) | Mit Tags versehene Schnittstelleneinheit und Sicherheitszone für das neue VLAN erstellen.
+[Neue Datenflüsse erstellen](/docs/infrastructure/vsrx?topic=vsrx-creating-your-new-traffic-flows) | Neue Datenflüsse erstellen, um eingehende Pingbefehle und SSH zuzulassen.
+[Ausgabe bestätigen und Änderungen festschreiben](/docs/infrastructure/vsrx?topic=vsrx-confirming-the-output-and-commiting-the-changes) | Ausgabe überprüfen, um zu bestätigen, was für die aktive Konfiguration festgeschrieben wird.

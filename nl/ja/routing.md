@@ -15,6 +15,8 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
 # 経路指定の処理
+{: #working-with-routing}
+
 IBM® Cloud Juniper vSRX は `JunOS` に基づいており、Juniper ルーティング・スタックへのフル・アクセスを可能にします。
 
 ##静的経路指定
@@ -61,4 +63,4 @@ set protocols bgp group CUSTOMER neighbor 2.2.2.2
 * `AS 65002` に属する近隣とのピア接続
 * ピア近隣 IP `2.2.2.2`
 
-追加の構成は、[ここ](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf)でご覧ください。
+追加構成は、[Juniperの Web サイト![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos11.4/information-products/topic-collections/config-guide-routing/config-guide-routing.pdf){: new_window}にあります。

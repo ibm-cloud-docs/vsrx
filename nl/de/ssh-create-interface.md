@@ -14,6 +14,8 @@ lastupdated: "2018-10-22"
 {:table: .aria-labeledby="caption"}
 
 # Neue Schnittstelle, neue Zone und das Adressbuch für Teilnetz erstellen
+{: #creating-the-new-interface-zone-and-address-book-subnet}
+
 Zuerst müssen Sie eine Schnittstelleneinheit für das VLAN erstellen und die Gateway-Adresse des Teilnetzes hinzufügen. Anschließend können Sie eine der neuen Einheit zugeordnete Sicherheitszone und den Eintrag `address-book` für das Teilnetz erstellen.  
 
 **Anmerkung:** Blättern Sie nach rechts, um den gesamten Befehl anzuzeigen.

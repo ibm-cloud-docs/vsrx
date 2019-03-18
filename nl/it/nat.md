@@ -14,7 +14,9 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Utilizzo di NAT
+# Utilizzo di sNAT
+{: #working-with-snat}
+
 Questo argomento fornisce una configurazione di esempio per sNAT su un'applicazione vSRX. Con questa configurazione, un nodo privato instradato dietro il gateway può comunicare con il mondo esterno.
 
 <img src="images/Sample-Topology-SNAT.png" alt="disegno" style="width: 500px;"/>
@@ -54,4 +56,4 @@ nat {
 }
 ```
 
-Per configurare NAT per IBM® Cloud Juniper vSRX, fai riferimento a questa [guida di configurazione](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf) sul sito web Juniper.
+Per configurare NAT per IBM® Cloud Juniper vSRX, fai riferimento a questa [guida di configurazione ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} sul sito web Juniper.
