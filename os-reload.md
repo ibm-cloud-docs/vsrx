@@ -67,8 +67,6 @@ To rebuild one of your HA vSRX clusters, perform the following procedure:
 
 2. Click the **Actions** dropdown and select **Rebuild Cluster**.
 
-  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
-
 3. Carefully read the warning message. The operation to rebuild a cluster is destructive. If you wish to proceed, save your vSRX configuration before clicking **Rebuild** to start the process.
 
   ![Confirm Rebuild Cluster](images/rebuild_cluster_confirm.png)
