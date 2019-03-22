@@ -16,6 +16,8 @@ subcollection: vsrx
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Managing IBM VLANs

@@ -17,6 +17,8 @@ subcollection: vsrx
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # About IBM Cloud Juniper vSRX
 {: #about-ibm-cloud-juniper-vsrx}
@@ -25,7 +27,8 @@ IBM® Cloud Juniper vSRX allows you to selectively route private and public netw
 
 The IBM Cloud vSRX is offered in two different modes: standalone or High Availability (HA) cluster.
 
-**NOTE:** Additional documentation for IBM Cloud Juniper vSRX can be found in the [Supplemental Documentation](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation) topic.
+Additional documentation for IBM Cloud Juniper vSRX can be found in the [Supplemental Documentation](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation) topic.
+{: note}
 
 ## Firewall
 The vSRX deploys to protect your environment from external and internal threats by filtering both private and public facing traffic. Customers can manage the vSRX themselves by defining policies and rules to allow or deny (among other actions) inbound or outbound network traffic, protecting their applications from internal and external users. Both IPv4 and IPv6 stacks are supported in a stateful manner.

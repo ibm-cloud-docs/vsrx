@@ -16,9 +16,9 @@ subcollection: vsrx
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
-{:download: .download}
-{:important: .important}
 {:note: .note}
+{:important: .important}
+{:download: .download}
 
 # Getting Started With IBM Cloud Juniper vSRX Gateway
 {: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}

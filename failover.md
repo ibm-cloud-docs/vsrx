@@ -16,12 +16,15 @@ subcollection: vsrx
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Working with Failover
 {: #working-with-failover}
 
-**NOTE:** This section is only applicable if your Juniper vSRX gateway devices are provisioned in High-Availability mode.
+This section is only applicable if your Juniper vSRX gateway devices are provisioned in High-Availability mode.
+{: note}
 
 This topic describes how to initiate failover from your primary gateway device to a backup device, so that all control and data plane traffic is routed through the secondary gateway device after failover.
 
@@ -77,4 +80,5 @@ To do so, perform the following procedure:
 
 5. Login to the other vSRX gateway of your pair. Enter into CLI mode by again executing the command `cli` and then verify that the console output shows as `primary`.
 
-**NOTE:** When you enter CLI mode in your Juniper vSRX gateway device, the output will show as `primary` from the control plane perspective. Always check the `show chassis cluster status` output to determine which gateway device is primary from data plane perspective. Refer to [vSRX Default Configuration](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) to learn more about redundancy groups, as well as the control and data planes.
+When you enter CLI mode in your Juniper vSRX gateway device, the output will show as `primary` from the control plane perspective. Always check the `show chassis cluster status` output to determine which gateway device is primary from data plane perspective. Refer to [vSRX Default Configuration](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) to learn more about redundancy groups, as well as the control and data planes.
+{: tip}

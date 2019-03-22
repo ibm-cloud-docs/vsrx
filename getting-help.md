@@ -16,6 +16,8 @@ subcollection: vsrx
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Getting Help and Support for IBM Cloud Juniper vSRX

@@ -17,6 +17,8 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Working with Firewalls
 {: #working-with-firewalls}

@@ -16,6 +16,8 @@ subcollection: vsrx
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Reloading and Migrating the OS
@@ -30,7 +32,8 @@ The OS Reload process is used to rebuild a gateway server. The process performs 
 
 The process usually requires 1 hour 40 minutes to complete. Standalone Gateways will be out of service during this period. For Juniper High Availability (HA) Gateways, when you reload the OS on one of your servers, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the reload is complete, the server will rejoin the cluster.
 
-**CAUTION:** If you're already running a Juniper vSRX HA cluster, do not perform an OS reload on both servers of the HA Gateway at the same time. Doing so will destroy the vSRX cluster and cause the Gateway to be out of service. If the vSRX cluster is destroyed, you must use the **Rebuild Cluster** option (detailed below) to re-provision vSRX and recreate the HA cluster.
+If you're already running a Juniper vSRX HA cluster, do not perform an OS reload on both servers of the HA Gateway at the same time. Doing so will destroy the vSRX cluster and cause the Gateway to be out of service. If the vSRX cluster is destroyed, you must use the **Rebuild Cluster** option (detailed below) to re-provision vSRX and recreate the HA cluster.
+{: important}
 
 ## Performing an OS reload
 To reload the OS for a gateway server, perform the following procedure:
@@ -58,7 +61,8 @@ If you are reloading a standalone Vyatta Server, then a standalone Juniper vSRX 
 
 If you are reloading High Availability Vyatta Servers, you must perform an OS Reload on both hardware servers. This installs Ubuntu 16.04. Next, use the Rebuild Cluster option (detailed in the following section) to provision the vSRX and create the HA cluster. As with a Standalone vSRX, the same gateway IP addresses will be used, and the password for the root user on the host server (as well as the password for the admin and root users in the vSRX) will be reset.
 
-**CAUTION:** Do not perform an OS Reload on only one server of the Vyatta HA cluster. Having two different Operating Systems on a single Gateway HA cluster is not supported.
+Do not perform an OS Reload on only one server of the Vyatta HA cluster. Having two different Operating Systems on a single Gateway HA cluster is not supported.
+{: important}
 
 ## Rebuilding an HA vSRX Cluster
 To rebuild one of your HA vSRX clusters, perform the following procedure:

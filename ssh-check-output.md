@@ -16,6 +16,9 @@ subcollection: vsrx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Confirming the Output and Committing the Changes
 {: #confirming-the-output-and-commiting-the-changes}

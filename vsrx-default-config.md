@@ -17,6 +17,8 @@ subcollection: vsrx
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Understanding the vSRX Default Configuration
 {: #understanding-the-vsrx-default-configuration}

@@ -17,6 +17,8 @@ subcollection: vsrx
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Working with Routing
 {: #working-with-routing}

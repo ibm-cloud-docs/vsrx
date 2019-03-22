@@ -17,6 +17,8 @@ subcollection: vsrx
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Known Limitations for IBM Cloud Juniper vSRX
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}

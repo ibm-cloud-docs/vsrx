@@ -16,6 +16,9 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Allowing SSH and Pinging to a Public Subnet
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
@@ -23,6 +26,7 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 In this guide you will learn how to configure the IBM® Cloud Juniper vSRX Standard with a new interface, zone, and address-book. As the default action for all traffic is to drop, this guide will show how to set up traffic flows that allow all traffic within the new zone, all traffic from the new zone to the internet, and allow only ssh and ping from the internet to one subnet on the new VLAN.
 
 In this example, the following values are used.
+
 ```
 Public vlan: 1523
 Public subnet: 169.47.211.152/29

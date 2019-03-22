@@ -17,6 +17,8 @@ subcollection: vsrx
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Supplemental IBM Cloud Juniper vSRX documentation
 {: #supplemental-ibm-cloud-juniper-vsrx-documentation}
