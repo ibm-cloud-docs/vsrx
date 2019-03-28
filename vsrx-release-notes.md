@@ -23,4 +23,6 @@ subcollection: vsrx
 # IBM Cloud Juniper vSRX Release Notes
 {: #ibm-cloud-juniper-vsrx-release-notes}
 
-For the most recent release notes list, please refer to the [Juniper website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/product/en_US/vsrx){:new_window}.
+For Juniper vSRX 18.4 release notes, please visit [this link ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/18.4/index.html){:new_window}.
+
+For Juniper vSRX 15.1 release notes, please visit [this link ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/15.1x49/vsrx-release-notes-15.1x49-d120.pdf){:new_window}.
