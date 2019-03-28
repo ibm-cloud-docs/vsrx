@@ -62,14 +62,6 @@ The Juniper web management GUI has been configured by default, with vSRX generat
 
 ![Gateway Appliance HA Details](images/vSRX-webui.png)
 
-## Accessing the Device using the VIRSH Console
-
-You can also access the vSRX from the gateway server Operating System:
-
-1. Log onto your gateway server by running the command `ssh root@<server-ip>`.
-2. Run the command `virsh list` to find your vSRX VM name.
-3. Run the command `virsh console <your vSRX VM name>`.
-
 ## Creating system users
 
 By default, the IBM Cloud Juniper vSRX is configured with SSH access for the username `admin`. Additional users can be added with their own set of priorities. For example:

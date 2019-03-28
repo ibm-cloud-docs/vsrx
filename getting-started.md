@@ -40,7 +40,7 @@ If your account is linked, follow this procedure:
 1.	Open the [IBM Cloud Console![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} and log into your account.
 2.	In the left navigation, select **Infrastructure > Network > Gateway Appliances**.
 3.	From the **Gateway Appliances** list, click **Create a Gateway**.
-4. Choose **Juniper vSRX 15.x (up to 1 Gbps)** or **Juniper vSRX 15.x (up to 10 Gbps)** under **Gateway Vendor**.
+4. Choose **Juniper vSRX (up to 1 Gbps)** or **Juniper vSRX (up to 10 Gbps)** under **Gateway Vendor**.
 5. Choose a **Hostname** and **Domain**.
 6. Select the **High Availability Pair** option, if desired.
 
@@ -70,7 +70,7 @@ If your account is unlinked, follow this procedure:
   {: note}
 
 5.	On the **Order** page, select the **High Availability Pair** option if desired, then select the **Memory** size.
-6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX 15.x (up to 1 Gbps) Standard** for a single processor server, or **Juniper vSRX 15.x (up to 10 Gbps) Standard** for a dual processor server.
+6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX (up to 1 Gbps) Standard** for a single processor server, or **Juniper vSRX (up to 10 Gbps) Standard** for a dual processor server.
 7. 	Finally, select the desired network uplink speed.
 8.	Review your selections, then click **Add to Order**. Your order will be verified automatically.
 9.	On the **Checkout** page, if you already own VLANs in the selected data center, select the back-end VLANs that you want to protect. Be sure to:
