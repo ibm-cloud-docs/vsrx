@@ -4,7 +4,7 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
-keywords: reloading, migrating, os, upgrading, kvm, ha, standalone
+keywords: reloading, os, upgrading, kvm, ha, standalone
 
 subcollection: vsrx
 
@@ -20,8 +20,8 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Reloading and Migrating the OS
-{: #reloading-an-migrating-the-os}
+# Reloading the OS
+{: #reloading-the-os}
 
 The OS Reload process is used to rebuild a gateway server. The process performs the following actions:
 
@@ -55,14 +55,6 @@ To reload the OS for a gateway server, perform the following procedure:
 5. The OS Reload details screen displays. Review the settings you have chosen, and click **Edit Settings** if changes are required. Otherwise, click **Next** to proceed.
 
 6. On the OS Reload confirmation screen, agree to the terms of the Master Service Agreement, then begin the OS Reload process by clicking **Confirm OS Reload**. If you do not want to proceed with the reload, click **Cancel**.
-
-## Migrating from a Vyatta/VRA Server to a Juniper vSRX using OS Reload
-If you are reloading a standalone Vyatta Server, then a standalone Juniper vSRX will be provisioned once the OS reload completes. The same gateway IP addresses will be used, and the password for the root user on the host server (as well as the password for the admin and root users in the vSRX) will be reset.
-
-If you are reloading High Availability Vyatta Servers, you must perform an OS Reload on both hardware servers. This installs Ubuntu 16.04. Next, use the Rebuild Cluster option (detailed in the following section) to provision the vSRX and create the HA cluster. As with a Standalone vSRX, the same gateway IP addresses will be used, and the password for the root user on the host server (as well as the password for the admin and root users in the vSRX) will be reset.
-
-Do not perform an OS Reload on only one server of the Vyatta HA cluster. Having two different Operating Systems on a single Gateway HA cluster is not supported.
-{: important}
 
 ## Rebuilding an HA vSRX Cluster
 To rebuild one of your HA vSRX clusters, perform the following procedure:
