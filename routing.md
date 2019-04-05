@@ -26,19 +26,26 @@ subcollection: vsrx
 The IBM® Cloud Juniper vSRX is based on `JunOS`, giving you access to the full Juniper routing stack.
 
 ##Static Routing
+{: #static-routing}
+
 To configure static routes, run the following commands:
 
 ###Setting a default route
+{: #setting-a-default-route}
+
 ```
 set routing-options static route 0/0 next-hop <Gateway IP>
 ```
 
 ### Creating a static route
+{: #creating-a-static-route}
 ```
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
 ###Basic OSPF routing
+{: #basic-ospf-routing}
+
 To setup basic OSPF routing, only using area 0, run the following commands using md5 authentication:
 
 ```
@@ -46,6 +53,8 @@ set protocols ospf area 0 interface ge-0/0/1.0 authentication md5 0 key <KEY>
 ```
 
 ### Basic BGP routing
+{: #basic-bgp-routing}
+
 To setup basic BGP routing, first define the local AS:
 
 ```

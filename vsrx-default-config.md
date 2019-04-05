@@ -33,6 +33,7 @@ Juniper vSRX gateway devices in IBM Cloud come with following default configurat
 * All other network accesses are denied
 
 ## Default configuration of a sample standalone vSRX gateway
+{: #default-configuration-of-a-sample-standalone-vsrx-gateway}
 
 ```
 system {
@@ -312,6 +313,8 @@ The following table illustrates network interface definitions for the previous c
 
 
 ## Default configuration of a sample Highly Available (HA) vSRX gateway
+{: #default-configuration-of-a-sample-highly-available-ha-vsrx-gateway}
+
 ```
 groups {
     node0 {

@@ -29,6 +29,7 @@ Configuring the vSRX outside of its shell and interface may produce unexpected r
 {: note}
 
 ## Accessing the Device Using SSH
+{: #accessing-the-device-using-ssh}
 
 You can access the vSRX using SSH through a public IP address, or through a private IP address if you're on SoftLayer VPN:
 
@@ -44,6 +45,7 @@ If you do not see the "eye" icon, you may not have permission to view the passwo
 {: note}
 
 ## Accessing the Configuration Mode
+{: accessing-the-configuration-mode}
 
 You can enter the configuration mode, once a shell has been opened to the vSRX, by running the `config` command. You can do several things in this mode using the following commands:
 
@@ -57,12 +59,14 @@ If you are happy with your changes, you can commit them to the active configurat
 To leave Configuration mode run the command `exit`.
 
 ## Accessing the Device using the Juniper Web Management UI
+{: #accessing-the-device-using-the-juniper-web-management-ui}
 
 The Juniper web management GUI has been configured by default, with vSRX generated self-signed certificate. Only https is enabled on port 8443. You can access it at `https://gateway-ip:8443`.
 
 ![Gateway Appliance HA Details](images/vSRX-webui.png)
 
 ## Creating system users
+{: #creating-system-users}
 
 By default, the IBM Cloud Juniper vSRX is configured with SSH access for the username `admin`. Additional users can be added with their own set of priorities. For example:
 
@@ -75,6 +79,7 @@ In this example, `ops` is the username and `operator` is the class/permission le
 Customized classes can be also defined as opposed to pre-defined ones.
 
 ## Defining the vSRX hostname
+{: #defining-the-vsrx-hostname}
 
 You can set or change the vSRX hostname using the following command:
 
@@ -83,6 +88,7 @@ set system host-name <hostname>
 ```
 
 ## Configuring DNS and NTP
+{: #configuring-dns-and-ntp}
 
 To configure name server resolution and NTP, run the following commands:
 
@@ -92,6 +98,7 @@ set system ntp <NTP server>
 ```
 
 ## Changing the root password
+{: #changing-the-root-password}
 
 You can change the root password by running the following command:
 

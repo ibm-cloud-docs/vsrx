@@ -37,6 +37,8 @@ In the IBM Cloud, a vSRX is designed to have four different security zones:
 | Customer-Public (tagged) | ge-0/0/1.1           | reth3.1      |
 
 ## Zone Policies
+{: #zone-policies}
+
 To configure a stateful firewall, perform the following procedure:
 
 1. Create security zones and assign the respective interfaces:
@@ -93,6 +95,8 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ```
 
 ## Firewall Filters
+{: #firewall-filters}
+
 By default the IBM Cloud Juniper vSRX allows ping, SSH, and HTTPS to itself and drops all other traffic by applying the `PROTECT-IN` filter to the `lo` interface.
 
 To configure a new stateless firewall, perform the following procedure:

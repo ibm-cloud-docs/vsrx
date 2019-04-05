@@ -31,20 +31,30 @@ Additional documentation for IBM Cloud Juniper vSRX can be found in the [Supplem
 {: note}
 
 ## Firewall
+{: #firewall}
+
 The vSRX deploys to protect your environment from external and internal threats by filtering both private and public facing traffic. Customers can manage the vSRX themselves by defining policies and rules to allow or deny (among other actions) inbound or outbound network traffic, protecting their applications from internal and external users. Both IPv4 and IPv6 stacks are supported in a stateful manner.
 
 ## Virtual Private Network (VPN) Gateway
+{: #virtual-private-network-vpn-gateway}
+
 Connect your on-site data center or office to the IBM Cloud using VPN tunneling by provisioning your vSRX as a network gateway device. You can use an IPsec site-to-site VPN tunnel for secure communication from your enterprise data center or office to your IBM Cloud network. Remote access IPSEC VPN is also supported.
 
 For a detailed configuration guide on VPN, please refer to the links provided in the topic [VPN](/docs/infrastructure/vsrx?topic=vsrx-working-with-vpn#working-with-vpn).
 
 ## Network Address Translation (NAT)
+{: #network-address-translation-nat-}
+
 With the vSRX gateway appliance, you can provision application and database servers without public network interfaces while still allowing your servers to access the Internet using Source NAT. You can also hide your servers behind the gateway device with Destination NAT for enhanced security.
 
 ## Enterprise-grade Routing
+{: #enterprise-grade-routing}
+
 For multi-tiered applications on different isolated networks, the vSRX enables you to build connectivity between these networks with greater flexibility. You can set up dynamic routing using BGP, which allows you to announce your own public IP space to the IBM Cloud routers. BGP will also offer more flexibility for custom private network configurations when using a mix of tunnels and direct link solutions.
 
 ## Concepts about VLANs and the gateway appliance's role
+{: #concepts-about-vlans-and-the-gateway-appliance-s-role}
+
 A VLAN (virtual LAN) is a mechanism that segregates a physical network into many virtual segments. For convenience, traffic from multiple selected VLANs can be delivered through a single network cable, a process commonly called "trunking."
 
 vSRX is managed in two different interfaces: The vSRX server(s) and the Gateway Appliance fixture. The Gateway Appliance provides an interface (GUI and API) for selecting the VLANs you want to associate with your vSRX. Associating a VLAN with a Gateway Appliance reroutes (or "trunks") that VLAN and all of its subnets to your vSRX, giving you control over filtering, forwarding, and protection. Servers in an associated VLAN can only be reached from other VLANs by going through your vSRX; it is not possible to circumvent the vSRX unless you bypass or disassociate the VLAN.

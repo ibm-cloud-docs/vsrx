@@ -32,9 +32,11 @@ Public vlan: 1523
 Public subnet: 169.47.211.152/29
 ```
 
-**NOTE:** This Step-by-Step assumes that a high-availability deployment of the vSRX, with a single Public VLAN and subnet.
+This Step-by-Step assumes that a high-availability deployment of the vSRX, with a single Public VLAN and subnet.
+{: note}
 
 ## What you'll accomplish
+{: #what-you-ll-accomplish}
 
 In this Step-by-Step guide you will learn how to configure the service:
 

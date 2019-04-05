@@ -42,6 +42,8 @@ Performing an OS reload on both servers of the HA gateway at the same time will 
 {: important}
 
 ## Performing an OS reload
+{: #performing-an-os-reload}
+
 To reload the OS for a gateway server, perform the following procedure:
 
 1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the Customer Portal, and navigate to the Gateway details page by selecting desired Gateway name.
@@ -63,6 +65,8 @@ To reload the OS for a gateway server, perform the following procedure:
 6. On the OS Reload confirmation screen, agree to the terms of the Master Service Agreement, then begin the OS Reload process by clicking **Confirm OS Reload**. If you do not want to proceed with the reload, click **Cancel**.
 
 ## Rebuilding an HA vSRX Cluster
+{: #rebuilding-an-ha-vsrx-cluster}
+
 To rebuild one of your HA vSRX clusters, perform the following procedure:
 
 1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the Customer Portal, and navigate to the Gateway details page by selecting the desired HA Gateway name.

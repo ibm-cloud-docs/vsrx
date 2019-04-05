@@ -28,6 +28,7 @@ This topic details a sample configuration for a Route based VPN between two site
 <img src="images/site-to-site-vpn.png" alt="drawing" style="width: 600px;"/>
 
 ## Sample configuration for Site A (Dallas):
+{: #sample-configuration-for-site-a-dallas-}
 
 ```
 # show security address-book global address Network-A
@@ -132,6 +133,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ```
 
 ## Sample configuration for Site B (London):
+{: #sample-configuration-for-site-b-london-}
 
 ```
 # show interfaces
@@ -243,6 +245,8 @@ policy VPN-to-Custprivate {
 }
 ```
 ## Performance Consideration
+{: #performance-consideration}
+
 In order to achieve the best IPSEC VPN performance, use AES-GCM as the encryption algorithm for both IKE and IPSEC proposals.
 
 For example:
@@ -255,6 +259,8 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 With AES-GCM as the encryption algorithm, you don't need to specify the authentication algorithm in the same proposal. AES-GCM provides both encryption and authentication.
 
 ## Additional VPN configurations
+{: #additional-vpn-configurations}
+
 To configure IPSEC VPN, site to site, remote access VPN, and other features, refer to this [configuration guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} from Juniper.
 
 For an example of how to configure a route-based site to site IPSEC VPN, refer to this [configuration guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} from Juniper.

@@ -28,6 +28,7 @@ To get started with the IBM® Cloud Juniper vSRX Gateway, first determine whethe
 To find out whether you have a linked account, navigate to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} in your browser and log in. If your account is linked, you will not see a **Learn more about Bluemix!** button at the top right.
 
 ## Steps for ordering
+{: #steps-for-ordering}
 
 You can order your Gateway Appliance, using one of these methods:
 
@@ -35,6 +36,8 @@ For a list of Known Limitations with IBM Cloud Juniper vSRX Gateway, refer to th
 {: note}
 
 ### Ordering with a linked account
+{: #ordering-with-a-linked-account}
+
 If your account is linked, follow this procedure:
 
 1.	Open the [IBM Cloud Console![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} and log into your account.
@@ -59,6 +62,8 @@ If your account is linked, follow this procedure:
 11. Finally, click **Provision**.
 
 ### Ordering with an unlinked account
+{: #ordering-with-a-unlinked-account}
+
 If your account is unlinked, follow this procedure:
 
 1.	Open the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
@@ -80,6 +85,8 @@ If your account is unlinked, follow this procedure:
 10. Click **Submit Order**.
 
 ## What's next?
+{: #what-s-next-}
+
 After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway will appear in the **Gateway Appliances** list.
 
 Click the gateway name to open the **Gateway Details** page. You'll find the IP addresses, login username, and passwords for the device.
