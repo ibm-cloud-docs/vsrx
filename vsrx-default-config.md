@@ -32,11 +32,11 @@ Juniper vSRX gateway devices in IBM Cloud come with following default configurat
 * Access from the zone `SL-PRIVATE` to all services is provided by SoftLayer and address-set `SERVICE` is permitted
 * All other network accesses are denied
 
+## Default configuration of a sample standalone of latest SR-IOV vSRX gateway
+{: #default-configuration-of-a-sample-standalone-vsrx-gateway}
+
 The following code samples are examples from the latest code release.
 {: note}
-
-## Default configuration of a sample standalone vSRX gateway
-{: #default-configuration-of-a-sample-standalone-vsrx-gateway}
 
 ```
 ## Last changed: 2019-04-04 19:29:45 UTC
@@ -50,12 +50,12 @@ system {
             uid 2000;
             class super-user;
             authentication {
-                encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA 
+                encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
             }
         }
     }
     root-authentication {
-        encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA 
+        encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
     }
     services {
         ssh {
@@ -392,13 +392,12 @@ The following table illustrates network interface definitions for the previous c
 
 | Interface Name    |  Interface Function      |
 | :---          |   :---         |
-| ae0.0 | Aggregated ethernet interface |
-| ae1.0 | Aggregated ethernet interface |
-| fxp0 | Management interface        |
-| ge-0/0/0  | Gigabit ethernet interface for SL-PRIVATE transit VLAN |
-| ge-0/0/1  | Gigabit ethernet interface for SL-PUBLIC transit VLAN  |
-| lo0   | Loopback interface |
-
+| ge-0/0/0      |   Gigabit ethernet interface for SL-PRIVATE transit VLAN |
+| ge-0/0/1      |   Gigabit ethernet interface for SL-PUBLIC transit VLAN  |
+| ae0.0         |   Aggregated Ethernet interface |
+| ae1.0         |   Aggregated Ethernet interface |
+| fxp0          |   Management interface        |
+| lo0           |   loopback interface          |
 
 ## Default configuration of a sample Highly Available (HA) vSRX gateway
 {: #default-configuration-of-a-sample-highly-available-ha-vsrx-gateway}
@@ -446,12 +445,12 @@ system {
             uid 2000;
             class super-user;
             authentication {
-                encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA 
+                encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
             }
         }
     }
     root-authentication {
-        encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA 
+        encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
     }
     services {
         ssh {
