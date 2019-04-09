@@ -392,8 +392,8 @@ The following table illustrates network interface definitions for the previous c
 
 | Interface Name    |  Interface Function      |
 | :---          |   :---         |
-| ae0.0 | Aggregated Ethernet interface |
-| ae1.0 | Aggregated Ethernet interfaces |
+| ae0.0 | Aggregated ethernet interface |
+| ae1.0 | Aggregated ethernet interface |
 | fxp0 | Management interface        |
 | ge-0/0/0  | Gigabit ethernet interface for SL-PRIVATE transit VLAN |
 | ge-0/0/1  | Gigabit ethernet interface for SL-PUBLIC transit VLAN  |
