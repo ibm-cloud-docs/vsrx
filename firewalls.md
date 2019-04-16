@@ -31,10 +31,10 @@ In the IBM Cloud, a vSRX is designed to have four different security zones:
 
 | Zone                     | Standalone Interface | HA Interface |
 | :---                     |        :----:        |         ---: |
-| SL-Private (untagged)    | ge-0/0/0.0           | reth0.0      |
-| SL-Public (untagged)     | ge-0/0/1.0           | reth1.0      |
-| Customer-Private (tagged)| ge-0/0/0.1           | reth2.1      |
-| Customer-Public (tagged) | ge-0/0/1.1           | reth3.1      |
+| SL-Private (untagged)    | ge-0/0/0.0 or ae0.0  | reth0.0      |
+| SL-Public (untagged)     | ge-0/0/1.0 or ae1.0  | reth1.0      |
+| Customer-Private (tagged)| ge-0/0/0.1 or ae0.1  | reth2.1      |
+| Customer-Public (tagged) | ge-0/0/1.1 or ae1.1  | reth3.1      |
 
 ## Zone Policies
 {: #zone-policies}

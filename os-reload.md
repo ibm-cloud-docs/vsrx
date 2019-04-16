@@ -32,9 +32,11 @@ The OS reload process is used to rebuild a gateway server. The process performs 
 
 The process usually requires 1 hour 40 minutes to complete. Standalone Gateways will be out of service during this period. For Juniper High Availability (HA) Gateways, when you reload the OS on one of your servers, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the reload is complete, the server will rejoin the cluster.
 
-There are two requirements in order for an OS reload to succeed on an HA vSRX device:
+For successful reload or rebuild cluster on an HA vSRX:
 
-* Make sure that you are able to use the **vSRX root credentials** to [access the device using SSH through a private IP address](/docs/infrastructure/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics#performing-ibm-cloud-juniper-vsrx-basics).
+* The root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal. The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match. Once the passwords, you can proceed with the OS Reload or Rebuild Cluster operation.
+
+  <img src="images/gw-vsrx-password.png" alt="drawing" style="width: 700px;"/>
 
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.
 
