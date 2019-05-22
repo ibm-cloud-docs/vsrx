@@ -17,7 +17,7 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # Initiation à la passerelle IBM Cloud Juniper vSRX
-{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
+{: #getting-started}
 
 Pour commencer à utiliser la passerelle IBM® Cloud Juniper vSRX, déterminez d'abord si votre compte est lié à IBM Cloud.
 

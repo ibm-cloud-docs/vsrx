@@ -17,7 +17,7 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # IBM Cloud Juniper vSRX 网关入门
-{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
+{: #getting-started}
 
 要开始使用 IBM® Cloud Juniper vSRX 网关，请首先确定您的帐户是否已链接到 IBM Cloud。
 

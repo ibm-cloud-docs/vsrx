@@ -17,7 +17,7 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # Introdução ao gateway do IBM Cloud Juniper vSRX
-{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
+{: #getting-started}
 
 Para iniciar com o gateway do IBM® Cloud Juniper vSRX, primeiro determine se a sua conta está vinculada ao IBM Cloud.
 

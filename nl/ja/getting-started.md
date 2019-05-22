@@ -17,7 +17,7 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # IBM Cloud Juniper vSRX ゲートウェイの開始
-{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
+{: #getting-started}
 
 IBM® Cloud Juniper vSRX ゲートウェイを開始するには、まずご使用のアカウントが IBM Cloud にリンクされているかどうか判別します。
 

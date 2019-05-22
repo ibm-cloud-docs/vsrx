@@ -17,7 +17,7 @@ lastupdated: "2018-11-07"
 {:note: .note}
 
 # IBM Cloud Juniper vSRX Gateway 시작하기
-{: #getting-started-with-ibm-cloud-juniper-vsrx-gateway}
+{: #getting-started}
 
 IBM® Cloud Juniper vSRX Gateway를 시작하려면 먼저 사용자의 계정이 IBM Cloud에 연결되어 있는지 여부를 판별하십시오.
 
