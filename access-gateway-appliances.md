@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-10-22"
+  years: 2018, 2019
+lastupdated: "2019-06-11"
 
 keywords: viewing, appliances, gateways
 
@@ -23,11 +23,11 @@ subcollection: vsrx
 # Viewing All Your Gateway Appliances
 {: #viewing-all-your-gateway-appliances}
 
-The Gateway Appliances screen in the Customer Portal is where you can display and access all Network Gateway Appliances, including the IBM® Cloud Juniper vSRX.  
+The Gateway Appliances screen in the {{site.data.keyword.cloud}} infrastructure customer portal is where you can display and access all Network Gateway Appliances, including the IBM® Cloud Juniper vSRX.  
 
-Perform the following procedure to access the Gateway Appliances screen in the Customer Portal.
+Perform the following procedure to access the Gateway Appliances screen in the customer portal.
 
-1. Access the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} using your unique credentials.
+1. Access the [customer portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} using your unique credentials.
 2. Select **Gateway Appliances** from the Network menu option.
 
 <img src="images/gateway-apps.png" alt="drawing" style="width: 700px;"/>
