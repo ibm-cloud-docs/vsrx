@@ -43,6 +43,8 @@ For a successful reload or rebuild of the cluster on an HA vSRX:
 Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the **Rebuild Cluster** option (detailed below) to re-provision vSRX and recreate the HA cluster.
 {: important}
 
+* For the Rebuild Cluster option only, the host password(s) must match the password(s) in the vSRX portal. In addition, the host OS must enable root SSH prior to doing a rebuild cluster.
+
 ## Performing an OS reload
 {: #performing-an-os-reload}
 
