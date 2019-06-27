@@ -31,4 +31,4 @@ For Juniper vSRX 15.1 release notes, please visit [this link ![External link ico
 {: #Upgrading-Considerations}
 
 * When upgrading from vSRX 10G 15.x to vSRX 10G 18, the upgrade process modifies the interface mappings in vSRX config for SR-IOV optimization, so during import the interface section needs to be preserved.
-* Reference [Upgrading the vSRX](/docs/infrastructure/vsrx?topic=vsrx-upgrading-the-vsrx) for more details.
+* Reference [Upgrading the vSRX](/docs/infrastructure/vsrx?topic=vsrx-upgrading-the-vSRX) for more details.
