@@ -30,7 +30,7 @@ The upgrade process migrates the Junos OS for vSRX software to the latest releas
 
 * The Standalone upgrade requires only an OS reload.
 
-For a Standalone environment, the previous configuration is not restored, so you should export and import your configurstion. Refer to  [Importing and exporting the vSRX configuration](docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration) for more information.
+For a Standalone environment, the previous configuration is not restored, so you should export and import your configuration. Refer to  [Importing and exporting the vSRX configuration](docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration) for more information.
 {: important}
 
 * The HA upgrade requires two steps: a vSRX upgrade and then the OS reload. It is strongly recommended you confirm that the vSRX configuration is correct at each step.
