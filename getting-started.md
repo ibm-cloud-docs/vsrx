@@ -58,7 +58,7 @@ Alternatively, from the [IBM Cloud Catalog ![External link icon](../../icons/lau
 
 	<img src="images/linked_server.png" alt="drawing" style="width: 600px;"/>
 
-4. From the **Configuration** section, choose your processor by selecting your RAM and SSH keys (if you want to use it to authenticate access to your new Gateway).
+4. From the **Configuration** section, choose your processor's RAM. You can also define an SSH key, if you want to use it to authenticate access to your new Gateway.
 
   The appropriate processor is chosen for you based on the license version you selected in step two. You can choose different RAM configurations, however.
   {: note}
