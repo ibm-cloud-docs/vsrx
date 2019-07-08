@@ -57,7 +57,7 @@ Performing an OS reload on both servers of the High Availability gateway at the 
   Then, to manually make RGs fall on the same node, run the command: 
   
   ```
-  request chassis cluster failover reset redundancy-group <RG number>
+  request chassis cluster failover reset redundancy-group <RG number>` 
   ```
 
 * If the IBM Cloud account has multiple vSRX Gateway instances in the same pod, make sure only one Gateway is upgraded at a time. Upgrading more than one vSRX at a time can result in IP collisions, disrupt the upgrade process, and potentially cause failures.
