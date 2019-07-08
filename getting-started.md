@@ -58,12 +58,12 @@ Alternatively, from the [IBM Cloud Catalog ![External link icon](../../icons/lau
 
 	<img src="images/linked_server.png" alt="drawing" style="width: 600px;"/>
 
-4. From the **Configuration** section, choose your processor's RAM. You can also define an SSH key, if you want to use it to authenticate access to your new Gateway.
+5. From the **Configuration** section, choose your processor's RAM. You can also define an SSH key, if you want to use it to authenticate access to your new Gateway.
 
   The appropriate processor is chosen for you based on the license version you selected in step two. You can choose different RAM configurations, however.
   {: note}
 
-5. From the **Storage disks** section, choose the options that meet your storage requirements.
+6. From the **Storage disks** section, choose the options that meet your storage requirements.
 
   RAID0 and RAID1 options are available for added protection against data loss, as are hot spares (backup components that can be placed into service immediately when a primary component fails).
   {: note}
@@ -74,7 +74,7 @@ Alternatively, from the [IBM Cloud Catalog ![External link icon](../../icons/lau
   Reserve more than the default disk setting if you plan to run network diagnostics that generate detailed logs.
   {: tip}
 
-6. From the **Network interface** section, select your **Uplink port speeds**. The default selection is a single interface, but there are redundant and private only options as well. Choose the one that best fits your needs.
+7. From the **Network interface** section, select your **Uplink port speeds**. The default selection is a single interface, but there are redundant and private only options as well. Choose the one that best fits your needs.
 
   The Network Interface **Add Ons** section allows you to select an IPv6 address if required, and shows you any additional included default options.
 

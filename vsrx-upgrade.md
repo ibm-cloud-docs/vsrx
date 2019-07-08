@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-6-27"
+lastupdated: "2019-6-14"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -21,7 +21,7 @@ subcollection: vsrx
 {:download: .download}
 
 # Upgrading the vSRX
-{: #upgrading-the-vSRX}
+{: #upgrading-the-vsrx}
 
 The upgrade process migrates the Junos OS for vSRX software to the latest release, and usually requires several hours to complete, depending on whether it's a Standalone or High Availability (HA) gateway appliance. For Standalone Gateways, the vSRX will be out of service during the upgrade process. For HA Gateways, when doing the upgrade, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the upgrade is complete, the server will rejoin the cluster.  
 
@@ -30,7 +30,7 @@ The upgrade process migrates the Junos OS for vSRX software to the latest releas
 
 * The Standalone upgrade requires only an OS reload.
 
-For a Standalone environment, the previous configuration is not restored, so you should export and import your configuration. Refer to  [Importing and exporting the vSRX configuration](/docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration) for more information.
+For a Standalone environment, the previous configuration is not restored, so you should export and import your configuration. Refer to [Importing and exporting the vSRX configuration](/docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration) for more information.
 {: important}
 
 * The HA upgrade requires two steps: a vSRX upgrade and then the OS reload. It is strongly recommended you confirm that the vSRX configuration is correct at each step.
@@ -47,6 +47,8 @@ Performing an OS reload on both servers of the High Availability gateway at the 
 {: important}
 
 * Before performing an upgrade, run the command `show chassis cluster status` to ensure that a single node is configured as primary (with higher priority) for both redundancy groups, and that that node at run time is serving as the primary for both RGs. If the RGs primary is not on the same node, run `request chassis cluster failover redundancy-group <RG number> node <node number>` and then `request chassis cluster failover reset redundancy-group <RG number>` to manually make RGs fall on the same node.
+
+* If the IBM Cloud account has multiple vSRX Gateway instances in the same pod, make sure only one Gateway is upgraded at a time. Upgrading more than one vSRX at a time can result in IP collisions, disrupt the upgrade process, and potentially cause failures.
 
 It is good practice to backup (export) your vSRX configuration settings before starting an upgrade. Details can be found [here](/docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration).
 {: tip}
