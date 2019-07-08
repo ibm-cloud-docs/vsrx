@@ -21,7 +21,7 @@ subcollection: vsrx
 {:download: .download}
 
 # Upgrading the vSRX
-{: #upgrading-the-vSRX}
+{: #upgrading-the-vsrx}
 
 The upgrade process migrates the Junos OS for vSRX software to the latest release, and usually requires several hours to complete, depending on whether it's a Standalone or High Availability (HA) gateway appliance. For Standalone Gateways, the vSRX will be out of service during the upgrade process. For HA Gateways, when doing the upgrade, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the upgrade is complete, the server will rejoin the cluster.  
 
