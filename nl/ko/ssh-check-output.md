@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: confirming, output, committing, changes, vlans, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # 출력 확인 및 변경사항 커미트
 {: #confirming-the-output-and-commiting-the-changes}
@@ -93,6 +100,6 @@ show | compare
 
 구성이 올바른지 확인한 후 `commit` 명령을 실행하여 변경사항을 활성 구성으로 푸시하십시오.
 
-IBM Cloud Juniper vSRX Standard는 인바운드 Ping 및 SSH 연결만 허용하여 이제 라우트되고 새 VLAN과 서브넷에 대한 트래픽을 필터링하도록 구성됩니다. 
+IBM Cloud Juniper vSRX Standard는 인바운드 Ping 및 SSH 연결만 허용하여 이제 라우트되고 새 VLAN과 서브넷에 대한 트래픽을 필터링하도록 구성됩니다.
 
-이제 새 기능을 사용하여 시작하도록 [VLAN 관리](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans)에 표시된 대로 VLAN을 라우트해야 합니다. 
+이제 새 기능을 사용하여 시작하도록 [VLAN 관리](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans)에 표시된 대로 VLAN을 라우트해야 합니다.

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, failover, codes, failure, cli
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,12 +16,15 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Utilizzo del failover
 {: #working-with-failover}
 
-**NOTA:** questa sezione viene applicata solo se viene eseguito il provisioning dei tuoi dispositivi gateway Juniper vSRX nella modalità ad elevata disponibilità.
+Questa sezione viene applicata solo se viene eseguito il provisioning dei tuoi dispositivi gateway Juniper vSRX nella modalità ad elevata disponibilità.
+{: note}
 
 Questo argomento descrive come avviare il failover dal tuo dispositivo gateway primario a un dispositivo di backup, in modo che tutto il traffico del piano di dati e di controllo venga instradato tramite il dispositivo gateway secondario dopo il failover.
 
@@ -59,7 +66,10 @@ A tale scopo, attieniti alla seguente procedura:
 	{primary:node0}
 	```
 
-	Assicurati che per entrambi i gruppi di ridondanza, sia impostato lo stesso nodo come `primary`. È possibile che nodi diversi siano impostati come ruolo `primary` in diversi gruppi di ridondanza.
+	Assicurati che, per entrambi i gruppi di ridondanza, sia impostato lo stesso nodo come `primary`. È possibile che nodi diversi siano impostati come ruolo `primary` in diversi gruppi di ridondanza. 
+	
+	vSRX, per impostazione predefinita, imposta `Preempt` su `yes` per il gruppo di ridondanza 1 e `no` per il gruppo di ridondanza 0. Fai riferimento a [questo link ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){:new_window} per ulteriori informazioni sulla modalità di funzionamento di anticipazione (pre-emption) e failover.
+	{: note}
 
 3. Avvia il failover immettendo il seguente comando nel prompt della console:
 
@@ -73,4 +83,5 @@ A tale scopo, attieniti alla seguente procedura:
 
 5. Accedi all'altro gateway vSRX della tua coppia. Entra nella modalità della CLI eseguendo nuovamente il comando `cli` e verifica quindi che l'output della console sia visualizzato come `primary`.
 
-**NOTA:** quando entri nella modalità della CLI nel tuo dispositivo gateway Juniper vSRX, l'output sarà visualizzato come `primary` dalla prospettiva del piano di controllo. Controlla sempre l'output di `show chassis cluster status` per determinare quale dispositivo gateway è il primario dalla prospettiva del piano di dati. Fai riferimento alla [Configurazione predefinita di vSRX](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) per ulteriori informazioni sui gruppi di ridondanza, nonché sui piani di dati e di controllo.
+Quando entri nella modalità della CLI nel tuo dispositivo gateway Juniper vSRX, l'output sarà visualizzato come `primary` dalla prospettiva del piano di controllo. Controlla sempre l'output di `show chassis cluster status` per determinare quale dispositivo gateway è il primario dalla prospettiva del piano di dati. Fai riferimento alla [Configurazione predefinita di vSRX](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) per ulteriori informazioni sui gruppi di ridondanza, nonché sui piani di dati e di controllo.
+{: tip}

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, routing, static, default, creating, ospf, bgp
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Utilizzo dell'instradamento
 {: #working-with-routing}
@@ -20,19 +26,26 @@ lastupdated: "2018-10-22"
 IBM® Cloud Juniper vSRX si basa su `JunOS`, fornendoti l'accesso allo stack di instradamento Juniper completo.
 
 ##Instradamento statico
+{: #static-routing}
+
 Per configurare gli instradamenti statici, immetti i seguenti comandi:
 
 ###Configurazione di un instradamento predefinito
+{: #setting-a-default-route}
+
 ```
 set routing-options static route 0/0 next-hop <Gateway IP>
 ```
 
 ### Creazione di un instradamento statico
+{: #creating-a-static-route}
 ```
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
 ###Instradamento OSPF di base
+{: #basic-ospf-routing}
+
 Per configurare l'instradamento OSPF di base, utilizzando solo l'area 0, immetti i seguenti comandi utilizzando l'autenticazione md5:
 
 ```
@@ -40,6 +53,8 @@ set protocols ospf area 0 interface ge-0/0/1.0 authentication md5 0 key <KEY>
 ```
 
 ### Instradamento BGP di base
+{: #basic-bgp-routing}
+
 Per configurare l'instradamento BGP di base, definisci prima il SO locale:
 
 ```

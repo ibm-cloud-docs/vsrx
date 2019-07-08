@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords:
+
+subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standalone, ha
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 使用防火墙
 {: #working-with-firewalls}
@@ -25,12 +31,14 @@ IBM® Cloud Juniper vSRX 使用了安全专区的概念，其中每个 vSRX 接�
 
 |专区|独立接口|HA 接口|
 | :---                     |        :----:        |         ---: |
-|SL-Private（未标记）|ge-0/0/0.0|reth0.0|
-|SL-Public（未标记）|ge-0/0/1.0|reth1.0|
-|Customer-Private（已标记）|ge-0/0/0.1|reth2.1|
-|Customer-Public（已标记）|ge-0/0/1.1|reth3.1|
+|SL-Private（未标记）|ge-0/0/0.0 或 ae0.0|reth0.0|
+|SL-Public（未标记）|ge-0/0/1.0 或 ae1.0|reth1.0|
+|Customer-Private（已标记）|ge-0/0/0.1 或 ae0.1|reth2.1|
+|Customer-Public（已标记）|ge-0/0/1.1 或 ae1.1|reth3.1|
 
 ## 专区策略
+{: #zone-policies}
+
 要配置有状态防火墙，请执行以下过程：
 
 1. 创建安全专区，并分配相应的接口：
@@ -87,6 +95,8 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ```
 
 ## 防火墙过滤器
+{: #firewall-filters}
+
 缺省情况下，IBM Cloud Juniper vSRX 支持流至其自身的 ping、SSH 和 HTTPS 流量，并通过将 `PROTECT-IN` 过滤器应用于 `lo` 接口来丢弃其他所有流量。
 
 要配置新的无状态防火墙，请执行以下过程：

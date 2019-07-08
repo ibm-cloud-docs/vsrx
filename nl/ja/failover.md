@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, failover, codes, failure, cli
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,12 +16,15 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # フェイルオーバーの処理
 {: #working-with-failover}
 
-**注:** このセクションは、Juniper vSRX ゲートウェイ・デバイスが高可用性モードでプロビジョンされる場合に限り適用できます。
+このセクションは、Juniper vSRX ゲートウェイ・デバイスが高可用性モードでプロビジョンされる場合に限り適用できます。
+{: note}
 
 このトピックでは、1 次ゲートウェイ・デバイスからバックアップ・デバイスへのフェイルオーバーを開始して、フェイルオーバー後にすべての制御プレーンやデータ・プレーンのトラフィックが 2 次ゲートウェイ・デバイスを通るように経路指定できるようにする方法について説明します。
 
@@ -59,7 +66,9 @@ lastupdated: "2018-10-22"
 	{primary:node0}
 	```
 
-	両方の冗長グループについて、同じノードが `primary` として設定されていることを確認します。 冗長グループが異なると、`primary` 役割として設定されているノードも異なる可能性があります。
+	両方の冗長グループについて、同じノードが `primary` として設定されていることを確認します。冗長グループが異なると、`primary` 役割として設定されているノードも異なる可能性があります。 
+	
+	デフォルトでは、vSRX は `Preempt` を冗長グループ 1 では `yes` に、冗長グループ 0 では `no` に設定します。優先適用とフェイルオーバー動作について詳しくは、[このリンク ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){:new_window} を参照してください。{: note}
 
 3. コンソール・プロンプトで以下のコマンドを実行して、フェイルオーバーを開始します。
 
@@ -73,4 +82,5 @@ lastupdated: "2018-10-22"
 
 5. ペアの他方の vSRX ゲートウェイにログインします。 再度 `cli` をコマンド実行して CLI モードに入ってから、コンソール出力で `primary` として表示されていることを確認します。
 
-**注:** Juniper vSRX ゲートウェイ・デバイスで CLI モードに入ると、出力は制御プレーンの観点から `primary` として表示されます。 常に `show chassis cluster status` の出力を調べて、どのゲートウェイ・デバイスがデータ・プレーンの観点から 1 次であるかを判別します。 冗長グループや、制御プレーンとデータ・プレーンについて詳しくは、[vSRX のデフォルト構成](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration)を参照してください。
+Juniper vSRX ゲートウェイ・デバイスで CLI モードに入ると、出力は制御プレーンの観点から `primary` として表示されます。常に `show chassis cluster status` の出力を調べて、どのゲートウェイ・デバイスがデータ・プレーンの観点から 1 次であるかを判別します。 冗長グループや、制御プレーンとデータ・プレーンについて詳しくは、[vSRX のデフォルト構成](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration)を参照してください。
+{: tip}

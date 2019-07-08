@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords:
+
+subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standalone, ha
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Trabalhando com firewalls
 {: #working-with-firewalls}
@@ -25,12 +31,14 @@ No IBM Cloud, um vSRX é projetado para ter quatro zonas de segurança diferente
 
 | Zona                     | Interface independente | Interface HA |
 | :---                     |        :----:        |         ---: |
-| SL-Private (não identificado)    | ge-0/0/0.0           | reth0.0      |
-| SL-Public (não identificado)     | ge-0/0/1.0           | reth1.0      |
-| Customer-Private (identificado)| ge-0/0/0.1           | reth2.1      |
-| Customer-Public (identificado) | ge-0/0/1.1           | reth3.1      |
+| SL-Private (não identificado)    | ge-0/0/0.0 ou ae0.0  | reth0.0      |
+| SL-Public (não identificado)     | ge-0/0/1.0 ou ae1.0  | reth1.0      |
+| Customer-Private (identificado)| ge-0/0/0.1 ou ae0.1  | reth2.1      |
+| Customer-Public (identificado) | ge-0/0/1.1 ou ae1.1  | reth3.1      |
 
 ## Políticas de zona
+{: #zone-policies}
+
 Para configurar um firewall stateful, execute o procedimento a seguir:
 
 1. Crie zonas de segurança e designe as respectivas interfaces:
@@ -87,6 +95,8 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ```
 
 ## Filtros de firewall
+{: #firewall-filters}
+
 Por padrão, o IBM Cloud Juniper vSRX permite ping, SSH e HTTPS para si mesmo e descarta todos os outros tráfegos aplicando o filtro `PROTECT-IN` à interface `lo`.
 
 Para configurar um novo firewall stateless, execute o procedimento a seguir:

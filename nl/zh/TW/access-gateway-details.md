@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: viewing, details, appliances, gateways
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # 檢視閘道應用裝置詳細資料
@@ -24,6 +30,6 @@ lastupdated: "2018-10-22"
 1. 在「客戶入口網站」中[存取「閘道應用裝置」畫面](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances)。
 2. 按一下所需「網路閘道」的「閘道應用裝置名稱」，以存取「閘道應用裝置詳細資料」畫面。
 
-<img src="images/gw-sa-details.png" alt="圖片" style="width: 700px;"/>
+  <img src="images/gw-sa-details.png" alt="圖片" style="width: 700px;"/>
 
 您可以隨時使用「大量動作」特性，在多個 VLAN 上進行互動。

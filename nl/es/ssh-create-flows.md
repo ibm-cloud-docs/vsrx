@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: create, creating, traffic, flows, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,13 +16,17 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Crear sus nuevos flujos de tráfico
 {: #creating-your-new-traffic-flows}
 
 Ahora que ha creado la nueva zona (`CUSTOMER-PUBLIC`), tendrá que configurar políticas para controlar el flujo de tráfico de red. El primero que se configura a continuación permite todo el tráfico dentro de la zona `CUSTOMER-PUBLIC`. El segundo permite todo el tráfico desde `CUSTOMER-PUBLIC` a internet público, mientras que el tercer flujo solo permite el tráfico SSH y PING desde internet público a `CUSTOMER-PUBLIC` y descarta el resto (ya que la acción predeterminada es `drop`).
 
-**NOTA:** desplácese hacia la derecha para ver el mandato completo.  
+Desplácese hacia la derecha para ver el mandato completo.  
+{: important}
 
 ```
 set security policies from-zone CUSTOMER-PUBLIC to-zone CUSTOMER-PUBLIC policy ALLOW_INTERNAL description "Allow all traffic within CUSTOMER_PUBLIC zone"

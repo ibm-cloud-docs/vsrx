@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: manage, managing, vlan, gateway, route, bypass, disassociate, associate, configuration, disassociating, associating, standalone, ha
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # 管理 IBM VLAN
@@ -96,7 +102,8 @@ set interfaces reth2 unit 50 vlan-id 50
 set interfaces reth2 unit 50 family inet address <IP/MASK>
 ```
 
-**注：**尽管单元 0 未标记，`JunOS` 也需要使用它来引用配置为 `native-vlan` 的 VLAN 标识。在此示例中，由于 `native-vlan-id` 为 `10`，因此单元 0 的 `vlan-id` 也应该为 `10`。这样，`JunOS` 就会收到通知，声明单元 0 应该是未标记的。
+尽管单元 0 未标记，`JunOS` 也需要使用它来引用配置为 `native-vlan` 的 VLAN 标识。在此示例中，由于 `native-vlan-id` 为 `10`，因此单元 0 的 `vlan-id` 也应该为 `10`。这样，`JunOS` 就会收到通知，声明单元 0 应该是未标记的。
+{: note}
 
 ## vSRX 的样本 VLAN 配置
 {: #sample-vlan-configuration-for-vsrx}

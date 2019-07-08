@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, routing, static, default, creating, ospf, bgp
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 使用路由
 {: #working-with-routing}
@@ -20,19 +26,26 @@ lastupdated: "2018-10-22"
 IBM® Cloud Juniper vSRX 基于 `JunOS`，为您提供了对完全 Juniper 路由堆栈的访问权。
 
 ##静态路由
+{: #static-routing}
+
 要配置静态路由，请运行以下命令：
 
 ###设置缺省路由
+{: #setting-a-default-route}
+
 ```
 set routing-options static route 0/0 next-hop <Gateway IP>
 ```
 
 ### 创建静态路由
+{: #creating-a-static-route}
 ```
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
 ###基本 OSPF 路由
+{: #basic-ospf-routing}
+
 要设置基本 OSPF 路由，并仅使用区域 0，请使用 md5 认证来运行以下命令：
 
 ```
@@ -40,6 +53,8 @@ set protocols ospf area 0 interface ge-0/0/1.0 authentication md5 0 key <KEY>
 ```
 
 ### 基本 BGP 路由
+{: #basic-bgp-routing}
+
 要设置基本 BGP 路由，请首先定义本地 AS：
 
 ```

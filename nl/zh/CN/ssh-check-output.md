@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: confirming, output, committing, changes, vlans, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # 确认输出并落实更改
 {: #confirming-the-output-and-commiting-the-changes}
@@ -93,6 +100,6 @@ show | compare
 
 检查以确认配置正确后，运行 `commit` 命令以将更改推送到活动配置。
 
-IBM Cloud Juniper vSRX Standard 现在配置为路由和过滤流至新 VLAN 和子网的流量，并仅允许入站 ping 和 SSH 连接。 
+IBM Cloud Juniper vSRX Standard 现在配置为路由和过滤流至新 VLAN 和子网的流量，并仅允许入站 ping 和 SSH 连接。
 
 现在，您应该如[管理 VLAN](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans)中所示来路由 VLAN，以开始使用新功能。

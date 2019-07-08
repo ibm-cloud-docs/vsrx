@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords:
+
+subcollection: vsrx, ssh, allowing, pinging, subnet, public
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # SSH の許可およびパブリック・サブネットへの ping
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
@@ -19,14 +26,17 @@ lastupdated: "2018-10-22"
 このガイドでは、新しいインターフェース、ゾーン、およびアドレス帳を持つ IBM® Cloud Juniper vSRX Standard を構成する方法を学ぶことができます。 すべてのトラフィックのデフォルトのアクションはドロップなので、このガイドでは新しいゾーン内のすべてのトラフィックと新しいゾーンからイントラネットへのすべてのトラフィックを許可し、インターネットから新しい VLAN の 1 つのサブネットへの SSH および ping のみを許可するトラフィック・フローをセットアップする方法について説明します。
 
 この例では、次の値を使用しています。
+
 ```
 Public vlan: 1523
 Public subnet: 169.47.211.152/29
 ```
 
-**注:** このステップバイステップ・ガイドでは、単一のパブリック VLAN とサブネットを持つ vSRX の高可用性デプロイメントが想定されています。
+このステップバイステップ・ガイドでは、単一のパブリック VLAN とサブネットを持つ vSRX の高可用性デプロイメントが想定されています。
+{: note}
 
 ## このガイドで達成できること
+{: #what-you-ll-accomplish}
 
 このステップバイステップ・ガイドでは、サービスを構成する方法を学ぶことができます。
 

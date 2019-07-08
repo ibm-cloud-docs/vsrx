@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: viewing, details, appliances, gateways
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # 查看网关设备详细信息
@@ -24,6 +30,6 @@ lastupdated: "2018-10-22"
 1. 在客户门户网站中[访问“网关设备”屏幕](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances)。
 2. 单击所需网关的“网关设备名称”以访问“网关设备详细信息”屏幕。
 
-<img src="images/gw-sa-details.png" alt="图样" style="width: 700px;"/>
+  <img src="images/gw-sa-details.png" alt="图样" style="width: 700px;"/>
 
 可使用“批量操作”功能在任何给定时间对多个 VLAN 执行交互。

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: basics, performing, accessing, ssh, device, gateway, configuration, mode, juniper, ui, dns, htp, password
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,29 +17,35 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Exécution des opérations IBM Cloud Juniper vSRX élémentaires
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
 La passerelle IBM® Cloud Juniper vSRX peut être configurée à l'aide d'une session de console distante via SSH ou en se connectant à l'interface graphique de gestion Web de Juniper.
 
-**Remarque :** La configuration de vSRX en dehors de son shell et de son interface peut produire des résultats inattendus, et n'est donc pas recommandée.
+La configuration de vSRX en dehors de son shell et de son interface peut produire des résultats inattendus, et n'est donc pas recommandée.
+{: note}
 
 ## Accès à l'unité via SSH
+{: #accessing-the-device-using-ssh}
 
 Vous pouvez accéder au vSRX à l'aide de SSH via une adresse IP publique ou via une adresse IP privée si vous êtes sur un VPN SoftLayer :
 
 1. Accédez à l'écran de détails Dispositifs de passerelle pour vous procurer l'IP de la passerelle publique ou privée.
 
-  <img src="images/basics.png" alt="dessin" style="width: 700px;"/>
+  <img src="images/gw-sa-details.png" alt="dessin" style="width: 700px;"/>
 
 2. Cliquez sur l'icône représentant un oeil pour révéler le mot de passe de l'utilisateur admin.
 
-3. Exécutez la commande `ssh admin@<gateway-ip>` et entrez le mot de passe de l'utilisateur admin.
+3. Exécutez la commande `ssh admin@<gateway-ip>`, puis entrez le mot de passe de l'utilisateur admin.
 
-**Remarque :** Si vous ne voyez pas l'icône représentant un oeil, il se peut que vous n'ayez pas les droits nécessaires pour visualiser le mot de passe. Vérifiez vos droits d'accès auprès du propriétaire du compte.
+Si vous ne voyez pas l'icône représentant un oeil, il se peut que vous n'ayez pas les droits nécessaires pour visualiser le mot de passe. Vérifiez vos droits d'accès auprès du propriétaire du compte.
+{: note}
 
 ## Accès au mode de configuration
+{: accessing-the-configuration-mode}
 
 Vous pouvez passer en mode de configuration une fois qu'un shell a été ouvert sur le vSRX, en lançant la commande `config`. Vous pouvez effectuer plusieurs actions dans ce mode en utilisant les commandes suivantes :
 
@@ -49,20 +59,14 @@ Si les modifications vous conviennent, vous pouvez les valider dans la configura
 Pour quitter le mode de configuration, exécutez la commande `exit`.
 
 ## Accès au périphérique à l'aide de l'interface utilisateur de gestion Web de Juniper
+{: #accessing-the-device-using-the-juniper-web-management-ui}
 
 L'interface graphique de gestion Web de Juniper a été configurée par défaut avec le certificat autosigné par vSRX. Seul le protocole HTTPS est activé sur le port 8443. Vous pouvez y accéder à l'adresse `https://gateway-ip:8443`.
 
 ![Détails sur le dispositif de passerelle haute disponibilité](images/vSRX-webui.png)
 
-## Accès au périphérique à l'aide de la console VIRSH
-
-Vous pouvez également accéder au vSRX à partir du système d'exploitation du serveur de passerelle :
-
-1. Connectez-vous à votre serveur de passerelle en exécutant la commande `ssh root@<server-ip>`.
-2. Exécutez la commande `virsh list` pour rechercher le nom de votre machine virtuelle vSRX.
-3. Exécutez la commande `virsh console <your vSRX VM name>`.
-
 ## Création d'utilisateurs système
+{: #creating-system-users}
 
 Par défaut, IBM Cloud Juniper vSRX est configuré avec un accès SSH pour le nom d'utilisateur `admin`. Des utilisateurs supplémentaires peuvent être ajoutés avec leur propre ensemble de priorités. Par exemple :
 
@@ -75,6 +79,7 @@ Dans cet exemple, `ops` correspond au nom d'utilisateur et `operator` désigne l
 Des classes personnalisées peuvent également être définies par opposition aux classes prédéfinies.
 
 ## Définition du nom d'hôte vSRX
+{: #defining-the-vsrx-hostname}
 
 Vous pouvez définir ou modifier le nom d'hôte vSRX à l'aide de la commande suivante :
 
@@ -83,6 +88,7 @@ set system host-name <hostname>
 ```
 
 ## Configuration DNS et NTP
+{: #configuring-dns-and-ntp}
 
 Pour configurer la résolution du serveur de noms et le protocole NTP, exécutez les commandes suivantes :
 
@@ -92,6 +98,7 @@ set system ntp <NTP server>
 ```
 
 ## Changement du mot de passe root
+{: #changing-the-root-password}
 
 Vous pouvez changer le mot de passe root à l'aide de la commande suivante :
 

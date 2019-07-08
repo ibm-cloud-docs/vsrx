@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: manage, managing, vlan, gateway, route, bypass, disassociate, associate, configuration, disassociating, associating, standalone, ha
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # 管理 IBM VLAN
@@ -36,7 +42,7 @@ VLAN 一次只能與一個「閘道」相關聯，且不得有防火牆。請執
 ## 遞送關聯的 VLAN
 {: #route-an-associated-vlan}
 
-關聯的 VLAN 會鏈結至「閘道應用裝置」，但在 VLAN 遞送之前，進出 VLAN 的資料流量不會到達「閘道」。在遞送關聯的 VLAN 之後，所有前端及後端資料流量都會透過「網路閘道」進行遞送，而不是客戶路由器進行遞送。
+關聯的 VLAN 會鏈結至「閘道應用裝置」，但在 VLAN 遞送之前，進出 VLAN 的資料流量不會到達「閘道」。在遞送相關聯的 VLAN 之後，所有前端及後端資料流量都會透過「閘道應用裝置」進行遞送，而不是客戶路由器進行遞送。
 
 請執行下列程序來遞送關聯的 VLAN：
 
@@ -96,13 +102,13 @@ set interfaces reth2 unit 50 vlan-id 50
 set interfaces reth2 unit 50 family inet address <IP/MASK>
 ```
 
-**附註：**即使裝置 0 未標記，`JunOS` 仍需要它，來參照配置為 `native-vlan` 的 VLAN ID。在範例中，由於 `native-vlan-id` 為 `10`，裝置 0 也應具有 `10` 的 `vlan-id`。如此一來，將通知 `JunOS`，裝置 0 應該為未標記。
+即使未標記單位 0，`JunOS` 也需要使用它來參照配置為 `native-vlan` 的 VLAN ID。在範例中，由於 `native-vlan-id` 為 `10`，裝置 0 也應具有 `10` 的 `vlan-id`。如此一來，將通知 `JunOS`，裝置 0 應該為未標記。
+{: note}
 
 ## vSRX 的 VLAN 配置範例
 {: #sample-vlan-configuration-for-vsrx}
 
-下面是 vSRX 的配置範例，其定義了兩個專用介面及一個客戶區域。
-使用此配置範例，「專用 VLAN1」與「專用 VLAN2」可以彼此通訊。獨立式 vSRX 介面會定義為 ge-0/0/0（專用）及 ge-0/0/1（公用），而且若為「高可用性」實例，它們則會定義為 reth2（HA 專用）及 reth3（HA 公用）。
+下面是 vSRX 的配置範例，其定義了兩個專用介面及一個客戶區域。使用此配置範例，「專用 VLAN1」與「專用 VLAN2」可以彼此通訊。獨立式 vSRX 介面會定義為 ge-0/0/0（專用）及 ge-0/0/1（公用），而且若為「高可用性」實例，它們則會定義為 reth2（HA 專用）及 reth3（HA 公用）。
 
 <img src="images/Sample-Topology-VLAN-to-VLAN.png" alt="圖片" style="width: 500px;"/>
 

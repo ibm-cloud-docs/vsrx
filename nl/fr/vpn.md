@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: working, vpn, sample, configuration
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-06"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Fonctionnement des VPN
 {: #working-with-vpn}
@@ -22,6 +28,7 @@ La présente rubrique illustre un exemple de configuration pour VPN basé sur un
 <img src="images/site-to-site-vpn.png" alt="dessin" style="width: 600px;"/>
 
 ## Exemple de configuration pour le site A (Dallas) :
+{: #sample-configuration-for-site-a-dallas-}
 
 ```
 # show security address-book global address Network-A
@@ -126,6 +133,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ```
 
 ## Exemple de configuration pour le site B (Londres) :
+{: #sample-configuration-for-site-b-london-}
 
 ```
 # show interfaces
@@ -237,6 +245,8 @@ policy VPN-to-Custprivate {
 }
 ```
 ## Remarque sur les performances
+{: #performance-consideration}
+
 Pour obtenir les meilleures performances de VPN IPSEC, utilisez AES-GCM comme algorithme de chiffrement pour les propositions IKE et IPSEC.
 
 Par exemple :
@@ -249,6 +259,8 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 Avec AES-GCM comme algorithme de chiffrement, il n'est pas nécessaire de spécifier l'algorithme d'authentification dans la même proposition. AES-GCM fournit le chiffrement et l'authentification.
 
 ## Autres configurations de VPN
+{: #additional-vpn-configurations}
+
 Pour configurer un réseau privé virtuel (VPN) IPSEC, de site à autre, un VPN à accès distant, et d'autres fonctions, voir le [guide de configuration ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} depuis Juniper.
 
 Pour un exemple de configuration d'un réseau privé virtuel (VPN) IPSEC basé sur une route, voir le [guide de configuration ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} depuis Juniper.

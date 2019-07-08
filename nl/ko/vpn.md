@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: working, vpn, sample, configuration
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-06"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # VPN 관련 작업
 {: #working-with-vpn}
@@ -22,6 +28,7 @@ lastupdated: "2018-11-06"
 <img src="images/site-to-site-vpn.png" alt="그림" style="width: 600px;"/>
 
 ## 사이트 A(달라스)를 위한 샘플 구성:
+{: #sample-configuration-for-site-a-dallas-}
 
 ```
 # show security address-book global address Network-A
@@ -126,6 +133,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ```
 
 ## 사이트 B(런던)를 위한 샘플 구성:
+{: #sample-configuration-for-site-b-london-}
 
 ```
 # show interfaces
@@ -237,6 +245,8 @@ policy VPN-to-Custprivate {
 }
 ```
 ## 성능 고려사항
+{: #performance-consideration}
+
 최상의 IPSEC VPN 성능을 달성하려면 모든 IKE 및 IPSEC 제안에 암호화 알고리즘으로서 AES-GCM을 사용하십시오.
 
 예를 들면, 다음과 같습니다.
@@ -249,6 +259,8 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 암호화 알고리즘으로서 AES-GCM을 사용하면 동일한 제안에 인증 알고리즘을 지정할 필요가 없습니다. AES-GCM은 암호화 및 인증을 모두 제공합니다.
 
 ## 추가 VPN 구성
-IPSEC VPN, 사이트 대 사이트, 원격 액세스 VPN 및 기타 기능을 구성하려면 Juniper에서 이 [구성 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window}를 참조하십시오. 
+{: #additional-vpn-configurations}
+
+IPSEC VPN, 사이트 대 사이트, 원격 액세스 VPN 및 기타 기능을 구성하려면 Juniper에서 이 [구성 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window}를 참조하십시오.
 
 라우트 기반 사이트 대 사이트 IPSEC VPN을 구성하는 방법에 대한 예제는 Juniper에서 이 [구성 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window}를 참조하십시오.

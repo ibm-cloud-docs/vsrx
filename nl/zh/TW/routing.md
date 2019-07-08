@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, routing, static, default, creating, ospf, bgp
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 使用遞送
 {: #working-with-routing}
@@ -20,19 +26,26 @@ lastupdated: "2018-10-22"
 IBM® Cloud Juniper vSRX 係以 `JunOS` 為基礎，可讓您存取完整 Juniper 遞送堆疊。
 
 ##靜態遞送
-若要配置靜態路徑，請執行下列指令：
+{: #static-routing}
 
-###設定預設路徑
+若要配置靜態路由，請執行下列指令：
+
+###設定預設路由
+{: #setting-a-default-route}
+
 ```
 set routing-options static route 0/0 next-hop <Gateway IP>
 ```
 
-### 建立靜態路徑
+### 建立靜態路由
+{: #creating-a-static-route}
 ```
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
 ###基本 OSPF 遞送
+{: #basic-ospf-routing}
+
 若要僅使用區域 0 設定基本 OSPF 遞送，請使用 md5 鑑別來執行下列指令：
 
 ```
@@ -40,6 +53,8 @@ set protocols ospf area 0 interface ge-0/0/1.0 authentication md5 0 key <KEY>
 ```
 
 ### 基本 BGP 遞送
+{: #basic-bgp-routing}
+
 若要設定基本 BGP 遞送，請先定義本端 AS：
 
 ```

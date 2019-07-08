@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: confirming, output, committing, changes, vlans, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # 出力の確認と変更のコミット
 {: #confirming-the-output-and-commiting-the-changes}
@@ -93,6 +100,6 @@ show | compare
 
 構成が正しいことを確認した後に、`commit` コマンドを実行して、変更をアクティブ構成にプッシュします。
 
-この時点で IBM Cloud Juniper vSRX Standard は、トラフィックを新しい VLAN とサブネットに経路指定してフィルター操作するように構成され、インバウンド ping と SSH 接続のみが許可されます。 
+この時点で IBM Cloud Juniper vSRX Standard は、トラフィックを新しい VLAN とサブネットに経路指定してフィルター操作するように構成され、インバウンド ping と SSH 接続のみが許可されます。
 
 次に、[VLAN の管理](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans)で示されているように VLAN を経路指定して、新機能の使用を開始してください。

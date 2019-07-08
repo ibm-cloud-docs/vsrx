@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: viewing, details, appliances, gateways
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Visualizzazione dei dettagli della tua applicazione gateway
@@ -24,6 +30,6 @@ Esegui la seguente procedura per accedere alla schermata Gateway Details.
 1. [Accedi alla schermata Gateway Appliances](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) nel portale del cliente.
 2. Fai clic sul nome dell'applicazione gateway per il gateway di rete desiderato per accedere alla schermata Gateway Appliance Details.
 
-<img src="images/gw-sa-details.png" alt="disegno" style="width: 700px;"/>
+  <img src="images/gw-sa-details.png" alt="disegno" style="width: 700px;"/>
 
 Possono essere eseguite interazioni su più VLAN in qualsiasi momento utilizzando la funzione delle azioni in blocco.

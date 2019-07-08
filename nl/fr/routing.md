@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, routing, static, default, creating, ospf, bgp
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Fonctionnement du routage
 {: #working-with-routing}
@@ -20,19 +26,26 @@ lastupdated: "2018-10-22"
 IBM® Cloud Juniper vSRX s'appuie sur `JunOS` pour vous permettre d'accéder à l'ensemble de la pile de routage Juniper.
 
 ##Routage statique
+{: #static-routing}
+
 Pour configurer des routes statiques, exécutez les commandes suivantes :
 
 ###Configuration d'une route par défaut
+{: #setting-a-default-route}
+
 ```
 set routing-options static route 0/0 next-hop <Gateway IP>
 ```
 
 ### Création d'une route statique
+{: #creating-a-static-route}
 ```
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
 ###Routage OSPF de base
+{: #basic-ospf-routing}
+
 Pour configurer le routage OSPF de base, seulement en utilisant la zone 0, exécutez les commandes suivantes à l'aide de l'authentification md5 :
 
 ```
@@ -40,6 +53,8 @@ set protocols ospf area 0 interface ge-0/0/1.0 authentication md5 0 key <KEY>
 ```
 
 ### Routage BGP de base
+{: #basic-bgp-routing}
+
 Pour configurer le routage BGP de base, définissez d'abord le système autonome local :
 
 ```

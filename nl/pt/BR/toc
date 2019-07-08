@@ -30,7 +30,6 @@ IBM Cloud Juniper vSRX Standard
     routing.md
     vpn.md
     os-reload.md
-    reclaim-gateway.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

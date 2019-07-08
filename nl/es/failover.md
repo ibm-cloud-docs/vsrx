@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, failover, codes, failure, cli
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,12 +16,14 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Cómo trabajar con la migración tras error
 {: #working-with-failover}
 
-**NOTA:** esta sección solo se aplica si los dispositivos de pasarela Juniper vSRX se suministran en modalidad de alta disponibilidad.
+Esta sección solo se aplica si los dispositivos de pasarela Juniper vSRX se suministran en modalidad de alta disponibilidad.{: note}
 
 En este tema se describe cómo iniciar una migración tras error desde el dispositivo de pasarela primario a un dispositivo de copia de seguridad, de modo que todo el tráfico de control y del plano de datos se direccione mediante el dispositivo de pasarela secundario después de la migración tras error.
 
@@ -60,7 +66,10 @@ a la siguiente:
 	{primary:node0}
 	```
 
-	Asegúrese de que se ha establecido el mismo nodo como `primary` para ambos grupos de redundancia. Es posible que distintos nodos se establezcan como el rol de `primary` en distintos grupos de redundancia.
+	Asegúrese de que se ha establecido el mismo nodo como `primary` para los dos grupos de redundancia. Es posible que distintos nodos se establezcan como el rol de `primary` en distintos grupos de redundancia. 
+	
+	De forma predeterminada, vSRX establece `Preempt` a `yes` para el Grupo de redundancia 1 y a `no` para el Grupo de redundancia 0. Consulte [este enlace ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){:new_window} para obtener más información sobre la preferencia y el comportamiento de migración tras error.
+	{: note}
 
 3. Inicie la migración tras error ejecutando el mandato siguiente en el indicador de la consola:
 
@@ -74,6 +83,7 @@ a la siguiente:
 
 5. Inicie una sesión en la otra pasarela vSRX del par. Vuelva a entrar en modalidad de CLI con el mandato `cli` y verifique que la salida de la consola se muestra como `primary`.
 
-**NOTA:** cuando entra en la modalidad de CLI en el dispositivo de pasarela Juniper vSRX, la salida se mostrará como `primary` desde la perspectiva del plano de control. Compruebe siempre la salida de `show chassis cluster status` para
+Cuando entra en la modalidad de CLI en el dispositivo de pasarela Juniper vSRX, la salida se mostrará como `primary` desde la perspectiva del plano de control. Compruebe siempre la salida de `show chassis cluster status` para
 determinar qué dispositivo de pasarela es el primario desde la perspectiva del plano de datos. Consulte el apartado sobre [Configuración
 predeterminada de vSRX](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) para obtener más información sobre los grupos de redundancia, así como los planos de control y de datos.
+{: tip}

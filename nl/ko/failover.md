@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, failover, codes, failure, cli
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,12 +16,15 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # 장애 복구 관련 작업
 {: #working-with-failover}
 
-**참고:** 이 절은 Juniper vSRX 게이트웨이 디바이스가 고가용성 모드에서 프로비저닝되는 경우에만 해당됩니다.
+이 절은 Juniper vSRX 게이트웨이 디바이스가 고가용성 모드에서 프로비저닝되는 경우에만 적용 가능합니다.
+{: note}
 
 이 절에서는 모든 제어 및 데이터 플레인 트래픽이 장애 복구 후 두 번째 게이트웨이 디바이스를 통해 라우트되도록 기본 게이트웨이 디바이스에서 장애 복구를 초기화하는 방법에 대해 설명합니다.
 
@@ -59,7 +66,10 @@ lastupdated: "2018-10-22"
 	{primary:node0}
 	```
 
-	두 중복성 그룹의 경우 동일한 노드가 `primary`.로 설정되었는지 확인하십시오. 다른 노드가 다른 중복성 그룹에서 `primary` 역할로 설정될 수 있습니다.
+	두 중복성 그룹에 대해 동일한 노드가 `primary`로 설정되어 있는지 확인하십시오. 다른 노드가 다른 중복성 그룹에서 `primary` 역할로 설정될 수 있습니다. 
+	
+	기본적으로 vSRX는 `Preempt`를 중복성 그룹 1의 경우 `yes`로 설정하고 중복성 그룹 0의 경우 `no`로 설정합니다. [이 링크![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){:new_window}를 참조하여 선점 및 장애 복구 동작에 대해 자세히 알아보십시오.
+	{: note}
 
 3. 콘솔 프롬프트에서 다음 명령을 실행하여 장애 복구를 초기화하십시오.
 
@@ -73,4 +83,5 @@ lastupdated: "2018-10-22"
 
 5. 다른 vSRX 게이트웨이 쌍에 로그인하십시오. `cli` 명령을 다시 실행하여 CLI 모드로 전환한 후 콘솔 출력이 `primary`로 표시되는지 확인하십시오.
 
-**참고:** Juniper vSRX 게이트웨이 디바이스에서 CLI 모드로 전환하면 출력이 제어 플레인 퍼스펙티브에서 `primary`로 표시됩니다. 데이터 플레인 퍼스펙티브에서 기본인 게이트웨이 디바이스를 판별하려면 항상 `show chassis cluster status` 출력을 확인하십시오. 중복성 그룹과 제어 플레인 및 데이터 플레인에 대해 자세히 알아보려면 [vSRX 기본 구성](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration)을 참조하십시오.
+Juniper vSRX 게이트웨이 디바이스에서 CLI 모드로 전환하면 출력이 제어 플레인 퍼스펙티브에서 `primary`로 표시됩니다. 데이터 플레인 퍼스펙티브에서 기본인 게이트웨이 디바이스를 판별하려면 항상 `show chassis cluster status` 출력을 확인하십시오. 중복성 그룹과 제어 플레인 및 데이터 플레인에 대해 자세히 알아보려면 [vSRX 기본 구성](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration)을 참조하십시오.
+{: tip}

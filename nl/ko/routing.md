@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, routing, static, default, creating, ospf, bgp
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 라우팅 관련 작업
 {: #working-with-routing}
@@ -20,19 +26,26 @@ lastupdated: "2018-10-22"
 IBM® Cloud Juniper vSRX는 `JunOS`를 기반으로 하며 전체 Juniper 라우팅 스택에 대한 액세스 권한을 제공합니다.
 
 ##정적 라우팅
+{: #static-routing}
+
 정적 라우트를 구성하려면 다음 명령을 실행하십시오.
 
 ###기본 라우트 설정
+{: #setting-a-default-route}
+
 ```
 set routing-options static route 0/0 next-hop <Gateway IP>
 ```
 
 ### 정적 라우트 작성
+{: #creating-a-static-route}
 ```
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
 ###기본 OSPF 라우팅
+{: #basic-ospf-routing}
+
 영역 0만 사용하여 기본 OSPF 라우팅을 설정하려면 md5 인증 사용을 통해 다음 명령을 실행하십시오.
 
 ```
@@ -40,6 +53,8 @@ set protocols ospf area 0 interface ge-0/0/1.0 authentication md5 0 key <KEY>
 ```
 
 ### 기본 BGP 라우팅
+{: #basic-bgp-routing}
+
 기본 BGP 라우팅을 설정하려면 먼저 로컬 AS를 정의하십시오.
 
 ```

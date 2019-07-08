@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords:
+
+subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standalone, ha
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Fonctionnement des pare-feux
 {: #working-with-firewalls}
@@ -25,12 +31,14 @@ Dans IBM Cloud, un vSRX est conçu pour avoir quatre zones de sécurité différ
 
 | Zone                     | Interface autonome | Interface haute disponibilité |
 | :---                     |        :----:        |         ---: |
-| SL-Private (non balisée)    | ge-0/0/0.0           | reth0.0      |
-| SL-Public (non balisée)     | ge-0/0/1.0           | reth1.0      |
-| Customer-Private (balisée)| ge-0/0/0.1           | reth2.1      |
-| Customer-Public (balisée) | ge-0/0/1.1           | reth3.1      |
+| SL-Private (non balisée)    | ge-0/0/0.0 ou ae0.0  | reth0.0      |
+| SL-Public (non balisée)     | ge-0/0/1.0 ou ae1.0  | reth1.0      |
+| Customer-Private (balisée)| ge-0/0/0.1 ou ae0.1  | reth2.1      |
+| Customer-Public (balisée) | ge-0/0/1.1 ou ae1.1  | reth3.1      |
 
 ## Politiques de zone
+{: #zone-policies}
+
 Pour configurer un pare-feu avec état, procédez comme suit :
 
 1. Créez des zones de sécurité et affectez-leur les interfaces respectives :
@@ -87,6 +95,8 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ```
 
 ## Filtres de pare-feu
+{: #firewall-filters}
+
 Par défaut, IBM Cloud Juniper vSRX accepte les commandes ping, les protocoles SSH et HTTPS, et supprime tout autre trafic en appliquant le filtre `PROTECT-IN` à l'interface `lo`.
 
 Pour configurer un nouveau pare-feu sans état, procédez comme suit :

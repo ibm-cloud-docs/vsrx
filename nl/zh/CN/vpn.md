@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: working, vpn, sample, configuration
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-06"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 使用 VPN
 {: #working-with-vpn}
@@ -22,6 +28,7 @@ lastupdated: "2018-11-06"
 <img src="images/site-to-site-vpn.png" alt="图样" style="width: 600px;"/>
 
 ## 站点 A（达拉斯）的样本配置：
+{: #sample-configuration-for-site-a-dallas-}
 
 ```
 # show security address-book global address Network-A
@@ -126,6 +133,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ```
 
 ## 站点 B（伦敦）的样本配置：
+{: #sample-configuration-for-site-b-london-}
 
 ```
 # show interfaces
@@ -237,6 +245,8 @@ policy VPN-to-Custprivate {
 }
 ```
 ## 性能注意事项
+{: #performance-consideration}
+
 为了实现最佳 IPSEC VPN 性能，请使用 AES-GCM 作为 IKE 和 IPSEC 建议的加密算法。
 
 例如：
@@ -250,6 +260,8 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 通过将 AES-GCM 作为加密算法，您无需在同一建议中指定认证算法。AES-GCM 可同时提供加密和认证。
 
 ## 其他 VPN 配置
+{: #additional-vpn-configurations}
+
 要配置 IPSEC VPN、站点到站点以及远程访问 VPN 等功能，请参阅 Juniper 中的此[配置指南 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window}。
 
 有关如何配置基于路由的站点到站点 IPSEC VPN 的示例，请参阅 Juniper 中的此[配置指南 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window}。

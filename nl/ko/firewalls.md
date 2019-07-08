@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords:
+
+subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standalone, ha
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 방화벽 관련 작업
 {: #working-with-firewalls}
@@ -25,12 +31,14 @@ IBM Cloud에서 vSRX는 다음 네 가지 보안 구역을 갖추도록 설계�
 
 | 구역                     | 독립형 인터페이스 | HA 인터페이스 |
 | :---                     |        :----:        |         ---: |
-| SL-Private(태그로 지정됨 )    | ge-0/0/0.0           | reth0.0      |
-| SL-Public(태그로 지정되지 않음)     | ge-0/0/1.0           | reth1.0      |
-| Customer-Private(태그로 지정됨)| ge-0/0/0.1           | reth2.1      |
-| Customer-Public(태그로 지정되지 않음) | ge-0/0/1.1           | reth3.1      |
+| SL-Private(태그로 지정됨 )    | ge-0/0/0.0 또는 ae0.0  | reth0.0      |
+| SL-Public(태그로 지정되지 않음)     | ge-0/0/1.0 또는 ae1.0  | reth1.0      |
+| Customer-Private(태그로 지정됨)| ge-0/0/0.1 또는 ae0.1  | reth2.1      |
+| Customer-Public(태그로 지정되지 않음) | ge-0/0/1.1 또는 ae1.1  | reth3.1      |
 
 ## 구역 정책
+{: #zone-policies}
+
 Stateful 방화벽을 구성하려면 다음 프로시저를 수행하십시오.
 
 1. 보안 구역을 작성하고 각 인터페이스를 지정하십시오.
@@ -87,6 +95,8 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ```
 
 ## 방화벽 필터
+{: #firewall-filters}
+
 기본적으로 IBM Cloud Juniper vSRX는 Ping, SSH 및 HTTPS를 자체로 허용하고 `PROTECT-IN` 필터를 `lo` 인터페이스에 적용하여 기타 모든 트래픽을 삭제합니다.
 
 새 Stateless 방화벽을 구성하려면 다음 프로시저를 수행하십시오.

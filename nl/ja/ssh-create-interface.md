@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: create, creating, interface, zone, address, subnets, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,13 +16,17 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # 新規インターフェース、ゾーン、およびアドレス帳サブネットの作成
 {: #creating-the-new-interface-zone-and-address-book-subnet}
 
 まず、VLAN のインターフェース・ユニットを作成し、サブネットのゲートウェイ・アドレスを追加する必要があります。 その後、新規ユニットに関連付けられたセキュリティー・ゾーンと、そのサブネットの `address-book` エントリーを作成できます。  
 
-**注:** 右側にスクロールすると、コマンド全体を表示できます。
+右側にスクロールすると、コマンド全体を表示できます。
+{: important}
 
 ```
 set interfaces reth3 unit 1523 vlan-id 1523

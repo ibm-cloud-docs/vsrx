@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: viewing, details, appliances, gateways
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Visualización de detalles del dispositivo de pasarela
@@ -24,6 +30,6 @@ Realice el procedimiento siguiente para acceder a la pantalla Detalles de pasare
 1. [Acceda a la pantalla de dispositivo de pasarela](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) en el Portal de clientes.
 2. Pulse en el nombre de dispositivo de pasarela de la pasarela de red deseada para acceder a la pantalla Detalles de dispositivo de pasarela.
 
-<img src="images/gw-sa-details.png" alt="dibujo" style="width: 700px;"/>
+  <img src="images/gw-sa-details.png" alt="dibujo" style="width: 700px;"/>
 
 Se pueden adoptar interacciones en varias VLAN en cualquier momento utilizando la característica de acciones masivas.

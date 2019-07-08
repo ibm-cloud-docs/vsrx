@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: working, vpn, sample, configuration
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,15 +17,18 @@ lastupdated: "2018-11-06"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # 使用 VPN
 {: #working-with-vpn}
 
-本主題詳細說明兩個網站間「路徑」型 VPN 的配置範例。在此配置範例中，「伺服器 1（網站 A）」可與「伺服器 2（網站 B）」通訊，而每一個網站都會使用兩段式 IPSEC 鑑別。
+本主題詳細說明兩個網站間以路由為基礎的 VPN 配置範例。在此配置範例中，「伺服器 1（網站 A）」可與「伺服器 2（網站 B）」通訊，而每一個網站都會使用兩段式 IPSEC 鑑別。
 
 <img src="images/site-to-site-vpn.png" alt="圖片" style="width: 600px;"/>
 
 ## 「網站 A（達拉斯）」的配置範例：
+{: #sample-configuration-for-site-a-dallas-}
 
 ```
 # show security address-book global address Network-A
@@ -126,6 +133,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ```
 
 ## 「網站 B（倫敦）」的配置範例：
+{: #sample-configuration-for-site-b-london-}
 
 ```
 # show interfaces
@@ -237,6 +245,8 @@ policy VPN-to-Custprivate {
 }
 ```
 ## 效能考量
+{: #performance-consideration}
+
 為了達到最佳 IPSEC VPN 效能，請使用 AES-GCM，同時作為 IKE 及 IPSEC 提案的加密演算法。
 
 例如：
@@ -249,6 +259,8 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 使用 AESL-CM 作為加密演算法時，您不需要在相同提案中指定鑑別演算法。AES-GCM 會同時提供加密及鑑別。
 
 ## 其他 VPN 配置
+{: #additional-vpn-configurations}
+
 若要配置 IPSEC VPN、網站至網站、遠端存取 VPN，以及其他特性，請參閱 Juniper 上的此[配置手冊 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window}。
 
-如需如何配置路徑型網站至網站 IPSEC VPN 的範例，請參閱 Juniper 上的此[配置手冊 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window}。
+如需如何配置以路由為基礎的網站至網站 IPSEC VPN 的範例，請參閱 Juniper 上的此[配置手冊 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window}。

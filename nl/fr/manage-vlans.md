@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: manage, managing, vlan, gateway, route, bypass, disassociate, associate, configuration, disassociating, associating, standalone, ha
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Gestion des réseaux locaux virtuels (VLAN) IBM
@@ -20,6 +26,7 @@ lastupdated: "2018-10-22"
 Vous pouvez effectuer toute une série d'actions à partir de l'[écran des détails du dispositif de passerelle](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details).
 
 ## Associer un VLAN à un dispositif de passerelle
+{: #associate-a-vlan-to-a-gateway-appliance}
 
 Un VLAN doit être associé à un dispositif de passerelle pour permettre son routage. La procédure d'association consiste à lier un VLAN éligible à une passerelle réseau afin que le réseau local virtuel puisse être acheminé vers un dispositif de passerelle. Cette procédure ne permet pas de router automatiquement le VLAN vers un dispositif de passerelle ; le VLAN continue à utiliser les routeurs client frontaux et principaux jusqu'à ce qu'il soit redirigé.
 
@@ -33,6 +40,7 @@ Les VLAN peuvent être associés à une seule passerelle à la fois et ne doiven
 Après avoir associé un VLAN au dispositif de passerelle, il apparaît dans la section VLAN associés de l'écran des détails du dispositif de passerelle. Dans cette section, le VLAN peut être routé vers la passerelle ou être dissocié de la passerelle. D'autres VLAN éligibles peuvent être associés à un dispositif de passerelle à tout moment en répétant la procédure ci-dessus.
 
 ## Acheminer un VLAN associé
+{: #route-an-associated-vlan}
 
 Les VLAN associés sont liés à un dispositif de passerelle, mais le trafic entrant et sortant du VLAN n'atteint pas la passerelle tant que le VLAN n'a pas été routé. Une fois qu'un VLAN associé a été routé, l'ensemble du trafic, frontal et dorsal, est acheminé via le dispositif de passerelle, par opposition aux routeurs client.
 
@@ -46,6 +54,7 @@ Pour router un VLAN associé, procédez comme suit :
 Après le routage d'un VLAN, tout le trafic frontal et dorsal passe des routeurs client à la passerelle réseau. D'autres commandes liées au trafic et au dispositif de passerelle même peuvent être exécutées en accédant à l'outil de gestion de la passerelle. Le routage via la passerelle réseau peut être interrompu à tout moment en [contournant le dispositif de passerelle](#bypass-gateway-appliance-routing-for-a-vlan).
 
 ## Ignorer le routage du dispositif de passerelle pour un VLAN
+{: #bypass-gateway-appliance-routing-for-a-vlan}
 
 Une fois le VLAN routé, tout le trafic frontal et dorsal passe par la passerelle réseau. A tout moment, le dispositif de passerelle peut être contourné de sorte que le trafic soit réorienté sur les routeurs client FCR et BCR.
 
@@ -61,6 +70,7 @@ Pour ignorer le routage de la passerelle d'un VLAN, procédez comme suit :
 Après le contournement de la passerelle réseau, tout le trafic frontal et dorsal circule via les routeurs FCR et BCR associés au VLAN. Le VLAN reste associé au dispositif de passerelle et peut être rerouté vers ce dispositif à tout moment.
 
 ## Dissocier un VLAN d'un dispositif de passerelle
+{: #disassociate-a-vlan-from-a-gateway-appliance}
 
 Les VLAN peuvent être liés à un dispositif de passerelle à la fois par [association](#associate-a-vlan-to-a-gateway-appliance). Une association permet au VLAN d'être routé vers le dispositif de passerelle à tout moment. Si un VLAN doit être associé à un autre dispositif de passerelle ou s'il ne doit plus être associé à sa passerelle, une dissociation est requise. La dissociation supprime le "lien" du VLAN au dispositif de passerelle, permettant ainsi au VLAN d'être associé à une autre passerelle, si nécessaire.
 
@@ -74,6 +84,8 @@ Pour dissocier un VLAN d'un dispositif de passerelle, procédez comme suit :
 Après avoir dissocié un VLAN d'un dispositif de passerelle, le VLAN peut être associé à une autre passerelle. Le VLAN peut également être réassocié au dispositif de passerelle à tout moment. Après avoir dissocié un VLAN d'un dispositif de passerelle, le trafic du VLAN ne peut pas être routé via la passerelle. Les VLAN doivent être associés à un dispositif de passerelle pour pouvoir être routés.
 
 ## Router plusieurs VLAN sur la même interface réseau
+{: #route-multiple-vlans-over-the-same-network-interface}
+
 IBM® Cloud Juniper vSRX peut fonctionner avec plusieurs VLAN sur la même interface réseau. Il permet également de traiter le trafic balisé et non balisé en même temps. Pour cela, il utilise le périphérique autonome en définissant l'encapsulation d'interface sur `flexible-vlan-tagging`, ou sur les périphériques haute disponibilité en utilisant reth2 et reth3 comme interfaces balisées. Ceci est fait dans le cadre de la configuration par défaut et n'a pas besoin d'être modifié.  Sur les périphériques autonomes, l'unité 0 correspond à la sous-interface non balisée, et les autres unités sont balisées.
 
 Exécutez les commandes suivantes pour configurer des interfaces balisées supplémentaires :
@@ -90,9 +102,11 @@ set interfaces reth2 unit 50 vlan-id 50
 set interfaces reth2 unit 50 family inet address <IP/MASK>
 ```
 
-**Remarque :** Bien que l'unité 0 ne soit pas balisée, `JunOS` en a besoin pour référencer l'ID du VLAN qui est configuré comme `native-vlan`. Dans notre exemple, `native-vlan-id` étant `10`, l'unité 0 doit avoir une valeur `vlan-id` de `10` également. De cette manière, `JunOS` sait que l'unité 0 doit être non balisée.
+Bien que l'unité 0 ne soit pas balisée, `JunOS` en a besoin pour référencer l'ID du VLAN qui est configuré comme `native-vlan`. Dans notre exemple, `native-vlan-id` étant `10`, l'unité 0 doit avoir une valeur `vlan-id` de `10` également. De cette manière, `JunOS` sait que l'unité 0 doit être non balisée.
+{: note}
 
 ## Exemple de configuration VLAN pour vSRX
+{: #sample-vlan-configuration-for-vsrx}
 
 Vous trouverez ci-dessous un exemple de configuration pour vSRX qui définit deux interfaces privées et une zone client.
 Avec cet exemple de configuration, Private VLAN1 et Private VLAN2 peuvent communiquer l'un avec l'autre. Les interfaces vSRX autonomes sont définies en tant que ge-0/0/0 (private) et ge-0/0/1 (public), et pour l'instance haute disponibilité, elles sont définies en tant que reth2 (HA private) et reth3 (HA public).

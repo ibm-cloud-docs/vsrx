@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: vsrx, patches, notes
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,8 +17,12 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# IBM Cloud Juniper vSRX 릴리스 정보 
+# IBM Cloud Juniper vSRX 릴리스 정보
 {: #ibm-cloud-juniper-vsrx-release-notes}
 
-가장 최신 릴리스 정보의 목록은 [Juniper 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/product/en_US/vsrx){:new_window}를 참조하십시오.
+Juniper vSRX 18.4 릴리스 정보를 보려면 [이 링크![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/18.4/index.html){:new_window}를 방문하십시오. 
+
+Juniper vSRX 15.1 릴리스 정보를 보려면 [이 링크![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/15.1x49/vsrx-release-notes-15.1x49-d120.pdf){:new_window}를 방문하십시오. 

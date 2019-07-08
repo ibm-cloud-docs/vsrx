@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, routing, static, default, creating, ospf, bgp
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Cómo trabajar con el direccionamiento
 {: #working-with-routing}
@@ -20,19 +26,26 @@ lastupdated: "2018-10-22"
 IBM® Cloud Juniper vSRX se basa en `JunOS`, que le ofrece acceso a la pila completa de direccionamiento de Juniper.
 
 ##Direccionamiento estático
+{: #static-routing}
+
 Para configurar rutas estáticas, ejecute los mandatos siguientes:
 
 ###Configuración de una ruta predeterminada
+{: #setting-a-default-route}
+
 ```
 set routing-options static route 0/0 next-hop <Gateway IP>
 ```
 
 ### Creación de una ruta estática
+{: #creating-a-static-route}
 ```
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
 ###Direccionamiento OSPF básico
+{: #basic-ospf-routing}
+
 Para configurar el direccionamiento OSPF básico, utilizando sólo el área 0, ejecute los siguientes mandatos utilizando la autenticación md5:
 
 ```
@@ -40,6 +53,8 @@ set protocols ospf area 0 interface ge-0/0/1.0 authentication md5 0 key <KEY>
 ```
 
 ### Direccionamiento BGP básico
+{: #basic-bgp-routing}
+
 Para configurar el direccionamiento BGP básico, defina primero el AS local:
 
 ```

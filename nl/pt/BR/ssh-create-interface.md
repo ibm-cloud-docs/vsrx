@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: create, creating, interface, zone, address, subnets, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,13 +16,17 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Crie a nova sub-rede de interface, zona e catálogo de endereços
 {: #creating-the-new-interface-zone-and-address-book-subnet}
 
 Primeiro, será necessário criar uma unidade de interface para a VLAN e incluir o endereço do gateway da sub-rede. Em seguida, será possível criar uma zona de segurança associada à nova unidade e uma entrada `address-book` para a sub-rede.  
 
-**NOTA:** role para a direita para visualizar o comando inteiro.
+Role para a direita para visualizar todo o comando.
+{: important}
 
 ```
 set interfaces reth3 unit 1523 vlan-id 1523

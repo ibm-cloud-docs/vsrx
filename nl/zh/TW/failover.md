@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: working, failover, codes, failure, cli
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,12 +16,15 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # 使用失效接手
 {: #working-with-failover}
 
-**附註：**只有在「高可用性」模式中已佈建您的 Juniper vSRX 閘道裝置時，本節才適用。
+僅當 Juniper vSRX 閘道裝置以「高可用性」模式佈建時，此區段才適用。
+{: note}
 
 本主題說明如何從主要閘道裝置起始失效接手至備份裝置，以在失效接手之後透過次要閘道裝置遞送所有控制及資料平面資料流量。
 
@@ -27,7 +34,7 @@ lastupdated: "2018-10-22"
 
 2. 在主控台提示中執行 `cli` 指令，以進入 CLI 模式。當您進入 CLI 模式時，主控台會顯示節點角色，即 `primary` 或 `secondary`。
 
-	確定您位於 `primary` 節點。如果不是，請退出然後登入配對的另一個 vSRX 閘道裝置。
+	確定您位於 `primary` 節點。如果不是，請結束然後登入配對的另一個 vSRX 閘道裝置。
 
 2. 在主要 vSRX 閘道裝置上，執行以下指令：
 
@@ -59,7 +66,10 @@ lastupdated: "2018-10-22"
 	{primary:node0}
 	```
 
-	確定針對這兩個備援群組，將相同節點設為 `primary`。在不同的備援群組中，不同的節點有可能設為 `primary` 角色。
+	確定針對這兩個冗餘群組，將相同節點設為 `primary`。在不同的備援群組中，不同的節點有可能設為 `primary` 角色。 
+	
+	依預設，對於冗餘群組 1，vSRX 會將 `Preempt` 設為 `yes`，對於冗餘群組 0，會設為 `no`。請參閱[此鏈結 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){:new_window} 以進一步瞭解先占和失效接手行為的相關資訊。
+	{: note}
 
 3. 在主控台提示中執行下列指令，以起始失效接手：
 
@@ -73,4 +83,5 @@ lastupdated: "2018-10-22"
 
 5. 登入配對的另一個 vSRX 閘道。再次執行 `cli` 指令以進入 CLI 模式，然後驗證主控台輸出顯示為 `primary`。
 
-**附註：**當您在 Juniper vSRX 閘道裝置中進入 CLI 模式時，輸出會在控制平面視景中顯示為 `primary`。請務必檢查 `show chassis cluster status` 輸出，以從資料平面視景中判定哪個閘道裝置是主要的。請參閱 [vSRX 預設配置](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration)，以進一步瞭解備援群組，以及控制和資料平面。
+在 Juniper vSRX 閘道裝置中進入 CLI 模式時，從控制平面角度，輸出將顯示為 `primary`。請務必檢查 `show chassis cluster status` 輸出，以從資料平面視景中判定哪個閘道裝置是主要的。請參閱 [vSRX 預設配置](/docs/infrastructure/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration)，以進一步瞭解備援群組，以及控制和資料平面。
+{: tip}

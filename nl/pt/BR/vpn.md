@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: working, vpn, sample, configuration
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-06"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Trabalhando com a VPN
 {: #working-with-vpn}
@@ -22,6 +28,7 @@ Este tópico detalha uma configuração de amostra para uma VPN baseada em rota 
 <img src="images/site-to-site-vpn.png" alt="drawing" style="width: 600px;"/>
 
 ## Configuração de amostra para o site A (Dallas):
+{: #sample-configuration-for-site-a-dallas-}
 
 ```
 # show security address-book global address Network-A
@@ -91,6 +98,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ```
 
 ## Configuração de amostra para o Site B (Londres):
+{: #sample-configuration-for-site-b-london-}
 
 ```
 # show interfaces
@@ -174,6 +182,8 @@ policy VPN-to-Custprivate {
 }
 ```
 ## Consideração de desempenho
+{: #performance-consideration}
+
 Para obter o melhor desempenho da VPN IPSEC, use AES-GCM como o algoritmo de criptografia para as propostas IKE e IPSEC.
 
 Por exemplo:
@@ -186,6 +196,8 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 Com o AES-GCM como o algoritmo de criptografia, não é necessário especificar o algoritmo de autenticação na mesma proposta. O AES-GCM fornece criptografia e autenticação.
 
 ## Configurações adicionais de VPN
+{: #additional-vpn-configurations}
+
 Para configurar a VPN IPSEC, de site para site, a VPN de acesso remoto e outros recursos, consulte este [Guia de configuração ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} do Juniper.
 
 Para obter um exemplo de como configurar uma VPN IPSEC de site para site baseada em rota, consulte este [Guia de configuração ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} do Juniper.

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-06"
 
+keywords: working, vpn, sample, configuration
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-11-06"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # VPN の操作
 {: #working-with-vpn}
@@ -22,6 +28,7 @@ lastupdated: "2018-11-06"
 <img src="images/site-to-site-vpn.png" alt="図面" style="width: 600px;"/>
 
 ## サイト A (ダラス) のサンプル構成:
+{: #sample-configuration-for-site-a-dallas-}
 
 ```
 # show security address-book global address Network-A
@@ -126,6 +133,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ```
 
 ## サイト B (ロンドン) のサンプル構成:
+{: #sample-configuration-for-site-b-london-}
 
 ```
 # show interfaces
@@ -237,6 +245,8 @@ policy VPN-to-Custprivate {
 }
 ```
 ## パフォーマンスの考慮
+{: #performance-consideration}
+
 IPSEC VPN のパフォーマンスを最大限に生かすには、IKE および IPSEC プロポーザルの両方の暗号化アルゴリズムとして AES-GCM を使用します。
 
 以下に例を示します。
@@ -249,6 +259,8 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 暗号化アルゴリズムとして AES-GCM を使用する場合、同じプロポーザルで認証アルゴリズムを指定する必要はありません。 AES-GCM は、暗号化と認証の両方を提供します。
 
 ## 追加の VPN 構成
+{: #additional-vpn-configurations}
+
 IPSEC VPN、サイト間 VPN、リモート・アクセス VPN、およびその他の機能を構成するには、Juniper のこちらの[構成ガイド![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window}を参照してください。
 
 経路ベースのサイト間 IPSEC VPN を構成する方法の例については、Juniper のこちらの[構成ガイド![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window}を参照してください。

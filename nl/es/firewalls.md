@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords:
+
+subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standalone, ha
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,6 +17,8 @@ lastupdated: "2018-10-22"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Cómo trabajar con cortafuegos
 {: #working-with-firewalls}
@@ -25,12 +31,14 @@ En IBM Cloud, un vSRX está diseñado para que tenga cuatro zonas de seguridad d
 
 | Zona                     | Interfaz autónoma | Interfaz HA |
 | :---                     |        :----:        |         ---: |
-| SL-Private (sin etiquetar)    | ge-0/0/0.0           | reth0.0      |
-| SL-Public (sin etiquetar )     | ge-0/0/1.0           | reth1.0      |
-| Customer-Private (etiquetada)| ge-0/0/0.1           | reth2.1      |
-| Customer-Public (etiquetada) | ge-0/0/1.1           | reth3.1      |
+| SL-Private (sin etiquetar)    | ge-0/0/0.0 o ae0.0  | reth0.0      |
+| SL-Public (sin etiquetar )     | ge-0/0/1.0 o ae1.0  | reth1.0      |
+| Customer-Private (etiquetada)| ge-0/0/0.1 o ae0.1  | reth2.1      |
+| Customer-Public (etiquetada) | ge-0/0/1.1 o ae1.1  | reth3.1      |
 
 ## Políticas de zona
+{: #zone-policies}
+
 Para configurar un cortafuegos con estado, lleve a cabo el procedimiento siguiente:
 
 1. Cree zonas de seguridad y asigne las interfaces respectivas:
@@ -87,6 +95,8 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ```
 
 ## Filtros de cortafuegos
+{: #firewall-filters}
+
 De forma predeterminada, IBM Cloud Juniper vSRX permite ping, SSH y HTTPS a sí mismo y descarta el resto del tráfico mediante la aplicación del filtro `PROTECT-IN` a la interfaz `lo`.
 
 Para configurar un nuevo cortafuegos sin estado, siga este procedimiento:

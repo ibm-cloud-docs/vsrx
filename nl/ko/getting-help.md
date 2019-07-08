@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: help, support, contact, troubleshooting
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,9 +16,11 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
-# IBM Cloud Juniper vSRX에 대한 도움말 및 지원 받기
+# IBM Cloud Juniper vSRX에 대한 도움 및 지원 받기
 {: #getting-help-and-support-for-ibm-cloud-juniper-vsrx}
 
 IBM® Cloud Juniper vSRX Standard를 사용할 때 문제점이나 질문이 있는 경우 정보를 검색하거나 아래에 나열된 포럼 중 하나를 통해 질문하여 도움을 받을 수 있습니다. 또한 지원 티켓을 열 수도 있습니다.

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: viewing, details, appliances, gateways
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,8 @@ lastupdated: "2018-10-22"
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Visualizando os detalhes do dispositivo de gateway
@@ -24,6 +30,6 @@ Execute o procedimento a seguir para acessar a tela Detalhes do Gateway.
 1. [Acesse a tela Dispositivos de Gateway](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) no Portal do Cliente.
 2. Clique no Nome do Dispositivo de Gateway para o Gateway de Rede desejado para acessar a tela Detalhes do Dispositivo de Gateway.
 
-<img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
+  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
 
 As interações podem ser realizadas em múltiplas VLANs a qualquer momento usando o recurso Ações em Massa.

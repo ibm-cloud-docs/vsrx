@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-10-22"
 
+keywords: confirming, output, committing, changes, vlans, ssh
+
+subcollection: vsrx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-10-22"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
+{:important: .important}
+{:tip: .tip}
 
 # Conferma dell'output ed esecuzione del commit delle modifiche
 {: #confirming-the-output-and-commiting-the-changes}
@@ -93,6 +100,6 @@ Questo è l'output previsto:
 
 Dopo aver controllato che la configurazione è corretta, immetti il comando `commit` per eseguire il push delle modifiche alla configurazione attiva.
 
-Il tuo IBM Cloud Juniper vSRX Standard è ora configurato per instradare e filtrare il traffico alla nuova VLAN e alla sottorete, consentendo solo i ping in entrata e le connessioni SSH. 
+Il tuo IBM Cloud Juniper vSRX Standard è ora configurato per instradare e filtrare il traffico alla nuova VLAN e alla sottorete, consentendo solo i ping in entrata e le connessioni SSH.
 
-Devi ora instradare la VLAN come mostrato in [Gestisci le VLAN](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) per iniziare ad utilizzare la nuova funzionalità. 
+Devi ora instradare la VLAN come mostrato in [Gestisci le VLAN](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) per iniziare ad utilizzare la nuova funzionalità.
