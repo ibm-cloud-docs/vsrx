@@ -46,7 +46,19 @@ For a Standalone environment, the previous configuration is not restored, so you
 Performing an OS reload on both servers of the High Availability gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the Rebuild Cluster option to re-provision the vSRX and recreate the HA cluster. Ensure the OS reload of the first member is complete before requesting an OS reload of the second.
 {: important}
 
-* Before performing an upgrade, run the command `show chassis cluster status` to ensure that a single node is configured as primary (with higher priority) for both redundancy groups, and that that node at run time is serving as the primary for both RGs. If the RGs primary is not on the same node, run `request chassis cluster failover redundancy-group <RG number> node <node number>` and then `request chassis cluster failover reset redundancy-group <RG number>` to manually make RGs fall on the same node.
+* Before performing an upgrade, run the command `show chassis cluster status` to ensure that a single node is configured as primary (with higher priority) for both redundancy groups, and that that node at run time is serving as the primary for both RGs. 
+
+  If the RGs primary is not on the same node, run the command:
+  
+  ```
+  request chassis cluster failover redundancy-group <RG number> node <node number>
+  ```
+  
+  Then, to manually make RGs fall on the same node, run the command: 
+  
+  ```
+  request chassis cluster failover reset redundancy-group <RG number>
+  ```
 
 It is good practice to backup (export) your vSRX configuration settings before starting an upgrade. Details can be found [here](/docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration).
 {: tip}
