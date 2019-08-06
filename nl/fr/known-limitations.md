@@ -20,16 +20,16 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Limitations connues pour IBM Cloud Juniper vSRX
+# Limitations connues pour {{site.data.keyword.vsrx_full}}
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
-Limites actuelles d'{{site.data.keyword.cloud}}IBM® Cloud Juniper vSRX :
+Limites actuelles d'{{site.data.keyword.cloud}}{{site.data.keyword.vsrx_full}} :
 
 * La passerelle Juniper vSRX est déployée à l'aide de la virtualisation de réseau sous Linux Bridge. La virtualisation de réseau basée sur Linux Bridge ne permet d'atteindre qu'un débit limité et non un débit de ligne.
 
 * Aucune prise en charge n'est proposée pour passer du mode autonome au mode haute disponibilité.
 
-* IBM Cloud Juniper vSRX Gateway est déployé avec les options de la version `15.1` ou `18.4` du système d'exploitation Junos. Actuellement, la mise à niveau/rétromigration vers une version différente n'est pas prise en charge.
+* {{site.data.keyword.vsrx_full}} Gateway est déployé avec les options de la version `15.1` ou `18.4` du système d'exploitation Junos. Actuellement, la mise à niveau/rétromigration vers une version différente n'est pas prise en charge.
 
 * La licence d'évaluation de 60 jours peut amener le noyau à générer des messages ERROR, même s'il existe une autre licence (valide) sur le système. Vous devez supprimer toute licence d'évaluation de 60 jours pour éviter cela. Procédure :
 

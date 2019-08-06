@@ -86,7 +86,7 @@ VLAN 可透過[關聯](#associate-a-vlan-to-a-gateway-appliance)，一次鏈結�
 ## 透過相同的網路介面遞送多個 VLAN
 {: #route-multiple-vlans-over-the-same-network-interface}
 
-IBM® Cloud Juniper vSRX 可以透過相同的網路介面搭配多個 VLAN 操作。它也可以同時處理未標記及已標記的資料流量。此動作是在獨立式裝置上透過將介面封裝設為 `flexible-vlan-tagging` 來完成，或是在「高可用性」裝置透過使用 reth2 和 reth3 作為已標記介面來完成。此作法是預設配置的一部分，且不需要進行修改。在獨立式裝置上，「裝置 0」是未標記的子介面；其他非零裝置則已標記。
+{{site.data.keyword.vsrx_full}} 可以透過相同的網路介面搭配多個 VLAN 操作。它也可以同時處理未標記及已標記的資料流量。此動作是在獨立式裝置上透過將介面封裝設為 `flexible-vlan-tagging` 來完成，或是在「高可用性」裝置透過使用 reth2 和 reth3 作為已標記介面來完成。此作法是預設配置的一部分，且不需要進行修改。在獨立式裝置上，「裝置 0」是未標記的子介面；其他非零裝置則已標記。
 
 使用下列一組指令來配置其他已標記的介面：
 

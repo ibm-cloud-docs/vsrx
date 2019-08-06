@@ -100,6 +100,6 @@ show | compare
 
 構成が正しいことを確認した後に、`commit` コマンドを実行して、変更をアクティブ構成にプッシュします。
 
-この時点で IBM Cloud Juniper vSRX Standard は、トラフィックを新しい VLAN とサブネットに経路指定してフィルター操作するように構成され、インバウンド ping と SSH 接続のみが許可されます。
+この時点で {{site.data.keyword.vsrx_full}} Standard は、トラフィックを新しい VLAN とサブネットに経路指定してフィルター操作するように構成され、インバウンド ping と SSH 接続のみが許可されます。
 
 次に、[VLAN の管理](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans)で示されているように VLAN を経路指定して、新機能の使用を開始してください。

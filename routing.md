@@ -23,7 +23,7 @@ subcollection: vsrx
 # Working with Routing
 {: #working-with-routing}
 
-The IBM® Cloud Juniper vSRX is based on `JunOS`, giving you access to the full Juniper routing stack.
+The {{site.data.keyword.vsrx_full}} is based on `JunOS`, giving you access to the full Juniper routing stack.
 
 ##Static Routing
 {: #static-routing}

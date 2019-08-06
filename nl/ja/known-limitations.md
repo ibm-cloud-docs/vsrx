@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX の既知の制限事項
+# {{site.data.keyword.vsrx_full}} の既知の制限事項
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
 {{site.data.keyword.cloud}} Juniper vSRX の現在の制限事項は以下のとおりです。
@@ -29,7 +29,7 @@ subcollection: vsrx
 
 * スタンドアロン・モードから高可用性モードへのアップグレードはサポートされていません。
 
-* IBM Cloud Juniper vSRX ゲートウェイは、Junos OS バージョン `15.1` または `18.4` のいずれかと共にデプロイされます。現在、別のバージョンへのアップグレード/ダウングレードはサポートされていません。
+* {{site.data.keyword.vsrx_full}} ゲートウェイは、Junos OS バージョン `15.1` または `18.4` のいずれかと共にデプロイされます。現在、別のバージョンへのアップグレード/ダウングレードはサポートされていません。
 
 * システム上に別の (有効な) ライセンスがあるとしても、60 日間の評価ライセンスを使用すると、カーネルがエラー・メッセージを生成する場合があります。この問題を回避するには、60 日間の評価ライセンスを削除する必要があります。これを行うには、以下の手順を実行します。
 

@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX 릴리스 정보
+# {{site.data.keyword.vsrx_full}} 릴리스 정보
 {: #ibm-cloud-juniper-vsrx-release-notes}
 
 Juniper vSRX 18.4 릴리스 정보를 보려면 [이 링크![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/18.4/index.html){:new_window}를 방문하십시오. 

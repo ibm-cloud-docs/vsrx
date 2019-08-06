@@ -23,7 +23,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 # Fonctionnement des pare-feux
 {: #working-with-firewalls}
 
-IBM® Cloud Juniper vSRX s'appuie sur le concept de zones de sécurité, où chaque interface vSRX est mappée à une "zone" pour le traitement des pare-feux avec état. Les pare-feux sans état sont contrôlés par des filtres de pare-feu.
+{{site.data.keyword.vsrx_full}} s'appuie sur le concept de zones de sécurité, où chaque interface vSRX est mappée à une "zone" pour le traitement des pare-feux avec état. Les pare-feux sans état sont contrôlés par des filtres de pare-feu.
 
 Les politiques sont utilisées pour autoriser et bloquer le trafic entre ces zones définies, et les règles définies ici sont avec état.
 
@@ -97,7 +97,7 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ## Filtres de pare-feu
 {: #firewall-filters}
 
-Par défaut, IBM Cloud Juniper vSRX accepte les commandes ping, les protocoles SSH et HTTPS, et supprime tout autre trafic en appliquant le filtre `PROTECT-IN` à l'interface `lo`.
+Par défaut, {{site.data.keyword.vsrx_full}} accepte les commandes ping, les protocoles SSH et HTTPS, et supprime tout autre trafic en appliquant le filtre `PROTECT-IN` à l'interface `lo`.
 
 Pour configurer un nouveau pare-feu sans état, procédez comme suit :
 

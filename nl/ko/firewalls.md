@@ -23,7 +23,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 # 방화벽 관련 작업
 {: #working-with-firewalls}
 
-IBM® Cloud Juniper vSRX는 보안 구역의 개념을 사용합니다. 여기서, 각 vSRX 인터페이스는 Stateful 펌웨어를 처리하기 위해 "구역"으로 맵핑됩니다. Stateless 방화벽은 방화벽 필터로 제어됩니다.
+{{site.data.keyword.vsrx_full}}는 보안 구역의 개념을 사용합니다. 여기서, 각 vSRX 인터페이스는 Stateful 펌웨어를 처리하기 위해 "구역"으로 맵핑됩니다. Stateless 방화벽은 방화벽 필터로 제어됩니다.
 
 정책은 이 정의된 구역 간의 트래픽을 허용하고 차단하는 데 사용되며, 여기에 정의된 규칙은 Stateful입니다.
 
@@ -97,7 +97,7 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ## 방화벽 필터
 {: #firewall-filters}
 
-기본적으로 IBM Cloud Juniper vSRX는 Ping, SSH 및 HTTPS를 자체로 허용하고 `PROTECT-IN` 필터를 `lo` 인터페이스에 적용하여 기타 모든 트래픽을 삭제합니다.
+기본적으로 {{site.data.keyword.vsrx_full}}는 Ping, SSH 및 HTTPS를 자체로 허용하고 `PROTECT-IN` 필터를 `lo` 인터페이스에 적용하여 기타 모든 트래픽을 삭제합니다.
 
 새 Stateless 방화벽을 구성하려면 다음 프로시저를 수행하십시오.
 

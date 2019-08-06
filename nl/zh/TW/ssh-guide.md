@@ -23,7 +23,7 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 # 容許對公用子網路進行 SSH 及 ping
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
 
-在本手冊中，您將瞭解如何使用新的介面、區域及通訊錄，來配置 IBM® Cloud Juniper vSRX Standard。因為要捨棄所有資料流量的預設動作，本手冊將顯示如何設定資料傳輸流，以容許新區域內的所有資料流量、從新區域到網際網路的所有資料流量，以及僅容許從網際網路至新 VLAN 上某個子網路的 SSH 和 ping。
+在本手冊中，您將瞭解如何使用新的介面、區域及通訊錄，來配置 {{site.data.keyword.vsrx_full}} Standard。因為要捨棄所有資料流量的預設動作，本手冊將顯示如何設定資料傳輸流，以容許新區域內的所有資料流量、從新區域到網際網路的所有資料流量，以及僅容許從網際網路至新 VLAN 上某個子網路的 SSH 和 ping。
 
 在此範例中，使用下列值。
 

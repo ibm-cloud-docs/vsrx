@@ -100,6 +100,6 @@ Questo è l'output previsto:
 
 Dopo aver controllato che la configurazione è corretta, immetti il comando `commit` per eseguire il push delle modifiche alla configurazione attiva.
 
-Il tuo IBM Cloud Juniper vSRX Standard è ora configurato per instradare e filtrare il traffico alla nuova VLAN e alla sottorete, consentendo solo i ping in entrata e le connessioni SSH.
+Il tuo {{site.data.keyword.vsrx_full}} Standard è ora configurato per instradare e filtrare il traffico alla nuova VLAN e alla sottorete, consentendo solo i ping in entrata e le connessioni SSH.
 
 Devi ora instradare la VLAN come mostrato in [Gestisci le VLAN](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) per iniziare ad utilizzare la nuova funzionalità.

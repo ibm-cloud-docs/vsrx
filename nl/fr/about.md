@@ -20,14 +20,14 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# A propos d'IBM Cloud Juniper vSRX
+# A propos d'{{site.data.keyword.vsrx_full}}
 {: #about-ibm-cloud-juniper-vsrx}
 
-IBM® Cloud Juniper vSRX vous permet d'acheminer de façon ciblée le trafic réseau privé et public via un pare-feu complet de niveau entreprise doté de fonctionnalités logicielles JunOS, telles que des piles de routage, une qualité de service et un partage du réseau, un routage basé sur des règles et un réseau privé virtuel. vSRX associe les performances et la facilité de configuration et de maintenance à la simplicité d'exécution sur un serveur bare metal. Le matériel est dimensionné pour gérer la charge de routage et de sécurité pour plusieurs réseaux locaux virtuels et peut être organisé avec des liens vers des réseaux redondants et des grappes RAID redondantes. Toutes les fonctionnalités de vSRX sont gérées par le client.
+{{site.data.keyword.vsrx_full}} vous permet d'acheminer de façon ciblée le trafic réseau privé et public via un pare-feu complet de niveau entreprise doté de fonctionnalités logicielles JunOS, telles que des piles de routage, une qualité de service et un partage du réseau, un routage basé sur des règles et un réseau privé virtuel. vSRX associe les performances et la facilité de configuration et de maintenance à la simplicité d'exécution sur un serveur bare metal. Le matériel est dimensionné pour gérer la charge de routage et de sécurité pour plusieurs réseaux locaux virtuels et peut être organisé avec des liens vers des réseaux redondants et des grappes RAID redondantes. Toutes les fonctionnalités de vSRX sont gérées par le client.
 
-IBM Cloud vSRX est proposé dans deux modes différents : cluster en mode autonome ou haute disponibilité.
+{{site.data.keyword.vsrx_full}} est proposé dans deux modes différents : cluster en mode autonome ou haute disponibilité.
 
-Vous trouverez des informations complémentaires sur IBM Cloud Juniper vSRX dans la rubrique [Documentation supplémentaire](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation).
+Vous trouverez des informations complémentaires sur {{site.data.keyword.vsrx_full}} dans la rubrique [Documentation supplémentaire](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation).
 {: note}
 
 ## Pare-feu

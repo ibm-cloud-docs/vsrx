@@ -62,4 +62,4 @@ nat {
 }
 ```
 
-IBM® Cloud Juniper vSRX 用に NAT を構成するには、Juniper Web サイト上のこの[構成ガイド![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window}を参照してください。
+{{site.data.keyword.vsrx_full}} 用に NAT を構成するには、Juniper Web サイト上のこの[構成ガイド![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window}を参照してください。

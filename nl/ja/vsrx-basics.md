@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX の基本操作の実行
+# {{site.data.keyword.vsrx_full}} の基本操作の実行
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
-IBM® Cloud Juniper vSRX ゲートウェイは、SSH 経由で、または Juniper Web 管理 GUI にログインして、リモート・コンソール・セッションを使用して構成できます。
+{{site.data.keyword.vsrx_full}} ゲートウェイは、SSH 経由で、または Juniper Web 管理 GUI にログインして、リモート・コンソール・セッションを使用して構成できます。
 
 vSRX をシェルおよびインターフェースの外部で構成すると予期しない結果が生じる可能性があるため、推奨されません。
 {: note}
@@ -68,7 +68,7 @@ Juniper Web 管理 GUI は、デフォルトで vSRX で生成された自己署
 ## システム・ユーザーの作成
 {: #creating-system-users}
 
-デフォルトでは、IBM Cloud Juniper vSRX は、ユーザー名 `admin` の SSH アクセスで構成されます。 ユーザーを追加し、独自の優先順位を設定することもできます。 以下に例を示します。
+デフォルトでは、{{site.data.keyword.vsrx_full}} は、ユーザー名 `admin` の SSH アクセスで構成されます。 ユーザーを追加し、独自の優先順位を設定することもできます。 以下に例を示します。
 
 ```
 set system login user ops class operator authentication encrypted-password <CYPHER>

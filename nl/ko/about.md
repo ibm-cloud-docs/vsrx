@@ -20,14 +20,14 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX 정보
+# {{site.data.keyword.vsrx_full}} 정보
 {: #about-ibm-cloud-juniper-vsrx}
 
-IBM® Cloud Juniper vSRX를 사용하면 JunOS 소프트웨어 기능(예: 전체 라우팅 스택, QoS 및 트래픽 공유, 정책 기반 라우팅, VPN)에 의해 작동되는 전체 기능을 갖춘 엔터프라이즈 레벨 방화벽을 통해 사설 및 공용 네트워크 트래픽을 선택적으로 라우팅할 수 있습니다. vSRX는 베어메탈 서버에서 실행된다는 단순성을 통해 성능, 구성 용이성 및 유지보수 이점을 제공합니다. 하드웨어는 여러 VLAN과 연관된 라우팅 및 보안 로드를 처리할 수 있도록 크기가 지정되며 중복 네트워크 링크 및 중복 RAID 어레이와 함께 주문할 수 있습니다. 모든 vSRX 기능은 고객이 관리합니다.
+{{site.data.keyword.vsrx_full}}를 사용하면 JunOS 소프트웨어 기능(예: 전체 라우팅 스택, QoS 및 트래픽 공유, 정책 기반 라우팅, VPN)에 의해 작동되는 전체 기능을 갖춘 엔터프라이즈 레벨 방화벽을 통해 사설 및 공용 네트워크 트래픽을 선택적으로 라우팅할 수 있습니다. vSRX는 베어메탈 서버에서 실행된다는 단순성을 통해 성능, 구성 용이성 및 유지보수 이점을 제공합니다. 하드웨어는 여러 VLAN과 연관된 라우팅 및 보안 로드를 처리할 수 있도록 크기가 지정되며 중복 네트워크 링크 및 중복 RAID 어레이와 함께 주문할 수 있습니다. 모든 vSRX 기능은 고객이 관리합니다.
 
-IBM Cloud vSRX는 독립형 모드 또는 고가용성(HA) 클러스터라는 두 가지 다른 모드로 제공됩니다. 
+{{site.data.keyword.vsrx_full}}는 독립형 모드 또는 고가용성(HA) 클러스터라는 두 가지 다른 모드로 제공됩니다. 
 
-IBM Cloud Juniper vSRX에 대한 추가 문서는 [보충 문서](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation) 주제에서 확인할 수 있습니다.
+{{site.data.keyword.vsrx_full}}에 대한 추가 문서는 [보충 문서](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation) 주제에서 확인할 수 있습니다.
 {: note}
 
 ## 방화벽

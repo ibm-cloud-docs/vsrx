@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Note sulla release di IBM Cloud Juniper vSRX
+# Note sulla release di {{site.data.keyword.vsrx_full}}
 {: #ibm-cloud-juniper-vsrx-release-notes}
 
 Per le note sulla release di Juniper vSRX 18.4, visita [questo link ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/18.4/index.html){:new_window}.

@@ -23,7 +23,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 # Trabalhando com firewalls
 {: #working-with-firewalls}
 
-O IBM® Cloud Juniper vSRX usa o conceito de zonas de segurança, em que cada interface do vSRX é mapeada para uma "zona" para manipulação de firewalls stateful. Os firewalls stateless são controlados por filtros de firewall.
+O {{site.data.keyword.vsrx_full}} usa o conceito de zonas de segurança, em que cada interface do vSRX é mapeada para uma "zona" para manipulação de firewalls stateful. Os firewalls stateless são controlados por filtros de firewall.
 
 As políticas são usadas para permitir e bloquear o tráfego entre essas zonas definidas e as regras definidas aqui são stateful.
 
@@ -97,7 +97,7 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ## Filtros de firewall
 {: #firewall-filters}
 
-Por padrão, o IBM Cloud Juniper vSRX permite ping, SSH e HTTPS para si mesmo e descarta todos os outros tráfegos aplicando o filtro `PROTECT-IN` à interface `lo`.
+Por padrão, o {{site.data.keyword.vsrx_full}} permite ping, SSH e HTTPS para si mesmo e descarta todos os outros tráfegos aplicando o filtro `PROTECT-IN` à interface `lo`.
 
 Para configurar um novo firewall stateless, execute o procedimento a seguir:
 

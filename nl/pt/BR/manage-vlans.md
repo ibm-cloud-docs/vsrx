@@ -86,7 +86,7 @@ Depois de desassociar uma VLAN de um Dispositivo de Gateway, a VLAN pode ser ass
 ## Roteie múltiplas VLANs por meio da mesma interface de rede
 {: #route-multiple-vlans-over-the-same-network-interface}
 
-O IBM® Cloud Juniper vSRX pode operar com múltiplas VLANs por meio da mesma interface de rede. Ele também pode manipular o tráfego identificado e o não identificado ao mesmo tempo. Isso é realizado no dispositivo independente configurando a encapsulação da interface como `flexible-vlan-tagging` ou nos dispositivos de alta disponibilidade usando reth2 e reth3 como interfaces identificadas. Isso é feito como parte da configuração padrão e não precisa ser modificado.  Nos dispositivos independentes, a unidade 0 é a subinterface não identificada. As outras unidades diferentes de zero são identificadas.
+O {{site.data.keyword.vsrx_full}} pode operar com múltiplas VLANs por meio da mesma interface de rede. Ele também pode manipular o tráfego identificado e o não identificado ao mesmo tempo. Isso é realizado no dispositivo independente configurando a encapsulação da interface como `flexible-vlan-tagging` ou nos dispositivos de alta disponibilidade usando reth2 e reth3 como interfaces identificadas. Isso é feito como parte da configuração padrão e não precisa ser modificado.  Nos dispositivos independentes, a unidade 0 é a subinterface não identificada. As outras unidades diferentes de zero são identificadas.
 
 Use o seguinte conjunto de comandos para configurar as interfaces identificadas adicionais:
 

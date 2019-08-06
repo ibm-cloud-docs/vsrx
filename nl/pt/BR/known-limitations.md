@@ -20,16 +20,16 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Limitações conhecidas para o IBM Cloud Juniper vSRX
+# Limitações conhecidas para o {{site.data.keyword.vsrx_full}}
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
-Limitações atuais para o {{site.data.keyword.cloud}} IBM® Cloud Juniper vSRX:
+Limitações atuais para o {{site.data.keyword.cloud}} {{site.data.keyword.vsrx_full}}:
 
 * O gatewya Juniper vSRX é implementado com virtualização de rede usando a ponte Linux. A virtualização de rede baseada em ponte Linux pode alcançar somente um rendimento limitado e nunca o rendimento da taxa da linha.
 
 * Não há nenhum suporte para fazer upgrade do modo independente para o modo de alta disponibilidade.
 
-* O Gateway IBM Cloud Juniper vSRX é implementado com as opções do Junos OS da versão `15.1` ou `18.4`. Atualmente, não há suporte de upgrade/downgrade para uma versão diferente.
+* O Gateway {{site.data.keyword.vsrx_full}} é implementado com as opções do Junos OS da versão `15.1` ou `18.4`. Atualmente, não há suporte de upgrade/downgrade para uma versão diferente.
 
 * A licença de avaliação de 60 dias pode fazer com que o kernel gere mensagens de ERRO, mesmo quando houver outra licença (válida) no sistema. Deve-se remover todas as licenças de avaliação de 60 dias para evitar esse problema. Para fazer isso, execute o procedimento a seguir:
 

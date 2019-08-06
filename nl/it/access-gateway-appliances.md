@@ -23,7 +23,7 @@ subcollection: vsrx
 # Visualizzazione di tutte le tue applicazioni gateway
 {: #viewing-all-your-gateway-appliances}
 
-La schermata Gateway Appliances nel portale del cliente dell'infrastruttura {{site.data.keyword.cloud}} è dove puoi visualizzare e accedere a tutte le applicazioni gateway di rete, compreso IBM® Cloud Juniper vSRX.  
+La schermata Gateway Appliances nel portale del cliente dell'infrastruttura {{site.data.keyword.cloud}} è dove puoi visualizzare e accedere a tutte le applicazioni gateway di rete, compreso {{site.data.keyword.vsrx_full}}.  
 
 Per accedere alla schermata Gateway Appliances nel portale del cliente, attieniti alla seguente procedura:
 

@@ -20,16 +20,16 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX에 대한 알려진 제한사항
+# {{site.data.keyword.vsrx_full}}에 대한 알려진 제한사항
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
-{{site.data.keyword.cloud}} IBM® Cloud Juniper vSRX의 현재 제한사항:
+{{site.data.keyword.cloud}} {{site.data.keyword.vsrx_full}}의 현재 제한사항:
 
 * Juniper vSRX Gateway는 Linux Bridge를 사용하여 네트워킹 가상화로 배치됩니다. Linux Bridge 기반 네트워킹 가상화는 제한된 처리량에만 도달하고 최대 속도 처리량에는 도달하지 않을 수 있습니다.
 
 * 독립형에서 고가용성 모드로의 업그레이드는 지원되지 않습니다.
 
-* IBM Cloud Juniper vSRX 게이트웨이는 Junos OS 버전 `15.1` 또는 `18.4` 옵션과 함께 배치됩니다. 현재는 다른 버전으로 업그레이드/다운그레이드를 지원하지 않습니다. 
+* {{site.data.keyword.vsrx_full}} 게이트웨이는 Junos OS 버전 `15.1` 또는 `18.4` 옵션과 함께 배치됩니다. 현재는 다른 버전으로 업그레이드/다운그레이드를 지원하지 않습니다. 
 
 * 60일 평가판 라이센스를 사용하면 시스템에 다른 유효한 라이센스가 있는 경우에도 커널에서 오류 메시지를 생성할 수 있습니다. 이 문제를 방지하려면 60일 평가판 라이센스를 모두 제거해야 합니다. 이를 수행하려면 다음 프로시저를 수행하십시오.
 

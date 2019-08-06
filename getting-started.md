@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Getting Started With IBM Cloud Juniper vSRX Gateway
+# Getting Started With IBM Cloud Juniper vSRX
 {: #getting-started}
 
-To get started with the IBM® Cloud Juniper vSRX Gateway, first determine whether your account is linked to IBM Cloud.
+To get started with the {{site.data.keyword.vsrx_full}} Gateway, first determine whether your account is linked to IBM Cloud.
 
 To find out whether you have a linked account, navigate to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} in your browser and log in. If your account is linked, you will not see a **Learn more about Bluemix!** button at the top right.
 
@@ -32,7 +32,7 @@ To find out whether you have a linked account, navigate to the [Customer Portal 
 
 You can order your Gateway Appliance, using one of these methods:
 
-For a list of Known Limitations with IBM Cloud Juniper vSRX Gateway, refer to the [Known Limitations topic](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
+For a list of Known Limitations with {{site.data.keyword.vsrx_full}} Gateway, refer to the [Known Limitations topic](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
 
 ### Ordering with a linked account
@@ -80,7 +80,7 @@ Alternatively, from the [IBM Cloud Catalog ![External link icon](../../icons/lau
 
 8. Review your selections, check that you have read the Third Party Service Agreements, then click **Create**. The order is verified automatically.
 
-After your order is approved, the provisioning of your IBM Cloud Juniper vSRX Gateway starts automatically. When the provisioning process is complete, the new vSRX will appear in the Gateway Appliances list page. Click the gateway name to open the Gateway Details page. You will find the IP addresses, login username, and password for the device.  
+After your order is approved, the provisioning of your {{site.data.keyword.vsrx_full}} Gateway starts automatically. When the provisioning process is complete, the new vSRX will appear in the Gateway Appliances list page. Click the gateway name to open the Gateway Details page. You will find the IP addresses, login username, and password for the device.  
 
 Remember that once you order and configure your gateway from the IBM Cloud Catalog, you must also configure the device itself with the same settings.
 {: tip}

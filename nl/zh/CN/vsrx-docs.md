@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX 补充文档
+# {{site.data.keyword.vsrx_full}} 补充文档
 {: #supplemental-ibm-cloud-juniper-vsrx-documentation}
 
-下表提供了 IBM® Cloud Juniper vSRX Standard 补充文档的链接。
+下表提供了 {{site.data.keyword.vsrx_full}} Standard 补充文档的链接。
 
 vSRX 文档|描述
 ------------- | -------------  

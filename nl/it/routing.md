@@ -23,7 +23,7 @@ subcollection: vsrx
 # Utilizzo dell'instradamento
 {: #working-with-routing}
 
-IBM® Cloud Juniper vSRX si basa su `JunOS`, fornendoti l'accesso allo stack di instradamento Juniper completo.
+{{site.data.keyword.vsrx_full}} si basa su `JunOS`, fornendoti l'accesso allo stack di instradamento Juniper completo.
 
 ##Instradamento statico
 {: #static-routing}

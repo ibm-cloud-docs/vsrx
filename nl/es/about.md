@@ -20,14 +20,14 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Acerca de IBM Cloud Juniper vSRX
+# Acerca de {{site.data.keyword.vsrx_full}}
 {: #about-ibm-cloud-juniper-vsrx}
 
-IBM® Cloud Juniper vSRX le permite direccionar de forma selectiva el tráfico de la red privada y pública a través de un cortafuegos de empresa con todas las características respaldado por las características de software de JunOS, como por ejemplo pilas de direccionamiento completas, QoS y compartición de tráfico, direccionamiento basado en políticas y VPN. El vSRX proporciona rendimiento, facilidad de configuración y ventajas de mantenimiento con la comodidad de que se ejecuta en un servidor nativo. El hardware está dimensionado para manejar el direccionamiento y la carga de seguridad asociados a varias VLAN y se puede pedir con enlaces de red redundantes y matrices RAID redundantes. Todas las características de vSRX están gestionadas por el cliente.
+{{site.data.keyword.vsrx_full}} le permite direccionar de forma selectiva el tráfico de la red privada y pública a través de un cortafuegos de empresa con todas las características respaldado por las características de software de JunOS, como por ejemplo pilas de direccionamiento completas, QoS y compartición de tráfico, direccionamiento basado en políticas y VPN. El vSRX proporciona rendimiento, facilidad de configuración y ventajas de mantenimiento con la comodidad de que se ejecuta en un servidor nativo. El hardware está dimensionado para manejar el direccionamiento y la carga de seguridad asociados a varias VLAN y se puede pedir con enlaces de red redundantes y matrices RAID redundantes. Todas las características de vSRX están gestionadas por el cliente.
 
-IBM Cloud vSRX se ofrece en dos modalidades diferentes: modalidad autónoma o clúster de alta disponibilidad (HA).
+{{site.data.keyword.vsrx_full}} se ofrece en dos modalidades diferentes: modalidad autónoma o clúster de alta disponibilidad (HA).
 
-Encontrará documentación adicional sobre IBM Cloud Juniper vSRX en el tema [Documentación suplementaria](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation).{: note}
+Encontrará documentación adicional sobre {{site.data.keyword.vsrx_full}} en el tema [Documentación suplementaria](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation).{: note}
 
 ## Cortafuegos
 {: #firewall}

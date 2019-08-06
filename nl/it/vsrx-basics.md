@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Esecuzione dei principi di base di IBM Cloud Juniper vSRX
+# Esecuzione dei principi di base di {{site.data.keyword.vsrx_full}}
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
-Il gateway IBM® Cloud Juniper vSRX può essere configurato utilizzando una sessione della console remota tramite SSH o eseguendo l'accesso alla GUI di gestione web Juniper.
+Il gateway {{site.data.keyword.vsrx_full}} può essere configurato utilizzando una sessione della console remota tramite SSH o eseguendo l'accesso alla GUI di gestione web Juniper.
 
 La configurazione di vSRX al di fuori della sua shell e interfaccia può produrre risultati non previsti e non è consigliata.
 {: note}
@@ -68,7 +68,7 @@ La GUI di gestione web Juniper è stata configurata per impostazione predefinita
 ## Creazione degli utenti di sistema
 {: #creating-system-users}
 
-Per impostazione predefinita, IBM Cloud Juniper vSRX è configurato con l'accesso SSH per il nome utente `admin`. Possono essere aggiunti ulteriori utenti con le proprie serie di priorità. Ad esempio:
+Per impostazione predefinita, {{site.data.keyword.vsrx_full}} è configurato con l'accesso SSH per il nome utente `admin`. Possono essere aggiunti ulteriori utenti con le proprie serie di priorità. Ad esempio:
 
 ```
 set system login user ops class operator authentication encrypted-password <CYPHER>

@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX 補充文件
+# {{site.data.keyword.vsrx_full}} 補充文件
 {: #supplemental-ibm-cloud-juniper-vsrx-documentation}
 
-下表提供 IBM® Cloud Juniper vSRX Standard 補充文件的鏈結。
+下表提供 {{site.data.keyword.vsrx_full}} Standard 補充文件的鏈結。
 
 vSRX 文件  | 說明
 ------------- | -------------  

@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# 執行 IBM Cloud Juniper vSRX Basics
+# 執行 {{site.data.keyword.vsrx_full}} Basics
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
-可以透過 SSH 或藉由登入 Juniper Web 管理 GUI，使用遠端主控台階段作業來配置 IBM® Cloud Juniper vSRX 閘道。
+可以透過 SSH 或藉由登入 Juniper Web 管理 GUI，使用遠端主控台階段作業來配置 {{site.data.keyword.vsrx_full}} 閘道。
 
 在 vSRX 的 Shell 和介面外部配置 vSRX 可能會產生非預期結果，因此建議不要這樣做。
 {: note}
@@ -68,7 +68,7 @@ subcollection: vsrx
 ## 建立系統使用者
 {: #creating-system-users}
 
-依預設，會將 IBM Cloud Juniper vSRX 配置為對使用者名稱 `admin` 具有 SSH 存取權。也可以新增其他使用者，具有自己一組的優先順序。例如：
+依預設，會將 {{site.data.keyword.vsrx_full}} 配置為對使用者名稱 `admin` 具有 SSH 存取權。也可以新增其他使用者，具有自己一組的優先順序。例如：
 
 ```
 set system login user ops class operator authentication encrypted-password <CYPHER>

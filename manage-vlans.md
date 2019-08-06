@@ -86,7 +86,7 @@ After disassociating a VLAN from a Gateway Appliance, the VLAN may be associated
 ## Route Multiple VLANs over the same network interface
 {: #route-multiple-vlans-over-the-same-network-interface}
 
-The IBM® Cloud Juniper vSRX can operate with multiple VLANs over the same network interface. It can also handle both untagged and tagged traffic at the same time. This is accomplished on the standalone device by setting the interface encapsulation to `flexible-vlan-tagging`, or on the High-Availability devices by using reth2 and reth3 as tagged interfaces. This is done as part of the default configuration and does not need to be modified.  On the standalone devices, Unit 0 is the sub-interface that is untagged; other, non-zero units are tagged.
+The {{site.data.keyword.vsrx_full}} can operate with multiple VLANs over the same network interface. It can also handle both untagged and tagged traffic at the same time. This is accomplished on the standalone device by setting the interface encapsulation to `flexible-vlan-tagging`, or on the High-Availability devices by using reth2 and reth3 as tagged interfaces. This is done as part of the default configuration and does not need to be modified.  On the standalone devices, Unit 0 is the sub-interface that is untagged; other, non-zero units are tagged.
 
 Use the following set of commands to configure additional tagged interfaces:
 

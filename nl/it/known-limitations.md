@@ -20,16 +20,16 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Limitazioni note per IBM Cloud Juniper vSRX
+# Limitazioni note per {{site.data.keyword.vsrx_full}}
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
-Limitazioni correnti per {{site.data.keyword.cloud}} IBM® Cloud Juniper vSRX:
+Limitazioni correnti per {{site.data.keyword.cloud}} {{site.data.keyword.vsrx_full}}:
 
 * Juniper vSRX Gateway viene distribuito con la virtualizzazione della rete utilizzando Linux Bridge. La virtualizzazione della rete basata su Linux Bridge può utilizzare solo una velocità effettiva limitata e mai quella della linea.
 
 * Non c'è supporto per l'upgrade dalla modalità autonoma alla modalità ad elevata disponibilità.
 
-* IBM Cloud Juniper vSRX Gateway viene distribuito con le opzioni del sistema operativo Junos versione `15.1` o `18.4`. Al momento, non c'è supporto per l'upgrade/downgrade a una versione diversa.
+* {{site.data.keyword.vsrx_full}} Gateway viene distribuito con le opzioni del sistema operativo Junos versione `15.1` o `18.4`. Al momento, non c'è supporto per l'upgrade/downgrade a una versione diversa.
 
 * A causa della licenza di valutazione di 60 giorni, il kernel potrebbe generare dei messaggi di errore (ERROR), anche quando c'è un'altra licenza (valida) sul sistema. Per evitare questo problema, devi rimuovere le eventuali licenze di valutazione di 60 giorni. A tale scopo, attieniti alla seguente procedura:
 

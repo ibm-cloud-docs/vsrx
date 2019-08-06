@@ -23,7 +23,7 @@ subcollection: vsrx
 # 使用路由
 {: #working-with-routing}
 
-IBM® Cloud Juniper vSRX 基于 `JunOS`，为您提供了对完全 Juniper 路由堆栈的访问权。
+{{site.data.keyword.vsrx_full}} 基于 `JunOS`，为您提供了对完全 Juniper 路由堆栈的访问权。
 
 ##静态路由
 {: #static-routing}

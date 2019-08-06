@@ -23,7 +23,7 @@ subcollection: vsrx
 # Visualizando todos os dispositivos de gateway
 {: #viewing-all-your-gateway-appliances}
 
-Na tela Dispositivos de gateway do portal do cliente da infraestrutura do {{site.data.keyword.cloud}}, é possível exibir e acessar todos os Dispositivos de Gateway de Rede, incluindo o IBM® Cloud Juniper vSRX.  
+Na tela Dispositivos de gateway do portal do cliente da infraestrutura do {{site.data.keyword.cloud}}, é possível exibir e acessar todos os Dispositivos de Gateway de Rede, incluindo o {{site.data.keyword.vsrx_full}}.  
 
 Execute o procedimento a seguir para acessar a tela Dispositivos de gateway no portal do cliente.
 

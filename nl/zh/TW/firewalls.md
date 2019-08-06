@@ -23,7 +23,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 # 使用防火牆
 {: #working-with-firewalls}
 
-IBM® Cloud Juniper vSRX 使用安全區域的概念，其中每一個 vSRX 介面都會對映至一個「區域」，以處理有狀態的防火牆。無狀態防火牆是由防火牆過濾器控制。
+{{site.data.keyword.vsrx_full}} 使用安全區域的概念，其中每一個 vSRX 介面都會對映至一個「區域」，以處理有狀態的防火牆。無狀態防火牆是由防火牆過濾器控制。
 
 原則是用來容許及封鎖這些已定義區域之間的資料流量，且這裡定義的規則是有狀態的。
 
@@ -97,7 +97,7 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ## 防火牆過濾器
 {: #firewall-filters}
 
-依預設，IBM Cloud Juniper vSRX 容許 ping、SSH 及 HTTPS 至本身，並藉由將 `PROTECT-IN` 過濾器套用至 `lo` 介面來捨棄所有其他資料流量。
+依預設，{{site.data.keyword.vsrx_full}} 容許 ping、SSH 及 HTTPS 至本身，並藉由將 `PROTECT-IN` 過濾器套用至 `lo` 介面來捨棄所有其他資料流量。
 
 若要配置新的無狀態防火牆，請執行下列程序：
 

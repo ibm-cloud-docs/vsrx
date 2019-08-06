@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX の補足資料
+# {{site.data.keyword.vsrx_full}} の補足資料
 {: #supplemental-ibm-cloud-juniper-vsrx-documentation}
 
-以下の表に、IBM® Cloud Juniper vSRX Standard の補足資料へのリンクを示します。
+以下の表に、{{site.data.keyword.vsrx_full}} Standard の補足資料へのリンクを示します。
 
 vSRX 資料  　  | 説明
 ------------- | -------------  

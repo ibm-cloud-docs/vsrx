@@ -23,7 +23,7 @@ subcollection: vsrx
 # 모든 Gateway Appliance 보기
 {: #viewing-all-your-gateway-appliances}
 
-{{site.data.keyword.cloud}} 인프라 고객 포털의 게이트웨이 어플라이언스 화면에서는 사용자가 IBM® Cloud Juniper vSRX를 포함한 모든 네트워크 게이트웨이 어플라이언스를 표시하고 이에 액세스할 수 있습니다.   
+{{site.data.keyword.cloud}} 인프라 고객 포털의 게이트웨이 어플라이언스 화면에서는 사용자가 {{site.data.keyword.vsrx_full}}를 포함한 모든 네트워크 게이트웨이 어플라이언스를 표시하고 이에 액세스할 수 있습니다.   
 
 다음과 같은 프로시저를 수행하여 고객 포털의 게이트웨이 어플라이언스 화면에 액세스하십시오. 
 

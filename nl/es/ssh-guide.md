@@ -23,7 +23,7 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 # Permitir SSH y ejecutar ping en una subred pública
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
 
-En esta guía aprenderá a configurar IBM® Cloud Juniper vSRX Estándar con una nueva interfaz, zona y libreta de direcciones. Como la acción predeterminada para todo el tráfico es descartar (drop), esta guía le mostrará cómo configurar flujos de tráfico que permitan todo el tráfico dentro de la nueva zona, todo el tráfico desde la nueva zona a internet y solo ssh y ping desde internet a una subred de la nueva VLAN.
+En esta guía aprenderá a configurar {{site.data.keyword.vsrx_full}} Estándar con una nueva interfaz, zona y libreta de direcciones. Como la acción predeterminada para todo el tráfico es descartar (drop), esta guía le mostrará cómo configurar flujos de tráfico que permitan todo el tráfico dentro de la nueva zona, todo el tráfico desde la nueva zona a internet y solo ssh y ping desde internet a una subred de la nueva VLAN.
 
 En este ejemplo se utilizan los siguientes valores:
 

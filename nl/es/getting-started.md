@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Iniciación a IBM Cloud Juniper vSRX Gateway
+# Iniciación a {{site.data.keyword.vsrx_full}} Gateway
 {: #getting-started}
 
-Para empezar a trabajar con IBM® Cloud Juniper vSRX Gateway, determine en primer lugar si su cuenta está enlazada a IBM Cloud.
+Para empezar a trabajar con {{site.data.keyword.vsrx_full}} Gateway, determine en primer lugar si su cuenta está enlazada a IBM Cloud.
 
 Para averiguar si tiene una cuenta enlazada, vaya al [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} en el navegador e inicie una sesión. Si su cuenta está enlazada, no verá el botón **Más información sobre Bluemix** en la parte superior derecha.
 
@@ -32,7 +32,7 @@ Para averiguar si tiene una cuenta enlazada, vaya al [Portal de clientes ![Icono
 
 Puede solicitar su dispositivo de pasarela siguiendo uno de estos métodos:
 
-Para ver una lista de limitaciones conocidas de IBM Cloud Juniper vSRX Gateway, consulte el [tema sobre limitaciones conocidas](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
+Para ver una lista de limitaciones conocidas de {{site.data.keyword.vsrx_full}} Gateway, consulte el [tema sobre limitaciones conocidas](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
 
 ### Cómo realizar la solicitud con una cuenta enlazada
@@ -79,7 +79,7 @@ También, en el [Catálogo de IBM Cloud ![Icono de enlace externo](../../icons/l
 
 8. Revise las selecciones que ha realizado, compruebe que ha leído los Acuerdos de servicio de terceros y pulse **Crear**. El pedido se verifica automáticamente.
 
-Una vez que se aprueba el pedido, se inicia automáticamente el suministro de su pasarela IBM Cloud Juniper vSRX. Cuando se haya completado el proceso de suministro, el nuevo vSRX aparecerá en la página de lista Dispositivos de pasarela. Pulse el nombre de la pasarela para abrir la página Detalles de pasarela. Encontrará las direcciones IP, el nombre de usuario de inicio de sesión y la contraseña del dispositivo.  
+Una vez que se aprueba el pedido, se inicia automáticamente el suministro de su pasarela {{site.data.keyword.vsrx_full}}. Cuando se haya completado el proceso de suministro, el nuevo vSRX aparecerá en la página de lista Dispositivos de pasarela. Pulse el nombre de la pasarela para abrir la página Detalles de pasarela. Encontrará las direcciones IP, el nombre de usuario de inicio de sesión y la contraseña del dispositivo.  
 
 Recuerde que una vez que hace el pedido y configura la pasarela desde el catálogo de IBM Cloud, también debe configurar el propio dispositivo con los mismos Valores.
 {: tip}

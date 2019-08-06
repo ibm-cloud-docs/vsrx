@@ -23,7 +23,7 @@ subcollection: vsrx
 # 라우팅 관련 작업
 {: #working-with-routing}
 
-IBM® Cloud Juniper vSRX는 `JunOS`를 기반으로 하며 전체 Juniper 라우팅 스택에 대한 액세스 권한을 제공합니다.
+{{site.data.keyword.vsrx_full}}는 `JunOS`를 기반으로 하며 전체 Juniper 라우팅 스택에 대한 액세스 권한을 제공합니다.
 
 ##정적 라우팅
 {: #static-routing}

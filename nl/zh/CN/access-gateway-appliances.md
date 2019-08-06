@@ -23,7 +23,7 @@ subcollection: vsrx
 # 查看所有网关设备
 {: #viewing-all-your-gateway-appliances}
 
-在 {{site.data.keyword.cloud}} 基础架构客户门户网站中的“网关设备”屏幕中，可以显示和访问所有网关设备，包括 IBM® Cloud Juniper vSRX。  
+在 {{site.data.keyword.cloud}} 基础架构客户门户网站中的“网关设备”屏幕中，可以显示和访问所有网关设备，包括 {{site.data.keyword.vsrx_full}}。  
 
 执行以下过程来访问客户门户网站中的“网关设备”屏幕。
 

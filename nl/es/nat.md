@@ -62,4 +62,4 @@ nat {
 }
 ```
 
-Para configurar NAT para IBM® Cloud Juniper vSRX, consulte esta [guía de configuración ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} en el sitio web de Juniper.
+Para configurar NAT para {{site.data.keyword.vsrx_full}}, consulte esta [guía de configuración ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} en el sitio web de Juniper.

@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Initiation à la passerelle IBM Cloud Juniper vSRX
+# Initiation à la passerelle {{site.data.keyword.vsrx_full}}
 {: #getting-started}
 
-Pour commencer à utiliser la passerelle IBM® Cloud Juniper vSRX, déterminez d'abord si votre compte est lié à IBM Cloud.
+Pour commencer à utiliser la passerelle {{site.data.keyword.vsrx_full}}, déterminez d'abord si votre compte est lié à IBM Cloud.
 
 Pour savoir si votre compte est lié, accédez au [Portail client ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} dans votre navigateur et connectez-vous. Si votre compte est lié, le bouton **En savoir plus sur Bluemix** ne s'affiche pas dans le coin supérieur droit.
 
@@ -32,7 +32,7 @@ Pour savoir si votre compte est lié, accédez au [Portail client ![External lin
 
 Vous pouvez commander votre dispositif de passerelle à l'aide de l'une de ces méthodes :
 
-Pour la liste des limitations connues concernant la passerelle IBM Cloud Juniper vSRX, voir la [rubrique Limitations connues](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
+Pour la liste des limitations connues concernant la passerelle {{site.data.keyword.vsrx_full}}, voir la [rubrique Limitations connues](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
 
 ### Commander avec un compte lié
@@ -80,7 +80,7 @@ Dans le [Catalogue IBM Cloud ![Icône de lien externe](../../icons/launch-glyph.
 
 8. Passez en revue vos sélections, vérifiez que vous avez lu les contrats de service tiers, puis cliquez sur **Créer**. La commande est vérifiée automatiquement. 
 
-Une fois votre commande approuvée, la mise à disposition de IBM Cloud Juniper vSRX Gateway démarre automatiquement. Quand le processus est terminé, le nouveau vSRX apparaît dans la page de liste Dispositifs de passerelle. Cliquez sur le nom de la passerelle pour ouvrir la page Détails de la passerelle. Vous y trouverez les adresses IP, le nom d'utilisateur et le mot de passe de connexion correspondant à l'unité.  
+Une fois votre commande approuvée, la mise à disposition de {{site.data.keyword.vsrx_full}} Gateway démarre automatiquement. Quand le processus est terminé, le nouveau vSRX apparaît dans la page de liste Dispositifs de passerelle. Cliquez sur le nom de la passerelle pour ouvrir la page Détails de la passerelle. Vous y trouverez les adresses IP, le nom d'utilisateur et le mot de passe de connexion correspondant à l'unité.  
 
 N'oubliez pas qu'une fois que vous commandez et configurez votre passerelle à partir d'IBM Cloud Catalog, vous devez également configurer l'unité elle-même avec les mêmes paramètres. {: tip}
 

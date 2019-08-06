@@ -20,15 +20,15 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX の概要
+# {{site.data.keyword.vsrx_full}} の概要
 {: #about-ibm-cloud-juniper-vsrx}
 
-IBM® Cloud Juniper vSRX を使用すると、完全なルーティング・スタック、QoS やトラフィックの共有、ポリシー・ベースのルーティング、VPN などの JunOS ソフトウェア・フィーチャーにより機能するフル装備のエンタープライズ・レベルのファイアウォールを介して、プライベートとパブリックのネットワーク・トラフィックを選択的に経路指定できます。vSRX は、ベアメタル・サーバー上での実行が単純化されており、パフォーマンス、構成のしやすさ、保守における利点があります。
+{{site.data.keyword.vsrx_full}} を使用すると、完全なルーティング・スタック、QoS やトラフィックの共有、ポリシー・ベースのルーティング、VPN などの JunOS ソフトウェア・フィーチャーにより機能するフル装備のエンタープライズ・レベルのファイアウォールを介して、プライベートとパブリックのネットワーク・トラフィックを選択的に経路指定できます。vSRX は、ベアメタル・サーバー上での実行が単純化されており、パフォーマンス、構成のしやすさ、保守における利点があります。
 ハードウェアは、複数の VLAN に関連付けられたルーティング・ロードとセキュリティー・ロードを処理するようにサイズ変更され、冗長ネットワーク・リンクおよび冗長 RAID アレイと共に注文することができます。すべての vSRX フィーチャーはお客様により管理されます。
 
-IBM Cloud vSRX は、スタンドアロン・モードと高可用性 (HA) クラスターという 2 種類のモードで提供されます。
+{{site.data.keyword.vsrx_full}} は、スタンドアロン・モードと高可用性 (HA) クラスターという 2 種類のモードで提供されます。
 
-IBM Cloud Juniper vSRX の追加資料については、[補足資料](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation)のトピックを参照してください。
+{{site.data.keyword.vsrx_full}} の追加資料については、[補足資料](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation)のトピックを参照してください。
 {: note}
 
 ## ファイアウォール

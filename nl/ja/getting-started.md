@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Juniper vSRX ゲートウェイの開始
+# {{site.data.keyword.vsrx_full}} ゲートウェイの開始
 {: #getting-started}
 
-IBM® Cloud Juniper vSRX ゲートウェイを開始するには、まずご使用のアカウントが IBM Cloud にリンクされているかどうか判別します。
+{{site.data.keyword.vsrx_full}} ゲートウェイを開始するには、まずご使用のアカウントが IBM Cloud にリンクされているかどうか判別します。
 
 リンクされたアカウントがあるかどうか確認するには、ブラウザーで[カスタマー・ポータル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window} にナビゲートして、ログインします。 アカウントがリンクされている場合は、右上に**「Bluemix の詳細」**ボタンが表示されません。
 
@@ -32,7 +32,7 @@ IBM® Cloud Juniper vSRX ゲートウェイを開始するには、まずご使�
 
 以下のいずれかの方式を使用して、ゲートウェイ・アプライアンスを注文できます。
 
-IBM Cloud Juniper vSRX ゲートウェイに関する既知の制限事項のリストについては、[既知の制限事項](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)に関するトピックを参照してください。
+{{site.data.keyword.vsrx_full}} ゲートウェイに関する既知の制限事項のリストについては、[既知の制限事項](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)に関するトピックを参照してください。
 {: note}
 
 ### リンクされているアカウントを使用した注文
@@ -76,7 +76,7 @@ IBM Cloud Juniper vSRX ゲートウェイに関する既知の制限事項のリ
 
 8. 選択内容を確認し、サード・パーティー・サービス契約を読んでチェック・マークを付けてから、**「作成」**をクリックします。自動的に注文が検証されます。
 
-注文が承認されると、IBM Cloud Juniper vSRX ゲートウェイのプロビジョニングが自動的に開始します。プロビジョニング・プロセスが完了すると、新しい vSRX が「ゲートウェイ・アプライアンス」リスト・ページに表示されます。ゲートウェイ名をクリックして「ゲートウェイの詳細」ページを開きます。デバイスの IP アドレス、ログイン・ユーザー名、およびパスワードが表示されます。  
+注文が承認されると、{{site.data.keyword.vsrx_full}} ゲートウェイのプロビジョニングが自動的に開始します。プロビジョニング・プロセスが完了すると、新しい vSRX が「ゲートウェイ・アプライアンス」リスト・ページに表示されます。ゲートウェイ名をクリックして「ゲートウェイの詳細」ページを開きます。デバイスの IP アドレス、ログイン・ユーザー名、およびパスワードが表示されます。  
 
 IBM Cloud カタログからゲートウェイを注文および構成したなら、同じ設定でデバイスも構成する必要があることに注意してください。
 {: tip}

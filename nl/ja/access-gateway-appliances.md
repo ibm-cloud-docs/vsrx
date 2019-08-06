@@ -23,7 +23,7 @@ subcollection: vsrx
 # すべてのゲートウェイ・アプライアンスの表示
 {: #viewing-all-your-gateway-appliances}
 
-{{site.data.keyword.cloud}} インフラストラクチャー・カスタマー・ポータルの「ゲートウェイ・アプライアンス」画面では、 IBM® Cloud Juniper vSRX を含むすべてのネットワーク・ゲートウェイ・アプライアンスを表示およびアクセスできます。  
+{{site.data.keyword.cloud}} インフラストラクチャー・カスタマー・ポータルの「ゲートウェイ・アプライアンス」画面では、 {{site.data.keyword.vsrx_full}} を含むすべてのネットワーク・ゲートウェイ・アプライアンスを表示およびアクセスできます。  
 
 次の手順を実行して、カスタマー・ポータル内の「ゲートウェイ・アプライアンス」画面にアクセスします。
 

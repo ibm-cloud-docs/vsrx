@@ -20,14 +20,14 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# 关于 IBM Cloud Juniper vSRX
+# 关于 {{site.data.keyword.vsrx_full}}
 {: #about-ibm-cloud-juniper-vsrx}
 
-借助 IBM® Cloud Juniper vSRX，您可以通过基于 JunOS 软件功能（例如，全路由堆栈、QoS 和流量共享、基于策略的路由以及 VPN）的全功能企业级防火墙，选择性路由专用和公用网络流量。vSRX 利用在裸机服务器上运行的简易性，提供了高性能、配置和维护轻松的优势。硬件会调整大小，以处理与多个 VLAN 关联的路由和安全负载，并且可以订购包含冗余网络链路和冗余 RAID 阵列的硬件。所有 vSRX 功能都由客户进行管理。
+借助 {{site.data.keyword.vsrx_full}}，您可以通过基于 JunOS 软件功能（例如，全路由堆栈、QoS 和流量共享、基于策略的路由以及 VPN）的全功能企业级防火墙，选择性路由专用和公用网络流量。vSRX 利用在裸机服务器上运行的简易性，提供了高性能、配置和维护轻松的优势。硬件会调整大小，以处理与多个 VLAN 关联的路由和安全负载，并且可以订购包含冗余网络链路和冗余 RAID 阵列的硬件。所有 vSRX 功能都由客户进行管理。
 
-IBM Cloud vSRX 以两种不同的方式提供：独立方式或高可用性 (HA) 集群。
+{{site.data.keyword.vsrx_full}} 以两种不同的方式提供：独立方式或高可用性 (HA) 集群。
 
-IBM Cloud Juniper vSRX 的其他文档可以在[补充文档](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation)主题中找到。
+{{site.data.keyword.vsrx_full}} 的其他文档可以在[补充文档](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation)主题中找到。
 {: note}
 
 ## 防火墙

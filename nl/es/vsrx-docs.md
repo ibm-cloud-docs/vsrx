@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Documentación de IBM Cloud Juniper vSRX suplementaria
+# Documentación de {{site.data.keyword.vsrx_full}} suplementaria
 {: #supplemental-ibm-cloud-juniper-vsrx-documentation}
 
-La tabla siguiente contiene enlaces a la documentación complementaria para IBM® Cloud Juniper vSRX Estándar.
+La tabla siguiente contiene enlaces a la documentación complementaria para {{site.data.keyword.vsrx_full}} Estándar.
 
 Documentación de vSRX  | Descripción
 ------------- | -------------  

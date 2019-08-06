@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# 보충 IBM Cloud Juniper vSRX 문서
+# 보충 {{site.data.keyword.vsrx_full}} 문서
 {: #supplemental-ibm-cloud-juniper-vsrx-documentation}
 
-다음 표에서는 IBM® Cloud Juniper vSRX Standard에 대한 보충 문서의 링크를 제공합니다.
+다음 표에서는 {{site.data.keyword.vsrx_full}} Standard에 대한 보충 문서의 링크를 제공합니다.
 
 vSRX 문서  |설명
 ------------- | -------------  

@@ -23,7 +23,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 # Utilizzo dei firewall
 {: #working-with-firewalls}
 
-IBM® Cloud Juniper vSRX utilizza il concetto di zone di sicurezza, in cui ogni interfaccia vSRX è associata a una "zona" per la gestione dei firewall con stato. I firewall senza stato sono controllati dai filtri del firewall.
+{{site.data.keyword.vsrx_full}} utilizza il concetto di zone di sicurezza, in cui ogni interfaccia vSRX è associata a una "zona" per la gestione dei firewall con stato. I firewall senza stato sono controllati dai filtri del firewall.
 
 Vengono utilizzate le politiche per consentire o bloccare il traffico tra queste zone definite e le regole qui definite sono con stato.
 
@@ -97,7 +97,7 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ## Filtri del firewall
 {: #firewall-filters}
 
-Per impostazione predefinita, IBM Cloud Juniper vSRX consente ping, SSH e HTTPS a sé stesso e passa tutto l'altro traffico applicando il filtro `PROTECT-IN` all'interfaccia `lo`.
+Per impostazione predefinita, {{site.data.keyword.vsrx_full}} consente ping, SSH e HTTPS a sé stesso e passa tutto l'altro traffico applicando il filtro `PROTECT-IN` all'interfaccia `lo`.
 
 Per configurare un nuovo firewall senza stato, attieniti alla seguente procedura:
 

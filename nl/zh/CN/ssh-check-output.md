@@ -100,6 +100,6 @@ show | compare
 
 检查以确认配置正确后，运行 `commit` 命令以将更改推送到活动配置。
 
-IBM Cloud Juniper vSRX Standard 现在配置为路由和过滤流至新 VLAN 和子网的流量，并仅允许入站 ping 和 SSH 连接。
+{{site.data.keyword.vsrx_full}} Standard 现在配置为路由和过滤流至新 VLAN 和子网的流量，并仅允许入站 ping 和 SSH 连接。
 
 现在，您应该如[管理 VLAN](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans)中所示来路由 VLAN，以开始使用新功能。

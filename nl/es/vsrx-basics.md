@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Conceptos básicos sobre el funcionamiento de IBM Cloud Juniper vSRX
+# Conceptos básicos sobre el funcionamiento de {{site.data.keyword.vsrx_full}}
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
-La pasarela IBM® Cloud Juniper vSRX se puede configurar mediante una sesión de consola remota a través de SSH o mediante el inicio de sesión en la GUI de gestión de web de Juniper.
+La pasarela {{site.data.keyword.vsrx_full}} se puede configurar mediante una sesión de consola remota a través de SSH o mediante el inicio de sesión en la GUI de gestión de web de Juniper.
 
 La configuración de vSRX fuera de su shell e interfaz puede producir resultados inesperados y no se recomienda.{: note}
 
@@ -67,7 +67,7 @@ La GUI de gestión de web de Juniper se ha configurado de forma predeterminada c
 ## Creación de usuarios del sistema
 {: #creating-system-users}
 
-De forma predeterminada, IBM Cloud Juniper vSRX está configurado con acceso SSH para el nombre de usuario `admin`. Se pueden añadir más usuarios con su propio conjunto de prioridades. Por ejemplo:
+De forma predeterminada, {{site.data.keyword.vsrx_full}} está configurado con acceso SSH para el nombre de usuario `admin`. Se pueden añadir más usuarios con su propio conjunto de prioridades. Por ejemplo:
 
 ```
 set system login user ops class operator authentication encrypted-password <CYPHER>

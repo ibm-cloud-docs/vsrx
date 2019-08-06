@@ -23,7 +23,7 @@ subcollection: vsrx
 # 使用遞送
 {: #working-with-routing}
 
-IBM® Cloud Juniper vSRX 係以 `JunOS` 為基礎，可讓您存取完整 Juniper 遞送堆疊。
+{{site.data.keyword.vsrx_full}} 係以 `JunOS` 為基礎，可讓您存取完整 Juniper 遞送堆疊。
 
 ##靜態遞送
 {: #static-routing}

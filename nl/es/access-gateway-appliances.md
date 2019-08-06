@@ -23,7 +23,7 @@ subcollection: vsrx
 # Visualización de todos los dispositivos de pasarela
 {: #viewing-all-your-gateway-appliances}
 
-En la pantalla de dispositivos de pasarela del portal de clientes de la infraestructura de {{site.data.keyword.cloud}} puede visualizar y acceder a todos los dispositivos de pasarela de red, incluido IBM® Cloud Juniper vSRX.  
+En la pantalla de dispositivos de pasarela del portal de clientes de la infraestructura de {{site.data.keyword.cloud}} puede visualizar y acceder a todos los dispositivos de pasarela de red, incluido {{site.data.keyword.vsrx_full}}.  
 
 Realice el procedimiento siguiente para acceder a la pantalla Dispositivos de pasarela del portal de clientes.
 

@@ -23,7 +23,7 @@ subcollection: vsrx
 # Trabalhando com roteamento
 {: #working-with-routing}
 
-O IBM® Cloud Juniper vSRX é baseado no `JunOS`, fornecendo acesso à pilha de roteamento Juniper completa.
+O {{site.data.keyword.vsrx_full}} é baseado no `JunOS`, fornecendo acesso à pilha de roteamento Juniper completa.
 
 ##Roteamento estático
 {: #static-routing}

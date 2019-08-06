@@ -20,14 +20,14 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Ayuda y soporte de IBM Cloud Juniper vSRX
+# Ayuda y soporte de {{site.data.keyword.vsrx_full}}
 {: #getting-help-and-support-for-ibm-cloud-juniper-vsrx}
 
-Si tiene problemas o preguntas al utilizar IBM® Cloud Juniper vSRX Estándar, puede obtener ayuda buscando información o mediante preguntas a través de uno de los foros listados más abajo. También puede abrir una incidencia de soporte.
+Si tiene problemas o preguntas al utilizar {{site.data.keyword.vsrx_full}} Estándar, puede obtener ayuda buscando información o mediante preguntas a través de uno de los foros listados más abajo. También puede abrir una incidencia de soporte.
 
 Al utilizar los foros para formular una pregunta, etiquete la pregunta para que la vean los equipos de desarrollo de IBM Cloud.
 
-* Si tiene preguntas técnicas sobre IBM Cloud Juniper vSRX Estándar, publique la pregunta en [Stack Overflow](https://stackoverflow.com/search?q=vsrx+ibm-cloud) y añada las etiquetas "vsrx" e "ibm-cloud".
+* Si tiene preguntas técnicas sobre {{site.data.keyword.vsrx_full}} Estándar, publique la pregunta en [Stack Overflow](https://stackoverflow.com/search?q=vsrx+ibm-cloud) y añada las etiquetas "vsrx" e "ibm-cloud".
 * Para formular preguntas sobre el servicio y obtener instrucciones de iniciación, utilice el foro [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/vsrx/). Incluya las etiquetas "vsrx" e "ibm-cloud".
 
 Consulte [Obtención de ayuda](https://{DomainName}/docs/get-support?topic=get-support-using-avatar) para obtener más detalles sobre el uso de los foros.

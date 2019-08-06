@@ -23,7 +23,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 # Cómo trabajar con cortafuegos
 {: #working-with-firewalls}
 
-IBM® Cloud Juniper vSRX utiliza el concepto de zonas de seguridad, donde cada interfaz vSRX está correlacionada con una "zona" para gestionar los cortafuegos con estado. Los cortafuegos sin estado se controlan mediante filtros de cortafuegos.
+{{site.data.keyword.vsrx_full}} utiliza el concepto de zonas de seguridad, donde cada interfaz vSRX está correlacionada con una "zona" para gestionar los cortafuegos con estado. Los cortafuegos sin estado se controlan mediante filtros de cortafuegos.
 
 Se utilizan políticas para permitir y bloquear el tráfico entre estas zonas definidas, y las reglas definidas aquí son con estado.
 
@@ -97,7 +97,7 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ## Filtros de cortafuegos
 {: #firewall-filters}
 
-De forma predeterminada, IBM Cloud Juniper vSRX permite ping, SSH y HTTPS a sí mismo y descarta el resto del tráfico mediante la aplicación del filtro `PROTECT-IN` a la interfaz `lo`.
+De forma predeterminada, {{site.data.keyword.vsrx_full}} permite ping, SSH y HTTPS a sí mismo y descarta el resto del tráfico mediante la aplicación del filtro `PROTECT-IN` a la interfaz `lo`.
 
 Para configurar un nuevo cortafuegos sin estado, siga este procedimiento:
 

@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX 发行说明
+# {{site.data.keyword.vsrx_full}} 发行说明
 {: #ibm-cloud-juniper-vsrx-release-notes}
 
 有关 Juniper vSRX 18.4 发行说明，请访问[此链接 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/18.4/index.html){:new_window}。

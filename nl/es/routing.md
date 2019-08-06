@@ -23,7 +23,7 @@ subcollection: vsrx
 # Cómo trabajar con el direccionamiento
 {: #working-with-routing}
 
-IBM® Cloud Juniper vSRX se basa en `JunOS`, que le ofrece acceso a la pila completa de direccionamiento de Juniper.
+{{site.data.keyword.vsrx_full}} se basa en `JunOS`, que le ofrece acceso a la pila completa de direccionamiento de Juniper.
 
 ##Direccionamiento estático
 {: #static-routing}

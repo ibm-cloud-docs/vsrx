@@ -20,14 +20,14 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Getting Help and Support for IBM Cloud Juniper vSRX
+# Getting Help and Support
 {: #getting-help-and-support-for-ibm-cloud-juniper-vsrx}
 
-If you have problems or questions when using IBM® Cloud Juniper vSRX Standard, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
+If you have problems or questions when using {{site.data.keyword.vsrx_full}} Standard, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
 
 When using the forums to ask a question, tag your question so that it is seen by the IBM Cloud development teams.
 
-* If you have technical questions about IBM Cloud Juniper vSRX Standard, post your question on [Stack Overflow](https://stackoverflow.com/search?q=vsrx+ibm-cloud) and tag your question with "vsrx" and "ibm-cloud".
+* If you have technical questions about {{site.data.keyword.vsrx_full}} Standard, post your question on [Stack Overflow](https://stackoverflow.com/search?q=vsrx+ibm-cloud) and tag your question with "vsrx" and "ibm-cloud".
 * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/vsrx/) forum. Include the "vsrx" and "ibm-cloud" tags.
 
 See [Getting help](https://{DomainName}/docs/get-support?topic=get-support-using-avatar) for more details about using the forums.

@@ -20,16 +20,16 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX 的已知限制
+# {{site.data.keyword.vsrx_full}} 的已知限制
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
-{{site.data.keyword.cloud}}IBM® Cloud Juniper vSRX 的現行限制：
+{{site.data.keyword.cloud}}{{site.data.keyword.vsrx_full}} 的現行限制：
 
 * Juniper vSRX Gateway 是使用 Linux Bridge 搭配網路虛擬化進行部署。Linux Bridge 型網路虛擬化只能達到有限的傳輸量且永達不到線路速率傳輸量。
 
 * 不支援從「獨立式」升級至「高可用性」模式。
 
-* 使用 Junos OS `15.1` 版或 `18.4` 版的選項來部署 IBM Cloud Juniper vSRX 閘道。目前，不支援升級/降級為其他版本。
+* 使用 Junos OS `15.1` 版或 `18.4` 版的選項來部署 {{site.data.keyword.vsrx_full}} 閘道。目前，不支援升級/降級為其他版本。
 
 * 即使系統上有其他（有效）授權，60 天評估授權也可能導致核心產生錯誤訊息。因此，您應該移除任何 60 天評估授權以避免此問題。若要這樣做，請執行下列程序：
 

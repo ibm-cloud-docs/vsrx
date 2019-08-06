@@ -23,7 +23,7 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 # Autorisation du trafic SSH et de Ping vers un sous-réseau public
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
 
-Dans ce guide, vous allez apprendre à configurer IBM® Cloud Juniper vSRX Standard avec une nouvelle interface, une nouvelle zone et un nouveau carnet d'adresses. L'action par défaut étant d'abandonner le trafic (drop), ce guide vous expliquera comment configurer des flux de circulation autorisant tout le trafic dans la nouvelle zone, tout le trafic de la nouvelle zone vers Internet, et autorisant seulement le trafic SSH et ping depuis Internet vers un sous-réseau du nouveau réseau local virtuel.
+Dans ce guide, vous allez apprendre à configurer {{site.data.keyword.vsrx_full}} Standard avec une nouvelle interface, une nouvelle zone et un nouveau carnet d'adresses. L'action par défaut étant d'abandonner le trafic (drop), ce guide vous expliquera comment configurer des flux de circulation autorisant tout le trafic dans la nouvelle zone, tout le trafic de la nouvelle zone vers Internet, et autorisant seulement le trafic SSH et ping depuis Internet vers un sous-réseau du nouveau réseau local virtuel.
 
 Les valeurs suivantes sont utilisées dans l'exemple.
 

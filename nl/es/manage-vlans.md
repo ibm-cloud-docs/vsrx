@@ -86,7 +86,7 @@ Después de desasociar una VLAN del dispositivo de pasarela, la VLAN puede asoci
 ## Direccionar varias VLAN en la misma interfaz de red
 {: #route-multiple-vlans-over-the-same-network-interface}
 
-IBM® Cloud Juniper vSRX puede trabajar con varias VLAN sobre la misma interfaz de red. También puede manejar el tráfico etiquetado y sin etiquetar a la vez. Esto se consigue en el dispositivo autónomo estableciendo la encapsulación de la interfaz en `flexible-vlan-tagging` o, en los dispositivos de alta disponibilidad, utilizando reth2 y reth3 como interfaces etiquetadas. Esto se realiza como parte de la configuración predeterminada y no es necesario modificarlo.  En los dispositivos autónomos, la unidad 0 es la subinterfaz que no está etiquetada; las otras unidades están etiquetadas.
+{{site.data.keyword.vsrx_full}} puede trabajar con varias VLAN sobre la misma interfaz de red. También puede manejar el tráfico etiquetado y sin etiquetar a la vez. Esto se consigue en el dispositivo autónomo estableciendo la encapsulación de la interfaz en `flexible-vlan-tagging` o, en los dispositivos de alta disponibilidad, utilizando reth2 y reth3 como interfaces etiquetadas. Esto se realiza como parte de la configuración predeterminada y no es necesario modificarlo.  En los dispositivos autónomos, la unidad 0 es la subinterfaz que no está etiquetada; las otras unidades están etiquetadas.
 
 Utilice el siguiente conjunto de mandatos para configurar interfaces etiquetadas adicionales:
 

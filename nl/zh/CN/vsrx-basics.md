@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# 执行 IBM Cloud Juniper vSRX 基本配置
+# 执行 {{site.data.keyword.vsrx_full}} 基本配置
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
-IBM® Cloud Juniper vSRX 网关可以通过 SSH 使用远程控制台会话进行配置，也可以通过登录到 Juniper Web 管理 GUI 进行配置。
+{{site.data.keyword.vsrx_full}} 网关可以通过 SSH 使用远程控制台会话进行配置，也可以通过登录到 Juniper Web 管理 GUI 进行配置。
 
 在 vSRX 的 shell 和接口外部配置 vSRX 可能会生成意外结果，因此建议不要这样做。
 {: note}
@@ -68,7 +68,7 @@ IBM® Cloud Juniper vSRX 网关可以通过 SSH 使用远程控制台会话进�
 ## 创建系统用户
 {: #creating-system-users}
 
-缺省情况下，IBM Cloud Juniper vSRX 针对用户名 `admin` 配置为使用 SSH 访问。可以添加其他用户并使用其自己的一组优先级。例如：
+缺省情况下，{{site.data.keyword.vsrx_full}} 针对用户名 `admin` 配置为使用 SSH 访问。可以添加其他用户并使用其自己的一组优先级。例如：
 
 
 ```

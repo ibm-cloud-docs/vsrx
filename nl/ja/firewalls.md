@@ -23,7 +23,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 # ファイアウォールの処理
 {: #working-with-firewalls}
 
-IBM® Cloud Juniper vSRX では、セキュリティー・ゾーンの概念を使用しています。この概念では、各 vSRX インターフェースが「ゾーン」にマップされて、ステートフル・ファイアウォールが処理されます。 ステートレス・ファイアウォールは、ファイアウォール・フィルターによって制御されます。
+{{site.data.keyword.vsrx_full}} では、セキュリティー・ゾーンの概念を使用しています。この概念では、各 vSRX インターフェースが「ゾーン」にマップされて、ステートフル・ファイアウォールが処理されます。 ステートレス・ファイアウォールは、ファイアウォール・フィルターによって制御されます。
 
 ポリシーは、これらの定義済みゾーン間のトラフィックを許可およびブロックするために使用され、ここで定義されるルールはステートフルです。
 
@@ -97,7 +97,7 @@ set security zones security-zone trust interfaces reth2.0 host-inbound-traffic p
 ## ファイアウォール・フィルター
 {: #firewall-filters}
 
-デフォルトでは、IBM Cloud Juniper vSRX は `lo` インターフェースに `PROTECT-IN` フィルターを適用して、IBM Cloud Juniper vSRX 自体に対する ping、SSH、HTTPS を許可し、その他のトラフィックをすべて除去します。
+デフォルトでは、{{site.data.keyword.vsrx_full}} は `lo` インターフェースに `PROTECT-IN` フィルターを適用して、{{site.data.keyword.vsrx_full}} 自体に対する ping、SSH、HTTPS を許可し、その他のトラフィックをすべて除去します。
 
 新しいステートレス・ファイアウォールを構成するには、以下の手順を実行します。
 

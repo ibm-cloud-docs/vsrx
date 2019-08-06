@@ -23,7 +23,7 @@ subcollection: vsrx
 # 檢視所有閘道應用裝置
 {: #viewing-all-your-gateway-appliances}
 
-在 {{site.data.keyword.cloud}} 基礎架構客戶入口網站中的「閘道應用裝置」畫面中，可以顯示和存取所有網路閘道應用裝置，包括 IBM® Cloud Juniper vSRX。  
+在 {{site.data.keyword.cloud}} 基礎架構客戶入口網站中的「閘道應用裝置」畫面中，可以顯示和存取所有網路閘道應用裝置，包括 {{site.data.keyword.vsrx_full}}。  
 
 執行下列程序來存取客戶入口網站中的「閘道應用裝置」畫面。
 

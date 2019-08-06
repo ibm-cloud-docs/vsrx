@@ -23,7 +23,7 @@ subcollection: vsrx
 # Fonctionnement du routage
 {: #working-with-routing}
 
-IBM® Cloud Juniper vSRX s'appuie sur `JunOS` pour vous permettre d'accéder à l'ensemble de la pile de routage Juniper.
+{{site.data.keyword.vsrx_full}} s'appuie sur `JunOS` pour vous permettre d'accéder à l'ensemble de la pile de routage Juniper.
 
 ##Routage statique
 {: #static-routing}

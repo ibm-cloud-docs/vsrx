@@ -23,7 +23,7 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 # 允许流至公用子网的 SSH 和 ping 流量
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
 
-在本指南中，您将了解如何为 IBM® Cloud Juniper vSRX Standard 配置新的接口、专区和地址簿。由于所有流量的缺省操作均为丢弃，因此本指南将说明如何设置流量流以允许新专区内的所有流量，允许从新专区流至因特网的所有流量，以及仅允许从因特网流至新 VLAN 上的一个子网的 SSH 和 ping 流量。
+在本指南中，您将了解如何为 {{site.data.keyword.vsrx_full}} Standard 配置新的接口、专区和地址簿。由于所有流量的缺省操作均为丢弃，因此本指南将说明如何设置流量流以允许新专区内的所有流量，允许从新专区流至因特网的所有流量，以及仅允许从因特网流至新 VLAN 上的一个子网的 SSH 和 ping 流量。
 
 在此示例中，将使用以下值。
 

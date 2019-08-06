@@ -23,7 +23,7 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 # SSH 및 Ping을 공인 서브넷으로 허용
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
 
-이 안내서에서 새 인터페이스, 구역 및 주소록을 사용하여 IBM® Cloud Juniper vSRX Standard를 구성하는 방법에 대해 알아봅니다. 모든 트래픽에 대한 기본 조치가 삭제됨에 따라 이 안내서는 새 구역 내의 모든 트래픽, 새 구역과 이더넷 간의 모든 트래픽을 허용하고 새 VLAN에서 이더넷과 하나의 서브넷 간의 SSH 및 Ping만 허용하는 트래픽 플로우를 설정하는 방법을 보여줍니다.
+이 안내서에서 새 인터페이스, 구역 및 주소록을 사용하여 {{site.data.keyword.vsrx_full}} Standard를 구성하는 방법에 대해 알아봅니다. 모든 트래픽에 대한 기본 조치가 삭제됨에 따라 이 안내서는 새 구역 내의 모든 트래픽, 새 구역과 이더넷 간의 모든 트래픽을 허용하고 새 VLAN에서 이더넷과 하나의 서브넷 간의 SSH 및 Ping만 허용하는 트래픽 플로우를 설정하는 방법을 보여줍니다.
 
 이 예제에서 다음 값이 사용됩니다.
 

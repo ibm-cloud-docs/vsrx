@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX リリース・ノート
+# {{site.data.keyword.vsrx_full}} リリース・ノート
 {: #ibm-cloud-juniper-vsrx-release-notes}
 
 Juniper vSRX 18.4 リリース・ノートについては、[このリンク ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/18.4/index.html){:new_window} を参照してください。

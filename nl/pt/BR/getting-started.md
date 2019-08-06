@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Introdução ao gateway do IBM Cloud Juniper vSRX
+# Introdução ao gateway do {{site.data.keyword.vsrx_full}}
 {: #getting-started}
 
-Para iniciar com o gateway do IBM® Cloud Juniper vSRX, primeiro determine se a sua conta está vinculada ao IBM Cloud.
+Para iniciar com o gateway do {{site.data.keyword.vsrx_full}}, primeiro determine se a sua conta está vinculada ao IBM Cloud.
 
 Para descobrir se você tem uma conta vinculada, navegue para o [Portal do cliente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} no navegador e efetue login. Se sua conta estiver vinculada, **Saiba mais sobre o Bluemix.** não será exibido na parte superior direita.
 
@@ -32,7 +32,7 @@ Para descobrir se você tem uma conta vinculada, navegue para o [Portal do clien
 
 É possível pedir o dispositivo de gateway usando um destes métodos:
 
-Para obter uma lista de limitações conhecidas com o gateway do IBM Cloud Juniper vSRX, consulte o
+Para obter uma lista de limitações conhecidas com o gateway do {{site.data.keyword.vsrx_full}}, consulte o
 [tópico Limitações
 conhecidas](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
@@ -82,7 +82,7 @@ Como alternativa, no [Catálogo do IBM Cloud ![Ícone de link externo](../../ico
 
 8. Revise suas seleções, verifique se leu os Contratos de Prestação de Serviço de Terceiros e clique em **Criar**. O pedido é verificado automaticamente.
 
-Após a aprovação de seu pedido, o fornecimento de seu Gateway IBM Cloud Juniper vSRX será iniciado automaticamente. Após a conclusão do processo de provisionamento, o novo vSRX aparecerá na página de lista Dispositivos de gateway. Clique no nome do gateway para abrir a página Detalhes do gateway. Você localizará os endereços IP, o nome do usuário de login e a senha para o dispositivo.  
+Após a aprovação de seu pedido, o fornecimento de seu Gateway {{site.data.keyword.vsrx_full}} será iniciado automaticamente. Após a conclusão do processo de provisionamento, o novo vSRX aparecerá na página de lista Dispositivos de gateway. Clique no nome do gateway para abrir a página Detalhes do gateway. Você localizará os endereços IP, o nome do usuário de login e a senha para o dispositivo.  
 
 Lembre-se de que, ao solicitar e configurar seu gateway por meio do Catálogo do IBM Cloud, também será preciso configurar o próprio dispositivo com as mesmas configurações.
 {: tip}

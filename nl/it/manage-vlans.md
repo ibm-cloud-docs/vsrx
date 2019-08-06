@@ -86,7 +86,7 @@ Dopo aver annullato l'associazione di una VLAN a un'applicazione gateway, la VLA
 ## Instrada più VLAN nella stessa interfaccia di rete
 {: #route-multiple-vlans-over-the-same-network-interface}
 
-IBM® Cloud Juniper vSRX può utilizzare più VLAN nella stessa interfaccia di rete. Può inoltre gestire il traffico contrassegnato o non contrassegnato contemporaneamente. Questo è possibile sul dispositivo autonomo impostando l'incapsulamento dell'interfaccia su `flexible-vlan-tagging` o sui dispositivi ad elevata disponibilità utilizzando reth2 e reth3 come interfacce contrassegnate. Questo viene fatto come parte della configurazione predefinita e non è necessario che venga modificato.  Sui dispositivi autonomi, Unit 0 è l'interfaccia secondaria che non è contrassegnata; sugli altri dispositivi, vengono contrassegnate le unità non zero.
+{{site.data.keyword.vsrx_full}} può utilizzare più VLAN nella stessa interfaccia di rete. Può inoltre gestire il traffico contrassegnato o non contrassegnato contemporaneamente. Questo è possibile sul dispositivo autonomo impostando l'incapsulamento dell'interfaccia su `flexible-vlan-tagging` o sui dispositivi ad elevata disponibilità utilizzando reth2 e reth3 come interfacce contrassegnate. Questo viene fatto come parte della configurazione predefinita e non è necessario che venga modificato.  Sui dispositivi autonomi, Unit 0 è l'interfaccia secondaria che non è contrassegnata; sugli altri dispositivi, vengono contrassegnate le unità non zero.
 
 Utilizza la seguente serie di comandi per configurare ulteriori interfacce contrassegnate:
 

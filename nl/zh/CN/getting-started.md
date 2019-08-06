@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Juniper vSRX 网关入门
+# {{site.data.keyword.vsrx_full}} 网关入门
 {: #getting-started}
 
-要开始使用 IBM® Cloud Juniper vSRX 网关，请首先确定您的帐户是否已链接到 IBM Cloud。
+要开始使用 {{site.data.keyword.vsrx_full}} 网关，请首先确定您的帐户是否已链接到 IBM Cloud。
 
 要了解您是否具有链接的帐户，请在浏览器中浏览至[客户门户网站 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window} 并登录。如果您的帐户已链接，那么不会在右上角看到**了解有关 Bluemix 的更多信息！**按钮。
 
@@ -32,7 +32,7 @@ subcollection: vsrx
 
 可以使用以下其中一种方法来订购网关设备：
 
-有关 IBM Cloud Juniper vSRX 网关已知限制的列表，请参阅[已知限制](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)主题。
+有关 {{site.data.keyword.vsrx_full}} 网关已知限制的列表，请参阅[已知限制](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)主题。
 {: note}
 
 ### 使用链接的帐户进行订购
@@ -80,7 +80,7 @@ subcollection: vsrx
 
 8. 复查选择，选中表明您已阅读第三方服务协议的对应复选框，然后单击**创建**。这将自动验证订单。
 
-订单被核准后，IBM Cloud Juniper vSRX 网关的供应会自动启动。供应过程完成后，新的 vSRX 会显示在“网关设备”列表页面中。单击网关名称可打开“网关详细信息”页面。在其中将找到设备的 IP 地址、登录用户名和密码。  
+订单被核准后，{{site.data.keyword.vsrx_full}} 网关的供应会自动启动。供应过程完成后，新的 vSRX 会显示在“网关设备”列表页面中。单击网关名称可打开“网关详细信息”页面。在其中将找到设备的 IP 地址、登录用户名和密码。  
 
 请记住，通过 IBM Cloud“目录”订购和配置网关后，还必须使用相同的设置配置设备本身。
 {: tip}

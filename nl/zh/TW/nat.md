@@ -62,4 +62,4 @@ nat {
 }
 ```
 
-若要為 IBM® Cloud Juniper vSRX 配置 NAT，請參閱 Juniper 網站上的此[配置手冊 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window}。
+若要為 {{site.data.keyword.vsrx_full}} 配置 NAT，請參閱 Juniper 網站上的此[配置手冊 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window}。

@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# 開始使用 IBM Cloud Juniper vSRX Gateway
+# 開始使用 {{site.data.keyword.vsrx_full}} Gateway
 {: #getting-started}
 
-若要開始使用 IBM® Cloud Juniper vSRX Gateway，請先判定您的帳戶是否鏈結至 IBM Cloud。
+若要開始使用 {{site.data.keyword.vsrx_full}} Gateway，請先判定您的帳戶是否鏈結至 IBM Cloud。
 
 若要瞭解您是否有已鏈結帳戶，請在瀏覽器中導覽至[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window} 並登入。如果您的帳戶已鏈結，那麼不會在右上角看到**進一步瞭解 Bluemix 的相關資訊！**按鈕。
 
@@ -32,7 +32,7 @@ subcollection: vsrx
 
 您可以使用下列其中一種方法來訂購「閘道應用裝置」：
 
-如需 IBM Cloud Juniper vSRX Gateway 的「已知限制」清單，請參閱[已知限制主題](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)。
+如需 {{site.data.keyword.vsrx_full}} Gateway 的「已知限制」清單，請參閱[已知限制主題](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)。
 {: note}
 
 ### 使用已鏈結帳戶訂購
@@ -80,7 +80,7 @@ subcollection: vsrx
 
 8. 檢閱選擇，勾選您已閱讀協力廠商服務合約，然後按一下**建立**。這將自動驗證訂單。
 
-訂單被已核准後，IBM Cloud Juniper vSRX 閘道的佈建會自動啟動。佈建程序完成後，新的 vSRX 會顯示在「閘道應用裝置」清單頁面中。按一下閘道名稱可開啟「閘道詳細資料」頁面。您將會找到裝置的 IP 位址、登入使用者名稱及密碼。  
+訂單被已核准後，{{site.data.keyword.vsrx_full}} 閘道的佈建會自動啟動。佈建程序完成後，新的 vSRX 會顯示在「閘道應用裝置」清單頁面中。按一下閘道名稱可開啟「閘道詳細資料」頁面。您將會找到裝置的 IP 位址、登入使用者名稱及密碼。  
 
 請注意，一旦您從 IBM Cloud 型錄訂購和配置閘道後，還必須使用相同設定來配置裝置本身。
 {: tip}

@@ -23,7 +23,7 @@ subcollection: vsrx
 # 経路指定の処理
 {: #working-with-routing}
 
-IBM® Cloud Juniper vSRX は `JunOS` に基づいており、Juniper ルーティング・スタックへのフル・アクセスを可能にします。
+{{site.data.keyword.vsrx_full}} は `JunOS` に基づいており、Juniper ルーティング・スタックへのフル・アクセスを可能にします。
 
 ##静的経路指定
 {: #static-routing}

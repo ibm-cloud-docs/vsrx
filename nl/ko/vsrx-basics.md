@@ -20,10 +20,10 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX 기본사항 수행
+# {{site.data.keyword.vsrx_full}} 기본사항 수행
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
-IBM® Cloud Juniper vSRX 게이트웨이는 SSH를 통해 원격 콘솔 세션을 사용하거나 Juniper 웹 관리 GUI에 로그인하여 구성될 수 있습니다.
+{{site.data.keyword.vsrx_full}} 게이트웨이는 SSH를 통해 원격 콘솔 세션을 사용하거나 Juniper 웹 관리 GUI에 로그인하여 구성될 수 있습니다.
 
 쉘 및 인터페이스 외부에서 vSRX를 구성하면 예기치 않은 결과가 생성될 수 있으므로 권장되지 않습니다.
 {: note}
@@ -68,7 +68,7 @@ IBM® Cloud Juniper vSRX 게이트웨이는 SSH를 통해 원격 콘솔 세션�
 ## 시스템 사용자 작성
 {: #creating-system-users}
 
-기본적으로 IBM Cloud Juniper vSRX는 사용자 이름 `admin`의 SSH 액세스 권한을 사용하여 구성됩니다. 추가 사용자는 고유한 우선순위 세트로 추가될 수 있습니다. 예를 들면, 다음과 같습니다.
+기본적으로 {{site.data.keyword.vsrx_full}}는 사용자 이름 `admin`의 SSH 액세스 권한을 사용하여 구성됩니다. 추가 사용자는 고유한 우선순위 세트로 추가될 수 있습니다. 예를 들면, 다음과 같습니다.
 
 ```
 set system login user ops class operator authentication encrypted-password <CYPHER>

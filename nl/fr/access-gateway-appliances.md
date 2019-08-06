@@ -23,7 +23,7 @@ subcollection: vsrx
 # Affichage de tous vos dispositifs de passerelle
 {: #viewing-all-your-gateway-appliances}
 
-L'écran Dispositifs de passerelle du portail client d'infrastructure {{site.data.keyword.cloud}} vous permet de voir et d'accéder à tous les dispositifs de passerelle réseau, y compris IBM® Cloud Juniper vSRX.  
+L'écran Dispositifs de passerelle du portail client d'infrastructure {{site.data.keyword.cloud}} vous permet de voir et d'accéder à tous les dispositifs de passerelle réseau, y compris {{site.data.keyword.vsrx_full}}.  
 
 Pour accéder à l'écran Dispositifs de passerelle dans le portail client, procédez comme suit :
 

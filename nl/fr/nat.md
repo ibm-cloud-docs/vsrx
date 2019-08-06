@@ -62,4 +62,4 @@ nat {
 }
 ```
 
-Pour configurer la conversion d'adresses réseau (NAT) pour IBM® Cloud Juniper vSRX, voir ce [guide de configuration ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} sur le site Web Juniper.
+Pour configurer la conversion d'adresses réseau (NAT) pour {{site.data.keyword.vsrx_full}}, voir ce [guide de configuration ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} sur le site Web Juniper.

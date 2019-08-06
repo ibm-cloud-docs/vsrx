@@ -86,7 +86,7 @@ Après avoir dissocié un VLAN d'un dispositif de passerelle, le VLAN peut être
 ## Router plusieurs VLAN sur la même interface réseau
 {: #route-multiple-vlans-over-the-same-network-interface}
 
-IBM® Cloud Juniper vSRX peut fonctionner avec plusieurs VLAN sur la même interface réseau. Il permet également de traiter le trafic balisé et non balisé en même temps. Pour cela, il utilise le périphérique autonome en définissant l'encapsulation d'interface sur `flexible-vlan-tagging`, ou sur les périphériques haute disponibilité en utilisant reth2 et reth3 comme interfaces balisées. Ceci est fait dans le cadre de la configuration par défaut et n'a pas besoin d'être modifié.  Sur les périphériques autonomes, l'unité 0 correspond à la sous-interface non balisée, et les autres unités sont balisées.
+{{site.data.keyword.vsrx_full}} peut fonctionner avec plusieurs VLAN sur la même interface réseau. Il permet également de traiter le trafic balisé et non balisé en même temps. Pour cela, il utilise le périphérique autonome en définissant l'encapsulation d'interface sur `flexible-vlan-tagging`, ou sur les périphériques haute disponibilité en utilisant reth2 et reth3 comme interfaces balisées. Ceci est fait dans le cadre de la configuration par défaut et n'a pas besoin d'être modifié.  Sur les périphériques autonomes, l'unité 0 correspond à la sous-interface non balisée, et les autres unités sont balisées.
 
 Exécutez les commandes suivantes pour configurer des interfaces balisées supplémentaires :
 

@@ -100,6 +100,6 @@ show | compare
 
 在確認配置正確無誤之後，請執行 `commit` 指令，將變更推送至作用中配置。
 
-您的 IBM Cloud Juniper vSRX Standard 現在已配置為將資料流量遞送至新的 VLAN 及子網路，並將其過濾為僅容許入埠 ping 和 SSH 連線。
+您的 {{site.data.keyword.vsrx_full}} Standard 現在已配置為將資料流量遞送至新的 VLAN 及子網路，並將其過濾為僅容許入埠 ping 和 SSH 連線。
 
 您現在應該如[管理 VLAN](/docs/infrastructure/vsrx?topic=vsrx-managing-ibm-vlans) 中所示來遞送 VLAN，以開始使用新功能。

@@ -20,10 +20,10 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# IBM Cloud Juniper vSRX Gateway 시작하기
+# {{site.data.keyword.vsrx_full}} Gateway 시작하기
 {: #getting-started}
 
-IBM® Cloud Juniper vSRX Gateway를 시작하려면 먼저 사용자의 계정이 IBM Cloud에 연결되어 있는지 여부를 판별하십시오.
+{{site.data.keyword.vsrx_full}} Gateway를 시작하려면 먼저 사용자의 계정이 IBM Cloud에 연결되어 있는지 여부를 판별하십시오.
 
 연결된 계정이 있는지 여부를 판별하려면 브라우저에서 [고객 포털 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){: new_window}로 이동하여 로그인하십시오. 계정이 연결되어 있으면 오른쪽 상단에 **Bluemix에 대해 자세히 알아보기!** 단추가 표시되지 않습니다. 
 
@@ -32,7 +32,7 @@ IBM® Cloud Juniper vSRX Gateway를 시작하려면 먼저 사용자의 계정�
 
 다음 방법 중 하나를 사용하여 Gateway Appliance를 주문할 수 있습니다.
 
-IBM Cloud Juniper vSRX Gateway의 알려진 제한사항의 목록은 [알려진 제한사항 주제](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)를 참조하십시오.
+{{site.data.keyword.vsrx_full}} Gateway의 알려진 제한사항의 목록은 [알려진 제한사항 주제](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx)를 참조하십시오.
 {: note}
 
 ### 연결된 계정으로 주문
@@ -80,7 +80,7 @@ IBM Cloud Juniper vSRX Gateway의 알려진 제한사항의 목록은 [알려진
 
 8. 선택사항을 검토하고 서드파티 서비스 계약을 읽었는지 확인한 후 **작성**을 클릭하십시오. 주문은 자동으로 확인됩니다. 
 
-주문이 승인되면 IBM Cloud Juniper vSRX 게이트웨이 프로비저닝이 자동으로 시작됩니다. 프로비저닝 프로세스가 완료되면 새 vSRX가 게이트웨이 어플라이언스 목록 페이지에 표시됩니다. 게이트웨이 이름을 클릭하여 게이트웨이 세부사항 페이지를 여십시오. 디바이스의 IP 주소, 로그인 사용자 이름 및 비밀번호가 표시됩니다.   
+주문이 승인되면 {{site.data.keyword.vsrx_full}} 게이트웨이 프로비저닝이 자동으로 시작됩니다. 프로비저닝 프로세스가 완료되면 새 vSRX가 게이트웨이 어플라이언스 목록 페이지에 표시됩니다. 게이트웨이 이름을 클릭하여 게이트웨이 세부사항 페이지를 여십시오. 디바이스의 IP 주소, 로그인 사용자 이름 및 비밀번호가 표시됩니다.   
 
 IBM Cloud 카탈로그에서 게이트웨이를 주문하고 구성하고 나면 동일한 설정으로 디바이스 자체도 구성해야 한다는 점을 기억하십시오.
 {: tip}
