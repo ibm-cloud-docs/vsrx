@@ -38,6 +38,8 @@ For a successful reload or rebuild of the cluster on an HA vSRX:
 
   <img src="images/gw-vsrx-password.png" alt="drawing" style="width: 700px;"/>
 
+* The vSRX configuration must allow root SSH access prior to the OS reload request. This is required to rejoin the cluster. Once the OS reload is complete, the SSH access may be disabled.
+
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.
 
 Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the **Rebuild Cluster** option (detailed below) to re-provision vSRX and recreate the HA cluster.
