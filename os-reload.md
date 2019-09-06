@@ -52,33 +52,28 @@ Performing an OS reload on both servers of the HA gateway at the same time will 
 
 To reload the OS for a gateway server, perform the following procedure:
 
-1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the Customer Portal, and navigate to the Gateway details page by selecting desired Gateway name.
+To reload your OS, perform the following procedure:
 
-  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
-
-2. Click the server name in the Hardware Panel.
-
-  ![Hardware Server](images/os_hardware.png)
-
-3. On the device's page, click **OS Reload** in the Action drop down menu to access the Server Configuration page.
-
-  ![Device Details](images/os_device_page.png)
-
-4. On the Server Configuration page, you can configure and start the reload. If you're reloading from a different OS, click the **Edit** next to **Operating System**, select **Juniper**, then pick one of the Juniper vSRX 15.x Standard options. When you are done modifying your settings, select **Reload Above Configuration** to continue.
-
-5. The OS Reload details screen displays. Review the settings you have chosen, and click **Edit Settings** if changes are required. Otherwise, click **Next** to proceed.
-
-6. On the OS Reload confirmation screen, agree to the terms of the Master Service Agreement, then begin the OS Reload process by clicking **Confirm OS Reload**. If you do not want to proceed with the reload, click **Cancel**.
+1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+3. Choose **Network > Gateway Appliances**.
+4. Click on the server you want to reload.
+5. Click the server name in the Hardware section.
+4. Select **OS Reload** from the **Actions** dropdown menu on the top right of the page.
+5. In the OS Reload screen, click **Edit** for the Category that requires an update. Select **AT&T** as the Vendor, and the OS version you wish to reload.
+6. Click the **Reload Above Configuration** button to proceed to the **Review** pop-up. Click **Cancel** to cancel the changes to the device and exit the screen.
+7. Verify that all details in the New Configuration section are correct. Click **Next** to advance to the Confirm pop-up.
+8. Click the **Confirm OS Reload** button to confirm and initiate the OS Reload. Click **Cancel** to cancel the action.
 
 ## Rebuilding an HA vSRX Cluster
 {: #rebuilding-an-ha-vsrx-cluster}
 
 To rebuild one of your HA vSRX clusters, perform the following procedure:
 
-1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the Customer Portal, and navigate to the Gateway details page by selecting the desired HA Gateway name.
-
-2. Click the **Actions** dropdown and select **Rebuild Cluster**.
-
-3. Carefully read the warning message. The operation to rebuild a cluster is destructive. If you wish to proceed, save your vSRX configuration before clicking **Rebuild** to start the process.
-
-  ![Confirm Rebuild Cluster](images/rebuild_cluster_confirm.png)
+1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+3. Choose **Network > Gateway Appliances**.
+4. Click on the server you want to reload.
+5. Click the server name in the Hardware section.
+6. Click the **Actions** dropdown and select **Rebuild Cluster**.
+7. Carefully read the warning message. The operation to rebuild a cluster is destructive. If you wish to proceed, save your vSRX configuration before clicking **Rebuild** to start the process.
