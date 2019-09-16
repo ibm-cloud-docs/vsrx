@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-6-14"
+lastupdated: "2019-9-16"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -23,22 +23,28 @@ subcollection: vsrx
 # Upgrading the vSRX
 {: #upgrading-the-vsrx}
 
-The upgrade process migrates the Junos OS for vSRX software to the latest release, and usually requires several hours to complete, depending on whether it's a Standalone or High Availability (HA) gateway appliance. For Standalone Gateways, the vSRX will be out of service during the upgrade process. For HA Gateways, when doing the upgrade, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the upgrade is complete, the server will rejoin the cluster.  
+The process to upgrade High Availability (HA) vSRX configurations require two steps:
+
+1. Running the `Upgrade Version` action against the vSRX Gateway, which upgrades the Junos OS on the vSRX.
+2. Running the `OS Reload` action against each bare-metal host, one at a time, which upgrades the Ubuntu OS.
+
+The upgrade process usually requires several hours to complete, depending on whether it's a Standalone or High Availability gateway appliance. For Standalone Gateways, the vSRX will be out of service during the upgrade process. For HA Gateways, when doing the upgrade, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the upgrade is complete, the server will rejoin the cluster.  
 
 ## Considerations
 {: #considerations}
 
 * The Standalone upgrade requires only an OS reload.
 
-For a Standalone environment, the previous configuration is not restored, so you should export and import your configuration. Refer to [Importing and exporting the vSRX configuration](/docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration) for more information.
+For a Standalone environment, the previous configuration is not restored, so you should export and import your configuration. Refer to [Importing and exporting the vSRX configuration](/docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration) for more information. 
 {: important}
 
 * The HA upgrade requires two steps: a vSRX upgrade and then the OS reload. It is strongly recommended you confirm that the vSRX configuration is correct at each step.
+
 * When requesting OS reload, make sure to change the default OS and select the newest version.
 
 ![Change Default OS](images/change_default_os.png)
 
-* For a successful reload on an HA vSRX, the root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal, and root SSH login needs to be enabled. 
+* For a successful reload on an HA vSRX, the root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal, and root SSH login to the vSRX Private IP needs to be enabled. 
 
   The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match.
   {: note}
@@ -46,7 +52,9 @@ For a Standalone environment, the previous configuration is not restored, so you
 Performing an OS reload on both servers of the High Availability gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the Rebuild Cluster option to re-provision the vSRX and recreate the HA cluster. Ensure the OS reload of the first member is complete before requesting an OS reload of the second.
 {: important}
 
-* Before performing an upgrade, run the command `show chassis cluster status` to ensure that a single node is configured as primary (with higher priority) for both redundancy groups, and that that node at run time is serving as the primary for both RGs. 
+* The vSRX configuration should not be modified during the execution of the Upgrade or OS Reload operations. Examples include automated software agents attempting to modify one or both vSRX nodes. Configurations changes can corrupt the Upgrade and OS Reload operations.
+
+* Before performing an upgrade, run the command `show chassis cluster status`. The nodes should be clustered with one node listed as the primary and the other node as the secondary. Ensure that a single node is configured as primary (with higher priority) for both redundancy groups, and that that node at run time is serving as the primary for both RGs. 
 
   If the RGs primary is not on the same node, run the command:
   
@@ -104,4 +112,4 @@ To do a vSRX upgrade, perform the following procedure:
   The **Rollback Version** action is available in the drop down menu, and can revert the vSRX to the previous version and configuration. Once the OS reload process begins in step 4, the Rollback Version action will no longer be available.
   {: important}
   
-4. Perform an OS reload on one node at a time to update the Host OS. The procedure can be found [here](/docs/infrastructure/vsrx?topic=vsrx-reloading-the-os). Ensure that you **change the default OS** and select the newest one.
+4. Perform an OS reload on one node at a time to update the Host OS. The procedure can be found [here](/docs/infrastructure/vsrx?topic=vsrx-reloading-the-os). Ensure that you **change the default OS** and select the newest one. Note, the host OS password will change after the OS reload completes.

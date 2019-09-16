@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-09-16"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -25,7 +25,7 @@ subcollection: vsrx
 
 The OS reload process is used to rebuild a gateway server. The process performs the following actions:
 
-* Reload the server host's operating system
+* Reload the server host's operating system (OS). This will generate a new host OS password.
 * Install KVM in the operating system
 * Create a vSRX VM in the KVM
 * Reconfigure the vSRX with the default configuration for IBM® Cloud
@@ -34,18 +34,20 @@ The process usually requires 1 hour 40 minutes to complete. Standalone Gateways 
 
 For a successful reload or rebuild of the cluster on an HA vSRX:
 
+* The vSRX configuration should not be modified during the execution of the OS Reload and Rebuild Cluster operations. Examples include automated software agents attempting to modify one or both vSRX nodes. Configurations changes can corrupt the OS Reload and Rebuild Cluster operations.
+
 * The root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal. The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match. Once the passwords match, you can proceed with the OS Reload or Rebuild Cluster operation.
 
   <img src="images/gw-vsrx-password.png" alt="drawing" style="width: 700px;"/>
 
-* The vSRX configuration must allow root SSH access prior to the OS reload request. This is required to rejoin the cluster. Once the OS reload is complete, the SSH access may be disabled.
+* The vSRX configuration must allow root SSH access to the vSRX Private IP, prior to the OS reload request. This is required to rejoin the cluster. Once the OS reload is complete, the SSH access may be disabled.
 
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.
 
 Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the **Rebuild Cluster** option (detailed below) to re-provision vSRX and recreate the HA cluster.
 {: important}
 
-* For the Rebuild Cluster option only, the host password(s) must match the password(s) in the vSRX portal. In addition, the host OS must enable root SSH prior to doing a rebuild cluster.
+* For the Rebuild Cluster option only, the host password(s) must match the password(s) in the vSRX portal. In addition, the host OS must enable root SSH access to the vSRX Private IP prior to doing a rebuild cluster.
 
 ## Performing an OS reload
 {: #performing-an-os-reload}
