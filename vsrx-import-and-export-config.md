@@ -30,7 +30,7 @@ After the upgrade process completes for Stand Alone servers, you should import t
 ## Considerations
 {: #considerations}
 
-* The upgrade process for Standalone and High Availability (HA) are different. Details can be found [here](/docs/infrastructure/vsrx?topic=vsrx-upgrading-the-vSRX).
+* The upgrade process for Standalone and High Availability (HA) are different. Details can be found [here](/docs/infrastructure/vsrx?topic=vsrx-upgrading-the-vsrx).
 * The J-web interface allows you to display, edit, and upload the current configuration quickly and easily without using the Junos OS CLI. Reference the [Juniper J-Web User Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/topics/concept/J-web-overview.html){:new_window} for more details.
 * An upgrade from the vSRX 15.x 10G to the vSRX 18.x 10G offering results in changes to the vSRX interface mappings in the configuration file. As a result, when importing your original vSRX settings, make sure that the new “interfaces” section is not modified. There are two ways of doing this. Either import sub-sections other than the “interfaces” section, or import the entire configuration and manually restore the 18.x SR-IOV interfaces.
 
