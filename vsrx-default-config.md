@@ -27,9 +27,9 @@ Juniper vSRX gateway devices in IBM Cloud come with following default configurat
 
 * SSH and Ping are permitted on both vSRX public and private gateway IP addresses
 * Juniper Web Management (J-Web) UI access is permitted on HTTPS port 8443 for both public and private gateway IP addresses
-* An address-set `SERVICE` is predefined for SoftLayer service networks
+* An address-set `SERVICE` is predefined for IBM service networks
 * Two security zones: `SL-PRIVATE` and `SL-PUBLIC` are predefined.
-* Access from the zone `SL-PRIVATE` to all services is provided by SoftLayer and address-set `SERVICE` is permitted
+* Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
 * All other network accesses are denied
 
 ## Default configuration of a sample standalone of latest SR-IOV vSRX gateway
