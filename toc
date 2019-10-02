@@ -11,9 +11,15 @@ IBM Cloud Juniper vSRX
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    access-gateway-appliances.md
-    access-gateway-details.md
+    /gateway-appliance/gateway-appliance-viewing-all-gateway-appliances
+    /gateway-appliance/gateway-appliance-viewing-gateway-appliance-details
+    /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
     vsrx-basics.md
+
+    {: .topicgroup}
+    Work with VLANs
+        /gateway-appliance/gateway-appliance-managing-vlans-and-gateway-appliances
+
     vsrx-default-config.md
     vsrx-import-and-export-config.md
 
@@ -24,7 +30,6 @@ IBM Cloud Juniper vSRX
         ssh-create-flows.md
         ssh-check-output.md
 
-    manage-vlans.md
     firewalls.md
     nat.md
     failover.md
@@ -42,5 +47,5 @@ IBM Cloud Juniper vSRX
     {: .navgroup id="help"}
     known-limitations.md
     vsrx-docs.md
-    getting-help.md
+    /gateway-appliance/gateway-appliance-getting-help
     {: .navgroup-end}

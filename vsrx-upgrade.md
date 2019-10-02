@@ -97,7 +97,7 @@ For a Standalone environment, your previous configuration is not restored, so an
 
 To do a vSRX upgrade, perform the following procedure:
 
-1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the IBM Cloud console. On the device’s page, click **Upgrade Version** in the Actions drop down menu.
+1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=gateway-appliance-viewing-all-gateway-appliances) in the IBM Cloud console. On the device’s page, click **Upgrade Version** in the Actions drop down menu.
 
   ![Upgrade Version Button](images/upgrade_version_button.png)
 
