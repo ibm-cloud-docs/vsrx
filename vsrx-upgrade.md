@@ -28,7 +28,7 @@ The process to upgrade High Availability (HA) vSRX configurations require two st
 1. Running the `Upgrade Version` action against the vSRX Gateway, which upgrades the Junos OS on the vSRX.
 2. Running the `OS Reload` action against each bare-metal host, one at a time, which upgrades the Ubuntu OS.
 
-The upgrade process usually requires several hours to complete, depending on whether it's a Standalone or High Availability gateway appliance. For Standalone Gateways, the vSRX will be out of service during the upgrade process. For HA Gateways, when doing the upgrade, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the upgrade is complete, the server will rejoin the cluster.  
+Each of these upgrade steps requires several hours to complete. For Standalone Gateways, the vSRX will be out of service during the upgrade process. For HA Gateways, when doing the upgrade, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the upgrade is complete, the server will rejoin the cluster.  
 
 ## Considerations
 {: #considerations}
@@ -38,7 +38,7 @@ The upgrade process usually requires several hours to complete, depending on whe
 For a Standalone environment, the previous configuration is not restored, so you should export and import your configuration. Refer to [Importing and exporting the vSRX configuration](/docs/infrastructure/vsrx?topic=vsrx-importing-exporting-vsrx-configuration) for more information.
 {: important}
 
-* The HA upgrade requires two steps: a vSRX upgrade and then the OS reload. It is strongly recommended you confirm that the vSRX configuration is correct at each step.
+* The HA upgrade requires two steps: a vSRX upgrade and then the OS reload of each bare-metal host. It is strongly recommended you confirm that the vSRX configuration is correct at each step.
 
 * When requesting OS reload, make sure to change the default OS and select the newest version.
 
@@ -113,3 +113,13 @@ To do a vSRX upgrade, perform the following procedure:
   {: important}
 
 4. Perform an OS reload on one node at a time to update the Host OS. The procedure can be found [here](/docs/infrastructure/vsrx?topic=vsrx-reloading-the-os). Ensure that you **change the default OS** and select the newest one. Note, the host OS password will change after the OS reload completes.
+
+  For 10G (SR-IOV) upgrades only: When the first OS reload completes, that node becomes the primary node. High Availability will not be enabled until the second node is OS reloaded to enable SR-IOV. Therefore, it is strongly recommended that you execute the OS reload of the second node quickly.
+  {: important}
+
+## Post-Upgrade considerations
+{: #post-upgrade-considerations}
+
+* The HA upgrade process requires the vSRX Chassis Cluster preemption flag for Redundancy Group 1 (RG1) to be disabled. Therefore, after the upgrade (Step 1) has completed the flag will always be disabled. Run  ```show chassis cluster status``` to view the ```Preempt``` setting. The OS Reload's (Step 2) also require this flag to be disabled. After the final OS Reload has completed the preemption setting on RG1 can optionally be re-enabled if desired.
+
+
