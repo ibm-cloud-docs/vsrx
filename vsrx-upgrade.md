@@ -40,10 +40,6 @@ For a Standalone environment, the previous configuration is not restored, so you
 
 * The HA upgrade requires two steps: a vSRX upgrade and then the OS reload of each bare-metal host. It is strongly recommended you confirm that the vSRX configuration is correct at each step.
 
-* When requesting OS reload, make sure to change the default OS and select the newest version.
-
-![Change Default OS](images/change_default_os.png)
-
 * For a successful reload on an HA vSRX, the root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal, and root SSH login to the vSRX Private IP needs to be enabled.
 
   The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match.
@@ -112,7 +108,12 @@ To do a vSRX upgrade, perform the following procedure:
   The **Rollback Version** action is available in the drop down menu, and can revert the vSRX to the previous version and configuration. Once the OS reload process begins in step 4, the Rollback Version action will no longer be available.
   {: important}
 
-4. Perform an OS reload on one node at a time to update the Host OS. The procedure can be found [here](/docs/infrastructure/vsrx?topic=vsrx-reloading-the-os). Ensure that you **change the default OS** and select the newest one. Note, the host OS password will change after the OS reload completes.
+4. Perform an OS reload on one node at a time to update the Host OS. The procedure can be found [here](/docs/infrastructure/vsrx?topic=vsrx-reloading-the-os). Ensure that you **change the default OS** and select the newest one. 
+
+  ![Change Default OS](images/change_default_os.png)
+
+  The host OS password will change after the OS reload completes.
+  {: note}
 
   For 10G (SR-IOV) upgrades only: When the first OS reload completes, that node becomes the primary node. High Availability will not be enabled until the second node is OS reloaded to enable SR-IOV. Therefore, it is strongly recommended that you execute the OS reload of the second node quickly.
   {: important}
