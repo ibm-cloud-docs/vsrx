@@ -62,7 +62,7 @@ To reload your OS, perform the following procedure:
 4. Click on the server you want to reload.
 5. Click the server name in the Hardware section.
 4. Select **OS Reload** from the **Actions** dropdown menu on the top right of the page.
-5. In the OS Reload screen, click **Edit** for the Category that requires an update. Select **AT&T** as the Vendor, and the OS version you wish to reload.
+5. In the OS Reload screen, click **Edit** for the Category that requires an update. Select **Juniper** as the Vendor, and the OS version you wish to reload.
 6. Click the **Reload Above Configuration** button to proceed to the **Review** pop-up. Click **Cancel** to cancel the changes to the device and exit the screen.
 7. Verify that all details in the New Configuration section are correct. Click **Next** to advance to the Confirm pop-up.
 8. Click the **Confirm OS Reload** button to confirm and initiate the OS Reload. Click **Cancel** to cancel the action.
