@@ -63,7 +63,7 @@ Current limitations for {{site.data.keyword.cloud}} {{site.data.keyword.vsrx_ful
       date-based, 2018-10-18 00:00:00 UTC - 2021-10-18 00:00:00 UTC
   ```
 
-  4. Copy the identifier of the license that you want to delete and run the command:
+  Copy the identifier of the license that you want to delete and run the command:
 
   ```
   request system license delete <license identifier>
