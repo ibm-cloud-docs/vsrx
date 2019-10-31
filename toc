@@ -14,7 +14,6 @@ IBM Cloud Juniper vSRX
     /gateway-appliance/gateway-appliance-viewing-all-gateway-appliances
     /gateway-appliance/gateway-appliance-viewing-gateway-appliance-details
     /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
-    /gateway-appliance/gateway-appliance-cancel-gateway-appliance
     vsrx-basics.md
 
     {: .topicgroup}
@@ -37,6 +36,7 @@ IBM Cloud Juniper vSRX
     routing.md
     vpn.md
     os-reload.md
+    rebuild-cluster.md
     vsrx-upgrade.md
     {: .navgroup-end}
 

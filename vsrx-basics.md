@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2018-10-31"
 
 keywords: basics, performing, accessing, ssh, device, gateway, configuration, mode, juniper, ui, dns, htp, password
 
@@ -107,3 +107,28 @@ set system root-authentication plain-text-password
 ```
 
 This prompts you to input a new password, which is encrypted and stored in the configuration, and is not visible.
+
+## Viewing and changing vSRX licenses
+{: #vsrx-licenses}
+
+The vSRX has two available licenses:
+
+* The Standard license
+* The Content Security Bundle license.
+
+Detailed information on these licenses can be found in the Juniper documentation topic <JUNIPER TOPIC NAME>.
+{: note}
+
+The vSRX license can either be specified when the Gateway is first ordered or it can be changed after it is provisioned.
+
+To view your current license, perform the following procedure:
+
+1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+3. Choose **Network > Gateway Appliances**.
+4. Click the Gateway Appliance Name for the desired Network Gateway to access the Gateway Appliance Details screen.
+
+To change your current license, perform the steps above, then:
+
+1. Click **Edit License**.
+2. Select the desired license and click **Update**.
