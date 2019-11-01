@@ -66,16 +66,3 @@ To reload your OS, perform the following procedure:
 6. Click the **Reload Above Configuration** button to proceed to the **Review** pop-up. Click **Cancel** to cancel the changes to the device and exit the screen.
 7. Verify that all details in the New Configuration section are correct. Click **Next** to advance to the Confirm pop-up.
 8. Click the **Confirm OS Reload** button to confirm and initiate the OS Reload. Click **Cancel** to cancel the action.
-
-## Rebuilding an HA vSRX Cluster
-{: #rebuilding-an-ha-vsrx-cluster}
-
-To rebuild one of your HA vSRX clusters, perform the following procedure:
-
-1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
-2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
-3. Choose **Network > Gateway Appliances**.
-4. Click on the server you want to reload.
-5. Click the server name in the Hardware section.
-6. Click the **Actions** dropdown and select **Rebuild Cluster**.
-7. Carefully read the warning message. The operation to rebuild a cluster is destructive. If you wish to proceed, save your vSRX configuration before clicking **Rebuild** to start the process.
