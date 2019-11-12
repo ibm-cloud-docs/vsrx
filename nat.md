@@ -11,7 +11,7 @@ subcollection: vsrx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -25,7 +25,7 @@ subcollection: vsrx
 
 This topic provides a sample configuration for sNAT on a vSRX appliance. With this configuration, a private node routed behind the Gateway can communicate with the outside world.
 
-<img src="images/Sample-Topology-SNAT.png" alt="drawing" style="width: 500px;"/>
+![Sample topology](images/Sample-Topology-SNAT.png "Sample topology")
 
 ```
 from-zone CUSTOMER-PRIVATE to-zone SL-PUBLIC {

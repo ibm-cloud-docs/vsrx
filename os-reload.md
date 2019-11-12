@@ -11,7 +11,7 @@ subcollection: vsrx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -38,7 +38,7 @@ For a successful reload or rebuild of the cluster on an HA vSRX:
 
 * The root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal. The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match. Once the passwords match, you can proceed with the OS Reload or Rebuild Cluster operation.
 
-  <img src="images/gw-vsrx-password.png" alt="drawing" style="width: 700px;"/>
+  ![vSRX Password](images/gw-vsrx-password.png "vSRX Password")
 
 * The vSRX configuration must allow root SSH access to the vSRX Private IP, prior to the OS reload request. This is required to rejoin the cluster. Once the OS reload is complete, the SSH access may be disabled.
 

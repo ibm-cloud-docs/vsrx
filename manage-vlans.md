@@ -11,7 +11,7 @@ subcollection: vsrx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -111,7 +111,7 @@ Even though unit 0 is untagged, `JunOS` needs it to reference the VLAN ID that i
 Below is a sample configuration for vSRX which defines two private interfaces and one customer zone.
 With this sample configuration Private VLAN1 and Private VLAN2 can communicate with each other. Stand alone vSRX interfaces are defined as ge-0/0/0 (private) and ge-0/0/1 (public), and for High Availability instance, they are defined as reth2 (HA private) and reth3 (HA public).
 
-<img src="images/Sample-Topology-VLAN-to-VLAN.png" alt="drawing" style="width: 500px;"/>
+![Sample Topology](images/Sample-Topology-VLAN-to-VLAN.png "Sample Topology")
 
 ```
 # show interfaces

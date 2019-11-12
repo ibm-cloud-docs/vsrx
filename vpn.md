@@ -11,7 +11,7 @@ subcollection: vsrx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -25,7 +25,7 @@ subcollection: vsrx
 
 This topic details a sample configuration for a Route based VPN between two sites. In this sample configuration Server 1 (Site A) can communicate with Server 2 (Site B), and each site utilizes two phase IPSEC authentication.
 
-<img src="images/site-to-site-vpn.png" alt="drawing" style="width: 600px;"/>
+![Site to Site VPN](images/site-to-site-vpn.png "Site to Site VPN")
 
 ## Sample configuration for Site A (Dallas):
 {: #sample-configuration-for-site-a-dallas-}

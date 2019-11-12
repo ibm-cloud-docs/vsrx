@@ -11,7 +11,7 @@ subcollection: vsrx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -30,6 +30,6 @@ Perform the following procedure to access the Gateway Details screen.
 1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the IBM Cloud console.
 2. Click the Gateway Appliance Name for the desired Network Gateway to access the Gateway Appliance Details screen.
 
-  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
+  ![Gateway details](images/gw-sa-details.png "Gateway details")
 
 Interactions may be taken on multiple VLANs at any given time using the Bulk Actions feature.
