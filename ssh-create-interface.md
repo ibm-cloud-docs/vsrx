@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-14"
 
 keywords: create, creating, interface, zone, address, subnets, ssh
 
@@ -23,7 +23,8 @@ subcollection: vsrx
 # Creating the New Interface, Zone, and Address Book Subnet
 {: #creating-the-new-interface-zone-and-address-book-subnet}
 
-First, you'll need to create an interface unit for the VLAN and add the subnet's gateway address. You'll then be able to create a security zone associated with the new unit and an `address-book` entry for the subnet.  
+First, you'll need to create an interface unit for the VLAN and add the subnet's gateway address. You'll then be able to create a security zone associated with the new unit and an `address-book` entry for the subnet.
+{: shortdesc}
 
 Scroll to the right to view the entire command!
 {: important}

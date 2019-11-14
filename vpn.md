@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-06"
+lastupdated: "2019-11-14"
 
 keywords: working, vpn, sample, configuration
 
@@ -24,6 +24,7 @@ subcollection: vsrx
 {: #working-with-vpn}
 
 This topic details a sample configuration for a Route based VPN between two sites. In this sample configuration Server 1 (Site A) can communicate with Server 2 (Site B), and each site utilizes two phase IPSEC authentication.
+{: shortdesc}
 
 ![Site to Site VPN](images/site-to-site-vpn.png "Site to Site VPN")
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-14"
 
 keywords: supplemental, docs, documentation, juniper
 
@@ -23,7 +23,8 @@ subcollection: vsrx
 # Supplemental vSRX documentation
 {: #supplemental-ibm-cloud-juniper-vsrx-documentation}
 
-The following table provides links to supplemental documentation for {{site.data.keyword.vsrx_full}} Standard.
+There is a variety of supplemental documentation for {{site.data.keyword.vsrx_full}}, available here.
+{: shortdesc}
 
 vSRX Documentation  | Description
 ------------- | -------------  

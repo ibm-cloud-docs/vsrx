@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2019-05-03"
+lastupdated: "2019-11-13"
 
 keywords: vsrx, ordering, gateway, appliance
 
@@ -24,6 +24,7 @@ subcollection: vsrx
 {: #getting-started}
 
 To get started with the {{site.data.keyword.vsrx_full}} Gateway, you'll first need to determine whether your account is linked to IBM Cloud.
+{: shortdesc}
 
 To find out whether you have a linked account, navigate to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} in your browser and log in. If your account is linked, you will not see a **Learn more about Bluemix!** button at the top right.
 

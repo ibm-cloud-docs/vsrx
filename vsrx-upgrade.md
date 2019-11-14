@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-9-16"
+lastupdated: "2019-11-14"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -22,6 +22,9 @@ subcollection: vsrx
 
 # Upgrading the vSRX
 {: #upgrading-the-vsrx}
+
+There are a variety of methods and considerations for upgrading your {{site.data.keyword.vsrx_full}}.
+{: shortdesc}
 
 The process to upgrade High Availability (HA) vSRX configurations require two steps:
 
@@ -108,7 +111,7 @@ To do a vSRX upgrade, perform the following procedure:
   The **Rollback Version** action is available in the drop down menu, and can revert the vSRX to the previous version and configuration. Once the OS reload process begins in step 4, the Rollback Version action will no longer be available.
   {: important}
 
-4. Perform an OS reload on one node at a time to update the Host OS. The procedure can be found [here](/docs/infrastructure/vsrx?topic=vsrx-reloading-the-os). Ensure that you **change the default OS** and select the newest one. 
+4. Perform an OS reload on one node at a time to update the Host OS. The procedure can be found [here](/docs/infrastructure/vsrx?topic=vsrx-reloading-the-os). Ensure that you **change the default OS** and select the newest one.
 
   ![Change Default OS](images/change_default_os.png)
 
@@ -122,5 +125,3 @@ To do a vSRX upgrade, perform the following procedure:
 {: #post-upgrade-considerations}
 
 * The HA upgrade process requires the vSRX Chassis Cluster preemption flag for Redundancy Group 1 (RG1) to be disabled. Therefore, after the upgrade (Step 1) has completed the flag will always be disabled. Run  ```show chassis cluster status``` to view the ```Preempt``` setting. The OS Reload's (Step 2) also require this flag to be disabled. After the final OS Reload has completed the preemption setting on RG1 can optionally be re-enabled if desired.
-
-

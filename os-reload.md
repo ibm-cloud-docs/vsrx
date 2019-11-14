@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2019-09-16"
+lastupdated: "2019-11-13"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -23,7 +23,10 @@ subcollection: vsrx
 # Reloading the OS
 {: #reloading-the-os}
 
-The OS reload process is used to rebuild a gateway server. The process performs the following actions:
+The OS reload process is used to rebuild a {{site.data.keyword.vsrx_full}} server.
+{: shortdesc}
+
+The process performs the following actions:
 
 * Reload the server host's operating system (OS). This will generate a new host OS password.
 * Install KVM in the operating system

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2019-10-31"
+lastupdated: "2019-11-14"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -20,8 +20,11 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Rebuilding an HA vSRX Cluster
+# Rebuilding an High Availability (HA) vSRX Cluster
 {: #rebuilding-an-ha-cluster}
+
+You can rebuild a High Availability (HA) {{site.data.keyword.vsrx_full}} cluster using the information here.
+{: shortdesc}
 
 Rebuilding an HA vSRX cluster is a very destructive procedure, and should be used only in a few specific scenarios. Consult your IBM Support representative before beginning this procedure.
 {: important}

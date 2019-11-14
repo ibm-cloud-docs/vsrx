@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-14"
 
 keywords: manage, managing, vlan, gateway, route, bypass, disassociate, associate, configuration, disassociating, associating, standalone, ha
 
@@ -23,7 +23,8 @@ subcollection: vsrx
 # Managing IBM VLANs
 {: #managing-ibm-vlans}
 
-You can perform a variety of actions from the [Gateway Appliance Details screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details).
+You can perform a variety of actions from the [Gateway Appliance Details screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) for your {{site.data.keyword.vsrx_full}}.
+{: shortdesc}
 
 ## Associate a VLAN to a Gateway Appliance
 {: #associate-a-vlan-to-a-gateway-appliance}

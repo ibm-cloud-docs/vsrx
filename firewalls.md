@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-13"
 
 keywords:
 
@@ -24,6 +24,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 {: #working-with-firewalls}
 
 The {{site.data.keyword.vsrx_full}} uses the concept of security zones, where each vSRX interface is mapped to a "zone" for handling stateful firewalls. Stateless firewalls are controlled by firewall filters.
+{: shortdesc}
 
 Policies are used to allow and block traffic between these defined zones, and the rules defined here are stateful.
 

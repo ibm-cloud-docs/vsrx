@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-6-26"
+lastupdated: "2019-11-14"
 
 keywords: understanding, default, configuration, standalone, ha
 
@@ -23,7 +23,8 @@ subcollection: vsrx
 # Importing and and exporting a vSRX Configuration
 {: #importing-exporting-vsrx-configuration}
 
-The vSRX upgrade process preserves the original configuration of the vSRX throughout the entire process, as long as the required reloads are done one at a time. However, it is still strongly recommended to export and backup your vSRX configuration settings before starting the upgrade.
+The {{site.data.keyword.vsrx_full}} upgrade process preserves the original configuration of the vSRX throughout the entire process, as long as the required reloads are done one at a time. However, it is still strongly recommended to export and backup your vSRX configuration settings before starting the upgrade.
+{: shortdesc}
 
 After the upgrade process completes for Stand Alone servers, you should import the original configuration you have saved if you want to restore it. For High Availability configurations, you should restore the configuration manually from your exported file only if the upgrade fails.
 
@@ -48,7 +49,7 @@ To export the entire vSRX configuration:
 
   ```
   Wrote 273 lines of configuration to '/var/tmp/SA15DefaultConfig.txt'  
-  
+
   [edit]
   ```
 
@@ -61,10 +62,10 @@ To export only part of the vSRX configuration:
 
 1. Ensure that you are at the top of the configuration tree by running `top` under the configuration mode.
 
-2. Then run the command `show <section>` to get the current configuration, enclosed in braces. 
+2. Then run the command `show <section>` to get the current configuration, enclosed in braces.
 
-  For example, you can run `show interfaces` to show all the interfaces configuration. Or, if you prefer to display the output in set mode, run the command `show <section> | display set`. 
-  
+  For example, you can run `show interfaces` to show all the interfaces configuration. Or, if you prefer to display the output in set mode, run the command `show <section> | display set`.
+
   The output should be similar to the following:
   ```
   # show interfaces | display set
@@ -73,7 +74,7 @@ To export only part of the vSRX configuration:
   set interfaces ge-0/0/0 native-vlan-id 925
   set interfaces ge-0/0/0 mtu 9000
   ...
-  
+
   [edit]
   ```
 3. Copy and save the output into your local workspace for later use.
@@ -99,10 +100,10 @@ To import only part of the vSRX configuration:
 
 1. From the configuration mode, run `edit <section>` to go to the configuration tree level that you want.
 2. Copy the configuration settings you have saved and run the command `load merge terminal relative` to merge the configuration with the current one.
-3. Paste the content, hit Enter to go to a new line, then type Control + D to end the input. 
+3. Paste the content, hit Enter to go to a new line, then type Control + D to end the input.
 
   The output should be similar to the following:
-  
+
   ```
   # load merge terminal relative
   [Type ^D at a new line to end input]
@@ -112,14 +113,14 @@ To import only part of the vSRX configuration:
               }
           }
   load complete
-  
+
   [edit interfaces lo0 unit 0]
   ```
 
 Alternatively, you can also:
 
 * Replace the configuration instead of merging it, by deleting the configuration first with the command `delete` under this configuration tree level and then performing a `load merge terminal relative` to copy and paste your previous configuration. 
-* Edit the configuration in set mode, by running `load set terminal` instead of `load merge terminal relative`. Then copy and paste the content you saved in set mode. 
+* Edit the configuration in set mode, by running `load set terminal` instead of `load merge terminal relative`. Then copy and paste the content you saved in set mode.
 
   Ensure that you always run `load set terminal` at the top.
   {: note}

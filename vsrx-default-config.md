@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-14"
 
 keywords: understanding, default, configuration, standalone, ha
 
@@ -23,14 +23,15 @@ subcollection: vsrx
 # Understanding the vSRX Default Configuration
 {: #understanding-the-vsrx-default-configuration}
 
-Juniper vSRX gateway devices in IBM Cloud come with following default configuration:
+{{site.data.keyword.vsrx_full}} devices come with following default configuration:
+{: shortdesc}
 
-* SSH and Ping are permitted on both vSRX public and private gateway IP addresses
-* Juniper Web Management (J-Web) UI access is permitted on HTTPS port 8443 for both public and private gateway IP addresses
-* An address-set `SERVICE` is predefined for IBM service networks
-* Two security zones: `SL-PRIVATE` and `SL-PUBLIC` are predefined.
-* Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
-* All other network accesses are denied
+  * SSH and Ping are permitted on both vSRX public and private gateway IP addresses
+  * Juniper Web Management (J-Web) UI access is permitted on HTTPS port 8443 for both public and private gateway IP addresses
+  * An address-set `SERVICE` is predefined for IBM service networks
+  * Two security zones: `SL-PRIVATE` and `SL-PUBLIC` are predefined.
+  * Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
+  * All other network accesses are denied
 
 ## Default configuration of a sample standalone of latest SR-IOV vSRX gateway
 {: #default-configuration-of-a-sample-standalone-vsrx-gateway}

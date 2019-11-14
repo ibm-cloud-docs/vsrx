@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-14"
 
 keywords: nat, working, gateways, nodes
 
@@ -24,6 +24,7 @@ subcollection: vsrx
 {: #working-with-snat}
 
 This topic provides a sample configuration for sNAT on a vSRX appliance. With this configuration, a private node routed behind the Gateway can communicate with the outside world.
+{: shortdesc}
 
 ![Sample topology](images/Sample-Topology-SNAT.png "Sample topology")
 

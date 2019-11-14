@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-14"
 
 keywords: working, routing, static, default, creating, ospf, bgp
 
@@ -24,6 +24,7 @@ subcollection: vsrx
 {: #working-with-routing}
 
 The {{site.data.keyword.vsrx_full}} is based on `JunOS`, giving you access to the full Juniper routing stack.
+{: shortdesc}
 
 ##Static Routing
 {: #static-routing}

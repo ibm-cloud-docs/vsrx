@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-14"
 
 keywords: vsrx, patches, notes
 
@@ -22,6 +22,9 @@ subcollection: vsrx
 
 # IBM Cloud Juniper vSRX Release Notes
 {: #ibm-cloud-juniper-vsrx-release-notes}
+
+You can view a complete list of {{site.data.keyword.vsrx_full}} release notes here.
+{: shortdesc}
 
 For Juniper vSRX 18.4 release notes, please visit [this link ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/18.4/index.html){:new_window}.
 

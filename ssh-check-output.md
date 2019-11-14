@@ -24,6 +24,7 @@ subcollection: vsrx
 {: #confirming-the-output-and-commiting-the-changes}
 
 After the changes and additions you've made have been staged, run the following command to confirm what will be committed to the active configuration:
+{: shortdesc}
 
 ```
 show | compare

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-13"
 
 keywords: help, support, contact, troubleshooting
 
@@ -24,6 +24,7 @@ subcollection: vsrx
 {: #getting-help-and-support-for-ibm-cloud-juniper-vsrx}
 
 If you have problems or questions when using {{site.data.keyword.vsrx_full}} Standard, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
+{: shortdesc}
 
 When using the forums to ask a question, tag your question so that it is seen by the IBM Cloud development teams.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2019-11-13"
 
 keywords: working, failover, codes, failure, cli
 
@@ -23,10 +23,11 @@ subcollection: vsrx
 # Working with Failover
 {: #working-with-failover}
 
+You can initiate failover from your primary {{site.data.keyword.vsrx_full}} to a backup device, so that all control and data plane traffic is routed through the secondary gateway device after failover.
+{: shortdesc}
+
 This section is only applicable if your Juniper vSRX gateway devices are provisioned in High-Availability mode.
 {: note}
-
-This topic describes how to initiate failover from your primary gateway device to a backup device, so that all control and data plane traffic is routed through the secondary gateway device after failover.
 
 To do so, perform the following procedure:
 
@@ -66,8 +67,8 @@ To do so, perform the following procedure:
 	{primary:node0}
 	```
 
-	Ensure that, for both redundancy groups, the same node is set as `primary`. It is possible for different nodes to be set as the `primary` role in different redundancy groups. 
-	
+	Ensure that, for both redundancy groups, the same node is set as `primary`. It is possible for different nodes to be set as the `primary` role in different redundancy groups.
+
 	The vSRX, by default, sets `Preempt` to `yes` for Redundancy group 1, and `no` for Redundancy group 0. Refer to [this link ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){:new_window} to learn more about pre-emption and failover behavior.
 	{: note}
 

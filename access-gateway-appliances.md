@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-11"
+lastupdated: "2019-11-13"
 
 keywords: viewing, appliances, gateways
 
@@ -24,6 +24,7 @@ subcollection: vsrx
 {: #viewing-all-your-gateway-appliances}
 
 The Gateway Appliances screen in the {{site.data.keyword.cloud}} infrastructure is where you can display and access all Network Gateway Appliances, including the {{site.data.keyword.vsrx_full}}.  
+{: shortdesc}
 
 Perform the following procedure to access the Gateway Appliances screen.
 
