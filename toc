@@ -36,6 +36,7 @@ IBM Cloud Juniper vSRX
     failover.md
     routing.md
     vpn.md
+    securing-host.md
     os-reload.md
     rebuild-cluster.md
     vsrx-upgrade.md

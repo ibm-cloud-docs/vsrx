@@ -34,23 +34,23 @@ Implementing an Ubuntu firewall (UFW, Iptables, and so on) without required rule
 
 The following rules are used to allow cluster communication for UFW:
 
-- To allow protocol 47 (used for heartbeat communication) in /etc/ufw/before.rules:
+- To allow protocol 47 (used for heartbeat communication) in `/etc/ufw/before.rules`:
 
   ```
   -A ufw-before-input -p 47 -j ACCEPT
   ```
-
+  
 - To allow private network communication:
-
-```
-ufw allow in from 10.0.0.0/8 to 10.0.0.0/8
-```
+  
+  ```
+  ufw allow in from 10.0.0.0/8 to 10.0.0.0/8
+  ```
 
 - To enable UFW:
-
-```
-ufw enable
-```
+  
+  ```
+  ufw enable
+  ```
 
 Most Gateway actions require SSH access to the host OS and the {{site.data.keyword.vsrx}} to execute. Blocking this access with a firewall can cause the following actions to fail:
 
