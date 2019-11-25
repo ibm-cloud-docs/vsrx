@@ -26,6 +26,11 @@ subcollection: vsrx
 There are some limitations to be aware of when using {{site.data.keyword.vsrx_full}}.
 {: shortdesc}
 
+* Due to incompatible networking elements, the Juniper vSRX solution is not available as follows:
+
+      - Neither 1 Gbps or 10 Gbps versions in the SEA01 (Seattle, WA) Data Center 
+      - 10 Gbps version in WDC01 (Washington, DC)
+
 * Juniper vSRX Gateway is deployed with networking virtualization using Linux Bridge. Linux Bridge based networking virtualization can only achieve limited throughput and never line-rate throughput.
 
 * There is no support to upgrade from Standalone to High-availability mode.
