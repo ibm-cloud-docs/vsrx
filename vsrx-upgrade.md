@@ -100,7 +100,10 @@ To do a vSRX upgrade, perform the following procedure:
 
   ![Upgrade Version Button](images/upgrade_version_button.png)
 
-2. On the Upgrade Version page, you can select the newest version of the OS and start the vSRX Upgrade.
+2. On the Upgrade Version page, you can select the newest version of the OS and start the vSRX Upgrade. 
+
+  This can take three to four hours. However, there will be only a few disruptions of three to four seconds each.
+  {: note}
 
   ![Upgrade Version Page](images/upgrade_version_page.png)
 
