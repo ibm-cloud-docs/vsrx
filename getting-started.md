@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2019-11-13"
+lastupdated: "2019-12-09"
 
 keywords: vsrx, ordering, gateway, appliance
 
@@ -23,23 +23,16 @@ subcollection: vsrx
 # Getting Started with IBM Cloud Juniper vSRX
 {: #getting-started}
 
-To get started with the {{site.data.keyword.vsrx_full}} Gateway, you'll first need to determine whether your account is linked to IBM Cloud.
+{{site.data.keyword.vsrx_full}} allows you to route private and public network traffic selectively, through a full-featured, enterprise-level firewall that is powered by JunOS software features, such as full routing stacks, QoS and traffic sharing, policy-based routing, and VPN.
 {: shortdesc}
-
-To find out whether you have a linked account, navigate to the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} in your browser and log in. If your account is linked, you will not see a **Learn more about Bluemix!** button at the top right.
-
-## Steps for ordering
-{: #steps-for-ordering}
-
-You can order your Gateway Appliance, using one of these methods:
 
 For a list of Known Limitations with {{site.data.keyword.vsrx_full}} Gateway, refer to the [Known Limitations topic](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
 
-### Ordering with a linked account
+### Ordering a vSRX
 {: #ordering-with-a-linked-account}
 
-If your account is linked, follow this procedure:
+You can order your {{site.data.keyword.vsrx_full}} by performing the following procedure:
 
 1. From your browser, open the Gateway Appliances page in the [Cloud Catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/gen1/infrastructure/provision/gateway){: new_window} and log into your account.
 
@@ -86,33 +79,10 @@ After your order is approved, the provisioning of your {{site.data.keyword.vsrx_
 Remember that once you order and configure your gateway from the IBM Cloud Catalog, you must also configure the device itself with the same settings.
 {: tip}
 
-### Ordering with an unlinked account
-{: #ordering-with-a-unlinked-account}
-
-If your account is unlinked, follow this procedure:
-
-1.	Open the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
-2.	In the Customer Portal navigation, select **Network > Gateway Appliances**.
-3.	From the **Gateway Appliances** list, click **Order Gateway**.
-4.	From the **Order** page, select your desired data center from the dropdown menu, then choose the desired type of server hardware on which the Juniper vSRX will be provisioned.
-
-	If you plan to use a Dual Processor Multi-Core Server, you must select **Intel Xeon 5120** as the server type.
-  {: note}
-
-5.	On the **Order** page, select the **High Availability Pair** option if desired, then select the **Memory** size.
-6. 	Next, click the **Juniper** tab under **Operating System**, select **Juniper vSRX (up to 1 Gbps) Standard** for a single processor server, or **Juniper vSRX (up to 10 Gbps) Standard** for a dual processor server.
-7. 	Finally, select the desired network uplink speed.
-8.	Review your selections, then click **Add to Order**. Your order will be verified automatically.
-9.	On the **Checkout** page, if you already own VLANs in the selected data center, select the back-end VLANs that you want to protect. Be sure to:
-	* Give a hostname and domain name for your server.
-	* Select an SSH key for access authentication, if desired.
-	* Check all boxes for the IBM Cloud service terms and Third-party Software Terms.
-10. Click **Submit Order**.
-
 ## What's next?
 {: #what-s-next-}
 
-After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway will appear in the **Gateway Appliances** list.
+After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway will appear in the [Gateway Appliances](/docs/infrastructure/vsrx?topic=gateway-appliance-viewing-all-gateway-appliances) list.
 
 Click the gateway name to open the **Gateway Details** page. You'll find the IP addresses, login username, and passwords for the device.
 
