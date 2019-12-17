@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-31"
+lastupdated: "2019-12-10"
 
 keywords: basics, performing, accessing, ssh, device, gateway, configuration, mode, juniper, ui, dns, htp, password
 
@@ -11,7 +11,7 @@ subcollection: vsrx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -23,7 +23,8 @@ subcollection: vsrx
 # Performing vSRX Basics
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
-The {{site.data.keyword.vsrx_full}} gateway can be configured using a remote console session through SSH or by logging into the Juniper web management GUI.
+You can configure and maintain your {{site.data.keyword.vsrx_full}} in a variety of ways, either through a remote console session through SSH or by logging into the Juniper web management GUI.
+{: shortdesc}
 
 Configuring the vSRX outside of its shell and interface may produce unexpected results and is not recommended.
 {: note}
@@ -35,7 +36,7 @@ You can access the vSRX using SSH through a public IP address, or through a priv
 
 1. Go to Gateway Appliance Details screen and get the Public gateway IP or Private Gateway IP.
 
-  <img src="images/gw-sa-details.png" alt="drawing" style="width: 700px;"/>
+  ![Gateway details](images/gw-sa-details.png "Gateway details")
 
 2. Click the "eye" icon to reveal the admin user's password.
 
@@ -107,3 +108,34 @@ set system root-authentication plain-text-password
 ```
 
 This prompts you to input a new password, which is encrypted and stored in the configuration, and is not visible.
+
+## Viewing and changing vSRX licenses
+{: #vsrx-licenses}
+
+Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between the following license options. Full support for among all the various vSRX configurations, including 1G and High Availability, will be introduced soon.
+{: important}
+
+The vSRX has two available licenses:
+
+* Standard
+* Content Security Bundle (CSB)
+
+For information on the features offered with these licenses, refer to [Choosing a vSRX License](/docs/infrastructure/vsrx?topic=vsrx-getting-started#choosing-license.
+
+To view your current license, perform the following procedure:
+
+1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon  ![Menu icon](../../icons/icon_hamburger.svg)  from the top left, then click **Classic Infrastructure**.
+3. Choose **Network > Gateway Appliances**.
+4. Click the Gateway Appliance Name for the desired Network Gateway to access the Gateway Appliance Details screen.
+
+
+To change your current license, perform the steps above, then:
+
+1. Click the Pencil icon  ![Pencil icon](../../icons/edit-tagging.svg)  next to your current license to edit it.
+
+  ![Editing your license](images/license-edit.png "Editing your license")
+
+2. Select your new license type, then click **Save**.
+
+  ![Changing your license](images/license-edit-choice.png "Changing your license")

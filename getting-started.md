@@ -29,6 +29,27 @@ subcollection: vsrx
 For a list of Known Limitations with {{site.data.keyword.vsrx_full}} Gateway, refer to the [Known Limitations topic](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
 
+## Choosing a vSRX License
+{: #choosing-license}
+
+Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between the following license options. Full support for the various vSRX configurations, including 1G and High Availability, will be introduced soon.
+{: important}
+
+There are two license types available for your {{site.data.keyword.vsrx_full}}:
+
+* Standard
+* Content Security Bundle (CSB)
+
+Each license includes a different set of features and options, and the following table outlines the differences.
+
+| License Type  | Features |
+| ------------- | ------------- |
+| **Standard** | <ul><li>Core security: firewall, ALG, screens, user firewall</li><li>IPsec VPN (site-to-site VPN)</li><li>NAT</li><li>CoS</li><li>Routing services: BGP, OSPF, DHCP, J-Flow, IPv4</li><li>Foundation: Static routing, management (J-Web, CLI, and NETCONF), on-box logging, diagnostics</li></ul> |
+| **Content Security Bundle (CSB)** <br></br><br>Includes all Standard features, along with the additional features listed in the next column.</br> | <ul><li>AppSecure<ul><li>Application Tracking (AppTrack)</li><li>Application Firewall (AppFW)</li><li>Application Quality of Service (AppQoS)</li><li>Advanced policy-based routing (APBR)</li><li>Application Quality of Experience (AppQoE)</li></ul></li></ul><ul><li>User Firewall<li>IPS</li><li>UTM</li><ul><li>Anti Virus</li><li>Anti Spam</li><li>Web Filtering</li><li>Content Filtering</li></ul><br></br><li>SSL Proxy</li><ul><li>SSL Forward Proxy</li><li>SSL Reverse Proxy</li><li>SSL Decrypting Mirror</li></ul></li></ul> |
+
+You can specify your license type when ordering your vSRX, as well as change the license using the [Gateway Appliance Details](/docs/infrastructure/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics#vsrx-licenses) page.
+{: note}
+
 ### Ordering a vSRX
 {: #ordering-with-a-linked-account}
 
@@ -36,10 +57,16 @@ You can order your {{site.data.keyword.vsrx_full}} by performing the following p
 
 1. From your browser, open the Gateway Appliances page in the [Cloud Catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/gen1/infrastructure/provision/gateway){: new_window} and log into your account.
 
-  You can also get to this page by logging into the [IBM Cloud UI Console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com) and selecting **Classic Infrastructure > Network > Gateway appliance**.
-Alternatively, from the [IBM Cloud Catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog), select the **Network** category then choose the **Gateway Appliance** tile.
+  You can also get to this page by logging into the [IBM Cloud UI Console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com) and selecting **Classic Infrastructure > Network > Gateway appliance**. Alternatively, from the [IBM Cloud Catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog), select the **Network** category then choose the **Gateway Appliance** tile.
 
 2. Choose **Juniper vSRX (up to 1 Gbps)** or **Juniper vSRX (up to 10 Gbps)** under **Gateway Vendor**.
+
+3. Choose your license type from **License add-ons**, either Standard or CSB.
+  Refer to the previous section for information on the features offered with each license.
+  {: tip}
+
+  Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between license options. Full support among all the various vSRX configurations, including 1G and High Availability, will be introduced soon.
+  {: important}
 
 3. From the **Gateway appliance** section, enter your **Hostname** and **Domain** name information. These fields will already be populated with default information, so ensure the values are correct.
 
