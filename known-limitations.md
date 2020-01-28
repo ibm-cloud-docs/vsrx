@@ -30,6 +30,7 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
       - Neither 1 Gbps or 10 Gbps versions in the SEA01 (Seattle, WA) Data Center 
       - 10 Gbps version in WDC01 (Washington, DC)
+      - 1G and 10G High Availability versions in: AMS01, DAL05, DAL06, DAL07, HKG02, HOU02, SJC01, SNG01, and WDC01
 
 * Juniper vSRX Gateway is deployed with networking virtualization using Linux Bridge. Linux Bridge based networking virtualization can only achieve limited throughput and never line-rate throughput.
 
