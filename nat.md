@@ -19,9 +19,13 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 {:download: .download}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Working with sNAT
 {: #working-with-snat}
+{: help}
+{: support}
 
 This topic provides a sample configuration for sNAT on a vSRX appliance. With this configuration, a private node routed behind the Gateway can communicate with the outside world.
 {: shortdesc}

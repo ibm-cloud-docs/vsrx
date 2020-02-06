@@ -19,9 +19,13 @@ subcollection: vsrx
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Securing the Host Operating System
 {: #securing-host-operating-system}
+{: help}
+{: support}
 
 The {{site.data.keyword.vsrx_full}} runs as a Virtual Machine on a bare-metal server installed with Ubuntu and KVM. To secure the host OS, you should ensure that no other critical services are hosted on the same OS.
 {: shortdesc}
@@ -39,15 +43,15 @@ For {{site.data.keyword.vsrx}} version 18.4 and later, the following rules are u
   ```
   -A ufw-before-input -p 47 -j ACCEPT
   ```
-  
+
 - To allow private network communication:
-  
+
   ```
   ufw allow in from 10.0.0.0/8 to 10.0.0.0/8
   ```
 
 - To enable UFW:
-  
+
   ```
   ufw enable
   ```

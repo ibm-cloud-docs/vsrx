@@ -19,9 +19,13 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 {:download: .download}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Rebuilding an High Availability (HA) vSRX Cluster
 {: #rebuilding-an-ha-cluster}
+{: help}
+{: support}
 
 You can rebuild a High Availability (HA) {{site.data.keyword.vsrx_full}} cluster using the information here.
 {: shortdesc}

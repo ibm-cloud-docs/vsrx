@@ -19,9 +19,13 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 {:download: .download}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Reloading the OS
 {: #reloading-the-os}
+{: help}
+{: support}
 
 The OS reload process is used to rebuild a {{site.data.keyword.vsrx_full}} server.
 {: shortdesc}

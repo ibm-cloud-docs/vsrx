@@ -19,9 +19,13 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 {:download: .download}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Working with Failover
 {: #working-with-failover}
+{: help}
+{: support}
 
 You can initiate failover from your primary {{site.data.keyword.vsrx_full}} to a backup device, so that all control and data plane traffic is routed through the secondary gateway device after failover.
 {: shortdesc}
