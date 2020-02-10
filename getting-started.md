@@ -26,7 +26,7 @@ subcollection: vsrx
 {{site.data.keyword.vsrx_full}} allows you to route private and public network traffic selectively, through a full-featured, enterprise-level firewall that is powered by JunOS software features, such as full routing stacks, QoS and traffic sharing, policy-based routing, and VPN.
 {: shortdesc}
 
-For a list of Known Limitations with {{site.data.keyword.vsrx_full}} Gateway, refer to the [Known Limitations topic](/docs/infrastructure/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
+For a list of Known Limitations with {{site.data.keyword.vsrx_full}} Gateway, refer to the [Known Limitations topic](/docs/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
 
 ## Choosing a vSRX License
@@ -47,7 +47,7 @@ Each license includes a different set of features and options, and the following
 | **Standard** | <ul><li>Core security: firewall, ALG, screens, user firewall</li><li>IPsec VPN (site-to-site VPN)</li><li>NAT</li><li>CoS</li><li>Routing services: BGP, OSPF, DHCP, J-Flow, IPv4</li><li>Foundation: Static routing, management (J-Web, CLI, and NETCONF), on-box logging, diagnostics</li></ul> |
 | **Content Security Bundle (CSB)** <br></br><br>Includes all Standard features, along with the additional features listed in the next column.</br> | <ul><li>AppSecure<ul><li>Application Tracking (AppTrack)</li><li>Application Firewall (AppFW)</li><li>Application Quality of Service (AppQoS)</li><li>Advanced policy-based routing (APBR)</li><li>Application Quality of Experience (AppQoE)</li></ul></li></ul><ul><li>User Firewall<li>IPS</li><li>UTM</li><ul><li>Anti Virus</li><li>Anti Spam</li><li>Web Filtering</li><li>Content Filtering</li></ul><br></br><li>SSL Proxy</li><ul><li>SSL Forward Proxy</li><li>SSL Reverse Proxy</li><li>SSL Decrypting Mirror</li></ul></li></ul> |
 
-You can specify your license type when ordering your vSRX, as well as change the license using the [Gateway Appliance Details](/docs/infrastructure/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics#vsrx-licenses) page.
+You can specify your license type when ordering your vSRX, as well as change the license using the [Gateway Appliance Details](/docs/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics#vsrx-licenses) page.
 {: note}
 
 ### Ordering a vSRX
@@ -109,7 +109,7 @@ Remember that once you order and configure your gateway from the IBM Cloud Catal
 ## What's next?
 {: #what-s-next-}
 
-After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway will appear in the [Gateway Appliances](/docs/infrastructure/vsrx?topic=gateway-appliance-viewing-all-gateway-appliances) list.
+After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway will appear in the [Gateway Appliances](/docs/vsrx?topic=gateway-appliance-viewing-all-gateway-appliances) list.
 
 Click the gateway name to open the **Gateway Details** page. You'll find the IP addresses, login username, and passwords for the device.
 

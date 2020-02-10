@@ -28,7 +28,7 @@ The vSRX provides performance, ease of configuration, and maintenance advantages
 
 The {{site.data.keyword.vsrx_full}} is offered in two different modes: standalone mode or High Availability (HA) cluster.
 
-Additional documentation for {{site.data.keyword.vsrx_full}} can be found in the [Supplemental Documentation](/docs/infrastructure/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation) topic.
+Additional documentation for {{site.data.keyword.vsrx_full}} can be found in the [Supplemental Documentation](/docs/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation) topic.
 {: note}
 
 ## Firewall
@@ -41,7 +41,7 @@ The vSRX deploys to protect your environment from external and internal threats 
 
 Connect your on-site data center or office to the IBM Cloud using VPN tunneling by provisioning your vSRX as a network gateway device. You can use an IPsec site-to-site VPN tunnel for secure communication from your enterprise data center or office to your IBM Cloud network. Remote access IPsec VPN also is supported.
 
-For a detailed configuration guide on VPN, please refer to the links provided in the topic [VPN](/docs/infrastructure/vsrx?topic=vsrx-working-with-vpn#working-with-vpn).
+For a detailed configuration guide on VPN, please refer to the links provided in the topic [VPN](/docs/vsrx?topic=vsrx-working-with-vpn#working-with-vpn).
 
 ## Network address translation (NAT)
 {: #network-address-translation-nat-}
@@ -51,7 +51,7 @@ With the vSRX gateway appliance, you can provision application and database serv
 ## Enterprise-grade routing
 {: #enterprise-grade-routing}
 
-The vSRX empowers you with greater flexibility to build connectivity between multi-tiered applications running on different isolated networks. You can set up dynamic routing using BGP, which allows you to announce your own public IP space to the IBM Cloud routers. BGP also offers more flexibility for custom private network configurations, when you're using a mix of tunnels and [Direct Link solutions](/docs/infrastructure/direct-link?topic=direct-link-overview-of-direct-link-offerings#overview-of-direct-link-offerings).
+The vSRX empowers you with greater flexibility to build connectivity between multi-tiered applications running on different isolated networks. You can set up dynamic routing using BGP, which allows you to announce your own public IP space to the IBM Cloud routers. BGP also offers more flexibility for custom private network configurations, when you're using a mix of tunnels and [Direct Link solutions](/docs/direct-link?topic=direct-link-overview-of-direct-link-offerings#overview-of-direct-link-offerings).
 
 ## Concepts about VLANs and the gateway appliance's role
 {: #concepts-about-vlans-and-the-gateway-appliance-s-role}
@@ -64,4 +64,4 @@ By default, a new Gateway Appliance is associated with two non-removable "transi
 
 The vSRX can manage VLANs that are associated with it through the Gateway Appliance (only).
 
-For information on how to manage VLANs from the **Gateway Appliances Details** screen, refer to the [Manage VLANs](/docs/infrastructure/vsrx?topic=gateway-appliance-managing-vlans-and-gateway-appliances) topic.
+For information on how to manage VLANs from the **Gateway Appliances Details** screen, refer to the [Manage VLANs](/docs/vsrx?topic=gateway-appliance-managing-vlans-and-gateway-appliances) topic.

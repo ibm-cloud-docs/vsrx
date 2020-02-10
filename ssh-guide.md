@@ -43,6 +43,6 @@ In this Step-by-Step guide you will learn how to configure the service:
 
 Task  | Description
 ------------- | -------------
-[Create a new interface, zone, and address-book subnet](/docs/infrastructure/vsrx?topic=vsrx-creating-the-new-interface-zone-and-address-book-subnet) | Create the tagged interface unit and security zone for the new VLAN.
-[Creating your new traffic flows](/docs/infrastructure/vsrx?topic=vsrx-creating-your-new-traffic-flows) | Create the new traffic flows to allow inbound pinging and SSH.
-[Confirm the output and commit the changes](/docs/infrastructure/vsrx?topic=vsrx-confirming-the-output-and-commiting-the-changes) | Check the output to confirm what will be committed to the active configuration.
+[Create a new interface, zone, and address-book subnet](/docs/vsrx?topic=vsrx-creating-the-new-interface-zone-and-address-book-subnet) | Create the tagged interface unit and security zone for the new VLAN.
+[Creating your new traffic flows](/docs/vsrx?topic=vsrx-creating-your-new-traffic-flows) | Create the new traffic flows to allow inbound pinging and SSH.
+[Confirm the output and commit the changes](/docs/vsrx?topic=vsrx-confirming-the-output-and-commiting-the-changes) | Check the output to confirm what will be committed to the active configuration.

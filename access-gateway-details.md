@@ -28,7 +28,7 @@ subcollection: vsrx
 
 Perform the following procedure to access the Gateway Details screen.
 
-1. [Access the Gateway Appliances screen](/docs/infrastructure/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the IBM Cloud console.
+1. [Access the Gateway Appliances screen](/docs/vsrx?topic=vsrx-viewing-all-your-gateway-appliances) in the IBM Cloud console.
 2. Click the Gateway Appliance Name for the desired Network Gateway to access the Gateway Appliance Details screen.
 
   ![Gateway details](images/gw-sa-details.png "Gateway details")
