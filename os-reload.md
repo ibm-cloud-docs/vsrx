@@ -73,3 +73,11 @@ To reload your OS, perform the following procedure:
 6. Click the **Reload Above Configuration** button to proceed to the **Review** pop-up. Click **Cancel** to cancel the changes to the device and exit the screen.
 7. Verify that all details in the New Configuration section are correct. Click **Next** to advance to the Confirm pop-up.
 8. Click the **Confirm OS Reload** button to confirm and initiate the OS Reload. Click **Cancel** to cancel the action.
+
+## vSRX version mismatches
+{: #vsrx-version-mismatches}
+
+A {{site.data.keyword.vsrx_full}} cluster must have the same vSRX version on each node in order to fully support the High Availability feature. If a cluster has mismatched vSRX versions, then you must reload the OS of the node with the older version (using the procedure in this topic) so that both nodes are at the same version level. 
+
+A version mismatch applies to both minor release mismatches and major release mismatches. 
+{: note}
