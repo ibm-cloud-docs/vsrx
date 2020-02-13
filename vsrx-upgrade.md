@@ -100,7 +100,7 @@ To do a vSRX upgrade, perform the following procedure:
 
   ![Upgrade Version Button](images/upgrade_version_button.png)
 
-2. On the Upgrade Version page, you can select the newest version of the OS and start the vSRX Upgrade. 
+2. On the Upgrade Version page, you can select the newest version of the OS and start the vSRX Upgrade.
 
   This can take three to four hours. However, there will be only a few disruptions of three to four seconds each.
   {: note}
@@ -127,4 +127,4 @@ To do a vSRX upgrade, perform the following procedure:
 ## Post-Upgrade considerations
 {: #post-upgrade-considerations}
 
-* The HA upgrade process requires the vSRX Chassis Cluster preemption flag for Redundancy Group 1 (RG1) to be disabled. Therefore, after the upgrade (Step 1) has completed the flag will always be disabled. Run  ```show chassis cluster status``` to view the ```Preempt``` setting. The OS Reload's (Step 2) also require this flag to be disabled. After the final OS Reload has completed the preemption setting on RG1 can optionally be re-enabled if desired.
+* The HA upgrade process requires the vSRX Chassis Cluster preemption flag for Redundancy Group 1 (RG1) to be disabled. Therefore, after the upgrade (Step 1) has completed the flag will always be disabled. Run  `show chassis cluster status` to view the `Preempt` setting. The OS Reload's (Step 2) also require this flag to be disabled. After the final OS Reload has completed the preemption setting on RG1 can optionally be re-enabled if desired.
