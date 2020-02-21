@@ -53,7 +53,7 @@ Performing an OS reload on both servers of the High Availability gateway at the 
 
 * The vSRX configuration should not be modified during the execution of the Upgrade or OS Reload operations. Examples include automated software agents attempting to modify one or both vSRX nodes. Configurations changes can corrupt the Upgrade and OS Reload operations.
 
-* Before performing an upgrade, run the command `show chassis cluster status`. The nodes should be clustered with one node listed as the primary and the other node as the secondary. Ensure that a single node is configured as primary (with higher priority) for both redundancy groups, and that that node at run time is serving as the primary for both RGs.
+* Before performing an upgrade, run the command `show chassis cluster status`. The nodes should be clustered with one node listed as the primary and the other node as the secondary. Ensure that a single node is configured as primary (with higher priority) for both redundancy groups (RG), and that that node at run time is serving as the primary for both RGs.
 
   If the RGs primary is not on the same node, run the command:
 

@@ -26,9 +26,11 @@ subcollection: vsrx
 There are some limitations to be aware of when using {{site.data.keyword.vsrx_full}}.
 {: shortdesc}
 
+* IBM Cloud has temporarily suspended new sales of 1G Highly Available (HA) Juniper installations. This restriction is due to a pending design change that is required to improve HA stability. The offering is projected to become available in again in Q2 2020.
+
 * Due to incompatible networking elements, the Juniper vSRX solution is not available as follows:
 
-      - Neither 1 Gbps or 10 Gbps versions in the SEA01 (Seattle, WA) Data Center 
+      - Neither 1 Gbps or 10 Gbps versions in the SEA01 (Seattle, WA) Data Center
       - 10 Gbps version in WDC01 (Washington, DC)
       - 1G and 10G High Availability versions in: AMS01, DAL05, DAL06, DAL07, HKG02, HOU02, SJC01, SNG01, and WDC01
 
