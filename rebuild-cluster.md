@@ -22,7 +22,7 @@ subcollection: vsrx
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Rebuilding an High Availability (HA) vSRX Cluster
+# Rebuilding a High Availability (HA) vSRX cluster
 {: #rebuilding-an-ha-cluster}
 {: help}
 {: support}

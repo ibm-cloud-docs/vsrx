@@ -20,7 +20,7 @@ subcollection: vsrx
 {:important: .important}
 {:tip: .tip}
 
-# Confirming the Output and Committing the Changes
+# Confirming the output and committing the changes
 {: #confirming-the-output-and-commiting-the-changes}
 
 After the changes and additions you've made have been staged, run the following command to confirm what will be committed to the active configuration:

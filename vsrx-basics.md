@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Performing vSRX Basics
+# Performing vSRX basics
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
 You can configure and maintain your {{site.data.keyword.vsrx_full}} in a variety of ways, either through a remote console session through SSH or by logging into the Juniper web management GUI.
@@ -29,7 +29,7 @@ You can configure and maintain your {{site.data.keyword.vsrx_full}} in a variety
 Configuring the vSRX outside of its shell and interface may produce unexpected results and is not recommended.
 {: note}
 
-## Accessing the Device Using SSH
+## Accessing the device using SSH
 {: #accessing-the-device-using-ssh}
 
 You can access the vSRX using SSH through a public IP address, or through a private IP address if you're on IBM Cloud VPN:
@@ -45,7 +45,7 @@ You can access the vSRX using SSH through a public IP address, or through a priv
 If you do not see the "eye" icon, you may not have permission to view the password. Please check your access permissions with the account owner.
 {: note}
 
-## Accessing the Configuration Mode
+## Accessing the configuration mode
 {: accessing-the-configuration-mode}
 
 You can enter the configuration mode, once a shell has been opened to the vSRX, by running the `config` command. You can do several things in this mode using the following commands:
@@ -59,7 +59,7 @@ If you are happy with your changes, you can commit them to the active configurat
 
 To leave Configuration mode run the command `exit`.
 
-## Accessing the Device using the Juniper Web Management UI
+## Accessing the Device using the Juniper web management UI
 {: #accessing-the-device-using-the-juniper-web-management-ui}
 
 The Juniper web management GUI has been configured by default, with vSRX generated self-signed certificate. Only https is enabled on port 8443. You can access it at `https://gateway-ip:8443`.

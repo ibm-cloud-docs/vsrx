@@ -20,13 +20,13 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Working with Routing
+# Working with routing
 {: #working-with-routing}
 
 The {{site.data.keyword.vsrx_full}} is based on `JunOS`, giving you access to the full Juniper routing stack.
 {: shortdesc}
 
-##Static Routing
+##Static routing
 {: #static-routing}
 
 To configure static routes, run the following commands:

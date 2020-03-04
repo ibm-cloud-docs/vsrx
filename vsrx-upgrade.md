@@ -83,7 +83,7 @@ The upgrade process varies depending upon the vSRX Gateway Appliance configurati
 
 For available Juniper vSRX versions and version specific upgrade considerations, please refer to [this topic](/docs/vsrx?topic=vsrx-ibm-cloud-juniper-vsrx-release-notes).
 
-## Performing a vSRX upgrade (Standalone)
+## Performing a vSRX upgrade (standalone)
 {: #performing-a-vsrx-upgrade-sa}
 
 To perform a vSRX upgrade, [reload the OS](/docs/vsrx?topic=vsrx-reloading-the-os). Ensure you **change the default OS** and select the newest version from the list.
@@ -124,7 +124,7 @@ To do a vSRX upgrade, perform the following procedure:
   For 10G (SR-IOV) upgrades only: When the first OS reload completes, that node becomes the primary node. High Availability will not be enabled until the second node is OS reloaded to enable SR-IOV. Therefore, it is strongly recommended that you execute the OS reload of the second node quickly.
   {: important}
 
-## Post-Upgrade considerations
+## Post-upgrade considerations
 {: #post-upgrade-considerations}
 
 * The HA upgrade process requires the vSRX Chassis Cluster preemption flag for Redundancy Group 1 (RG1) to be disabled. Therefore, after the upgrade (Step 1) has completed the flag will always be disabled. Run  `show chassis cluster status` to view the `Preempt` setting. The OS Reload's (Step 2) also require this flag to be disabled. After the final OS Reload has completed the preemption setting on RG1 can optionally be re-enabled if desired.

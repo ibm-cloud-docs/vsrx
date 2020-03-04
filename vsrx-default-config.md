@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Understanding the vSRX Default Configuration
+# Understanding the vSRX default configuration
 {: #understanding-the-vsrx-default-configuration}
 
 {{site.data.keyword.vsrx_full}} devices come with following default configuration:

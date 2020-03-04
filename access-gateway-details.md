@@ -20,7 +20,7 @@ subcollection: vsrx
 {:important: .important}
 {:download: .download}
 
-# Viewing Your Gateway Appliance Details
+# Viewing your Gateway Appliance details
 {: #viewing-your-gateway-appliance-details}
 
 {{site.data.keyword.vsrx_full}} is used to control network traffic on a VLAN that is regularly controlled by a router. Within the Gateway Appliance Details screen on the IBM Cloud console, you can associate, disassociate, route and bypass VLANs with a Network Gateway.

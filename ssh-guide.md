@@ -20,7 +20,7 @@ subcollection: vsrx, ssh, allowing, pinging, subnet, public
 {:important: .important}
 {:tip: .tip}
 
-# Allowing SSH and Pinging to a Public Subnet
+# Allowing SSH and pinging to a public subnet
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
 
 In this guide you will learn how to configure the {{site.data.keyword.vsrx_full}} Standard with a new interface, zone, and address-book. As the default action for all traffic is to drop, this guide will show how to set up traffic flows that allow all traffic within the new zone, all traffic from the new zone to the internet, and allow only ssh and ping from the internet to one subnet on the new VLAN.

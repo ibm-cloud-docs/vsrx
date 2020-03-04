@@ -22,7 +22,7 @@ subcollection: vsrx
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Securing the Host Operating System
+# Securing the host operating system
 {: #securing-host-operating-system}
 {: help}
 {: support}
@@ -30,30 +30,30 @@ subcollection: vsrx
 The {{site.data.keyword.vsrx_full}} runs as a Virtual Machine on a bare-metal server installed with Ubuntu and KVM. To secure the host OS, you should ensure that no other critical services are hosted on the same OS.
 {: shortdesc}
 
-## SSH Access
+## SSH access
 {: #securing-host-ssh}
 
-The {{site.data.keyword.vsrx_full}} can be deployed with public and private network access or private network access only. By default, password based SSH access to the public IP of the host OS will be disabled on new provisions and OS reloads. Access to the host can be achieved through the private IP address. Alternatively, key based authentication can be used to access the public IP. To do so, specify the public SSH key when placing a new Gateway order . 
+The {{site.data.keyword.vsrx_full}} can be deployed with public and private network access or private network access only. By default, password based SSH access to the public IP of the host OS will be disabled on new provisions and OS reloads. Access to the host can be achieved through the private IP address. Alternatively, key based authentication can be used to access the public IP. To do so, specify the public SSH key when placing a new Gateway order .
 
 Some existing deployments of the {{site.data.keyword.vsrx_full}} may allow password based SSH access to the public IP of the host OS. For these deployments, you can manually disable password based SSH access to the public IP of the OS by following these steps:
 
-1. Modify /etc/ssh/sshd_config 
+1. Modify /etc/ssh/sshd_config
 
-  * Ensure the following values are set. 
-  
+  * Ensure the following values are set.
+
   ```
   ChallengeResponseAuthentication no
   PasswordAuthentication no
   ```
-  
+
   * Add the following filter rules to the end of the file.
-  
+
   ```
-  Match Address 10.0.0.0/8 
+  Match Address 10.0.0.0/8
       Password Authentication yes
   ```
-  
-2. Restart the SSH service using the command `/usr/sbin/service ssh restart`. 
+
+2. Restart the SSH service using the command `/usr/sbin/service ssh restart`.
 
 The procedure above ensures addresses in the private infrastructure network `10.0.0.0/8` subnet are allowed SSH access. This access is needed for actions such as:
 

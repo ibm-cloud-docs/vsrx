@@ -106,7 +106,7 @@ set interfaces reth2 unit 50 family inet address <IP/MASK>
 Even though unit 0 is untagged, `JunOS` needs it to reference the VLAN ID that is configured as `native-vlan`. In the example, since `native-vlan-id` is `10`, unit 0 should have a `vlan-id` of `10` as well. This way, `JunOS` is informed that unit 0 should be untagged.
 {: note}
 
-## Sample VLAN Configuration for vSRX
+## Sample VLAN configuration for vSRX
 {: #sample-vlan-configuration-for-vsrx}
 
 Below is a sample configuration for vSRX which defines two private interfaces and one customer zone.

@@ -15,12 +15,13 @@ subcollection: vsrx
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
+{:preview: .preview}
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
 {:download: .download}
 
-# Getting Started with IBM Cloud Juniper vSRX
+# Getting started with IBM Cloud Juniper vSRX
 {: #getting-started}
 
 {{site.data.keyword.vsrx_full}} allows you to route private and public network traffic selectively, through a full-featured, enterprise-level firewall that is powered by JunOS software features, such as full routing stacks, QoS and traffic sharing, policy-based routing, and VPN.
@@ -29,7 +30,7 @@ subcollection: vsrx
 For a list of Known Limitations with {{site.data.keyword.vsrx_full}} Gateway, refer to the [Known Limitations topic](/docs/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
 {: note}
 
-## Choosing a vSRX License
+## Choosing a vSRX license
 {: #choosing-license}
 
 Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between the following license options. Full support for the various vSRX configurations, including 1G and High Availability, will be introduced soon.
@@ -52,6 +53,9 @@ You can specify your license type when ordering your vSRX, as well as change the
 
 ### Ordering a vSRX
 {: #ordering-with-a-linked-account}
+
+IBM Cloud has temporarily suspended new sales of 1G Highly Available (HA) Juniper installations. This restriction is due to a pending design change that is required to improve HA stability. The offering is projected to become available again in Q2 2020.
+{: preview}
 
 You can order your {{site.data.keyword.vsrx_full}} by performing the following procedure:
 

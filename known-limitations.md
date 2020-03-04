@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Known Limitations for IBM Cloud Juniper vSRX
+# Known limitations for IBM Cloud Juniper vSRX
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
 There are some limitations to be aware of when using {{site.data.keyword.vsrx_full}}.

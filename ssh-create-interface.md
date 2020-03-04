@@ -20,7 +20,7 @@ subcollection: vsrx
 {:important: .important}
 {:tip: .tip}
 
-# Creating the New Interface, Zone, and Address Book Subnet
+# Creating the new interface, zone, and address book subnet
 {: #creating-the-new-interface-zone-and-address-book-subnet}
 
 First, you'll need to create an interface unit for the VLAN and add the subnet's gateway address. You'll then be able to create a security zone associated with the new unit and an `address-book` entry for the subnet.

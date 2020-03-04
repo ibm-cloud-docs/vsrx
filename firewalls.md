@@ -20,7 +20,7 @@ subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standal
 {:note: .note}
 {:important: .important}
 
-# Working with Firewalls
+# Working with firewalls
 {: #working-with-firewalls}
 
 The {{site.data.keyword.vsrx_full}} uses the concept of security zones, where each vSRX interface is mapped to a "zone" for handling stateful firewalls. Stateless firewalls are controlled by firewall filters.
@@ -37,7 +37,7 @@ In the IBM Cloud, a vSRX is designed to have four different security zones:
 | Customer-Private (tagged)| ge-0/0/0.1 or ae0.1  | reth2.1      |
 | Customer-Public (tagged) | ge-0/0/1.1 or ae1.1  | reth3.1      |
 
-## Zone Policies
+## Zone policies
 {: #zone-policies}
 
 To configure a stateful firewall, perform the following procedure:

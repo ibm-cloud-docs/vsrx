@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# IBM Cloud Juniper vSRX Release Notes
+# IBM Cloud Juniper vSRX release notes
 {: #ibm-cloud-juniper-vsrx-release-notes}
 
 You can view a complete list of {{site.data.keyword.vsrx_full}} release notes here.
@@ -30,7 +30,7 @@ For Juniper vSRX 18.4 release notes, please visit [this link ![External link ico
 
 For Juniper vSRX 15.1 release notes, please visit [this link ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/vsrx/information-products/topic-collections/release-notes/15.1x49/vsrx-release-notes-15.1x49-d120.pdf){:new_window}.
 
-## Upgrading Considerations:
+## Upgrade considerations
 {: #Upgrading-Considerations}
 
 * When upgrading from vSRX 10G 15.x to vSRX 10G 18, the upgrade process modifies the interface mappings in vSRX config for SR-IOV optimization, so during import the interface section needs to be preserved.

@@ -22,7 +22,7 @@ subcollection: vsrx
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Working with Failover
+# Working with failover
 {: #working-with-failover}
 {: help}
 {: support}
