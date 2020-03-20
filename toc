@@ -1,13 +1,14 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="vsrx" audience="network" arm="4133342" href="/docs/vsrx?topic=vsrx-getting-started" path="vsrx"}
+{: .toc subcollection="vsrx" category="security,network" audience="network" href="/docs/vsrx?topic=vsrx-getting-started" console-page="/provision/gateway" product-page="https://www.ibm.com/cloud/network-appliances" path="vsrx"}
 IBM Cloud Juniper vSRX
 
     {: .navgroup id="learn"}
     getting-started.md
     about.md
     /fortigate-10g/fortigate-10g-exploring-firewalls
+    [What is network security?](https://www.ibm.com/cloud/learn/networking-a-complete-guide)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -16,6 +17,13 @@ IBM Cloud Juniper vSRX
     /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
     /gateway-appliance/gateway-appliance-cancel-gateway-appliance
     vsrx-basics.md
+
+    {: .topicgroup}
+    Checking vSRX readiness
+        readiness.md
+        readiness_running.md
+        readiness_errors.md
+        readiness_correcting_errors.md
 
     {: .topicgroup}
     Work with VLANs
