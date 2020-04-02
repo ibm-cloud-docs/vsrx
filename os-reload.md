@@ -39,11 +39,11 @@ The process performs the following actions:
 
 The process usually requires 1 hour 40 minutes to complete. Standalone Gateways will be out of service during this period. For Juniper High Availability (HA) Gateways, when you reload the OS on one of your servers, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the reload is complete, the server will rejoin the cluster.
 
-For a successful reload or rebuild of the cluster on an HA vSRX:
+For a successful OS Reload on a vSRX, ensure the following:
 
-* The vSRX configuration should not be modified during the execution of the OS Reload and Rebuild Cluster operations. Examples include automated software agents attempting to modify one or both vSRX nodes. Configurations changes can corrupt the OS Reload and Rebuild Cluster operations.
+* The vSRX configuration should not be modified during the execution of the OS Reload operation. Examples include automated software agents attempting to modify one or both vSRX nodes. Configurations changes can corrupt the OS Reload.
 
-* The root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal. The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match. Once the passwords match, you can proceed with the OS Reload or Rebuild Cluster operation.
+* The root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal. The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match. Once the passwords match, you can proceed with the OS Reload operation.
 
   ![vSRX Password](images/gw-vsrx-password.png "vSRX Password")
 
@@ -51,15 +51,11 @@ For a successful reload or rebuild of the cluster on an HA vSRX:
 
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.
 
-Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the **Rebuild Cluster** option (detailed below) to re-provision vSRX and recreate the HA cluster.
+Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the [Rebuild Cluster](/docs/infrastructure/vsrx?topic=vsrx-rebuilding-an-ha-cluster) option to re-provision vSRX and recreate the HA cluster.
 {: important}
-
-* For the Rebuild Cluster option only, the host password(s) must match the password(s) in the vSRX portal. In addition, the host OS must enable root SSH access to the vSRX Private IP prior to doing a rebuild cluster.
 
 ## Performing an OS reload
 {: #performing-an-os-reload}
-
-To reload the OS for a gateway server, perform the following procedure:
 
 To reload your OS, perform the following procedure:
 
