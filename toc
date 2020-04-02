@@ -21,7 +21,6 @@ IBM Cloud Juniper vSRX
     {: .topicgroup}
     Checking vSRX readiness
         readiness.md
-        readiness_running.md
         readiness_errors.md
         readiness_correcting_errors.md
 
