@@ -50,19 +50,19 @@ The root user credentials for host are not found.
 
 ### Error 1005
 {: #error-1005}
-The host SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1007
 {: #error-1007}
-The host SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1008
 {: #error-1008}
-The host SSH console could not process the command. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console could not process the command. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1009
 {: #error-1009}
-The host has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1011
 {: #error-1011}
@@ -70,7 +70,7 @@ The root user credentials for gateway are not found.
 
 ### Error 1012
 {: #error-1012}
-The gateway SSH console connection failed. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console connection failed. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1013
 {: #error-1013}
@@ -82,15 +82,15 @@ The gateway readiness check has timed out.
 
 ### Error 1017
 {: #error-1017}
-The gateway SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1018
 {: #error-1018}
-The gateway SSH console could not process the command. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console could not process the command. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1019
 {: #error-1019}
-The gateway has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1021
 {: #error-1021}
@@ -107,11 +107,11 @@ The host has a readiness check setup failure, please rerun or contact support.
 
 ### Error 2007
 {: #error-2007}
-The host has a readiness check setup failure and can not SSH to the gateway. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has a readiness check setup failure and can not SSH to the gateway. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 2008
 {: #error-2008}
-The host has a readiness check setup failure and can not SSH to the private IP for the other node's host. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has a readiness check setup failure and can not SSH to the private IP for the other node's host. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 2009
 {: #error-2009}
@@ -155,7 +155,7 @@ The host has a readiness check setup failure, please rerun or contact support.
 
 ### Error 2020
 {: #error-2020}
-The host has a readiness check setup failure, change the vSRX configuration to allow more SSH sessions. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has a readiness check setup failure, change the vSRX configuration to allow more SSH sessions. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 2021
 {: #error-2021}
@@ -175,4 +175,4 @@ The host has a readiness check setup failure, unable to ping the vSRX FXP IP add
 
 ### Error 2025
 {: #error-2025}
-The host has a readiness check setup failure, unable to SSH to the vSRX FXP IP address. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has a readiness check setup failure, unable to SSH to the vSRX FXP IP address. Refer to [Correcting readiness errors](/docs/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
