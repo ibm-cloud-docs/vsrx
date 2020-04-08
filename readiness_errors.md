@@ -62,7 +62,7 @@ The host SSH console could not process the command. Refer to [Correcting readine
 
 ### Error 1009
 {: #error-1009}
-The host has an invalid IP address, SSH failed. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1011
 {: #error-1011}
@@ -90,7 +90,7 @@ The gateway SSH console could not process the command. Refer to [Correcting read
 
 ### Error 1019
 {: #error-1019}
-The gateway has an invalid IP address, SSH failed. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/infrastructure/vSRX?topic=vSRX-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ### Error 1021
 {: #error-1021}
