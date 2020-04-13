@@ -23,7 +23,7 @@ subcollection: vsrx
 # Managing IBM VLANs
 {: #managing-ibm-vlans}
 
-You can perform a variety of actions from the [Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) for your {{site.data.keyword.vsrx_full}}.
+You can perform a variety of actions from the [Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details#viewing-your-gateway-appliance-details) for your {{site.data.keyword.vsrx_full}}.
 {: shortdesc}
 
 ## Associate a VLAN to a Gateway Appliance
@@ -33,7 +33,7 @@ A VLAN needs to be associated to a Gateway Appliance before it can be routed. VL
 
 VLANs may be associated to only one Gateway at a time and must not have a firewall. Perform the following procedure to associate a VLAN to a Network Gateway.
 
-1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) in the IBM Cloud console.
+1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details#viewing-your-gateway-appliance-details) in the IBM Cloud console.
 2. Select the VLANs tab.
 3. Click **Associate VLAN** and select a VLAN from the dropdown.
 4. Click **Save** and confirm your selection. The VLAN association action does not route the VLAN through the firewall.
@@ -47,7 +47,7 @@ Associated VLANs are linked to a Gateway Appliance, but traffic in and out of th
 
 Perform the following procedure to route an associated VLAN:
 
-1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) in the IBM Cloud console.
+1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details#viewing-your-gateway-appliance-details) in the IBM Cloud console.
 2. Select the VLANs tab.
 3. Select the desired VLAN(s) by toggling the checkbox.
 4. Click **Route Through** and confirm your selection.
@@ -63,7 +63,7 @@ Bypassing a VLAN allows the VLAN to remain associated to the Network Gateway. If
 
 Perform the following procedure to bypass Gateway routing for a VLAN:
 
-1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) in the IBM Cloud console.
+1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details#viewing-your-gateway-appliance-details) in the IBM Cloud console.
 2. Select the VLANs tab.
 3. Select the desired VLAN(s) by toggling the checkbox.
 4. Click **Route Around** and confirm your selection.
@@ -77,7 +77,7 @@ VLANs may be linked to one Gateway Appliance at a time through [association](#as
 
 Perform the following procedure to disassociate a VLAN from a Gateway Appliance:
 
-1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details) in the IBM Cloud console.
+1. [Access the Gateway Appliance Details screen](/docs/vsrx?topic=vsrx-viewing-your-gateway-appliance-details#viewing-your-gateway-appliance-details) in the IBM Cloud console.
 2. Select the VLANs tab.
 3. Select the desired VLAN(s) by toggling the checkbox.
 4. Click **Disassociate** and confirm your selection.
