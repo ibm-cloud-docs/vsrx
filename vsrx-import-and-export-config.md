@@ -45,7 +45,7 @@ If you prefer using the Junos OS CLI, the following contents provide different m
 
 To export the entire vSRX configuration:
 
-1. First, run the command `save /var/tmp/XXX.txt` to save the entire configuration into `/var/tmp`. You can name the text file whatever you wish. The output should be similar to the following:
+1. First, run the command `save /var/tmp/XXX.txt` to save the entire configuration into `/var/tmp`. You can name the text file whatever you wish. For high availability (HA) configurations, run the command on the node where Resource Group 0 is located. The output should be similar to the following:
 
   ```
   Wrote 273 lines of configuration to '/var/tmp/SA15DefaultConfig.txt'  
