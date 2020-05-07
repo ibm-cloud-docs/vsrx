@@ -54,4 +54,4 @@ For Gateway (vSRX) SSH connectivity errors:
   * Is the vSRX firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet.
   * Is the root password listed on the Gateway details page the correct password for the root user?
   If not, click the **Edit** icon ![Pencil icon](../../icons/edit-tagging.svg) next to the root password and change the password to match the actual root password for the vSRX.
-  * Is the root user account disabled on the Ubuntu host?
+  * Is the root user account disabled for SSH access to the vSRX?
