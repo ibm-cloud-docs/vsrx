@@ -51,7 +51,7 @@ For a successful OS Reload on a vSRX, ensure the following:
 
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.
 
-Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the [Rebuild Cluster](/docs/infrastructure/vsrx?topic=vsrx-rebuilding-an-ha-cluster) option to re-provision vSRX and recreate the HA cluster.
+Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the [Rebuild Cluster](/docs/vsrx?topic=vsrx-rebuilding-an-ha-cluster) option to re-provision vSRX and recreate the HA cluster.
 {: important}
 
 ## Performing an OS reload
@@ -73,7 +73,7 @@ To reload your OS, perform the following procedure:
 ## vSRX version mismatches
 {: #vsrx-version-mismatches}
 
-A {{site.data.keyword.vsrx_full}} cluster must have the same vSRX version on each node in order to fully support the High Availability feature. If a cluster has mismatched vSRX versions, then you must reload the OS of the node with the older version (using the procedure in this topic) so that both nodes are at the same version level. 
+A {{site.data.keyword.vsrx_full}} cluster must have the same vSRX version on each node in order to fully support the High Availability feature. If a cluster has mismatched vSRX versions, then you must reload the OS of the node with the older version (using the procedure in this topic) so that both nodes are at the same version level.
 
-A version mismatch applies to both minor release mismatches and major release mismatches. 
+A version mismatch applies to both minor release mismatches and major release mismatches.
 {: note}
