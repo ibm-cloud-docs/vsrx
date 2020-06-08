@@ -33,14 +33,23 @@ subcollection: vsrx
   * Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
   * All other network accesses are denied
 
-## Default configuration of a sample standalone of latest SR-IOV vSRX gateway
+Two redundancy groups are configured. The following table illustrates these redundancy groups:
+
+| Redundancy group   |  Redundancy group function      |
+| :---          |    :---         |
+| redundancy-group 0   |  Redundancy group for control plane |
+| redundancy-group 1   |  Redundancy group for data plane |
+
+Priority in the redundancy group decides which vSRX node is active. By default, node 0 is active for both control plane and data plane.
+
+## Default Configuration of a sample 1G Standalone SR-IOV Public and Private vSRX Gateway
 {: #default-configuration-of-a-sample-standalone-vsrx-gateway}
 
 The following code samples are examples from the latest code release.
 {: note}
 
 ```
-## Last changed: 2019-04-04 19:29:45 UTC
+## Last commit: 2020-04-28 00:32:27 UTC by root
 version 18.4R1-S1.3;
 system {
     login {
@@ -51,12 +60,12 @@ system {
             uid 2000;
             class super-user;
             authentication {
-                encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
+                encrypted-password "$6$5gPuIk9u$JPzyjh5zVz0tf4P3.POWv4UWGDfowbzirGmnpiBUW0tDWLf1ZfvP.YwN88Mc8.cyOIvgDMrksbCYsmZxf4f3p."; ## SECRET-DATA
             }
         }
     }
     root-authentication {
-        encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
+        encrypted-password "$6$q9tQzuqT$/TFQLkHK.woO.Qv9YcZ1nnJqZqhLBqXeg7L3xkUWXVmq8fn4N7mClTpckoCKhombXucxU6StRKOiHTDUeTdd91"; ## SECRET-DATA
     }
     services {
         ssh {
@@ -81,7 +90,7 @@ system {
             }
         }
     }
-    host-name cicd-gw1-vSRX;
+    host-name asloma-swap-18-1g-sa0-vsrx-vSRX;
     name-server {
         10.0.80.11;
         10.0.80.12;
@@ -96,11 +105,6 @@ system {
         }
         file interactive-commands {
             interactive-commands any;
-        }
-    }
-    license {
-        autoupdate {
-            url https://ae1.juniper.net/junos/key_retrieval;
         }
     }
     ntp {
@@ -141,8 +145,8 @@ security {
             address SL13 10.2.160.0/20;
             address SL10 10.2.32.0/20;
             address SL11 10.2.64.0/20;
-            address SL_PRIV_MGMT 10.184.108.150/32;
-            address SL_PUB_MGMT 169.48.2.5/32;
+            address SL_PRIV_MGMT 10.188.111.70/32;
+            address SL_PUB_MGMT 169.60.101.121/32;
             address-set SERVICE {
                 address SL8;
                 address SL9;
@@ -182,7 +186,7 @@ security {
                     attack-threshold 200;
                     source-threshold 1024;
                     destination-threshold 2048;
-                    queue-size 2000;
+                    queue-size 2000; ## Warning: 'queue-size' is deprecated
                     timeout 20;
                 }
                 land;
@@ -190,30 +194,6 @@ security {
         }
     }
     policies {
-        from-zone trust to-zone trust {
-            policy default-permit {
-                match {
-                    source-address any;
-                    destination-address any;
-                    application any;
-                }
-                then {
-                    permit;
-                }
-            }
-        }
-        from-zone trust to-zone untrust {
-            policy default-permit {
-                match {
-                    source-address any;
-                    destination-address any;
-                    application any;
-                }
-                then {
-                    permit;
-                }
-            }
-        }
         from-zone SL-PRIVATE to-zone SL-PRIVATE {
             policy Allow_Management {
                 match {
@@ -240,12 +220,6 @@ security {
         }
     }
     zones {
-        security-zone trust {
-            tcp-rst;
-        }
-        security-zone untrust {
-            screen untrust-screen;
-        }
         security-zone SL-PRIVATE {
             interfaces {
                 ae0.0 {
@@ -294,34 +268,30 @@ interfaces {
     ae0 {
         description PRIVATE_VLANs;
         flexible-vlan-tagging;
-        native-vlan-id 1121;
+        native-vlan-id 925;
         unit 0 {
-            vlan-id 1121;
+            vlan-id 925;
             family inet {
-                address 10.184.108.150/26;
+                address 10.188.111.70/26;
             }
         }
     }
     ae1 {
         description PUBLIC_VLAN;
         flexible-vlan-tagging;
-        native-vlan-id 1294;
+        native-vlan-id 985;
         unit 0 {
-            vlan-id 1294;
+            vlan-id 985;
             family inet {
-                address 169.48.2.5/27;
+                address 169.60.101.121/28;
             }
             family inet6 {
-                address 2607:f0d0:1f01:d7::c/64;
+                address 2607:f0d0:3901:0063:0000:0000:0000:000f/64;
             }
         }
     }
     fxp0 {
-        unit 0 {
-            family inet {
-                address 192.168.68.150/24;
-            }
-        }
+        unit 0;
     }
     lo0 {
         unit 0 {
@@ -339,9 +309,8 @@ firewall {
         term PING {
             from {
                 destination-address {
-                    169.48.2.5/32;
-                    10.184.108.150/32;
-                    192.168.68.0/24;
+                    169.60.101.121/32;
+                    10.188.111.70/32;
                 }
                 protocol icmp;
             }
@@ -350,20 +319,19 @@ firewall {
         term SSH {
             from {
                 destination-address {
-                    169.48.2.5/32;
-                    10.184.108.150/32;
-                    192.168.68.0/24;
+                    169.60.101.121/32;
+                    10.188.111.70/32;
                 }
                 protocol tcp;
-                destination-port [ ssh 830 ];
+                destination-port ssh;
             }
             then accept;
         }
         term WEB {
             from {
                 destination-address {
-                    169.48.2.5/32;
-                    10.184.108.150/32;
+                    169.60.101.121/32;
+                    10.188.111.70/32;
                 }
                 protocol tcp;
                 port 8443;
@@ -381,58 +349,42 @@ firewall {
 }
 routing-options {
     static {
-        route 166.9.0.0/16 next-hop 10.184.108.129;
-        route 0.0.0.0/0 next-hop 169.48.2.97;
-        route 161.26.0.0/16 next-hop 10.184.108.129;
-        route 10.0.0.0/8 next-hop 10.184.108.129;
+        route 166.9.0.0/16 next-hop 10.188.111.65;
+        route 0.0.0.0/0 next-hop 169.60.101.113;
+        route 161.26.0.0/16 next-hop 10.188.111.65;
+        route 10.0.0.0/8 next-hop 10.188.111.65;
     }
 }
 ```
 
 The following table illustrates network interface definitions for the previous configuration:
 
-| Interface Name    |  Interface Function      |
+| Interface name    |  Interface function      |
 | :---          |   :---         |
 | ge-0/0/0      |   Gigabit ethernet interface for SL-PRIVATE transit VLAN |
 | ge-0/0/1      |   Gigabit ethernet interface for SL-PUBLIC transit VLAN  |
+| ge-0/0/2      |   Gigabit ethernet interface for SL-PRIVATE transit VLAN |
+| ge-0/0/3      |   Gigabit ethernet interface for SL-PUBLIC transit VLAN |
 | ae0.0         |   Aggregated Ethernet interface |
 | ae1.0         |   Aggregated Ethernet interface |
 | fxp0          |   Management interface        |
 | lo0           |   loopback interface          |
 
-## Default configuration of a sample Highly Available (HA) vSRX gateway
+## Default Configuration of a sample 10G HA SR-IOV Public and Private vSRX Gateway
 {: #default-configuration-of-a-sample-highly-available-ha-vsrx-gateway}
 
 ```
-## Last changed: 2019-04-04 20:03:36 UTC
+## Last commit: 2020-04-21 17:22:34 UTC by root
 version 18.4R1-S1.3;
 groups {
     node0 {
         system {
-            host-name cicd-gw2-vSRX-Node0;
-        }
-        interfaces {
-            fxp0 {
-                unit 0 {
-                    family inet {
-                        address 192.168.59.150/24;
-                    }
-                }
-            }
+            host-name asloma-tc1b-18-10g-pubpriv-dual-ha1-vsrx-vSRX-Node0;
         }
     }
     node1 {
         system {
-            host-name cicd-gw2-vSRX-Node1;
-        }
-        interfaces {
-            fxp0 {
-                unit 0 {
-                    family inet {
-                        address 192.168.59.151/24;
-                    }
-                }
-            }
+            host-name asloma-tc1b-18-10g-pubpriv-dual-ha1-vsrx-vSRX-Node1;
         }
     }
 }
@@ -446,12 +398,12 @@ system {
             uid 2000;
             class super-user;
             authentication {
-                encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
+                encrypted-password "xxx"; ## SECRET-DATA
             }
         }
     }
     root-authentication {
-        encrypted-password "xxxxxxxxxxxxxxxxxxxxxxzx"; ## SECRET-DATA
+        encrypted-password "xxx”;## SECRET-DATA
     }
     services {
         ssh {
@@ -471,7 +423,7 @@ system {
                 system-generated-certificate;
                 interface [ fxp0.0 reth1.0 reth0.0 ];
             }
-            session {
+            session {                   
                 session-limit 100;
             }
         }
@@ -492,11 +444,6 @@ system {
             interactive-commands any;
         }
     }
-    license {
-        autoupdate {
-            url https://ae1.juniper.net/junos/key_retrieval;
-        }
-    }
     ntp {
         server 10.0.77.54;
     }
@@ -505,6 +452,8 @@ chassis {
     cluster {
         control-link-recovery;
         reth-count 4;
+        heartbeat-interval 2000;
+        heartbeat-threshold 8;
         redundancy-group 0 {
             node 0 priority 100;
             node 1 priority 1;
@@ -512,7 +461,7 @@ chassis {
         redundancy-group 1 {
             node 0 priority 100;
             node 1 priority 1;
-            preempt;
+            inactive: preempt;
             interface-monitor {
                 ge-0/0/3 weight 130;
                 ge-0/0/4 weight 130;
@@ -523,7 +472,7 @@ chassis {
     }
 }
 security {
-    log {
+    log {                               
         mode stream;
         report;
     }
@@ -549,8 +498,8 @@ security {
             address SL13 10.2.160.0/20;
             address SL10 10.2.32.0/20;
             address SL11 10.2.64.0/20;
-            address SL_PRIV_MGMT 10.127.152.144/32;
-            address SL_PUB_MGMT 159.8.12.5/32;
+            address SL_PRIV_MGMT 10.87.40.36/32;
+            address SL_PUB_MGMT 169.62.79.21/32;
             address-set SERVICE {
                 address SL8;
                 address SL9;
@@ -572,7 +521,7 @@ security {
                 address SL13;
                 address SL10;
                 address SL11;
-            }
+            }                           
         }
     }
     screen {
@@ -590,7 +539,7 @@ security {
                     attack-threshold 200;
                     source-threshold 1024;
                     destination-threshold 2048;
-                    queue-size 2000;
+                    queue-size 2000; ## Warning: 'queue-size' is deprecated
                     timeout 20;
                 }
                 land;
@@ -598,30 +547,6 @@ security {
         }
     }
     policies {
-        from-zone trust to-zone trust {
-            policy default-permit {
-                match {
-                    source-address any;
-                    destination-address any;
-                    application any;
-                }
-                then {
-                    permit;
-                }
-            }
-        }
-        from-zone trust to-zone untrust {
-            policy default-permit {
-                match {
-                    source-address any;
-                    destination-address any;
-                    application any;
-                }
-                then {
-                    permit;
-                }
-            }
-        }
         from-zone SL-PRIVATE to-zone SL-PRIVATE {
             policy Allow_Management {
                 match {
@@ -645,15 +570,9 @@ security {
                     permit;
                 }
             }
-        }
+        }                               
     }
     zones {
-        security-zone trust {
-            tcp-rst;
-        }
-        security-zone untrust {
-            screen untrust-screen;
-        }
         security-zone SL-PRIVATE {
             interfaces {
                 reth0.0 {
@@ -700,7 +619,7 @@ interfaces {
         }
     }
     ge-0/0/5 {
-        gigether-options {
+        gigether-options {              
             redundant-parent reth2;
         }
     }
@@ -749,7 +668,7 @@ interfaces {
             redundant-parent reth2;
         }
     }
-    ge-7/0/7 {
+    ge-7/0/7 {                          
         gigether-options {
             redundant-parent reth3;
         }
@@ -763,6 +682,7 @@ interfaces {
         fabric-options {
             member-interfaces {
                 ge-0/0/0;
+                ge-0/0/9;
             }
         }
     }
@@ -770,6 +690,7 @@ interfaces {
         fabric-options {
             member-interfaces {
                 ge-7/0/0;
+                ge-7/0/9;
             }
         }
     }
@@ -790,21 +711,21 @@ interfaces {
         unit 0 {
             description "SL PRIVATE VLAN INTERFACE";
             family inet {
-                address 10.127.152.144/26;
+                address 10.87.40.36/26;
             }
         }
     }
     reth1 {
         redundant-ether-options {
-            redundancy-group 1;
+            redundancy-group 1;         
         }
         unit 0 {
             description "SL PUBLIC VLAN INTERFACE";
             family inet {
-                address 159.8.12.5/29;
+                address 169.62.79.21/29;
             }
             family inet6 {
-                address 2a03:8180:1301:101::4/64;
+                address 2607:f0d0:2901:002e:0000:0000:0000:0003/64;
             }
         }
     }
@@ -826,9 +747,8 @@ firewall {
         term PING {
             from {
                 destination-address {
-                    159.8.12.5/32;
-                    10.127.152.144/32;
-                    192.168.59.0/24;
+                    169.62.79.21/32;
+                    10.87.40.36/32;
                 }
                 protocol icmp;
             }
@@ -837,20 +757,19 @@ firewall {
         term SSH {
             from {
                 destination-address {
-                    159.8.12.5/32;
-                    10.127.152.144/32;
-                    192.168.59.0/24;
+                    169.62.79.21/32;
+                    10.87.40.36/32;
                 }
                 protocol tcp;
-                destination-port [ ssh 830 ];
+                destination-port ssh;
             }
             then accept;
         }
         term WEB {
-            from {
+            from {                      
                 destination-address {
-                    159.8.12.5/32;
-                    10.127.152.144/32;
+                    169.62.79.21/32;
+                    10.87.40.36/32;
                 }
                 protocol tcp;
                 port 8443;
@@ -868,35 +787,105 @@ firewall {
 }
 routing-options {
     static {
-        route 166.9.0.0/16 next-hop 10.127.152.129;
-        route 0.0.0.0/0 next-hop 159.8.12.73;
-        route 161.26.0.0/16 next-hop 10.127.152.129;
-        route 10.0.0.0/8 next-hop 10.127.152.129;
+        route 166.9.0.0/16 next-hop 10.87.40.1;
+        route 0.0.0.0/0 next-hop 169.62.79.17;
+        route 161.26.0.0/16 next-hop 10.87.40.1;
+        route 10.0.0.0/8 next-hop 10.87.40.1;
     }
 }
 ```
 
-The following table illustrates the network interface definitions for the previous configuration:
+The information in the following table represents the configuration above:
 
-| Interface Name   |  Interface  Function      |
-| :---          |    :---         |
-| ge-0/0/1 / ge-0/0/2   |  Gigabit ethernet interface for Private VLAN on primary node |
-| ge-0/0/3 / ge-0/0/4   |  Gigabit ethernet interface for Public VLAN on primary node |
-| ge-7/0/1 / ge-7/0/2  |  Gigabit ethernet interface for Private VLAN on secondary node |
-| ge-7/0/3 / ge-7/0/4  |  Gigabit ethernet interface for Public VLAN on secondary node |
-| reth0         |   Redundant ethernet interface for SL-PRIVATE transit VLAN |
-| reth1         |   Redundant ethernet interface for SL-PUBLIC transit VLAN  |
-| reth2         |   Redundant ethernet interface for CUSTOMER Private VLANs  |
-| reth3         |   Redundant ethernet interface for CUSTOMER Public VLANs   |
-| fab0 / fab1   |   Chassis cluster fabric link |
-| fxp0          |   Management interface        |
-| lo0           |   loopback interface          |
+| Interface name   | Interface  function   | Redundant interface |
+| :---       |    :---     |    :---     |
+| ge-0/0/1 / ge-0/0/2 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 0 | reth0 |
+| ge-0/0/3 / ge-0/0/4 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 0 | reth1 |
+| ge-0/0/5 / ge-0/0/6 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 0 | reth2 |
+| ge-0/0/7 / ge-0/0/8 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 0 | reth3 |
+| ge-7/0/1 / ge-7/0/2 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 1 | reth0 |
+| ge-7/0/3 / ge-7/0/4 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 1 | reth1 |
+| ge-7/0/5 / ge-7/0/6 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 1 | reth2 |
+| ge-7/0/7 / ge-7/0/8 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 1 | reth3 |
+| fab0 | Chassis cluster fabric link uses ge-0/0/0 and ge-0/0/9 | |
+| fab1 | Chassis cluster fabric link uses ge-7/0/0 and ge-7/0/9 | |
+| fxp0          |   Management interface        | |
+| lo0           |   loopback interface          | |
 
-In addition, two redundancy groups are configured. The following table illustrates these redundancy groups:
+## Interface configurations
+The legacy architecture for these configurations leveraged Linux bridging on the Ubuntu host hypervisor. IBM has since transitioned to a new architecture for its gateways that leverages SR-IOV on the host. This caused the vSRX configuration’s interface mapping to change in many cases. Differences in the interface configuration are also influenced by whether the vSRX is:
 
-| Redundancy Group   |  Redundancy Group  Function      |
-| :---          |    :---         |
-| redundancy-group 0   |  Redundancy group for control plane |
-| redundancy-group 1   |  Redundancy group for data plane |
+* 10G or 1G
+* Standalone or High Availability
+* Public and Private, or Private Only
+* The vSRX Version
+  - All 15.1 based vSRX’s use the legacy architecture
+  - Some 18.4 based vSRX’s also use the legacy architectue
 
-Priority in the redundancy group decides which vSRX node is active. By default, node 0 is active for both control plane and data plane.
+Both the legacy and current architecture is detailed in the following sections.
+
+### vSRX High Availability interfaces (current architecture)
+
+|**Interface**|**10G Pub+Priv** |**10G Priv Only** |**1G Pub+Priv** |**1G Priv Only** |
+|-------------|----------------|-----------------|-----------------|----------------|
+|ge-0/0/0|fab0|fab0|fab0|fab0|
+|ge-0/0/1|reth0|reth0|reth0|reth0|
+|ge-0/0/2|reth0|reth0|reth0|reth0|
+|ge-0/0/3|reth1|reth2|reth1|reth2|
+|ge-0/0/4|reth1|reth2|reth1|reth2|
+|ge-0/0/5|reth2|fab0|reth2|fab0|
+|ge-0/0/6|reth2|Does Not Exist|reth2|Does Not Exist|
+|ge-0/0/7|reth3|Does Not Exist|reth3|Does Not Exist|
+|ge-0/0/8|reth3|Does Not Exist|reth3|Does Not Exist|
+|ge-0/0/9|fab0|Does Not Exist|fab0|Does Not Exist|
+|ge-7/0/0|fab1|fab1|fab1|fab1|
+|ge-7/0/1|reth0|reth0|reth0|reth0|
+|ge-7/0/2|reth0|reth0|reth0|reth0|
+|ge-7/0/3|reth1|reth2|reth1|reth2|
+|ge-7/0/4|reth1|reth2|reth1|reth2|
+|ge-7/0/5|reth2|fab1|reth2|fab1|
+|ge-7/0/6|reth2|Does Not Exist|reth2|Does Not Exist|
+|ge-7/0/7|reth3|Does Not Exist|reth3|Does Not Exist|
+|ge-7/0/8|reth3|Does Not Exist|reth3|Does Not Exist|
+|ge-7/0/9|fab1|Does Not Exist|fab1|Does Not Exist|
+
+### vSRX Standalone interfaces (current architecture)
+
+|**Interface**|**10G Pub+Priv** |**10G Priv Only** |**1G Pub+Priv** |**1G Priv Only** |
+|-------------|----------------|-----------------|-----------------|----------------|
+|ge-0/0/0|ae0|ae0|ae0|ae0|
+|ge-0/0/1|ae1|ae0|ae1|ae0|
+|ge-0/0/2|ae0|Does Not Exist|ae0|Does Not Exist|
+|ge-0/0/3|ae1|Does Not Exist|ae1|Does Not Exist|
+
+### vSRX High Availability interfaces (legacy architecture)
+
+|**Interface**|**10G Priv+Pub** |**10G Priv Only** |**1G Priv + Pub** |**1G Priv Only** |
+|-------------|----------------|-----------------|-----------------|----------------|
+|ge-0/0/0|fab0|fab0|fab0|fab0|
+|ge-0/0/1|reth0|reth0|reth0|reth0|
+|ge-0/0/2|reth0|reth0|reth2|reth2|
+|ge-0/0/3|reth1|reth2|reth1|Unused|
+|ge-0/0/4|reth1|reth2|reth3|Unused|
+|ge-0/0/5|reth2|Unused|Does Not Exist|Does Not Exist|
+|ge-0/0/6|reth2|Unused|Does Not Exist|Does Not Exist|
+|ge-0/0/7|reth3|Unused|Does Not Exist|Does Not Exist|
+|ge-0/0/8|reth3|Unused|Does Not Exist|Does Not Exist|
+|ge-7/0/0|fab1|fab1|fab1|fab1|
+|ge-7/0/1|reth0|reth0|reth0|reth0|
+|ge-7/0/2|reth0|reth0|reth2|reth2|
+|ge-7/0/3|reth1|reth2|reth1|Unused|
+|ge-7/0/4|reth1|reth2|reth3|Unused|
+|ge-7/0/5|reth2|Unused|Does Not Exist|Does Not Exist|
+|ge-7/0/6|reth2|Unused|Does Not Exist|Does Not Exist|
+|ge-7/0/7|reth3|Unused|Does Not Exist|Does Not Exist|
+|ge-7/0/8|reth3|Unused|Does Not Exist|Does Not Exist|
+
+### vSRX standalone interfaces (legacy architecture)
+
+|**Interface**|**10G Pub+Priv** |**10G Priv Only** |**1G Pub+Priv** |**1G Priv Only** |
+|-------------|----------------|-----------------|-----------------|----------------|
+|ge-0/0/0|ae0|ae0|ge-0/0/0|ge-0/0/0|
+|ge-0/0/1|ae1|ae0|ge-0/0/1|Does Not Exist|
+|ge-0/0/2|ae0|Does Not Exist|Does Not Exist|Does Not Exist|
+|ge-0/0/3|ae1|Does Not Exist|Does Not Exist|Does Not Exist|
