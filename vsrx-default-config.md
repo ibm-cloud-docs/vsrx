@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2019-11-14"
+lastupdated: "2020-06-12"
 
 keywords: understanding, default, configuration, standalone, ha
 

@@ -25,11 +25,14 @@ IBM Cloud Juniper vSRX
         readiness_correcting_errors.md
 
     {: .topicgroup}
-    Work with VLANs
+    Working with VLANs
         /gateway-appliance/gateway-appliance-managing-vlans-and-gateway-appliances
 
-    vsrx-default-config.md
-    vsrx-import-and-export-config.md
+    {: topicgroup}
+    Working with the vSRX default configuration
+        vsrx-default-config.md
+        vsrx-import-and-export-config.md
+        migrating-config.md
 
     {: .topicgroup}
     Step-by-step: How to Allow SSH and Pinging to a Public Subnet
