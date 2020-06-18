@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="vsrx" category="security,network" audience="network" href="/docs/vsrx?topic=vsrx-getting-started" console-page="/provision/gateway" product-page="https://www.ibm.com/cloud/network-appliances" path="vsrx"}
+{: .toc subcollection="vsrx" category="network_classic" audience="network" href="/docs/vsrx?topic=vsrx-getting-started" console-page="/provision/gateway" product-page="https://www.ibm.com/cloud/network-appliances" path="vsrx"}
 IBM Cloud Juniper vSRX
 
     {: .navgroup id="learn"}
