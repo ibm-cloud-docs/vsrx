@@ -34,7 +34,7 @@ The process to upgrade High Availability (HA) vSRX configurations require two st
 Each of these upgrade steps requires several hours to complete. For Standalone Gateways, the vSRX will be out of service during the upgrade process. For HA Gateways, when doing the upgrade, the vSRX will failover to another server in the cluster, and continue to process data traffic. Once the upgrade is complete, the server will rejoin the cluster.  
 
 ## Considerations
-{: #considerations}
+{: #upgrade-considerations}
 
 * The Standalone upgrade requires only an OS reload.
 

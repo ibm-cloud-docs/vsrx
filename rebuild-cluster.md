@@ -44,6 +44,7 @@ For a successful rebuild of a cluster on an HA vSRX, ensure the following:
 * The host password(s) must match the password(s) in the vSRX portal. In addition, the host OS must enable root SSH access to the vSRX Private IP prior to doing a rebuild cluster.
 
 ## Rebuilding an HA cluster
+{: #rebuild-an-ha-cluster}
 
 To rebuild one of your HA vSRX clusters, perform the following procedure:
 
