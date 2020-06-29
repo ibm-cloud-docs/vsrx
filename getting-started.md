@@ -33,9 +33,6 @@ For a list of Known Limitations with {{site.data.keyword.vsrx_full}} Gateway, re
 ## Choosing a vSRX license
 {: #choosing-license}
 
-Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between the following license options. Full support for the various vSRX configurations, including 1G and High Availability, will be introduced soon.
-{: important}
-
 There are two license types available for your {{site.data.keyword.vsrx_full}}:
 
 * Standard
@@ -54,9 +51,6 @@ You can specify your license type when ordering your vSRX, as well as change the
 ### Ordering a vSRX
 {: #ordering-with-a-linked-account}
 
-IBM Cloud has temporarily suspended new sales of 1G Highly Available (HA) Juniper installations. This restriction is due to a pending design change that is required to improve HA stability. The offering is projected to become available again in Q2 2020.
-{: preview}
-
 You can order your {{site.data.keyword.vsrx_full}} by performing the following procedure:
 
 1. From your browser, open the Gateway Appliances page in the [Cloud Catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/gen1/infrastructure/provision/gateway){: new_window} and log into your account.
@@ -68,9 +62,6 @@ You can order your {{site.data.keyword.vsrx_full}} by performing the following p
 3. Choose your license type from **License add-ons**, either Standard or CSB.
   Refer to the previous section for information on the features offered with each license.
   {: tip}
-
-  Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between license options. Full support among all the various vSRX configurations, including 1G and High Availability, will be introduced soon.
-  {: important}
 
 3. From the **Gateway appliance** section, enter your **Hostname** and **Domain** name information. These fields will already be populated with default information, so ensure the values are correct.
 

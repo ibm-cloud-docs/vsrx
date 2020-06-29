@@ -32,7 +32,7 @@ Configuring the vSRX outside of its shell and interface may produce unexpected r
 ## Accessing the device using SSH
 {: #accessing-the-device-using-ssh}
 
-You can access the vSRX using SSH through a public IP address, or through a private IP address if you're on IBM Cloud VPN:
+You can access either the vSRX or the host (Ubuntu) using SSH through a private IP address if you're on IBM Cloud VPN. Additionally, you can access the vSRX through a public IP address as well.
 
 1. Go to Gateway Appliance Details screen and get the Public gateway IP or Private Gateway IP.
 
@@ -40,7 +40,10 @@ You can access the vSRX using SSH through a public IP address, or through a priv
 
 2. Click the "eye" icon to reveal the admin user's password.
 
-3. Run the command `ssh admin@<gateway-ip>`, then enter the admin user's password.
+3. For a vSRX, run the command `ssh admin@<gateway-ip>`, then enter the admin user's password. You can also use the 'root' user ID and password.
+
+  For the host (Ubuntu), you can only use the `root` user ID and password.
+  {: note}
 
 If you do not see the "eye" icon, you may not have permission to view the password. Please check your access permissions with the account owner.
 {: note}
@@ -111,9 +114,6 @@ This prompts you to input a new password, which is encrypted and stored in the c
 
 ## Viewing and changing vSRX licenses
 {: #vsrx-licenses}
-
-Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between the following license options. Full support for among all the various vSRX configurations, including 1G and High Availability, will be introduced soon.
-{: important}
 
 The vSRX has two available licenses:
 
