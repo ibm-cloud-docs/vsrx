@@ -17,6 +17,7 @@ IBM Cloud Juniper vSRX
     /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
     /gateway-appliance/gateway-appliance-cancel-gateway-appliance
     vsrx-basics.md
+    vsrx-license.md
 
     {: .topicgroup}
     Checking vSRX readiness
