@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Performing vSRX basics
+# Performing additional vSRX tasks
 {: #performing-ibm-cloud-juniper-vsrx-basics}
 
 You can configure and maintain your {{site.data.keyword.vsrx_full}} in a variety of ways, either through a remote console session through SSH or by logging into the Juniper web management GUI.
