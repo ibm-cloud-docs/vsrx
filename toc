@@ -12,15 +12,11 @@ IBM Cloud Juniper vSRX
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-
-    {: .topicgroup}
-    Performing vSRX basics
-        /gateway-appliance/gateway-appliance-viewing-all-gateway-appliances
-        /gateway-appliance/gateway-appliance-viewing-gateway-appliance-details
-        /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
-        /gateway-appliance/gateway-appliance-cancel-gateway-appliance
-        vsrx-basics.md
-
+    /gateway-appliance/gateway-appliance-viewing-all-gateway-appliances
+    /gateway-appliance/gateway-appliance-viewing-gateway-appliance-details
+    /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
+    /gateway-appliance/gateway-appliance-cancel-gateway-appliance
+    vsrx-basics.md
     vsrx-license.md
 
     {: .topicgroup}
@@ -46,15 +42,12 @@ IBM Cloud Juniper vSRX
         ssh-create-flows.md
         ssh-check-output.md
 
-    {: topicgroup}
-    Performing vSRX advanced tasks
-        firewalls.md
-        nat.md
-        failover.md
-        routing.md
-        vpn.md
-        securing-host.md
-
+    firewalls.md
+    nat.md
+    failover.md
+    routing.md
+    vpn.md
+    securing-host.md
     os-reload.md
     rebuild-cluster.md
     vsrx-upgrade.md
