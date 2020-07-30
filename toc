@@ -51,6 +51,7 @@ IBM Cloud Juniper vSRX
         routing.md
         vpn.md
         securing-host.md
+        management-interfaces.md
 
     vsrx-license.md
     os-reload.md
