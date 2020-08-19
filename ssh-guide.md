@@ -6,7 +6,7 @@ lastupdated: "2019-11-14"
 
 keywords:
 
-subcollection: vsrx, ssh, allowing, pinging, subnet, public
+subcollection: vsrx
 
 ---
 

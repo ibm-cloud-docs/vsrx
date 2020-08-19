@@ -6,7 +6,7 @@ lastupdated: "2019-11-13"
 
 keywords:
 
-subcollection: vsrx, firewalls, working, policy, policies, rules, zones, standalone, ha
+subcollection: vsrx
 
 ---
 
