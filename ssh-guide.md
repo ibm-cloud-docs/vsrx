@@ -4,7 +4,7 @@ copyright:
   years: 2018
 lastupdated: "2019-11-14"
 
-keywords:
+keywords: vsrx, ssh, allowing, pinging, subnet, public
 
 subcollection: vsrx
 
@@ -23,7 +23,7 @@ subcollection: vsrx
 # Allowing SSH and pinging to a public subnet
 {: #allowing-ssh-and-pinging-to-a-public-subnet}
 
-In this guide you will learn how to configure the {{site.data.keyword.vsrx_full}} Standard with a new interface, zone, and address-book. As the default action for all traffic is to drop, this guide will show how to set up traffic flows that allow all traffic within the new zone, all traffic from the new zone to the internet, and allow only ssh and ping from the internet to one subnet on the new VLAN.
+In this guide, learn how to configure the {{site.data.keyword.vsrx_full}} Standard with a new interface, zone, and address-book. As the default action for all traffic is to drop, this guide shows how to set up traffic flows that allow all traffic within the new zone, all traffic from the new zone to the internet, and allow only SSH and ping from the internet to one subnet on the new VLAN.
 {: shortdesc}
 
 In this example, the following values are used.
@@ -33,13 +33,13 @@ Public vlan: 1523
 Public subnet: 169.47.211.152/29
 ```
 
-This Step-by-Step assumes that a high-availability deployment of the vSRX, with a single Public VLAN and subnet.
+This step-by-step assumes that a high-availability deployment of the vSRX, with a single Public VLAN and subnet.
 {: note}
 
 ## What you'll accomplish
 {: #what-you-ll-accomplish}
 
-In this Step-by-Step guide you will learn how to configure the service:
+In this step-by-step guide learn how to configure the service:
 
 Task  | Description
 ------------- | -------------

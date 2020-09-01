@@ -23,10 +23,10 @@ subcollection: vsrx
 # Creating your new traffic flows
 {: #creating-your-new-traffic-flows}
 
-Now that you've created the new zone (`CUSTOMER-PUBLIC`), you'll need to configure policies to control the network traffic flow. The first one configured below allows all traffic within the `CUSTOMER-PUBLIC` zone. The second allows all traffic from `CUSTOMER-PUBLIC` out to the public internet, while the third flow allows only SSH and PING traffic from the public internet to `CUSTOMER-PUBLIC`, and drops the rest (as the default action is `drop`).
+Now that you've created the new zone (`CUSTOMER-PUBLIC`), you'll need to configure policies to control the network traffic flow. The first one configured allows all traffic within the `CUSTOMER-PUBLIC` zone. The second allows all traffic from `CUSTOMER-PUBLIC` out to the public internet, while the third flow allows only SSH and PING traffic from the public internet to `CUSTOMER-PUBLIC`, and drops the rest (as the default action is `drop`).
 {: shortdesc}
 
-Scroll to the right to view the entire command!  
+Scroll to the right to view the entire command.
 {: important}
 
 ```

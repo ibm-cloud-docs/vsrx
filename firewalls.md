@@ -4,7 +4,7 @@ copyright:
   years: 2018
 lastupdated: "2019-11-13"
 
-keywords:
+keywords: vsrx, firewalls, working, policy, policies, rules, zones, standalone, ha
 
 subcollection: vsrx
 
@@ -40,7 +40,7 @@ In the IBM Cloud, a vSRX is designed to have four different security zones:
 ## Zone policies
 {: #zone-policies}
 
-To configure a stateful firewall, perform the following procedure:
+To configure a stateful firewall, follow these steps:
 
 1. Create security zones and assign the respective interfaces:
 
@@ -75,40 +75,40 @@ Since this is a stateful operation, there is no need to allow return packets (in
 
 Use the following commands to allow traffic that is directed to the vSRX:
 
-Standalone Case:
+Standalone case:
 ```
 set security zones security-zone CUSTOMER-PRIVATE interfaces ge-0/0/0.0 host-inbound-traffic system-services all
 ```
-HA Case:
+HA case:
 ```
 set security zones security-zone CUSTOMER-PRIVATE interfaces reth2.0 host-inbound-traffic system-services all
 ```
 
 To allow protocols, such as OSPF or BGP, use the following command:
 
-Standalone Case:
+Standalone case:
 ```
 set security zones security-zone trust interfaces ge-0/0/0.0 host-inbound-traffic protocols all
 ```
-HA Case:
+HA case:
 ```
 set security zones security-zone trust interfaces reth2.0 host-inbound-traffic protocols all
 ```
 
-## Firewall Filters
+## Firewall filters
 {: #firewall-filters}
 
 By default the {{site.data.keyword.vsrx_full}} allows ping, SSH, and HTTPS to itself and drops all other traffic by applying the `PROTECT-IN` filter to the `lo` interface.
 
-To configure a new stateless firewall, perform the following procedure:
+To configure a new stateless firewall, follow these steps:
 
-1. Create the firewall filter and term (the following filter will allow only ICMP and drop all other traffic)
+1. Create the firewall filter and term (the following filter allows only ICMP and drops all other traffic)
 	```
 	set firewall filter ALLOW-PING term ICMP from protocol icmp
 	set firewall filter ALLOW-PING term ICMP then accept
 	```
 
-2. Apply the filter rule to the interface (the following command will apply the filter to all private network traffic)
+2. Apply the filter rule to the interface (the following command applies the filter to all private network traffic)
 	```
 	set interfaces ge-0/0/0 unit 0 family inet filter input ALLOW-PING
 	```
