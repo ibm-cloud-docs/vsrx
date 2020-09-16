@@ -33,9 +33,6 @@ For a list of known limitations with {{site.data.keyword.vsrx_full}} Gateway, se
 ## Choosing a vSRX license
 {: #choosing-license}
 
-Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between the following license options. Full support for the various vSRX configurations, including 1G and High Availability, will be introduced soon.
-{: important}
-
 There are two license types available for your {{site.data.keyword.vsrx_full}}:
 
 * Standard
@@ -54,9 +51,6 @@ You can specify your license type when ordering your vSRX, as well as change the
 ## Ordering a vSRX
 {: #ordering-with-a-linked-account}
 
-IBM Cloud has temporarily suspended new sales of 1G Highly Available (HA) Juniper installations. This restriction is due to a pending design change that is required to improve HA stability. The offering is projected to become available again in Q2 2020.
-{: preview}
-
 You can order your {{site.data.keyword.vsrx_full}} by performing the following procedure:
 
 1. From your browser, open the Gateway Appliances page in the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/gen1/infrastructure/provision/gateway){: new_window} and log in to your account.
@@ -69,26 +63,23 @@ You can order your {{site.data.keyword.vsrx_full}} by performing the following p
  See the previous section for information on the features offered with each license.
   {: tip}
 
-  Currently, only {{site.data.keyword.vsrx_full}} 10G Standalone configurations can choose between license options. Full support among all the various vSRX configurations, including 1G and High Availability, will be introduced soon.
-  {: important}
-
-3. From the **Gateway appliance** section, enter your **Hostname** and **Domain** name information. These fields are already be populated with default information, so ensure that the values are correct.
+4. From the **Gateway appliance** section, enter your **Hostname** and **Domain** name information. These fields are already be populated with default information, so ensure that the values are correct.
 
 	![Linked order](images/linked_order.png "Linked order")
 
-4. Check the **High Availability** option if needed, then select a data center **Location**, and the specific **Pod** you want from the menu.
+5. Check the **High Availability** option if needed, then select a data center **Location**, and the specific **Pod** you want from the menu.
 
   Only pods that already have an associated VLAN are displayed here. If you want to provision your gateway appliance in a pod you don't see listed, first create a VLAN there.
   {: note}
 
 	![Linked server](images/linked_server.png "Linked server")
 
-5. From the **Configuration** section, choose your processor's RAM. You can also define an SSH key, if you want to use it to authenticate access to your new Gateway.
+6. From the **Configuration** section, choose your processor's RAM. You can also define an SSH key, if you want to use it to authenticate access to your new Gateway.
 
   The appropriate processor is chosen for you based on the license version you selected in step two. However, you can choose different RAM configurations.
   {: note}
 
-6. From the **Storage disks** section, choose the options that meet your storage requirements.
+7. From the **Storage disks** section, choose the options that meet your storage requirements.
 
   RAID0 and RAID1 options are available for added protection against data loss, as are hot spares (backup components that can be placed into service immediately when a primary component fails).
   {: note}
@@ -99,11 +90,11 @@ You can order your {{site.data.keyword.vsrx_full}} by performing the following p
   Reserve more than the default disk setting if you plan to run network diagnostics that generate detailed logs.
   {: tip}
 
-7. From the **Network interface** section, select your **Uplink port speeds**. The default selection is a single interface, but there are redundant and private only options as well. Choose the one that best fits your needs.
+8. From the **Network interface** section, select your **Uplink port speeds**. The default selection is a single interface, but there are redundant and private only options as well. Choose the one that best fits your needs.
 
   The Network Interface **Add Ons** section allows you to select an IPv6 address if required, and shows you any additional included default options.
 
-8. Review your selections, check that you have read the Third Party Service Agreements, then click **Create**. The order is verified automatically.
+9. Review your selections, check that you have read the Third Party Service Agreements, then click **Create**. The order is verified automatically.
 
 After your order is approved, the provisioning of your {{site.data.keyword.vsrx_full}} Gateway starts automatically. When the provisioning process is complete, the new vSRX appears in the Gateway Appliances list page. Click the gateway name to open the Gateway Details page. The IP addresses, login username, and password for the device appear.
 
