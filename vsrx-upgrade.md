@@ -33,6 +33,8 @@ There are several methods and considerations that you must understand before upg
 
 Using these factors, the following table lists whether you can use the OS reload option to upgrade your vSRX. The table also describes whether rollback is supported for the upgrade. Additional considerations include whether you need a manual vSRX configuration migration to complete the upgrade.
 
+For more information on the vSRX versions listed below, refer to [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
+
 | Current vSRX version  | Processor model and speed | Stand-alone or HA | Upgrade method  | Rollback supported |
 | ------------- | ------------- | ------------- | ------------- | ------------- |	 			
 | 15.1	| 1270v6 (All 1G deployments)	| Stand-alone and HA	| [Not Supported](/docs/vsrx?topic=vsrx-unsupported-upgrade) | N/A|

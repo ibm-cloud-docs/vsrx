@@ -64,15 +64,15 @@ IBM Cloud Juniper vSRX
     vsrx-license.md
     os-reload.md
     rebuild-cluster.md
-
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
+    vsrx-release-notes.md
     /hardware-firewall-dedicated/hardware-firewall-dedicated-ibm-cloud-ip-ranges
+    vsrx-version-notes.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    vsrx-release-notes.md
     known-limitations.md
     vsrx-docs.md
     /gateway-appliance/gateway-appliance-getting-help
