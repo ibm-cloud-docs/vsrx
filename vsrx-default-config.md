@@ -801,12 +801,12 @@ The information in the following table represents the configuration above:
 | :---       |    :---     |    :---     |
 | ge-0/0/1 / ge-0/0/2 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 0 | reth0 |
 | ge-0/0/3 / ge-0/0/4 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 0 | reth1 |
-| ge-0/0/5 / ge-0/0/6 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 0 | reth2 |
-| ge-0/0/7 / ge-0/0/8 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 0 | reth3 |
+| ge-0/0/5 / ge-0/0/6 | Gigabit ethernet interface for Customer Private VLAN on node 0 | reth2 |
+| ge-0/0/7 / ge-0/0/8 | Gigabit ethernet interface for Customer Public VLAN on node 0 | reth3 |
 | ge-7/0/1 / ge-7/0/2 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 1 | reth0 |
 | ge-7/0/3 / ge-7/0/4 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 1 | reth1 |
-| ge-7/0/5 / ge-7/0/6 | Gigabit ethernet interface for SL-PRIVATE transit VLAN on node 1 | reth2 |
-| ge-7/0/7 / ge-7/0/8 | Gigabit ethernet interface for SL-PUBLIC transit VLAN on node 1 | reth3 |
+| ge-7/0/5 / ge-7/0/6 | Gigabit ethernet interface for Customer Private VLANs on node 1 | reth2 |
+| ge-7/0/7 / ge-7/0/8 | Gigabit ethernet interface for Customer Public VLANs on node 1 | reth3 |
 | fab0 | Chassis cluster fabric link uses ge-0/0/0 and ge-0/0/9 | |
 | fab1 | Chassis cluster fabric link uses ge-7/0/0 and ge-7/0/9 | |
 | fxp0          |   Management interface        | |
