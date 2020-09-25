@@ -26,7 +26,7 @@ subcollection: vsrx
 This document lists the currently supported vSRX versions.
 {: shortdesc}
 
-You can click on the **Version information** link for each entry to get more details about each version.
+You can click on the **Version information** link for each entry to get more details about that version.
 
 | Base version | Release version | Release date | Version information |
 | --- | --- | --- | --- |
