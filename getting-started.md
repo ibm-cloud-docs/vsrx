@@ -4,7 +4,7 @@ copyright:
   years: 2018
 lastupdated: "2020-02-21"
 
-keywords: vsrx, ordering, gateway, appliance
+keywords: ordering, gateway, appliance, vsrx, license 
 
 subcollection: vsrx
 

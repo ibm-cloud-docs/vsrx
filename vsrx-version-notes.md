@@ -4,7 +4,7 @@ copyright:
   years: 2017, 2018, 2019
 lastupdated: "2020-09-21"
 
-keywords: vsrx, version, base version, release notes, juniper
+keywords: version, base version, release notes, juniper
 
 subcollection: vsrx
 

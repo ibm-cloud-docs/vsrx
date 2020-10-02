@@ -4,7 +4,7 @@ copyright:
   years: 2018
 lastupdated: "2019-11-13"
 
-keywords: about, vsrx, overview, details, firewall, vpn, nat, routing, vlan
+keywords: about, overview, details, firewall, vpn, nat, routing, vlan
 
 subcollection: vsrx
 

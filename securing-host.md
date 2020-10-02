@@ -4,7 +4,7 @@ copyright:
   years: 2018
 lastupdated: "2019-11-15"
 
-keywords: secure, securing, host, os, ubuntu, ufw, iptables, firewal, vsrx, juniper
+keywords: secure, securing, host, os, ubuntu, ufw, iptables, firewall, juniper
 
 subcollection: vsrx
 

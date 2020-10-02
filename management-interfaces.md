@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-07-30"
 
-keywords: vsrx, management, interface, fpx0, subnets, IPs, VLAN, nodes
+keywords: management, interface, fpx0, subnets, IPs, VLAN, nodes
 
 subcollection: vsrx
 
@@ -26,7 +26,7 @@ subcollection: vsrx
 The {{site.data.keyword.vsrx_full}} nodes provide built-in management interfaces ("fxp0") that are not configured by default. When configured, these private interfaces can be used to communicate with the individual node, which might be useful in a high availability cluster for monitoring the status of the secondary node over SSH, ping, SNMP, and so on. Since the private IP for the vSRX floats to the primary node, it is not possible to directly access the secondary node.
 {: shortdesc}
 
-Configuration of the fxp0 interface requires IPs in a subnet that is attached to the private transit VLAN for the gateway. Although the primary subnet that comes with the gateway has IPs that might be available, it is not recommended for this use. This is because the primary subnet is reserved for the gateway provisioning infrastructure, and IP collisions could occur if additional gateways are deployed in the same pod. 
+Configuration of the fxp0 interface requires IPs in a subnet that is attached to the private transit VLAN for the gateway. Although the primary subnet that comes with the gateway has IPs that might be available, it is not recommended for this use. This is because the primary subnet is reserved for the gateway provisioning infrastructure, and IP collisions could occur if additional gateways are deployed in the same pod.
 
 You can allocate a secondary subnet for the private transit VLAN, and use IPs from this subnet to configure fxp0 and the host bridge interface for PING and SSH access. To do so, perform the following procedure:
 
