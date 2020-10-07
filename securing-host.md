@@ -68,7 +68,9 @@ The procedure above ensures addresses in the private infrastructure network `10.
 Implementing an Ubuntu firewall (UFW, Iptables, and so on) without required rules can cause the {{site.data.keyword.vsrx}} HA cluster to be disabled. The vSRX solution depends on heartbeat communication between the primary and secondary nodes. If the firewall rules do not allow communication between the nodes, then cluster communication will be lost.
 {: important}
 
-For {{site.data.keyword.vsrx}} version 18.4 and later, the following rules are used to allow cluster communication for UFW:
+The {{site.data.keyword.vsrx}} architecture influences the firewall rules discussed below. Details on the two architectures can be found in [vSRX default configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#interface-configurations).
+
+For {{site.data.keyword.vsrx}} version 18.4 HA deployments running with the legacy architecture, the following rules are required to allow cluster communication for UFW:
 
 - To allow protocol 47 (used for heartbeat communication) in `/etc/ufw/before.rules`:
 
@@ -88,7 +90,7 @@ For {{site.data.keyword.vsrx}} version 18.4 and later, the following rules are u
   ufw enable
   ```
 
-For {{site.data.keyword.vsrx}} versions prior to 18.4, the rules must also allow for multicast communication.
+For {{site.data.keyword.vsrx}} versions running with the newer architecture, the firewall rules must allow for multicast communication.
 
 In some cases, troubleshooting operations may require disabling the firewall for access to public repositories. In these cases, you should work with IBM Support to understand how to proceed.
 {: note}

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018
-lastupdated: "2020-02-21"
+lastupdated: "2020-10-07"
 
-keywords: limitations, problems
+keywords:  
 
 subcollection: vsrx
 
@@ -20,7 +20,7 @@ subcollection: vsrx
 {:note: .note}
 {:important: .important}
 
-# Known limitations for IBM Cloud Juniper vSRX
+# Known limitations for {{site.data.keyword.cloud_notm}} Juniper vSRX
 {: #known-limitations-for-ibm-cloud-juniper-vsrx}
 
 There are some limitations to be aware of when using {{site.data.keyword.vsrx_full}}.
@@ -32,19 +32,19 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
       - 10 Gbps version in WDC01 (Washington, DC)
       - 1G and 10G High Availability versions in: AMS01, DAL05, DAL06, DAL07, HKG02, HOU02, SJC01, SNG01, and WDC01
 
-* Juniper vSRX gateway is deployed with networking virtualization by using Linux Bridge. Linux Bridge based networking virtualization can achieve only limited throughput and never line-rate throughput.
+* There is no support to upgrade from Standalone to High Availability mode.
 
-* There is no support to upgrade from Standalone to High-availability mode.
+* vSRX deploys with the options of Junos OS version `15.1` , `18.4`, and `19.4`. Limitations for upgrading and downgrading can be found in [Upgrading the vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
 
-* {{site.data.keyword.vsrx_full}} Gateway is deployed with the options of Junos OS version `15.1` or `18.4`. Currently, upgrading/downgrading to a different version is not supported.
+* Older Juniper vSRX gateways were deployed with Linux Bridge based networking virtualization. This virtualization can achieve only limited throughput and never line-rate throughput. Most deployments of vSRX 18.4 and later leverage SR-IOV, which provides improved throughput.
 
-* The 60-day evaluation license might cause the kernel to generate error messages, even when another (valid) license is on the system. Remove any 60-day evaluation licenses to avoid this issue. To do so, follow these steps:
+* Older Juniper vSRX gateways were deployed with a 60-day evaluation license, which might cause the kernel to generate error messages even when another (valid) license is on the system. Remove any 60-day evaluation licenses to avoid this issue. To do so, follow these steps:
 
    1. Log in to your vSRX gateway device.
 
    2. Enter CLI mode by running the command `cli` at the console prompt.
 
-   3. Run the command to get the license identifier:
+   3. Run the following command to get the license identifier:
 
       ```
       show system license
@@ -70,7 +70,7 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
           date-based, 2018-10-18 00:00:00 UTC - 2021-10-18 00:00:00 UTC
       ```
 
-   4. Copy the identifier of the license that you want to delete and run the command:
+   4. Copy the identifier of the license that you want to delete, then run the command:
 
       ```
       request system license delete <license identifier>
