@@ -43,7 +43,7 @@ If the session cannot be established, check the potential following issues.
 
 For Host (Ubuntu) SSH connectivity errors:
 
-  * Is the Ubuntu firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet.
+  * Is the Ubuntu firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information on IBM Cloud IP Ranges for the service network, refer to [this topic](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#service-network-on-backend-private-network-).
   * Is the root password listed on the Gateway Details page the correct password for the root user?
   If not, click the device link under the **Hardware** section and navigate to **Passwords**. Select **Actions > Edit credentials** and change the password to match the actual root password on the Ubuntu host.
   * Is the root login disabled for the SSH server? Is the SSH server disabled or stopped?
@@ -51,7 +51,7 @@ For Host (Ubuntu) SSH connectivity errors:
 
 For Gateway (vSRX) SSH connectivity errors:
 
-  * Is the vSRX firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet.
+  * Is the vSRX firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information on IBM Cloud IP Ranges for the service network, refer to [this topic](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges#service-network-on-backend-private-network-).
   * Is the root password listed on the Gateway Details page the correct password for the root user?
   If not, click the **Edit** icon ![Edit icon](../../icons/edit-tagging.svg) next to the root password and change the password to match the actual root password for the vSRX.
   * Is the root user account disabled for SSH access to the vSRX?
