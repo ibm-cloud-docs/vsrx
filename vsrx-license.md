@@ -39,6 +39,8 @@ To view your current license, perform the following procedure:
 
 To change your current license, perform the steps above, then:
 
+1. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness) for “License upgrade” and address any errors that are found.
+
 1. Click the Edit icon  ![Edit icon](../../icons/edit-tagging.svg)  next to your current license to edit it.
 
   ![Editing your license](images/license-edit.png "Editing your license")
