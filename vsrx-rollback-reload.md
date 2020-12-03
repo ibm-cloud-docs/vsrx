@@ -30,9 +30,16 @@ In the high availability environment that is upgrading from vSRX version, a roll
 Please be aware, that a traffic disruption will occur while waiting for the secondary node to power on and for the traffic to failover to this node.
 {: important}
 
-1.	Power off the vSRX on the node being rolled-back (primary node). `virsh shutdown <domain>`
+1. Power off the vSRX on the node being rolled-back (primary node) using the command `virsh shutdown <domain>`.
+
   Wait for the node to be fully powered off before proceeding.
-  {: important}
-2.	Power up the vSRX on the node that has not been rolled-back. `virsh start <domain>`, this will return the primary back to the original vSRX version.
-3.	Run the OS Reload Readiness Check if necessary and resolve any issues.
-4.	OS Reload the host targeted for rollback back to the original vSRX version. The cluster will now be running with the original configuration.
+
+2. Power up the vSRX on the node that has not been rolled-back using the command `virsh start <domain>`. This will return the primary node back to the original vSRX version. 
+
+3. Before restoring the original vSRX image, rename the vSRX qcow2 file in `/var/lib/libvirt/images/vSRXvM2/vSRX_Image.qcow2.backup` to `/var/lib/libvirt/images/vSRXvM2/vSRX_Image.qcow2` so that `virsh` detects the original image.
+
+4.	Run the [OS reload readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness), if necessary, and resolve any issues.
+
+5.	Perform an OS reload on the host you want to rollback to return it to the original vSRX version. 
+
+The cluster will now be running with its original configuration.
