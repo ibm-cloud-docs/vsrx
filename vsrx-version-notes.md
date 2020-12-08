@@ -30,6 +30,7 @@ You can click on the **Version information** link for each entry to get more det
 
 | Base version | Release version | Release date | Version information |
 | --- | --- | --- | --- |
-| 19.4 | 19.4R2-S1 | Early release available: September 21, 2020 | [More information ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17827&actp=METADATA){: new_window} |
+| 19.4R2-S3 | 19.4R2-S3.1 | December 8, 2020 | [More information ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17918){: new_window}
+| 19.4 | 19.4R2-S1 | September 21, 2020 | [More information ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17827&actp=METADATA){: new_window} |
 | 18.4 | 18.4R1-S1 | April 8, 2019 | [More information ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17520&actp=METADATA){: new_window} |
 | 15.1 | 15.1X49 | October 25, 2018 | [More information ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/information-products/topic-collections/release-notes/15.1x49-d120/junos-release-notes-15.1X49-D120.pdf){: new_window} |
