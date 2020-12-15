@@ -36,7 +36,8 @@ Please be aware, that a traffic disruption will occur while waiting for the seco
 
 2. Power up the vSRX on the node that has not been rolled-back using the command `virsh start <domain>`. This will return the primary node back to the original vSRX version. 
 
-3. Before restoring the original vSRX image, rename the vSRX qcow2 file in `/var/lib/libvirt/images/vSRXvM2/vSRX_Image.qcow2.backup` to `/var/lib/libvirt/images/vSRXvM2/vSRX_Image.qcow2` so that `virsh` detects the original image.
+  Before restoring the original vSRX image, rename the vSRX qcow2 file in `/var/lib/libvirt/images/vSRXvM2/vSRX_Image.qcow2.backup` to `/var/lib/libvirt/images/vSRXvM2/vSRX_Image.qcow2` so that `virsh` detects the original image.
+  {: tip}
 
 4.	Run the [OS reload readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness), if necessary, and resolve any issues.
 
