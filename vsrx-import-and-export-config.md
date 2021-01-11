@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-11-14"
+lastupdated: "2021-01-08"
 
 keywords: understanding, default, configuration, standalone, ha
 
@@ -26,14 +26,14 @@ subcollection: vsrx
 The {{site.data.keyword.vsrx_full}} upgrade process preserves the original configuration of the vSRX throughout the entire process, as long as the required reloads are done one at a time. However, it is still strongly recommended to export and backup your vSRX configuration settings before starting the upgrade.
 {: shortdesc}
 
-After the upgrade process completes for Stand Alone servers, you should import the original configuration you have saved if you want to restore it. For High Availability configurations, you should restore the configuration manually from your exported file only if the upgrade fails.
+After the upgrade process completes for Stand Alone servers, you should import the original configuration you saved if you want to restore it. For High Availability configurations, you should restore the configuration manually from your exported file only if the upgrade fails or if moving between architectures. Refer to [Migrating legacy configurations to the current vSRX architecture](/docs/vsrx?topic=vsrx-migrating-config) for details on migrating 1G configurations from the legacy architecture to the current architecture.
 
 ## Considerations
 {: #considerations}
 
 * The upgrade process for Standalone and High Availability (HA) are different. Details can be found [here](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
 * The J-web interface allows you to display, edit, and upload the current configuration quickly and easily without using the Junos OS CLI. Reference the [Juniper J-Web User Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/topics/concept/J-web-overview.html){:new_window} for more details.
-* An upgrade from the vSRX 15.x 10G to the vSRX 18.x 10G offering results in changes to the vSRX interface mappings in the configuration file. As a result, when importing your original vSRX settings, make sure that the new “interfaces” section is not modified. There are two ways of doing this. Either import sub-sections other than the “interfaces” section, or import the entire configuration and manually restore the 18.x SR-IOV interfaces.
+* An upgrade from the vSRX 15.1 release to a newer vSRX release, such as 19.4, results in changes to the vSRX interface mappings in the configuration file. As a result, when importing your original vSRX settings, make sure that the new “interfaces” section is not modified. There are two ways of doing this: Either import sub-sections other than the “interfaces” section, or import the entire configuration and manually restore the 19.4 SR-IOV interfaces.
 
 The new vSRX default interface configuration for both the Linux Bridge and SR-IOV must be preserved after the import of their configurations. For example, for SR-IOV the GE interfaces have specific mappings to the host that must be preserved to enable SR-IOV. These interfaces are found in the CLI using the command `show configuration interfaces`. Refer to [vSRX default configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) for more information on SR-IOV mappings. Refer to [Migrating legacy configurations to the current vSRX architecture](/docs/vsrx?topic=vsrx-migrating-config) for details on migrating 1G configurations from the legacy architecture to the current architecture.
 {: important}
@@ -45,22 +45,16 @@ If you prefer using the Junos OS CLI, the following contents provide different m
 
 To export the entire vSRX configuration:
 
-1. First, run the command `save /var/tmp/XXX.txt` to save the entire configuration into `/var/tmp`. You can name the text file whatever you wish. For high availability (HA) configurations, run the command on the node where Resource Group 0 is located. The output should be similar to the following:
+1. Save the configuration: `show configuration | save /var/tmp/backup.txt`
 
-  ```
-  Wrote 273 lines of configuration to '/var/tmp/SA15DefaultConfig.txt'  
-
-  [edit]
-  ```
-
-2. Copy and save the text file into your local workspace for later use.
+2. Copy the saved file off the vSRX for use later.
 
 ## Exporting part of the vSRX configuration
 {: #export-part-of-the-vsrx-configuration}
 
 To export only part of the vSRX configuration:
 
-1. Ensure that you are at the top of the configuration tree by running `top` under the configuration mode.
+1. Enter configuration mode and ensure you are at the top of the configuration tree: `edit` then `top`
 
 2. Then run the command `show <section>` to get the current configuration, enclosed in braces.
 
@@ -92,7 +86,7 @@ The new vSRX default interface configuration for both the Linux Bridge and SR-IO
 To import the entire vSRX configuration:
 
 1. After upgrading the vSRX, copy the config file you saved earlier back to the `/var/tmp` folder.
-2. Run `load override /var/tmp/XXX.txt` under the configuration mode to replace the entire current configuration with the content that you saved under the `/var/tmp` folder.
+2. Run `load override /var/tmp/backup.txt` under the configuration mode to replace the entire current configuration with the content that you saved under the `/var/tmp` folder.
 
 ## Importing part of the vSRX configuration
 {: #import-part-of-the-vsrx-configuration}

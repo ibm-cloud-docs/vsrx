@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2020-10-07"
+lastupdated: "2021-01-08"
 
 keywords:  
 
@@ -28,13 +28,14 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
 * Due to incompatible networking elements, the Juniper vSRX solution is not available as follows:
 
-      - Neither 1 Gbps or 10 Gbps versions in the SEA01 (Seattle, WA) data center
       - 10 Gbps version in WDC01 (Washington, DC)
-      - 1G and 10G High Availability versions in: AMS01, DAL05, DAL06, DAL07, HKG02, HOU02, SJC01, SNG01, and WDC01
+      - 1G and 10G High Availability versions in: AMS01, DAL05, DAL06, DAL07, HOU02, SJC01, and WDC01
 
 * There is no support to upgrade from Standalone to High Availability mode.
 
-* vSRX deploys with the options of Junos OS version `15.1` , `18.4`, and `19.4`. Limitations for upgrading and downgrading can be found in [Upgrading the vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
+* There is no support to upgrade from 1G to 10G or downgrade from 10G to 1G.
+
+* Only the latest IBM Cloud certified vSRX release is available for new orders and upgrades. Requests for older IBM Cloud certified vSRX releases should be made through an IBM Support ticket. Limitations for upgrading and downgrading can be found in [Upgrading the vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
 
 * Older Juniper vSRX gateways were deployed with Linux Bridge based networking virtualization. This virtualization can achieve only limited throughput and never line-rate throughput. Most deployments of vSRX 18.4 and later leverage SR-IOV, which provides improved throughput.
 
