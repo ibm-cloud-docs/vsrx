@@ -52,6 +52,7 @@ IBM Cloud Juniper vSRX
         vpn.md
         securing-host.md
         management-interfaces.md
+        system-logging.md
 
     {: topicgroup}
     Upgrading the vSRX
