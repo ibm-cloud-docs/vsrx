@@ -27,7 +27,7 @@ To upgrade your vSRX using OS reload, perform the following procedure.
 
 1.	**Standalone environment only:** [Export the vSRX configuration](/docs/vsrx?topic=vsrx-importing-exporting-vsrx-configuration#export-the-whole-vsrx-configuration).
 2.	[Access the gateway details page](/docs/vsrx?topic=gateway-appliance-viewing-gateway-appliance-details).
-3.	Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness) for “OS reload” and address any errors that are found.
+3.	Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness) for “Version upgrade” and address any errors that are found.
 4.	Perform an [OS reload](/docs/vsrx?topic=vsrx-reloading-the-os#performing-an-os-reload) for each bare metal server.
 
   When upgrading an HA cluster, the process will power off the node not undergoing the OS reload at the end of the upgrade process. This will transition the cluster’s primary node and any active network traffic to the newly upgraded one. Once the OS reload completes for the first node in the cluster, it is critical that the second node be left unpowered until the OS reload to upgrade that node is submitted and running. Powering the node on prior to the OS reload will cause the cluster to run with mismatched vSRX versions, potentially leading to a “split-brain” scenario where each node tries to claim primary ownership. This generally results in an outage. After the OS reload of the first node, the gateway will transition to “Upgrade Active” status.
