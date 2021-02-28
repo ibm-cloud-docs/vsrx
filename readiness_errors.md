@@ -22,157 +22,143 @@ subcollection: vSRX
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Understanding readiness errors
+# Understanding readiness errors and warnings
 {: #readiness-errors}
 
-Readiness check errors you may encounter can either be common errors or version upgrade errors. The below lists provide additional information on these error codes.
+Readiness check warnings and errors can occur for any of the three readiness checks: OS reload, license upgrade, or version upgrade. The following list provides information on these error and warning codes.
 
-## Common readiness errors
-{: #common-errors}
-
-The following common errors may occur when running readiness checks.
-
-### Error 1000
+## Error 1000
 {: #error-1000}
 An OS Reload is already running on a different node in the HA cluster, the other nodes OS Reload must complete before executing a second OS Reload.
 
-### Error 1002
+## Error 1002
 {: #error-1002}
 An error occurred in the connectivity check, please contact support.
 
-### Error 1003
+## Error 1003
 {: #error-1003}
 The root user for host is not found.
 
-### Error 1004
+## Error 1004
 {: #error-1004}
 The root user credentials for host are not found.
 
-### Error 1005
+## Error 1005
 {: #error-1005}
-The host SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection could not be created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1007
+## Error 1007
 {: #error-1007}
-The host SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection could not be created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1008
+## Error 1008
 {: #error-1008}
-The host SSH console could not process the command. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console could not process the command. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1009
+## Error 1009
 {: #error-1009}
-The host has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1011
+## Error 1011
 {: #error-1011}
 The root user credentials for gateway are not found.
 
-### Error 1012
+## Error 1012
 {: #error-1012}
-The gateway SSH console connection failed. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console connection failed. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1013
+## Error 1013
 {: #error-1013}
 The root user for the gateway is not found.
 
-### Error 1014
+## Error 1014
 {: #error-1014}
 The gateway readiness check has timed out.
 
-### Error 1017
+## Error 1017
 {: #error-1017}
-The gateway SSH console connection could not be created. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console connection could not be created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1018
+## Error 1018
 {: #error-1018}
-The gateway SSH console could not process the command. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console could not process the command. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1019
+## Error 1019
 {: #error-1019}
-The gateway has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway has an invalid IP address or is blocked by a firewall, SSH failed. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 1021
+## Error 1021
 {: #error-1021}
 An error occurred in the connectivity check, please contact support.
 
-## Version upgrade errors
-{: #upgrade-errors}
+## Error 1022
+{: #error-1022}
+The gateway readiness precheck failed with an unexpected exception, please rerun or contact support.
 
-You may encounter the following errors when running version upgrade readiness checks.
+## Error 1101
+{: #error-1101}
+An error occurred during the readiness check, try again or contact support.
 
-### Errors 2001 - 2004
-{: #error-2001}
-The host has a readiness check setup failure, please rerun or contact support.
+## Error 1102
+{: #error-1102}
+The host experienced a precheck setup failure, please rerun or contact support.
 
-### Error 2007
-{: #error-2007}
-The host has a readiness check setup failure and can not SSH to the gateway. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+## Error 1103
+{: #error-1103}
+The host experienced a precheck setup failure, please rerun or contact support.
 
-### Error 2008
-{: #error-2008}
-The host has a readiness check setup failure and can not SSH to the private IP for the other node's host. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+## Error 1104
+{: #error-1104}
+The host experienced a precheck setup failure, please rerun or contact support.
 
-### Error 2009
-{: #error-2009}
-The host has a readiness check setup failure, a required vSRX interface is down.
+## Error 1105
+{: #error-1105}
+The host experienced a precheck setup failure and can not SSH to the gateway. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 2010
-{: #error-2010}
-The host has a readiness check setup failure, a required vSRX interface is down.
+## Error 1106
+{: #error-1106}
+The host experienced a precheck setup failure and cannot SSH to the private IP for the other node's host. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 2011
-{: #error-2011}
-The host has a readiness check setup failure, a required vSRX interface is down.
+## Error 1107
+{: #error-1107}
+The host experienced a precheck setup failure due to an invalid password. Please correct the password and rerun. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Error 2012
-{: #error-2012}
-The host has a readiness check setup failure, the vSRX node is not clustered.
+## Error 1108
+{: #error-1108}
+The gateway experienced a precheck setup failure due to an invalid password. Please correct the password and rerun.  Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
-### Errors 2013 and 2014
-{: #error-2013}
-The host has a readiness check setup failure, the vSRX redundancy group configuration is incorrect.
+## Error 1109
+{: #error-1109}
+The gateway experienced a precheck setup failure, and is unable to check the vSRX disk capacity. Please remove any unnecessary files from `/var` and rerun.
 
-### Error 2015
-{: #error-2015}
-The host has a readiness check setup failure, the vSRX FPC is offline.
+## Error 1110
+{: #error-1110}
+The gateway experienced a precheck setup failure due to the fact that the vSRX file system reached capacity. Please remove any unneecessary files from `/var` and rerun.
 
-### Error 2016
-{: #error-2016}
-The host has a readiness check setup failure, the vSRX PIC is offline.
+## Error 1111
+{: #error-1111}
+The gateway experienced a precheck setup failure due to a general failure in the JunOS RPC call. Please rerun or contact support.
 
-### Error 2017
-{: #error-2017}
-The host has a readiness check setup failure, the vSRX license is invalid.
+## Error 1112
+{: #error-1113}
+The gateway experienced a precheck setup failure due to a cluster error. Ensure redundancy group 0 is online and has no monitor-failures.
 
-### Error 2018
-{: #error-2018}
-The host has a readiness check setup failure, the vSRX license could not be validated.
+## Error 1113
+{: #error-1113}
+The host experienced a precheck setup failure and is unable to determine the status of the host VM using `virsh`. Please rerun or contact support.
 
-### Error 2019
-{: #error-2019}
-The host has a readiness check setup failure, please rerun or contact support.
+## Error 1124
+{: #error-1124}
+The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version 18.4. Please specify a vlan-id for each interface configured with vlan-tagging. Refer to [Correcting error 1124](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1124) for more information.
 
-### Error 2020
-{: #error-2020}
-The host has a readiness check setup failure, change the vSRX configuration to allow more SSH sessions. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+## Error 1125
+{: #error-1125}
+The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version the 18.4 syslog settings. Refer to [Correcting error 1125](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1125) for more information.
 
-### Error 2021
-{: #error-2021}
-The host has a readiness check setup failure, please rerun or contact support.
+## Warning 1176
+{: #error-1176}
+The gateway experienced a precheck setup warning. A VPN establishment configuration with `non-immediate` was detected, which could increase the time it takes for VPN establishment after the vSRX starts. Refer to [Correcting warning 1176](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1176) for more information.
 
-### Error 2022
-{: #error-2022}
-The host has a readiness check setup failure, the vSRX firewall configuration blocks connectivity.
-
-### Error 2023
-{: #error-2023}
-The host has a readiness check setup failure, please rerun or contact support.
-
-### Error 2024
-{: #error-2024}
-The host has a readiness check setup failure, unable to ping the vSRX FXP IP address.
-
-### Error 2025
-{: #error-2025}
-The host has a readiness check setup failure, unable to SSH to the vSRX FXP IP address. Refer to [Correcting readiness errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+## Warning 1177
+{: #error-1177}
+The gateway experienced a precheck setup warning. A security policy using `dynamic-application any` was detected, which can result in packet loss. This can also cause VPN tunnel communication to fail. Refer to [Correcting warning 1177](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1177) for more information.
