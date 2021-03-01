@@ -57,9 +57,11 @@ For a successful OS Reload on a vSRX, ensure the following:
   Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the [Rebuild cluster](/docs/vsrx?topic=vsrx-rebuilding-an-ha-cluster) option to re-provision the vSRX and recreate the HA cluster.
   {: important}
 
-* The IPMI interface for the bare-metal server must be enabled or the following error will be issued: 
+* The IPMI interface for the bare-metal server must be enabled or the following error will be issued:
 
-  ```You cannot toggle the IPMI interface while transactions are running.```
+  ```
+  You cannot toggle the IPMI interface while transactions are running.
+  ```
 
 ## Performing an OS reload
 {: #performing-an-os-reload}

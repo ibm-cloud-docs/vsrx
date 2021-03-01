@@ -40,7 +40,7 @@ For more information on the vSRX versions listed below, refer to [IBM Cloud Juni
 | Current vSRX version  | Processor model and speed | Stand-alone or HA | Upgrade method  | Rollback supported |
 | ------------- | ------------- | ------------- | ------------- | ------------- |	 			
 | 15.1	| 1270v6 (All 1G deployments)	| Stand-alone and HA	| [Not Supported](/docs/vsrx?topic=vsrx-unsupported-upgrade) | N/A|
-| 15.1 | All 10G Deployments | Stand-alone and HA | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) |	**Stand-alone:** No <BR> **HA:** <ul><li>Manual (not automated) rollbacks are allowed after the first server completes the OS reload.<li>Rollbacks are not allowed after the second server completes its OS reload. |
+| 15.1 | All 10G Deployments | Stand-alone and HA | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) |	**Stand-alone:** No <BR> **HA:** <ul><li>Manual (not automated) rollbacks are allowed after the first server completes the OS reload.</li><li>Rollbacks are not allowed after the second server completes its OS reload.</li></ul> |
 | 18.4 | 1270v6 (Some 1G Deployments) |	Stand-alone and HA |	[Not Supported](/docs/vsrx?topic=vsrx-unsupported-upgrade) |	N/A |
 | 18.4 | 4210 (Some 1G Deployments) | Stand-alone | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) | No |
 | 18.4 | 4210 (Some 1G Deployments) |	HA | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) | **Yes** – If you are running version 18.4 with new architecture, manual (not automated) rollbacks are allowed after the first server completes the OS reload. For more information, see [Rollback options](/docs/vsrx?topic=vsrx-rollback-options) <BR> <BR> **No** – If you are running version 18.4 without new architecture. |
