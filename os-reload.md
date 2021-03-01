@@ -39,7 +39,7 @@ The process typically performs the following actions:
 
 The process can take between 2 and 5 hours to complete. Standalone gateways will be out of service during this period. For Juniper High Availability (HA) gateways, when you reload the OS on one of your servers, the vSRX will failover to another server in the cluster and continue to process data traffic. Once the reload completes, the server will rejoin the cluster.
 
-If the OS reload is changing your vSRX version, then refer to [Upgrading using OS Reload](/docs/infrastructure/vsrx?topic=vsrx-os-reload-upgrade) to understand the downgrade and upgrade process.
+If the OS reload is changing your vSRX version, then refer to [Upgrading using OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade#os-reload-upgrade) to understand the downgrade and upgrade process.
 {: important}
 
 For a successful OS Reload on a vSRX, ensure the following:
@@ -57,12 +57,9 @@ For a successful OS Reload on a vSRX, ensure the following:
   Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the [Rebuild cluster](/docs/vsrx?topic=vsrx-rebuilding-an-ha-cluster) option to re-provision the vSRX and recreate the HA cluster.
   {: important}
 
-* The IPMI interface for the bare-metal server must be enabled or the following error will be issued:
+* The IPMI interface for the bare-metal server must be enabled or the following error will be issued: 
 
-  ```
-  You cannot toggle the IPMI interface while transactions are running.
-  ```
-  {: screen}
+  ```You cannot toggle the IPMI interface while transactions are running.```
 
 ## Performing an OS reload
 {: #performing-an-os-reload}
@@ -70,7 +67,7 @@ For a successful OS Reload on a vSRX, ensure the following:
 To reload your OS, perform the following procedure:
 
 1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
-2. Run a [Readiness check](/docs/infrastructure/vsrx?topic=vsrx-vsrx-readiness) for “OS Reload” and address any errors that are found.
+2. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness#vsrx-readiness) for “OS Reload” and address any errors that are found.
 3. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 4. Choose **Network > Gateway Appliances**.
 5. Click on the server you want to reload.
