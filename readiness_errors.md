@@ -156,9 +156,9 @@ The gateway experienced a precheck setup failure due to a Juniper incompatibilit
 The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version the 18.4 syslog settings. Refer to [Correcting error 1125](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1125) for more information.
 
 ## Warning 1176
-{: #error-1176}
+{: #warning-1176}
 The gateway experienced a precheck setup warning. A VPN establishment configuration with `non-immediate` was detected, which could increase the time it takes for VPN establishment after the vSRX starts. Refer to [Correcting warning 1176](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1176) for more information.
 
 ## Warning 1177
-{: #error-1177}
+{: #warning-1177}
 The gateway experienced a precheck setup warning. A security policy using `dynamic-application any` was detected, which can result in packet loss. This can also cause VPN tunnel communication to fail. Refer to [Correcting warning 1177](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1177) for more information.
