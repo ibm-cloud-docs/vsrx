@@ -140,7 +140,7 @@ The gateway experienced a precheck setup failure due to the fact that the vSRX f
 The gateway experienced a precheck setup failure due to a general failure in the JunOS RPC call. Please rerun or contact support.
 
 ## Error 1112
-{: #error-1113}
+{: #error-1112}
 The gateway experienced a precheck setup failure due to a cluster error. Ensure redundancy group 0 is online and has no monitor-failures.
 
 ## Error 1113
