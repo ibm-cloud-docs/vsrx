@@ -63,6 +63,7 @@ IBM Cloud Juniper vSRX
         vsrx-upgrade-unsupported.md
 
     vsrx-license.md
+    renew-license.md
     os-reload.md
     rebuild-cluster.md
     {: .navgroup-end}
