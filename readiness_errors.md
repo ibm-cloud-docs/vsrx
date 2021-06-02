@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-06-02"
 
 keywords: checking, readiness, errors
 
@@ -155,6 +155,14 @@ The host has a precheck setup failure because insufficient memory is installed o
 {: #error-1115}
 The gateway has a precheck setup failure due to an incompatible SSH connection limit in the vSRX configuration. Remove the SSH connection limit from the vSRX configuration and retry.
 
+## Error 1116
+{: #error-1116}
+The host has a precheck setup failure, Ubuntu is missing the telnet software package. Install telnet and retry.
+
+## Error 1117
+{: #error-1117}
+The host's Ubuntu mirror server is not accessible. Retry the operation once the mirror is accessible.
+
 ## Error 1124
 {: #error-1124}
 The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version 18.4. Specify a vlan-id for each interface configured with vlan-tagging. Refer to [Correcting error 1124](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1124) for more information.
@@ -162,6 +170,26 @@ The gateway experienced a precheck setup failure due to a Juniper incompatibilit
 ## Error 1125
 {: #error-1125}
 The gateway experienced a precheck setup failure due to a Juniper incompatibility change in the version 18.4 syslog settings. Refer to [Correcting error 1125](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1125) for more information.
+
+## Error 1126
+{: #error-1126}
+The gateway control link is down. Ensure vnet0 and vnet1 are configured on the Ubuntu host and retry.
+
+## Error 1127
+{: #error-1127}
+The Ubuntu host is missing an ethernet interface in bond0. Ensure bond0 includes the 2 private ethernet interfaces.
+
+## Error 1128
+{: #error-1128}
+The Ubuntu host is missing an ethernet interface in bond1. Ensure bond1 includes the 2 public ethernet interfaces.
+
+## Error 1129
+{: #error-1129}
+The Ubuntu host has an extra ethernet interface in bond0. Ensure bond0 only includes the 2 private ethernet interfaces.
+
+## Error 1130
+{: #error-1130}
+The Ubuntu host has an extra ethernet interface in bond1. Ensure bond1 only includes the 2 public ethernet interfaces.
 
 ## Warning 1176
 {: #warning-1176}
