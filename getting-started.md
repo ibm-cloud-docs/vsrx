@@ -38,6 +38,9 @@ There are two license types available for your {{site.data.keyword.vsrx_full}}:
 * Standard
 * Content Security Bundle (CSB)
 
+The CSB license is not available on vSRX gateways running with Linux Bridge based network models. The license is only available on SR-IOV enabled gateways. Details can be found [here](/docs/vsrx?topic=vsrx-unsupported-upgrade).
+{: note}
+
 Each license includes a different set of features and options, and the following table outlines the differences.
 
 | License Type  | Features |
