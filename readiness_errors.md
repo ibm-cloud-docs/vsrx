@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-06-02"
+lastupdated: "2021-07-12"
 
 keywords: checking, readiness, errors
 
@@ -163,6 +163,26 @@ The host has a precheck setup failure, Ubuntu is missing the telnet software pac
 {: #error-1117}
 The host's Ubuntu mirror server is not accessible. Retry the operation once the mirror is accessible.
 
+## Error 1118
+{: #error-1118}
+The vSRX node is not started. Start the vSRX VM and retry the operation.
+
+## Error 1119
+{: #error-1119}
+The vSRX node's VM is running but the node is not accessible via telnet. Restart the node and retry the operation.
+
+## Error 1120
+{: #error-1120}
+The vSRX node does not have a valid license. Remove any evaluation licenses and apply a valid license. Then retry the operation. Refer to [Known limitations for IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx) for more information on identifying and removing the evaluation license.
+
+## Error 1121
+{: #error-1121}
+License operations against vSRX v15.1 are not supported. Upgrade to a newer version of the vSRX.
+
+## Error 1122
+{: #error-1122}
+An error occurred in the readiness check, try again or contact support.	
+
 ## Error 1124
 {: #error-1124}
 The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version 18.4. Specify a vlan-id for each interface configured with vlan-tagging. Refer to [Correcting error 1124](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1124) for more information.
@@ -190,6 +210,10 @@ The Ubuntu host has an extra ethernet interface in bond0. Ensure bond0 only incl
 ## Error 1130
 {: #error-1130}
 The Ubuntu host has an extra ethernet interface in bond1. Ensure bond1 only includes the 2 public ethernet interfaces.
+
+## Error 1131
+{: #error-1131}
+The vSRX configuration is using a hidden cli command not compatible with the automation. Remove and replace the `address-range` command syntax and retry.
 
 ## Warning 1176
 {: #warning-1176}

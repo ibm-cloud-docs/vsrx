@@ -37,6 +37,9 @@ Reference the following table to determine if you can upgrade your vSRX using OS
 
 For more information on the vSRX versions listed below, refer to [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
 
+The upgrade will re-apply the license currently applied to the node(s). It will not update the license. To update to a newer license you must seperately run the license renewal steps, see [Renewing a vSRX license](/docs/vsrx?topic=vsrx-license-renewal).
+{: tip}
+
 | Current vSRX version  | Processor model and speed | Stand-alone or HA | Upgrade method  | Rollback supported |
 | ------------- | ------------- | ------------- | ------------- | ------------- |	 			
 | 15.1	| 1270v6 (All 1G deployments)	| Stand-alone and HA	| [Not Supported](/docs/vsrx?topic=vsrx-unsupported-upgrade) | N/A|
