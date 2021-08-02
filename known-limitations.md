@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2021-01-08"
+lastupdated: "2021-08-02"
 
 keywords:  
 
@@ -28,9 +28,9 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
 * Due to incompatible networking elements, the Juniper vSRX solution is not available as follows:
 
-      - 10 Gbps version in WDC01 (Washington, DC)
-      - 1G and 10G High Availability versions in: DAL05, DAL06, DAL07, HOU02, SJC01, and WDC01
-      - 10G High Availability versions in: AMS01
+      - 10 Gbps version in WDC01
+      - 1G and 10G High Availability versions in: DAL05, HOU02, SJC01, and WDC01
+      - 10G High Availability versions in: AMS01, DAL06, HKG02 Pod 1
 
 * Only IBM Cloud certified versions of vSRX are supported. The list of supported versions can be found [here](/docs/vsrx?topic=vsrx-vsrx-versions).
 

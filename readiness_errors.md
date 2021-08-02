@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-07-12"
+lastupdated: "2021-08-02"
 
 keywords: checking, readiness, errors
 
@@ -93,6 +93,14 @@ An error occurred in the connectivity check. Contact [IBM Support](/docs/vsrx?to
 
 ## Error 1022
 {: #error-1022}
+The gateway readiness precheck failed with an unexpected exception. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+
+## Error 1023
+{: #error-1023}
+The gateway readiness precheck failed the DNS accessibility check on the Ubuntu host. Confirm there is network access to the private `10.0.0.0/8` subnet from the host.
+
+## Error 1024
+{: #error-1024}
 The gateway readiness precheck failed with an unexpected exception. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
 
 ## Error 1101
