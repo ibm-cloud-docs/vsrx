@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-08-02"
+lastupdated: "2021-08-20"
 
 keywords: checking, readiness, errors
 
@@ -103,6 +103,10 @@ The gateway readiness precheck failed the DNS accessibility check on the Ubuntu 
 {: #error-1024}
 The gateway readiness precheck failed with an unexpected exception. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
 
+## Error 1025
+{: #error-1025}
+The IPMI interface is disabled for the Gateway host. Check IPMI status and enable the interface if is disabled. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+
 ## Error 1101
 {: #error-1101}
 An error occurred during the readiness check. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
@@ -191,6 +195,10 @@ License operations against vSRX v15.1 are not supported. Upgrade to a newer vers
 {: #error-1122}
 An error occurred in the readiness check, try again or contact support.	
 
+## Error 1123
+{: #error-1123}
+The vSRX console has an active session in edit mode. Exit the console session and retry.	
+
 ## Error 1124
 {: #error-1124}
 The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version 18.4. Specify a vlan-id for each interface configured with vlan-tagging. Refer to [Correcting error 1124](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1124) for more information.
@@ -222,6 +230,18 @@ The Ubuntu host has an extra ethernet interface in bond1. Ensure bond1 only incl
 ## Error 1131
 {: #error-1131}
 The vSRX configuration is using a hidden cli command not compatible with the automation. Remove and replace the `address-range` command syntax and retry.
+
+## Error 1132
+{: #error-1132}
+The Ubuntu host has a kvm xml configuration that is missing the default telnet configuration used for console access. Add this configuration back and retry.
+
+## Error 1133
+{: #error-1133}
+The vSRX console connection via telnet timed out executing commands. Please rerun or contact support.
+
+## Error 1134
+{: #error-1134}
+The node being OS reloaded can not access the other node in the cluster. Ensure the other node is active and retry. If both nodes are unrecoverable contact support to run Rebuild Cluster.
 
 ## Warning 1176
 {: #warning-1176}
