@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-08-20"
+lastupdated: "2021-09-07"
 
 keywords: checking, readiness, errors
 
@@ -241,7 +241,23 @@ The vSRX console connection via telnet timed out executing commands. Please reru
 
 ## Error 1134
 {: #error-1134}
-The node being OS reloaded can not access the other node in the cluster. Ensure the other node is active and retry. If both nodes are unrecoverable contact support to run Rebuild Cluster.
+The node being OS reloaded cannot access the other node in the cluster. Ensure the other node is active and retry. If both nodes are unrecoverable contact support to run Rebuild Cluster.
+
+## Error 1135
+{: #error-1135}
+The vSRX license file cannot be found. Please rerun or contact support.
+
+## Error 1136
+{: #error-1136}
+The vSRX license file is found, but the contents are empty. Please rerun or contact support.
+
+## Error 1137
+{: #error-1137}
+The vSRX license file cannot be read. Please rerun or contact support.
+
+## Error 1138
+{: #error-1138}
+The vSRX license install has failed during the vSRX license configuration. Please rerun or contact support.
 
 ## Warning 1176
 {: #warning-1176}
