@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-07"
+lastupdated: "2021-09-10"
 
 keywords: checking, readiness, errors
 
@@ -258,6 +258,10 @@ The vSRX license file cannot be read. Please rerun or contact support.
 ## Error 1138
 {: #error-1138}
 The vSRX license install has failed during the vSRX license configuration. Please rerun or contact support.
+
+## Error 1139
+{: #error-1139}
+The vSRX configuration includes a `tcp-mss` setting on an interface. Remove the invalid configuration and rerun.
 
 ## Warning 1176
 {: #warning-1176}
