@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-10"
+lastupdated: "2021-09-15"
 
 keywords: checking, readiness, errors
 
@@ -262,6 +262,10 @@ The vSRX license install has failed during the vSRX license configuration. Pleas
 ## Error 1139
 {: #error-1139}
 The vSRX configuration includes a `tcp-mss` setting on an interface. Remove the invalid configuration and rerun.
+
+## Error 1140
+{: #error-1139}
+The vSRX configuration includes an unsupported configuration setting. Correct and/or remove the unsupported configuration setting and rerun. Refer to [Correcting Unsupported vSRX Configuration Commands](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-unsupported-configuration) for more information.
 
 ## Warning 1176
 {: #warning-1176}
