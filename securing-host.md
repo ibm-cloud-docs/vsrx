@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2019
 lastupdated: "2019-11-15"
 
 keywords: secure, securing, host, os, ubuntu, ufw, iptables, firewall, juniper
@@ -39,29 +39,28 @@ Some existing deployments of the {{site.data.keyword.vsrx_full}} may allow passw
 
 1. Modify /etc/ssh/sshd_config
 
-  * Ensure the following values are set.
+   * Ensure the following values are set.
 
-  ```
-  ChallengeResponseAuthentication no
-  PasswordAuthentication no
-  ```
+      ```
+      ChallengeResponseAuthentication no
+      PasswordAuthentication no
+      ```
 
-  * Add the following filter rules to the end of the file.
+   * Add the following filter rules to the end of the file.
 
-  ```
-  Match Address 10.0.0.0/8
-      Password Authentication yes
-  ```
+      ```
+      Match Address 10.0.0.0/8
+          Password Authentication yes
+      ```
 
 2. Restart the SSH service using the command `/usr/sbin/service ssh restart`.
 
 The procedure above ensures addresses in the private infrastructure network `10.0.0.0/8` subnet are allowed SSH access. This access is needed for actions such as:
 
-  * OS reloads
-  * Cluster rebuilding
-  * Version upgrades
-  {: note}
-
+   * OS reloads
+   * Cluster rebuilding
+   * Version upgrades 
+   
 ## Firewalls
 {: #securing-host-firewall}
 

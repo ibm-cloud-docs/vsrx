@@ -1,0 +1,105 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+
+toc:
+  properties:
+    subcollection: vsrx
+    version: 2
+    category: network_classic
+    audience: service
+    href: /docs/vsrx
+    console-page: https://cloud.ibm.com/catalog/content/juniper-vsrx-catalog-deploy-1.4-dc1e707c-33dd-4321-b2a5-c22dbf0dd0ee-global
+    product-page: https://www.ibm.com/cloud/vsrx
+    path: vsrx
+    label: IBM Cloud Juniper vSRX
+
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+  entries:
+    - navgroup:
+       id: learn
+       topics:
+       - getting-started.md
+       - about.md
+       - /fortigate-10g/fortigate-10g-exploring-firewalls
+       - topicgroup:
+           label: Related links
+           topics:
+           - /vpc/vpc-getting-started
+           - link:
+               label: "What is network security?"
+               href: https://www.ibm.com/cloud/learn/networking-a-complete-guide             
+
+    - navgroup:
+        id: howto
+        topics:
+        - topicgroup:
+            label: Performing vSRX basics
+            topics:
+            - /gateway-appliance/gateway-appliance-viewing-all-gateway-appliances
+            - /gateway-appliance/gateway-appliance-viewing-gateway-appliance-details
+            - /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
+            - /gateway-appliance/gateway-appliance-cancel-gateway-appliance
+            - vsrx-basics.md
+        - vsrx-iam.md
+        - topicgroup:
+            label: Checking vSRX readiness
+            topics:
+            - readiness.md
+            - readiness_errors.md
+            - readiness_correcting_errors.md
+        - topicgroup:
+            label: Working with VLANs
+            topics:
+            - /gateway-appliance/gateway-appliance-managing-vlans-and-gateway-appliances
+        - topicgroup:
+            label: Working with the vSRX default configuration
+            topics:
+            - vsrx-default-config.md
+            - vsrx-import-and-export-config.md
+            - migrating-config.md
+        - topicgroup:
+            label: "Step-by-step - Allowing SSH and pinging to a public subnet"
+            topics:
+            - ssh-guide.md
+            - ssh-create-interface.md
+            - ssh-create-flows.md
+            - ssh-check-output.md
+        - topicgroup:
+            label: Performing vSRX advanced tasks
+            topics:
+            - firewalls.md
+            - nat.md
+            - failover.md
+            - routing.md
+            - vpn.md
+            - securing-host.md
+            - management-interfaces.md
+            - system-logging.md
+        - topicgroup:
+            label: Upgrading the vSRX
+            topics:
+            - vsrx-upgrade.md
+            - vsrx-upgrade-general.md
+            - vsrx-upgrade-reload.md
+            - vsrx-rollback-reload.md
+            - vsrx-upgrade-unsupported.md
+        - vsrx-license.md
+        - renew-license.md
+        - os-reload.md
+        - rebuild-cluster.md
+        
+#  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
+#  Links to your command line reference docs should be included in the Reference navigation group.
+    - navgroup:
+        id: reference
+        topics:
+        - /hardware-firewall-shared/hardware-firewall-shared-ibm-cloud-ip-ranges
+        - vsrx-version-notes.md
+
+    - navgroup:
+        id: help
+        topics:
+        - known-limitations.md
+        - vsrx-docs.md
+        - /gateway-appliance/gateway-appliance-getting-help

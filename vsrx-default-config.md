@@ -26,12 +26,12 @@ subcollection: vsrx
 {{site.data.keyword.vsrx_full}} devices come with following default configuration:
 {: shortdesc}
 
-  * SSH and Ping are permitted on both vSRX public and private gateway IP addresses
-  * Juniper Web Management (J-Web) UI access is permitted on HTTPS port 8443 for both public and private gateway IP addresses
-  * An address-set `SERVICE` is predefined for IBM service networks
-  * Two security zones: `SL-PRIVATE` and `SL-PUBLIC` are predefined.
-  * Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
-  * All other network accesses are denied
+   * SSH and Ping are permitted on both vSRX public and private gateway IP addresses
+   * Juniper Web Management (J-Web) UI access is permitted on HTTPS port 8443 for both public and private gateway IP addresses
+   * An address-set `SERVICE` is predefined for IBM service networks
+   * Two security zones: `SL-PRIVATE` and `SL-PUBLIC` are predefined.
+   * Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
+   * All other network accesses are denied
 
 Two redundancy groups are configured. The following table illustrates these redundancy groups:
 
@@ -819,8 +819,8 @@ The legacy architecture for these configurations leveraged Linux bridging on the
 * Standalone or High Availability
 * Public and Private, or Private Only
 * The vSRX Version
-  - All 15.1 based vSRX’s use the legacy architecture
-  - Some 18.4 based vSRX’s also use the legacy architectue
+   - All 15.1 based vSRX’s use the legacy architecture
+   - Some 18.4 based vSRX’s also use the legacy architectue
 
 Both the legacy and current architecture is detailed in the following sections.
 

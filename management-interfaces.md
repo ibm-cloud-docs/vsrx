@@ -32,44 +32,44 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
 
 1. [Order a portable private subnet](https://cloud.ibm.com/classic/network/subnet/provision) and assign it to the vSRX private transit VLAN. You can find the private transit VLAN on the gateway details page.
 
-  Ensure the subnet includes at least 8 addresses in order to support 2 IPs for the host bridge interfaces, and 2 IPs for the vSRX fxp0 interfaces.
-  {: note}
+   Ensure the subnet includes at least 8 addresses in order to support 2 IPs for the host bridge interfaces, and 2 IPs for the vSRX fxp0 interfaces.
+   {: note}
 
 2. Configure the host `br0:0` bridge interfaces using 2 IPs from the new subnet. For example:
 
-  On Ubuntu host 0: `ifconfig br0:0 10.177.75.140 netmask 255.255.255.248`
+   On Ubuntu host 0: `ifconfig br0:0 10.177.75.140 netmask 255.255.255.248`
 
-  On Ubuntu host 1: `ifconfig br0:0 10.177.75.141 netmask 255.255.255.248`
+   On Ubuntu host 1: `ifconfig br0:0 10.177.75.141 netmask 255.255.255.248`
 
 3. Persist the bridge interface configurations across reboots by modifying `/etc/network/interfaces` on each Ubuntu host. For example:
 
-  ```
-  auto br0:0
-  iface br0:0 inet static
-  address 10.177.75.140
-  netmask 255.255.255.248
-  post-up /sbin/ifconfig br0:0 10.177.75.140 netmask 255.255.255.248
-  ```
+   ```
+   auto br0:0
+   iface br0:0 inet static
+   address 10.177.75.140
+   netmask 255.255.255.248
+   post-up /sbin/ifconfig br0:0 10.177.75.140 netmask 255.255.255.248
+   ```
 
 4. Assign the 2 IP's to the vSRX fxp0 interface and create backup router configurations for access to the secondary node's fxp0 interface:
 
-  ```
-  set groups node0 interfaces fxp0 unit 0 family inet address 10.177.75.138/29
-  set groups node1 interfaces fxp0 unit 0 family inet address 10.177.75.139/29
-  set groups node0 system backup-router 10.177.75.137 destination [ 0.0.0.0/1 128.0.0.0/1 ]
-  set groups node1 system backup-router 10.177.75.137 destination [ 0.0.0.0/1 128.0.0.0/1 ]
-  ```
+   ```
+   set groups node0 interfaces fxp0 unit 0 family inet address 10.177.75.138/29
+   set groups node1 interfaces fxp0 unit 0 family inet address 10.177.75.139/29
+   set groups node0 system backup-router 10.177.75.137 destination [ 0.0.0.0/1 128.0.0.0/1 ]
+   set groups node1 system backup-router 10.177.75.137 destination [ 0.0.0.0/1 128.0.0.0/1 ]
+   ```
 
-  Additional information on configuring the backup router can be found in [this Juniper article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.juniper.net/InfoCenter/index?page=content&id=KB17161&actp=METADATA){: new_window}.
-  {: note}
+   Additional information on configuring the backup router can be found in [this Juniper article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.juniper.net/InfoCenter/index?page=content&id=KB17161&actp=METADATA){: new_window}.
+   {: note}
 
 5. Create a static route to the subnet. For example:
 
-  `set routing-options static route 10.177.75.136/29 next-hop 10.177.75.137`
+   `set routing-options static route 10.177.75.136/29 next-hop 10.177.75.137`
 
 6. Create firewall filters to allow PING and SSH to the fxp0 management interfaces:
 
-  ```
-  set firewall filter PROTECT-IN term PING from destination-address 10.177.75.136/29
-  set firewall filter PROTECT-IN term SSH from destination-address 10.177.75.136/29
-  ```
+   ```
+   set firewall filter PROTECT-IN term PING from destination-address 10.177.75.136/29
+   set firewall filter PROTECT-IN term SSH from destination-address 10.177.75.136/29
+   ```

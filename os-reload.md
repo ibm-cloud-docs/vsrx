@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2020
 lastupdated: "2020-10-19"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
@@ -48,27 +48,27 @@ For a successful OS Reload on a vSRX, ensure the following:
 
 * The root password for the provisioned vSRX gateway must match the root password defined in the vSRX portal. The password in the portal was defined when you first provisioned the gateway, and it may not match the current gateway password. If so, then use SSH to connect to the vSRX gateway and change the root password to match. You can then proceed with the OS reload operation.
 
-  ![vSRX Password](images/gw-vsrx-password.png "vSRX Password")
+   ![vSRX Password](images/gw-vsrx-password.png "vSRX Password")
 
 * The vSRX configuration must allow root SSH access to the vSRX private IP, prior to the OS reload request. This is required to rejoin the cluster. Once the OS reload completes, the SSH access may be disabled.
 
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.
 
-  Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the [Rebuild cluster](/docs/vsrx?topic=vsrx-rebuilding-an-ha-cluster) option to re-provision the vSRX and recreate the HA cluster.
-  {: important}
+   Performing an OS reload on both servers of the HA gateway at the same time will destroy the vSRX cluster and cause the gateway to be out of service. If the vSRX cluster is destroyed, you must use the [Rebuild cluster](/docs/vsrx?topic=vsrx-rebuilding-an-ha-cluster) option to re-provision the vSRX and recreate the HA cluster.
+   {: important}
 
 * The IPMI interface for the bare-metal server must be enabled or the following error will be issued:
 
-  ```
-  You cannot toggle the IPMI interface while transactions are running.
-  ```
+   ```
+   You cannot toggle the IPMI interface while transactions are running.
+   ```
 
 ## Performing an OS reload
 {: #performing-an-os-reload}
 
 To reload your OS, perform the following procedure:
 
-1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+1. From your browser, open [https://cloud.ibm.com](https://cloud.ibm.com){: external} and log into your account.
 2. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness#vsrx-readiness) for “OS Reload” and address any errors that are found.
 3. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 4. Choose **Network > Gateway Appliances**.

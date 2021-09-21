@@ -36,14 +36,14 @@ You can access either the vSRX or the host (Ubuntu) using SSH through a private 
 
 1. Go to Gateway Appliance Details screen and get the Public gateway IP or Private Gateway IP.
 
-  ![Gateway details](images/gw-sa-details.png "Gateway details")
+   ![Gateway details](images/gw-sa-details.png "Gateway details")
 
 2. Click the "eye" icon to reveal the admin user's password.
 
 3. For a vSRX, run the command `ssh admin@<gateway-ip>`, then enter the admin user's password. You can also use the 'root' user ID and password.
 
-  For the host (Ubuntu), you can only use the `root` user ID and password.
-  {: note}
+   For the host (Ubuntu), you can only use the `root` user ID and password.
+   {: note}
 
 If you do not see the "eye" icon, you may not have permission to view the password. Please check your access permissions with the account owner.
 {: note}

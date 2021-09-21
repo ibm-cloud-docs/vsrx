@@ -26,12 +26,12 @@ subcollection: vsrx
 The {{site.data.keyword.vsrx_full}} is based on `JunOS`, giving you access to the full Juniper routing stack.
 {: shortdesc}
 
-##Static routing
+## Static routing
 {: #static-routing}
 
 To configure static routes, run the following commands:
 
-###Setting a default route
+### Setting a default route
 {: #setting-a-default-route}
 
 ```
@@ -44,7 +44,7 @@ set routing-options static route 0/0 next-hop <Gateway IP>
 set routing-options static route <PREFIX/MASK> next-hop <Gateway IP>
 ```  
 
-###Basic OSPF routing
+### Basic OSPF routing
 {: #basic-ospf-routing}
 
 To setup basic OSPF routing, only using area 0, run the following commands using md5 authentication:

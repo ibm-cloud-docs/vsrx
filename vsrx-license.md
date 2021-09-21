@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2020
 lastupdated: "2020-06-09"
 
 keywords: license, viewing, changing
@@ -32,7 +32,7 @@ For information on the features offered with these licenses, refer to [Choosing 
 
 To view your current license, perform the following procedure:
 
-1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log in to your account.
+1. From your browser, open [https://cloud.ibm.com](https://cloud.ibm.com){: external} and log in to your account.
 2. Select the Menu icon  ![Menu icon](../../icons/icon_hamburger.svg)  from the top left, then click **Classic Infrastructure**.
 3. Choose **Network > Gateway Appliances**.
 4. Click the Gateway Appliance Name to access the Gateway Appliance Details page.
@@ -43,8 +43,8 @@ To change your current license, perform the steps above, then:
 
 1. Click the Edit icon  ![Edit icon](../../icons/edit-tagging.svg)  next to your current license to edit it.
 
-  ![Editing your license](images/license-edit.png "Editing your license")
+   ![Editing your license](images/license-edit.png "Editing your license")
 
-2. Select your new license type, then click **Save**.
+1. Select your new license type, then click **Save**.
 
-  ![Changing your license](images/license-edit-choice.png "Changing your license")
+   ![Changing your license](images/license-edit-choice.png "Changing your license")

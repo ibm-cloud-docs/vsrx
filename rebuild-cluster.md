@@ -39,7 +39,7 @@ For a successful rebuild of a cluster on an HA vSRX, ensure the following:
 
 * The root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal. The password in the portal was defined when the Gateway was first provisioned, and may not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match. Once the passwords match, you can proceed with the Rebuild Cluster operation.
 
-  ![vSRX Password](images/gw-vsrx-password.png "vSRX Password")
+   ![vSRX Password](images/gw-vsrx-password.png "vSRX Password")
 
 * The host password(s) must match the password(s) in the vSRX portal. In addition, the host OS must enable root SSH access to the vSRX Private IP prior to doing a rebuild cluster.
 
@@ -48,7 +48,7 @@ For a successful rebuild of a cluster on an HA vSRX, ensure the following:
 
 To rebuild one of your HA vSRX clusters, perform the following procedure:
 
-1. From your browser, open [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+1. From your browser, open [https://cloud.ibm.com](https://cloud.ibm.com){: external} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 3. Choose **Network > Gateway Appliances**.
 4. Click on the server you want to reload.
