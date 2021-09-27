@@ -25,7 +25,6 @@ toc:
        - topicgroup:
            label: Related links
            topics:
-           - /vpc/vpc-getting-started
            - link:
                label: "What is network security?"
                href: https://www.ibm.com/cloud/learn/networking-a-complete-guide             
