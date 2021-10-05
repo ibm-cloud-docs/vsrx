@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-15"
+lastupdated: "2021-10-04"
 
 keywords: checking, readiness, errors
 
@@ -274,3 +274,8 @@ The gateway experienced a precheck setup warning. A VPN establishment configurat
 ## Warning 1177
 {: #warning-1177}
 The gateway experienced a precheck setup warning. A security policy using `dynamic-application any` was detected, which can result in packet loss. This can also cause VPN tunnel communication to fail. Refer to [Correcting warning 1177](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1177) for more information.
+
+## Warning 1178
+{: #warning-1178}
+The license was updated. However, validation of the new license failed. It is recommended you manually check that the vSRX license is applied to each vSRX node.
+
