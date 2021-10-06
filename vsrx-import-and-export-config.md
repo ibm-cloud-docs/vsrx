@@ -103,7 +103,7 @@ To import only part of the vSRX configuration:
 
    The output should be similar to the following:
 
-   ```
+   ```sh
    # load merge terminal relative
    [Type ^D at a new line to end input]
    family inet {
