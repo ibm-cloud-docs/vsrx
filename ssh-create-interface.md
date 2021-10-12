@@ -29,7 +29,7 @@ First, you'll need to create an interface unit for the VLAN and add the subnet's
 Scroll to the right to view the entire command!
 {: important}
 
-```
+```sh
 set interfaces reth3 unit 1523 vlan-id 1523
 set interfaces reth3 unit 1523 family inet address 169.47.211.153/29
 set security zones security-zone CUSTOMER-PUBLIC interfaces reth3.1523 host-inbound-traffic system-services all

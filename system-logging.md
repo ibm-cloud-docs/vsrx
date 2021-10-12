@@ -55,7 +55,7 @@ Unlike other severity levels, the `none` level disables logging of a facility in
 
 The following is a sample vSRX syslog configuration for sending logs to a remote syslog server. Your actual settings depend on the configuration of the syslog server receiving the logs.
 
-```
+```sh
 set system syslog user * any emergency
 set system syslog host 1.1.1.1 any any
 set system syslog host 1.1.1.1 match RT_FLOW_SESSION
@@ -94,7 +94,7 @@ For stream-mode log forwarding, the transport protocol used between the packet f
 
 The following sample configuration provides an example of configuring a data plane log using stream mode.
 
-```
+```sh
 set security log mode stream
 set security log source-address 172.168.0.3
 set security log stream S1 format syslog

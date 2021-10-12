@@ -59,7 +59,7 @@ For a successful OS Reload on a vSRX, ensure the following:
 
 * The IPMI interface for the bare-metal server must be enabled or the following error will be issued:
 
-   ```
+   ```sh
    You cannot toggle the IPMI interface while transactions are running.
    ```
 

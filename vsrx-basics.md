@@ -74,7 +74,7 @@ The Juniper web management GUI has been configured by default, with vSRX generat
 
 By default, the {{site.data.keyword.vsrx_full}} is configured with SSH access for the username `admin`. Additional users can be added with their own set of priorities. For example:
 
-```
+```sh
 set system login user ops class operator authentication encrypted-password <CYPHER>
 ```
 
@@ -87,7 +87,7 @@ Customized classes can be also defined as opposed to pre-defined ones.
 
 You can set or change the vSRX hostname using the following command:
 
-```
+```sh
 set system host-name <hostname>
 ```
 
@@ -96,7 +96,7 @@ set system host-name <hostname>
 
 To configure name server resolution and NTP, run the following commands:
 
-```
+```sh
 set system name-server <DNS server>
 set system ntp <NTP server>
 ```
@@ -106,7 +106,7 @@ set system ntp <NTP server>
 
 You can change the root password by running the following command:
 
-```
+```sh
 set system root-authentication plain-text-password
 ```
 

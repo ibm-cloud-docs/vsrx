@@ -29,7 +29,7 @@ Now that you've created the new zone (`CUSTOMER-PUBLIC`), you'll need to configu
 Scroll to the right to view the entire command.
 {: important}
 
-```
+```sh
 set security policies from-zone CUSTOMER-PUBLIC to-zone CUSTOMER-PUBLIC policy ALLOW_INTERNAL description "Allow all traffic within CUSTOMER_PUBLIC zone"
 set security policies from-zone CUSTOMER-PUBLIC to-zone CUSTOMER-PUBLIC policy ALLOW_INTERNAL match source-address any
 set security policies from-zone CUSTOMER-PUBLIC to-zone CUSTOMER-PUBLIC policy ALLOW_INTERNAL match destination-address any

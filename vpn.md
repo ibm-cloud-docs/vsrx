@@ -31,7 +31,7 @@ This topic details a sample configuration for a Route based VPN between two site
 ## Sample configuration for Site A (Dallas):
 {: #sample-configuration-for-site-a-dallas-}
 
-```
+```sh
 # show security address-book global address Network-A
 10.84.237.200/29;
 [edit]
@@ -136,7 +136,7 @@ from-zone VPN to-zone CUSTOMER-PRIVATE {
 ## Sample configuration for Site B (London):
 {: #sample-configuration-for-site-b-london-}
 
-```
+```sh
 # show interfaces
 ge-0/0/0 {
     description PRIVATE_VLANs;
@@ -252,7 +252,7 @@ In order to achieve the best IPSEC VPN performance, use AES-GCM as the encryptio
 
 For example:
 
-```
+```sh
 set security ike proposal IKE-PROP encryption-algorithm aes-128-gcm
 set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 ```

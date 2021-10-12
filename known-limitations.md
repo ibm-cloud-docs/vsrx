@@ -52,14 +52,13 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
    3. Run the following command to get the license identifier:
 
-      ```
+      ```sh
       show system license
       ```
-      {: pre}
 
       Output is similar to the following:
 
-      ```
+      ```text
       License usage:
                                      Licenses     Licenses    Licenses    Expiry
       Feature name                       used    installed      needed
@@ -80,7 +79,6 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
    4. Copy the identifier of the license that you want to delete, then run the command:
 
-      ```
+      ```sh
       request system license delete <license identifier>
       ```
-      {: pre}

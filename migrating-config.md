@@ -38,7 +38,7 @@ You can find a sample default configuration for SR-IOV based current architectur
 
 The following is a sample default configuration for the Linux Bridge (legacy architecture). The example shows vSRX instances that were provisioned in different Datacenter pods. As a result, the transit VLAN’s (`native-vlan-id`) are different.
 
-```
+```sh
 ## Last commit: 2020-04-16 22:48:33 UTC by root
 version 18.4R1-S1.3;
 system {
@@ -339,13 +339,13 @@ Any default security zones that previously referenced `ge-0/0/0` and `ge-0/0/1` 
 
 The aggregated device configuration requires the following addition in the current architecture:
 
-```
+```sh
 set chassis aggregated-devices ethernet device-count 10
 ```
 
 The JWEB configuration will also include the aggregated interfaces as well:
 
-```
+```sh
 set system services web-management https interface ae0.0
 set system services web-management https interface ae1.0
 ```

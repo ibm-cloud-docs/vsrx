@@ -41,6 +41,7 @@ Review the following tables that outline what types of tasks each role allows fo
 
 When you assign policies to users for this service, use `servicename` for the service name in the CLI command or API call.
 {: important}
+
 <!--This is important to include because the service name in the UI often doesn't match the service name that should be used to make an API call or submit a CLI command-->
 
 The following table describes the types of tasks that can be completed with each platform management role assigned. Platform management roles enable users to perform tasks on service resources at the platform level, for example, assign user access to the service, create or delete instances, and bind instances to applications.

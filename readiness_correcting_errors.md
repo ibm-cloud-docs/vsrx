@@ -34,8 +34,8 @@ Readiness errors and warnings can inhibit your ability to succesfully complete a
 
 There are two categories of connectivity errors that you might encounter when performing readiness checks:
 
-   * Host (Ubuntu) SSH connectivity errors
-   * Gateway (vSRX) SSH connectivity errors
+* Host (Ubuntu) SSH connectivity errors
+* Gateway (vSRX) SSH connectivity errors
 
 Many of these errors result from the fact that the gateway actions being checked require root SSH access to the private IP address for either the host (Ubuntu) OS, or the gateway (vSRX). If an SSH connectivity check fails, then the action cannot proceed.
 
@@ -50,19 +50,19 @@ If the session cannot be established, check the following potential issues.
 
 For host (Ubuntu) SSH connectivity errors:
 
-   * Is the Ubuntu firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-ibm-cloud-ip-ranges#service-network-on-back-end-private-network-) for the service network.
-   * Is the root password listed on the Gateway Appliance Details page the correct password for the root user?
+* Is the Ubuntu firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-ibm-cloud-ip-ranges#service-network-on-back-end-private-network-) for the service network.
+* Is the root password listed on the Gateway Appliance Details page the correct password for the root user?
     If not, click the device link in the **Hardware** section and navigate to **Passwords**. Select **Actions > Edit credentials** and change the password to match the actual root password on the Ubuntu host.
-   * Is the root login disabled for the SSH server?
-   * Is the SSH server disabled or stopped?
-   * Is the root user account disabled on the Ubuntu host?
+* Is the root login disabled for the SSH server?
+* Is the SSH server disabled or stopped?
+* Is the root user account disabled on the Ubuntu host?
 
 For gateway (vSRX) SSH connectivity errors:
 
-   * Is the vSRX firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-ibm-cloud-ip-ranges#service-network-on-back-end-private-network-) for the service network.
-   * Is the root password listed on the Gateway Appliance Details page the correct password for the root user?
+* Is the vSRX firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-ibm-cloud-ip-ranges#service-network-on-back-end-private-network-) for the service network.
+* Is the root password listed on the Gateway Appliance Details page the correct password for the root user?
     If not, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg) next to the root password and change the password to match the actual root password for the vSRX.
-   * Is the root user account disabled for SSH access to the vSRX?
+* Is the root user account disabled for SSH access to the vSRX?
 
 ## Correcting error 1124
 {: #correcting-1124}
@@ -73,7 +73,7 @@ If a redundant Ethernet (reth) interface includes `vlan-tagging` (which is the d
 
 An example configuration without the `vlan-id`:
 
-```
+```sh
 set interfaces reth2 vlan-tagging
 set interfaces reth2 mtu 9000
 set interfaces reth2 redundant-ether-options redundancy-group 1
@@ -84,21 +84,20 @@ commit check
 
 The output for this configuration is:
 
-```
+```text
 root@vSRX-Node0# commit check
 [edit interfaces reth2]
  ‘unit 2058’
    VLAN-ID must be specified on tagged ethernet interfaces
 error: configuration check-out failed
 ```
-{: codeblock}
+{: screen}
 
-To address this error, add the `vlan-id `tag to the configuration and retry the readiness check:
+To address this error, add the `vlan-id` tag to the configuration and retry the readiness check:
 
-```
+```sh
 set interfaces reth2 unit 2058 vlan-id 2058
 ```
-{: pre}
 
 ## Correcting error 1125
 {: #correcting-1125}
@@ -107,7 +106,7 @@ vSRX 18.4R1-S1 introduced an incompatibility that allowed the syslog configurati
 
 For example, the following syslog configuration contains both labels (`set system syslog file messages structured-data` and `set system syslog file default-log-messages explicit-priority`).
 
-```
+```sh
 set system syslog file messages any info
 set system syslog file messages authorization warning
 set system syslog file messages archive size 10m
@@ -133,11 +132,11 @@ commit check
 
 The output for this configuration is:
 
-```
+```text
 [Stage 3 - Build_vSRX][2021-01-11 15:38:00.623323] Commit check failed: CommitError(edit_path: [edit system syslog file default-log-messages], bad_element: explicit-priority, message: error: ‘explicit-priority’ cannot be configured if ‘structured-data’ is configured
 error: configuration check-out failed: (statements constraint check failed))
 ```
-{: codeblock}
+{: pre}
 
 To fix this issue, remove one of the syslog labels from the configuration and retry the readiness check.
 
@@ -146,7 +145,7 @@ To fix this issue, remove one of the syslog labels from the configuration and re
 
 The Juniper vSRX contains some undocumented, or hidden, CLI commands. Some of these commands are not supported by the vSRX configuration, even though in some releases they can be committed. In some cases, the behavior can unexpectedly change between release versions. For example, the following undocumented configuration could be committed in versions prior to 20.4R2-S2, but will fail in 20.4R2-S2. Notice the `unsupported platform` output in the show configuration in 19.4R3-S2.
 
-```
+```sh
 [edit]
 root@asloma-vsrx-sa-hkg0202-vsrx-vSRX# set interfaces st0 unit 0 family inet tcp-mss 1372   
 
@@ -173,13 +172,13 @@ unit 0 {
 
 In 20.4R2-S2, the same configuration is not allowed and will fail with the following syntax error:
 
-```
+```text
 {primary:node0}[edit]
 root@asloma-tc1-10g-csb-ha1-vsrx-vSRX# set interfaces st0 unit 0 family inet tcp-mss
                                                                              ^
 syntax error.
 ```
-{: codeblock}
+{: screen}
 
 This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, since the commit of the previous configuration to the new release will fail, causing the upgrade to fail as well. As a result, it is critical that you remove unsupported, or hidden, commands from the vSRX configuration prior to upgrading your version. This is applicable even to commands that are not detected by the Readiness check. 
 
@@ -188,7 +187,7 @@ This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.
 
 A VPN configuration with `establish-tunnels` not set to `immediately` was detected. After an upgrade, the IKE might not be immediately active depending on negotiations with the remote peer gateway, and whether or not data traffic is actively flowing. Without `establish-tunnels immediately`, the tunnel is established with `on-traffic`. With the `establish-tunnels immediately` statement, the tunnel is established immediately when the configuration is committed. However, `establish-tunnels immediately` might trigger an undesirable outcome when configured on both ends of the tunnel.
 
-For more information on this issue, see [[SRX] IPSec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder ](https://kb.juniper.net/InfoCenter/index?page=content&id=KB22239){: external} in the Juniper Knowledge Base. Consult [vpn (Security)](https://www.juniper.net/documentation/en_US/junos/topics/reference/configuration-statement/security-edit-vpn.html){: external} for more details on these settings.
+For more information on this issue, see [(SRX) IPSec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder](https://kb.juniper.net/InfoCenter/index?page=content&id=KB22239){: external} in the Juniper Knowledge Base. Consult [vpn (Security)](https://www.juniper.net/documentation/en_US/junos/topics/reference/configuration-statement/security-edit-vpn.html){: external} for more details on these settings.
 
 ## Correcting warning 1177
 {: #correcting-1177}
@@ -197,7 +196,7 @@ One or more security zone policy rules with the `dynamic-application any` config
 
 For example, the following security policy configuration contains the `dynamic-application any` label:
 
-```
+```sh
 set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL match dynamic-application any
 set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL match source-address SL8
 set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL match destination-address SL8

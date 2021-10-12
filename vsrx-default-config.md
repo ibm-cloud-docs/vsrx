@@ -26,12 +26,12 @@ subcollection: vsrx
 {{site.data.keyword.vsrx_full}} devices come with following default configuration:
 {: shortdesc}
 
-   * SSH and Ping are permitted on both vSRX public and private gateway IP addresses
-   * Juniper Web Management (J-Web) UI access is permitted on HTTPS port 8443 for both public and private gateway IP addresses
-   * An address-set `SERVICE` is predefined for IBM service networks
-   * Two security zones: `SL-PRIVATE` and `SL-PUBLIC` are predefined.
-   * Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
-   * All other network accesses are denied
+* SSH and Ping are permitted on both vSRX public and private gateway IP addresses
+* Juniper Web Management (J-Web) UI access is permitted on HTTPS port 8443 for both public and private gateway IP addresses
+* An address-set `SERVICE` is predefined for IBM service networks
+* Two security zones: `SL-PRIVATE` and `SL-PUBLIC` are predefined.
+* Access from the zone `SL-PRIVATE` to all services is provided by IBM and address-set `SERVICE` is permitted
+* All other network accesses are denied
 
 Two redundancy groups are configured. The following table illustrates these redundancy groups:
 
@@ -48,7 +48,7 @@ Priority in the redundancy group decides which vSRX node is active. By default, 
 The following code samples are examples from the latest code release.
 {: note}
 
-```
+```sh
 ## Last commit: 2020-04-28 00:32:27 UTC by root
 version 18.4R1-S1.3;
 system {
@@ -373,7 +373,7 @@ The following table illustrates network interface definitions for the previous c
 ## Default Configuration of a sample 10G HA SR-IOV Public and Private vSRX Gateway
 {: #default-configuration-of-a-sample-highly-available-ha-vsrx-gateway}
 
-```
+```sh
 ## Last commit: 2020-04-21 17:22:34 UTC by root
 version 18.4R1-S1.3;
 groups {

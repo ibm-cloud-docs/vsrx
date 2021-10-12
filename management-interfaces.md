@@ -43,7 +43,7 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
 
 3. Persist the bridge interface configurations across reboots by modifying `/etc/network/interfaces` on each Ubuntu host. For example:
 
-   ```
+   ```text
    auto br0:0
    iface br0:0 inet static
    address 10.177.75.140
@@ -53,7 +53,7 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
 
 4. Assign the 2 IP's to the vSRX fxp0 interface and create backup router configurations for access to the secondary node's fxp0 interface:
 
-   ```
+   ```sh
    set groups node0 interfaces fxp0 unit 0 family inet address 10.177.75.138/29
    set groups node1 interfaces fxp0 unit 0 family inet address 10.177.75.139/29
    set groups node0 system backup-router 10.177.75.137 destination [ 0.0.0.0/1 128.0.0.0/1 ]
@@ -69,7 +69,7 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
 
 6. Create firewall filters to allow PING and SSH to the fxp0 management interfaces:
 
-   ```
+   ```sh
    set firewall filter PROTECT-IN term PING from destination-address 10.177.75.136/29
    set firewall filter PROTECT-IN term SSH from destination-address 10.177.75.136/29
    ```

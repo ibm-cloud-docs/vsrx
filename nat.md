@@ -32,7 +32,7 @@ This topic provides a sample configuration for sNAT on a vSRX appliance. With th
 
 ![Sample topology](images/Sample-Topology-SNAT.png "Sample topology")
 
-```
+```sh
 from-zone CUSTOMER-PRIVATE to-zone SL-PUBLIC {
    policy SNAT {
        match {

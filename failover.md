@@ -37,18 +37,15 @@ To do so, perform the following procedure:
 
 1. Login to your primary vSRX gateway device.
 
-2. Enter CLI mode by running the command `cli` at the console prompt. When you enter CLI mode, the console displays the node role, either `primary` or `secondary`.
+1. Enter CLI mode by running the command `cli` at the console prompt. When you enter CLI mode, the console displays the node role, either `primary` or `secondary`.
 
 	Ensure that you are in the `primary` node. If you are not, exit and login to the other vSRX gateway device of the pair.
 
-2. On the primary vSRX gateway device, run the command:
+1. On the primary vSRX gateway device, run the command `show chassis cluster status`.
+   
+   The output should be similar to the following:
 
-	```
-	show chassis cluster status
-	```
-	The output should be similar to the following:
-
-	```
+	```text
 	Monitor Failure codes:
 		CS  Cold Sync monitoring        FL  Fabric Connection monitoring
 		GR  GRES monitoring             HW  Hardware monitoring
@@ -76,17 +73,17 @@ To do so, perform the following procedure:
 	The vSRX, by default, sets `Preempt` to `yes` for Redundancy group 1, and `no` for Redundancy group 0. Refer to [this link](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){: external} to learn more about pre-emption and failover behavior.
 	{: note}
 
-3. Initiate failover by running the following command in the console prompt:
+1. Initiate failover by running the following command in the console prompt:
 
-	```
+	```sh
 	request chassis cluster failover redundancy-group <redundancy group number> node <node number>
 	```
 
 	Select the appropriate redundancy group number and node number from the output of the command in step two. To failover both redundancy groups, execute the previous command twice, one for each group.
 
-4. After failover is complete, verify the console output. It should now be listed as `secondary`.
+1. After failover is complete, verify the console output. It should now be listed as `secondary`.
 
-5. Login to the other vSRX gateway of your pair. Enter into CLI mode by again executing the command `cli` and then verify that the console output shows as `primary`.
+1. Login to the other vSRX gateway of your pair. Enter into CLI mode by again executing the command `cli` and then verify that the console output shows as `primary`.
 
 When you enter CLI mode in your Juniper vSRX gateway device, the output will show as `primary` from the control plane perspective. Always check the `show chassis cluster status` output to determine which gateway device is primary from data plane perspective. Refer to [vSRX Default Configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) to learn more about redundancy groups, as well as the control and data planes.
 {: tip}

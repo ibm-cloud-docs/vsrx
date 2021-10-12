@@ -41,14 +41,14 @@ Some existing deployments of the {{site.data.keyword.vsrx_full}} may allow passw
 
    * Ensure the following values are set.
 
-      ```
+      ```text
       ChallengeResponseAuthentication no
       PasswordAuthentication no
       ```
 
    * Add the following filter rules to the end of the file.
 
-      ```
+      ```text
       Match Address 10.0.0.0/8
           Password Authentication yes
       ```
@@ -57,9 +57,9 @@ Some existing deployments of the {{site.data.keyword.vsrx_full}} may allow passw
 
 The procedure above ensures addresses in the private infrastructure network `10.0.0.0/8` subnet are allowed SSH access. This access is needed for actions such as:
 
-   * OS reloads
-   * Cluster rebuilding
-   * Version upgrades 
+* OS reloads
+* Cluster rebuilding
+* Version upgrades 
    
 ## Firewalls
 {: #securing-host-firewall}
@@ -73,21 +73,21 @@ For {{site.data.keyword.vsrx}} version 18.4 HA deployments running with the lega
 
 - To allow protocol 47 (used for heartbeat communication) in `/etc/ufw/before.rules`:
 
-  ```
-  -A ufw-before-input -p 47 -j ACCEPT
-  ```
+   ```sh
+   -A ufw-before-input -p 47 -j ACCEPT
+   ```
 
 - To allow private network communication:
 
-  ```
-  ufw allow in from 10.0.0.0/8 to 10.0.0.0/8
-  ```
+   ```sh
+   ufw allow in from 10.0.0.0/8 to 10.0.0.0/8
+   ```
 
 - To enable UFW:
 
-  ```
-  ufw enable
-  ```
+   ```sh
+   ufw enable
+   ```
 
 For {{site.data.keyword.vsrx}} versions running with the newer architecture, the firewall rules must allow for multicast communication.
 

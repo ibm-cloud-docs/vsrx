@@ -62,7 +62,7 @@ To export only part of the vSRX configuration:
 
    The output should be similar to the following:
 
-   ```
+   ```sh
    # show interfaces | display set
    set interfaces ge-0/0/0 description PRIVATE_VLANs
    set interfaces ge-0/0/0 flexible-vlan-tagging

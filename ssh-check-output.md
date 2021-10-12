@@ -26,13 +26,13 @@ subcollection: vsrx
 After the changes and additions you've made have been staged, run the following command to confirm what will be committed to the active configuration:
 {: shortdesc}
 
-```
+```sh
 show | compare
 ```
 
 This is the expected output:
 
-```
+```text
 [edit security address-book global]
      address SL_PUB_MGMT { ... }
 +    address VSI_PUB_NET 169.47.211.152/29;
@@ -98,6 +98,7 @@ This is the expected output:
 +        }
 +    }
 ```
+{: screen}
 
 After you check that the configuration is correct, run the `commit` command to push the changes to the active configuration.
 

@@ -28,10 +28,8 @@ In this guide, learn how to configure the {{site.data.keyword.vsrx_full}} Standa
 
 In this example, the following values are used.
 
-```
-Public vlan: 1523
-Public subnet: 169.47.211.152/29
-```
+* Public vlan: `1523`
+* Public subnet: `169.47.211.152/29`
 
 This step-by-step assumes that a high-availability deployment of the vSRX, with a single Public VLAN and subnet.
 {: note}

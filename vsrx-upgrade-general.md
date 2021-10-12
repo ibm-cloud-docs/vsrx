@@ -42,7 +42,7 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
 
    Example of a healthy cluster:
 
-   ```
+   ```text
     root@asloma-19-10g-ha1-vsrx-vSRX-Node0> show chassis cluster status
     Monitor Failure codes:
       CS  Cold Sync monitoring        FL  Fabric Connection monitoring
@@ -71,7 +71,7 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
 
    Example of an unhealthy cluster with monitor failures:
    
-   ```
+   ```text
      root@asloma-tc11-15-10g-pubpriv-ha1-vsrx-vSRX-Node1> show chassis cluster status
      Monitor Failure codes:
        CS  Cold Sync monitoring        FL  Fabric Connection monitoring
