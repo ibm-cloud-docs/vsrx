@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-02-21"
 
-keywords: ordering, gateway, appliance, vsrx, license 
+keywords: ordering, gateway, appliance, vsrx, license
 
 subcollection: vsrx
 
@@ -46,7 +46,7 @@ Each license includes a different set of features and options, and the following
 | License Type  | Features |
 | ------------- | ------------- |
 | **Standard** | - Core security: firewall, ALG, screens, user firewall  \n - IPsec VPN (site-to-site VPN)  \n - NAT  \n - CoS  \n - Routing services: BGP, OSPF, DHCP, J-Flow, IPv4  \n - Foundation: Static routing, management (J-Web, CLI, and NETCONF), on-box logging, diagnostics |
-| **Content Security Bundle (CSB)**  \n Includes all Standard features, along with the additional features listed in the next column. | - AppSecure  \n    - Application Tracking (AppTrack)  \n    - Application Firewall (AppFW)  \n    - Application Quality of Service (AppQoS)  \n    - Advanced policy-based routing (APBR)  \n    - Application Quality of Experience (AppQoE)  \n - User Firewall  \n - IPS  \n  - UTM  \n    - Anti Virus  \n    - Anti Spam  \n    - Web Filtering   \n    - Content Filtering  \n  - SSL Proxy  \n    - SSL Forward Proxy  \n    - SSL Reverse Proxy  \n    - SSL Decrypting Mirror |
+| **Content Security Bundle (CSB)**  \n Includes all Standard features, along with the additional features listed in the next column. | - AppSecure  \n  - Application Tracking (AppTrack)  \n  - Application Firewall (AppFW)  \n  - Application Quality of Service (AppQoS)  \n  - Advanced policy-based routing (APBR)  \n  - Application Quality of Experience (AppQoE)  \n - User Firewall  \n - IPS  \n  - UTM  \n  - Anti Virus  \n  - Anti Spam  \n  - Web Filtering   \n  - Content Filtering  \n  - SSL Proxy  \n  - SSL Forward Proxy  \n  - SSL Reverse Proxy  \n  - SSL Decrypting Mirror |
 
 You can specify your license type when ordering your vSRX, as well as change the license by using the [Gateway Appliance Details](/docs/vsrx?topic=vsrx-vsrx-licenses#vsrx-licenses) page.
 {: note}
