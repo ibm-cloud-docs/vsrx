@@ -62,7 +62,7 @@ set security address-book global address VSI_PUB_NET 169.47.211.152/29
 ## Filtering on loopback considerations
 {: #loopback-considerations}
 
-The `PROTECT-IN` filter on loopback blocks (by default) all local traffic traveling to and from the vSRX. As a result, in order to ping the subnet gateways defined previously, or to ping servers on those subnets from the vSRX, the subnet gateways must be added to `PROTECT-IN`. This is configured by default for the `reth1` and `reth0` IP addresses and is why they are accessible after provisioning.
+The `PROTECT-IN` filter on loopback blocks (by default) all local traffic traveling to and from the vSRX that hasn't been explicitly allowed. As a result, in order to ping the subnet gateways defined previously, or to ping servers on those subnets from the vSRX, the subnet gateways must be added to `PROTECT-IN`. This is configured by default for the `reth1` and `reth0` IP addresses and is why they are accessible after provisioning.
 
 
 ```sh
