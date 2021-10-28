@@ -39,6 +39,7 @@ Two redundancy groups are configured. The following table illustrates these redu
 | :---          |    :---         |
 | redundancy-group 0   |  Redundancy group for control plane |
 | redundancy-group 1   |  Redundancy group for data plane |
+{: caption="Table 1. Redundancy groups" caption-side="bottom"}
 
 Priority in the redundancy group decides which vSRX node is active. By default, node 0 is active for both control plane and data plane.
 
@@ -369,6 +370,7 @@ The following table illustrates network interface definitions for the previous c
 | ae1.0         |   Aggregated Ethernet interface |
 | fxp0          |   Management interface        |
 | lo0           |   loopback interface          |
+{: caption="Table 1. Network interface definitions" caption-side="bottom"}
 
 ## Default Configuration of a sample 10G HA SR-IOV Public and Private vSRX Gateway
 {: #default-configuration-of-a-sample-highly-available-ha-vsrx-gateway}
@@ -811,8 +813,11 @@ The information in the following table represents the configuration above:
 | fab1 | Chassis cluster fabric link uses ge-7/0/0 and ge-7/0/9 | |
 | fxp0          |   Management interface        | |
 | lo0           |   loopback interface          | |
+{: caption="Table 1: Configuration information" caption-side="bottom"}
 
 ## Interface configurations
+{: #interface-configurations}
+
 The legacy architecture for these configurations leveraged Linux bridging on the Ubuntu host hypervisor. IBM has since transitioned to a new architecture for its gateways that leverages SR-IOV on the host. This caused the vSRX configuration’s interface mapping to change in many cases. Differences in the interface configuration are also influenced by whether the vSRX is:
 
 * 10G or 1G
@@ -820,11 +825,12 @@ The legacy architecture for these configurations leveraged Linux bridging on the
 * Public and Private, or Private Only
 * The vSRX Version
    - All 15.1 based vSRX’s use the legacy architecture
-   - Some 18.4 based vSRX’s also use the legacy architectue
+   - Some 18.4 based vSRX’s also use the legacy architecture
 
 Both the legacy and current architecture is detailed in the following sections.
 
 ### vSRX High Availability interfaces (current architecture)
+{: #vsrx-ha-interfaces}
 
 |**Interface**|**10G Pub+Priv** |**10G Priv Only** |**1G Pub+Priv** |**1G Priv Only** |
 |-------------|----------------|-----------------|-----------------|----------------|
@@ -848,8 +854,10 @@ Both the legacy and current architecture is detailed in the following sections.
 |ge-7/0/7|reth3|Does Not Exist|reth3|Does Not Exist|
 |ge-7/0/8|reth3|Does Not Exist|reth3|Does Not Exist|
 |ge-7/0/9|fab1|Does Not Exist|fab1|Does Not Exist|
+{: caption="Table 2: vSRX High Availability interfaces (current architecture)" caption-side="bottom"}
 
-### vSRX Standalone interfaces (current architecture)
+### vSRX stand-alone interfaces (current architecture)
+{: #vsrx-standalone-interfaces}
 
 |**Interface**|**10G Pub+Priv** |**10G Priv Only** |**1G Pub+Priv** |**1G Priv Only** |
 |-------------|----------------|-----------------|-----------------|----------------|
@@ -857,8 +865,10 @@ Both the legacy and current architecture is detailed in the following sections.
 |ge-0/0/1|ae1|ae0|ae1|ae0|
 |ge-0/0/2|ae0|Does Not Exist|ae0|Does Not Exist|
 |ge-0/0/3|ae1|Does Not Exist|ae1|Does Not Exist|
+{: caption="Table 3: vSRX stand-alone interfaces (current architecture)" caption-side="bottom"}
 
 ### vSRX High Availability interfaces (legacy architecture)
+{: #vsrx-ha-interfaces}
 
 |**Interface**|**10G Priv+Pub** |**10G Priv Only** |**1G Priv + Pub** |**1G Priv Only** |
 |-------------|----------------|-----------------|-----------------|----------------|
@@ -880,8 +890,10 @@ Both the legacy and current architecture is detailed in the following sections.
 |ge-7/0/6|reth2|Unused|Does Not Exist|Does Not Exist|
 |ge-7/0/7|reth3|Unused|Does Not Exist|Does Not Exist|
 |ge-7/0/8|reth3|Unused|Does Not Exist|Does Not Exist|
+{: caption="Table 4: SRX High Availability interfaces (legacy architecture)" caption-side="bottom"}
 
 ### vSRX standalone interfaces (legacy architecture)
+{: #vsrx-standalone-interfaces-legacy}
 
 |**Interface**|**10G Pub+Priv** |**10G Priv Only** |**1G Pub+Priv** |**1G Priv Only** |
 |-------------|----------------|-----------------|-----------------|----------------|
@@ -889,3 +901,4 @@ Both the legacy and current architecture is detailed in the following sections.
 |ge-0/0/1|ae1|ae0|ge-0/0/1|Does Not Exist|
 |ge-0/0/2|ae0|Does Not Exist|Does Not Exist|Does Not Exist|
 |ge-0/0/3|ae1|Does Not Exist|Does Not Exist|Does Not Exist|
+{: caption="Table 5: vSRX standalone interfaces (legacy architecture)" caption-side="bottom"}

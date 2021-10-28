@@ -35,9 +35,9 @@ Using these factors, the following table lists whether you can use the OS reload
 
 Reference the following table to determine if you can upgrade your vSRX using OS reload. For more information, see [General upgrade considerations](/docs/vsrx?topic=vsrx-general-upgrade).
 
-For more information on the vSRX versions listed below, refer to [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
+For more information on the vSRX versions listed, refer to [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
 
-The upgrade will re-apply the license currently applied to the node(s). It will not update the license. To update to a newer license you must seperately run the license renewal steps, see [Renewing a vSRX license](/docs/vsrx?topic=vsrx-license-renewal).
+The upgrade re-applies the license currently applied to the nodes. It does not update the license. To update to a newer license, you must separately run the license renewal steps. For more information, see [Renewing a vSRX license](/docs/vsrx?topic=vsrx-license-renewal).
 {: tip}
 
 | Current vSRX version  | Processor model and speed | Stand-alone or HA | Upgrade method  | Rollback supported |
@@ -50,3 +50,4 @@ The upgrade will re-apply the license currently applied to the node(s). It will 
 | 18.4 | All 10G Deployments | Stand-alone |	[OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) | No |
 | 18.4 | All 10G Deployments | HA |	[OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade)	| **Yes** – If you are running version 18.4 with new architecture, manual (not automated) rollbacks are allowed after the first server completes the OS reload. For more information, see [Rollback options](/docs/vsrx?topic=vsrx-rollback-options)  \n  **No** – If you are running version 18.4 without new architecture. |
 | 19.4 and newer | All 1G and 10G Deployments | Stand-alone  \n HA | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) | **Yes** – Manual (not automated) rollbacks are allowed after the first server completes the OS reload. For more information, see [Rollback options](/docs/vsrx?topic=vsrx-rollback-options) |
+{: caption="Table 1. Upgrading your vSRX using OS reload" caption-side="bottom"}

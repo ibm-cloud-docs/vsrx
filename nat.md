@@ -30,7 +30,8 @@ subcollection: vsrx
 This topic provides a sample configuration for sNAT on a vSRX appliance. With this configuration, a private node routed behind the Gateway can communicate with the outside world.
 {: shortdesc}
 
-![Sample topology](images/Sample-Topology-SNAT.png "Sample topology")
+![Sample topology](images/Sample-Topology-SNAT.png "Sample topology"){: caption="Sample topology" caption-side="bottom"}
+
 
 ```sh
 from-zone CUSTOMER-PRIVATE to-zone SL-PUBLIC {
@@ -67,4 +68,4 @@ nat {
 }
 ```
 
-To configure NAT for the {{site.data.keyword.vsrx_full}}, refer to this [configuration guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: new_window} on the Juniper website.
+To configure NAT for the {{site.data.keyword.vsrx_full}}, refer to this [configuration guide](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: external} on the Juniper website.

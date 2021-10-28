@@ -35,7 +35,7 @@ The {{site.data.keyword.vsrx_full}} runs as a Virtual Machine on a bare-metal se
 
 The {{site.data.keyword.vsrx_full}} can be deployed with public and private network access or private network access only. By default, password based SSH access to the public IP of the host OS will be disabled on new provisions and OS reloads. Access to the host can be achieved through the private IP address. Alternatively, key based authentication can be used to access the public IP. To do so, specify the public SSH key when placing a new Gateway order .
 
-Some existing deployments of the {{site.data.keyword.vsrx_full}} may allow password based SSH access to the public IP of the host OS. For these deployments, you can manually disable password based SSH access to the public IP of the OS by following these steps:
+Some existing deployments of the {{site.data.keyword.vsrx_full}} might allow password based SSH access to the public IP of the host OS. For these deployments, you can manually disable password based SSH access to the public IP of the OS by following these steps:
 
 1. Modify /etc/ssh/sshd_config
 
@@ -91,7 +91,7 @@ For {{site.data.keyword.vsrx}} version 18.4 HA deployments running with the lega
 
 For {{site.data.keyword.vsrx}} versions running with the newer architecture, the firewall rules must allow for multicast communication.
 
-In some cases, troubleshooting operations may require disabling the firewall for access to public repositories. In these cases, you should work with IBM Support to understand how to proceed.
+In some cases, troubleshooting operations might require disabling the firewall for access to public repositories. In these cases, you should work with IBM Support to understand how to proceed.
 {: note}
 
 Most Gateway actions require SSH access to the private `10.0.0.0/8` subnet for the host OS and the {{site.data.keyword.vsrx}}. Blocking this access with a firewall can cause the following actions to fail:

@@ -343,7 +343,7 @@ The aggregated device configuration requires the following addition in the curre
 set chassis aggregated-devices ethernet device-count 10
 ```
 
-The JWEB configuration will also include the aggregated interfaces as well:
+The JWEB configuration also includes the aggregated interfaces as well:
 
 ```sh
 set system services web-management https interface ae0.0
@@ -355,7 +355,7 @@ set system services web-management https interface ae1.0
 
 For High Availability configurations, the main vSRX changes when importing configurations from the legacy architecture to the current architecture are small changes to the interface mappings.
 
-The 1G SR-IOV HA configuration for the current architecture adds additional vSRX interfaces for redundancy, instead of using the host (hypervisor) bond interfaces. This is possible as the host now uses SR-IOV VF’s that can be mapped directly to the vSRX interfaces. Configurations that were exported from the legacy architecture will need to take this into account if they are imported into the current architecture.
+The 1G SR-IOV HA configuration for the current architecture adds additional vSRX interfaces for redundancy, instead of using the host (hypervisor) bond interfaces. This is possible as the host now uses SR-IOV VF’s that can be mapped directly to the vSRX interfaces. Configurations that were exported from the legacy architecture must take this into account if they are imported into the current architecture.
 
 The vSRX configuration for the current architecture for 1G HA can be found [in this topic](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-high-availability-interfaces-current-architecture-). While, the vSRX configuration for the legacy architecture for 1G HA can be found [here](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-high-availability-interfaces-legacy-architecture-)
 

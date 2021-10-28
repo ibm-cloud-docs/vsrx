@@ -42,7 +42,7 @@ To do so, perform the following procedure:
 	Ensure that you are in the `primary` node. If you are not, exit and login to the other vSRX gateway device of the pair.
 
 1. On the primary vSRX gateway device, run the command `show chassis cluster status`.
-   
+
    The output should be similar to the following:
 
 	```text
@@ -85,5 +85,5 @@ To do so, perform the following procedure:
 
 1. Login to the other vSRX gateway of your pair. Enter into CLI mode by again executing the command `cli` and then verify that the console output shows as `primary`.
 
-When you enter CLI mode in your Juniper vSRX gateway device, the output will show as `primary` from the control plane perspective. Always check the `show chassis cluster status` output to determine which gateway device is primary from data plane perspective. Refer to [vSRX Default Configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) to learn more about redundancy groups, as well as the control and data planes.
+When you enter CLI mode in your Juniper vSRX gateway device, the output shows as `primary` from the control plane perspective. Always check the `show chassis cluster status` output to determine which gateway device is primary from data plane perspective. Refer to [vSRX Default Configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) to learn more about redundancy groups, as well as the control and data planes.
 {: tip}

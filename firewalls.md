@@ -36,6 +36,7 @@ In the IBM Cloud, a vSRX is designed to have four different security zones:
 | SL-Public (untagged)     | ge-0/0/1.0 or ae1.0  | reth1.0      |
 | Customer-Private (tagged)| ge-0/0/0.1 or ae0.1  | reth2.1      |
 | Customer-Public (tagged) | ge-0/0/1.1 or ae1.1  | reth3.1      |
+{: caption="Table 1. Security zones" caption-side="bottom"}
 
 ## Zone policies
 {: #zone-policies}
@@ -44,19 +45,21 @@ To configure a stateful firewall, follow these steps:
 
 1. Create security zones and assign the respective interfaces:
 
-	Standalone scenario:
+   Standalone scenario:
 
-	```sh
-	set security zones security-zone CUSTOMER-PRIVATE interfaces ge-0/0/0.1
-	set security zones security-zone CUSTOMER-PUBLIC interfaces ge-0/0/1.1
-	```
-	High Availability scenario:
+	 ```sh
+	 set security zones security-zone CUSTOMER-PRIVATE interfaces ge-0/0/0.1
+	 set security zones security-zone CUSTOMER-PUBLIC interfaces ge-0/0/1.1
+   ```
 
-	```sh
-	set security zones security-zone CUSTOMER-PRIVATE interfaces reth2.1
-	set security zones security-zone CUSTOMER-PUBLIC interfaces reth2.1
-	```
-2. Define the policy and rules between two different zones.
+   High Availability scenario:
+
+   ```sh
+   set security zones security-zone CUSTOMER-PRIVATE interfaces reth2.1
+   set security zones security-zone CUSTOMER-PUBLIC interfaces reth2.1
+   ```
+
+1. Define the policy and rules between two different zones.
 
 	The following example illustrates pinging traffic from the zone `Customer-Private` to `Customer-Public`:
 
@@ -82,6 +85,7 @@ Standalone case:
 ```sh
 set security zones security-zone CUSTOMER-PRIVATE interfaces ge-0/0/0.0 host-inbound-traffic system-services all
 ```
+
 HA case:
 
 ```sh
@@ -95,6 +99,7 @@ Standalone case:
 ```sh
 set security zones security-zone trust interfaces ge-0/0/0.0 host-inbound-traffic protocols all
 ```
+
 HA case:
 
 ```sh
@@ -110,12 +115,12 @@ To configure a new stateless firewall, follow these steps:
 
 1. Create the firewall filter and term (the following filter allows only ICMP and drops all other traffic):
 
-	```sh
-	set firewall filter ALLOW-PING term ICMP from protocol icmp
-	set firewall filter ALLOW-PING term ICMP then accept
-	```
+   ```sh
+   set firewall filter ALLOW-PING term ICMP from protocol icmp
+   set firewall filter ALLOW-PING term ICMP then accept
+   ```
 
-2. Apply the filter rule to the interface (the following command applies the filter to all private network traffic):
+1. Apply the filter rule to the interface (the following command applies the filter to all private network traffic):
 
 	```sh
 	set interfaces ge-0/0/0 unit 0 family inet filter input ALLOW-PING

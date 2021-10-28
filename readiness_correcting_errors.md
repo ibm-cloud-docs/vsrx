@@ -26,7 +26,7 @@ subcollection: vsrx
 # Correcting readiness errors and warnings
 {: #correcting-readiness-errors}
 
-Readiness errors and warnings can inhibit your ability to succesfully complete a readiness check. This topic provides information on correcting different types of errors and warnings.
+Readiness errors and warnings can inhibit your ability to successfully complete a readiness check. This topic provides information on correcting different types of errors and warnings.
 {: shortdesc}
 
 ## Correcting connectivity errors
@@ -44,7 +44,7 @@ Many of these errors result from the fact that the gateway actions being checked
 
 To validate connectivity, open an SSH session to either the Ubuntu host's or vSRX's private IP using the root credentials listed in the **Hardware** section (for an Ubuntu host) or the **vSRX** section (for the gateway) of the [Gateway Appliance Details](/docs/vsrx?topic=gateway-appliance-viewing-gateway-appliance-details) page. Ensure that the SSH session can be established.
 
-   ![SSH credentials](images/readiness_correcting.png "SSH credentials")
+   ![SSH credentials](images/readiness_correcting.png "SSH credentials"){: caption="SSH credentials" caption-side="bottom"}
 
 If the session cannot be established, check the following potential issues.
 
@@ -143,14 +143,14 @@ To fix this issue, remove one of the syslog labels from the configuration and re
 ## Correcting unsupported vSRX configuration commands
 {: #correcting-unsupported-configuration}
 
-The Juniper vSRX contains some undocumented, or hidden, CLI commands. Some of these commands are not supported by the vSRX configuration, even though in some releases they can be committed. In some cases, the behavior can unexpectedly change between release versions. For example, the following undocumented configuration could be committed in versions prior to 20.4R2-S2, but will fail in 20.4R2-S2. Notice the `unsupported platform` output in the show configuration in 19.4R3-S2.
+The Juniper vSRX contains some undocumented, or hidden, CLI commands. Some of these commands are not supported by the vSRX configuration, even though in some releases they can be committed. In some cases, the behavior can unexpectedly change between release versions. For example, the following undocumented configuration could be committed in versions prior to 20.4R2-S2, but fails in 20.4R2-S2. Notice the `unsupported platform` output in the show configuration in 19.4R3-S2.
 
 ```sh
 [edit]
 root@asloma-vsrx-sa-hkg0202-vsrx-vSRX# set interfaces st0 unit 0 family inet tcp-mss 1372   
 
 [edit]
-root@asloma-vsrx-sa-hkg0202-vsrx-vSRX# commit 
+root@asloma-vsrx-sa-hkg0202-vsrx-vSRX# commit
 commit complete
 
 [edit]
@@ -170,7 +170,7 @@ unit 0 {
 ```
 {: codeblock}
 
-In 20.4R2-S2, the same configuration is not allowed and will fail with the following syntax error:
+In 20.4R2-S2, the same configuration is not allowed and fails with the following syntax error:
 
 ```text
 {primary:node0}[edit]
@@ -180,7 +180,7 @@ syntax error.
 ```
 {: screen}
 
-This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, since the commit of the previous configuration to the new release will fail, causing the upgrade to fail as well. As a result, it is critical that you remove unsupported, or hidden, commands from the vSRX configuration prior to upgrading your version. This is applicable even to commands that are not detected by the Readiness check. 
+This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, since the commit of the previous configuration to the new release fails, causing the upgrade to fail as well. As a result, it is critical that you remove unsupported, or hidden, commands from the vSRX configuration prior to upgrading your version. This is applicable even to commands that are not detected by the Readiness check.
 
 ## Correcting warning 1176
 {: #correcting-1176}

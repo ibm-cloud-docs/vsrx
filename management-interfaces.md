@@ -60,7 +60,7 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
    set groups node1 system backup-router 10.177.75.137 destination [ 0.0.0.0/1 128.0.0.0/1 ]
    ```
 
-   Additional information on configuring the backup router can be found in [this Juniper article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://kb.juniper.net/InfoCenter/index?page=content&id=KB17161&actp=METADATA){: new_window}.
+   Additional information on configuring the backup router can be found in [this Juniper article](https://kb.juniper.net/InfoCenter/index?page=content&id=KB17161&actp=METADATA){: external}.
    {: note}
 
 5. Create a static route to the subnet. For example:

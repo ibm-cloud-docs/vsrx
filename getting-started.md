@@ -47,6 +47,7 @@ Each license includes a different set of features and options, and the following
 | ------------- | ------------- |
 | **Standard** | - Core security: firewall, ALG, screens, user firewall  \n - IPsec VPN (site-to-site VPN)  \n - NAT  \n - CoS  \n - Routing services: BGP, OSPF, DHCP, J-Flow, IPv4  \n - Foundation: Static routing, management (J-Web, CLI, and NETCONF), on-box logging, diagnostics |
 | **Content Security Bundle (CSB)**  \n Includes all Standard features, along with the additional features listed in the next column. | - AppSecure  \n  - Application Tracking (AppTrack)  \n  - Application Firewall (AppFW)  \n  - Application Quality of Service (AppQoS)  \n  - Advanced policy-based routing (APBR)  \n  - Application Quality of Experience (AppQoE)  \n - User Firewall  \n - IPS  \n  - UTM  \n  - Anti Virus  \n  - Anti Spam  \n  - Web Filtering   \n  - Content Filtering  \n  - SSL Proxy  \n  - SSL Forward Proxy  \n  - SSL Reverse Proxy  \n  - SSL Decrypting Mirror |
+{: caption="Table 1. License differences" caption-side="bottom"}
 
 You can specify your license type when ordering your vSRX, as well as change the license by using the [Gateway Appliance Details](/docs/vsrx?topic=vsrx-vsrx-licenses#vsrx-licenses) page.
 {: note}
@@ -56,26 +57,27 @@ You can specify your license type when ordering your vSRX, as well as change the
 
 You can order your {{site.data.keyword.vsrx_full}} by performing the following procedure:
 
-1. From your browser, open the Gateway Appliances page in the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/gen1/infrastructure/provision/gateway){: new_window} and log in to your account.
+1. From your browser, open the Gateway Appliances page in the [IBM Cloud catalog](/gen1/infrastructure/provision/gateway){: external} and log in to your account.
 
    You can also get to this page by logging in to the [IBM Cloud UI console](https://cloud.ibm.com){: external} and selecting **Classic Infrastructure > Network > Gateway appliance**. Alternatively, from the [IBM Cloud catalog](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog){: external}, select the **Network** category then choose the **Gateway Appliance** tile.
 
 2. Choose **Juniper vSRX (up to 1 Gbps)** or **Juniper vSRX (up to 10 Gbps)** under **Gateway Vendor**.
 
 3. Choose your license type from **License add-ons**, either Standard or CSB.
- See the previous section for information on the features offered with each license.
+
+   See the previous section for information on the features offered with each license.
    {: tip}
 
 4. From the **Gateway appliance** section, enter your **Hostname** and **Domain** name information. These fields are already be populated with default information, so ensure that the values are correct.
 
-   ![Linked order](images/linked_order.png "Linked order")
+   ![Linked order](images/linked_order.png "Linked order"){: caption="Linked order" caption-side="bottom"}
 
 5. Check the **High Availability** option if needed, then select a data center **Location**, and the specific **Pod** you want from the menu.
 
    Only pods that already have an associated VLAN are displayed here. If you want to provision your gateway appliance in a pod you don't see listed, first create a VLAN there.
    {: note}
 
-   ![Linked server](images/linked_server.png "Linked server")
+   ![Linked server](images/linked_server.png "Linked server"){: caption="Linked server" caption-side="bottom"}
 
 6. From the **Configuration** section, choose your processor's RAM. You can also define an SSH key, if you want to use it to authenticate access to your new Gateway.
 
@@ -111,4 +113,4 @@ After your order is approved, the provisioning of your vSRX starts automatically
 
 Click the gateway name to open the **Gateway Details** page. You find the IP addresses, login username, and passwords for the device.
 
-![After ordering](images/after_order.png "After ordering")
+![After ordering](images/after_order.png "After ordering"){: caption="After ordering" caption-side="bottom"}

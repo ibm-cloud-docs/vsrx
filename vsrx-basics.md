@@ -26,7 +26,7 @@ subcollection: vsrx
 You can configure and maintain your {{site.data.keyword.vsrx_full}} in a variety of ways, either through a remote console session through SSH or by logging into the Juniper web management GUI.
 {: shortdesc}
 
-Configuring the vSRX outside of its shell and interface may produce unexpected results and is not recommended.
+Configuring the vSRX outside of its shell and interface might produce unexpected results and is not recommended.
 {: note}
 
 ## Accessing the device using SSH
@@ -36,7 +36,8 @@ You can access either the vSRX or the host (Ubuntu) using SSH through a private 
 
 1. Go to Gateway Appliance Details screen and get the Public gateway IP or Private Gateway IP.
 
-   ![Gateway details](images/gw-sa-details.png "Gateway details")
+   ![Gateway details](images/gw-sa-details.png "Gateway details"){: caption="Gateway details" caption-side="bottom"}
+
 
 2. Click the "eye" icon to reveal the admin user's password.
 
@@ -45,11 +46,11 @@ You can access either the vSRX or the host (Ubuntu) using SSH through a private 
    For the host (Ubuntu), you can only use the `root` user ID and password.
    {: note}
 
-If you do not see the "eye" icon, you may not have permission to view the password. Please check your access permissions with the account owner.
+If you do not see the "eye" icon, you might not have permission to view the password. Please check your access permissions with the account owner.
 {: note}
 
 ## Accessing the configuration mode
-{: accessing-the-configuration-mode}
+{: #accessing-the-configuration-mode}
 
 You can enter the configuration mode, once a shell has been opened to the vSRX, by running the `config` command. You can do several things in this mode using the following commands:
 
@@ -67,7 +68,7 @@ To leave Configuration mode run the command `exit`.
 
 The Juniper web management GUI has been configured by default, with vSRX generated self-signed certificate. Only https is enabled on port 8443. You can access it at `https://gateway-ip:8443`.
 
-![Gateway Appliance HA Details](images/vSRX-webui.png)
+![Gateway Appliance HA Details](images/vSRX-webui.png){: caption="Gateway Appliance HA details" caption-side="bottom"}
 
 ## Creating system users
 {: #creating-system-users}

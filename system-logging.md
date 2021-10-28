@@ -51,7 +51,7 @@ Unlike other severity levels, the `none` level disables logging of a facility in
 | 5	| Notice	| Conditions that are not errors, but might warrant special handling. |
 | 6	| Info	| Events or non-error conditions of interest. |
 | 7	| Any	| All severity levels. |
-{: caption="Table 1. System log message severity levels" caption-side="top"}
+{: caption="Table 1. System log message severity levels" caption-side="bottom"}
 
 The following is a sample vSRX syslog configuration for sending logs to a remote syslog server. Your actual settings depend on the configuration of the syslog server receiving the logs.
 

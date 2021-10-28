@@ -26,7 +26,7 @@ subcollection: vsrx
 This topic details a sample configuration for a Route based VPN between two sites. In this sample configuration Server 1 (Site A) can communicate with Server 2 (Site B), and each site utilizes two phase IPSEC authentication.
 {: shortdesc}
 
-![Site to Site VPN](images/site-to-site-vpn.png "Site to Site VPN")
+![Site-to-site VPN](images/site-to-site-vpn.png){: caption="Site-to-site VPN" caption-side="bottom"}
 
 ## Sample configuration for Site A (Dallas):
 {: #sample-configuration-for-site-a-dallas-}
@@ -55,7 +55,7 @@ gateway IKE-GW {
     address 158.100.100.100;
     external-interface ge-0/0/1.0;
 }
-#show security ipsec
+# show security ipsec
 proposal IPSEC-PROP {
     protocol esp;
     authentication-algorithm hmac-sha1-96;
@@ -77,7 +77,7 @@ vpn IPSEC-VPN {
     }
     establish-tunnels immediately;
 }
-#show interfaces
+# show interfaces
 ge-0/0/0 {
     description PRIVATE_VLANs;
     flexible-vlan-tagging;
@@ -107,7 +107,7 @@ st0 {
             address 169.254.200.0/31;
         }
     }
-#show security policies
+# show security policies
 from-zone CUSTOMER-PRIVATE to-zone VPN {
     policy Custprivate-to-VPN {
         match {
@@ -161,7 +161,7 @@ st0 {
             address 169.254.200.1/31;
         }
     }
-#show security ike
+# show security ike
 proposal IKE-PROP {
     authentication-method pre-shared-keys;
     dh-group group5;
@@ -201,7 +201,7 @@ vpn IPSEC-VPN {
     }
     establish-tunnels immediately;
 }
-#show security zone security-zone CUSTOMER_PRIVATE
+# show security zone security-zone CUSTOMER_PRIVATE
 security-zone CUSTOMER-PRIVATE {
     interfaces {
         ge-0/0/0.10 {
@@ -218,7 +218,7 @@ security-zone VPN {
         st0.1;
     }
 }
-#show security policies from-zone CUSTOMER-PRIVATE to-zone VPN
+# show security policies from-zone CUSTOMER-PRIVATE to-zone VPN
 policy Custprivate-to-VPN {
     match {
         source-address any;
@@ -229,11 +229,11 @@ policy Custprivate-to-VPN {
         permit;
     }
 }
- #show security zones security-zone VPN
+ # show security zones security-zone VPN
 interfaces {
     st0.1;
 }
-#show security policies from-zone VPN to-zone CUSTOMER-PRIVATE
+# show security policies from-zone VPN to-zone CUSTOMER-PRIVATE
 policy VPN-to-Custprivate {
     match {
         source-address Network-A;
@@ -245,7 +245,8 @@ policy VPN-to-Custprivate {
     }
 }
 ```
-## Performance Consideration
+
+## Performance consideration
 {: #performance-consideration}
 
 In order to achieve the best IPSEC VPN performance, use AES-GCM as the encryption algorithm for both IKE and IPSEC proposals.
@@ -262,6 +263,6 @@ With AES-GCM as the encryption algorithm, you don't need to specify the authenti
 ## Additional VPN configurations
 {: #additional-vpn-configurations}
 
-To configure IPSEC VPN, site to site, remote access VPN, and other features, refer to this [configuration guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: new_window} from Juniper.
+To configure IPSec VPN, site to site, remote access VPN, and other features, refer to this [configuration guide](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-vpn-ipsec.pdf){: external} from Juniper.
 
-For an example of how to configure a route-based site to site IPSEC VPN, refer to this [configuration guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: new_window} from Juniper.
+For an example of how to configure a route-based site to site IPSec VPN, refer to this [configuration guide](https://www.juniper.net/documentation/en_US/junos/topics/example/ipsec-route-based-vpn-configuring.html){: external} from Juniper.

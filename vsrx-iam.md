@@ -34,19 +34,15 @@ If a specific role and its actions don't fit the use case that you're looking to
 IAM access policies enable access to be granted at different levels. Some of the options include the following:
 
 * Access across all instances of the service in your account
-* Access to an individual service instance in your account <!-- if this applies -->
-* Access to a specific resource within an instance, _such as resource type `bucket`_ <!-- if this applies list what resoureceType attributes are supported, for example COS buckets or Kubernetes namespaces -->
+* Access to an individual service instance in your account  
+* Access to a specific resource within an instance, _such as resource type `bucket`_  
 
 Review the following tables that outline what types of tasks each role allows for when you're working with the vSRX service.
 
 When you assign policies to users for this service, use `servicename` for the service name in the CLI command or API call.
 {: important}
 
-<!--This is important to include because the service name in the UI often doesn't match the service name that should be used to make an API call or submit a CLI command-->
-
 The following table describes the types of tasks that can be completed with each platform management role assigned. Platform management roles enable users to perform tasks on service resources at the platform level, for example, assign user access to the service, create or delete instances, and bind instances to applications.
-
-<!-- This is a high level view of what the platform roles allow users to do. Use a plain language description about what kind of tasks can be completed or the common jobs to be done that users can expect to accomplish when having each role assigned. -->
 
 | Platform role | Description of actions |
 |--------------------------|------------------------|
@@ -55,13 +51,10 @@ The following table describes the types of tasks that can be completed with each
 | Editor                   | Description            |
 | Administrator            | Description            |
 {: row-headers}
-{: caption="Table 1. IAM platform roles" caption-side="top"}
+{: caption="Table 1. IAM platform roles" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column is the platform management role. The second column is a description of the actions in the service that the platform management role permits."}
 
-
 The following table describes the types tasks that can be completed when each service access role is assigned. Service access roles enable users access to vSRX and the ability to call the `service name's` API.
-
-<!-- Include any service-specific custom roles that you service has registered -->
 
 | Service role | Description of actions |
 |---------------------|------------------------|
@@ -69,7 +62,7 @@ The following table describes the types tasks that can be completed when each se
 | Writer              | Description            |
 | Manager             | Description            |
 {: row-headers}
-{: caption="Table 2. IAM service access role descriptions" caption-side="top"}
+{: caption="Table 2. IAM service access role descriptions" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column is the service access role. The second column is a description of the actions in the service that the service access role permits."}
 
 For information about the steps to assign IAM access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources).
