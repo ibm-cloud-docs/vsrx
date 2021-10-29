@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-10-04"
+lastupdated: "2021-10-27"
 
 keywords: checking, readiness, errors
 
@@ -220,7 +220,7 @@ The vSRX node is not started. Start the vSRX VM and retry the operation.
 ## Error 1119
 {: #error-1119}
 
-The vSRX node's VM is running but the node is not accessible via telnet. Restart the node and retry the operation.
+The vSRX node's VM is running but the node is not accessible via telnet. Exit from all console (telnet) sessions and retry the operation.
 
 ## Error 1120
 {: #error-1120}
