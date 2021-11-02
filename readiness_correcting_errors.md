@@ -136,7 +136,7 @@ The output for this configuration is:
 [Stage 3 - Build_vSRX][2021-01-11 15:38:00.623323] Commit check failed: CommitError(edit_path: [edit system syslog file default-log-messages], bad_element: explicit-priority, message: error: ‘explicit-priority’ cannot be configured if ‘structured-data’ is configured
 error: configuration check-out failed: (statements constraint check failed))
 ```
-{: pre}
+{: screen}
 
 To fix this issue, remove one of the syslog labels from the configuration and retry the readiness check.
 
