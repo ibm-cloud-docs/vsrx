@@ -10,16 +10,7 @@ subcollection: vsrx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:preview: .preview}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:download: .download}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting started with IBM Cloud Juniper vSRX
 {: #getting-started}

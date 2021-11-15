@@ -10,18 +10,7 @@ subcollection: vsrx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:external: target="_blank" .external}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:download: .download}
-{:help: data-hd-content-type='help'}
-{:support: data-reuse='support'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Renewing a vSRX license
 {: #license-renewal}

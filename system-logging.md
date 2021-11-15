@@ -10,15 +10,7 @@ subcollection: vsrx
 
 ---
 
-{:external: target="_blank" .external}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:download: .download}
+{{site.data.keyword.attribute-definition-list}}
 
 # Setting up system logging
 {: #system-logging}

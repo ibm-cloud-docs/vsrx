@@ -10,15 +10,7 @@ subcollection: vsrx
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing IAM access for IBM Cloud Juniper vSRX
 {: #iam-docs-template}

@@ -10,17 +10,7 @@ subcollection: vsrx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
-{:help: data-hd-content-type='help'}
-{:support: data-reuse='support'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Securing the host operating system
 {: #securing-host-operating-system}
