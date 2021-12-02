@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-10-27"
+lastupdated: "2021-12-01"
 
 keywords: checking, readiness, errors
 
@@ -116,6 +116,11 @@ The gateway readiness precheck failed with an unexpected exception. Try again or
 {: #error-1025}
 
 The IPMI interface is disabled for the Gateway host. Check IPMI status and enable the interface if is disabled. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+
+## Error 1026
+{: #error-1026}
+
+The Ubuntu host is unable to write to the attached storage as it is read only. Reboot the host and try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help). 
 
 ## Error 1101
 {: #error-1101}
@@ -313,9 +318,14 @@ The vSRX license install has failed during the vSRX license configuration. Pleas
 The vSRX configuration includes a `tcp-mss` setting on an interface. Remove the invalid configuration and rerun.
 
 ## Error 1140
-{: #error-1139}
+{: #error-1140}
 
 The vSRX configuration includes an unsupported configuration setting. Correct and/or remove the unsupported configuration setting and rerun. Refer to [Correcting Unsupported vSRX Configuration Commands](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-unsupported-configuration) for more information.
+
+## Error 1141
+{: #error-1141}
+
+The vSRX was accessible but we were unable to determine which node is the primary.
 
 ## Warning 1176
 {: #warning-1176}
@@ -331,3 +341,18 @@ The gateway experienced a precheck setup warning. A security policy using `dynam
 {: #warning-1178}
 
 The license was updated. However, validation of the new license failed. It is recommended you manually check that the vSRX license is applied to each vSRX node.
+
+## Warning 1179
+{: #warning-1179}
+
+The vSRX version found to be running on the Gateway is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version currently listed on the Gateway Details page. Refer to [Correcting warning 1179](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1179) for more information.
+
+## Warning 1180
+{: #warning-1180}
+
+The vSRX license found on the Gateway is unsupported. [Correcting warning 1180](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1180) for more information.
+
+## Warning 1181
+{: #warning-1181}
+
+The vSRX license and version on the Gateway are both found to be unsupported. [Correcting warning 1181](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1181) for more information.

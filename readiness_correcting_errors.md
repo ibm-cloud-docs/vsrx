@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-09-15"
+lastupdated: "2021-12-01"
 
 keywords: readiness errors
 
@@ -194,3 +194,18 @@ set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATI
 {: codeblock}
 
 If you are using a similar configuration, it is recommended that you either install the CSB license and the application signature database or remove the `dynamic-application any` rule.
+
+## Correcting warning 1179
+{: #correcting-1179}
+
+The vSRX version running on the Gateway is not certified on IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version currently listed on the Gateway Details page. Because the vSRX version is not certified on IBM Cloud, it is strongly recommended you contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help) to migrate to the certified version found here: [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
+
+## Correcting warning 1180
+{: #correcting-1180}
+
+The vSRX license found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current license with the version currently listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started#choosing-license). If the license was procured outside of IBM Cloud, please work with that procurement source for support. Otherwise, is is strongly recommended you contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
+
+## Correcting warning 1181
+{: #correcting-1181}
+
+The vSRX license and version on the Gateway are both unsupported. Refer to [Correcting warning 1179](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1179) and [Correcting warning 1180](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1180) for help in resolving these warnings.
