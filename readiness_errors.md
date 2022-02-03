@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-12-01"
+lastupdated: "2022-02-01"
 
 keywords: checking, readiness, errors
 
@@ -326,6 +326,11 @@ The vSRX configuration includes an unsupported configuration setting. Correct an
 {: #error-1141}
 
 The vSRX was accessible but we were unable to determine which node is the primary.
+
+## Error 1142
+{: #error-1142}
+
+The vSRX includes duplicate IPs in the interface section of the vSRX config. Remove the duplicate IPs from the config and rerun.
 
 ## Warning 1176
 {: #warning-1176}
