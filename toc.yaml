@@ -10,7 +10,7 @@ toc:
     audience: service
     href: /docs/vsrx
     console-page: https://cloud.ibm.com/catalog/content/juniper-vsrx-catalog-deploy-1.4-dc1e707c-33dd-4321-b2a5-c22dbf0dd0ee-global
-    product-page: https://www.ibm.com/cloud/vsrx
+    product-page: https://www.ibm.com/cloud/network-appliances
     path: vsrx
     label: IBM Cloud Juniper vSRX
 
