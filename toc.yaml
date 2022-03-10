@@ -93,7 +93,7 @@ toc:
     - navgroup:
         id: reference
         topics:
-        - /hardware-firewall-shared/hardware-firewall-shared-ibm-cloud-ip-ranges
+        - /cloud-infrastructure/cloud-infrastructure-ibm-cloud-ip-ranges
         - vsrx-version-notes.md
 
     - navgroup:
