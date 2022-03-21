@@ -22,6 +22,7 @@ You can click on the **Version information** link for each entry to get more det
 
 | Base version | Release version | Release date | Version information |
 | --- | --- | --- | --- |
+| 20.4R3-S2 | 20.4R3-S2.6 | March 23, 2021 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB18293){: external} |
 | 20.4R2-S2 | 20.4R2-S2.2 | September 21, 2021 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB18161){: external} |
 | 19.4R3-S2 | 19.4R3-S2.2 | March 25, 2021 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17993){: external} |
 | 19.4R2-S3 | 19.4R2-S3.1 | December 8, 2020 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17918){: external} |
