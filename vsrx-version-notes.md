@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2021
-lastupdated: "2021-09-20"
+lastupdated: "2022-03-21"
 
 keywords: version, base version, release notes, juniper
 
