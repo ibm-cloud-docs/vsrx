@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-10-19"
+lastupdated: "2022-04-08"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -40,7 +40,7 @@ For a successful OS Reload on a vSRX, ensure the following:
 
    ![vSRX Password](images/gw-vsrx-password.png "vSRX Password"){: caption="vSRX password" caption-side="bottom"}
 
-* The vSRX configuration must allow root SSH access to the vSRX private IP, prior to the OS reload request. This is required to rejoin the cluster. After the OS reload completes, the SSH access might be disabled.
+* The vSRX configuration must allow root SSH access to the vSRX private IP, prior to the OS reload request. This is required to rejoin the cluster. Once the OS reload completes, if desired, you can disable SSH access again.
 
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.
 
