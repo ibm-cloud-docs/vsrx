@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-12-01"
+lastupdated: "2022-04-18"
 
 keywords: readiness errors
 
@@ -132,7 +132,11 @@ To fix this issue, remove one of the syslog labels from the configuration and re
 ## Correcting unsupported vSRX configuration commands
 {: #correcting-unsupported-configuration}
 
-The Juniper vSRX contains some undocumented, or hidden, CLI commands. Some of these commands are not supported by the vSRX configuration, even though in some releases they can be committed. In some cases, the behavior can unexpectedly change between release versions. For example, the following undocumented configuration could be committed in versions prior to 20.4R2-S2, but fails in 20.4R2-S2. Notice the `unsupported platform` output in the show configuration in 19.4R3-S2.
+The Juniper vSRX contains undocumented, or hidden, CLI commands. The vSRX configuration does not support some of these commands, even though, in some releases, they can be committed. In some cases, the behavior can unexpectedly change between release versions. The following information details some known unsupported configuration commands when upgrading from an older vSRX version. It is critical that you remove unsupported, or hidden, commands from the vSRX configuration prior to upgrading your version. You should do this even with commands that are not detected by the Readiness check.
+
+### Command `set interfaces..` with tcp-mss
+
+The following undocumented configuration could be committed in versions prior to 20.4R2-S2, but fails in 20.4R2-S2. Notice the `unsupported platform` output from `show configuration` in 19.4R3-S2.
 
 ```sh
 [edit]
@@ -169,7 +173,20 @@ syntax error.
 ```
 {: screen}
 
-This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, since the commit of the previous configuration to the new release fails, causing the upgrade to fail as well. As a result, it is critical that you remove unsupported, or hidden, commands from the vSRX configuration prior to upgrading your version. This is applicable even to commands that are not detected by the Readiness check.
+This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, because the commit of the previous configuration to the new release fails, causing the upgrade to fail as well. 
+
+### Command `set security datapath-debug..`
+
+`set security datapath-debug` configuration commands are known to cause errors during when upgrading. You should remove all `datapath-debug` commands from the `config` and retry the readiness check. For example, commands like these should be removed:
+
+```text
+set security datapath-debug capture-file pcap001
+set security datapath-debug capture-file format pcap
+set security datapath-debug capture-file size 10m
+set security datapath-debug capture-file files 5
+set security datapath-debug maximum-capture-size 1500
+```
+{: screen}
 
 ## Correcting warning 1176
 {: #correcting-1176}
