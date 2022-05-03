@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2022-02-01"
+lastupdated: "2022-05-02"
 
 keywords: checking, readiness, errors
 
@@ -331,6 +331,11 @@ The vSRX was accessible but we were unable to determine which node is the primar
 {: #error-1142}
 
 The vSRX includes duplicate IPs in the interface section of the vSRX config. Remove the duplicate IPs from the config and rerun.
+
+## Error 1143
+{: #error-1143}
+
+The gateway upgrade process failed with an unexpected exception. Contact IBM Support.
 
 ## Warning 1176
 {: #warning-1176}
