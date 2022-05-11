@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2022
-lastupdated: "2022-04-01"
+  years: 2017, 2021
+lastupdated: "2022-03-24"
 
 keywords: version, base version, release notes, juniper
 
@@ -33,3 +33,8 @@ You can click on the **Version information** link for each entry to get more det
 
 It's critical that you review the [Junos OS dates and milestones](https://support.juniper.net/support/eol/software/junos/){: external} to determine whether or not Juniper still supports your Junos version. If your installed version is approaching its end of support from Juniper, then you should [Upgrade your vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx) immediately to maintain full support.
 {: important}
+
+All versions prior to 19.4R3-S2 are prone to clustering issues and crashing. As a result, it is critical that you upgrade to the latest available version, especially if you are currently using 19.4R2-S3 or below.
+{: important}
+
+
