@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2021
-lastupdated: "2022-03-24"
+lastupdated: "2022-05-23"
 
 keywords: version, base version, release notes, juniper
 
@@ -22,7 +22,6 @@ You can click on the **Version information** link for each entry to get more det
 
 | Base version | Release version | Architecture model | Release date | Version information |
 | --- | --- | --- | --- | --- |
-| 20.4R3-S2 | 20.4R3-S2.6 | 3.0 | March 24, 2022 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB18293){: external} |
 | 20.4R2-S2 | 20.4R2-S2.2 | 2.0 | September 21, 2021 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB18161){: external} |
 | 19.4R3-S2 | 19.4R3-S2.2 | 2.0 | March 25, 2021 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17993){: external} |
 | 19.4R2-S3 | 19.4R2-S3.1 | 2.0 | December 8, 2020 | [More information](https://kb.juniper.net/InfoCenter/index?page=content&id=TSB17918){: external} |
