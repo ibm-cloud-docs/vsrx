@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2022-05-02"
+lastupdated: "2022-08-05"
 
 keywords: checking, readiness, errors
 
@@ -336,6 +336,11 @@ The vSRX includes duplicate IPs in the interface section of the vSRX config. Rem
 {: #error-1143}
 
 The gateway upgrade process failed with an unexpected exception. Contact IBM Support.
+
+## Error 1145
+{: #error-1145}
+
+The vSRX license does not support IDP, but IDP policies and configurations were detected on the running vSRX. Remove the policies and configurations or install a vSRX license with IDP support such as the Content Security Bundle (CSB) and retry the operation.
 
 ## Warning 1176
 {: #warning-1176}
