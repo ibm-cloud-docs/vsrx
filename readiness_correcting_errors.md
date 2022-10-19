@@ -140,10 +140,10 @@ The following undocumented configuration could be committed in versions prior to
 
 ```sh
 [edit]
-root@asloma-vsrx-sa-hkg0202-vsrx-vSRX# set interfaces st0 unit 0 family inet tcp-mss 1372   
+root@asloma-vsrx-sa-sng0102-vsrx-vSRX# set interfaces st0 unit 0 family inet tcp-mss 1372   
 
 [edit]
-root@asloma-vsrx-sa-hkg0202-vsrx-vSRX# commit
+root@asloma-vsrx-sa-sng0102-vsrx-vSRX# commit
 commit complete
 
 [edit]
@@ -151,7 +151,7 @@ commit complete
 .......
 ...
 
-root@asloma-vsrx-sa-hkg0202-vsrx-vSRX> show configuration interfaces st0  
+root@asloma-vsrx-sa-sng0102-vsrx-vSRX> show configuration interfaces st0  
 unit 0 {
     family inet {
         ##
