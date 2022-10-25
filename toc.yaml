@@ -75,6 +75,7 @@ toc:
             - securing-host.md
             - management-interfaces.md
             - system-logging.md
+        - /gateway-appliance/gateway-appliance-managing-permissions-and-device-access
         - topicgroup:
             label: Upgrading the vSRX
             topics:
