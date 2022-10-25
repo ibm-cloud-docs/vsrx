@@ -41,7 +41,6 @@ toc:
             - /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
             - /gateway-appliance/gateway-appliance-cancel-gateway-appliance
             - vsrx-basics.md
-        - vsrx-iam.md
         - topicgroup:
             label: Checking vSRX readiness
             topics:
