@@ -342,6 +342,11 @@ The gateway upgrade process failed with an unexpected exception. Contact IBM Sup
 
 The vSRX license does not support IDP, but IDP policies and configurations were detected on the running vSRX. Remove the policies and configurations or install a vSRX license with IDP support such as the Content Security Bundle (CSB) and retry the operation.
 
+## Error 1146
+{: #error-1146}
+
+The Ubuntu server's network switch does not support multicast, which is required by the gateway configuration. Contact IBM Support.
+
 ## Warning 1176
 {: #warning-1176}
 
