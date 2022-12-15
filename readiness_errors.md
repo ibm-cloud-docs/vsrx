@@ -347,6 +347,11 @@ The vSRX license does not support IDP, but IDP policies and configurations were 
 
 The Ubuntu server's network switch does not support multicast, which is required by the gateway configuration. Contact IBM Support.
 
+## Error 1147
+{: #error-1147}
+
+The vSRX configuration includes a url-pattern with invalid characters. Remove the invalid characters and retry. Refer to [Correcting error 1147](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1147) for more information.
+
 ## Warning 1176
 {: #warning-1176}
 

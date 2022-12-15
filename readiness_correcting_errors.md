@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2022-04-18"
+lastupdated: "2022-12-14"
 
 keywords: readiness errors
 
@@ -133,6 +133,31 @@ To fix this issue, remove one of the syslog labels from the configuration and re
 {: #correcting-unsupported-configuration}
 
 The Juniper vSRX contains undocumented, or hidden, CLI commands. The vSRX configuration does not support some of these commands, even though, in some releases, they can be committed. In some cases, the behavior can unexpectedly change between release versions. The following information details some known unsupported configuration commands when upgrading from an older vSRX version. It is critical that you remove unsupported, or hidden, commands from the vSRX configuration prior to upgrading your version. You should do this even with commands that are not detected by the Readiness check.
+
+## Correcting error 1147
+{: #correcting-1147}
+
+Similar to the previous section, a change in the way Junos parses configuration in the security section can lead to errors like:
+
+```sh
+error: Bad url pattern: *.googleapis.com/(*)
+```
+
+Examples of this configuration include:
+
+```sh
+set security utm custom-objects url-pattern AZURE value *.googleapis.com/*
+set security utm custom-objects url-pattern website value *services.site.com
+```
+
+The use of `*` as the trailing character and the prefix is no longer valid. An alternative configuration is:
+
+```sh
+set security utm custom-objects url-pattern AZURE value *.googleapis.com
+set security utm custom-objects url-pattern website value *.services.site.com
+```
+
+To fix this issue, modify the vSRX configuration as needed, commit, and retry the readiness check.
 
 ### Command `set interfaces..` with tcp-mss
 
