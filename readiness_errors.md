@@ -340,7 +340,7 @@ The gateway upgrade process failed with an unexpected exception. Contact IBM Sup
 ## Error 1145
 {: #error-1145}
 
-The vSRX license does not support IDP, but IDP policies and configurations were detected on the running vSRX. Remove the policies and configurations or install a vSRX license with IDP support such as the Content Security Bundle (CSB) and retry the operation.
+The vSRX license does not support IDP, but IDP policies and configurations were detected on the running vSRX. Remove the policies and configurations or install a vSRX license with IDP support such as the Content Security Bundle (CSB) and retry the operation. For details on configuration removal refer to [Correcting error 1145](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1145) for more information.
 
 ## Error 1146
 {: #error-1146}

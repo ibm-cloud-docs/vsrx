@@ -134,6 +134,28 @@ To fix this issue, remove one of the syslog labels from the configuration and re
 
 The Juniper vSRX contains undocumented, or hidden, CLI commands. The vSRX configuration does not support some of these commands, even though, in some releases, they can be committed. In some cases, the behavior can unexpectedly change between release versions. The following information details some known unsupported configuration commands when upgrading from an older vSRX version. It is critical that you remove unsupported, or hidden, commands from the vSRX configuration prior to upgrading your version. You should do this even with commands that are not detected by the Readiness check.
 
+## Correcting error 1145
+{: #correcting-1145}
+
+To remove the IDP related policies and configurations. Execute the following commands to gather all dependencies.
+
+```sh
+show security policies | match idp | display set
+show system scripts | display set
+show security idp | display set
+```
+
+Then delete the configuration stanza for each of the above dependencies.
+
+Example:
+
+```sh
+delete security policies from-zone <$zone1> to-zone <$zone2> policy
+<$policy> then permit application-services idp
+delete system scripts commit file templates.xsl
+delete security idp
+```
+
 ## Correcting error 1147
 {: #correcting-1147}
 
