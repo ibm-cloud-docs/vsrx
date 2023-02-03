@@ -21,7 +21,7 @@ toc:
        topics:
        - getting-started.md
        - about.md
-       - /fortigate-10g/fortigate-10g-exploring-firewalls
+       - include: /fortigate-10g/explore-firewalls.md
        - topicgroup:
            label: Related links
            topics:
@@ -36,11 +36,12 @@ toc:
         - topicgroup:
             label: Performing vSRX basics
             topics:
-            - /gateway-appliance/gateway-appliance-viewing-all-gateway-appliances
-            - /gateway-appliance/gateway-appliance-viewing-gateway-appliance-details
-            - /gateway-appliance/gateway-appliance-renaming-a-gateway-appliance
-            - /gateway-appliance/gateway-appliance-cancel-gateway-appliance
+            - include: ../gateway-appliance/access-gateway-appliances.md
+            - include: ../gateway-appliance/access-gateway-details.md
+            - include: ../gateway-appliance/rename-gateway.md
+            - include: ../gateway-appliance/cancel-gateway.md
             - vsrx-basics.md
+        - vsrx-iam.md
         - topicgroup:
             label: Checking vSRX readiness
             topics:
@@ -50,7 +51,7 @@ toc:
         - topicgroup:
             label: Working with VLANs
             topics:
-            - /gateway-appliance/gateway-appliance-managing-vlans-and-gateway-appliances
+            - include: ../gateway-appliance/manage-vlans.md
         - topicgroup:
             label: Working with the vSRX default configuration
             topics:
@@ -75,7 +76,6 @@ toc:
             - securing-host.md
             - management-interfaces.md
             - system-logging.md
-        - /gateway-appliance/gateway-appliance-managing-permissions-and-device-access
         - topicgroup:
             label: Upgrading the vSRX
             topics:
@@ -94,7 +94,7 @@ toc:
     - navgroup:
         id: reference
         topics:
-        - /cloud-infrastructure/cloud-infrastructure-ibm-cloud-ip-ranges
+        - include: ../cloud-infrastructure/ips.md
         - vsrx-version-notes.md
 
     - navgroup:
@@ -102,4 +102,4 @@ toc:
         topics:
         - known-limitations.md
         - vsrx-docs.md
-        - /gateway-appliance/gateway-appliance-getting-help
+        - include: ../gateway-appliance/getting-help.md
