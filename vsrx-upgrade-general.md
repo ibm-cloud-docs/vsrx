@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2021-02-19"
+lastupdated: "2023-02-14"
 
 keywords: reloading, os, upgrading, kvm, ha, stand-alone
 
@@ -88,4 +88,11 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
    {: screen}
 
 * If your IBM Cloud account has multiple vSRX gateway instances in the same pod, make sure that only one gateway is upgraded at a time. Upgrading more than one vSRX at a time can result in IP collisions, disrupt the upgrade process, and potentially cause failures.
+
 * If you configure your HA cluster to use Intrusion Detection Policies (IDP) and a signature database, it is strongly recommended that you update the signature database after completing the upgrade. This is because the database might be out of date. For information about online and offline database updates, see [Intrusion Detection and Prevention on IBM Cloud](https://public.dhe.ibm.com/cloud/bluemix/network/vsrx/idp.pdf){: external}
+
+* The upgrade process will not backup or restore any vSRX certificates local to the Virtual Machine (VM) being upgraded. The upgrade process will delete the existing VM and create a new one, which will replace the JunOS file system. For example, a local certificate like `IKE_POLICY_CERT` must be backed up prior to the upgrade and manually restored after it completes.
+
+```
+set security ike policy MY_VPN_IKE_POLICY certificate local-certificate IKE_POLICY_CERT
+```
