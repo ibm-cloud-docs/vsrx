@@ -29,8 +29,6 @@ For a successful rebuild of a cluster on an HA vSRX, ensure the following:
 
 * The root password for the provisioned vSRX Gateway must match the root password defined in the vSRX portal. The password in the portal was defined when the Gateway was first provisioned, and might not match the current Gateway password. If the password was changed after the initial provisioning, then use SSH to connect to the vSRX Gateway and change the root password to match. After the passwords match, you can proceed with the Rebuild Cluster operation.
 
-   ![vSRX Password](images/gw-vsrx-password.png "vSRX Password"){: caption="vSRX password" caption-side="bottom"}
-
 * The host password(s) must match the password(s) in the vSRX portal. In addition, the host OS must enable root SSH access to the vSRX Private IP prior to doing a rebuild cluster.
 
 ## Rebuilding an HA cluster

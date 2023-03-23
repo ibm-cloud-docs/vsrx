@@ -18,7 +18,7 @@ subcollection: vsrx
 The {{site.data.keyword.vsrx_full}} provides performance, ease of configuration, and maintenance advantages with the simplicity of running on a bare metal server. The hardware is sized to handle the routing and security load associated with multiple VLANs, and it can be ordered with redundant network links and redundant RAID arrays. All vSRX features are customer-managed.
 {: shortdesc}
 
-The {{site.data.keyword.vsrx_full}} is offered in two different modes: Stand-alone mode or High Availability (HA) cluster.
+The {{site.data.keyword.vsrx_full}} is offered in two different modes: standalone mode or High Availability (HA) cluster.
 
 Additional documentation for {{site.data.keyword.vsrx_full}} can be found in [Supplemental vSRX documentation](/docs/vsrx?topic=vsrx-supplemental-ibm-cloud-juniper-vsrx-documentation).
 {: note}

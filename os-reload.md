@@ -38,8 +38,6 @@ For a successful OS Reload on a vSRX, ensure the following:
 
 * The root password for the provisioned vSRX gateway must match the root password defined in the vSRX portal. The password in the portal was defined when you first provisioned the gateway, and it might not match the current gateway password. If so, then use SSH to connect to the vSRX gateway and change the root password to match. You can then proceed with the OS reload operation.
 
-   ![vSRX Password](images/gw-vsrx-password.png "vSRX Password"){: caption="vSRX password" caption-side="bottom"}
-
 * The vSRX configuration must allow root SSH access to the vSRX private IP, prior to the OS reload request. This is required to rejoin the cluster. Once the OS reload completes, if desired, you can disable SSH access again.
 
 * **Do NOT** perform an OS reload on both servers of the Highly Available gateway at the same time.

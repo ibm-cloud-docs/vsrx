@@ -46,8 +46,6 @@ To renew your license, first run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-
 1. Click the gateway appliance name to access the gateway appliance details page.
 1. Click **Renew license**.
 
-![Renew license](images/license-renew.png "License renew"){: caption="Renew license" caption-side="bottom"}
-
 The license renewal can take up to 30 minutes to complete. To verify that the process completed successfully, follow the preceding steps in [Viewing your license expiration date](#license-view-steps). Verify that the expiration shows a 2024 expiration. The renewal process will not reboot the host(s) or node(s) and there should be no outages and minimal traffic disruptions as a result of this action.
 
 After the renewal completes, future actions, such as OS Reload and License Update, automatically apply the new license.

@@ -76,6 +76,7 @@ toc:
             - securing-host.md
             - management-interfaces.md
             - system-logging.md
+            - vsrx-vlan-zone.md
         - topicgroup:
             label: Upgrading the vSRX
             topics:

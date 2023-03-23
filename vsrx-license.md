@@ -35,8 +35,4 @@ To change your current license, perform the steps above, then:
 
 1. Click the Edit icon  ![Edit icon](../../icons/edit-tagging.svg)  next to your current license to edit it.
 
-   ![Editing your license](images/license-edit.png){: caption="Editing your license" caption-side="bottom"}
-
 1. Select your new license type, then click **Save**.
-
-   ![Changing your license](images/license-edit-choice.png){: caption="Changing your license" caption-side="bottom"}

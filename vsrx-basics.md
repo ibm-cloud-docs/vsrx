@@ -28,9 +28,6 @@ You can access either the vSRX or the host (Ubuntu) using SSH through a private 
 
 1. Go to Gateway Appliance Details screen and get the Public gateway IP or Private Gateway IP.
 
-   ![Gateway details](images/gw-sa-details.png "Gateway details"){: caption="Gateway details" caption-side="bottom"}
-
-
 2. Click the "eye" icon to reveal the admin user's password.
 
 3. For a vSRX, run the command `ssh admin@<gateway-ip>`, then enter the admin user's password. You can also use the 'root' user ID and password.
@@ -59,8 +56,6 @@ To leave Configuration mode run the command `exit`.
 {: #accessing-the-device-using-the-juniper-web-management-ui}
 
 The Juniper web management GUI has been configured by default, with vSRX generated self-signed certificate. Only https is enabled on port 8443. You can access it at `https://gateway-ip:8443`.
-
-![Gateway Appliance HA Details](images/vSRX-webui.png){: caption="Gateway Appliance HA details" caption-side="bottom"}
 
 ## Creating system users
 {: #creating-system-users}

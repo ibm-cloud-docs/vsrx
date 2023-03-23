@@ -61,14 +61,10 @@ You can order your {{site.data.keyword.vsrx_full}} by performing the following p
 
 4. From the **Gateway appliance** section, enter your **Hostname** and **Domain** name information. These fields are already be populated with default information, so ensure that the values are correct.
 
-   ![Linked order](images/linked_order.png "Linked order"){: caption="Linked order" caption-side="bottom"}
-
 5. Check the **High Availability** option if needed, then select a data center **Location**, and the specific **Pod** you want from the menu.
 
    Only pods that already have an associated VLAN are displayed here. If you want to provision your gateway appliance in a pod you don't see listed, first create a VLAN there.
    {: note}
-
-   ![Linked server](images/linked_server.png "Linked server"){: caption="Linked server" caption-side="bottom"}
 
 6. From the **Configuration** section, choose your processor's RAM. You can also define an SSH key, if you want to use it to authenticate access to your new Gateway.
 
@@ -103,5 +99,3 @@ Remember that after you order and configure your gateway from the IBM Cloud cata
 After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway appears in the [Gateway Appliances](/docs/vsrx?topic=gateway-appliance-viewing-all-gateway-appliances) list.
 
 Click the gateway name to open the **Gateway Details** page. You find the IP addresses, login username, and passwords for the device.
-
-![After ordering](images/after_order.png "After ordering"){: caption="After ordering" caption-side="bottom"}

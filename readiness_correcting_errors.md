@@ -33,8 +33,6 @@ Many of these errors result from the fact that the gateway actions being checked
 
 To validate connectivity, open an SSH session to either the Ubuntu host's or vSRX's private IP using the root credentials listed in the **Hardware** section (for an Ubuntu host) or the **vSRX** section (for the gateway) of the [Gateway Appliance Details](/docs/vsrx?topic=gateway-appliance-viewing-gateway-appliance-details) page. Ensure that the SSH session can be established.
 
-   ![SSH credentials](images/readiness_correcting.png "SSH credentials"){: caption="SSH credentials" caption-side="bottom"}
-
 If the session cannot be established, check the following potential issues.
 
 For host (Ubuntu) SSH connectivity errors:

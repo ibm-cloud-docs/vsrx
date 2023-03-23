@@ -30,9 +30,6 @@ To run a readiness check, perform the following procedure:
 3. Choose **Network > Gateway Appliances**.
 4. Click the name of the vSRX you want to run a readiness check on.
 5. Find the Readiness Check module on the vSRX details page.
-
-   ![Readiness check module](images/readiness_module.png "Readiness check module"){: caption="Readiness check module" caption-side="bottom"}
-
 6. Click the **Run check** button.
 7. Select one of the three actions you would like to check for readiness, then select **Run check**.
 8. The details page for your vSRX displays again, as do the test results in the readiness check module.
