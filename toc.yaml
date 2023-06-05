@@ -9,7 +9,7 @@ toc:
     category: network_classic
     audience: service
     href: /docs/vsrx
-    console-page: https://cloud.ibm.com/catalog/content/juniper-vsrx-catalog-deploy-1.4-dc1e707c-33dd-4321-b2a5-c22dbf0dd0ee-global
+    console-page: https://cloud.ibm.com/catalog/infrastructure/gateway-appliance?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2FY2F0ZWdvcnk9bmV0d29yaw%3D%3D
     product-page: https://www.ibm.com/cloud/network-appliances
     path: vsrx
     label: IBM Cloud Juniper vSRX
