@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2022-08-05"
+lastupdated: "2023-06-15"
 
 keywords: checking, readiness, errors
 
@@ -351,6 +351,26 @@ The Ubuntu server's network switch does not support multicast, which is required
 {: #error-1147}
 
 The vSRX configuration includes a url-pattern with invalid characters. Remove the invalid characters and retry. Refer to [Correcting error 1147](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1147) for more information.
+
+## Error 1154
+{: #error-1154}
+
+Both vSRX cluster nodes are down. Start the vSRX node(s) and retry.
+
+## Error 1155
+{: #error-1155}
+
+The vSRX configuration can not specify both a `service` and an `any-service` within the same `security-zone interface` stanza. Correct this configuration and retry.
+
+## Error 1157
+{: #error-1157}
+
+vSRX ssl certificates included in stanzas, such as `set services ssl initiation`, `set services ssl termination`, and `set services ssl proxy` can not be migrated to the newly upgraded vSRX node. Remove these certificates from the vSRX configuration, retry, and re-import the certs after upgrade.
+
+## Error 1158
+{: #error-1158}
+
+The vSRX security nat configuration includes an invalid network address range. Specify a valid network IP range using CIDR notation and retry.
 
 ## Warning 1176
 {: #warning-1176}
