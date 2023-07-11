@@ -52,7 +52,7 @@ A readiness check has not yet been run for this action.
 ### Expired
 {: #status-expired}
 
-The readiness check has not run recently enough to reflect accurate results. Run a new check to see the current status.
+The readiness check has not run recently enough to reflect accurate results. Run a new check to see the current status. Readiness checks expire 5 hours after they complete.
 
 ### Ready
 {: #status-ready}

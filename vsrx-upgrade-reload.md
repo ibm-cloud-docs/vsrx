@@ -21,7 +21,7 @@ To upgrade your vSRX using OS reload, perform the following procedure.
 2. [Access the gateway details page](/docs/vsrx?topic=gateway-appliance-viewing-gateway-appliance-details).
 3. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness) for “Version upgrade” and address any errors that are found.
 
-   Run your readiness check well in advance of the actual upgrade maintenance to ensure any outstanding access and configuration requirements are addressed before the upgrade maintenance. You should also run another readiness check immediately before the maintenance action, as readiness checks expire within a certain amount of time.
+   Run your readiness check well in advance of the actual upgrade maintenance to ensure any outstanding access and configuration requirements are addressed before the upgrade maintenance. You should also run another readiness check immediately before the maintenance action, as readiness checks expire after 5 hours.
    {: important}
 
 4. Perform an [OS reload](/docs/vsrx?topic=vsrx-reloading-the-os#performing-an-os-reload) for each bare metal server.
