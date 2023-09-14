@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2023-06-15"
+lastupdated: "2023-09-14"
 
 keywords: checking, readiness, errors
 
@@ -371,6 +371,16 @@ vSRX ssl certificates included in stanzas, such as `set services ssl initiation`
 {: #error-1158}
 
 The vSRX security nat configuration includes an invalid network address range. Specify a valid network IP range using CIDR notation and retry.
+
+## Error 1159
+{: #error-1159}
+
+The vSRX configuration includes a reference to an ssl certificate in the `system services rest https` config. Certs can not be migrated during an upgrade. Deactivate the reference using `deactivate system services rest https`, retry, and re-activate and re-import the certificate after the upgrade completes.
+
+## Error 1160
+{: #error-1160}
+
+The vSRX configuration includes a `security idp sensor-configuration packet-log total-memory` reference. This causes issues during an upgrade. Remove the reference and retry.
 
 ## Warning 1176
 {: #warning-1176}
