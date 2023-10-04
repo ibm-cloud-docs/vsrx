@@ -18,7 +18,7 @@ subcollection: vsrx
 To upgrade your vSRX using OS reload, perform the following procedure.
 
 1. **Standalone environment only:** [Export the vSRX configuration](/docs/vsrx?topic=vsrx-importing-exporting-vsrx-configuration#export-the-whole-vsrx-configuration).
-2. [Access the gateway details page](/docs/vsrx?topic=gateway-appliance-viewing-gateway-appliance-details).
+2. [Access the gateway details page](/docs/vsrx?topic=vsrx-viewing-gateway-appliance-details).
 3. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness) for “Version upgrade” and address any errors that are found.
 
    Run your readiness check well in advance of the actual upgrade maintenance to ensure any outstanding access and configuration requirements are addressed before the upgrade maintenance. You should also run another readiness check immediately before the maintenance action, as readiness checks expire after 5 hours.
