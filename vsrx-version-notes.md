@@ -15,7 +15,7 @@ subcollection: vsrx
 # IBM Cloud Juniper vSRX supported versions
 {: #vsrx-versions}
 
-This document lists the currently supported vSRX versions. 
+This document lists the currently supported vSRX versions.
 {: shortdesc}
 
 You can click on the **Version information** link for each entry to get more details about that version.

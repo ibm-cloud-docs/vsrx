@@ -337,6 +337,11 @@ The vSRX includes duplicate IPs in the interface section of the vSRX config. Rem
 
 The gateway upgrade process failed with an unexpected exception. Contact IBM Support.
 
+## Error 1144
+{: #error-1144}
+
+The vSRX add on license files are not equal to the expected license count. Contact IBM Support.
+
 ## Error 1145
 {: #error-1145}
 
@@ -411,3 +416,18 @@ The vSRX license found on the Gateway is unsupported. [Correcting warning 1180](
 {: #warning-1181}
 
 The vSRX license and version on the Gateway are both found to be unsupported. [Correcting warning 1181](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1181) for more information.
+
+## Warning 1182
+{: #warning-1182}
+
+The vSRX add on license file(s) are not found. Contact IBM Support.
+
+## Warning 1183
+{: #warning-1183}
+
+The vSRX add on license count is not found in the import settings. Contact IBM Support.
+
+## Warning 1184
+{: #warning-1184}
+
+A connection timeout error occurred when checking the installed licenses. Contact IBM Support.
