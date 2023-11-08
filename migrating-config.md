@@ -15,7 +15,7 @@ subcollection: vsrx
 # Migrating legacy configurations to the current vSRX architecture
 {: #migrating-config}
 
-Migrating {{site.data.keyword.vsrx_full}} configurations from the legacy to the current architecture requires careful consideration.
+Migrating {{site.data.keyword.vsrx_full}} configurations from the legacy to the current architecture requires careful consideration. 
 {: shortdesc}
 
 vSRX 18.4 deployments leverage the current architecture in most cases. This includes the vSRX 18.4 1G SR-IOV offering. The older vSRX 18.4 1G Standard offering is based on Linux Bridging and has different network configurations on the Ubuntu host, the KVM hypervisor, and in the vSRX configuration. The host and KVM settings do not require any special migration steps, as the automation process handles the configuration changes. However, if you want to import the vSRX configuration from the legacy architecture into the current vSRX configuration, you likely need to refactor some of the configuration.
