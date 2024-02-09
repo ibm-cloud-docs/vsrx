@@ -1,7 +1,3 @@
-#  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
-
 toc:
   properties:
     subcollection: vsrx
@@ -14,7 +10,6 @@ toc:
     path: vsrx
     label: IBM Cloud Juniper vSRX
 
-#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
   entries:
     - navgroup:
        id: learn
@@ -88,9 +83,7 @@ toc:
         - renew-license.md
         - os-reload.md
         - rebuild-cluster.md
-        
-#  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
-#  Links to your command line reference docs should be included in the Reference navigation group.
+
     - navgroup:
         id: reference
         topics:
