@@ -20,7 +20,7 @@ First, you'll need to create an interface unit for the VLAN and add the subnet's
 
 The following examples detail a Highly Available (HA) vSRX cluster in both a private and public side configuraton. You must configure all associated private VLANs on `reth2`, and all associated public VLANs on `reth3`. After provisioning, the public WAN connection will be configured on `reth1`, and the private WAN connection on`reth0`. For each subnet on an associated VLAN, the subnet gateway needs to be configured on the VLAN interface(s). The second IP in the customer subnet, immediately following the network ID, is the subnet gateway. In the following example, `10.186.228.145/28` is the subnet gateway of `10.186.228.144/28` on the private VLAN, `1898`.
 
-For more information on associated VLANS, refer to [Managing VLANs with a gateway appliance](/docs/vsrx?topic=gateway-appliance-managing-vlans-and-gateway-appliances).
+For more information on associated VLANS, refer to [Managing VLANs with a gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances).
 {: note}
 
 Private side configuration example:

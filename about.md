@@ -56,4 +56,4 @@ By default, a new gateway appliance is associated with two non-removable "transi
 
 The vSRX can manage VLANs that are associated with it through the Gateway Appliance (only).
 
-For information about managing VLANs from the Gateway Appliances Details page, see [Managing VLANs with a gateway appliance](/docs/vsrx?topic=gateway-appliance-managing-vlans-and-gateway-appliances).
+For information about managing VLANs from the Gateway Appliances Details page, see [Managing VLANs with a gateway appliance](/docs/gateway-appliance?topic=gateway-appliance-managing-vlans-and-gateway-appliances).
