@@ -24,7 +24,7 @@ After the upgrade process completes for Stand Alone servers, you should import t
 {: #considerations}
 
 * The upgrade process for Standalone and High Availability (HA) are different. Details can be found [here](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
-* The J-web interface allows you to display, edit, and upload the current configuration quickly and easily without using the Junos OS CLI. Reference the [Juniper J-Web User Guide ![External link icon](https://www.juniper.net/documentation/en_US/junos/topics/concept/J-web-overview.html){: external} for more details.
+* The J-web interface allows you to display, edit, and upload the current configuration quickly and easily without using the Junos OS CLI. Reference the [Juniper J-Web User Guide ![External link icon](https://www.juniper.net/documentation/product/us/en/j-web-srx-series/){: external} for more details.
 * An upgrade from the vSRX 15.1 release to a newer vSRX release, such as 19.4, results in changes to the vSRX interface mappings in the configuration file. As a result, when importing your original vSRX settings, make sure that the new “interfaces” section is not modified. There are two ways of doing this: Either import sub-sections other than the “interfaces” section, or import the entire configuration and manually restore the 19.4 SR-IOV interfaces.
 
 The new vSRX default interface configuration for both the Linux Bridge and SR-IOV must be preserved after the import of their configurations. For example, for SR-IOV the GE interfaces have specific mappings to the host that must be preserved to enable SR-IOV. These interfaces are found in the CLI using the command `show configuration interfaces`. Refer to [vSRX default configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) for more information on SR-IOV mappings. Refer to [Migrating legacy configurations to the current vSRX architecture](/docs/vsrx?topic=vsrx-migrating-config) for details on migrating 1G configurations from the legacy architecture to the current architecture.
@@ -104,7 +104,7 @@ To import only part of the vSRX configuration:
                }
            }
    load complete
-   
+
    [edit interfaces lo0 unit 0]
    ```
    {: codeblock}
@@ -116,4 +116,3 @@ Alternatively, you can also:
 
    Ensure that you always run `load set terminal` at the top.
    {: note}
-

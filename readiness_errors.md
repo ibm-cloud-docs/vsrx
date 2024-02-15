@@ -6,7 +6,7 @@ lastupdated: "2023-09-14"
 
 keywords: checking, readiness, errors
 
-subcollection: vSRX
+subcollection: vsrx
 
 ---
 
@@ -25,7 +25,7 @@ An OS reload is already running on a different node in the HA cluster. The other
 ## Error 1002
 {: #error-1002}
 
-An error occurred in the connectivity check. Contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+An error occurred in the connectivity check. Contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1003
 {: #error-1003}
@@ -95,12 +95,12 @@ The gateway has an invalid IP address, or is blocked by a firewall. SSH failed. 
 ## Error 1021
 {: #error-1021}
 
-An error occurred in the connectivity check. Contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+An error occurred in the connectivity check. Contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1022
 {: #error-1022}
 
-The gateway readiness precheck failed with an unexpected exception. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The gateway readiness precheck failed with an unexpected exception. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1023
 {: #error-1023}
@@ -110,37 +110,37 @@ The gateway readiness precheck failed the DNS accessibility check on the Ubuntu 
 ## Error 1024
 {: #error-1024}
 
-The gateway readiness precheck failed with an unexpected exception. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The gateway readiness precheck failed with an unexpected exception. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1025
 {: #error-1025}
 
-The IPMI interface is disabled for the Gateway host. Check IPMI status and enable the interface if is disabled. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The IPMI interface is disabled for the Gateway host. Check IPMI status and enable the interface if is disabled. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1026
 {: #error-1026}
 
-The Ubuntu host is unable to write to the attached storage as it is read only. Reboot the host and try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help). 
+The Ubuntu host is unable to write to the attached storage as it is read only. Reboot the host and try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1101
 {: #error-1101}
 
-An error occurred during the readiness check. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+An error occurred during the readiness check. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1102
 {: #error-1102}
 
-The host experienced a precheck setup failure. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The host experienced a precheck setup failure. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1103
 {: #error-1103}
 
-The host experienced a precheck setup failure. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The host experienced a precheck setup failure. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1104
 {: #error-1104}
 
-The host experienced a precheck setup failure. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The host experienced a precheck setup failure. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1105
 {: #error-1105}
@@ -175,7 +175,7 @@ The gateway experienced a precheck setup failure because the vSRX file system re
 ## Error 1111
 {: #error-1111}
 
-The gateway experienced a precheck setup failure due to a general failure in the JunOS RPC call. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The gateway experienced a precheck setup failure due to a general failure in the JunOS RPC call. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1112
 {: #error-1112}
@@ -185,12 +185,12 @@ The gateway experienced a precheck setup failure due to a cluster error. Ensure 
 ## Error 1113
 {: #error-1113}
 
-The host experienced a precheck setup failure and is unable to determine the status of the host VM using `virsh`. Try again or contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help).
+The host experienced a precheck setup failure and is unable to determine the status of the host VM using `virsh`. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1114
 {: #error-1114}
 
-The host has a precheck setup failure because insufficient memory is installed on the bare-metal server. A minimum of 32 GB is required. Contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help) to install the required amount of memory.
+The host has a precheck setup failure because insufficient memory is installed on the bare-metal server. A minimum of 32 GB is required. Contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help) to install the required amount of memory.
 
 ## Error 1115
 {: #error-1115}
@@ -230,12 +230,12 @@ License operations against vSRX v15.1 are not supported. Upgrade to a newer vers
 ## Error 1122
 {: #error-1122}
 
-An error occurred in the readiness check, try again or contact support.	
+An error occurred in the readiness check, try again or contact support.
 
 ## Error 1123
 {: #error-1123}
 
-The vSRX console has an active session in edit mode. Exit the console session and retry.	
+The vSRX console has an active session in edit mode. Exit the console session and retry.
 
 ## Error 1124
 {: #error-1124}

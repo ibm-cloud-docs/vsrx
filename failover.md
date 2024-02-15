@@ -60,7 +60,7 @@ To do so, perform the following procedure:
 
 	Ensure that, for both redundancy groups, the same node is set as `primary`. It is possible for different nodes to be set as the `primary` role in different redundancy groups.
 
-	The vSRX, by default, sets `Preempt` to `yes` for Redundancy group 1, and `no` for Redundancy group 0. Refer to [this link](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){: external} to learn more about pre-emption and failover behavior.
+	The vSRX, by default, sets `Preempt` to `yes` for Redundancy group 1, and `no` for Redundancy group 0. Refer to [this link](https://www.juniper.net/documentation/us/en/software/junos/chassis-cluster-security-devices/topics/topic-map/security-chassis-cluster-redundancy-group-failover.html){: external} to learn more about pre-emption and failover behavior.
 	{: note}
 
 1. Initiate failover by running the following command in the console prompt:

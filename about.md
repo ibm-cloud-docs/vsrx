@@ -43,7 +43,7 @@ With the vSRX gateway appliance, you can provision application and database serv
 ## Enterprise-grade routing
 {: #enterprise-grade-routing}
 
-The vSRX empowers you with greater flexibility to build connectivity between multi-tiered applications running on different isolated networks. You can set up dynamic routing using BGP, which allows you to announce your own public IP space to the IBM Cloud routers. BGP also offers more flexibility for custom private network configurations, when you're using a mix of tunnels and [Direct Link solutions](https://test.cloud.ibm.com/docs/dl).
+The vSRX empowers you with greater flexibility to build connectivity between multi-tiered applications running on different isolated networks. You can set up dynamic routing using BGP, which allows you to announce your own public IP space to the IBM Cloud routers. BGP also offers more flexibility for custom private network configurations, when you're using a mix of tunnels and [Direct Link solutions](/docs/dl).
 
 ## Concepts about VLANs and the gateway appliance's role
 {: #concepts-about-vlans-and-the-gateway-appliance-s-role}

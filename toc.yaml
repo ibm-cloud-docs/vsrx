@@ -6,7 +6,7 @@ toc:
     audience: service
     href: /docs/vsrx
     console-page: https://cloud.ibm.com/catalog/infrastructure/gateway-appliance?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2FY2F0ZWdvcnk9bmV0d29yaw%3D%3D
-    product-page: https://www.ibm.com/cloud/network-appliances
+    product-page: https://www.ibm.com/products/network-appliances
     path: vsrx
     label: IBM Cloud Juniper vSRX
 
@@ -22,7 +22,7 @@ toc:
            topics:
            - link:
                label: "What is network security?"
-               href: https://www.ibm.com/cloud/learn/networking-a-complete-guide
+               href: https://www.ibm.com/topics/networking
        - release-notes.md
 
     - navgroup:

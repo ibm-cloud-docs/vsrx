@@ -46,7 +46,7 @@ For host (Ubuntu) SSH connectivity errors:
 
 For gateway (vSRX) SSH connectivity errors:
 
-* Is the vSRX firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-ibm-cloud-ip-ranges#service-network-on-back-end-private-network-) for the service network.
+* Is the vSRX firewall blocking SSH access to the private IP? The firewall rules must allow SSH access to the private `10.0.0.0/8` subnet. For more information, see [IBM Cloud IP ranges](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-ibm-cloud-ip-ranges#service-network) for the service network.
 * Is the root password listed on the Gateway Appliance Details page the correct password for the root user?
     If not, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg) next to the root password and change the password to match the actual root password for the vSRX.
 * Is the root user account disabled for SSH access to the vSRX?
@@ -186,7 +186,7 @@ The following undocumented configuration could be committed in versions prior to
 
 ```sh
 [edit]
-root@asloma-vsrx-sa-sng0102-vsrx-vSRX# set interfaces st0 unit 0 family inet tcp-mss 1372   
+root@asloma-vsrx-sa-sng0102-vsrx-vSRX# set interfaces st0 unit 0 family inet tcp-mss 1372
 
 [edit]
 root@asloma-vsrx-sa-sng0102-vsrx-vSRX# commit
@@ -197,7 +197,7 @@ commit complete
 .......
 ...
 
-root@asloma-vsrx-sa-sng0102-vsrx-vSRX> show configuration interfaces st0  
+root@asloma-vsrx-sa-sng0102-vsrx-vSRX> show configuration interfaces st0
 unit 0 {
     family inet {
         ##
@@ -219,7 +219,7 @@ syntax error.
 ```
 {: screen}
 
-This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, because the commit of the previous configuration to the new release fails, causing the upgrade to fail as well. 
+This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, because the commit of the previous configuration to the new release fails, causing the upgrade to fail as well.
 
 ### Command `set security datapath-debug..`
 {: #set security datapath-debug}
@@ -240,7 +240,7 @@ set security datapath-debug maximum-capture-size 1500
 
 A VPN configuration with `establish-tunnels` not set to `immediately` was detected. After an upgrade, the IKE might not be immediately active depending on negotiations with the remote peer gateway, and whether or not data traffic is actively flowing. Without `establish-tunnels immediately`, the tunnel is established with `on-traffic`. With the `establish-tunnels immediately` statement, the tunnel is established immediately when the configuration is committed. However, `establish-tunnels immediately` might trigger an undesirable outcome when configured on both ends of the tunnel.
 
-For more information on this issue, see [(SRX) IPSec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder](https://kb.juniper.net/InfoCenter/index?page=content&id=KB22239){: external} in the Juniper Knowledge Base. Consult [vpn (Security)](https://www.juniper.net/documentation/en_US/junos/topics/reference/configuration-statement/security-edit-vpn.html){: external} for more details on these settings.
+For more information on this issue, see [(SRX) IPSec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder](https://supportportal.juniper.net/s/article/SRX-IPSec-comes-UP-when-SRX-A-is-the-Initiator-but-fails-when-SRX-A-becomes-the-responder?language=en_US){: external} in the Juniper Knowledge Base. Consult [vpn (Security)](https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/statement/security-edit-vpn.html){: external} for more details on these settings.
 
 ## Correcting warning 1177
 {: #correcting-1177}
@@ -253,7 +253,7 @@ For example, the following security policy configuration contains the `dynamic-a
 set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL match dynamic-application any
 set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL match source-address SL8
 set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL match destination-address SL8
-set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL then permit  
+set security policies from-zone untrust to-zone untrust policy DYNAMIC-APPLICATION-POLICY-LOCAL then permit
 ```
 {: codeblock}
 

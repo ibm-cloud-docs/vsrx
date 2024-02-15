@@ -15,7 +15,7 @@ subcollection: vsrx
 # Migrating legacy configurations to the current vSRX architecture
 {: #migrating-config}
 
-Migrating {{site.data.keyword.vsrx_full}} configurations from the legacy to the current architecture requires careful consideration. 
+Migrating {{site.data.keyword.vsrx_full}} configurations from the legacy to the current architecture requires careful consideration.
 {: shortdesc}
 
 vSRX 18.4 deployments leverage the current architecture in most cases. This includes the vSRX 18.4 1G SR-IOV offering. The older vSRX 18.4 1G Standard offering is based on Linux Bridging and has different network configurations on the Ubuntu host, the KVM hypervisor, and in the vSRX configuration. The host and KVM settings do not require any special migration steps, as the automation process handles the configuration changes. However, if you want to import the vSRX configuration from the legacy architecture into the current vSRX configuration, you likely need to refactor some of the configuration.
@@ -317,7 +317,7 @@ routing-options {
 
 In the above 1G Public+Private Standalone example, the current architecture adds aggregated interfaces `ae0` and `ae1`. These should map to what the legacy architecture defines as `ge-0/0/0 (private / ae0)` and `ge-0/0/1 (public / ae1)`. Additionally, the new architecture adds `ge-0/0/2` and `ge-0/0/3` to support redundancy within the vSRX interfaces. In the old architecture, redundancy existed at the host (Hypervisor) bond interfaces (`bond0 private / bond1 public`). In the current architecture, SR-IOV VF’s that map directly to the `ge` interfaces are used for redundancy.
 
-You can compare these vSRX configuration differences in [vSRX Standalone interface (current architecture)](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#interface-configurations) and [vSRX Standalone interface (legacy architecture)](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-standalone-interfaces-legacy-architecture-).
+You can compare these vSRX configuration differences in [vSRX Standalone interface (current architecture)](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-standalone-interfaces) and [vSRX Standalone interface (legacy architecture)](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-standalone-interfaces-legacy).
 
 Any private VLAN’s that were previously configured for `ge-0/0/0` need to be routed through `ae0`. In addition, any public VLAN’s that you previously configured for `ge-0/0/1` need to be routed through `ae1`.
 
@@ -349,6 +349,6 @@ For High Availability configurations, the main vSRX changes when importing confi
 
 The 1G SR-IOV HA configuration for the current architecture adds additional vSRX interfaces for redundancy, instead of using the host (hypervisor) bond interfaces. This is possible as the host now uses SR-IOV VF’s that can be mapped directly to the vSRX interfaces. Configurations that were exported from the legacy architecture must take this into account if they are imported into the current architecture.
 
-The vSRX configuration for the current architecture for 1G HA can be found [in this topic](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-high-availability-interfaces-current-architecture-). While, the vSRX configuration for the legacy architecture for 1G HA can be found [here](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-high-availability-interfaces-legacy-architecture-)
+The vSRX configuration for the current architecture for 1G HA can be found [in this topic](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-ha-interfaces). While, the vSRX configuration for the legacy architecture for 1G HA can be found [here](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration#vsrx-ha-interfaces-legacy).
 
 The extra `ge-0/*` and `ge-7/*` interfaces were added and associated with the existing `reth` interfaces which have been present in both the legacy and current architecture. These allow for redundancy within the vSRX configuration. Redundancy is also configured for the `fab` interfaces as well.

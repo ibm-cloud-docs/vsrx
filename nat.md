@@ -58,4 +58,4 @@ nat {
 }
 ```
 
-To configure NAT for the {{site.data.keyword.vsrx_full}}, refer to this [configuration guide](https://www.juniper.net/documentation/en_US/junos/information-products/pathway-pages/security/security-nat.pdf){: external} on the Juniper website.
+To configure NAT for the {{site.data.keyword.vsrx_full}}, refer to this [configuration guide](https://www.juniper.net/documentation/us/en/software/junos/nat/nat.pdf){: external} on the Juniper website.
