@@ -417,7 +417,7 @@ system {
                 system-generated-certificate;
                 interface [ fxp0.0 reth1.0 reth0.0 ];
             }
-            session {                   
+            session {
                 session-limit 100;
             }
         }
@@ -466,7 +466,7 @@ chassis {
     }
 }
 security {
-    log {                               
+    log {
         mode stream;
         report;
     }
@@ -515,7 +515,7 @@ security {
                 address SL13;
                 address SL10;
                 address SL11;
-            }                           
+            }
         }
     }
     screen {
@@ -564,7 +564,7 @@ security {
                     permit;
                 }
             }
-        }                               
+        }
     }
     zones {
         security-zone SL-PRIVATE {
@@ -613,7 +613,7 @@ interfaces {
         }
     }
     ge-0/0/5 {
-        gigether-options {              
+        gigether-options {
             redundant-parent reth2;
         }
     }
@@ -662,7 +662,7 @@ interfaces {
             redundant-parent reth2;
         }
     }
-    ge-7/0/7 {                          
+    ge-7/0/7 {
         gigether-options {
             redundant-parent reth3;
         }
@@ -711,7 +711,7 @@ interfaces {
     }
     reth1 {
         redundant-ether-options {
-            redundancy-group 1;         
+            redundancy-group 1;
         }
         unit 0 {
             description "SL PUBLIC VLAN INTERFACE";
@@ -760,7 +760,7 @@ firewall {
             then accept;
         }
         term WEB {
-            from {                      
+            from {
                 destination-address {
                     169.62.79.21/32;
                     10.87.40.36/32;
@@ -860,7 +860,7 @@ Both the legacy and current architecture is detailed in the following sections.
 {: caption="Table 3: vSRX stand-alone interfaces (current architecture)" caption-side="bottom"}
 
 ### vSRX High Availability interfaces (legacy architecture)
-{: #vsrx-ha-interfaces}
+{: #vsrx-ha-interfaces-legacy}
 
 |**Interface**|**10G Priv+Pub** |**10G Priv Only** |**1G Priv + Pub** |**1G Priv Only** |
 |-------------|----------------|-----------------|-----------------|----------------|
