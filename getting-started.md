@@ -96,6 +96,6 @@ Remember that after you order and configure your gateway from the IBM Cloud cata
 ## Next steps
 {: #what-s-next-}
 
-After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway appears in the [Gateway Appliances](/docs/vsrx?topic=gateway-appliance-viewing-all-gateway-appliances) list.
+After your order is approved, the provisioning of your vSRX starts automatically. When the provisioning process is complete, the gateway appears in the [Gateway Appliances](/docs/gateway-appliance?topic=gateway-appliance-viewing-all-gateway-appliances) list.
 
 Click the gateway name to open the **Gateway Details** page. You find the IP addresses, login username, and passwords for the device.

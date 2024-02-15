@@ -78,11 +78,9 @@ set security address-book global address VSI_PRIV_NET 10.150.236.128/26
 
 In the next example, we have HA vSRX and a VLAN with three subnets:
 
-```
-10.208.110.121/29
-10.186.228.145/28
-10.208.237.97/29
-```
+* `10.208.110.121/29`
+* `10.186.228.145/28`
+* `10.208.237.97/29`
 
 The VLAN is private and its ID is `1898`.
 

@@ -96,3 +96,4 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
 ```
 set security ike policy MY_VPN_IKE_POLICY certificate local-certificate IKE_POLICY_CERT
 ```
+{: pre}

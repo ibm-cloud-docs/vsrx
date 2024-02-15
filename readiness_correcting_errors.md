@@ -31,7 +31,7 @@ Many of these errors result from the fact that the gateway actions being checked
    For more information about establishing an SSH session, see [Accessing the device using SSH](/docs/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics#accessing-the-device-using-ssh). Note that for step 3, the example given is with the `admin` user. For a readiness check, substitute the `root` user for both the vSRX and the Hardware (host). Also, make sure that you use your private IP with this procedure, not your public IP.
    {: note}
 
-To validate connectivity, open an SSH session to either the Ubuntu host's or vSRX's private IP using the root credentials listed in the **Hardware** section (for an Ubuntu host) or the **vSRX** section (for the gateway) of the [Gateway Appliance Details](/docs/vsrx?topic=gateway-appliance-viewing-gateway-appliance-details) page. Ensure that the SSH session can be established.
+To validate connectivity, open an SSH session to either the Ubuntu host's or vSRX's private IP using the root credentials listed in the **Hardware** section (for an Ubuntu host) or the **vSRX** section (for the gateway) of the [Gateway Appliance Details](/docs/gateway-appliance?topic=gateway-appliance-viewing-gateway-appliance-details) page. Ensure that the SSH session can be established.
 
 If the session cannot be established, check the following potential issues.
 
@@ -180,6 +180,7 @@ set security utm custom-objects url-pattern website value *.services.site.com
 To fix this issue, modify the vSRX configuration as needed, commit, and retry the readiness check.
 
 ### Command `set interfaces..` with tcp-mss
+{: #set interfaces}
 
 The following undocumented configuration could be committed in versions prior to 20.4R2-S2, but fails in 20.4R2-S2. Notice the `unsupported platform` output from `show configuration` in 19.4R3-S2.
 
@@ -221,6 +222,7 @@ syntax error.
 This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, because the commit of the previous configuration to the new release fails, causing the upgrade to fail as well. 
 
 ### Command `set security datapath-debug..`
+{: #set security datapath-debug}
 
 `set security datapath-debug` configuration commands are known to cause errors during when upgrading. You should remove all `datapath-debug` commands from the `config` and retry the readiness check. For example, commands like these should be removed:
 
@@ -260,12 +262,12 @@ If you are using a similar configuration, it is recommended that you either inst
 ## Correcting warning 1179
 {: #correcting-1179}
 
-The vSRX version running on the Gateway is not certified on IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version currently listed on the Gateway Details page. Because the vSRX version is not certified on IBM Cloud, it is strongly recommended you contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help) to migrate to the certified version found here: [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
+The vSRX version running on the Gateway is not certified on IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version currently listed on the Gateway Details page. Because the vSRX version is not certified on IBM Cloud, it is strongly recommended you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to the certified version found here: [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
 
 ## Correcting warning 1180
 {: #correcting-1180}
 
-The vSRX license found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current license with the version currently listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started#choosing-license). If the license was procured outside of IBM Cloud, please work with that procurement source for support. Otherwise, is is strongly recommended you contact [IBM Support](/docs/vsrx?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
+The vSRX license found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current license with the version currently listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started#choosing-license). If the license was procured outside of IBM Cloud, please work with that procurement source for support. Otherwise, is is strongly recommended you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
 
 ## Correcting warning 1181
 {: #correcting-1181}
