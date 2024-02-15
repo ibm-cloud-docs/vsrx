@@ -27,7 +27,7 @@ The process typically performs the following actions:
 * Create a vSRX VM in the KVM
 * Reconfigure the vSRX with the default configuration for IBM® Cloud
 
-The process can take between 2 and 5 hours to complete. Standalone gateways are out of service during this period. For Juniper High Availability (HA) gateways, when you reload the OS on one of your servers, the vSRX fails over to another server in the cluster and continues to process data traffic. After the reload completes, the server rejoins the cluster.
+The process can take between 2 and 5 hours to complete. Stand-alone gateways are out of service during this period. For Juniper High Availability (HA) gateways, when you reload the OS on one of your servers, the vSRX fails over to another server in the cluster and continues to process data traffic. After the reload completes, the server rejoins the cluster.
 
 If the OS reload is changing your vSRX version, then refer to [Upgrading using OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade#os-reload-upgrade) to understand the downgrade and upgrade process.
 {: important}
@@ -56,7 +56,7 @@ For a successful OS Reload on a vSRX, ensure the following:
 
 To reload your OS, perform the following procedure:
 
-1. From your browser, open [https://cloud.ibm.com](https://cloud.ibm.com){: external} and log into your account.
+1. From your browser, open [IBM Cloud console](/login){: external} and log into your account.
 2. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness#vsrx-readiness) for “OS Reload” and address any errors that are found.
 3. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
 4. Choose **Network > Gateway Appliances**.

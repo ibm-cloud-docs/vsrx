@@ -17,13 +17,13 @@ subcollection: vsrx
 {: help}
 {: support}
 
-You can initiate failover from your primary {{site.data.keyword.vsrx_full}} to a backup device, so that all control and data plane traffic is routed through the secondary gateway device after failover.
+You can initiate failover from your primary {{site.data.keyword.vsrx_full}} to a backup device so that all control and data plane traffic is routed through the secondary gateway device after failover.
 {: shortdesc}
 
 This section is only applicable if your Juniper vSRX gateway devices are provisioned in High-Availability mode.
 {: note}
 
-To do so, perform the following procedure:
+To do so, follow these steps:
 
 1. Login to your primary vSRX gateway device.
 
@@ -69,11 +69,11 @@ To do so, perform the following procedure:
 	request chassis cluster failover redundancy-group <redundancy group number> node <node number>
 	```
 
-	Select the appropriate redundancy group number and node number from the output of the command in step two. To failover both redundancy groups, execute the previous command twice, one for each group.
+	Select the appropriate redundancy group number and node number from the output of the command in step two. To failover both redundancy groups, run the previous command twice, one for each group.
 
-1. After failover is complete, verify the console output. It should now be listed as `secondary`.
+1. After failover is complete, verify the console output. It is now listed as `secondary`.
 
-1. Login to the other vSRX gateway of your pair. Enter into CLI mode by again executing the command `cli` and then verify that the console output shows as `primary`.
+1. Login to the other vSRX gateway of your pair. Enter CLI mode by again running the command `cli` and then verify that the console output shows as `primary`.
 
 When you enter CLI mode in your Juniper vSRX gateway device, the output shows as `primary` from the control plane perspective. Always check the `show chassis cluster status` output to determine which gateway device is primary from data plane perspective. Refer to [vSRX Default Configuration](/docs/vsrx?topic=vsrx-understanding-the-vsrx-default-configuration) to learn more about redundancy groups, as well as the control and data planes.
 {: tip}

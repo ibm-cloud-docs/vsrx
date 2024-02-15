@@ -25,15 +25,15 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
 * Only IBM Cloud certified versions of vSRX are supported. The list of supported versions can be found [here](/docs/vsrx?topic=vsrx-vsrx-versions).
 
-* There is no support to upgrade from Standalone to High Availability mode.
+* Upgrading from Stand-alone to High Availability mode is not supported.
 
-* There is no support to downgrade from High Availability to Standalone mode.
+* Downgrading from High Availability to Stand-alone mode is not supported.
 
-* There is no support to upgrade from 1G to 10G or downgrade from 10G to 1G.
+* Upgrading from 1G to 10G or downgrading from 10G to 1G is not supported.
 
-* Only the latest IBM Cloud certified vSRX release is available for new orders and upgrades. Requests for older IBM Cloud certified vSRX releases should be made through an IBM Support ticket. Limitations for upgrading and downgrading can be found in [Upgrading the vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
+* Only the latest IBM Cloud certified vSRX release is available for new orders and upgrades. Requests for older IBM Cloud certified vSRX releases should be made through an IBM Support case. Limitations for upgrading and downgrading can be found in [Upgrading the vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
 
-* Older Juniper vSRX gateways were deployed with Linux Bridge based networking virtualization. This virtualization can achieve only limited throughput and never line-rate throughput. Most deployments of vSRX 18.4 and later leverage SR-IOV, which provides improved throughput.
+* Older Juniper vSRX gateways were deployed with Linux Bridge based networking virtualization. This virtualization can achieve only limited throughput and never line-rate throughput. Most deployments of vSRX 18.4 and later use SR-IOV, which provides improved throughput.
 
 * Older Juniper vSRX gateways were deployed with a 60-day evaluation license, which might cause the kernel to generate error messages even when another (valid) license is on the system. Remove any 60-day evaluation licenses to avoid this issue. To do so, follow these steps:
 
@@ -47,7 +47,7 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
       show system license
       ```
 
-      Output is similar to the following:
+      The output is similar to the following:
 
       ```text
       License usage:

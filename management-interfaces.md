@@ -18,16 +18,16 @@ subcollection: vsrx
 The {{site.data.keyword.vsrx_full}} nodes provide built-in management interfaces ("fxp0") that are not configured by default. When configured, these private interfaces can be used to communicate with the individual node, which might be useful in a high availability cluster for monitoring the status of the secondary node over SSH, ping, SNMP, and so on. Since the private IP for the vSRX floats to the primary node, it is not possible to directly access the secondary node.
 {: shortdesc}
 
-Configuration of the fxp0 interface requires IPs in a subnet that is attached to the private transit VLAN for the gateway. Although the primary subnet that comes with the gateway has IPs that might be available, it is not recommended for this use. This is because the primary subnet is reserved for the gateway provisioning infrastructure, and IP collisions could occur if additional gateways are deployed in the same pod.
+Configuration of the fxp0 interface requires IPs in a subnet that is attached to the private transit VLAN for the gateway. Although the primary subnet that comes with the gateway has IPs that might be available, it is not recommended for this use. This is because the primary subnet is reserved for the gateway provisioning infrastructure, and IP collisions might occur if additional gateways are deployed in the same pod.
 
 You can allocate a secondary subnet for the private transit VLAN, and use IPs from this subnet to configure fxp0 and the host bridge interface for PING and SSH access. To do so, perform the following procedure:
 
-1. [Order a portable private subnet](https://cloud.ibm.com/classic/network/subnet/provision) and assign it to the vSRX private transit VLAN. You can find the private transit VLAN on the gateway details page.
+1. [Order a portable private subnet](/classic/network/subnet/provision) and assign it to the vSRX private transit VLAN. You can find the private transit VLAN on the gateway details page.
 
-   Ensure the subnet includes at least 8 addresses in order to support 2 IPs for the host bridge interfaces, and 2 IPs for the vSRX fxp0 interfaces.
+   Ensure that the subnet includes at least 8 addresses to support 2 IPs for the host bridge interfaces, and 2 IPs for the vSRX fxp0 interfaces.
    {: note}
 
-2. Configure the host `br0:0` bridge interfaces using 2 IPs from the new subnet. For example:
+2. Configure the host `br0:0` bridge interfaces by using 2 IPs from the new subnet. For example:
 
    On Ubuntu host 0: `ifconfig br0:0 10.177.75.140 netmask 255.255.255.248`
 
@@ -43,7 +43,7 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
    post-up /sbin/ifconfig br0:0 10.177.75.140 netmask 255.255.255.248
    ```
 
-4. Assign the 2 IP's to the vSRX fxp0 interface and create backup router configurations for access to the secondary node's fxp0 interface:
+4. Assign the 2 IPs to the vSRX fxp0 interface and create backup router configurations for access to the secondary node's fxp0 interface:
 
    ```sh
    set groups node0 interfaces fxp0 unit 0 family inet address 10.177.75.138/29

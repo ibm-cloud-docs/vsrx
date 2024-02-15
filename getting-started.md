@@ -24,12 +24,12 @@ For a list of known limitations with {{site.data.keyword.vsrx_full}} Gateway, se
 ## Choosing a vSRX license
 {: #choosing-license}
 
-There are two license types available for your {{site.data.keyword.vsrx_full}}:
+Two license types are available for your {{site.data.keyword.vsrx_full}}:
 
 * Standard
 * Content Security Bundle (CSB)
 
-The CSB license is not available on vSRX gateways running with Linux Bridge based network models. The license is only available on SR-IOV enabled gateways. Details can be found [here](/docs/vsrx?topic=vsrx-unsupported-upgrade).
+The CSB license is not available on vSRX gateways that are running with Linux Bridge based network models. The license is only available on SR-IOV enabled gateways. Details can be found [here](/docs/vsrx?topic=vsrx-unsupported-upgrade).
 {: note}
 
 Each license includes a different set of features and options, and the following table outlines the differences.
@@ -40,21 +40,21 @@ Each license includes a different set of features and options, and the following
 | **Content Security Bundle (CSB)**  \n Includes all Standard features, along with the additional features listed in the next column. | - AppSecure  \n  - Application Tracking (AppTrack)  \n  - Application Firewall (AppFW)  \n  - Application Quality of Service (AppQoS)  \n  - Advanced policy-based routing (APBR)  \n  - Application Quality of Experience (AppQoE)  \n - User Firewall  \n - IPS  \n  - UTM  \n  - Anti Virus  \n  - Anti Spam  \n  - Web Filtering   \n  - Content Filtering  \n  - SSL Proxy  \n  - SSL Forward Proxy  \n  - SSL Reverse Proxy  \n  - SSL Decrypting Mirror |
 {: caption="Table 1. License differences" caption-side="bottom"}
 
-You can specify your license type when ordering your vSRX, as well as change the license by using the [Gateway Appliance Details](/docs/vsrx?topic=vsrx-vsrx-licenses#vsrx-licenses) page.
+You can specify your license type when you order your vSRX, as well as change the license by using the [Gateway Appliance Details](/docs/vsrx?topic=vsrx-vsrx-licenses#vsrx-licenses) page.
 {: note}
 
 ## Ordering a vSRX
 {: #ordering-with-a-linked-account}
 
-You can order your {{site.data.keyword.vsrx_full}} by performing the following procedure:
+You can order your {{site.data.keyword.vsrx_full}} by following these steps:
 
 1. From your browser, open the Gateway Appliances page in the [IBM Cloud catalog](/gen1/infrastructure/provision/gateway){: external} and log in to your account.
 
-   You can also get to this page by logging in to the [IBM Cloud UI console](https://cloud.ibm.com){: external} and selecting **Classic Infrastructure > Network > Gateway appliance**. Alternatively, from the [IBM Cloud catalog](https://cloud.ibm.com/catalog){: external}, select the **Network** category then choose the **Gateway Appliance** tile.
+   You can also get here by logging in to the [IBM Cloud UI console](/login){: external} and selecting **Classic Infrastructure > Network > Gateway appliance**. Alternatively, from the [IBM Cloud catalog](/catalog){: external}, select the **Network** category then choose the **Gateway Appliance** tile.
 
 2. Choose **Juniper vSRX (up to 1 Gbps)** or **Juniper vSRX (up to 10 Gbps)** under **Gateway Vendor**.
 
-3. Choose your license type from **License add-ons**, either Standard or CSB.
+3. Choose your license type from **license add-ons**, either Standard or CSB.
 
    See the previous section for information on the features offered with each license.
    {: tip}
@@ -82,15 +82,15 @@ You can order your {{site.data.keyword.vsrx_full}} by performing the following p
    Reserve more than the default disk setting if you plan to run network diagnostics that generate detailed logs.
    {: tip}
 
-8. From the **Network interface** section, select your **Uplink port speeds**. The default selection is a single interface, but there are redundant and private only options as well. Choose the one that best fits your needs.
+8. From the **Network interface** section, select your **Uplink port speeds**. The default selection is a single interface, but redundant and private only options are available as well. Choose the one that best fits your needs.
 
    The Network Interface **Add Ons** section allows you to select an IPv6 address if required, and shows you any additional included default options.
 
-9. Review your selections, check that you have read the Third Party Service Agreements, then click **Create**. The order is verified automatically.
+9. Review your selections, check that you read the Third-Party Service Agreements, then click **Create**. The order is verified automatically.
 
 After your order is approved, the provisioning of your {{site.data.keyword.vsrx_full}} Gateway starts automatically. When the provisioning process is complete, the new vSRX appears in the Gateway Appliances list page. Click the gateway name to open the Gateway Details page. The IP addresses, login username, and password for the device appear.
 
-Remember that after you order and configure your gateway from the IBM Cloud catalog, you must also configure the device itself with the same settings.
+After you order and configure your gateway from the IBM Cloud catalog, you must also configure the device itself with the same settings.
 {: tip}
 
 ## Next steps

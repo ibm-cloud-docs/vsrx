@@ -24,7 +24,7 @@ For information on the features offered with these licenses, refer to [Choosing 
 
 To view your current license, perform the following procedure:
 
-1. From your browser, open [https://cloud.ibm.com](https://cloud.ibm.com){: external} and log in to your account.
+1. From your browser, open the [IBM Cloud console](/login){: external} and log in to your account.
 1. Select the Menu icon  ![Menu icon](../../icons/icon_hamburger.svg)  from the upper left, then click **Classic Infrastructure**.
 1. Choose **Network > Gateway Appliances**.
 1. Click the Gateway Appliance Name to access the Gateway Appliance Details page.
