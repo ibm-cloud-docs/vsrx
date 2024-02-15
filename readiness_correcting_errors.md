@@ -180,7 +180,7 @@ set security utm custom-objects url-pattern website value *.services.site.com
 To fix this issue, modify the vSRX configuration as needed, commit, and retry the readiness check.
 
 ### Command `set interfaces..` with tcp-mss
-{: #set interfaces}
+{: #set-interfaces}
 
 The following undocumented configuration could be committed in versions prior to 20.4R2-S2, but fails in 20.4R2-S2. Notice the `unsupported platform` output from `show configuration` in 19.4R3-S2.
 
@@ -222,7 +222,7 @@ syntax error.
 This scenario causes problems when upgrading from a pre-20.4R2-S2 version to 20.4R2-S2, because the commit of the previous configuration to the new release fails, causing the upgrade to fail as well.
 
 ### Command `set security datapath-debug..`
-{: #set security datapath-debug}
+{: #set-security datapath-debug}
 
 `set security datapath-debug` configuration commands are known to cause errors during when upgrading. You should remove all `datapath-debug` commands from the `config` and retry the readiness check. For example, commands like these should be removed:
 
