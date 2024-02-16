@@ -20,7 +20,7 @@ The {{site.data.keyword.vsrx_full}} nodes provide built-in management interfaces
 
 Configuration of the fxp0 interface requires IPs in a subnet that is attached to the private transit VLAN for the gateway. Although the primary subnet that comes with the gateway has IPs that might be available, it is not recommended for this use. This is because the primary subnet is reserved for the gateway provisioning infrastructure, and IP collisions might occur if additional gateways are deployed in the same pod.
 
-You can allocate a secondary subnet for the private transit VLAN, and use IPs from this subnet to configure fxp0 and the host bridge interface for PING and SSH access. To do so, perform the following procedure:
+You can allocate a secondary subnet for the private transit VLAN, and use IPs from this subnet to configure fxp0 and the host bridge interface for PING and SSH access. To do so, follow these steps:
 
 1. [Order a portable private subnet](/classic/network/subnet/provision) and assign it to the vSRX private transit VLAN. You can find the private transit VLAN on the gateway details page.
 

@@ -23,7 +23,7 @@ A readiness check verifies the ability of your {{site.data.keyword.vsrx_full}} t
 
 After you run the readiness check, errors alert you to any necessary actions that you should take before you begin one of these actions, or inform you that you're ready to proceed.
 
-To run a readiness check, perform the following procedure:
+To run a readiness check, follow these steps:
 
 1. From your browser, open the [IBM Cloud console](/login){: external} and log in to your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.

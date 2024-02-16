@@ -34,12 +34,12 @@ For a successful rebuild of a cluster on an HA vSRX, ensure the following:
 ## Rebuilding an HA cluster
 {: #rebuild-an-ha-cluster}
 
-To rebuild one of your HA vSRX clusters, perform the following procedure:
+To rebuild one of your HA vSRX clusters, follow these steps:
 
 1. From your browser, open the [IBM Cloud console](/login){: external} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
 3. Choose **Network > Gateway Appliances**.
-4. Click on the server you want to reload.
+4. Click the server you want to reload.
 5. Click the server name in the Hardware section.
 6. Click the **Actions** dropdown and select **Rebuild Cluster**.
 7. Carefully read the warning message. The operation to rebuild a cluster is destructive. If you want to proceed, save your vSRX configuration before clicking **Rebuild** to start the process.

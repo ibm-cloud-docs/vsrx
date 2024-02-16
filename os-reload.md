@@ -54,7 +54,7 @@ For a successful OS Reload on a vSRX, ensure the following:
 ## Performing an OS reload
 {: #performing-an-os-reload}
 
-To reload your OS, perform the following procedure:
+To reload your OS, follow these steps:
 
 1. From your browser, open [IBM Cloud console](/login){: external} and log in to your account.
 2. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness#vsrx-readiness) for “OS Reload” and address any errors that are found.
