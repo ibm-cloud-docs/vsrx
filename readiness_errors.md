@@ -20,7 +20,7 @@ Readiness check warnings and errors can occur for any of the three readiness che
 ## Error 1000
 {: #error-1000}
 
-An OS reload is already running on a different node in the HA cluster. The other node's OS reload must complete before executing a second OS reload.
+An OS reload is already running on a different node in the HA cluster. The other node's OS reload must be completed before running a second OS reload.
 
 ## Error 1002
 {: #error-1002}
@@ -40,17 +40,17 @@ The root user credentials for the host are not found.
 ## Error 1005
 {: #error-1005}
 
-The host SSH console connection could not be created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection was not created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1007
 {: #error-1007}
 
-The host SSH console connection could not be created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection was not created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1008
 {: #error-1008}
 
-The host SSH console could not process the command. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console cannot process the command. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1009
 {: #error-1009}
@@ -75,12 +75,12 @@ The root user for the gateway was not found.
 ## Error 1014
 {: #error-1014}
 
-The gateway readiness check has timed out.
+The gateway readiness check timed out.
 
 ## Error 1017
 {: #error-1017}
 
-The gateway SSH console connection could not be created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console connection was noth created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1018
 {: #error-1018}
@@ -105,7 +105,7 @@ The gateway readiness precheck failed with an unexpected exception. Try again or
 ## Error 1023
 {: #error-1023}
 
-The gateway readiness precheck failed the DNS accessibility check on the Ubuntu host. Confirm there is network access to the private `10.0.0.0/8` subnet from the host.
+The gateway readiness precheck failed the DNS accessibility check on the Ubuntu host. Confirm that there is network access to the private `10.0.0.0/8` subnet from the host.
 
 ## Error 1024
 {: #error-1024}
@@ -115,7 +115,7 @@ The gateway readiness precheck failed with an unexpected exception. Try again or
 ## Error 1025
 {: #error-1025}
 
-The IPMI interface is disabled for the Gateway host. Check IPMI status and enable the interface if is disabled. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
+The IPMI interface is disabled for the Gateway host. Check IPMI status and enable the interface if it is disabled. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1026
 {: #error-1026}
@@ -170,7 +170,7 @@ The gateway experienced a precheck setup failure, and is unable to check the vSR
 ## Error 1110
 {: #error-1110}
 
-The gateway experienced a precheck setup failure because the vSRX file system reached capacity. Remove any unneecessary files from `/var` and try again.
+The gateway experienced a precheck setup failure because the vSRX file-system-reached capacity. Remove any unnecessary files from `/var` and try again.
 
 ## Error 1111
 {: #error-1111}
@@ -185,7 +185,7 @@ The gateway experienced a precheck setup failure due to a cluster error. Ensure 
 ## Error 1113
 {: #error-1113}
 
-The host experienced a precheck setup failure and is unable to determine the status of the host VM using `virsh`. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
+The host experienced a precheck setup failure and is unable to determine the status of the host VM by using `virsh`. Try again or contact [IBM Support](/docs/vsrx?topic=vsrx-getting-help).
 
 ## Error 1114
 {: #error-1114}
@@ -200,7 +200,7 @@ The gateway has a precheck setup failure due to an incompatible SSH connection l
 ## Error 1116
 {: #error-1116}
 
-The host has a precheck setup failure, Ubuntu is missing the telnet software package. Install telnet and retry.
+The host has a precheck setup failure. Ubuntu is missing the telnet software package. Install telnet and retry.
 
 ## Error 1117
 {: #error-1117}
@@ -255,22 +255,22 @@ The gateway control link is down. Ensure vnet0 and vnet1 are configured on the U
 ## Error 1127
 {: #error-1127}
 
-The Ubuntu host is missing an ethernet interface in bond0. Ensure bond0 includes the 2 private ethernet interfaces.
+The Ubuntu host is missing an Ethernet interface in bond0. Ensure bond0 includes the 2 private Ethernet interfaces.
 
 ## Error 1128
 {: #error-1128}
 
-The Ubuntu host is missing an ethernet interface in bond1. Ensure bond1 includes the 2 public ethernet interfaces.
+The Ubuntu host is missing an Ethernet interface in bond1. Ensure bond1 includes the 2 public Ethernet interfaces.
 
 ## Error 1129
 {: #error-1129}
 
-The Ubuntu host has an extra ethernet interface in bond0. Ensure bond0 only includes the 2 private ethernet interfaces.
+The Ubuntu host has an extra Ethernet interface in bond0. Ensure bond0 includes only the 2 private Ethernet interfaces.
 
 ## Error 1130
 {: #error-1130}
 
-The Ubuntu host has an extra ethernet interface in bond1. Ensure bond1 only includes the 2 public ethernet interfaces.
+The Ubuntu host has an extra Ethernet interface in bond1. Ensure bond1 only includes the 2 public Ethernet interfaces.
 
 ## Error 1131
 {: #error-1131}
@@ -285,17 +285,17 @@ The Ubuntu host has a kvm xml configuration that is missing the default telnet c
 ## Error 1133
 {: #error-1133}
 
-The vSRX console connection via telnet timed out executing commands. Please rerun or contact support.
+The vSRX console connection using telnet timed out running commands. Rerun or contact IBM Support.
 
 ## Error 1134
 {: #error-1134}
 
-The node being OS reloaded cannot access the other node in the cluster. Ensure the other node is active and retry. If both nodes are unrecoverable contact support to run Rebuild Cluster.
+The node being OS reloaded cannot access the other node in the cluster. Ensure that the other node is active and retry. If both nodes are unrecoverable contact support to run Rebuild Cluster.
 
 ## Error 1135
 {: #error-1135}
 
-The vSRX license file cannot be found. Please rerun or contact support.
+The vSRX license file cannot be found. Rerun or contact IBM Support.
 
 ## Error 1136
 {: #error-1136}
@@ -360,27 +360,27 @@ The vSRX configuration includes a url-pattern with invalid characters. Remove th
 ## Error 1154
 {: #error-1154}
 
-Both vSRX cluster nodes are down. Start the vSRX node(s) and retry.
+Both vSRX cluster nodes are down. Start the vSRX nodes and retry.
 
 ## Error 1155
 {: #error-1155}
 
-The vSRX configuration can not specify both a `service` and an `any-service` within the same `security-zone interface` stanza. Correct this configuration and retry.
+The vSRX configuration cannot specify both a `service` and an `any-service` within the same `security-zone interface` stanza. Correct this configuration and retry.
 
 ## Error 1157
 {: #error-1157}
 
-vSRX ssl certificates included in stanzas, such as `set services ssl initiation`, `set services ssl termination`, and `set services ssl proxy` can not be migrated to the newly upgraded vSRX node. Remove these certificates from the vSRX configuration, retry, and re-import the certs after upgrade.
+vSRX SSL certificates included in stanzas, such as `set services ssl initiation`, `set services ssl termination`, and `set services ssl proxy` cannot be migrated to the newly upgraded vSRX node. Remove these certificates from the vSRX configuration, retry, and re-import the certs after upgrade.
 
 ## Error 1158
 {: #error-1158}
 
-The vSRX security nat configuration includes an invalid network address range. Specify a valid network IP range using CIDR notation and retry.
+The vSRX security nat configuration includes an invalid network address range. Specify a valid network IP range by using CIDR notation and retry.
 
 ## Error 1159
 {: #error-1159}
 
-The vSRX configuration includes a reference to an ssl certificate in the `system services rest https` config. Certs can not be migrated during an upgrade. Deactivate the reference using `deactivate system services rest https`, retry, and re-activate and re-import the certificate after the upgrade completes.
+The vSRX configuration includes a reference to an SSL certificate in the `system services rest https` config. Certs cannot be migrated during an upgrade. Deactivate the reference using `deactivate system services rest https`, retry, and reactivate and re-import the certificate after the upgrade completes.
 
 ## Error 1160
 {: #error-1160}
@@ -390,7 +390,7 @@ The vSRX configuration includes a `security idp sensor-configuration packet-log 
 ## Warning 1176
 {: #warning-1176}
 
-The gateway experienced a precheck setup warning. A VPN establishment configuration with `non-immediate` was detected, which could increase the time it takes for VPN establishment after the vSRX starts. Refer to [Correcting warning 1176](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1176) for more information.
+The gateway experienced a precheck setup warning. A VPN establishment configuration with `non-immediate` was detected, which could increase the time that it takes for VPN establishment after the vSRX starts. Refer to [Correcting warning 1176](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1176) for more information.
 
 ## Warning 1177
 {: #warning-1177}
@@ -405,12 +405,12 @@ The license was updated. However, validation of the new license failed. It is re
 ## Warning 1179
 {: #warning-1179}
 
-The vSRX version found to be running on the Gateway is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version currently listed on the Gateway Details page. Refer to [Correcting warning 1179](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1179) for more information.
+The vSRX version found to be running on the Gateway is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version that is currently listed on the Gateway Details page. Refer to [Correcting warning 1179](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1179) for more information.
 
 ## Warning 1180
 {: #warning-1180}
 
-The vSRX license found on the Gateway is unsupported. [Correcting warning 1180](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1180) for more information.
+The vSRX license that is found on the Gateway is unsupported. [Correcting warning 1180](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1180) for more information.
 
 ## Warning 1181
 {: #warning-1181}
@@ -420,12 +420,12 @@ The vSRX license and version on the Gateway are both found to be unsupported. [C
 ## Warning 1182
 {: #warning-1182}
 
-The vSRX add on license file(s) are not found. Contact IBM Support.
+The vSRX add on license files are not found. Contact IBM Support.
 
 ## Warning 1183
 {: #warning-1183}
 
-The vSRX add on license count is not found in the import settings. Contact IBM Support.
+The vSRX add-on license count is not found in the import settings. Contact IBM Support.
 
 ## Warning 1184
 {: #warning-1184}
