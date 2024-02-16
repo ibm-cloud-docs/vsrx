@@ -18,18 +18,18 @@ subcollection: vsrx
 Before you perform a vSRX upgrade, be aware of the following considerations:
 {: shortdesc}
 
-* You might experience network disruptions when upgrading your vSRX version. To avoid disruptions, perform the upgrade during a maintenance window that supports potential network downtime. Failover is not available until the upgrade completes, and can take several hours. For High Availability (HA) environments, your vSRX configuration settings are migrated; however, it is recommended to export your settings before the upgrade.
+* You might experience network disruptions when you upgrade your vSRX version. To avoid disruptions, perform the upgrade during a maintenance window that supports potential network downtime. Failover is not available until the upgrade completes, and can take several hours. For High Availability (HA) environments, your vSRX configuration settings are migrated; however, it is recommended to export your settings before the upgrade.
 
 * For a stand-alone environment, the previous configuration is not restored, so you should export and import your configuration. For more information, see [Importing and exporting a vSRX configuration](/docs/vsrx?topic=vsrx-importing-exporting-vsrx-configuration).
 
 * For a successful reload on a HA vSRX, the root password for the provisioned vSRX gateway must match the root password that is defined in the vSRX portal. In addition, you must enable root SSH login to the vSRX Private IP.
 
-    You defined the password in the portal when you provisioned your gateway. This might not match the current gatewaypassword. If the password was changed after provisioning, then use SSH to connect to the vSRX gateway and changethe root password to match. The Readiness Check fails if there is a password mismatch.
+    You defined the password in the portal when you provisioned your gateway. This might not match the current gateway password. If the password was changed after provisioning, then use SSH to connect to the vSRX gateway and change the root password to match. The Readiness Check fails if there is a password mismatch.
     {: important}
 
 * Do not modify the vSRX configuration during an OS reload. The upgrade process captures a snapshot of the current vSRX cluster configuration at the beginning of the process. Therefore, modifying the vSRX configuration during the upgrade process can result in a failure, or unpredictable results. For example, automated software agents attempting to modify one or both vSRX nodes. Configurations changes can corrupt the OS reload process. Additionally, these configuration changes are not preserved if a rollback is initiated.
 
-* Before performing an OS reload upgrade on an HA cluster, run the command `show chassis cluster status`. The nodes should be clustered with one node that is listed as the primary and the other as secondary. Ensure that there are no `monitor failures`. If the cluster is not healthy prior to the upgrade, then the upgrade can fail, causing an extended traffic outage.
+* Before performing an OS reload upgrade on an HA cluster, run the command `show chassis cluster status`. The nodes should be clustered with one node that is listed as the primary and the other as the secondary. Ensure that there are no `monitor failures`. If the cluster is not healthy before the upgrade, then the upgrade can fail, causing an extended traffic outage.
 
    Example of a healthy cluster:
 
@@ -89,9 +89,9 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
 
 * If your IBM Cloud account has multiple vSRX gateway instances in the same pod, make sure that only one gateway is upgraded at a time. Upgrading more than one vSRX at a time can result in IP collisions, disrupt the upgrade process, and potentially cause failures.
 
-* If you configure your HA cluster to use Intrusion Detection Policies (IDP) and a signature database, it is strongly recommended that you update the signature database after completing the upgrade. This is because the database might be out of date. For information about online and offline database updates, see [Intrusion Detection and Prevention on IBM Cloud](https://public.dhe.ibm.com/cloud/bluemix/network/vsrx/idp.pdf){: external}
+* If you configure your HA cluster to use Intrusion Detection Policies (IDP) and a signature database, it is recommended that you update the signature database after you complete the upgrade. This is because the database might be out of date. For information about online and offline database updates, see [Intrusion Detection and Prevention on IBM Cloud](https://public.dhe.ibm.com/cloud/bluemix/network/vsrx/idp.pdf){: external}
 
-* The upgrade process will not backup or restore any vSRX certificates local to the Virtual Machine (VM) being upgraded. The upgrade process will delete the existing VM and create a new one, which will replace the JunOS file system. For example, a local certificate like `IKE_POLICY_CERT` must be backed up prior to the upgrade and manually restored after it completes.
+* The upgrade process does not backup or restore any vSRX certificates local to the virtual machine (VM) being upgraded. The upgrade process deletes the existing VM and creates a new one, which replaces the JunOS file system. For example, a local certificate like `IKE_POLICY_CERT` must be backed up before the upgrade and manually restored after it completes.
 
 ```
 set security ike policy MY_VPN_IKE_POLICY certificate local-certificate IKE_POLICY_CERT

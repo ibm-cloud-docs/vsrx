@@ -18,7 +18,7 @@ subcollection: vsrx
 This topic provides examples on setting up your vSRX as a gateway for systems on a VLAN. 
 {: shortdesc}
 
-You will need to know:
+You need to know:
 
 * Your vSRX type, Highly Available (HA) or Singularly Available (SA)
 * The VLAN you want to connect to and its type (private or public)
@@ -30,7 +30,7 @@ You will need to know:
 
 In this example, we have an SA vSRX and a private VLAN with an ID of 1439. The VLAN has one subnet with the address/CIDR `10.150.236.128/26`.
 
-To create the example VLAN interface we need to determine its base interface according to the following settings:
+To create the example VLAN interface, you need to determine its base interface according to the following settings:
 
 1. SA private vlan base interface is `ae0`.
 2. SA public vlan base interface is `ae1`.
@@ -50,7 +50,7 @@ set interfaces ae0 unit 1439 vlan-id 1439
 
 For each subnet associated with the VLAN, the gateway IP is configured on the vlan interface. 
 
-In this case, we ony have one subnet with an address of `10.150.236.128/26`. The gateway IP for this subnet is `10.150.236.129`, which is the IP next to the subnet IP. 
+In this case, we have only one subnet with an address of `10.150.236.128/26`. The gateway IP for this subnet is `10.150.236.129`, which is the IP next to the subnet IP. 
 
 To set the IP, run the following command:
 
@@ -66,7 +66,7 @@ set security zones security-zone CUSTOMER-PRIVATE interfaces reth2.1898 host-inb
 ```
 {: pre}
 
-Security policies use zones and addresses. As a result, you must also make the address book of the subnet available. In this example, we name the book `VSI_PRIV_NET`. To define the book, run the command:
+Security policies use zones and addresses. As a result, you must also make the address book of the subnet available. In this example, the name of the book is `VSI_PRIV_NET`. To define the book, run the command:
 
 ```sh
 set security address-book global address VSI_PRIV_NET 10.150.236.128/26
@@ -76,7 +76,7 @@ set security address-book global address VSI_PRIV_NET 10.150.236.128/26
 ## Example 2
 {: #vsrx-vlan2}
 
-In the next example, we have HA vSRX and a VLAN with three subnets:
+The next example depicts a HA vSRX and a VLAN with three subnets:
 
 * `10.208.110.121/29`
 * `10.186.228.145/28`
@@ -84,7 +84,7 @@ In the next example, we have HA vSRX and a VLAN with three subnets:
 
 The VLAN is private and its ID is `1898`.
 
-We must configure an IP address as well as an address book for each of the three subnets. Use the following eight commands (in the same order as the ones illustrated in the first example) to configure the VLAN:
+You must configure an IP address and an address book for each of the three subnets. Use the following eight commands (in the same order as the ones illustrated in the first example) to configure the VLAN:
 
 ```sh
 set interfaces reth2 unit 1898 vlan-id 1898
