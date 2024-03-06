@@ -15,7 +15,10 @@ subcollection: vsrx
 # Renewing a vSRX license
 {: #license-renewal}
 
-The vSRX standard and CSB licenses for both 1G and 10G that were included with deployments before mid-May 2021 have an expiration date in 2021. After this license expires, updates for some new vSRX features might not take effect. A newer license with an expiration date in 2024 is now available, and you can renew your gateway license to obtain it. If you are using a High Availability vSRX, renewing your license automatically modifies the license on both vSRX nodes. You can find the current expiration date on the gateway appliance details page. See the view license steps below.
+The vSRX standard and CSB licenses for both 1G and 10G that were included with deployments before mid-May 2021 have an expiration date in 2021. After this license expires, updates for some new vSRX features might not take effect. A newer license with an expiration date in 2025 is now available, and you can renew your gateway license to obtain it. If you are using a High Availability vSRX, renewing your license automatically modifies the license on both vSRX nodes. You can find the current expiration date on the gateway appliance details page. Refer to the following instructions on viewing your license expiration date for more information.
+
+In order to update to the latest license, your vSRX must be version 21.3 or later.
+{: important}
 
 Actions such as OS Reload will re-apply the license currently applied to the node(s). It will not update the license.  
 
@@ -46,6 +49,6 @@ To renew your license, first run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-
 1. Click the gateway appliance name to access the gateway appliance details page.
 1. Click **Renew license**.
 
-The license renewal can take up to 30 minutes to complete. To verify that the process completed successfully, follow the preceding steps in [Viewing your license expiration date](#license-view-steps). Verify that the expiration shows a 2024 expiration. The renewal process will not reboot the host(s) or node(s) and there should be no outages and minimal traffic disruptions as a result of this action.
+The license renewal can take up to 30 minutes to complete. To verify that the process completed successfully, follow the preceding steps in [Viewing your license expiration date](#license-view-steps). Verify that the expiration shows a 2025 expiration. The renewal process will not reboot the host(s) or node(s) and there should be no outages and minimal traffic disruptions as a result of this action.
 
 After the renewal completes, future actions, such as OS Reload and License Update, automatically apply the new license.
