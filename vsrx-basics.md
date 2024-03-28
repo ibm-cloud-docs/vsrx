@@ -38,6 +38,23 @@ You can access either the vSRX or the host (Ubuntu) using SSH through a private 
 If you do not see the "eye" icon, you might not have permission to view the password. Please check your access permissions with the account owner.
 {: note}
 
+## Operational mode
+{: #operational-mode}
+
+From operational mode, you can issue standard show commands to view configurations, routes, interfaces, logs, and the current status of different services, such as BGP, IPSec, and security policies. The following list details some commonly used commands:
+
+* `show configuration` - View configurations as they are in the config file, formatted in a heirarchical container and leaf structure. 
+* `show configuration | display set` - View configurations as a set of configuration commands. This is easier to read and parse.
+* `show configuration | display set | grep <search term>` - Search the entire configuration for the search term.
+* `show interfaces terse` - View the list of vSRX network interfaces.
+* `show route <IP-Address>` - Perform a route lookup for a specific IP.
+* `show chassis cluster status` - Show the status of an HA cluster.
+* `show log <name-of-log-file>` - Output the contents of a log file, such as `/var/log/messages`.
+* `show security ike sa` - Show the phase 1 status for all configured IPsec tunnels.
+* `show security ipsec sa` - Show the phase 2 status for all configured IPsec tunnels.
+* `show bgp summary` - Show a summary of any BGP neighbors.
+* `show arp no-resolve` - Show the `arp` status of IP addresses within the vSRX's broadcast domains.
+
 ## Accessing the configuration mode
 {: #accessing-the-configuration-mode}
 
