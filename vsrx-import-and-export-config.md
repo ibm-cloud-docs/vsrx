@@ -12,7 +12,7 @@ subcollection: vsrx
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Importing and and exporting a vSRX Configuration
+# Importing and exporting a vSRX Configuration
 {: #importing-exporting-vsrx-configuration}
 
 The {{site.data.keyword.vsrx_full}} upgrade process preserves the original configuration of the vSRX throughout the entire process, as long as the required reloads are done one at a time. However, it is still strongly recommended to export and backup your vSRX configuration settings before starting the upgrade.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2021-08-02"
+lastupdated: "2024-04-16"
 
 keywords:  
 
@@ -18,11 +18,6 @@ subcollection: vsrx
 There are some limitations to be aware of when using {{site.data.keyword.vsrx_full}}.
 {: shortdesc}
 
-* Due to incompatible networking elements, the Juniper vSRX solution is not available as follows:
-
-   - 10 Gbps version in WDC01
-   - 1G and 10G High Availability versions in: DAL05, SJC01, and WDC01
-
 * Only IBM Cloud certified versions of vSRX are supported. The list of supported versions can be found [here](/docs/vsrx?topic=vsrx-vsrx-versions).
 
 * Upgrading from Stand-alone to High Availability mode is not supported.
@@ -34,6 +29,8 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 * Only the latest IBM Cloud certified vSRX release is available for new orders and upgrades. Requests for older IBM Cloud certified vSRX releases should be made through an IBM Support case. Limitations for upgrading and downgrading can be found in [Upgrading the vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
 
 * Older Juniper vSRX gateways were deployed with Linux Bridge based networking virtualization. This virtualization can achieve only limited throughput and never line-rate throughput. Most deployments of vSRX 18.4 and later use SR-IOV, which provides improved throughput.
+
+* The speed shown for a single GE interface within the vSRX will generally show 1G for the single interfaces even when ordered as 10G. This is cosmetic and does not reflect the actual speed capability on 10Gbps vSRX appliances. You should perform speed checks on the Ubuntu host rather than on the vSRX VM. In addition, running speed tests with tools like Iperf3 can also help verify traffic throughput. Another way to verify is through the bandwidth graphs associated to the primary node vSRX. This shows the maximum and minimum throughput reached using the samples taken for the graphs.
 
 * Older Juniper vSRX gateways were deployed with a 60-day evaluation license, which might cause the kernel to generate error messages even when another (valid) license is on the system. Remove any 60-day evaluation licenses to avoid this issue. To do so, follow these steps:
 
