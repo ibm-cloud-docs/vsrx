@@ -36,6 +36,7 @@ toc:
             - include: ../gateway-appliance/rename-gateway.md
             - include: ../gateway-appliance/cancel-gateway.md
             - vsrx-basics.md
+            - vsrx-access.md
         - topicgroup:
             label: Checking vSRX readiness
             topics:
