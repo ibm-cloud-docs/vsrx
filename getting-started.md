@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-02-22"
+lastupdated: "2024-06-10"
 
 keywords: ordering, gateway, appliance, vsrx, license
 
@@ -28,9 +28,12 @@ Three license types are available for your {{site.data.keyword.vsrx_full}}:
 
 * Standard
 * Content Security Bundle (CSB)
-* Remote access (50 concurent users)
+* Remote access VPN users (50 concurent users)
 
 The CSB license is not available on vSRX gateways that are running with Linux Bridge based network models. The license is only available on SR-IOV enabled gateways. Details can be found [here](/docs/vsrx?topic=vsrx-unsupported-upgrade).
+{: note}
+
+Remote VPN user licenses are only supported on versions 22.2 and later.
 {: note}
 
 Each license includes a different set of features and options, and the following table outlines the differences.
@@ -39,7 +42,7 @@ Each license includes a different set of features and options, and the following
 | ------------- | ------------- |
 | **Standard** | - Core security: firewall, ALG, screens, user firewall  \n - IPsec VPN (site-to-site VPN)  \n - NAT  \n - CoS  \n - Routing services: BGP, OSPF, DHCP, J-Flow, IPv4  \n - Foundation: Static routing, management (J-Web, CLI, and NETCONF), on-box logging, diagnostics |
 | **Content Security Bundle (CSB)**  \n Includes all Standard features, along with the additional features listed in the next column. | - AppSecure  \n  - Application Tracking (AppTrack)  \n  - Application Firewall (AppFW)  \n  - Application Quality of Service (AppQoS)  \n  - Advanced policy-based routing (APBR)  \n  - Application Quality of Experience (AppQoE)  \n - User Firewall  \n - IPS  \n  - UTM  \n  - Anti Virus  \n  - Anti Spam  \n  - Web Filtering   \n  - Content Filtering  \n  - SSL Proxy  \n  - SSL Forward Proxy  \n  - SSL Reverse Proxy  \n  - SSL Decrypting Mirror |
-| **Remote user** \n Juniper Secure Connect - SSL VPN and IPSEC | - VPN user license (50 concurrent users per license) \n - Select up to 10 licenses \n - Key features \n - Securely and automatically validates that the most current security policy is enforced \n  - Supports external multifactor authentication (MFA) solutions \n  - Provides integrated biometric authentication on devices with hardware support 
+| **Remote access VPN users** \n Juniper Secure Connect - SSL VPN and IPSEC | - VPN user license (50 concurrent users per license) \n - Select up to 10 licenses \n - Securely and automatically validates that the most current security policy is enforced \n  - Supports external multifactor authentication (MFA) solutions \n  - Provides integrated biometric authentication on devices with hardware support 
 {: caption="Table 1. License differences" caption-side="bottom"}
 
 You can specify your license type when you order your vSRX, as well as change the license by using the [Gateway Appliance Details](/docs/vsrx?topic=vsrx-vsrx-licenses#vsrx-licenses) page.

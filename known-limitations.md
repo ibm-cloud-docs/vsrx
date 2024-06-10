@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2024-04-16"
+lastupdated: "2024-06-10"
 
 keywords:  
 
@@ -25,6 +25,8 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 * Downgrading from High Availability to Stand-alone mode is not supported.
 
 * Upgrading from 1G to 10G or downgrading from 10G to 1G is not supported.
+
+* Remote VPN licenses are only supported on versions 22.2 and later.
 
 * Only the latest IBM Cloud certified vSRX release is available for new orders and upgrades. Requests for older IBM Cloud certified vSRX releases should be made through an IBM Support case. Limitations for upgrading and downgrading can be found in [Upgrading the vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx).
 
