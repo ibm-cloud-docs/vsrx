@@ -28,7 +28,7 @@ Three license types are available for your {{site.data.keyword.vsrx_full}}:
 
 * Standard
 * Content Security Bundle (CSB)
-* Remote access VPN users (50 concurent users)
+* Remote access VPN users (50 concurent users) 
 
 The CSB license is not available on vSRX gateways that are running with Linux Bridge based network models. The license is only available on SR-IOV enabled gateways. Details can be found [here](/docs/vsrx?topic=vsrx-unsupported-upgrade).
 {: note}
