@@ -48,7 +48,7 @@ To access the VM using the local console of the Ubuntu host:
 
    `virsh list --all`.
    
-2) Use the ID to dump the configuration in XML format and search for the console port: 
+1) Use the ID to dump the configuration in XML format and search for the console port: 
 
    `virsh dumpxml <id> | grep service`
 
@@ -56,12 +56,12 @@ To access the VM using the local console of the Ubuntu host:
 
    ```
    :~# virsh dumpxml 2 | grep service
-       <source mode='bind' host='127.0.0.1' service='8624' tls='no'/>
-       <source mode='bind' host='127.0.0.1' service='8624' tls='no'/>  
+      <source mode='bind' host='127.0.0.1' service='8624' tls='no'/>
+      <source mode='bind' host='127.0.0.1' service='8624' tls='no'/>  
    ```
    {: pre}
   
-3) Use telnet and the port number (from the example) to access the VM:
+1) Use telnet and the port number (from the example) to access the VM:
 
    `telnet localhost 8624`
   

@@ -9,7 +9,6 @@ toc:
     product-page: https://www.ibm.com/products/network-appliances
     path: vsrx
     label: IBM Cloud Juniper vSRX
-
   entries:
     - navgroup:
        id: learn
@@ -24,7 +23,6 @@ toc:
                label: "What is network security?"
                href: https://www.ibm.com/topics/networking
        - release-notes.md
-
     - navgroup:
         id: howto
         topics:
@@ -84,13 +82,11 @@ toc:
         - renew-license.md
         - os-reload.md
         - rebuild-cluster.md
-
     - navgroup:
         id: reference
         topics:
         - include: ../cloud-infrastructure/ips.md
         - vsrx-version-notes.md
-
     - navgroup:
         id: help
         topics:
