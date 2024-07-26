@@ -222,7 +222,7 @@ syntax error.
 This scenario causes problems when you upgrade from a pre-20.4R2-S2 version to 20.4R2-S2 because the commit of the previous configuration to the new release fails, causing the upgrade to fail as well.
 
 ### Command `set security datapath-debug..`
-{: #set-security datapath-debug}
+{: #set-security-datapath-debug}
 
 `set security datapath-debug` configuration commands are known to cause errors when upgrading. Remove all `datapath-debug` commands from the `config` and retry the readiness check. For example, remove commands like these:
 
