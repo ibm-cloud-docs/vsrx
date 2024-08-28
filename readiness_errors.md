@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2021
-lastupdated: "2023-09-14"
+  years: 2017, 2024
+lastupdated: "2024-08-28"
 
 keywords: checking, readiness, errors
 
@@ -386,6 +386,11 @@ The vSRX configuration includes a reference to an SSL certificate in the `system
 {: #error-1160}
 
 The vSRX configuration includes a `security idp sensor-configuration packet-log total-memory` reference. This causes issues during an upgrade. Remove the reference and retry.
+
+## Error 1165
+{: #error-1165}
+
+The vSRX configuration contains a Juniper security policy with keywords dynamic-application any and junos-defaults. Remove the policy or replace junos-defaults with any.
 
 ## Warning 1176
 {: #warning-1176}
