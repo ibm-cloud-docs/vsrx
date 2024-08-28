@@ -22,6 +22,7 @@ toc:
            - link:
                label: "What is network security?"
                href: https://www.ibm.com/topics/networking
+       - include: ../gateway-appliance/ga-raci.md
        - release-notes.md
     - navgroup:
         id: howto
