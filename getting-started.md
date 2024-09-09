@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2024-06-10"
+  years: 2017, 2024
+lastupdated: "2024-09-09"
 
 keywords: ordering, gateway, appliance, vsrx, license
 
@@ -15,7 +15,7 @@ subcollection: vsrx
 # Getting started with IBM Cloud Juniper vSRX
 {: #getting-started}
 
-{{site.data.keyword.vsrx_full}} allows you to route private and public network traffic selectively, through a full-featured, enterprise-level firewall that is powered by JunOS software features, such as full routing stacks, QoS and traffic sharing, policy-based routing, and VPN.
+{{site.data.keyword.vsrx_full}} allows you to route private and public network traffic selectively, through a full-featured, enterprise-level firewall that is powered by JunOS software features, such as full routing stacks, QoS and traffic sharing, policy-based routing, and VPN. 
 {: shortdesc}
 
 For a list of known limitations with {{site.data.keyword.vsrx_full}} Gateway, see [Known limitations](/docs/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx).
