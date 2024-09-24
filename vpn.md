@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2019-11-14"
+  years: 2017, 2024
+lastupdated: "2024-09-24"
 
 keywords: working, vpn, sample, configuration
 
@@ -15,10 +15,15 @@ subcollection: vsrx
 # Working with VPN
 {: #working-with-vpn}
 
-This topic details a sample configuration for a Route based VPN between two sites. In this sample configuration Server 1 (Site A) can communicate with Server 2 (Site B), and each site utilizes two phase IPSEC authentication.
+This topic details a sample configuration for a Route-based IPSec VPN between two sites. In this sample configuration, Server 1 (Site A) can communicate with Server 2 (Site B), and each site utilizes two phase IPSEC authentication.
 {: shortdesc}
 
 ![Site-to-site VPN](images/site-to-site-vpn.png){: caption="Site-to-site VPN" caption-side="bottom"}
+
+When setting up IPSec VPN tunnels, it is common to use the primary public IP of the vSRX as the IKE gateway local-address. However, it is recommended that you first [order a public static subnet/IP](/docs/subnets?topic=subnets-order-subnets&interface=ui) and route it to the primary public IP of the vSRX. You should also use that IP address as the IKE gateway local-address. If you then need to migrate the IPSev VPN tunnels, you can then keep the IP address and route it to a different gateway appliance. 
+
+While migrating the primary IP of a vSRX or gateway appliance to a different one is not supported, [migrating a secondary static subnet](/docs/subnets?topic=subnets-re-routing-secondary-subnets&interface=ui) within the same datacenter is.
+{: tip}
 
 ## Sample configuration for Site A (Dallas):
 {: #sample-configuration-for-site-a-dallas-}
@@ -251,6 +256,80 @@ set security ipsec proposal IPSEC-PROP encryption-algorithm aes-128-gcm
 ```
 
 With AES-GCM as the encryption algorithm, you don't need to specify the authentication algorithm in the same proposal. AES-GCM provides both encryption and authentication.
+
+## Troubleshooting commands
+{: #troubleshooting-commands}
+
+```sh
+#show phase 1 status:
+show security ike sa
+
+#show phase 2 status:
+show security ipsec sa
+
+#show information for any inactive/erroring tunnels
+show security ipsec inactive-tunnels
+ 
+#send ipsec logs to file kmd-logs:
+set system syslog file kmd-logs daemon info
+set system syslog file kmd-logs match KMD
+
+#show the contents of the log file created above:
+show log kmd-logs
+
+#enabling debug logging and viewing those logs
+show security ike debug-status
+request security ike debug-enable local <local-ip-address> remote <remote-ip-address> level <1-15>
+show log kmd
+
+#disable debug logging - this is important for avoiding performance issues
+request security ike debug-disable
+```
+
+## Examples of troubleshooting commands
+{: #troubleshooting-commands-examples}
+
+```sh
+admin@siferg0-vsrx-vsrx-vSRX> show security ike sa
+node0:
+--------------------------------------------------------------------------
+Index   State  Initiator cookie  Responder cookie  Mode           Remote Address
+2859401 UP     f514114a799925fe  f8de58a2690993d7  IKEv2          128.168.104.229
+ 
+admin@siferg0-vsrx-vsrx-vSRX> show security ipsec sa
+node0:
+--------------------------------------------------------------------------
+  Total active tunnels: 1     Total Ipsec sas: 1
+  ID    Algorithm       SPI      Life:sec/kb  Mon lsys Port  Gateway
+  <131073 ESP:aes-gcm-128/None ec78f80e 2528/ unlim - root 500 128.168.104.229
+  >131073 ESP:aes-gcm-128/None c674a8ac 2528/ unlim - root 500 128.168.104.229
+ 
+{primary:node0}
+ 
+admin@siferg0-vsrx-vsrx-vSRX> show security ipsec inactive-tunnels
+node0:
+--------------------------------------------------------------------------
+  Total inactive tunnels: 0
+  Total inactive tunnels with establish immediately: 0
+ 
+{primary:node0}
+admin@siferg0-vsrx-vsrx-vSRX> show security ike security-associations
+node0:
+--------------------------------------------------------------------------
+Index   State  Initiator cookie  Responder cookie  Mode           Remote Address
+2859309 DOWN   e7753a11ff890094  0000000000000000  IKEv2          128.168.104.229
+ 
+{primary:node0}
+admin@sifergu0-vsrx-vsrx-vSRX> show security ipsec inactive-tunnels
+node0:
+--------------------------------------------------------------------------
+  Total inactive tunnels: 1
+  Total inactive tunnels with establish immediately: 1
+  ID           Port   Gateway          Pending SAs   Tunnel Down Reason
+  131073       500    128.168.104.229  1             No response from peer. Negotiation failed (130 times)
+ 
+{primary:node0}
+```
 
 ## Additional VPN configurations
 {: #additional-vpn-configurations}
