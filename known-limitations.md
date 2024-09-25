@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-09-24"
+lastupdated: "2024-09-25"
 
 keywords:  
 
@@ -28,7 +28,7 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
 * Migrating the primary public or private IP addresses on the vSRX VM to another vSRX VM or other gateway appliance is not supported. 
 
-   This is a common request when upgrading to different hardware. When configuring IPSec VPN tunnels, you will often use the primary public IP of the vSRX as the IKE gateway local-address. However, it is recommended that you first [order a public static subnet or IP](/docs/subnets?topic=subnets-order-subnets&interface=ui) and route it to the primary public IP of the vSRX. You should also use that IP address as the IKE gateway local address. If migrating the IPSev VPN tunnels becomes necessary in the future, it is then possible to keep that IP address as well as route it to a new or different gateway appliance. 
+   This is a common request when upgrading to different hardware. When configuring IPSec VPN tunnels, you will often use the primary public IP of the vSRX as the IKE gateway local-address. However, it is recommended that you first [order a public static subnet or IP](/docs/subnets?topic=subnets-order-subnets&interface=ui) and route it to the primary public IP of the vSRX. You should then use that IP address as the IKE gateway local address. If migrating the IPSev VPN tunnels becomes necessary in the future, it is then possible to keep that IP address as well as route it to a new or different gateway appliance. 
    
    While migrating the primary IP of a vSRX or gateway appliance to a different one is not supported, [migrating a secondary static subnet](/docs/subnets?topic=subnets-re-routing-secondary-subnets&interface=ui) within the same datacenter is.
    {: tip}

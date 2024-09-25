@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-09-24"
+lastupdated: "2024-09-25"
 
 keywords: working, vpn, sample, configuration
 
@@ -20,7 +20,7 @@ This topic details a sample configuration for a Route-based IPSec VPN between tw
 
 ![Site-to-site VPN](images/site-to-site-vpn.png){: caption="Site-to-site VPN" caption-side="bottom"}
 
-When setting up IPSec VPN tunnels, it is common to use the primary public IP of the vSRX as the IKE gateway local-address. However, it is recommended that you first [order a public static subnet/IP](/docs/subnets?topic=subnets-order-subnets&interface=ui) and route it to the primary public IP of the vSRX. You should also use that IP address as the IKE gateway local-address. If you then need to migrate the IPSev VPN tunnels, you can then keep the IP address and route it to a different gateway appliance. 
+When setting up IPSec VPN tunnels, it is common to use the primary public IP of the vSRX as the IKE gateway local-address. However, it is recommended that you first [order a public static subnet/IP](/docs/subnets?topic=subnets-order-subnets&interface=ui) and route it to the primary public IP of the vSRX. You should then use that IP address as the IKE gateway local-address. If you then need to migrate the IPSev VPN tunnels, you can then keep the IP address and route it to a different gateway appliance. 
 
 While migrating the primary IP of a vSRX or gateway appliance to a different one is not supported, [migrating a secondary static subnet](/docs/subnets?topic=subnets-re-routing-secondary-subnets&interface=ui) within the same datacenter is.
 {: tip}
