@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "title": "IBM Cloud Juniper vSRX",
+  "introduction": "IBM Cloud® Juniper vSRX allows you to route private and public network traffic on a per VLAN basis, through a full-featured, enterprise-level firewall that is powered by Junos OS software features. ",
+  "product_page": "https://www.ibm.com/products/network-appliances",
+  "console_page": "/catalog/infrastructure/gateway-appliance?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2FY2F0ZWdvcnk9bmV0d29yaw%3D%3D",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with IBM Cloud Juniper vSRX",
+        "href": "/docs/vsrx?topic=vsrx-getting-started"
+      },
+      {
+        "title": "About IBM Cloud Juniper vSRX",
+        "href": "/docs/vsrx?topic=vsrx-about-ibm-cloud-juniper-vsrx"
+      },
+      {
+        "title": "Viewing gateway appliance details",
+        "href": "/docs/vsrx?topic=vsrx-viewing-gateway-appliance-details"
+      },
+      {
+        "title": "Accessing your IBM Cloud Juniper vSRX",
+        "href": "/docs/vsrx?topic=vsrx-vsrx-accessing"
+      },
+      {
+        "title": "Checking vSRX readiness",
+        "href": "/docs/vsrx?topic=vsrx-vsrx-readiness"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "What is computer networking?",
+      "description": "Networking, or computer networking, is the process of connecting two or more computing devices, such as desktop computers, mobile devices, routers or applications, to enable the transmission and exchange of information and resources.",
+      "href": "https://www.ibm.com/topics/networking#toc-computer-n-9C7jokVu",
+      "type": "blog",
+      "recommended": true
+    }
+  ],
+  "section_updates": {
+    "view_more": "/docs/overview?topic=overview-whatsnew",
+    "tiles": [
+      {
+        "date": "10 June 2024",
+        "title": "Remote access VPN licenses"
+      },
+      {
+        "date": "21 June 2021",
+        "title": "Renewing vSRX licenses"
+      },
+      {
+        "date": "20 April 2020",
+        "title": "Checking vSRX readiness"
+      }
+    ]
+  }
+}
