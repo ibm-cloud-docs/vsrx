@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2022
-lastupdated: "2022-12-14"
+  years: 2017, 2024
+lastupdated: "2024-09-30"
 
 keywords: readiness errors
 
@@ -50,6 +50,17 @@ For gateway (vSRX) SSH connectivity errors:
 * Is the root password listed on the Gateway Appliance Details page the correct password for the root user?
     If not, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg) next to the root password and change the password to match the actual root password for the vSRX.
 * Is the root user account disabled for SSH access to the vSRX?
+
+## Correcting error 1119
+{: #correcting-1119}
+
+The vSRX may have a configuration that is blocking local console access through telnet. Check for the following configuration and remove it before retrying the precheck operation:
+
+`set system ports console disable`
+`set system ports console insecure`
+
+Other issues may include an incorrect vSRX password.
+{: tip}
 
 ## Correcting error 1124
 {: #correcting-1124}
