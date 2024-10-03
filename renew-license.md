@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-09-24"
+lastupdated: "2024-10-03"
 
 keywords:
 
@@ -17,7 +17,7 @@ subcollection: vsrx
 
 The vSRX standard and CSB licenses for both 1G and 10G that were included with deployments before mid-May 2021 have an expiration date in 2021. After this license expires, updates for some new vSRX features might not take effect. A newer license with an expiration date in 2025 is now available, and you can renew your gateway license to obtain it. If you are using a High Availability vSRX, renewing your license automatically modifies the license on both vSRX nodes. You can find the current expiration date on the gateway appliance details page. Refer to the following instructions on viewing your license expiration date for more information.
 
-To update to the latest license, your vSRX must be version 21.3 or later. To update the license, you must update the vSRX version using the [OS reload](/docs/vsrx?topic=vsrx-reloading-the-os) process. The license will be automatically renewed during the version upgrade.
+To update to the latest license, your vSRX must be version 21.3 or later. If your vSRX version is below 21.3, you must update the vSRX version using the [OS reload](/docs/vsrx?topic=vsrx-reloading-the-os) process. The license will be automatically renewed during the version upgrade.
 {: important}
 
 When using OS Reload to upgrade the OS version, the license is also upgraded. If you are, instead, using the action to reload the same OS version as before, the license is not updated.
