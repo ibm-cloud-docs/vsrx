@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2019-11-13"
+  years: 2017, 2024
+lastupdated: "2024-10-10"
 
 keywords: firewalls, working, policy, policies, rules, zones, standalone, ha
 
@@ -28,7 +28,7 @@ In the IBM Cloud, a vSRX is designed to have four different security zones:
 | SL-Public (untagged)     | ge-0/0/1.0 or ae1.0  | reth1.0      |
 | Customer-Private (tagged)| ge-0/0/0.1 or ae0.1  | reth2.1      |
 | Customer-Public (tagged) | ge-0/0/1.1 or ae1.1  | reth3.1      |
-{: caption="Table 1. Security zones" caption-side="bottom"}
+{: caption="Security zones" caption-side="bottom"}
 
 ## Zone policies
 {: #zone-policies}

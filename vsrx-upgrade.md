@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2021-01-08"
+  years: 2017, 2024
+lastupdated: "2024-10-10"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -42,4 +42,4 @@ The upgrade reapplies the license that is currently applied to the nodes. It doe
 | 18.4 | All 10G Deployments | Stand-alone |	[OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) | No |
 | 18.4 | All 10G Deployments | HA |	[OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade)	| **Yes** – If you are running version 18.4 with new architecture, manual (not automated) rollbacks are allowed after the first server completes the OS reload. For more information, see [Rollback options](/docs/vsrx?topic=vsrx-rollback-options)  \n  **No** – If you are running version 18.4 without the new architecture. |
 | 19.4 and newer | All 1G and 10G Deployments | Stand-alone  \n HA | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) | **Yes** – Manual (not automated) rollbacks are allowed after the first server completes the OS reload. For more information, see [Rollback options](/docs/vsrx?topic=vsrx-rollback-options) |
-{: caption="Table 1. Upgrading your vSRX using OS reload" caption-side="bottom"}
+{: caption="Upgrading your vSRX using OS reload" caption-side="bottom"}

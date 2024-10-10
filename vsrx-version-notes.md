@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2021
-lastupdated: "2024-07-22"
+  years: 2017, 2024
+lastupdated: "2024-10-10"
 
 keywords: version, base version, release notes, juniper
 
@@ -33,7 +33,7 @@ You can click the **Version information** link for each entry to get more detail
 | 19.4 | 19.4R2-S1 | 2.0 | Ubuntu 18.04 with KVM | 21 September 2020 | [More information](https://supportportal.juniper.net/s/article/19-4R2-S1-Software-Release-Notification-for-JUNOS-Software-Version-19-4R2-S1?language=en_US){: external} |
 | 18.4 | 18.4R1-S1 | 2.0 | Ubuntu 18.04 with KVM | 8 April 2019 | [More information](https://supportportal.juniper.net/s/article/18-4R1-S1-Software-Release-Notification-for-Junos-Software-Service-Release-version-18-4R1-S1?language=en_US){: external} |
 | 15.1 | 15.1X49 | 2.0 | Ubuntu 16.04 with KVM | 25 October 2018 | [More information](https://www.juniper.net/documentation/product/us/en/junos-os/){: external} |
-{: caption="Table 1. IBM Cloud Juniper vSRX supported versions" caption-side="bottom"}
+{: caption="IBM Cloud Juniper vSRX supported versions" caption-side="bottom"}
 
 It's critical that you review the [Junos OS dates and milestones](https://support.juniper.net/support/eol/software/junos/){: external} to determine whether Juniper still supports your Junos version. If your installed version is approaching its end of support from Juniper, then [Upgrade your vSRX](/docs/vsrx?topic=vsrx-upgrading-the-vsrx) immediately to maintain full support.
 {: important}
