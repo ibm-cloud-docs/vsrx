@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-09-30"
+lastupdated: "2024-10-11"
 
 keywords: checking, readiness, errors
 
@@ -436,3 +436,8 @@ The vSRX add-on license count is not found in the import settings. Contact IBM S
 {: #warning-1184}
 
 A connection timeout error occurred when checking the installed licenses. Contact IBM Support.
+
+## Warning 1185
+{: #warning-1185}
+
+The gateway does not have a valid license, most likely the license for the version has expired. Please upgrade to a new version, 21.3R2-S1 or newer. Contact IBM Support.
