@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-10-11"
+lastupdated: "2024-10-16"
 
 keywords: checking, readiness, errors
 
@@ -391,6 +391,20 @@ The vSRX configuration includes a `security idp sensor-configuration packet-log 
 {: #error-1165}
 
 The vSRX configuration contains a Juniper security policy with keywords dynamic-application any and junos-defaults. Remove the policy or replace junos-defaults with any.
+
+## Error 1167
+{: #error-1167}
+
+The vSRX configuration contains a Juniper `security ike` but does not specify a corresponding `external-interface`. Please modify the configuration and retry.
+
+## Error 1168
+{: #error-1168}
+
+The Ubuntu server is running in rescue mode. Exit rescue mode and retry.
+
+## Error 1169
+{: #error-1169}
+The vSRX configuration contains a security policy that checks the match of unsupported `dynamic-application junos:ICMP-TRACEROUTE`.  Remove the policy line containing `junos:ICMP-TRACEROUTE`.
 
 ## Warning 1176
 {: #warning-1176}
