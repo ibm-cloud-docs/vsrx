@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2023-02-14"
+  years: 2017, 2024
+lastupdated: "2024-10-22"
 
 keywords: reloading, os, upgrading, kvm, ha, stand-alone
 
@@ -40,7 +40,7 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
       GR  GRES monitoring             HW  Hardware monitoring
       IF  Interface monitoring        IP  IP monitoring
       LB  Loopback monitoring         MB  Mbuf monitoring
-      NH  Nexthop monitoring          NP  NPC monitoring              
+      NH  Nexthop monitoring          NP  NPC monitoring
       SP  SPU monitoring              SM  Schedule monitoring
       CF  Config Sync monitoring      RE  Relinquish monitoring
       IS  IRQ storm
@@ -49,19 +49,19 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
     Node   Priority Status               Preempt Manual   Monitor-failures
 
     Redundancy group: 0 , Failover count: 1
-    node0  100      primary              no      no       None           
-    node1  1        secondary            no      no       None           
+    node0  100      primary              no      no       None
+    node1  1        secondary            no      no       None
 
     Redundancy group: 1 , Failover count: 1
-    node0  100      primary              no      no       None           
-    node1  1        secondary            no      no       None           
+    node0  100      primary              no      no       None
+    node1  1        secondary            no      no       None
 
     {primary:node0}
    ```
    {: screen}
 
    Example of an unhealthy cluster with monitor failures:
-   
+
    ```text
      root@asloma-tc11-15-10g-pubpriv-ha1-vsrx-vSRX-Node1> show chassis cluster status
      Monitor Failure codes:
@@ -69,20 +69,20 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
        GR  GRES monitoring             HW  Hardware monitoring
        IF  Interface monitoring        IP  IP monitoring
        LB  Loopback monitoring         MB  Mbuf monitoring
-       NH  Nexthop monitoring          NP  NPC monitoring              
+       NH  Nexthop monitoring          NP  NPC monitoring
        SP  SPU monitoring              SM  Schedule monitoring
        CF  Config Sync monitoring
      Cluster ID: 3
      Node   Priority Status         Preempt Manual   Monitor-failures
-   
+
      Redundancy group: 0 , Failover count: 1
-     node0  0        lost           n/a     n/a      n/a            
-     node1  1        primary        no      no       None           
-   
+     node0  0        lost           n/a     n/a      n/a
+     node1  1        primary        no      no       None
+
      Redundancy group: 1 , Failover count: 1
-     node0  0        lost           n/a     n/a      n/a            
-     node1  0        primary        no      no       CS             
-   
+     node0  0        lost           n/a     n/a      n/a
+     node1  0        primary        no      no       CS
+
      {primary:node1}
    ```
    {: screen}
@@ -93,7 +93,7 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
 
 * The upgrade process does not backup or restore any vSRX certificates local to the virtual machine (VM) being upgraded. The upgrade process deletes the existing VM and creates a new one, which replaces the JunOS file system. For example, a local certificate like `IKE_POLICY_CERT` must be backed up before the upgrade and manually restored after it completes.
 
-```
+```sh
 set security ike policy MY_VPN_IKE_POLICY certificate local-certificate IKE_POLICY_CERT
 ```
 {: pre}

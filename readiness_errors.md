@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-10-16"
+lastupdated: "2024-10-22"
 
 keywords: checking, readiness, errors
 
@@ -404,6 +404,7 @@ The Ubuntu server is running in rescue mode. Exit rescue mode and retry.
 
 ## Error 1169
 {: #error-1169}
+
 The vSRX configuration contains a security policy that checks the match of unsupported `dynamic-application junos:ICMP-TRACEROUTE`.  Remove the policy line containing `junos:ICMP-TRACEROUTE`.
 
 ## Warning 1176

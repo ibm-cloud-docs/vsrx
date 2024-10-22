@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-08-19"
+lastupdated: "2024-10-22"
 
 keywords: vsrx, access
 
@@ -21,7 +21,7 @@ The public interfaces of the Ubuntu hypervisor and the vSRX do not allow SSH acc
 ## Private Interfaces
 {: #vsrx-private-interfaces}
 
-The vSRX Gateway Overview page provides details on the private interfaces of the Ubuntu hypervisor (found in the Hardware pane, under Private IP) and the vSRX (found in the vSRX pane, under Private IP). By default, SSH, Ping (ICMP), and the vSRX web management interface (8443) are enabled on these interfaces. To access these interfaces you must have network connectivity to the private network. 
+The vSRX Gateway Overview page provides details on the private interfaces of the Ubuntu hypervisor (found in the Hardware pane, under Private IP) and the vSRX (found in the vSRX pane, under Private IP). By default, SSH, Ping (ICMP), and the vSRX web management interface (8443) are enabled on these interfaces. To access these interfaces you must have network connectivity to the private network.
 
 The following sections detail ways you can gain access.
 
@@ -30,7 +30,7 @@ The following sections detail ways you can gain access.
 
 IBM Cloud Classic supports Virtual Private Networking (VPN) access to the private network. This can be used to access the private interfaces of the host and the vSRX. For more information, refer to [Getting started with IBM Cloud Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started). Throughput on this shared VPN solution is limited to 1Mbps and is not recommended for large file transfers. This is the most widely used and simplest method for accessing the IBM Cloud Classic private network.
 
-If the shared customer VPN solution does not meet your requirements, you can also build Remote Access VPNs using [Juniper Secure Connect](https://cloud.ibm.com/media/docs/downloads/vSRX/IBM-Cloud-Secure-Connect.pdf) on the vSRX itself. There are also similar solutions through other gateway appliances in your IBM Cloud account, as one of the primary functions of a firewall is to deploy VPN solutions for secure access. Additionally, can build and manage a classic Baremetal or VSI installed with OpenVPN, WireGuard, or other VPN software. This provides an encrypted public access point into the IBM Cloud Classic private network. These options require [private secondary subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) as the address pools. 
+If the shared customer VPN solution does not meet your requirements, you can also build Remote Access VPNs using [Juniper Secure Connect](https://cloud.ibm.com/media/docs/downloads/vSRX/IBM-Cloud-Secure-Connect.pdf) on the vSRX itself. There are also similar solutions through other gateway appliances in your IBM Cloud account, as one of the primary functions of a firewall is to deploy VPN solutions for secure access. Additionally, can build and manage a classic Baremetal or VSI installed with OpenVPN, WireGuard, or other VPN software. This provides an encrypted public access point into the IBM Cloud Classic private network. These options require [private secondary subnets](/docs/subnets?topic=subnets-about-subnets-and-ips#static-subnets) as the address pools.
 
 The process for building a VPN using a standard server is not currently documented.
 {: note}
@@ -45,37 +45,37 @@ Once you enable VLAN spanning or VRF, IBM Cloud resources (such as virtual serve
 ## Using the Ubuntu hosts local console
 {: #vsrx-ubuntu-console}
 
-The vSRX runs as a Virtual Machine (VM) on the bare-metal Ubuntu host. You can access the VM using the local console of the Ubuntu host. This requires access to the Ubuntu host, which, by default, has SSH enabled only on the private network. 
+The vSRX runs as a Virtual Machine (VM) on the bare-metal Ubuntu host. You can access the VM using the local console of the Ubuntu host. This requires access to the Ubuntu host, which, by default, has SSH enabled only on the private network.
 
 To access the VM using the local console of the Ubuntu host:
 
-1) Find the VM Name or ID: 
+1) Find the VM Name or ID:
 
    `virsh list --all`.
-   
-1) Use the ID to dump the configuration in XML format and search for the console port: 
+
+1) Use the ID to dump the configuration in XML format and search for the console port:
 
    `virsh dumpxml <id> | grep service`
 
    For example:
 
-   ```
+   ```sh
    :~# virsh dumpxml 2 | grep service
       <source mode='bind' host='127.0.0.1' service='8624' tls='no'/>
-      <source mode='bind' host='127.0.0.1' service='8624' tls='no'/>  
+      <source mode='bind' host='127.0.0.1' service='8624' tls='no'/>
    ```
    {: pre}
-   
+
    You can also use `ss -tulip | grep qemu` to find the serial port number.
-  
+
 1) Use telnet and the port number (from the example) to access the VM:
 
    `telnet localhost 8624`
-  
+
 ## Enable j-web on public and private interfaces
 {: #vsrx-enable-public}
 
-While it is recommended to keep your default settings so as to disable the public interfaces, it is possible to re-enable them if needed. The vSRX web management interface can be enabled on public and private interfaces by activating web-management. 
+While it is recommended to keep your default settings so as to disable the public interfaces, it is possible to re-enable them if needed. The vSRX web management interface can be enabled on public and private interfaces by activating web-management.
 
 Web-management is deactivated by default starting in Junos version 23.2R2-S2:
 {: tip}
@@ -87,7 +87,7 @@ commit
 ```
 {: codeblock}
 
-To lock J-web after activating it, set the web-management HTTPS interface as the private interface only. You can also customize the PROTECT-IN filter on loopback to only allow access from specific source IP addresses. To revert to the default of the completely deactivated J-web, you can run: 
+To lock J-web after activating it, set the web-management HTTPS interface as the private interface only. You can also customize the PROTECT-IN filter on loopback to only allow access from specific source IP addresses. To revert to the default of the completely deactivated J-web, you can run:
 
 `deactivate system services web-management`
 
