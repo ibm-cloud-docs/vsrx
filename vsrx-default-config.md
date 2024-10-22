@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2020-06-12"
+  years: 2017, 2024
+lastupdated: "2024-10-10"
 
 keywords: understanding, default, configuration, standalone, ha
 
@@ -31,7 +31,7 @@ Two redundancy groups are configured. The following table illustrates these redu
 | :---          |    :---         |
 | redundancy-group 0   |  Redundancy group for control plane |
 | redundancy-group 1   |  Redundancy group for data plane |
-{: caption="Table 1. Redundancy groups" caption-side="bottom"}
+{: caption="Redundancy groups" caption-side="bottom"}
 
 Priority in the redundancy group decides which vSRX node is active. By default, node 0 is active for both control plane and data plane.
 
@@ -362,7 +362,7 @@ The following table illustrates network interface definitions for the previous c
 | ae1.0         |   Aggregated Ethernet interface |
 | fxp0          |   Management interface        |
 | lo0           |   loopback interface          |
-{: caption="Table 1. Network interface definitions" caption-side="bottom"}
+{: caption="Network interface definitions" caption-side="bottom"}
 
 ## Default Configuration of a sample 10G HA SR-IOV Public and Private vSRX Gateway
 {: #default-configuration-of-a-sample-highly-available-ha-vsrx-gateway}
