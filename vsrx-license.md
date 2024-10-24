@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2024-06-10"
+  years: 2017, 2024
+lastupdated: "2024-10-24"
 
 keywords: license, viewing, changing
 
@@ -30,7 +30,7 @@ For more information on these licenses, refer to [Choosing a vSRX license](/docs
 To view your current licenses, follow these steps:
 
 1. From your browser, open the [IBM Cloud console](/login){: external} and log in to your account.
-1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
 1. Choose **Network > Gateway Appliances**.
 1. Click the Gateway Appliance Name to access the Gateway Appliance Details page.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2022-04-08"
+  years: 2017, 2024
+lastupdated: "2024-10-24"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -58,7 +58,7 @@ To reload your OS, follow these steps:
 
 1. From your browser, open [IBM Cloud console](/login){: external} and log in to your account.
 2. Run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness#vsrx-readiness) for “OS Reload” and address any errors that are found.
-3. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+3. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
 4. Choose **Network > Gateway Appliances**.
 5. Click the server that you want to reload.
 6. Click the server name in the Hardware section.

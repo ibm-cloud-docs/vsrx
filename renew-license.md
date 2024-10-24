@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-10-03"
+lastupdated: "2024-10-24"
 
 keywords:
 
@@ -29,7 +29,7 @@ When using OS Reload to upgrade the OS version, the license is also upgraded. If
 To find your current license expiration date, follow these steps:
 
 1. Open the [{{site.data.keyword.cloud_notm}} console](https://{DomainName}/infrastructure){: external} and log in to your account.
-2. Select the Menu icon ![Menu icon](../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
 3. Choose **Network > Gateway Appliances**.
 4. Click the gateway appliance name to access the gateway appliance details page. You can find the license expiration date in the Details section.
 
@@ -42,7 +42,7 @@ To view your current license expiration from the vSRX CLI, run `show system lice
 To renew your license, first run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness) for “License update/renew”. After you address any errors that are found, follow these steps:
 
 1. Open the [{{site.data.keyword.cloud_notm}} console](https://{DomainName}/infrastructure){: external} and log in to your account.
-1. Select the Menu icon ![Menu icon](../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
 1. Choose **Network > Gateway Appliances**.
 1. Click the gateway appliance name to access the gateway appliance details page.
 1. Click **Renew license**.
