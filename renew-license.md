@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-10-24"
+lastupdated: "2024-11-06"
 
 keywords:
 
@@ -33,7 +33,7 @@ To find your current license expiration date, follow these steps:
 3. Choose **Network > Gateway Appliances**.
 4. Click the gateway appliance name to access the gateway appliance details page. You can find the license expiration date in the Details section.
 
-To view your current license expiration from the vSRX CLI, run `show system license`. You should see the 2024 expiration date for each of the license features on each node.
+To view your current license expiration from the vSRX CLI, run `show system license`. You should see the 2025 expiration date for each of the license features on each node.
 {: tip}
 
 ## Renewing your license
