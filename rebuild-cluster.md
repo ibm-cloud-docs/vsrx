@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2019-11-14"
+  years: 2017, 2024
+lastupdated: "2024-10-24"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -37,7 +37,7 @@ For a successful rebuild of a cluster on an HA vSRX, ensure the following:
 To rebuild one of your HA vSRX clusters, follow these steps:
 
 1. From your browser, open the [IBM Cloud console](/login){: external} and log into your account.
-2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
 3. Choose **Network > Gateway Appliances**.
 4. Click the server you want to reload.
 5. Click the server name in the Hardware section.

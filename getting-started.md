@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-10-10"
+lastupdated: "2024-10-24"
 
 keywords: ordering, gateway, appliance, vsrx, license
 
@@ -55,7 +55,7 @@ You can order your {{site.data.keyword.vsrx_full}} by following these steps:
 
 1. From your browser, open the Gateway Appliances page in the [IBM Cloud catalog](/gen1/infrastructure/provision/gateway){: external} and log in to your account.
 
-   You can also get here by logging in to the [IBM Cloud UI console](/login){: external} and selecting **Classic Infrastructure > Network > Gateway appliance**. Alternatively, from the [IBM Cloud catalog](/catalog){: external}, select the **Network** category then choose the **Gateway Appliance** tile.
+   You can also get here by logging in to the [IBM Cloud UI console](/login){: external} and selecting **Infrastructure > Classic Infrastructure**. Then click **Network > Gateway Appliances**. Alternatively, from the [IBM Cloud catalog](/catalog){: external}, select the **Networking** category then choose the **Gateway Appliance** tile.
 
 2. Choose **Juniper vSRX (up to 1 Gbps)** or **Juniper vSRX (up to 10 Gbps)** under **Gateway Vendor**.
 

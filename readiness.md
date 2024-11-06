@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-04-01"
+  years: 2017, 2024
+lastupdated: "2024-10-24"
 
 keywords: checking, readiness
 
@@ -26,7 +26,7 @@ After you run the readiness check, errors alert you to any necessary actions tha
 To run a readiness check, follow these steps:
 
 1. From your browser, open the [IBM Cloud console](/login){: external} and log in to your account.
-2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
 3. Choose **Network > Gateway Appliances**.
 4. Click the name of the vSRX you want to run a readiness check on.
 5. Find the Readiness Check module on the vSRX details page.
