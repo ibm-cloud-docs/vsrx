@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-11-06"
+lastupdated: "2024-12-03"
 
 keywords:
 
@@ -15,13 +15,16 @@ subcollection: vsrx
 # Renewing a vSRX license
 {: #license-renewal}
 
-The vSRX standard and CSB licenses for both 1G and 10G that were included with deployments before mid-May 2021 have an expiration date in 2021. After this license expires, updates for some new vSRX features might not take effect. A newer license with an expiration date in 2025 is now available, and you can renew your gateway license to obtain it. If you are using a High Availability vSRX, renewing your license automatically modifies the license on both vSRX nodes. You can find the current expiration date on the gateway appliance details page. Refer to the following instructions on viewing your license expiration date for more information.
+The vSRX standard and CSB licenses for both 1G and 10G that were included with deployments before mid-May 2021 have an expiration date in 2021. If the standard license on your vSRX expires, the standard features listed on [Getting started with IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started) will continue to function. A newer standard license with an expiration date of 2025 October is now available. You can renew your gateway license to obtain it. If you are using a High Availability vSRX, renewing your license automatically modifies the license on both vSRX nodes. You can find the current expiration date on the gateway appliance details page. Please make sure to keep your standard license at the latest available level, especially if you also utilize subscription services (such as features available through the CSB license, as the expiration of the standard license will affect services covered by the CSB license). 
+
+Refer to the instructions on this page to learn more about viewing your license expiration date.
+{: tip}
 
 To update to the latest license, your vSRX must be version 21.3 or later. If your vSRX version is below 21.3, you must update the vSRX version using the [OS reload](/docs/vsrx?topic=vsrx-reloading-the-os) process. The license will be automatically renewed during the version upgrade.
 {: important}
 
 When using OS Reload to upgrade the OS version, the license is also upgraded. If you are, instead, using the action to reload the same OS version as before, the license is not updated.
-{: tip}
+{: note}
 
 ## Viewing your license expiration date
 {: #license-view-steps}
