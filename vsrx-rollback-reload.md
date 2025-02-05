@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2020-09-16"
+  years: 2017, 2025
+lastupdated: "2025-02-05"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -22,17 +22,39 @@ In the high availability environment that is upgrading from vSRX version, a roll
 Be aware that a traffic disruption occurs while waiting for the secondary node to power on and for the traffic to failover to this node.
 {: important}
 
-1. Power off the vSRX on the node being rolled-back (primary node) by using the command `virsh shutdown <domain>`.
+1. SSH to the bare-metal server hosting the vSRX node that is being rolled-back (the current primary node). Power off the vSRX on the node and disable autostart to avoid the VM starting up if the host reboots.
 
-   Wait for the node to be fully powered off before proceeding.
+   This would cause a "split brain cluster" and most likely an outage.
+   {: important}
 
-1. Power up the vSRX on the node that was not rolled-back using the command `virsh start <domain>`. This returns the primary node back to the original vSRX version.
+   Use the following commands:
 
-   Before you restore the original vSRX image, rename the vSRX qcow2 file in `/var/lib/libvirt/images/vSRXvM4/vSRX_Image.qcow2.backup` to `/var/lib/libvirt/images/vSRXvM2/vSRX_Image.qcow2` so that `virsh` detects the original image.
-   {: tip}
+   ```
+   virsh shutdown vSRXvM3
+   virsh autostart vSRXvM3 --disable
+   ```
 
-1.	Run the [OS reload readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness), if necessary, and resolve any issues.
+   Wait for the node to completely power off before proceeding.
 
-1.	Perform an OS reload on the host that you want to rollback to return it to the original vSRX version.
+2. SSH to the bare-metal server hosting the vSRX node that was not rolled-back. Power on the vSRX. This returns the primary node back to the original vSRX version. Use the following commands:
 
-The cluster is now running with its original configuration.
+```
+# Restore the original qcow2 file.
+cd /var/lib/libvirt/images/vSRXvM3
+cp vSRX_Image.qcow2.backup vSRX_Image.qcow2
+
+# Start the VM
+virsh start vSRXvM3
+
+# Enable autostart
+virsh autostart vSRXvM3
+```
+
+3.	Run the [OS reload readiness check](/docs/vsrx?topic=vsrx-vsrx-readiness), if necessary, and resolve any issues.
+
+4.	Perform an OS reload on the host that you want rollback and return to the original vSRX version. Do not run an OS Reload on the current primary node.
+
+  	If you followed the steps above the node being rolled back should have a vSRX that is powered off and not a part of the cluster. This is the node that you should run the OS Reload on. Doing so allows both nodes in the cluster to run on the same vSRX version, which is required for a functioning vSRX cluster.
+  	{: note}
+
+Once the OS Reload completes, the cluster will run using its original configuration.
