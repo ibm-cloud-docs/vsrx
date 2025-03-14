@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2019-11-14"
+  years: 2017, 2025
+lastupdated: "2025-03-14"
 
 keywords:
 
@@ -28,3 +28,4 @@ vSRX Documentation  | Description
 [On-box logging and reporting CSB statistics in J-web](https://public.dhe.ibm.com/cloud/bluemix/network/vsrx/on-box-logging-reporting-11320.pdf){: external} | This guide describes how to enable on-box security event reporting using the `set security log report` CLI command.
 [Juniper searchable IPS signature database](https://threatlabs.juniper.net/signatures/search/#/list/ips?page_number=1&page_size=20){: external} | Juniper's searchable database of IPS and application signatures to help protect your environment. These signature pages describe the vulnerabilities covered, their CVE numbers, CVSS scores, and Juniper's recommendation for deployment.
 [Juniper Secure Connect: Configuration Guide for Classic Infrastructure on IBM Cloud](https://cloud.ibm.com/media/docs/downloads/vSRX/IBM-Cloud-Secure-Connect.pdf)){: external} | Juniper Secure Connect is a client-based SSL-VPN application that allows you to securely connect and access protected resources on your network.
+{: caption="Supplemental vSRX documentation" caption-side="top"}
