@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2019-11-14"
+  years: 2017, 2025
+lastupdated: "2025-03-14"
 
 keywords: ssh, allowing, pinging, subnet, public
 
@@ -36,3 +36,4 @@ Task  | Description
 [Create a new interface, zone, and address-book subnet](/docs/vsrx?topic=vsrx-creating-the-new-interface-zone-and-address-book-subnet) | Create the tagged interface unit and security zone for the new VLAN.
 [Creating your new traffic flows](/docs/vsrx?topic=vsrx-creating-your-new-traffic-flows) | Create the new traffic flows to allow inbound pinging and SSH.
 [Confirm the output and commit the changes](/docs/vsrx?topic=vsrx-confirming-the-output-and-commiting-the-changes) | Check the output to confirm what will be committed to the active configuration.
+{: caption="Configuring the service" caption-side="top"}
