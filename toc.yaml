@@ -87,7 +87,7 @@ toc:
     - navgroup:
         id: reference
         topics:
-        - include: ../cloud-infrastructure/ips.md
+        - include: ../infrastructure-hub/ips.md
         - vsrx-version-notes.md
     - navgroup:
         id: help
