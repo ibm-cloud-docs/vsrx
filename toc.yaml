@@ -21,7 +21,7 @@ toc:
            topics:
            - link:
                label: "What is network security?"
-               href: https://www.ibm.com/topics/networking
+               href: https://www.ibm.com/think/topics/networking
        - include: ../gateway-appliance/ga-raci.md
        - include: ../gateway-appliance/managing-permissions-and-device-access.md
        - release-notes.md
