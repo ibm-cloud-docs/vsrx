@@ -80,17 +80,17 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
       request system license delete <license identifier>
       ```
 
-   ```text
-    > show system license
-  License usage:
-                                 Licensed     Licensed    Licensed
-                                  Feature      Feature     Feature
-  Feature name                       used    installed      needed    Expiry
-  Virtual Appliance                     1            1           0    2025-10-01 00:00:00 UTC
-  remote-access-ipsec-vpn-client        0            2           0    permanent
-  remote-access-juniper-std             0            2           0    permanent
-  VCPU Scale                            6            6           0    2025-10-01 00:00:00 UTC
-   ```
+    ```text
+   >show system license
+   License usage:
+                                  Licensed     Licensed    Licensed
+                                   Feature      Feature     Feature
+   Feature name                       used    installed      needed    Expiry
+   Virtual Appliance                     1            1           0    2025-10-01 00:00:00 UTC
+   remote-access-ipsec-vpn-client        0            2           0    permanent
+   remote-access-juniper-std             0            2           0    permanent
+   VCPU Scale                            6            6           0    2025-10-01 00:00:00 UTC
+    ```
 
-The `remote-access-ipsec-vpn-client` and `remote-access-juniper-std` are two different access licenses. Your license comes with two client connections at no extra cost. If you need more users to connect at the same time, you can purchase more Juniper Connect licenses. This increases the count for `remote-access-juniper-std`, which is the license count for Juniper connect. The other license `remote-access-ipsec-vpn-client` is for third-party IPsec VPN clients, and any connections that are made by those clients count against this license.
-{:note: .note}
+   The `remote-access-ipsec-vpn-client` and `remote-access-juniper-std` are two different access licenses. Your license comes with two client connections at no extra cost. If you need more users to connect at the same time, you can purchase more Juniper Connect licenses. This increases the count for `remote-access-juniper-std`, which is the license count for Juniper connect. The other license `remote-access-ipsec-vpn-client` is for third-party IPsec VPN clients, and any connections that are made by those clients count against this license.
+   {:note: .note}
