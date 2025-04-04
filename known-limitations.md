@@ -82,7 +82,7 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
 
    ```text
     > show system license
-  License usage:s
+  License usage:
                                  Licensed     Licensed    Licensed
                                   Feature      Feature     Feature
   Feature name                       used    installed      needed    Expiry
