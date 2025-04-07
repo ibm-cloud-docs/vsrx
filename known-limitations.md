@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-03-31"
+lastupdated: "2025-04-07"
 
 keywords:
 
@@ -79,3 +79,4 @@ There are some limitations to be aware of when using {{site.data.keyword.vsrx_fu
       ```sh
       request system license delete <license identifier>
       ```
+      
