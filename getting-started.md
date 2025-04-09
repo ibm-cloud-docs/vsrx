@@ -13,7 +13,7 @@ subcollection: vsrx
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started with IBM Cloud Juniper vSRX
-{: #getting-started}
+{: #getting-started-vsrx}
 
 {{site.data.keyword.vsrx_full}} allows you to route private and public network traffic on a per VLAN basis, through a full-featured, enterprise-level firewall that is powered by Junos OS software features. This gives you the ability to manage your VLANs, interfaces, subnets and routing as well as create security policies and VPNs for secure access to and between your cloud services.
 {: shortdesc}
@@ -49,7 +49,7 @@ You can specify your license type when you order your vSRX, as well as change th
 {: note}
 
 ## Ordering a vSRX
-{: #ordering-with-a-linked-account}
+{: #ordering-vsrx-with-a-linked-account}
 
 You can order your {{site.data.keyword.vsrx_full}} by following these steps:
 
