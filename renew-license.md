@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-12-03"
+  years: 2017, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: vsrx
 # Renewing a vSRX license
 {: #license-renewal}
 
-The vSRX standard and CSB licenses for both 1G and 10G that were included with deployments before mid-May 2021 have an expiration date in 2021. If the standard license on your vSRX expires, the standard features listed on [Getting started with IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started) will continue to function. A newer standard license with an expiration date of 2025 October is now available. You can renew your gateway license to obtain it. If you are using a High Availability vSRX, renewing your license automatically modifies the license on both vSRX nodes. You can find the current expiration date on the gateway appliance details page. Please make sure to keep your standard license at the latest available level, especially if you also utilize subscription services (such as features available through the CSB license, as the expiration of the standard license will affect services covered by the CSB license). 
+The vSRX standard and CSB licenses for both 1G and 10G that were included with deployments before mid-May 2021 have an expiration date in 2021. If the standard license on your vSRX expires, the standard features listed on [Getting started with IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started-vsrx) will continue to function. A newer standard license with an expiration date of 2025 October is now available. You can renew your gateway license to obtain it. If you are using a High Availability vSRX, renewing your license automatically modifies the license on both vSRX nodes. You can find the current expiration date on the gateway appliance details page. Please make sure to keep your standard license at the latest available level, especially if you also utilize subscription services (such as features available through the CSB license, as the expiration of the standard license will affect services covered by the CSB license).
 
 Refer to the instructions on this page to learn more about viewing your license expiration date.
 {: tip}
