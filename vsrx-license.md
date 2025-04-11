@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-11"
 
 keywords: license, viewing, changing
 
@@ -24,7 +24,7 @@ The vSRX has two available required licenses (you must select one or the other w
 
 The only optional license for the vSRX is "Remote access VPN".
 
-For more information on these licenses, refer to [Choosing a vSRX license](/docs/vsrx?topic=vsrx-getting-started#choosing-vsrx-license).
+For more information on these licenses, refer to [Choosing a vSRX license](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license).
 {: tip}
 
 To view your current licenses, follow these steps:

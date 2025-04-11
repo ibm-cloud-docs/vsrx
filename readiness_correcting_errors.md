@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-11"
 
 keywords: readiness errors
 
@@ -278,7 +278,7 @@ The vSRX version running on the Gateway is not certified on IBM Cloud and is uns
 ## Correcting warning 1180
 {: #correcting-1180}
 
-The vSRX license that is found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current license with the version that is currently listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started#choosing-vsrx-license). If the license was procured outside of IBM Cloud, work with that procurement source for support. Otherwise, it is strongly recommended that you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
+The vSRX license that is found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current license with the version that is currently listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license). If the license was procured outside of IBM Cloud, work with that procurement source for support. Otherwise, it is strongly recommended that you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
 
 ## Correcting warning 1181
 {: #correcting-1181}
