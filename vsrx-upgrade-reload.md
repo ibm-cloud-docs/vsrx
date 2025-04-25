@@ -60,4 +60,4 @@ For a High Availability environment, the upgrade restores the previous vSRX conf
 
 For a stand-alone environment, the upgrade does not restore the previous configuration, so you must export and import your configuration. For more information, see [Importing and exporting a vSRX configuration](/docs/vsrx?topic=vsrx-importing-exporting-vsrx-configuration).
 
-Also, when you migrate from an older version, such as 15.1, you might notice changes in interface mappings. This process requires some modifications to the vSRX configuration after the import. for more information, see [Migrating 1G vSRX stand-alone configurations](/docs/vsrx?topic=vsrx-migrating-config#migrating-1g-standalone).
+Also, when you migrate from an older version, such as 15.1, you might notice changes in interface mappings. This process requires some modifications to the vSRX configuration after the import. For more information, see [Migrating 1G vSRX stand-alone configurations](/docs/vsrx?topic=vsrx-migrating-config#migrating-1g-standalone).
