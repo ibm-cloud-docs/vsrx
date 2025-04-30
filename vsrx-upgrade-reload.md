@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-04-25"
+lastupdated: "2025-04-30"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -37,7 +37,7 @@ To upgrade a stand-alone vSRX deployment, follow these steps:
 ## Upgrading a High-Availabity vSRX deployment
 {: #upgrading-ha-vsrx}
 
-The HA vSRX upgrade causes minimal downtime, limited to failover periods from primary to backup. Your previous configurations are automatically backed up and restored, but it's critical to keep offsite backups for added security. Plan 2 to 5 hours for each node upgrade, and set aside 8 to 10 hours to complete the entire cluster upgrade.
+The HA vSRX upgrade causes minimal downtime, limited to failover periods from primary to backup. Your previous configurations are automatically preserved and restored, but it's critical to keep offsite backups for added security. Plan 2 to 5 hours for each node upgrade, and set aside 8 to 10 hours to complete the entire cluster upgrade.
 {: important}
 
 To upgrade an HA vSRX deployment, follow these steps:
