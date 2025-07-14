@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-04-11"
+lastupdated: "2025-07-14"
 
 keywords: readiness errors
 
@@ -21,17 +21,17 @@ Readiness errors and warnings can inhibit your ability to successfully complete 
 ## Correcting connectivity errors
 {: #connnectivity-errors}
 
-There are two categories of connectivity errors that you might encounter when you conduct readiness checks:
+You might encounter the following two categories of connectivity errors when you conduct readiness checks:
 
 * Host (Ubuntu) SSH connectivity errors
 * Gateway (vSRX) SSH connectivity errors
 
-Many of these errors result from the fact that the gateway actions being checked require root SSH access to the private IP address for either the host (Ubuntu) OS, or the gateway (vSRX). If an SSH connectivity check fails, then the action cannot proceed.
+Many of these errors occur because the checks require root SSH access to the private IP address for either the host OS (Ubuntu), or the vSRX gateway. If an SSH connectivity check fails, then the action cannot proceed.
 
-   For more information about establishing an SSH session, see [Accessing the device using SSH](/docs/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics#accessing-the-device-using-ssh). Note that for step 3, the example that is given is with the `admin` user. For a readiness check, substitute the `root` user for both the vSRX and the Hardware (host). Also, make sure that you use your private IP with this procedure, not your public IP.
+   For more information about establishing an SSH session, see [Accessing the device by using SSH](/docs/vsrx?topic=vsrx-performing-ibm-cloud-juniper-vsrx-basics#accessing-the-device-using-ssh). Keep in mind that for step 3, the example that is given is with the `admin` user. For a readiness check, substitute the `root` user for both the vSRX and the Hardware (host). Also, make sure that you use your private IP with this procedure, not your public IP.
    {: note}
 
-To validate connectivity, open an SSH session to either the Ubuntu host's or vSRX's private IP using the root credentials that are listed in the **Hardware** section (for an Ubuntu host) or the **vSRX** section (for the gateway) of the [Gateway Appliance Details](/docs/gateway-appliance?topic=gateway-appliance-viewing-gateway-appliance-details) page. Ensure that the SSH session can be established.
+To validate connectivity, open an SSH session to either the Ubuntu host's or vSRX's private IP by using the root credentials that are listed in the **Hardware** section (for an Ubuntu host) or the **vSRX** section (for the gateway) of the [Gateway Appliance Details](/docs/gateway-appliance?topic=gateway-appliance-viewing-gateway-appliance-details) page. Ensure that the SSH session can be established.
 
 If the session cannot be established, check the following potential issues.
 
@@ -54,13 +54,15 @@ For gateway (vSRX) SSH connectivity errors:
 ## Correcting error 1119
 {: #correcting-1119}
 
-The vSRX may have a configuration that is blocking local console access through telnet. Check for the following configuration and remove it before retrying the precheck operation:
+The vSRX might have a configuration that blocks local console access through telnet. Check for the following configuration and remove it before you retry the precheck operation:
 
 `set system ports console disable`
 `set system ports console insecure`
 
-Other issues may include an incorrect vSRX password.
-{: tip}
+Other issues might include an incorrect vSRX password.
+
+Sometimes, the readiness check error 1119 might occur even when the vSRX configuration appears to be valid and the expected console settings (set system ports console disable or insecure) aren't configured. This issue can arise due to an incomplete or improperly configured `/etc/hosts` file on the Ubuntu host machine, which might prevent successful resolution of localhost during the telnet test. Make sure that localhost is explicitly mapped to `127.0.0.1`. A missing or incorrect mapping can prevent the readiness script from connecting to the vSRX console port.
+{: note}
 
 ## Correcting error 1124
 {: #correcting-1124}
@@ -100,7 +102,7 @@ set interfaces reth2 unit 2058 vlan-id 2058
 ## Correcting error 1125
 {: #correcting-1125}
 
-vSRX 18.4R1-S1 introduced an incompatibility that allowed the syslog configuration to contain both the `structure-data` and `explicit-priority` labels. In versions 19.4R2-S3 and later, this is no longer allowed.
+vSRX 18.4R1-S1 introduced an incompatibility that allowed the syslog configuration to contain both the `structure-data` and `explicit-priority` labels. In versions 19.4R2-S3 and later, these labels are no longer allowed.
 
 For example, the following syslog configuration contains both labels (`set system syslog file messages structured-data` and `set system syslog file default-log-messages explicit-priority`).
 
@@ -141,7 +143,7 @@ To fix this issue, remove one of the syslog labels from the configuration and re
 ## Correcting unsupported vSRX configuration commands
 {: #correcting-unsupported-configuration}
 
-The Juniper vSRX contains undocumented, or hidden, CLI commands. The vSRX configuration does not support some of these commands, even though, in some releases, they can be committed. Sometimes the behavior can unexpectedly change between release versions. The following information details some known unsupported configuration commands when you upgrade from an older vSRX version. It is critical that you remove unsupported, or hidden, commands from the vSRX configuration before upgrading your version. Do this even with commands that are not detected by the Readiness check.
+The Juniper vSRX contains undocumented, or hidden, CLI commands. The vSRX configuration does not support some of these commands, even though in some releases, they can be committed. Sometimes the behavior can unexpectedly change between release versions. The following information details some known unsupported configuration commands when you upgrade from an older vSRX version. It is critical that you remove unsupported, or hidden, commands from the vSRX configuration before you upgrade your version. Do this process even with commands that are not detected by the Readiness check.
 
 ## Correcting error 1145
 {: #correcting-1145}
@@ -235,7 +237,7 @@ This scenario causes problems when you upgrade from a pre-20.4R2-S2 version to 2
 ### Command `set security datapath-debug..`
 {: #set-security-datapath-debug}
 
-`set security datapath-debug` configuration commands are known to cause errors when upgrading. Remove all `datapath-debug` commands from the `config` and retry the readiness check. For example, remove commands like these:
+`set security datapath-debug` configuration commands are known to cause errors when you upgrade. Remove all `datapath-debug` commands from the `config` and retry the readiness check. For example, remove commands like these:
 
 ```text
 set security datapath-debug capture-file pcap001
@@ -251,12 +253,12 @@ set security datapath-debug maximum-capture-size 1500
 
 A VPN configuration with `establish-tunnels` not set to `immediately` was detected. After an upgrade, the IKE might not be immediately active depending on negotiations with the remote peer gateway, and whether data traffic is actively flowing. Without `establish-tunnels immediately`, the tunnel is established with `on-traffic`. With the `establish-tunnels immediately` statement, the tunnel is established immediately when the configuration is committed. However, `establish-tunnels immediately` might trigger an undesirable outcome when configured on both ends of the tunnel.
 
-For more information, see [(SRX) IPsec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder](https://supportportal.juniper.net/s/article/SRX-IPSec-comes-UP-when-SRX-A-is-the-Initiator-but-fails-when-SRX-A-becomes-the-responder?language=en_US){: external} in the Juniper Knowledge Base. Consult [vpn (Security)](https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/statement/security-edit-vpn.html){: external} for more details on these settings.
+For more information, see [(SRX) IPsec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder](https://supportportal.juniper.net/s/article/SRX-IPSec-comes-UP-when-SRX-A-is-the-Initiator-but-fails-when-SRX-A-becomes-the-responder?language=en_US){: external} in the Juniper Knowledge Base. See [VPN (Security)](https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/statement/security-edit-vpn.html){: external} for more details on these settings.
 
 ## Correcting warning 1177
 {: #correcting-1177}
 
-One or more security zone policy rules with the `dynamic-application any` configuration was detected. If the vSRX is not installed with the Content Security Bundle (CSB) license and application signature database, then this configuration might cause traffic disruption due to changes in newer vSRX releases, such as 19.4R2-S3.
+One or more security zone policy rules with the `dynamic-application any` configuration were detected. If the vSRX is not installed with the Content Security Bundle (CSB) license and application signature database, then this configuration might cause traffic disruption due to changes in newer vSRX releases, such as 19.4R2-S3.
 
 For example, the following security policy configuration contains the `dynamic-application any` label:
 
@@ -273,12 +275,12 @@ If you are using a similar configuration, it is recommended that you either inst
 ## Correcting warning 1179
 {: #correcting-1179}
 
-The vSRX version running on the Gateway is not certified on IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version that is currently listed on the Gateway Details page. Because the vSRX version is not certified on IBM Cloud, it is recommended you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to the certified version found here: [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
+The vSRX version that runs on the Gateway is not certified on IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster overwrites the current unsupported vSRX version with the version that is listed on the Gateway Details page. Because the vSRX version is not certified on IBM Cloud, it is recommended you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to the certified version found here: [IBM Cloud Juniper vSRX supported versions](/docs/vsrx?topic=vsrx-vsrx-versions).
 
 ## Correcting warning 1180
 {: #correcting-1180}
 
-The vSRX license that is found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current license with the version that is currently listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license). If the license was procured outside of IBM Cloud, work with that procurement source for support. Otherwise, it is strongly recommended that you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
+The vSRX license that is found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster overwrites the current license with the version that is listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license). If the license was procured outside of IBM Cloud, work with that procurement source for support. Otherwise, it is strongly recommended that you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
 
 ## Correcting warning 1181
 {: #correcting-1181}
