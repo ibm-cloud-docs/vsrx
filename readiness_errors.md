@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-10-22"
+  years: 2017, 2025
+lastupdated: "2025-07-17"
 
 keywords: checking, readiness, errors
 
@@ -20,7 +20,7 @@ Readiness check warnings and errors can occur for any of the three readiness che
 ## Error 1000
 {: #error-1000}
 
-An OS reload is already running on a different node in the HA cluster. The other node's OS reload must be completed before running a second OS reload.
+An OS reload is already running on a different node in the HA cluster. The other node's OS reload must be completed before you run a second OS reload.
 
 ## Error 1002
 {: #error-1002}
@@ -40,22 +40,22 @@ The root user credentials for the host are not found.
 ## Error 1005
 {: #error-1005}
 
-The host SSH console connection was not created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection was not created. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1007
 {: #error-1007}
 
-The host SSH console connection was not created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console connection was not created. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1008
 {: #error-1008}
 
-The host SSH console cannot process the command. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host SSH console cannot process the command. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1009
 {: #error-1009}
 
-The host has an invalid IP address, or is blocked by a firewall. SSH failed. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host has an invalid IP address, or is blocked by a firewall. SSH failed. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1011
 {: #error-1011}
@@ -65,7 +65,7 @@ The root user's credentials for the gateway were not found.
 ## Error 1012
 {: #error-1012}
 
-The gateway SSH console connection failed. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console connection failed. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1013
 {: #error-1013}
@@ -80,17 +80,17 @@ The gateway readiness check timed out.
 ## Error 1017
 {: #error-1017}
 
-The gateway SSH console connection was noth created. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console connection was not created. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1018
 {: #error-1018}
 
-The gateway SSH console could not process the command. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway SSH console could not process the command. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1019
 {: #error-1019}
 
-The gateway has an invalid IP address, or is blocked by a firewall. SSH failed. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway has an invalid IP address, or is blocked by a firewall. SSH failed. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1021
 {: #error-1021}
@@ -105,7 +105,7 @@ The gateway readiness precheck failed with an unexpected exception. Try again or
 ## Error 1023
 {: #error-1023}
 
-The gateway readiness precheck failed the DNS accessibility check on the Ubuntu host. Confirm that there is network access to the private `10.0.0.0/8` subnet from the host.
+The gateway readiness precheck failed the DNS accessibility check on the Ubuntu host. Confirm that a network access to the private `10.0.0.0/8` subnet from the host exists.
 
 ## Error 1024
 {: #error-1024}
@@ -145,22 +145,22 @@ The host experienced a precheck setup failure. Try again or contact [IBM Support
 ## Error 1105
 {: #error-1105}
 
-The host experienced a precheck setup failure and cannot SSH to the gateway. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host experienced a precheck setup failure and cannot SSH to the gateway. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1106
 {: #error-1106}
 
-The host experienced a precheck setup failure and cannot SSH to the private IP for the other node's host. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host experienced a precheck setup failure and cannot SSH to the private IP for the other node's host. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1107
 {: #error-1107}
 
-The host experienced a precheck setup failure due to an invalid password. Correct the password and try again. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The host experienced a precheck setup failure due to an invalid password. Correct the password and try again. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1108
 {: #error-1108}
 
-The gateway experienced a precheck setup failure due to an invalid password. Correct the password and try again. Refer to [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
+The gateway experienced a precheck setup failure due to an invalid password. Correct the password and try again. See [Correcting connectivity errors](/docs/vsrx?topic=vsrx-correcting-readiness-errors) for information on how to resolve SSH connectivity check errors.
 
 ## Error 1109
 {: #error-1109}
@@ -205,7 +205,7 @@ The host has a precheck setup failure. Ubuntu is missing the telnet software pac
 ## Error 1117
 {: #error-1117}
 
-The host's Ubuntu mirror server is not accessible. Retry the operation once the mirror is accessible.
+The host's Ubuntu mirror server is not accessible. Retry the operation when the mirror is accessible.
 
 ## Error 1118
 {: #error-1118}
@@ -215,12 +215,12 @@ The vSRX node is not started. Start the vSRX VM and retry the operation.
 ## Error 1119
 {: #error-1119}
 
-The vSRX node's VM is running but the node is not accessible via telnet. Exit from all console (telnet) sessions and retry the operation. Alternatively, refer to [Correcting error 1119](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1119) for more information.
+The vSRX node's VM is running but the node is not accessible from telnet. Exit from all console (telnet) sessions and retry the operation. Alternatively, see [Correcting error 1119](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1119) for more information.
 
 ## Error 1120
 {: #error-1120}
 
-The vSRX node does not have a valid license. Remove any evaluation licenses and apply a valid license. Then retry the operation. Refer to [Known limitations for IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx) for more information on identifying and removing the evaluation license.
+The vSRX node does not have a valid license. Remove any evaluation licenses and apply for a valid license. Then, retry the operation. See [Known limitations for IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-known-limitations-for-ibm-cloud-juniper-vsrx) for more information on identifying and removing the evaluation license.
 
 ## Error 1121
 {: #error-1121}
@@ -240,12 +240,12 @@ The vSRX console has an active session in edit mode. Exit the console session an
 ## Error 1124
 {: #error-1124}
 
-The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version 18.4. Specify a vlan-id for each interface configured with vlan-tagging. Refer to [Correcting error 1124](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1124) for more information.
+The gateway experienced a precheck setup failure due to a Juniper incompatibility change in version 18.4. Specify a vlan-id for each interface configured with vlan-tagging. See [Correcting error 1124](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1124) for more information.
 
 ## Error 1125
 {: #error-1125}
 
-The gateway experienced a precheck setup failure due to a Juniper incompatibility change in the version 18.4 syslog settings. Refer to [Correcting error 1125](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1125) for more information.
+The gateway experienced a precheck setup failure due to a Juniper incompatibility change in the version 18.4 syslog settings. See [Correcting error 1125](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1125) for more information.
 
 ## Error 1126
 {: #error-1126}
@@ -270,7 +270,7 @@ The Ubuntu host has an extra Ethernet interface in bond0. Ensure bond0 includes 
 ## Error 1130
 {: #error-1130}
 
-The Ubuntu host has an extra Ethernet interface in bond1. Ensure bond1 only includes the 2 public Ethernet interfaces.
+The Ubuntu host has an extra Ethernet interface in bond1. Ensure bond1 includes only the 2 public Ethernet interfaces.
 
 ## Error 1131
 {: #error-1131}
@@ -280,17 +280,17 @@ The vSRX configuration is using a hidden cli command not compatible with the aut
 ## Error 1132
 {: #error-1132}
 
-The Ubuntu host has a kvm xml configuration that is missing the default telnet configuration used for console access. Add this configuration back and retry.
+The Ubuntu host has a kvm xml configuration that is missing the default telnet configuration that is used for console access. Add this configuration back and retry.
 
 ## Error 1133
 {: #error-1133}
 
-The vSRX console connection using telnet timed out running commands. Rerun or contact IBM Support.
+The vSRX console connection by using telnet timed out when running the commands. Rerun or contact IBM Support.
 
 ## Error 1134
 {: #error-1134}
 
-The node being OS reloaded cannot access the other node in the cluster. Ensure that the other node is active and retry. If both nodes are unrecoverable contact support to run Rebuild Cluster.
+The node, which is OS reloaded, cannot access the other node in the cluster. Ensure that the other node is active and retry. If both nodes are unrecoverable contact IBM support to run Rebuild Cluster.
 
 ## Error 1135
 {: #error-1135}
@@ -300,17 +300,17 @@ The vSRX license file cannot be found. Rerun or contact IBM Support.
 ## Error 1136
 {: #error-1136}
 
-The vSRX license file is found, but the contents are empty. Please rerun or contact support.
+The vSRX license file is found, but the contents are empty. Rerun or contact IBM support.
 
 ## Error 1137
 {: #error-1137}
 
-The vSRX license file cannot be read. Please rerun or contact support.
+The vSRX license file cannot be read. Rerun or contact IBM support.
 
 ## Error 1138
 {: #error-1138}
 
-The vSRX license install has failed during the vSRX license configuration. Please rerun or contact support.
+The vSRX license installation failed during the vSRX license configuration. Rerun or contact IBM support.
 
 ## Error 1139
 {: #error-1139}
@@ -320,7 +320,7 @@ The vSRX configuration includes a `tcp-mss` setting on an interface. Remove the 
 ## Error 1140
 {: #error-1140}
 
-The vSRX configuration includes an unsupported configuration setting. Correct and/or remove the unsupported configuration setting and rerun. Refer to [Correcting Unsupported vSRX Configuration Commands](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-unsupported-configuration) for more information.
+The vSRX configuration includes an unsupported configuration setting. Correct or remove the unsupported configuration setting and rerun. See [Correcting Unsupported vSRX Configuration Commands](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-unsupported-configuration) for more information.
 
 ## Error 1141
 {: #error-1141}
@@ -340,12 +340,12 @@ The gateway upgrade process failed with an unexpected exception. Contact IBM Sup
 ## Error 1144
 {: #error-1144}
 
-The vSRX add on license files are not equal to the expected license count. Contact IBM Support.
+The vSRX add-on license files are not equal to the expected license count. Contact IBM Support.
 
 ## Error 1145
 {: #error-1145}
 
-The vSRX license does not support IDP, but IDP policies and configurations were detected on the running vSRX. Remove the policies and configurations or install a vSRX license with IDP support such as the Content Security Bundle (CSB) and retry the operation. For details on configuration removal refer to [Correcting error 1145](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1145) for more information.
+The vSRX license does not support IDP, but IDP policies and configurations were detected on the running vSRX. Remove the policies and configurations or install a vSRX license with IDP support such as the Content Security Bundle (CSB) and retry the operation. For details on configuration removal, see [Correcting error 1145](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1145) for more information.
 
 ## Error 1146
 {: #error-1146}
@@ -355,7 +355,7 @@ The Ubuntu server's network switch does not support multicast, which is required
 ## Error 1147
 {: #error-1147}
 
-The vSRX configuration includes a url-pattern with invalid characters. Remove the invalid characters and retry. Refer to [Correcting error 1147](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1147) for more information.
+The vSRX configuration includes a url-pattern with invalid characters. Remove the invalid characters and retry. See [Correcting error 1147](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1147) for more information.
 
 ## Error 1154
 {: #error-1154}
@@ -370,17 +370,17 @@ The vSRX configuration cannot specify both a `service` and an `any-service` with
 ## Error 1157
 {: #error-1157}
 
-vSRX SSL certificates included in stanzas, such as `set services ssl initiation`, `set services ssl termination`, and `set services ssl proxy` cannot be migrated to the newly upgraded vSRX node. Remove these certificates from the vSRX configuration, retry, and re-import the certs after upgrade.
+vSRX SSL certificates that are included in stanzas, such as `set services ssl initiation`, `set services ssl termination`, and `set services ssl proxy` cannot be migrated to the newly upgraded vSRX node. Remove these certificates from the vSRX configuration, retry, and re-import the certs after upgrade.
 
 ## Error 1158
 {: #error-1158}
 
-The vSRX security nat configuration includes an invalid network address range. Specify a valid network IP range by using CIDR notation and retry.
+The vSRX security NAT configuration includes an invalid network address range. Specify a valid network IP range by using CIDR notation and retry.
 
 ## Error 1159
 {: #error-1159}
 
-The vSRX configuration includes a reference to an SSL certificate in the `system services rest https` config. Certs cannot be migrated during an upgrade. Deactivate the reference using `deactivate system services rest https`, retry, and reactivate and re-import the certificate after the upgrade completes.
+The vSRX configuration includes a reference to an SSL certificate in the `system services rest https` config. Certs cannot be migrated during an upgrade. Deactivate the reference that uses `deactivate system services rest https`, retry, and reactivate and re-import the certificate after the upgrade completes.
 
 ## Error 1160
 {: #error-1160}
@@ -395,7 +395,7 @@ The vSRX configuration contains a Juniper security policy with keywords dynamic-
 ## Error 1167
 {: #error-1167}
 
-The vSRX configuration contains a Juniper `security ike` but does not specify a corresponding `external-interface`. Please modify the configuration and retry.
+The vSRX configuration contains a Juniper `security ike` but does not specify a corresponding `external-interface`. Modify the configuration and retry.
 
 ## Error 1168
 {: #error-1168}
@@ -405,17 +405,17 @@ The Ubuntu server is running in rescue mode. Exit rescue mode and retry.
 ## Error 1169
 {: #error-1169}
 
-The vSRX configuration contains a security policy that checks the match of unsupported `dynamic-application junos:ICMP-TRACEROUTE`.  Remove the policy line containing `junos:ICMP-TRACEROUTE`.
+The vSRX configuration contains a security policy that checks the match of unsupported `dynamic-application junos:ICMP-TRACEROUTE`. Remove the policy line that contains `junos:ICMP-TRACEROUTE`.
 
 ## Warning 1176
 {: #warning-1176}
 
-The gateway experienced a precheck setup warning. A VPN establishment configuration with `non-immediate` was detected, which could increase the time that it takes for VPN establishment after the vSRX starts. Refer to [Correcting warning 1176](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1176) for more information.
+The gateway experienced a precheck setup warning. A VPN establishment configuration with `non-immediate` was detected, which might increase the time that it takes for VPN establishment after the vSRX starts. See [Correcting warning 1176](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1176) for more information.
 
 ## Warning 1177
 {: #warning-1177}
 
-The gateway experienced a precheck setup warning. A security policy using `dynamic-application any` was detected, which can result in packet loss. This can also cause VPN tunnel communication to fail. Refer to [Correcting warning 1177](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1177) for more information.
+The gateway experienced a precheck setup warning. A security policy that uses `dynamic-application any` is detected, which can result in packet loss. This issue can also cause VPN tunnel communication to fail. See [Correcting warning 1177](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1177) for more information.
 
 ## Warning 1178
 {: #warning-1178}
@@ -425,7 +425,7 @@ The license was updated. However, validation of the new license failed. It is re
 ## Warning 1179
 {: #warning-1179}
 
-The vSRX version found to be running on the Gateway is unsupported. Operations such as OS Reload and Rebuild Cluster will overwrite the current unsupported vSRX version with the version that is currently listed on the Gateway Details page. Refer to [Correcting warning 1179](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1179) for more information.
+The vSRX version found to be running on the Gateway is unsupported. Operations such as OS Reload and Rebuild Cluster overwrites the current unsupported vSRX version with the version that is currently listed on the Gateway Details page. See [Correcting warning 1179](/docs/vsrx?topic=vsrx-correcting-readiness-errors#correcting-1179) for more information.
 
 ## Warning 1180
 {: #warning-1180}
@@ -440,7 +440,7 @@ The vSRX license and version on the Gateway are both found to be unsupported. [C
 ## Warning 1182
 {: #warning-1182}
 
-The vSRX add on license files are not found. Contact IBM Support.
+The vSRX add-on license files are not found. Contact IBM Support.
 
 ## Warning 1183
 {: #warning-1183}
@@ -455,4 +455,4 @@ A connection timeout error occurred when checking the installed licenses. Contac
 ## Warning 1185
 {: #warning-1185}
 
-The gateway does not have a valid license, most likely the license for the version has expired. Please upgrade to a new version, 21.3R2-S1 or newer. Contact IBM Support.
+The gateway does not have a valid license because the license for the version might have expired. Upgrade to the version, `21.3R2-S1` or newer. Contact IBM Support.

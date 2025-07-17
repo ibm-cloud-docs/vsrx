@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-10-24"
+  years: 2017, 2025
+lastupdated: "2025-07-17"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -32,13 +32,13 @@ The process can take between 2 and 5 hours to complete. Stand-alone gateways are
 If the OS reload is changing your vSRX version, then refer to [Upgrading using OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade#os-reload-upgrade) to understand the downgrade and upgrade process.
 {: important}
 
-For a successful OS Reload on a vSRX, ensure the following:
+For a successful OS Reload on a vSRX, ensure the following points:
 
-* The vSRX configuration should not be modified during the OS reload operation. For example, automated software agents that attempt to modify one or both vSRX nodes. Configurations changes like these can corrupt the OS reload.
+* The vSRX configuration must not be modified during the OS reload operation. For example, automated software agents that attempt to modify one or both vSRX nodes. Configurations changes like these can corrupt the OS reload.
 
 * The root password for the provisioned vSRX gateway must match the root password that is defined in the vSRX portal. The password in the portal was defined when you first provisioned the gateway, and it might not match the current gateway password. If so, then use SSH to connect to the vSRX gateway and change the root password to match. You can then proceed with the OS reload operation.
 
-* The vSRX configuration must allow root SSH access to the vSRX private IP before the OS reload request. This is required to rejoin the cluster. After the OS reload completes, if wanted, you can disable SSH access again.
+* The vSRX configuration must allow root SSH access to the vSRX private IP before the OS reload request. This action is required to rejoin the cluster. After the OS reload completes, if wanted, you can disable SSH access again.
 
 * "Do NOT" perform an OS reload on both servers of the Highly Available gateway at the same time.
 
@@ -68,10 +68,13 @@ To reload your OS, follow these steps:
 10. Verify that all details in the **New Configuration** section are correct. Click **Next** to advance to the Confirm window.
 11. Click **Confirm OS Reload** to confirm and initiate the OS Reload. Or click **Cancel** to cancel the action.
 
+After you initiate an OS Reload, monitor the pending transactions for any errors. If you encounter an error, click the error document link and attempt to resolve it by using the provided steps. If the issue persists, contact [IBM support](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}. For details on vSRX readiness errors and warnings, see [Understanding readiness errors and warnings](/docs/vsrx?topic=vsrx-readiness-errors).
+{: note}
+
 ## vSRX version mismatches
 {: #vsrx-version-mismatches}
 
-A {{site.data.keyword.vsrx_full}} cluster must have the same vSRX version on each node to fully support the High Availability feature. If a cluster has mismatched vSRX versions, then you must reload the OS of the node with the older version (by using the procedure in this topic) so that both nodes are at the same version level.
+A {{site.data.keyword.vsrx_full}} cluster must have the same vSRX version on each node to fully support the High Availability feature. If a cluster has mismatched vSRX versions, reload the OS of the node with the older version by following the previous steps so that both nodes are at the same version level.
 
 A version mismatch applies to both minor release mismatches and major release mismatches.
 {: note}
