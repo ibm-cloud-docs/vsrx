@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-07-14"
+lastupdated: "2025-07-17"
 
 keywords: readiness errors
 
@@ -61,8 +61,29 @@ The vSRX might have a configuration that blocks local console access through tel
 
 Other issues might include an incorrect vSRX password.
 
-Sometimes, the readiness check error 1119 might occur even when the vSRX configuration appears to be valid and the expected console settings (set system ports console disable or insecure) aren't configured. This issue can arise due to an incomplete or improperly configured `/etc/hosts` file on the Ubuntu host machine, which might prevent successful resolution of localhost during the telnet test. Make sure that localhost is explicitly mapped to `127.0.0.1`. A missing or incorrect mapping can prevent the readiness script from connecting to the vSRX console port.
+Sometimes, the readiness check error 1119 might occur even when the vSRX configuration appears to be valid and the expected console settings (set system ports console disable or insecure) aren't configured. This issue can arise due to an incomplete or improperly configured `/etc/hosts` file on the Ubuntu host, which can prevent successful resolution of localhost during the telnet test. Make sure that localhost is explicitly mapped to the IP address `127.0.0.1`. A missing or incorrect mapping can prevent the readiness script from connecting to the vSRX console port.
 {: note}
+
+The following commands illustrate how to correctly configure the `etc/hosts` file and map it to your localhost.
+
+Before you map the localhost, the `/etc/hosts` file looks as shown in the following command, where the IP address `127.0.0.1` is mapped only to the host system's name.
+
+   ```sh
+   root@test:~# cat /etc/hosts
+   127.0.0.1 test
+   127.0.1.1 ubuntu
+   ```
+
+After you correctly map the localhost, the `/etc/hosts` file looks as shown in the following command and the localhost is correctly mapped to the IP address `127.0.0.1`.
+
+   ```sh
+   root@test:~# cat /etc/hosts
+   127.0.0.1 test localhost
+   127.0.1.1 ubuntu
+   ```
+When you update the `/etc/hosts` file on the host system with these changes, and run the command `telnet localhost (port-number)`, the telnet connection to your localhost succeeds, and the pre-check error gets resolved.
+
+To identify the port number for the telnet connection, run the command `virsh dumpxml (VM-Instance-Name) | grep service` on the host system and use the value that is shown for the service. To identify the VM-Instance-Name, use the command `virsh list`.
 
 ## Correcting error 1124
 {: #correcting-1124}
@@ -280,7 +301,7 @@ The vSRX version that runs on the Gateway is not certified on IBM Cloud and is u
 ## Correcting warning 1180
 {: #correcting-1180}
 
-The vSRX license that is found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster overwrites the current license with the version that is listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license). If the license was procured outside of IBM Cloud, work with that procurement source for support. Otherwise, it is strongly recommended that you contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
+The vSRX license that is found on the Gateway was not procured through IBM Cloud and is unsupported. Operations such as OS Reload and Rebuild Cluster overwrites the current license with the version that is listed on the Gateway Details page. Supported vSRX licenses can be found here: [Viewing and changing vSRX licenses](/docs/vsrx?topic=vsrx-getting-started-vsrx#choosing-vsrx-license). If the license was procured outside of IBM Cloud, work with that procurement source for support. Otherwise, contact [IBM Support](/docs/gateway-appliance?topic=gateway-appliance-getting-help) to migrate to a supported vSRX license.
 
 ## Correcting warning 1181
 {: #correcting-1181}
