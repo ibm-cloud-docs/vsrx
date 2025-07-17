@@ -230,7 +230,7 @@ License operations against vSRX v15.1 are not supported. Upgrade to a newer vers
 ## Error 1122
 {: #error-1122}
 
-An error occurred in the readiness check, try again or contact support.
+An error occurred in the readiness check, try again or contact IBM support.
 
 ## Error 1123
 {: #error-1123}
@@ -386,6 +386,11 @@ The vSRX configuration includes a reference to an SSL certificate in the `system
 {: #error-1160}
 
 The vSRX configuration includes a `security idp sensor-configuration packet-log total-memory` reference. This causes issues during an upgrade. Remove the reference and retry.
+
+## Error 1163
+{: #error-1163}
+
+If the vSRX configuration includes a **Weak cipher**, the Upgrade pre-check fails with the error 1163. To fix this error, remove or deactivate the weak cipher configuration and retry.
 
 ## Error 1165
 {: #error-1165}
