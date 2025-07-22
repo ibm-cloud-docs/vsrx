@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-01-22"
+lastupdated: "2025-07-22"
 
 keywords: version, base version, release notes, juniper
 
@@ -22,6 +22,7 @@ You can click the **Version information** link for each entry to get more detail
 
 | Base version | Release version | Architecture model | Hypervisor | Release date | Version information |
 | --- | --- | --- | --- | --- | --- |
+| 23.4R2-S5 | 23.4R2-S5.5 | 3.0 | Ubuntu 22.04 with KVM | 22 July 2025 | [More information](https://supportportal.juniper.net/s/article/23-4R2-S5-SRN-for-SRX?language=en_US){: external} |
 | 23.4R2-S3 | 23.4R2-S3.9 | 3.0 | Ubuntu 22.04 with KVM | 22 January 2025 | [More information](https://supportportal.juniper.net/s/article/23-4R2-S3-SRN?language=en_US){: external} |
 | 23.4R1-S2 | 23.4R1-S2.4 | 3.0 | Ubuntu 20.04 with KVM | 22 July 2024 | [More information](https://supportportal.juniper.net/s/article/23-4R1-S2-Software-Release-Notification?language=en_US){: external} |
 | 23.2R1-S1 | 23.2R1-S1.6 | 3.0 | Ubuntu 20.04 with KVM | 10 October 2023 | [More information](https://supportportal.juniper.net/s/article/23-2R1-S1-SRN?language=en_US){: external} |
