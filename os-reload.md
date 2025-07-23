@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-07-17"
+lastupdated: "2025-07-23"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -67,9 +67,6 @@ To reload your OS, follow these steps:
 9. Click **Reload Above Configuration** to proceed to the **Review** window. Click **Cancel** to cancel the changes to the device and exit the screen.
 10. Verify that all details in the **New Configuration** section are correct. Click **Next** to advance to the Confirm window.
 11. Click **Confirm OS Reload** to confirm and initiate the OS Reload. Or click **Cancel** to cancel the action.
-
-After you initiate an OS Reload, monitor the pending transactions for any errors. If you encounter an error, click the error document link and attempt to resolve it by using the provided steps. If the issue persists, contact [IBM support](https://cloud.ibm.com/unifiedsupport/supportcenter){: external}. For details on vSRX readiness errors and warnings, see [Understanding readiness errors and warnings](/docs/vsrx?topic=vsrx-readiness-errors).
-{: note}
 
 ## vSRX version mismatches
 {: #vsrx-version-mismatches}
