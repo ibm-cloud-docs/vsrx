@@ -18,7 +18,7 @@ subcollection: vsrx
 Know the expiration and renewal process for standard and CSB licenses on {{site.data.keyword.vsrx_full}} gateways.
 {: shortdesc}
 
-You can obtain licenses for the vSRX in batches from the vendor and IBM Cloud applies the latest license to your device when it is provisioned. If the standard license on your vSRX expires, the standard features that are listed on [Getting started with IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started-vsrx) continues to function. Make sure to keep your standard license up to date, especially if you use subscription-based services and features such as those that are included with the CSB license. When your standard license expires, it affects the services that are covered by the CSB license.
+Licenses for the vSRX are obtained from the vendor in batches and IBM Cloud applies the latest license to your device when it is provisioned. If the standard license on your vSRX expires, the standard features that are listed on [Getting started with IBM Cloud Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started-vsrx) continues to function. Make sure to keep your standard license up to date, especially if you use subscription-based services and features such as those that are included with the CSB license. When your standard license expires, it affects the services that are covered by the CSB license.
 
 IBM Cloud console also shows a notification on your device's gateway page when the license expiration date approaches.
 
