@@ -22,7 +22,7 @@ You can obtain licenses for the vSRX in batches from the vendor and IBM Cloud ap
 
 IBM Cloud console also shows a notification on your device's gateway page when the license expiration date approaches.
 
-Refer to the instructions in the following sections to learn more about viewing your license expiration date.
+Follow the instructions provided here to learn more about viewing and renewing your license expiration date.
 {: tip}
 
 To update to the latest license, your vSRX must be version 21.3 or later. If your vSRX version is prior to 21.3, you must update the vSRX version by using the [OS reload](/docs/vsrx?topic=vsrx-reloading-the-os) process. The license is automatically renewed during the version upgrade.
