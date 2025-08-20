@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-04-30"
+lastupdated: "2025-08-20"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -33,6 +33,8 @@ To upgrade a stand-alone vSRX deployment, follow these steps:
    {: important}
 
 1. Perform an [OS reload](/docs/vsrx?topic=vsrx-reloading-the-os#performing-an-os-reload) for the bare metal server. Edit the selection and specify the version where the system reloads or upgrades.
+
+1. Restore the vSRX backup configuration you took in step 1. 
 
 ## Upgrading a High-Availabity vSRX deployment
 {: #upgrading-ha-vsrx}
