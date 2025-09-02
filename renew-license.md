@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-09-02"
 
 keywords:
 
@@ -41,7 +41,7 @@ To find your current license expiration date, follow these steps:
 3. Choose **Network > Gateway Appliances**.
 4. Click the gateway appliance name to access the gateway appliance details page. You can find the license expiration date in the Details section.
 
-To view your current license expiration from the vSRX CLI, run `show system license`. You must see the 2025 expiration date for each of the license features on each node.
+To view your current license expiration from the vSRX CLI, run `show system license`. The most recent vSRX license available is valid through 2028.
 {: tip}
 
 ## Renewing your license
@@ -55,6 +55,6 @@ To renew your license, first run a [Readiness check](/docs/vsrx?topic=vsrx-vsrx-
 1. Click the gateway appliance name to access the gateway appliance details page.
 1. Click **Renew license**.
 
-The license renewal can take up to 30 minutes to complete. To verify that the process completed successfully, follow the preceding steps in [Viewing your license expiration date](#license-view-steps). Verify that the expiration shows a 2025 expiration. The renewal process doesn't restart hosts or nodes, does not cause outages, and results in minimal traffic disruption as a result of this action.
+The license renewal can take up to 30 minutes to complete. To verify that the process completed successfully, follow the preceding steps in [Viewing your license expiration date](#license-view-steps). Verify that the expiration shows a 2028 expiration. The renewal process doesn't restart hosts or nodes, does not cause outages, and results in minimal traffic disruption as a result of this action.
 
 After the renewal completes, future actions, such as OS Reload and License Update automatically applies the new license.
