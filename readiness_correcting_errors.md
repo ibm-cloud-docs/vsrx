@@ -21,7 +21,7 @@ Readiness errors and warnings can inhibit your ability to successfully complete 
 ## Viewing more information in the error log
 {: #viewing-errors}
 
-To view detailed error messages instead of the brief ones shown in the cloud console, connect to your Ubuntu host with SSH and use tail or less to examine the `/home/vSRX/precheck.log` file
+To view detailed error messages, connect to your Ubuntu host with SSH and use `tail` or `less` to examine the `/home/vSRX/precheck.log` file
 
 ```sh
 root@vsrx:~# tail -f /home/vSRX/precheck.log
