@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-07-17"
+lastupdated: "2025-09-11"
 
 keywords: readiness errors
 
@@ -17,6 +17,24 @@ subcollection: vsrx
 
 Readiness errors and warnings can inhibit your ability to successfully complete a readiness check. This topic provides information on correcting different types of errors and warnings.
 {: shortdesc}
+
+## Viewing more information in the error log
+{: #viewing-errors}
+
+To view detailed error messages instead of the brief ones shown in the cloud console, connect to your Ubuntu host with SSH and use tail or less to examine the `/home/vSRX/precheck.log` file
+
+```sh
+root@vsrx:~# tail -f /home/vSRX/precheck.log
+br1.         8000.f6fb18672503  no       bond1
+virbr0       8000.5254009fc6e7  yes
+
+[2025-08-11 11:10:27.909405] The remote node control link is down
+
+[2025-08-11 11:10:27.909501] Error: the control link of other node is down
+
+=========================
+Host: vsrx FAILURE - Return code:1126
+```
 
 ## Correcting connectivity errors
 {: #connnectivity-errors}
@@ -164,7 +182,7 @@ To fix this issue, remove one of the syslog labels from the configuration and re
 ## Correcting unsupported vSRX configuration commands
 {: #correcting-unsupported-configuration}
 
-The Juniper vSRX contains undocumented, or hidden, CLI commands. The vSRX configuration does not support some of these commands, even though in some releases, they can be committed. Sometimes the behavior can unexpectedly change between release versions. The following information details some known unsupported configuration commands when you upgrade from an older vSRX version. It is critical that you remove unsupported, or hidden, commands from the vSRX configuration before you upgrade your version. Do this process even with commands that are not detected by the Readiness check.
+The Juniper vSRX contains undocumented, or hidden, CLI commands. The vSRX configuration doesn't support some of these commands, even though in some releases, they can be committed. Sometimes the behavior can unexpectedly change between release versions. The following information details some known unsupported configuration commands when you upgrade from an older vSRX version. It is critical that you remove unsupported, or hidden, commands from the vSRX configuration before you upgrade your version. Do this process even with commands that are not detected by the Readiness check.
 
 ## Correcting error 1145
 {: #correcting-1145}
