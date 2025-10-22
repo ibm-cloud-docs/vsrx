@@ -10,88 +10,88 @@ toc:
     path: vsrx
     label: IBM Cloud Juniper vSRX
   entries:
-    - navgroup:
-       id: learn
-       topics:
-       - getting-started.md
-       - about.md
-       - include: ../fortigate-10g/explore-firewalls.md
-       - topicgroup:
-           label: Related links
-           topics:
-           - link:
-               label: "What is network security?"
-               href: https://www.ibm.com/think/topics/networking
-       - include: ../gateway-appliance/ga-raci.md
-       - include: ../gateway-appliance/managing-permissions-and-device-access.md
-       - release-notes.md
-    - navgroup:
-        id: howto
-        topics:
-        - topicgroup:
-            label: Performing vSRX basics
-            topics:
-            - include: ../gateway-appliance/access-gateway-appliances.md
-            - include: ../gateway-appliance/access-gateway-details.md
-            - include: ../gateway-appliance/rename-gateway.md
-            - include: ../gateway-appliance/cancel-gateway.md
-            - vsrx-basics.md
-            - vsrx-access.md
-        - topicgroup:
-            label: Checking vSRX readiness
-            topics:
-            - readiness.md
-            - readiness_errors.md
-            - readiness_correcting_errors.md
-        - topicgroup:
-            label: Working with VLANs
-            topics:
-            - include: ../gateway-appliance/manage-vlans.md
-        - topicgroup:
-            label: Working with the vSRX default configuration
-            topics:
-            - vsrx-default-config.md
-            - vsrx-import-and-export-config.md
-            - migrating-config.md
-        - topicgroup:
-            label: "Step-by-step - Allowing SSH and pinging to a public subnet"
-            topics:
-            - ssh-guide.md
-            - ssh-create-interface.md
-            - ssh-create-flows.md
-            - ssh-check-output.md
-        - topicgroup:
-            label: Performing vSRX advanced tasks
-            topics:
-            - firewalls.md
-            - nat.md
-            - failover.md
-            - routing.md
-            - vpn.md
-            - securing-host.md
-            - management-interfaces.md
-            - system-logging.md
-            - vsrx-vlan-zone.md
-        - topicgroup:
-            label: Upgrading the vSRX
-            topics:
-            - vsrx-upgrade.md
-            - vsrx-upgrade-general.md
-            - vsrx-upgrade-reload.md
-            - vsrx-rollback-reload.md
-            - vsrx-upgrade-unsupported.md
-        - vsrx-license.md
-        - renew-license.md
-        - os-reload.md
-        - rebuild-cluster.md
-    - navgroup:
-        id: reference
-        topics:
-        - include: ../infrastructure-hub/ips.md
-        - vsrx-version-notes.md
-    - navgroup:
-        id: help
-        topics:
-        - known-limitations.md
-        - vsrx-docs.md
-        - include: ../gateway-appliance/getting-help.md
+  - navgroup:
+      id: learn
+      topics:
+      - getting-started.md
+      - about.md
+      - include: ../fortigate-10g/explore-firewalls.md
+      - topicgroup:
+          label: Related links
+          topics:
+          - link:
+              label: "What is network security?"
+              href: https://www.ibm.com/think/topics/networking
+      - include: ../gateway-appliance/ga-raci.md
+      - include: ../gateway-appliance/managing-permissions-and-device-access.md
+      - release-notes.md
+  - navgroup:
+      id: howto
+      topics:
+      - topicgroup:
+          label: Performing vSRX basics
+          topics:
+          - include: ../gateway-appliance/access-gateway-appliances.md
+          - include: ../gateway-appliance/access-gateway-details.md
+          - include: ../gateway-appliance/rename-gateway.md
+          - include: ../gateway-appliance/cancel-gateway.md
+          - vsrx-basics.md
+          - vsrx-access.md
+      - topicgroup:
+          label: Checking vSRX readiness
+          topics:
+          - readiness.md
+          - readiness_errors.md
+          - readiness_correcting_errors.md
+      - topicgroup:
+          label: Working with VLANs
+          topics:
+          - include: ../gateway-appliance/manage-vlans.md
+      - topicgroup:
+          label: Working with the vSRX default configuration
+          topics:
+          - vsrx-default-config.md
+          - vsrx-import-and-export-config.md
+          - migrating-config.md
+      - topicgroup:
+          label: "Step-by-step - Allowing SSH and pinging to a public subnet"
+          topics:
+          - ssh-guide.md
+          - ssh-create-interface.md
+          - ssh-create-flows.md
+          - ssh-check-output.md
+      - topicgroup:
+          label: Performing vSRX advanced tasks
+          topics:
+          - firewalls.md
+          - nat.md
+          - failover.md
+          - routing.md
+          - vpn.md
+          - securing-host.md
+          - management-interfaces.md
+          - system-logging.md
+          - vsrx-vlan-zone.md
+      - topicgroup:
+          label: Upgrading the vSRX
+          topics:
+          - vsrx-upgrade.md
+          - vsrx-upgrade-general.md
+          - vsrx-upgrade-reload.md
+          - vsrx-rollback-reload.md
+          - vsrx-upgrade-unsupported.md
+      - vsrx-license.md
+      - renew-license.md
+      - os-reload.md
+      - rebuild-cluster.md
+  - navgroup:
+      id: reference
+      topics:
+      - include: ../infrastructure-hub/ips.md
+      - vsrx-version-notes.md
+  - navgroup:
+      id: help
+      topics:
+      - known-limitations.md
+      - vsrx-docs.md
+      - include: ../gateway-appliance/getting-help.md
