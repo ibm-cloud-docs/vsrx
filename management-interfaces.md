@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-07-30"
+  years: 2017, 2025
+lastupdated: "2025-10-23"
 
 keywords: management, interface, fpx0, subnets, IPs, VLAN, nodes
 
@@ -65,3 +65,6 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
    set firewall filter PROTECT-IN term PING from destination-address 10.177.75.136/29
    set firewall filter PROTECT-IN term SSH from destination-address 10.177.75.136/29
    ```
+   
+   Additional information on configuring the `mgmt_junos` interface can be found in [this Juniper article](https://www.juniper.net/documentation/us/en/software/junos/junos-getting-started-evo/junos-getting-started/topics/topic-map/management-interface-in-non-default-instance.html){: external}.
+   {: note}
