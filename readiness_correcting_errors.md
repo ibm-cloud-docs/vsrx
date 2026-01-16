@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-09-12"
+  years: 2017, 2026
+lastupdated: "2026-01-16"
 
 keywords: readiness errors
 
@@ -35,6 +35,24 @@ virbr0       8000.5254009fc6e7  yes
 =========================
 Host: vsrx FAILURE - Return code:1126
 ```
+
+## Getting details about connectivity errors
+{: #get-connectivity-error-details}
+
+If the information that is available for connectivity errors isn't sufficient, you can review the detailed diagnostic output that is generated on the vSRX Ubuntu hypervisors. The `precheck.log` file provides detailed diagnostics about the readiness validation checks. Review this information to further analyze the connectivity errors and determine whether extra configuration changes are required.
+
+1. Log in to the Ubuntu hypervisor that is referenced in the readiness check error message. The hypervisor name is displayed in the error details during the readiness check operation.
+1. Go to the vSRX directory.
+   ```sh
+   cd /home/vSRX
+   ```
+   {: pre}
+
+1. Review the readiness check log file `precheck.log`.
+   ```sh
+   tail -f precheck.log
+   ```
+   {: pre}
 
 ## Correcting connectivity errors
 {: #connnectivity-errors}
