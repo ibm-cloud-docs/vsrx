@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-10-22"
+  years: 2017, 2026
+lastupdated: "2026-06-11"
 
 keywords: reloading, os, upgrading, kvm, ha, stand-alone
 
@@ -92,6 +92,41 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
 * If you configure your HA cluster to use Intrusion Detection Policies (IDP) and a signature database, it is recommended that you update the signature database after you complete the upgrade. This is because the database might be out of date. For information about online and offline database updates, see [Intrusion Detection and Prevention on IBM Cloud](https://public.dhe.ibm.com/cloud/bluemix/network/vsrx/idp.pdf){: external}
 
 * The upgrade process does not backup or restore any vSRX certificates local to the virtual machine (VM) being upgraded. The upgrade process deletes the existing VM and creates a new one, which replaces the JunOS file system. For example, a local certificate like `IKE_POLICY_CERT` must be backed up before the upgrade and manually restored after it completes.
+
+* ## Ubuntu hypervisor upgrade considerations
+{: #ubuntu-hypervisor-upgrade-considerations}
+
+The vSRX runs as a VM on a Ubuntu hypervisor. Generally, this hypervisor operating system is reloaded as part of a vSRX update.  However, there are times where only the Ubuntu hypervisor requires maintenance, such as applying kernel updates, security patches, or vulnerability fixes, without upgrading the vSRX virtual machine itself. 
+
+In these cases, the standard `apt update` command is typically sufficient with some important caveats that you must be aware of. Upgrading only the Ubuntu hypervisor is generally considered a safe maintenance operation and can usually be performed with minimal disruption to running vSRX VMs. Most package updates, including standard user-space libraries and utilities, don't require interruption of guest VM operations.
+
+However, administrators must carefully review the packages included in an upgrade before proceeding. Certain updates can affect the stability or connectivity of running virtual machines until the hypervisor is rebooted. 
+
+The following types of updates require special attention:
+
+- Kernel packages
+- `systemd` and `udev` updates
+- `libvirt` packages
+- Networking-related packages such as `nftables`, bridges, or other virtualization networking components
+- `qemu` and `kvm` package updates
+
+
+In some cases, when you upgrade virtualization or network-related packages while keeping VMs active can result in degraded VM networking, stalled interfaces, or an inconsistent `libvirt` state until the hypervisor node is restarted. A restart of the Ubuntu hypervisor typically restores normal operation.
+
+When performing an `apt upgrade` on the hypervisor, consider the following recommendations:
+
+- Review pending packages before applying updates.
+- Schedule a maintenance window if kernel, `libvirt`, or networking components are being upgraded.
+- Plan for a hypervisor reboot when required.
+- Avoid performing simultaneous maintenance on multiple HA nodes when possible.
+
+Example:
+
+```sh
+apt update
+apt list --upgradable
+apt upgrade
+```
 
 ```sh
 set security ike policy MY_VPN_IKE_POLICY certificate local-certificate IKE_POLICY_CERT
