@@ -93,6 +93,11 @@ Before you perform a vSRX upgrade, be aware of the following considerations:
 
 * The upgrade process does not backup or restore any vSRX certificates local to the virtual machine (VM) being upgraded. The upgrade process deletes the existing VM and creates a new one, which replaces the JunOS file system. For example, a local certificate like `IKE_POLICY_CERT` must be backed up before the upgrade and manually restored after it completes.
 
+```sh
+set security ike policy MY_VPN_IKE_POLICY certificate local-certificate IKE_POLICY_CERT
+```
+{: pre}
+
 ## Ubuntu hypervisor upgrade considerations
 {: #ubuntu-hypervisor-upgrade-considerations}
 
@@ -126,8 +131,3 @@ apt update
 apt list --upgradable
 apt upgrade
 ```
-
-```sh
-set security ike policy MY_VPN_IKE_POLICY certificate local-certificate IKE_POLICY_CERT
-```
-{: pre}
