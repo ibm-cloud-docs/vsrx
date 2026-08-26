@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-03-14"
+  years: 2017, 2026
+lastupdated: "2026-08-26"
 
 keywords:
 
@@ -20,7 +20,7 @@ There is a variety of supplemental documentation for {{site.data.keyword.vsrx_fu
 
 vSRX Documentation  | Description
 ------------- | -------------
-[Juniper vSRX Overview](https://www.juniper.net/us/en/products/security/srx-series/vsrx-virtual-firewall.html){: external}  | Learn about Juniper vSRX and its extensive features.
+[Juniper vSRX Overview](https://www.juniper.net/us/en/products/security/vsrx.html){: external}  | Learn about Juniper vSRX and its extensive features.
 [Junos OS Routing Protocols Configuration Guide](https://www.juniper.net/documentation/product/us/en/junos-os/){: external}  | This guide describes the concepts of various routing protocols and how to configure routing policies on vSRX.
 [Junos OS Network Address Translation User Guide](https://www.juniper.net/documentation/us/en/software/junos/nat/nat.pdf){: external} | This guide describes information about NAT and how to configure NAT on vSRX.
 [Junos OS IPsec VPN User Guide for Security Devices](https://www.juniper.net/documentation/us/en/software/junos/vpn-ipsec/vpn-ipsec.pdf){: external} | This guide describes information on how to configure various type of IPsec VPN on vSRX.
