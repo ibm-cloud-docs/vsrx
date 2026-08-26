@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-16"
+lastupdated: "2026-08-26"
 
 keywords: readiness errors
 
@@ -310,7 +310,7 @@ set security datapath-debug maximum-capture-size 1500
 
 A VPN configuration with `establish-tunnels` not set to `immediately` was detected. After an upgrade, the IKE might not be immediately active depending on negotiations with the remote peer gateway, and whether data traffic is actively flowing. Without `establish-tunnels immediately`, the tunnel is established with `on-traffic`. With the `establish-tunnels immediately` statement, the tunnel is established immediately when the configuration is committed. However, `establish-tunnels immediately` might trigger an undesirable outcome when configured on both ends of the tunnel.
 
-For more information, see [(SRX) IPsec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder](https://supportportal.juniper.net/s/article/SRX-IPSec-comes-UP-when-SRX-A-is-the-Initiator-but-fails-when-SRX-A-becomes-the-responder?language=en_US){: external} in the Juniper Knowledge Base. See [VPN (Security)](https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/statement/security-edit-vpn.html){: external} for more details on these settings.
+For more information, see [(SRX) IPsec comes UP when SRX-A is the Initiator, but fails when SRX-A becomes the responder](https://supportportal.juniper.net/s/article/SRX-IPSec-comes-UP-when-SRX-A-is-the-Initiator-but-fails-when-SRX-A-becomes-the-responder){: external} in the Juniper Knowledge Base. See [VPN (Security)](https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/statement/security-edit-vpn.html){: external} for more details on these settings.
 
 ## Correcting warning 1177
 {: #correcting-1177}

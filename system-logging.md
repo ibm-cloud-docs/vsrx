@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-10-10"
+  years: 2017, 2026
+lastupdated: "2026-08-26"
 
 keywords: reloading, upgrading, kvm, ha, stand-alone, compatibility, versions
 
@@ -106,4 +106,4 @@ Security system logging traffic intended for remote servers is sent through the 
 * [Configuring system logging for a security device](https://www.juniper.net/documentation/us/en/software/junos/network-mgmt/topics/topic-map/system-logging-for-a-security-device.html){: external}
 * [System Log Explorer](https://apps.juniper.net/syslog-explorer/){: external}
 * [Setting the system to stream security logs](https://www.juniper.net/documentation/us/en/software/junos/network-mgmt/topics/topic-map/system-logging-for-a-security-device.html#id-understanding-stream-logging-for-security-devices){: external}
-* [Configuring traffic logs](https://supportportal.juniper.net/s/article/SRX-Getting-Started-Configure-Traffic-Logging-Security-Policy-Logs-for-SRX-Branch-Devices?language=en_US){: external}
+* [Configuring traffic logs](https://supportportal.juniper.net/s/article/SRX-Getting-Started-Configure-Traffic-Logging-Security-Policy-Logs-for-SRX-Branch-Devices){: external}

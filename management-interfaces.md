@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-10-23"
+  years: 2017, 2026
+lastupdated: "2026-08-26"
 
 keywords: management, interface, fpx0, subnets, IPs, VLAN, nodes
 
@@ -52,7 +52,7 @@ You can allocate a secondary subnet for the private transit VLAN, and use IPs fr
    set groups node1 system backup-router 10.177.75.137 destination [ 0.0.0.0/1 128.0.0.0/1 ]
    ```
 
-   Additional information on configuring the backup router can be found in [this Juniper article](https://supportportal.juniper.net/s/article/SRX-Cannot-manage-SRX-via-fxp0-when-destination-in-Backup-Router-is-0-0?language=en_US){: external}.
+   Additional information on configuring the backup router can be found in [this Juniper article](https://supportportal.juniper.net/s/article/SRX-Cannot-manage-SRX-via-fxp0-when-destination-in-Backup-Router-is-0-0){: external}.
    {: note}
 
 5. Create a static route to the subnet. For example:
