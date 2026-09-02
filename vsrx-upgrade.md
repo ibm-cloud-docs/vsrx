@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-10-10"
+  years: 2017, 2026
+lastupdated: "2026-09-02"
 
 keywords: reloading, os, upgrading, kvm, ha, standalone
 
@@ -32,9 +32,9 @@ For more information, see [IBM Cloud Juniper vSRX supported versions](/docs/vsrx
 The upgrade reapplies the license that is currently applied to the nodes. It does not update the license. To update to a newer license, you must separately run the license renewal steps. For more information, see [Renewing a vSRX license](/docs/vsrx?topic=vsrx-license-renewal).
 {: tip}
 
-| Current vSRX version  | Processor model and speed | Stand-alone or HA | Upgrade method  | Rollback supported |
-| ------------- | ------------- | ------------- | ------------- | ------------- |	 			
-| 15.1	| 1270v6 (All 1G deployments)	| Stand-alone and HA	| [Not Supported](/docs/vsrx?topic=vsrx-unsupported-upgrade) | N/A|
+| Current vSRX version | Processor model and speed | Stand-alone or HA | Upgrade method | Rollback supported |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| 15.1	| 1270v6 (All 1G deployments)	| Stand-alone and HA	| [Not Supported](/docs/vsrx?topic=vsrx-unsupported-upgrade) | N/A |
 | 15.1 | All 10G Deployments | Stand-alone and HA | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) |	**Stand-alone:** No  \n **HA:** * Manual (not automated) rollbacks are allowed after the first server completes the OS reload.  \n * Rollbacks are not allowed after the second server completes its OS reload. |
 | 18.4 | 1270v6 (Some 1G Deployments) |	Stand-alone and HA |	[Not Supported](/docs/vsrx?topic=vsrx-unsupported-upgrade) |	N/A |
 | 18.4 | 4210 (Some 1G Deployments) | Stand-alone | [OS Reload](/docs/vsrx?topic=vsrx-os-reload-upgrade) | No |
